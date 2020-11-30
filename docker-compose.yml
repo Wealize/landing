@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  app:
+    environment:
+      - PORT=${PORT:-3000}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - ${PORT:-3000}:${PORT:-3000}
