@@ -4,7 +4,7 @@ export const BREAKPOINT_XS = '480px'
 export const BREAKPOINT_SM = '576px'
 export const BREAKPOINT_MD = '768px'
 export const BREAKPOINT_LG = '992px'
-export const BREAKPOINT_XL = '1200px'
+export const BREAKPOINT_XL = '1366px'
 export const BREAKPOINT_XXL = '1600px'
 
 export const media = generateMedia({
@@ -15,4 +15,3 @@ export const media = generateMedia({
   xl: BREAKPOINT_XL,
   xxl: BREAKPOINT_XXL
 })
-

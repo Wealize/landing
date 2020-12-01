@@ -1,9 +1,6 @@
+// eslint-disable-next-line
 import React from 'react'
-import styled from 'styled-components'
 
-const Index = () => (
-    <h1>by Wealize</h1>
-)
-
+const Index = (): JSX.Element => <h1>Home</h1>
 
 export default Index

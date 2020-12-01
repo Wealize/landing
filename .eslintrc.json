@@ -7,8 +7,11 @@
   "extends": [
     "standard",
     "plugin:jest/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
     "plugin:react/recommended",
     "plugin:cypress/recommended",
+    "plugin:prettier/recommended",
     "prettier"
   ],
   "globals": {
@@ -21,7 +24,15 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "ignorePatterns": ["*.json"],
+  "ignorePatterns": [
+    "*.json", "next.config.js",
+    "dangerfile.js",
+    "__tests__/e2e/plugins/index.js",
+    "__tests__/__mocks__/next/index.ts",
+    "src/pages/_document.tsx",
+    "src/pages/_app.tsx",
+    "global.d.ts"
+  ],
   "plugins": ["@typescript-eslint", "jest", "cypress"],
   "rules": {
     "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],

@@ -8,6 +8,7 @@ const Global = createGlobalStyle`
   html, body {
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
+    font-family: 'DM Sans', sans-serif;
   }
 `
 
