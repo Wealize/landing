@@ -10,6 +10,10 @@ const Global = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     font-family: 'DM Sans', sans-serif;
   }
+
+  a {
+     -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
 `
 
 export default Global
