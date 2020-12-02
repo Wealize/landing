@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 import React from 'react'
 import NextHead from 'next/head'
 

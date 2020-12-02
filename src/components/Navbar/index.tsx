@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'

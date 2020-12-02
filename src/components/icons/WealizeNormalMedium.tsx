@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 import React from 'react'
 
 const WealizeNormalMedium = (props: React.SVGProps<SVGSVGElement>) => {

@@ -45,6 +45,7 @@
         "ignoreRestSiblings": false
       }
     ],
+    "no-use-before-define": "off",
     "import/order": [
       "error",
       {
