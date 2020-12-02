@@ -6,8 +6,7 @@ import { Integrations } from '@sentry/tracing'
 
 import Global from '../components/Global'
 import { Head } from '../components/layout/Head'
-import { BasicLayout } from '../components/layout/BasicLayout'
-
+import Layout from '../components/layout/Layout'
 
 Sentry.init({
   dsn: process.env.SENTRY_DSN,
@@ -21,12 +20,12 @@ const ExtendedApp = (props: AppProps) => {
 
   return (
     <React.Fragment>
-      <Head/>
+      <Head />
       <Reset />
       <Global />
-      <BasicLayout>
+      <Layout>
         <Component {...pageProps} />
-      </BasicLayout>
+      </Layout>
     </React.Fragment>
   )
 }
