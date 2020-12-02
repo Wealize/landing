@@ -1,14 +1,8 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 import { WHITE, DARK_GRAY, LIGHT_GRAY } from '../../theme/color'
 import { halfPx, singlePx, triplePx } from '../../theme/space'
 import { media } from '../../theme/media'
-
-// ANIMATIONS
-export const slideTopAnimation = keyframes`
-  0% { -webkit-transform: translateY(0); transform: translateY(0); }
-  100% { -webkit-transform: translateY(-100px); transform: translateY(-100px); }
-`
 
 export const Navbar = styled.nav<{ isVisible: boolean }>`
   width: 100%;
@@ -35,7 +29,7 @@ export const Navbar = styled.nav<{ isVisible: boolean }>`
 `
 
 export const LogoMobileContainer = styled.div`
-  ${media.greaterThan('xs')`
+  ${media.greaterThan('md')`
     display: none;
   `}
 `
@@ -43,7 +37,7 @@ export const LogoMobileContainer = styled.div`
 export const LogoContainer = styled.div`
   display: none;
 
-  ${media.greaterThan('xs')`
+  ${media.greaterThan('md')`
     display: block;
   `}
 `
@@ -63,7 +57,7 @@ export const NavLink = styled.a`
   font-size: 1rem;
   cursor: pointer;
 
-  ${media.greaterThan('xs')`
+  ${media.greaterThan('md')`
     font-size: 1.2rem;
   `}
 `
