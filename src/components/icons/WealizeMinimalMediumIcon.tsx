@@ -1,6 +1,6 @@
 import React from 'react'
 
-const WealizeMinimalMedium = (props: React.SVGProps<SVGSVGElement>) => {
+const WealizeMinimalMediumIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +17,4 @@ const WealizeMinimalMedium = (props: React.SVGProps<SVGSVGElement>) => {
   )
 }
 
-export default React.memo(WealizeMinimalMedium)
+export default React.memo(WealizeMinimalMediumIcon)

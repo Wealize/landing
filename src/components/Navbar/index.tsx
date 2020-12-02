@@ -10,8 +10,8 @@ import {
   NavLink,
   LinksContainer
 } from './styles'
-import WealizeMinimalMedium from '../icons/WealizeMinimalMedium'
-import WealizeNormalMedium from '../icons/WealizeNormalMedium'
+import WealizeMinimalMediumIcon from '../icons/WealizeMinimalMediumIcon'
+import WealizeNormalMediumIcon from '../icons/WealizeNormalMediumIcon'
 
 const NavBar = () => {
   const [visible, setVisible] = useState(true)
@@ -25,7 +25,7 @@ const NavBar = () => {
       <LogoMobileContainer data-cy="navbar-logo-mobile-container">
         <Link href={HOME_HREF}>
           <a>
-            <WealizeMinimalMedium />
+            <WealizeMinimalMediumIcon />
           </a>
         </Link>
       </LogoMobileContainer>
@@ -33,7 +33,7 @@ const NavBar = () => {
       <LogoContainer data-cy="navbar-logo-container">
         <Link href={HOME_HREF}>
           <a>
-            <WealizeNormalMedium />
+            <WealizeNormalMediumIcon />
           </a>
         </Link>
       </LogoContainer>
