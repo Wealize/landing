@@ -48,6 +48,9 @@ export const CardImageContainer = styled.div<{
 
 export const CardContentContainer = styled.div<{ hasPrimary: boolean }>`
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-top: -8%;
   top: 90%;
   background-color: ${({ hasPrimary }) => (hasPrimary ? PRIMARY : WHITE)};
@@ -55,6 +58,7 @@ export const CardContentContainer = styled.div<{ hasPrimary: boolean }>`
   padding: ${singlePx()};
   border-top-left-radius: ${DEFAULT_RADIUS}px;
   border-top-right-radius: ${DEFAULT_RADIUS}px;
+  min-height: 350px;
 
   ${({ hasPrimary }) => media.greaterThan('md')`
     width: 45%;
@@ -66,10 +70,12 @@ export const CardContentContainer = styled.div<{ hasPrimary: boolean }>`
     padding: ${singleAndHalfPx()};
     border-top-left-radius: ${hasPrimary ? 'initial' : `${DEFAULT_RADIUS}px`};
     border-top-right-radius: ${hasPrimary ? `${DEFAULT_RADIUS}px` : `initial`};
+    min-height: 450px;
   `};
 
   ${media.greaterThan('lg')`
     padding: ${doubleAndHalfPx()};
+    min-height: 550px;
   `};
 `
 
