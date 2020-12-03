@@ -21,7 +21,6 @@ export const CardContainer = styled.article<{ hasPrimary: boolean }>`
     display: flex;
     flex-direction: row;
     position: initial;
-    transform: ${hasPrimary ? 'translateX(-5%)' : 'translateX(5%)'};
     flex-direction: ${hasPrimary ? 'row' : 'row-reverse'};
   `};
 `
@@ -58,7 +57,7 @@ export const CardContentContainer = styled.div<{ hasPrimary: boolean }>`
   border-top-right-radius: ${DEFAULT_RADIUS}px;
 
   ${({ hasPrimary }) => media.greaterThan('md')`
-    width: 50%;
+    width: 45%;
     flex-direction: column-reverse;
     justify-content: space-between;
     margin-top: 0;
