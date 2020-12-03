@@ -18,14 +18,14 @@ const Layout = (props) => {
 }
 
 export const Main = styled.main`
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 120vh;
+  min-height: 100vh;
   background-color: ${LIGHT_GRAY};
   padding-top: ${triplePx()};
   padding-bottom: ${halfPx()};
+  overflow-x: hidden;
 `
 
 export default React.memo(Layout)
