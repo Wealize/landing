@@ -4,13 +4,13 @@ import { WHITE, DARK_GRAY } from '../../../theme/color'
 import { singlePx, doublePx, doubleAndHalfPx } from '../../../theme/space'
 import { media } from '../../../theme/media'
 
-export const CardContainer = styled.div`
+export const Container = styled.div`
   width: 100%;
   background: ${WHITE};
   padding: ${doubleAndHalfPx()} ${singlePx()};
 `
 
-export const CardText = styled.h3`
+export const Text = styled.h3`
   color: ${DARK_GRAY};
   font-size: 2rem;
   line-height: 45px;

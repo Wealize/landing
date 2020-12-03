@@ -3,14 +3,14 @@ import { mount } from 'enzyme'
 
 import RoundedCard from './index'
 import {
-  CardContainer,
-  CardImageContainer,
-  CardContentContainer,
-  CardContent,
-  CardTitle,
-  CardDescription,
-  CardLinkContainer,
-  CardLink,
+  Container,
+  ImageContainer,
+  ContentContainer,
+  Content,
+  Title,
+  Description,
+  LinkContainer,
+  LinkAnchor,
   TagsContainer,
   Tag
 } from './styles'
@@ -37,19 +37,19 @@ describe('<RoundedCard />', () => {
   })
 
   it('wrapperWithAllProps: should show correct components content', () => {
-    expect(wrapperWithAllProps.find(CardContainer)).toHaveLength(1)
-    expect(wrapperWithAllProps.find(CardImageContainer)).toHaveLength(1)
-    expect(wrapperWithAllProps.find(CardContentContainer)).toHaveLength(1)
-    expect(wrapperWithAllProps.find(CardContent)).toHaveLength(1)
-    expect(wrapperWithAllProps.find(CardTitle)).toHaveLength(1)
-    expect(wrapperWithAllProps.find(CardTitle).text()).toEqual(cardProps.title)
-    expect(wrapperWithAllProps.find(CardDescription)).toHaveLength(1)
-    expect(wrapperWithAllProps.find(CardDescription).text()).toEqual(
+    expect(wrapperWithAllProps.find(Container)).toHaveLength(1)
+    expect(wrapperWithAllProps.find(ImageContainer)).toHaveLength(1)
+    expect(wrapperWithAllProps.find(ContentContainer)).toHaveLength(1)
+    expect(wrapperWithAllProps.find(Content)).toHaveLength(1)
+    expect(wrapperWithAllProps.find(Title)).toHaveLength(1)
+    expect(wrapperWithAllProps.find(Title).text()).toEqual(cardProps.title)
+    expect(wrapperWithAllProps.find(Description)).toHaveLength(1)
+    expect(wrapperWithAllProps.find(Description).text()).toEqual(
       cardProps.description
     )
-    expect(wrapperWithAllProps.find(CardLinkContainer)).toHaveLength(1)
-    expect(wrapperWithAllProps.find(CardLink)).toHaveLength(1)
-    expect(wrapperWithAllProps.find(CardLink).text()).toEqual(
+    expect(wrapperWithAllProps.find(LinkContainer)).toHaveLength(1)
+    expect(wrapperWithAllProps.find(LinkAnchor)).toHaveLength(1)
+    expect(wrapperWithAllProps.find(LinkAnchor).text()).toEqual(
       cardProps.link.text
     )
     expect(wrapperWithAllProps.find(TagsContainer)).toHaveLength(1)
@@ -81,21 +81,19 @@ describe('<RoundedCard />', () => {
     }
     const wrapperWithoutTagsProps = mount(<RoundedCard {...cardProps} />)
 
-    expect(wrapperWithoutTagsProps.find(CardContainer)).toHaveLength(1)
-    expect(wrapperWithoutTagsProps.find(CardImageContainer)).toHaveLength(1)
-    expect(wrapperWithoutTagsProps.find(CardContentContainer)).toHaveLength(1)
-    expect(wrapperWithoutTagsProps.find(CardContent)).toHaveLength(1)
-    expect(wrapperWithoutTagsProps.find(CardTitle)).toHaveLength(1)
-    expect(wrapperWithoutTagsProps.find(CardTitle).text()).toEqual(
-      cardProps.title
-    )
-    expect(wrapperWithoutTagsProps.find(CardDescription)).toHaveLength(1)
-    expect(wrapperWithoutTagsProps.find(CardDescription).text()).toEqual(
+    expect(wrapperWithoutTagsProps.find(Container)).toHaveLength(1)
+    expect(wrapperWithoutTagsProps.find(ImageContainer)).toHaveLength(1)
+    expect(wrapperWithoutTagsProps.find(ContentContainer)).toHaveLength(1)
+    expect(wrapperWithoutTagsProps.find(Content)).toHaveLength(1)
+    expect(wrapperWithoutTagsProps.find(Title)).toHaveLength(1)
+    expect(wrapperWithoutTagsProps.find(Title).text()).toEqual(cardProps.title)
+    expect(wrapperWithoutTagsProps.find(Description)).toHaveLength(1)
+    expect(wrapperWithoutTagsProps.find(Description).text()).toEqual(
       cardProps.description
     )
-    expect(wrapperWithoutTagsProps.find(CardLinkContainer)).toHaveLength(1)
-    expect(wrapperWithoutTagsProps.find(CardLink)).toHaveLength(1)
-    expect(wrapperWithoutTagsProps.find(CardLink).text()).toEqual(
+    expect(wrapperWithoutTagsProps.find(LinkContainer)).toHaveLength(1)
+    expect(wrapperWithoutTagsProps.find(LinkAnchor)).toHaveLength(1)
+    expect(wrapperWithoutTagsProps.find(LinkAnchor).text()).toEqual(
       cardProps.link.text
     )
     expect(wrapperWithoutTagsProps.find(TagsContainer)).toHaveLength(0)
@@ -114,20 +112,18 @@ describe('<RoundedCard />', () => {
     }
     const wrapperWithoutLinkProps = mount(<RoundedCard {...cardProps} />)
 
-    expect(wrapperWithoutLinkProps.find(CardContainer)).toHaveLength(1)
-    expect(wrapperWithoutLinkProps.find(CardImageContainer)).toHaveLength(1)
-    expect(wrapperWithoutLinkProps.find(CardContentContainer)).toHaveLength(1)
-    expect(wrapperWithoutLinkProps.find(CardContent)).toHaveLength(1)
-    expect(wrapperWithoutLinkProps.find(CardTitle)).toHaveLength(1)
-    expect(wrapperWithoutLinkProps.find(CardTitle).text()).toEqual(
-      cardProps.title
-    )
-    expect(wrapperWithoutLinkProps.find(CardDescription)).toHaveLength(1)
-    expect(wrapperWithoutLinkProps.find(CardDescription).text()).toEqual(
+    expect(wrapperWithoutLinkProps.find(Container)).toHaveLength(1)
+    expect(wrapperWithoutLinkProps.find(ImageContainer)).toHaveLength(1)
+    expect(wrapperWithoutLinkProps.find(ContentContainer)).toHaveLength(1)
+    expect(wrapperWithoutLinkProps.find(Content)).toHaveLength(1)
+    expect(wrapperWithoutLinkProps.find(Title)).toHaveLength(1)
+    expect(wrapperWithoutLinkProps.find(Title).text()).toEqual(cardProps.title)
+    expect(wrapperWithoutLinkProps.find(Description)).toHaveLength(1)
+    expect(wrapperWithoutLinkProps.find(Description).text()).toEqual(
       cardProps.description
     )
-    expect(wrapperWithoutLinkProps.find(CardLinkContainer)).toHaveLength(0)
-    expect(wrapperWithoutLinkProps.find(CardLink)).toHaveLength(0)
+    expect(wrapperWithoutLinkProps.find(LinkContainer)).toHaveLength(0)
+    expect(wrapperWithoutLinkProps.find(LinkAnchor)).toHaveLength(0)
     expect(wrapperWithoutLinkProps.find(TagsContainer)).toHaveLength(0)
     expect(wrapperWithoutLinkProps.find(Tag)).toHaveLength(0)
   })

@@ -2,14 +2,14 @@ import React from 'react'
 import Link from 'next/link'
 
 import {
-  CardContainer,
-  CardImageContainer,
-  CardContentContainer,
-  CardContent,
-  CardTitle,
-  CardDescription,
-  CardLinkContainer,
-  CardLink,
+  Container,
+  ImageContainer,
+  ContentContainer,
+  Content,
+  Title,
+  Description,
+  LinkContainer,
+  LinkAnchor,
   TagsContainer,
   Tag
 } from './styles'
@@ -22,21 +22,21 @@ const RoundedCard = (props: CardRounded) => {
   const hasTags = () => tags && tags.length > 0
 
   return (
-    <CardContainer hasPrimary={hasPrimary}>
-      <CardImageContainer imageUrl={imageUrl} />
-      <CardContentContainer hasPrimary={hasPrimary}>
-        <CardContent>
-          <CardTitle>{title}</CardTitle>
-          <CardDescription>{description}</CardDescription>
+    <Container hasPrimary={hasPrimary}>
+      <ImageContainer imageUrl={imageUrl} />
+      <ContentContainer hasPrimary={hasPrimary}>
+        <Content>
+          <Title>{title}</Title>
+          <Description>{description}</Description>
           {link ? (
-            <CardLinkContainer color={link.color}>
+            <LinkContainer color={link.color}>
               <Link href={link.url} passHref>
-                <CardLink color={link.color}>{link.text}</CardLink>
+                <LinkAnchor color={link.color}>{link.text}</LinkAnchor>
               </Link>
               <OpenUrlIcon color={link.color}></OpenUrlIcon>
-            </CardLinkContainer>
+            </LinkContainer>
           ) : null}
-        </CardContent>
+        </Content>
 
         {hasTags() ? (
           <TagsContainer>
@@ -47,8 +47,8 @@ const RoundedCard = (props: CardRounded) => {
             ))}
           </TagsContainer>
         ) : null}
-      </CardContentContainer>
-    </CardContainer>
+      </ContentContainer>
+    </Container>
   )
 }
 

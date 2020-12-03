@@ -1,15 +1,15 @@
 import React from 'react'
 
-import { CardContainer, CardText } from './styles'
+import { Container, Text } from './styles'
 
 interface CardProps {
   text: string
 }
 const SimpleCard = ({ text }: CardProps) => {
   return (
-    <CardContainer>
-      <CardText>{text}</CardText>
-    </CardContainer>
+    <Container>
+      <Text>{text}</Text>
+    </Container>
   )
 }
 

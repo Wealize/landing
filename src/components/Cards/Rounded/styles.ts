@@ -11,7 +11,7 @@ import { media } from '../../../theme/media'
 
 const DEFAULT_RADIUS = 28
 
-export const CardContainer = styled.article<{ hasPrimary: boolean }>`
+export const Container = styled.article<{ hasPrimary: boolean }>`
   width: 100%;
   background: ${LIGHT_GRAY};
   display: flex;
@@ -24,7 +24,7 @@ export const CardContainer = styled.article<{ hasPrimary: boolean }>`
   `};
 `
 
-export const CardImageContainer = styled.div<{ imageUrl: string }>`
+export const ImageContainer = styled.div<{ imageUrl: string }>`
   width: 100%;
   display: flex;
   align-items: stretch;
@@ -42,7 +42,7 @@ export const CardImageContainer = styled.div<{ imageUrl: string }>`
   `};
 `
 
-export const CardContentContainer = styled.div<{ hasPrimary: boolean }>`
+export const ContentContainer = styled.div<{ hasPrimary: boolean }>`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -74,12 +74,12 @@ export const CardContentContainer = styled.div<{ hasPrimary: boolean }>`
   `};
 `
 
-export const CardContent = styled.div`
+export const Content = styled.div`
   display: flex;
   flex-direction: column;
 `
 
-export const CardTitle = styled.h5`
+export const Title = styled.h5`
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: bold;
@@ -90,7 +90,7 @@ export const CardTitle = styled.h5`
   `};
 `
 
-export const CardDescription = styled.p`
+export const Description = styled.p`
   line-height: 1.5;
   font-size: 1rem;
 
@@ -99,7 +99,7 @@ export const CardDescription = styled.p`
   `};
 `
 
-export const CardLinkContainer = styled.div<{ color: string }>`
+export const LinkContainer = styled.div<{ color: string }>`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -107,7 +107,7 @@ export const CardLinkContainer = styled.div<{ color: string }>`
   color: ${({ color }) => color};
 `
 
-export const CardLink = styled.a<{ color: string }>`
+export const LinkAnchor = styled.a<{ color: string }>`
   display: flex;
   flex-direction: row;
   text-decoration: none;
