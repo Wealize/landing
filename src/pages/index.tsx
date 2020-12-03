@@ -3,7 +3,7 @@ import React from 'react'
 import SimpleCard from '../components/Cards/Simple'
 import RoundedCard from '../components/Cards/Rounded'
 import projects from '../data/projects'
-import { RoundedCardProps } from '../interfaces/roundedCardProps'
+import { CardRounded } from '../interfaces/CardRounded'
 
 const Index = (): JSX.Element => (
   <>
@@ -13,7 +13,7 @@ const Index = (): JSX.Element => (
       }
     />
 
-    {projects.map((project: RoundedCardProps, index: number) => (
+    {projects.map((project: CardRounded, index: number) => (
       <RoundedCard
         key={index}
         imageUrl={project.imageUrl}

@@ -14,29 +14,21 @@ import {
   Tag
 } from './styles'
 import OpenUrlIcon from '../../icons/OpenUrlIcon'
-import { RoundedCardProps } from '../../../interfaces/roundedCardProps'
+import { CardRounded } from '../../../interfaces/CardRounded'
 
-const RoundedCard = (props: RoundedCardProps) => {
+const RoundedCard = (props: CardRounded) => {
   const { imageUrl, title, description, link, tags, hasPrimary } = props
 
-  const hasLink = () => !!link
-
-  const hasTags = () => {
-    if (!tags) return false
-    return tags.length > 0
-  }
+  const hasTags = () => tags && tags.length > 0
 
   return (
     <CardContainer hasPrimary={hasPrimary}>
-      <CardImageContainer
-        imageUrl={imageUrl}
-        hasPrimary={hasPrimary}
-      ></CardImageContainer>
+      <CardImageContainer imageUrl={imageUrl} />
       <CardContentContainer hasPrimary={hasPrimary}>
         <CardContent>
           <CardTitle>{title}</CardTitle>
           <CardDescription>{description}</CardDescription>
-          {hasLink() ? (
+          {link ? (
             <CardLinkContainer color={link.color}>
               <Link href={link.url} passHref>
                 <CardLink color={link.color}>{link.text}</CardLink>

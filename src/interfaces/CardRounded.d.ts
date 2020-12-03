@@ -1,14 +1,10 @@
 /* eslint-disable camelcase */
 
-export interface RoundedCardProps {
+export interface CardRounded {
   imageUrl: string
   title: string
   description: string
-  link: {
-    text: string
-    url: string
-    color: string
-  } | null
+  link: CardRoundedLink | null
   tags: string[]
   hasPrimary: boolean
 }

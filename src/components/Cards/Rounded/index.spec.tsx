@@ -14,10 +14,10 @@ import {
   TagsContainer,
   Tag
 } from './styles'
-import { RoundedCardProps } from '../../../interfaces/roundedCardProps'
+import { CardRounded } from '../../../interfaces/CardRounded'
 
 describe('<RoundedCard />', () => {
-  const cardProps: RoundedCardProps = {
+  const cardProps: CardRounded = {
     imageUrl: '/img/projects/maldita.jpg',
     title: 'Maldita',
     description:
@@ -66,7 +66,7 @@ describe('<RoundedCard />', () => {
   })
 
   it('wrapperWithoutTagsProps: should show correct components content without tags content', () => {
-    const cardProps: RoundedCardProps = {
+    const cardProps: CardRounded = {
       imageUrl: '/img/projects/maldita.jpg',
       title: 'Maldita',
       description:
@@ -103,7 +103,7 @@ describe('<RoundedCard />', () => {
   })
 
   it('wrapperWithoutLinkProps: should show correct components content without link content', () => {
-    const cardProps: RoundedCardProps = {
+    const cardProps: CardRounded = {
       imageUrl: '/img/projects/maldita.jpg',
       title: 'Maldita',
       description:

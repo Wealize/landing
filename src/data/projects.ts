@@ -1,6 +1,6 @@
-import { RoundedCardProps } from '../interfaces/roundedCardProps'
+import { CardRounded } from '../interfaces/CardRounded'
 
-const projects: RoundedCardProps[] = [
+const projects: CardRounded[] = [
   {
     imageUrl: '/img/projects/odos.jpg',
     title: 'The ODOS Network',

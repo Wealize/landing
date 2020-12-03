@@ -25,10 +25,7 @@ export const CardContainer = styled.article<{ hasPrimary: boolean }>`
   `};
 `
 
-export const CardImageContainer = styled.div<{
-  imageUrl: string
-  hasPrimary: boolean
-}>`
+export const CardImageContainer = styled.div<{ imageUrl: string }>`
   width: 100%;
   display: flex;
   align-items: stretch;
