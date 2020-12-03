@@ -18,6 +18,7 @@ export const Navbar = styled.nav<{ isVisible: boolean }>`
   right: 0;
   max-height: ${triplePx()};
   transition: all 0.4s;
+  z-index: 2;
 
   transform: ${({ isVisible }) =>
     isVisible ? 'inherit' : 'translateY(-100%)'};

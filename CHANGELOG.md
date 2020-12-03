@@ -7,4 +7,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [Add Cards components](https://wealize.atlassian.net/browse/WLZAA-33)
 - [Add Navbar component](https://wealize.atlassian.net/browse/WLZAA-32)
