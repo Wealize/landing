@@ -20,7 +20,6 @@ export const CardContainer = styled.article<{ hasPrimary: boolean }>`
   ${({ hasPrimary }) => media.greaterThan('md')`
     display: flex;
     flex-direction: row;
-    position: initial;
     flex-direction: ${hasPrimary ? 'row' : 'row-reverse'};
   `};
 `
@@ -63,7 +62,6 @@ export const CardContentContainer = styled.div<{ hasPrimary: boolean }>`
     justify-content: space-between;
     margin-top: 0;
     display: flex;
-    position: initial;
     padding: ${singleAndHalfPx()};
     border-top-left-radius: ${hasPrimary ? 'initial' : `${DEFAULT_RADIUS}px`};
     border-top-right-radius: ${hasPrimary ? `${DEFAULT_RADIUS}px` : `initial`};
