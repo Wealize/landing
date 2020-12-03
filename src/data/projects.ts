@@ -39,7 +39,7 @@ const projects: RoundedCardProps[] = [
     hasPrimary: true
   },
   {
-    imageUrl: '/img/projects/Metaledger.jpg',
+    imageUrl: '/img/projects/metaledger.jpg',
     title: 'Metaledger',
     description:
       'Design and development of an ecosystem of apps and IoT devices to provide end-to-end traceability of gold and other precious metals from artisanal and small-scale mines (ASM) in the third world to wholesalers in the first world',
