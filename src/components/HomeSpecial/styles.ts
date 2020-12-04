@@ -12,13 +12,13 @@ import { DEFAULT_RADIUS } from '../../theme/border'
 
 export const Container = styled.div`
   width: 100%;
-  min-height: 91vh;
+  min-height: 85vh;
   background: ${LIGHT_GRAY};
   padding: ${doubleAndHalfPx()} 0;
   position: relative;
 
   ${media.greaterThan('md')`
-    min-height: 94vh;
+    min-height: 90vh;
   `};
 
   ${media.greaterThan('lg')`
@@ -59,7 +59,7 @@ export const Button = styled.button`
 
   ${media.greaterThan('lg')`
     bottom: -10%;
-    right: -30%;
+    right: -25%;
   `};
 `
 
@@ -83,7 +83,12 @@ export const Slogan = styled.div`
 
   ${media.greaterThan('lg')`
     min-height: 430px;
-    width: 65%;
+    width: 75%;
+    padding: ${doublePx()};
+  `};
+
+  ${media.greaterThan('xl')`
+    padding: ${doublePx()};
   `};
 `
 
@@ -112,7 +117,7 @@ export const SubHeadline = styled.h2`
   `};
 
   ${media.greaterThan('lg')`
-    font-size: 4rem;
+    font-size: 3.5rem;
     width: 75%;
   `};
 `
