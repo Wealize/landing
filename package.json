@@ -9,7 +9,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "start": "next start -p $PORT",
+    "start": "next start",
     "lint": "eslint './**/*.{js,ts,tsx}'",
     "jest": "jest",
     "jest-with-coverage": "jest --coverage",
@@ -24,11 +24,13 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "eslint-plugin-prettier": "^3.1.4",
+    "jest-canvas-mock": "^2.3.0",
     "jest-config": "^26.6.3",
     "next": "^10.0.0",
     "prettier": "^2.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-lottie": "^1.2.3",
     "styled-components": "^5.1.0",
     "styled-media-query": "^2.1.2",
     "styled-reset": "^4.1.4"
