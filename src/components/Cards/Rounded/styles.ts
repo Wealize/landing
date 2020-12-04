@@ -8,8 +8,7 @@ import {
   doubleAndHalfPx
 } from '../../../theme/space'
 import { media } from '../../../theme/media'
-
-const DEFAULT_RADIUS = 28
+import { DEFAULT_RADIUS } from '../../../theme/border'
 
 export const Container = styled.article<{ hasPrimary: boolean }>`
   width: 100%;
@@ -33,7 +32,7 @@ export const ImageContainer = styled.div<{ imageUrl: string }>`
   min-height: 290px;
 
   ${media.greaterThan('md')`
-    width: 50%;
+    width: 51%;
     min-height: 350px;
   `};
 
