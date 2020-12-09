@@ -30,12 +30,12 @@ export const Content = styled.div`
 
   ${media.greaterThan('lg')`
     align-items: flex-start;
-    padding: ${singlePx()};
+    padding: ${singlePx()} 0;
     margin-bottom:${doublePx()};
   `};
 
   ${media.greaterThan('xl')`
-    padding: ${singlePx()};
+
     margin-bottom:${doublePx()};
   `};
 `
@@ -70,7 +70,7 @@ export const ContainerPartners = styled.div`
   flex-wrap: wrap;
 
   ${media.greaterThan('xl')`
-    padding: ${singlePx()};
+    padding: ${singlePx()} 0;
   `};
 `
 
