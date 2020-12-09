@@ -6,46 +6,46 @@ env:
   NODE_ENV: production
   PORT: 3000
 jobs:
-  tests:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
+  # tests:
+  #   runs-on: ubuntu-latest
+  #   timeout-minutes: 10
 
-    steps:
-      - uses: actions/checkout@v1
+  #   steps:
+  #     - uses: actions/checkout@v1
 
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: '10.x'
+  #     - name: Setup Node
+  #       uses: actions/setup-node@v1
+  #       with:
+  #         node-version: '10.x'
 
-      - name: Install dependencies
-        run: yarn install
-        env:
-          NODE_ENV: development
+  #     - name: Install dependencies
+  #       run: yarn install
+  #       env:
+  #         NODE_ENV: development
 
-      - name: Increase watchers limit
-        run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+  #     - name: Increase watchers limit
+  #       run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
-      - name: Run unit tests
-        run: yarn jest
+  #     - name: Run unit tests
+  #       run: yarn jest
 
-      - name: Run integration tests
-        uses: cypress-io/github-action@v2
-        with:
-          install: false
-          browser: electron
-          headless: true
-          start: yarn run dev
-          wait-on: 'http://localhost:3000'
+  #     - name: Run integration tests
+  #       uses: cypress-io/github-action@v2
+  #       with:
+  #         install: false
+  #         browser: electron
+  #         headless: true
+  #         start: yarn run dev
+  #         wait-on: 'http://localhost:3000'
 
-      - name: Build app
-        run: yarn build
+  #     - name: Build app
+  #       run: yarn build
 
-      - uses: actions/upload-artifact@v1
-        if: failure()
-        with:
-          name: cypress-videos
-          path: __tests__/e2e/videos
+  #     - uses: actions/upload-artifact@v1
+  #       if: failure()
+  #       with:
+  #         name: cypress-videos
+  #         path: __tests__/e2e/videos
 
   lhci:
     name: Lighthouse
