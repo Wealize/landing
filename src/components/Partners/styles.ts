@@ -57,6 +57,10 @@ export const TextContent = styled.h5`
     font-size: 2.7rem;
     width: 60%;
   `};
+
+  ${media.greaterThan('xxl')`
+    font-size: 3rem;
+  `};
 `
 
 export const ContainerPartners = styled.div`
@@ -83,5 +87,9 @@ export const Partner = styled.div`
 
   ${media.greaterThan('xl')`
     width: 14.2%;
+  `};
+
+  ${media.greaterThan('xxl')`
+    width: 10%;
   `};
 `
