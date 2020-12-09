@@ -2,7 +2,7 @@ module.exports = {
   ci: {
     collect: {
       /* Add configuration here */
-      startServerCommand: 'yarn run start',
+      startServerCommand: 'yarn start',
       startServerReadyPattern: 'ready on',
       url: [
         'http://localhost:3000',
