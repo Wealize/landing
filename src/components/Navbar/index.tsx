@@ -24,7 +24,7 @@ const NavBar = () => {
     <Navbar id="navbar" isVisible={visible}>
       <LogoMobileContainer data-cy="navbar-logo-mobile-container">
         <Link href={HOME_HREF}>
-          <a>
+          <a aria-label="Home">
             <WealizeMinimalMediumIcon />
           </a>
         </Link>
@@ -32,7 +32,7 @@ const NavBar = () => {
 
       <LogoContainer data-cy="navbar-logo-container">
         <Link href={HOME_HREF}>
-          <a>
+          <a aria-label="Home">
             <WealizeNormalMediumIcon />
           </a>
         </Link>

@@ -13,10 +13,10 @@ module.exports = {
     },
     assert: {
       assertions: {
-        'categories:performance': ['warning', { minScore: 0.9 }],
-        'categories:seo': ['warning', { minScore: 0.85 }],
-        'categories:best-practices': ['warning', { minScore: 0.9 }],
-        'categories:accessibility': ['warning', { minScore: 0.85 }]
+        'categories:performance': ['error', { minScore: 0.85 }],
+        'categories:seo': ['error', { minScore: 0.8 }],
+        'categories:best-practices': ['error', { minScore: 0.9 }],
+        'categories:accessibility': ['error', { minScore: 0.8 }]
       }
     },
     upload: {
