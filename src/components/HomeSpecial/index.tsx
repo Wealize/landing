@@ -42,7 +42,7 @@ const HomeSpecial = () => {
         <SubHeadline>
           Crafting digital products with real-world impact
         </SubHeadline>
-        <Button onClick={scrollToNextElement}>
+        <Button onClick={scrollToNextElement} name="scroll-button">
           <RoundArrowIcon />
         </Button>
       </Slogan>
