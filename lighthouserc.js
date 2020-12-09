@@ -9,14 +9,14 @@ module.exports = {
         'http://localhost:3000/profile',
         'http://localhost:3000/contact'
       ],
-      numberOfRuns: 3
+      numberOfRuns: 2
     },
     assert: {
       assertions: {
-        'categories:performance': ['warning', { minScore: 0.75 }],
-        'categories:seo': ['warning', { minScore: 0.75 }],
-        'categories:best-practices': ['warning', { minScore: 0.75 }],
-        'categories:accessibility': ['warning', { minScore: 0.75 }]
+        'categories:performance': ['warning', { minScore: 0.9 }],
+        'categories:seo': ['warning', { minScore: 0.85 }],
+        'categories:best-practices': ['warning', { minScore: 0.9 }],
+        'categories:accessibility': ['warning', { minScore: 0.85 }]
       }
     },
     upload: {
