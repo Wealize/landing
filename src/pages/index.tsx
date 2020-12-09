@@ -5,6 +5,7 @@ import SimpleCard from '../components/Cards/Simple'
 import RoundedCard from '../components/Cards/Rounded'
 import { CardRounded } from '../interfaces/CardRounded'
 import HomeSpecial from '../components/HomeSpecial'
+import Prefooter from '../components/Prefooter'
 
 const Index = (): JSX.Element => (
   <>
@@ -16,17 +17,21 @@ const Index = (): JSX.Element => (
       }
     />
 
-    {projects.map((project: CardRounded, index: number) => (
-      <RoundedCard
-        key={index}
-        imageUrl={project.imageUrl}
-        title={project.title}
-        description={project.description}
-        link={project.link}
-        tags={project.tags}
-        hasPrimary={project.hasPrimary}
-      />
-    ))}
+    <section>
+      {projects.map((project: CardRounded, index: number) => (
+        <RoundedCard
+          key={index}
+          imageUrl={project.imageUrl}
+          title={project.title}
+          description={project.description}
+          link={project.link}
+          tags={project.tags}
+          hasPrimary={project.hasPrimary}
+        />
+      ))}
+    </section>
+
+    <Prefooter />
   </>
 )
 
