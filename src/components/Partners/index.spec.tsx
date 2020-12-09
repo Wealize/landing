@@ -2,10 +2,10 @@ import React from 'react'
 import { mount } from 'enzyme'
 
 import { Partner } from './styles'
-import Prefooter from './index'
+import Partners from './index'
 
-describe('<Prefooter />', () => {
-  const wrapper = mount(<Prefooter />)
+describe('<Partners />', () => {
+  const wrapper = mount(<Partners />)
 
   it('should render', () => {
     expect(wrapper).toBeDefined()

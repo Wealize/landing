@@ -17,7 +17,7 @@ import {
   ContainerPartners,
   Partner
 } from './styles'
-const Prefooter = () => {
+const Partners = () => {
   return (
     <Container>
       <Content>
@@ -63,4 +63,4 @@ const Prefooter = () => {
   )
 }
 
-export default React.memo(Prefooter)
+export default React.memo(Partners)

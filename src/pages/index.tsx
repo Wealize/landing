@@ -5,7 +5,7 @@ import SimpleCard from '../components/Cards/Simple'
 import RoundedCard from '../components/Cards/Rounded'
 import { CardRounded } from '../interfaces/CardRounded'
 import HomeSpecial from '../components/HomeSpecial'
-import Prefooter from '../components/Prefooter'
+import Partners from '../components/Partners'
 
 const Index = (): JSX.Element => (
   <>
@@ -31,7 +31,7 @@ const Index = (): JSX.Element => (
       ))}
     </section>
 
-    <Prefooter />
+    <Partners />
   </>
 )
 
