@@ -61,7 +61,7 @@ export const Button = styled.button`
 
   ${media.greaterThan('lg')`
     bottom: -10%;
-    right: -25%;
+    right: -20%;
   `};
 `
 
