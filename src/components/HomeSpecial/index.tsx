@@ -14,12 +14,17 @@ import animationStartedWealize from '../../animations/w-started-wealize-light-gr
 
 const HomeSpecial = () => {
   const containerRef = useRef(null)
+  const buttonScrollRef = useRef(null)
 
   const scrollToNextElement = () => {
     const navbarHeight = document.getElementById('navbar').clientHeight
+    const buttonMiddleHeight = buttonScrollRef.current.clientHeight / 2
 
     if (navbarHeight) {
-      window.scrollTo(0, containerRef.current.clientHeight + navbarHeight)
+      window.scrollTo(
+        0,
+        containerRef.current.clientHeight + navbarHeight + buttonMiddleHeight
+      )
     }
   }
 
@@ -42,7 +47,11 @@ const HomeSpecial = () => {
         <SubHeadline>
           Crafting digital products with real-world impact
         </SubHeadline>
-        <Button onClick={scrollToNextElement} name="scroll-button">
+        <Button
+          onClick={scrollToNextElement}
+          name="scroll-button"
+          ref={buttonScrollRef}
+        >
           <RoundArrowIcon />
         </Button>
       </Slogan>

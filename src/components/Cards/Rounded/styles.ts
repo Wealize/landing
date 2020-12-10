@@ -29,6 +29,7 @@ export const ImageContainer = styled.div<{ imageUrl: string }>`
   align-items: stretch;
   background: url(${({ imageUrl }) => imageUrl}) no-repeat top center;
   background-size: cover;
+  background-position: center;
   min-height: 290px;
 
   ${media.greaterThan('md')`
