@@ -9,7 +9,7 @@ import MetaledgerIcon from '../icons/partners/MetaledgerIcon'
 import NestleIcon from '../icons/partners/NestleIcon'
 import ODOSIcon from '../icons/partners/ODOSIcon'
 import UniversityCordobaIcon from '../icons/partners/UniversityCordobaIcon'
-import UniversityLoyolaIcon from '../icons/partners/UniversityLoyola'
+import UniversityLoyolaIcon from '../icons/partners/UniversityLoyolaIcon'
 import {
   Container,
   Content,
