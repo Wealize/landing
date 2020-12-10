@@ -12,7 +12,7 @@ import { media } from '../../../theme/media'
 export const Container = styled.div`
   width: 100%;
   background: ${WHITE};
-  padding: ${doubleAndHalfPx()} 0;
+  padding: ${doubleAndHalfPx()} ${singlePx()};
 
   ${media.greaterThan('md')`
     padding: ${singlePx()} ${doublePx()};

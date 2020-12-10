@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { LIGHT_GRAY } from '../../theme/color'
-import { triplePx, halfPx } from '../../theme/space'
+import { triplePx } from '../../theme/space'
+import Footer from '../Footer'
 import Navbar from '../Navbar'
 
 const Layout = (props) => {
@@ -13,6 +14,7 @@ const Layout = (props) => {
     <>
       <Navbar />
       <Main>{children}</Main>
+      <Footer />
     </>
   )
 }
@@ -24,7 +26,6 @@ export const Main = styled.main`
   min-height: 100vh;
   background-color: ${LIGHT_GRAY};
   padding-top: ${triplePx()};
-  padding-bottom: ${halfPx()};
   overflow-x: hidden;
 `
 
