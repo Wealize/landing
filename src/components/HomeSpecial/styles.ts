@@ -5,6 +5,8 @@ import {
   twoThirdPx,
   singlePx,
   doublePx,
+  triplePx,
+  quadruplePx,
   doubleAndHalfPx
 } from '../../theme/space'
 import { media } from '../../theme/media'
@@ -59,7 +61,7 @@ export const Button = styled.button`
 
   ${media.greaterThan('lg')`
     bottom: -10%;
-    right: -25%;
+    right: -20%;
   `};
 `
 
@@ -79,16 +81,17 @@ export const Slogan = styled.div`
 
   ${media.greaterThan('md')`
     min-height: 350px;
+    padding: ${doublePx()};
   `};
 
   ${media.greaterThan('lg')`
-    min-height: 430px;
-    width: 75%;
+    min-height: 450px;
+    width: 80%;
     padding: ${doublePx()};
   `};
 
   ${media.greaterThan('xl')`
-    padding: ${doublePx()};
+    padding: ${triplePx()} ${quadruplePx()};
   `};
 `
 
@@ -113,11 +116,15 @@ export const SubHeadline = styled.h2`
 
   ${media.greaterThan('md')`
     font-size: 3rem;
-    width: 90%;
+    width: 92%;
   `};
 
   ${media.greaterThan('lg')`
     font-size: 3.5rem;
-    width: 75%;
+    width: 90%;
+  `};
+
+  ${media.greaterThan('xl')`
+    width: 80%;
   `};
 `

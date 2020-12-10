@@ -1,13 +1,30 @@
 import styled from 'styled-components'
 
 import { WHITE, DARK_GRAY } from '../../../theme/color'
-import { singlePx, doublePx, doubleAndHalfPx } from '../../../theme/space'
+import {
+  singlePx,
+  doublePx,
+  doubleAndHalfPx,
+  quadruplePx
+} from '../../../theme/space'
 import { media } from '../../../theme/media'
 
 export const Container = styled.div`
   width: 100%;
   background: ${WHITE};
-  padding: ${doubleAndHalfPx()} ${singlePx()};
+  padding: ${doubleAndHalfPx()} 0;
+
+  ${media.greaterThan('md')`
+    padding: ${singlePx()} ${doublePx()};
+  `};
+
+  ${media.greaterThan('lg')`
+    padding: ${doubleAndHalfPx()} ${doublePx()};
+  `};
+
+  ${media.greaterThan('xl')`
+    padding: ${doubleAndHalfPx()} ${quadruplePx()};
+  `};
 `
 
 export const Text = styled.h3`
@@ -18,13 +35,11 @@ export const Text = styled.h3`
 
   ${media.greaterThan('md')`
     font-size: 3rem;
-    padding: ${singlePx()} ${singlePx()};
     line-height: 60px;
   `};
 
   ${media.greaterThan('lg')`
     max-width: 65%;
-    padding: ${doubleAndHalfPx()} ${doublePx()};
   `};
 
   ${media.greaterThan('xl')`
