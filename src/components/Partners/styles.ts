@@ -4,7 +4,7 @@ import { DARK_GRAY, LIGHT_GRAY } from '../../theme/color'
 import { singlePx, doublePx, triplePx, quadruplePx } from '../../theme/space'
 import { media } from '../../theme/media'
 
-export const Container = styled.aside`
+export const Container = styled.div`
   background-color: ${LIGHT_GRAY};
   padding: ${doublePx()} ${singlePx()};
 
