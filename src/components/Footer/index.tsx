@@ -12,10 +12,14 @@ import {
   ContainerWorkWithUs,
   ContainerBottom,
   Divider,
+  DividerMobile,
+  ContainerSocialMobile,
   ContainerSocial,
   Social,
+  ContainerPrivacyCopyright,
   PrivacyLegalLink,
   CopyrightText,
+  ContainerGrantsAndSocials,
   ContainerGrants,
   Grant
 } from './styles'
@@ -60,8 +64,8 @@ const Footer = () => {
         </ContainerWorkWithUs>
       </ContainerContent>
       <ContainerBottom>
-        <Divider></Divider>
-        <ContainerSocial>
+        <DividerMobile></DividerMobile>
+        <ContainerSocialMobile>
           <Social>
             <LinkedinIcon />
           </Social>
@@ -71,20 +75,35 @@ const Footer = () => {
           <Social>
             <DevtoIcon />
           </Social>
-        </ContainerSocial>
-        <Link href="">
-          <PrivacyLegalLink>Privacy & Legal</PrivacyLegalLink>
-        </Link>
-        <CopyrightText>Wealize 2020. All Rights Reserved.</CopyrightText>
+        </ContainerSocialMobile>
+        <ContainerPrivacyCopyright>
+          <Link href="">
+            <PrivacyLegalLink>Privacy & Legal</PrivacyLegalLink>
+          </Link>
+          <CopyrightText>Wealize 2020. All Rights Reserved.</CopyrightText>
+        </ContainerPrivacyCopyright>
         <Divider></Divider>
-        <ContainerGrants>
-          <Grant>
-            <CDTIIcon />
-          </Grant>
-          <Grant>
-            <InnovationPymeIcon />
-          </Grant>
-        </ContainerGrants>
+        <ContainerGrantsAndSocials>
+          <ContainerGrants>
+            <Grant>
+              <CDTIIcon />
+            </Grant>
+            <Grant>
+              <InnovationPymeIcon />
+            </Grant>
+          </ContainerGrants>
+          <ContainerSocial>
+            <Social>
+              <LinkedinIcon />
+            </Social>
+            <Social>
+              <TwitterIcon />
+            </Social>
+            <Social>
+              <DevtoIcon />
+            </Social>
+          </ContainerSocial>
+        </ContainerGrantsAndSocials>
       </ContainerBottom>
     </Container>
   )

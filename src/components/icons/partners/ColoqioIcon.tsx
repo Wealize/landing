@@ -74,4 +74,4 @@ const ColoqioIcon = (props: React.SVGProps<SVGSVGElement>) => {
   )
 }
 
-export default ColoqioIcon
+export default React.memo(ColoqioIcon)

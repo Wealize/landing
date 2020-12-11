@@ -116,4 +116,4 @@ const IBMWatsonIcon = (props: React.SVGProps<SVGSVGElement>) => {
   )
 }
 
-export default IBMWatsonIcon
+export default React.memo(IBMWatsonIcon)

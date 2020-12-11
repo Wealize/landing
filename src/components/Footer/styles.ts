@@ -113,10 +113,24 @@ export const ContainerWorkWithUs = styled.div`
   `};
 `
 
+export const DividerMobile = styled.hr`
+  width: 100%;
+  border: 1px solid ${WHITE};
+  margin: ${doublePx()} 0;
+
+  ${media.greaterThan('md')`
+    display: none;
+  `};
+`
+
 export const Divider = styled.hr`
   width: 100%;
   border: 1px solid ${WHITE};
   margin: ${doublePx()} 0;
+
+  ${media.greaterThan('md')`
+    margin: ${singlePx()} 0;
+  `};
 `
 
 export const ContainerBottom = styled.div`
@@ -127,17 +141,73 @@ export const ContainerBottom = styled.div`
   align-items: center;
 `
 
+export const ContainerSocialMobile = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  ${media.greaterThan('md')`
+    display: none;
+  `};
+`
+
+export const ContainerPrivacyCopyright = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  ${media.greaterThan('md')`
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: ${triplePx()};
+  `};
+`
+
 export const ContainerSocial = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  display: none;
+
+  ${media.greaterThan('md')`
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+  `};
+
+  ${media.greaterThan('lg')`
+    width: 20%;
+  `};
+
+  ${media.greaterThan('xl')`
+    width: 15%;
+  `};
 `
 
 export const Social = styled.div`
   width: 46px;
   height: 46px;
   margin: 0 ${sixthPx()};
+
+  ${media.greaterThan('md')`
+    width: 56px;
+    height: 56px;
+  `};
+
+  ${media.greaterThan('lg')`
+    width: 60px;
+    height: 66px;
+  `};
+
+  ${media.greaterThan('xl')`
+    width: 66px;
+    height: 66px;
+  `};
 `
 
 export const PrivacyLegalLink = styled.a`
@@ -145,11 +215,37 @@ export const PrivacyLegalLink = styled.a`
   font-size: 1.1rem;
   padding: ${singlePx()} 0;
   text-decoration: underline;
+
+  ${media.greaterThan('md')`
+    padding:  0;
+    margin-right: 10%;
+  `};
+
+  ${media.greaterThan('lg')`
+    font-size: 1.5rem;
+  `};
 `
 
 export const CopyrightText = styled.span`
   color: ${WHITE};
   font-size: 1.1rem;
+
+  ${media.greaterThan('lg')`
+    font-size: 1.5rem;
+  `};
+`
+
+export const ContainerGrantsAndSocials = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  ${media.greaterThan('md')`
+    justify-content: space-between;
+  `};
 `
 
 export const ContainerGrants = styled.div`
@@ -159,6 +255,19 @@ export const ContainerGrants = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
+  ${media.greaterThan('md')`
+    width: 70%;
+    justify-content: flex-start;
+  `};
+
+  ${media.greaterThan('lg')`
+    width: 80%;
+  `};
+
+  ${media.greaterThan('xl')`
+    width: 85%;
+  `};
 `
 
 export const Grant = styled.div`

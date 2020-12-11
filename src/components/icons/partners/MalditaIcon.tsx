@@ -17,4 +17,4 @@ const MalditaIcon = (props: React.SVGProps<SVGSVGElement>) => {
   )
 }
 
-export default MalditaIcon
+export default React.memo(MalditaIcon)

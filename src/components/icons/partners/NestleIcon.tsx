@@ -18,4 +18,4 @@ const NestleIcon = (props: React.SVGProps<SVGSVGElement>) => {
   )
 }
 
-export default NestleIcon
+export default React.memo(NestleIcon)

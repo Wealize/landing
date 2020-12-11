@@ -40,4 +40,4 @@ const AWSIcon = (props: React.SVGProps<SVGSVGElement>) => {
   )
 }
 
-export default AWSIcon
+export default React.memo(AWSIcon)
