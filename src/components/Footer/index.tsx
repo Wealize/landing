@@ -66,15 +66,24 @@ const Footer = () => {
       <ContainerBottom>
         <DividerMobile></DividerMobile>
         <ContainerSocialMobile>
-          <Social>
-            <LinkedinIcon />
-          </Social>
-          <Social>
-            <TwitterIcon />
-          </Social>
-          <Social>
-            <DevtoIcon />
-          </Social>
+          <Link
+            href="https://www.linkedin.com/company/wealizedigital/"
+            passHref
+          >
+            <Social target="_blank">
+              <LinkedinIcon />
+            </Social>
+          </Link>
+          <Link href="https://twitter.com/wealizedigital" passHref>
+            <Social target="_blank">
+              <TwitterIcon />
+            </Social>
+          </Link>
+          <Link href="https://dev.to/wealize" passHref>
+            <Social target="_blank">
+              <DevtoIcon />
+            </Social>
+          </Link>
         </ContainerSocialMobile>
         <ContainerPrivacyCopyright>
           <Link href="">
@@ -93,15 +102,24 @@ const Footer = () => {
             </Grant>
           </ContainerGrants>
           <ContainerSocial>
-            <Social>
-              <LinkedinIcon />
-            </Social>
-            <Social>
-              <TwitterIcon />
-            </Social>
-            <Social>
-              <DevtoIcon />
-            </Social>
+            <Link
+              href="https://www.linkedin.com/company/wealizedigital/"
+              passHref
+            >
+              <Social target="_blank">
+                <LinkedinIcon />
+              </Social>
+            </Link>
+            <Link href="https://twitter.com/wealizedigital" passHref>
+              <Social target="_blank">
+                <TwitterIcon />
+              </Social>
+            </Link>
+            <Link href="https://dev.to/wealize" passHref>
+              <Social target="_blank">
+                <DevtoIcon />
+              </Social>
+            </Link>
           </ContainerSocial>
         </ContainerGrantsAndSocials>
       </ContainerBottom>

@@ -189,10 +189,11 @@ export const ContainerSocial = styled.div`
   `};
 `
 
-export const Social = styled.div`
+export const Social = styled.a`
   width: 46px;
   height: 46px;
   margin: 0 ${sixthPx()};
+  text-decoration: none;
 
   ${media.greaterThan('md')`
     width: 56px;
