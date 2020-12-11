@@ -31,7 +31,9 @@ const RoundedCard = (props: CardRounded) => {
           {link ? (
             <LinkContainer color={link.color}>
               <Link href={link.url} passHref>
-                <LinkAnchor color={link.color}>{link.text}</LinkAnchor>
+                <LinkAnchor color={link.color} target="_blank" rel="noreferrer">
+                  {link.text}
+                </LinkAnchor>
               </Link>
               <OpenUrlIcon color={link.color}></OpenUrlIcon>
             </LinkContainer>

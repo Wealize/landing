@@ -82,4 +82,4 @@ const ODOSIcon = (props: React.SVGProps<SVGSVGElement>) => {
   )
 }
 
-export default ODOSIcon
+export default React.memo(ODOSIcon)

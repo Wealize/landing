@@ -43,4 +43,4 @@ const AlastriaIcon = (props: React.SVGProps<SVGSVGElement>) => {
   )
 }
 
-export default AlastriaIcon
+export default React.memo(AlastriaIcon)
