@@ -92,7 +92,7 @@ export const BigText = styled.h5`
 
   ${media.greaterThan('xl')`
     font-size: 2.5rem;
-      min-height: 270px;
+    min-height: 270px;
   `};
 
   ${media.greaterThan('xxl')`
