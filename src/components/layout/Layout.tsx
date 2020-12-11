@@ -13,7 +13,7 @@ const Layout = (props) => {
   return (
     <>
       <Navbar />
-      <Main>{children}</Main>
+      <Main id="main">{children}</Main>
       <Footer />
     </>
   )

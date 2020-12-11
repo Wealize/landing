@@ -31,7 +31,7 @@ import CDTIIcon from '../icons/grants/CDTIIcon'
 import InnovationPymeIcon from '../icons/grants/InnovationPymeIcon'
 const Footer = () => {
   return (
-    <Container>
+    <Container id="footer">
       <ContainerLogo>
         <WealizeWhiteNormalMediumIcon />
       </ContainerLogo>
