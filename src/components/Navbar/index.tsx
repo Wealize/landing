@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
+import Scroll from 'react-scroll'
 
-import { HOME_HREF, CONTACT_HREF, PROFILE_HREF } from '../../constants/hrefs'
+import { HOME_HREF, PROFILE_HREF } from '../../constants/hrefs'
 import {
   Navbar,
   LogoMobileContainer,
@@ -19,6 +20,13 @@ const NavBar = () => {
   useScrollPosition(({ prevPos, currPos }) => {
     setVisible(prevPos.y < currPos.y || (currPos.y >= 0 && currPos.y <= 5))
   })
+
+  const scrollToFooter = () => {
+    Scroll.animateScroll.scrollTo(
+      document.getElementById('main').clientHeight,
+      { duration: 1000, delay: 0, smooth: true }
+    )
+  }
 
   return (
     <Navbar id="navbar" isVisible={visible}>
@@ -44,11 +52,14 @@ const NavBar = () => {
             Profile
           </NavLink>
         </Link>
-        <Link href={CONTACT_HREF}>
-          <NavLink aria-label="Contact" data-cy="nav-contact-link">
-            Contact
-          </NavLink>
-        </Link>
+
+        <NavLink
+          aria-label="Contact"
+          data-cy="nav-contact-link"
+          onClick={scrollToFooter}
+        >
+          Contact
+        </NavLink>
       </LinksContainer>
     </Navbar>
   )

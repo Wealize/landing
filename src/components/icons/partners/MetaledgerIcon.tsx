@@ -43,4 +43,4 @@ const MetaledgerIcon = (props: React.SVGProps<SVGSVGElement>) => {
   )
 }
 
-export default MetaledgerIcon
+export default React.memo(MetaledgerIcon)

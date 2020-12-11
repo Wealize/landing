@@ -380,4 +380,4 @@ const UniversityLoyolaIcon = (props: React.SVGProps<SVGSVGElement>) => {
   )
 }
 
-export default UniversityLoyolaIcon
+export default React.memo(UniversityLoyolaIcon)
