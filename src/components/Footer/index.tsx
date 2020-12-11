@@ -70,17 +70,17 @@ const Footer = () => {
             href="https://www.linkedin.com/company/wealizedigital/"
             passHref
           >
-            <Social target="_blank">
+            <Social target="_blank" rel="noreferrer">
               <LinkedinIcon />
             </Social>
           </Link>
           <Link href="https://twitter.com/wealizedigital" passHref>
-            <Social target="_blank">
+            <Social target="_blank" rel="noreferrer">
               <TwitterIcon />
             </Social>
           </Link>
           <Link href="https://dev.to/wealize" passHref>
-            <Social target="_blank">
+            <Social target="_blank" rel="noreferrer">
               <DevtoIcon />
             </Social>
           </Link>
@@ -106,17 +106,17 @@ const Footer = () => {
               href="https://www.linkedin.com/company/wealizedigital/"
               passHref
             >
-              <Social target="_blank">
+              <Social target="_blank" rel="noreferrer">
                 <LinkedinIcon />
               </Social>
             </Link>
             <Link href="https://twitter.com/wealizedigital" passHref>
-              <Social target="_blank">
+              <Social target="_blank" rel="noreferrer">
                 <TwitterIcon />
               </Social>
             </Link>
             <Link href="https://dev.to/wealize" passHref>
-              <Social target="_blank">
+              <Social target="_blank" rel="noreferrer">
                 <DevtoIcon />
               </Social>
             </Link>
