@@ -31,7 +31,7 @@ const projects: CardRounded[] = [
     description:
       'Created our own flexible infrastructure for developers that allows the conversational ecosystems of large organizations and startups to scale orchestrating all conversational channels, NLP engines and data sources to their business processes.',
     link: {
-      url: '#',
+      url: 'https://talk.coloq.io/',
       text: 'Coloq.io',
       color: 'rgba(255,255,255,.7)'
     },
@@ -80,7 +80,7 @@ const projects: CardRounded[] = [
     description:
       'Developed a platform to deploy a chatbot constellation helping US immigration lawyers to connect with potential clients via Facebook Messenger, WhatsApp Business and webchat with expert knowledge of legal language ',
     link: {
-      url: '#',
+      url: 'https://yotengo.bot/',
       text: 'Yotengo.bot',
       color: '#6666ff'
     },

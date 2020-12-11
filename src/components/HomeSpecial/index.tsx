@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import Lottie from 'react-lottie'
+import Scroll from 'react-scroll'
 
 import RoundArrowIcon from '../icons/RoundArrowIcon'
 import {
@@ -15,15 +16,23 @@ import animationStartedWealize from '../../animations/w-started-wealize-light-gr
 const HomeSpecial = () => {
   const containerRef = useRef(null)
   const buttonScrollRef = useRef(null)
+  const BREAKPOINT_LG_PX = 992
 
   const scrollToNextElement = () => {
     const navbarHeight = document.getElementById('navbar').clientHeight
     const buttonMiddleHeight = buttonScrollRef.current.clientHeight / 2
 
-    if (navbarHeight) {
-      window.scrollTo(
-        0,
-        containerRef.current.clientHeight + navbarHeight + buttonMiddleHeight
+    if (!navbarHeight) return false
+
+    if (window.innerWidth < BREAKPOINT_LG_PX) {
+      Scroll.animateScroll.scrollTo(
+        containerRef.current.clientHeight + navbarHeight + 2,
+        { duration: 1000, delay: 0, smooth: true }
+      )
+    } else {
+      Scroll.animateScroll.scrollTo(
+        containerRef.current.clientHeight + navbarHeight + buttonMiddleHeight,
+        { duration: 1000, delay: 0, smooth: true }
       )
     }
   }
