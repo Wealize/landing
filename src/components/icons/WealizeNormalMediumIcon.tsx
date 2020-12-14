@@ -4,8 +4,8 @@ const WealizeNormalMediumIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="7em"
-      height="3em"
+      width="100%"
+      height="100%"
       viewBox="0 0 130 27.463"
       {...props}
     >

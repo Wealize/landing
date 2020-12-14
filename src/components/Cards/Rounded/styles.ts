@@ -85,8 +85,12 @@ export const Title = styled.h5`
   font-weight: bold;
   padding: 0 0 ${singlePx()} 0;
 
+  ${media.greaterThan('md')`
+    font-size: 1.2rem;
+  `};
+
   ${media.greaterThan('lg')`
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   `};
 `
 
@@ -94,8 +98,12 @@ export const Description = styled.p`
   line-height: 1.5;
   font-size: 1rem;
 
-  ${media.greaterThan('lg')`
+  ${media.greaterThan('md')`
     font-size: 1.2rem;
+  `};
+
+  ${media.greaterThan('lg')`
+    font-size: 1.5rem;
   `};
 `
 
@@ -115,6 +123,10 @@ export const LinkAnchor = styled.a<{ color: string }>`
   font-size: 1.2rem;
   margin-right: ${thirdPx()};
   color: ${({ color }) => color};
+
+  ${media.greaterThan('lg')`
+    font-size: 1.5rem;
+  `};
 `
 
 export const TagsContainer = styled.div`
