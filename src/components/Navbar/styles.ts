@@ -40,6 +40,11 @@ export const LogoContainer = styled.div`
 
   ${media.greaterThan('md')`
     display: block;
+    width: 130px;
+  `}
+
+  ${media.greaterThan('lg')`
+    width: 150px;
   `}
 `
 
@@ -61,4 +66,8 @@ export const NavLink = styled.a`
   ${media.greaterThan('md')`
     font-size: 1.2rem;
   `}
+
+  ${media.greaterThan('lg')`
+    font-size: 1.5rem;
+  `};
 `
