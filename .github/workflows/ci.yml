@@ -58,18 +58,21 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 10.x
-      - name: yarn install, build
-        run: |
-          yarn install
-          yarn build
+      - name: yarn install
+        run: yarn install
         env:
           NODE_ENV: development
 
+      - name: yarn build
+        run: yarn build
+        env:
+          NODE_ENV: production
 
       - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.4.x
           lhci autorun
         env:
+          NODE_ENV: production
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
 
