@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 import Scroll from 'react-scroll'
 
@@ -16,6 +17,7 @@ import WealizeNormalMediumIcon from '../icons/WealizeNormalMediumIcon'
 
 const NavBar = () => {
   const [visible, setVisible] = useState(true)
+  const router = useRouter()
 
   useScrollPosition(({ prevPos, currPos }) => {
     setVisible(prevPos.y < currPos.y || (currPos.y >= 0 && currPos.y <= 5))
@@ -27,6 +29,8 @@ const NavBar = () => {
       { duration: 1000, delay: 0, smooth: true }
     )
   }
+
+  const isCurrentPage = (url: string) => url === router.pathname
 
   return (
     <Navbar id="navbar" isVisible={visible}>
@@ -48,7 +52,11 @@ const NavBar = () => {
 
       <LinksContainer>
         <Link href={PROFILE_HREF}>
-          <NavLink aria-label="Profile" data-cy="nav-profile-link">
+          <NavLink
+            aria-label="Profile"
+            data-cy="nav-profile-link"
+            isCurrentPage={isCurrentPage(PROFILE_HREF)}
+          >
             Profile
           </NavLink>
         </Link>
@@ -57,6 +65,7 @@ const NavBar = () => {
           aria-label="Contact"
           data-cy="nav-contact-link"
           onClick={scrollToFooter}
+          isCurrentPage={isCurrentPage('')}
         >
           Contact
         </NavLink>
