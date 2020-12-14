@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [Add PWA support](https://wealize.atlassian.net/browse/WLZAA-39)
 - [Add Footer and Buttons components](https://wealize.atlassian.net/browse/WLZAA-34)
 - [Add Partners (Prefooter) component](https://wealize.atlassian.net/browse/WLZAA-36)
 - [Add Lighthouse CI](https://wealize.atlassian.net/browse/WLZAA-37)
