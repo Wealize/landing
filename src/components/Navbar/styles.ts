@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { WHITE, DARK_GRAY, LIGHT_GRAY } from '../../theme/color'
+import { WHITE, DARK_GRAY, LIGHT_GRAY, ACCENT } from '../../theme/color'
 import { halfPx, singlePx, triplePx } from '../../theme/space'
 import { media } from '../../theme/media'
 
@@ -55,13 +55,20 @@ export const LinksContainer = styled.div`
   justify-content: center;
 `
 
-export const NavLink = styled.a`
+export const NavLink = styled.a<{ isCurrentPage: boolean }>`
   text-decoration: none;
   color: ${DARK_GRAY};
   margin: 0 ${halfPx()};
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
+  transition: border-bottom 0.7s;
+  border-bottom: 3px solid
+    ${({ isCurrentPage }) => (!isCurrentPage ? 'transparent' : ACCENT)};
+
+  &:hover {
+    border-bottom: 3px solid ${ACCENT};
+  }
 
   ${media.greaterThan('md')`
     font-size: 1.2rem;
