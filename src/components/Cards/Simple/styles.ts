@@ -5,6 +5,7 @@ import {
   singlePx,
   doublePx,
   doubleAndHalfPx,
+  triplePx,
   quadruplePx
 } from '../../../theme/space'
 import { media } from '../../../theme/media'
@@ -15,15 +16,11 @@ export const Container = styled.div`
   padding: ${doubleAndHalfPx()} ${singlePx()};
 
   ${media.greaterThan('md')`
-    padding: ${singlePx()} ${doublePx()};
+    padding: ${triplePx()} ${doublePx()};
   `};
 
   ${media.greaterThan('lg')`
-    padding: ${doubleAndHalfPx()} ${doublePx()};
-  `};
-
-  ${media.greaterThan('xl')`
-    padding: ${doubleAndHalfPx()} ${quadruplePx()};
+    padding: ${quadruplePx()};
   `};
 `
 
