@@ -75,19 +75,21 @@ const Footer = () => {
             </Social>
           </Link>
           <Link href="https://twitter.com/wealizedigital" passHref>
-            <Social target="_blank" rel="noreferrer">
+            <Social target="_blank" aria-label="Twitter" rel="noreferrer">
               <TwitterIcon />
             </Social>
           </Link>
           <Link href="https://dev.to/wealize" passHref>
-            <Social target="_blank" rel="noreferrer">
+            <Social target="_blank" aria-label="Dev.to" rel="noreferrer">
               <DevtoIcon />
             </Social>
           </Link>
         </ContainerSocialMobile>
         <ContainerPrivacyCopyright>
           <Link href="">
-            <PrivacyLegalLink>Privacy & Legal</PrivacyLegalLink>
+            <PrivacyLegalLink aria-label="Privacy & Legal">
+              Privacy & Legal
+            </PrivacyLegalLink>
           </Link>
           <CopyrightText>Wealize 2020. All Rights Reserved.</CopyrightText>
         </ContainerPrivacyCopyright>

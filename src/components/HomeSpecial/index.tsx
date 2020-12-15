@@ -58,7 +58,7 @@ const HomeSpecial = () => {
         </SubHeadline>
         <Button
           onClick={scrollToNextElement}
-          name="scroll-button"
+          aria-label="scroll-button"
           ref={buttonScrollRef}
         >
           <RoundArrowIcon />
