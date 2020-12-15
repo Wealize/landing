@@ -11,11 +11,11 @@ const Index = (): JSX.Element => (
   <>
     <HomeSpecial />
 
-    <SimpleCard
-      text={
-        'We are a digital product studio with the upper hand in blockchain, conversational agents, cognitives services, mobile apps and web development'
-      }
-    />
+    <SimpleCard>
+      We are a digital product studio with the upper hand in blockchain,
+      conversational agents, cognitives services, mobile apps and web
+      development
+    </SimpleCard>
 
     <section>
       {projects.map((project: CardRounded, index: number) => (

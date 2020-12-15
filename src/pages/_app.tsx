@@ -5,7 +5,7 @@ import * as Sentry from '@sentry/browser'
 import { Integrations } from '@sentry/tracing'
 
 import Global from '../components/Global'
-import { Head } from '../components/layout/Head'
+import { Head } from '../components/layout/Head/Head'
 import Layout from '../components/layout/Layout'
 
 Sentry.init({
