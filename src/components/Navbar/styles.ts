@@ -66,15 +66,15 @@ export const NavLink = styled.a<{ isCurrentPage: boolean }>`
   border-bottom: 3px solid
     ${({ isCurrentPage }) => (!isCurrentPage ? 'transparent' : ACCENT)};
 
-  &:hover {
-    border-bottom: 3px solid ${ACCENT};
-  }
-
   ${media.greaterThan('md')`
     font-size: 1.2rem;
   `}
 
   ${media.greaterThan('lg')`
     font-size: 1.5rem;
+
+    &:hover {
+      border-bottom: 3px solid ${ACCENT};
+    }
   `};
 `

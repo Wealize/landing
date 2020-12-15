@@ -5,7 +5,7 @@ import SimpleCard from './index'
 
 describe('<SimpleCard />', () => {
   const cardProps = {
-    text:
+    children:
       'We are a digital product studio with the upper hand in blockchain, conversational agents, cognitives services, mobile apps and web development'
   }
   const wrapper = mount(<SimpleCard {...cardProps} />)
@@ -15,6 +15,6 @@ describe('<SimpleCard />', () => {
   })
 
   it('should render h3 text content correctly', () => {
-    expect(wrapper.find('h3').text()).toEqual(cardProps.text)
+    expect(wrapper.find('h3').text()).toEqual(cardProps.children)
   })
 })

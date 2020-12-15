@@ -3,12 +3,13 @@ import React from 'react'
 import { Container, Text } from './styles'
 
 interface CardProps {
-  text: string
+  children?: string
 }
-const SimpleCard = ({ text }: CardProps) => {
+
+const SimpleCard = ({ children }: CardProps) => {
   return (
     <Container>
-      <Text>{text}</Text>
+      <Text>{children}</Text>
     </Container>
   )
 }
