@@ -26,10 +26,16 @@ const ButtonRounded = ({
       textColor={textColor}
       accentColor={accentColor}
     >
-      <ContainerButtonOriginal backgroundColor={backgroundColor}>
+      <ContainerButtonOriginal
+        backgroundColor={backgroundColor}
+        name={children}
+      >
         <Content textColor={textColor}>{children}</Content>
       </ContainerButtonOriginal>
-      <ContainerButtonAnimated accentColor={accentColor}>
+      <ContainerButtonAnimated
+        accentColor={accentColor}
+        name={`${children} animated`}
+      >
         <Content textColor={textColor}>{children}</Content>
       </ContainerButtonAnimated>
     </Container>
