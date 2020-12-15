@@ -8,7 +8,7 @@ module.exports = {
       numberOfRuns: 2
     },
     assert: {
-      preset: 'lighthouse:pwa'
+      preset: 'lighthouse:recommended'
     },
     upload: {
       /* Add configuration here */
