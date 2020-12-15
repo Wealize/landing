@@ -28,13 +28,13 @@ const ButtonRounded = ({
     >
       <ContainerButtonOriginal
         backgroundColor={backgroundColor}
-        name={children}
+        aria-label={children}
       >
         <Content textColor={textColor}>{children}</Content>
       </ContainerButtonOriginal>
       <ContainerButtonAnimated
         accentColor={accentColor}
-        name={`${children} animated`}
+        aria-label={`${children} animated`}
       >
         <Content textColor={textColor}>{children}</Content>
       </ContainerButtonAnimated>

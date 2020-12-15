@@ -79,7 +79,7 @@ export const Content = styled.div`
   flex-direction: column;
 `
 
-export const Title = styled.h5`
+export const Title = styled.h4`
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: bold;
