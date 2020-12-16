@@ -7,8 +7,8 @@ module.exports = {
       url: [
         'http://localhost:3000',
         'http://localhost:3000/profile',
-        'http://localhost:3000/cdti',
-        'http://localhost:3000/innovative-sme'
+        'http://localhost:3000/grants/cdti',
+        'http://localhost:3000/grants/innovative-sme'
       ],
       numberOfRuns: 2
     },
