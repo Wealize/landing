@@ -14,6 +14,7 @@ import { media } from '../../theme/media'
 
 export const Container = styled.section`
   padding: ${doubleAndHalfPx()} ${singlePx()};
+  min-height: 100vh;
 
   ${media.greaterThan('md')`
     padding: ${triplePx()} ${doublePx()};
@@ -34,7 +35,7 @@ export const Container = styled.section`
     padding-top: ${quadruplePx()};
     padding-bottom: ${quadruplePx()};
     padding-left: ${quadruplePx()};
-    padding-right: ${quadruple() * 10}px;
+    padding-right: ${quadruple() * 7}px;
   `};
 `
 
@@ -44,6 +45,7 @@ export const Content = styled.article`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 
   ${media.greaterThan('md')`
     font-size: 1.2rem;
