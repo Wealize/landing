@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonRounded /> wrapper: should render 1`] = `
+<styled.div
+  animatedBackground="#6666ff"
+  animatedTextColor="#ffffff"
+  backgroundColor="#3c3c3b"
+  onClick={[Function]}
+  size={
+    Object {
+      "desktop": Array [
+        170,
+        50,
+      ],
+      "mobile": Array [
+        90,
+        50,
+      ],
+      "tablet": Array [
+        150,
+        50,
+      ],
+      "wide": Array [
+        190,
+        50,
+      ],
+    }
+  }
+  textColor="#ffffff"
+>
+  <styled.button
+    aria-label="Test text"
+    backgroundColor="#3c3c3b"
+  >
+    <styled.span
+      textColor="#ffffff"
+    >
+      Test text
+    </styled.span>
+  </styled.button>
+  <styled.button
+    animatedBackground="#6666ff"
+    aria-label="Test text animated"
+  >
+    <styled.span
+      textColor="#ffffff"
+    >
+      Test text
+    </styled.span>
+  </styled.button>
+</styled.div>
+`;

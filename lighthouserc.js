@@ -4,12 +4,7 @@ module.exports = {
       /* Add configuration here */
       startServerCommand: 'yarn start',
       startServerReadyPattern: 'ready on',
-      url: [
-        'http://localhost:3000',
-        'http://localhost:3000/profile',
-        'http://localhost:3000/grants/cdti',
-        'http://localhost:3000/grants/innovative-sme'
-      ],
+      url: ['http://localhost:3000', 'http://localhost:3000/profile'],
       numberOfRuns: 2
     },
     assert: {
