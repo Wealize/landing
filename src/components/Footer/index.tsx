@@ -30,6 +30,7 @@ import TwitterIcon from '../icons/social/TwitterIcon'
 import DevtoIcon from '../icons/social/DevtoIcon'
 import CDTIIcon from '../icons/grants/CDTIIcon'
 import InnovationPymeIcon from '../icons/grants/InnovationPymeIcon'
+import { CDTI_HREF, INNOVATION_SME_HREF } from '../../constants/hrefs'
 const Footer = () => {
   return (
     <Container id="footer">
@@ -104,14 +105,14 @@ const Footer = () => {
         <ContainerGrantsAndSocials>
           <ContainerGrants>
             <Grant>
-              <Link href="/grants/cdti" passHref>
+              <Link href={CDTI_HREF} passHref>
                 <a aria-label="CDTI">
                   <CDTIIcon />
                 </a>
               </Link>
             </Grant>
             <Grant>
-              <Link href="/grants/innovative-sme" passHref>
+              <Link href={INNOVATION_SME_HREF} passHref>
                 <a aria-label="Innovation Pyme">
                   <InnovationPymeIcon />
                 </a>

@@ -7,7 +7,8 @@ import {
   singlePx,
   doublePx,
   triplePx,
-  quadruplePx
+  quadruplePx,
+  quadruple
 } from '../../theme/space'
 import { media } from '../../theme/media'
 
@@ -20,6 +21,20 @@ export const Container = styled.section`
 
   ${media.greaterThan('lg')`
     padding: ${quadruplePx()};
+  `};
+
+  ${media.greaterThan('xl')`
+    padding-top: ${quadruplePx()};
+    padding-bottom: ${quadruplePx()};
+    padding-left: ${quadruplePx()};
+    padding-right: ${quadruple() * 5}px;
+  `};
+
+  ${media.greaterThan('xxl')`
+    padding-top: ${quadruplePx()};
+    padding-bottom: ${quadruplePx()};
+    padding-left: ${quadruplePx()};
+    padding-right: ${quadruple() * 10}px;
   `};
 `
 
