@@ -279,6 +279,14 @@ export const Grant = styled.div`
   align-items: center;
   margin-bottom: ${singlePx()};
 
+  & a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   ${media.greaterThan('md')`
     width: 50%;
     margin-bottom: 0;

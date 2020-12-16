@@ -10,5 +10,6 @@ module.exports = {
     '<rootDir>/__tests__/__mocks__',
     '<rootDir>/node_modules/'
   ],
-  setupFilesAfterEnv: ['<rootDir>/setupTest.ts', 'jest-canvas-mock']
+  setupFilesAfterEnv: ['<rootDir>/setupTest.ts', 'jest-canvas-mock'],
+  snapshotSerializers: ['enzyme-to-json/serializer']
 }

@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import WealizeWhiteNormalMediumIcon from '../icons/WealizeWhiteNormalMediumIcon'
 import ButtonRounded from '../Buttons/Rounded/'
+import { MEDIUM } from '../Buttons/Rounded/sizes'
 import {
   Container,
   ContainerContent,
@@ -44,7 +45,10 @@ const Footer = () => {
           <ButtonRounded
             backgroundColor={DARK_GRAY}
             textColor={WHITE}
-            accentColor={ACCENT}
+            animatedBackground={ACCENT}
+            animatedTextColor={WHITE}
+            size={MEDIUM}
+            handleClick={null}
           >
             Get in touch
           </ButtonRounded>
@@ -57,7 +61,10 @@ const Footer = () => {
           <ButtonRounded
             backgroundColor={DARK_GRAY}
             textColor={WHITE}
-            accentColor={ACCENT}
+            animatedBackground={ACCENT}
+            animatedTextColor={WHITE}
+            size={MEDIUM}
+            handleClick={null}
           >
             Work with us
           </ButtonRounded>
@@ -97,10 +104,18 @@ const Footer = () => {
         <ContainerGrantsAndSocials>
           <ContainerGrants>
             <Grant>
-              <CDTIIcon />
+              <Link href="/grants/cdti" passHref>
+                <a aria-label="CDTI">
+                  <CDTIIcon />
+                </a>
+              </Link>
             </Grant>
             <Grant>
-              <InnovationPymeIcon />
+              <Link href="/grants/innovative-sme" passHref>
+                <a aria-label="Innovation Pyme">
+                  <InnovationPymeIcon />
+                </a>
+              </Link>
             </Grant>
           </ContainerGrants>
           <ContainerSocial>

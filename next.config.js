@@ -19,3 +19,9 @@ module.exports = withPWA({
     dest: 'public'
   }
 })
+
+module.exports = {
+  images: {
+    deviceSizes: [480, 576, 768, 992, 1366, 1600]
+  }
+}
