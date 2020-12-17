@@ -45,13 +45,13 @@ const InnovativeSME = (): JSX.Element => (
       </LogosContainer>
       <BottomContainer>
         <FinancingContent>
-          Financiado por los Presupuestos Generales del Estado a cargo de la
-          aplicación 27.12.467C.74908.
+          Financed by the General State Budgets in charge of the application
+          27.12.467C.74908.
         </FinancingContent>
         <ProjectContent>
-          Nº DE PROYECTO: XXXXXXX <br />
-          FECHA COMIENZO: XX/XX/XXXX <br />
-          FECHA FINAL: XX/XX/XXXX
+          Nº OF THE PROJECT: XXXXXXX <br />
+          START DATE: XX/XX/XXXX <br />
+          END DATE: XX/XX/XXXX
         </ProjectContent>
       </BottomContainer>
     </Content>
