@@ -2,7 +2,7 @@ import { CardRounded } from '../interfaces/CardRounded'
 
 const projects: CardRounded[] = [
   {
-    imageUrl: '/img/projects/odos.jpg',
+    imageUrl: '/img/projects/odos.jpeg',
     title: 'The ODOS Network',
     description:
       'Developed a blockchain-based platform that provides identity proofing for women and children migrants and manages sensitive data',
@@ -17,7 +17,7 @@ const projects: CardRounded[] = [
     hasPrimary: true
   },
   {
-    imageUrl: '/img/projects/polder.jpg',
+    imageUrl: '/img/projects/polder.jpeg',
     title: 'The ITEA POLDER project',
     description:
       'Partnership with 15 more organizations across 4 European countries to build a decentralized data hub for Smart Cities to audit and monetize data with FiWARE and Hyperledger Fabric',
@@ -26,7 +26,7 @@ const projects: CardRounded[] = [
     hasPrimary: false
   },
   {
-    imageUrl: '/img/projects/coloqio.jpg',
+    imageUrl: '/img/projects/coloqio.jpeg',
     title: 'Coloq.io',
     description:
       'Created our own flexible infrastructure for developers that allows the conversational ecosystems of large organizations and startups to scale orchestrating all conversational channels, NLP engines and data sources to their business processes.',
@@ -39,7 +39,7 @@ const projects: CardRounded[] = [
     hasPrimary: true
   },
   {
-    imageUrl: '/img/projects/metaledger.jpg',
+    imageUrl: '/img/projects/metaledger.jpeg',
     title: 'Metaledger',
     description:
       'Design and development of an ecosystem of apps and IoT devices to provide end-to-end traceability of gold and other precious metals from artisanal and small-scale mines (ASM) in the third world to wholesalers in the first world',
@@ -48,7 +48,7 @@ const projects: CardRounded[] = [
     hasPrimary: false
   },
   {
-    imageUrl: '/img/projects/maldita.jpg',
+    imageUrl: '/img/projects/maldita.jpeg',
     title: 'Maldita',
     description:
       'Deployment of a WhatsApp Business Chatbot integrated with the Spanish fact-checking platform focused on combating the spread of disinformation in order to expand their service’s reach',
@@ -57,7 +57,7 @@ const projects: CardRounded[] = [
     hasPrimary: true
   },
   {
-    imageUrl: '/img/projects/pdc.jpg',
+    imageUrl: '/img/projects/pdc.jpeg',
     title: 'DisasterAWARE',
     description:
       'Development of a Natural Language Processing (NLP) engine to process global unstructured data and hazard-related news to make them useful by the early warning and multi-hazard monitoring platform',
@@ -66,7 +66,7 @@ const projects: CardRounded[] = [
     hasPrimary: false
   },
   {
-    imageUrl: '/img/projects/MedecinsSansFrontieres.jpg',
+    imageUrl: '/img/projects/MedecinsSansFrontieres.jpeg',
     title: 'Médecins Sans Frontières',
     description:
       'Design and development of a fully mobile- and offline-first platform to manage logistics operations and monitor the internet infrastructure across all MSF field locations in order to create a common ICT network',
@@ -75,7 +75,7 @@ const projects: CardRounded[] = [
     hasPrimary: true
   },
   {
-    imageUrl: '/img/projects/yotengo.jpg',
+    imageUrl: '/img/projects/yotengo.jpeg',
     title: 'Yotengo.bot',
     description:
       'Developed a platform to deploy a chatbot constellation helping US immigration lawyers to connect with potential clients via Facebook Messenger, WhatsApp Business and webchat with expert knowledge of legal language ',
