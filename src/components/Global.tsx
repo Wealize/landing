@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
+import { DARK_GRAY } from '../theme/color'
+
 const Global = createGlobalStyle`
   * {
     box-sizing: border-box;
@@ -10,6 +12,7 @@ const Global = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     font-family: 'DM Sans', sans-serif;
     scroll-behavior: smooth;
+    color: ${DARK_GRAY};
   }
 
   a, button {

@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import WealizeWhiteNormalMediumIcon from '../icons/WealizeWhiteNormalMediumIcon'
 import ButtonRounded from '../Buttons/Rounded/'
+import { MEDIUM } from '../Buttons/Rounded/sizes'
 import {
   Container,
   ContainerContent,
@@ -29,6 +30,7 @@ import TwitterIcon from '../icons/social/TwitterIcon'
 import DevtoIcon from '../icons/social/DevtoIcon'
 import CDTIIcon from '../icons/grants/CDTIIcon'
 import InnovationPymeIcon from '../icons/grants/InnovationPymeIcon'
+import { CDTI_HREF, INNOVATION_SME_HREF } from '../../constants/hrefs'
 const Footer = () => {
   return (
     <Container id="footer">
@@ -44,7 +46,9 @@ const Footer = () => {
           <ButtonRounded
             backgroundColor={DARK_GRAY}
             textColor={WHITE}
-            accentColor={ACCENT}
+            animatedBackgroundColor={ACCENT}
+            animatedTextColor={WHITE}
+            size={MEDIUM}
           >
             Get in touch
           </ButtonRounded>
@@ -57,7 +61,9 @@ const Footer = () => {
           <ButtonRounded
             backgroundColor={DARK_GRAY}
             textColor={WHITE}
-            accentColor={ACCENT}
+            animatedBackgroundColor={ACCENT}
+            animatedTextColor={WHITE}
+            size={MEDIUM}
           >
             Work with us
           </ButtonRounded>
@@ -97,10 +103,18 @@ const Footer = () => {
         <ContainerGrantsAndSocials>
           <ContainerGrants>
             <Grant>
-              <CDTIIcon />
+              <Link href={CDTI_HREF} passHref>
+                <a aria-label="CDTI">
+                  <CDTIIcon />
+                </a>
+              </Link>
             </Grant>
             <Grant>
-              <InnovationPymeIcon />
+              <Link href={INNOVATION_SME_HREF} passHref>
+                <a aria-label="Innovation Pyme">
+                  <InnovationPymeIcon />
+                </a>
+              </Link>
             </Grant>
           </ContainerGrants>
           <ContainerSocial>

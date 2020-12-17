@@ -13,6 +13,12 @@ const nextConfig = {
 
 module.exports = nextConfig
 
+module.exports = {
+  images: {
+    deviceSizes: [480, 576, 768, 992, 1366, 1600]
+  }
+}
+
 module.exports = withPWA({
   pwa: {
     disable: process.env.NODE_ENV === 'development',

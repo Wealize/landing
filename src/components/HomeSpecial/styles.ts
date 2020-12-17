@@ -29,14 +29,28 @@ export const Container = styled.div`
 `
 
 export const Background = styled.div`
-  width: 100%;
-  height: 80%;
+  width: 200%;
+  height: 70%;
   position: absolute;
-  bottom: 0;
-  right: 0%;
+  bottom: 0%;
+  right: -110%;
+
+  ${media.greaterThan('md')`
+    height: 75%;
+  `};
 
   ${media.greaterThan('lg')`
     height: 100%;
+    right: -100%;
+    top: 10%;
+  `};
+
+  ${media.greaterThan('xl')`
+    right: -80%;
+  `};
+
+  ${media.greaterThan('xxl')`
+    right: -85%;
   `};
 `
 
@@ -52,6 +66,7 @@ export const Button = styled.button`
   right: 10%;
   outline: none;
   cursor: pointer;
+  z-index: 2;
 
   ${media.greaterThan('md')`
     bottom: 85%;
@@ -62,6 +77,10 @@ export const Button = styled.button`
   ${media.greaterThan('lg')`
     bottom: -10%;
     right: -20%;
+  `};
+
+  ${media.greaterThan('xl')`
+    right: -25%;
   `};
 `
 
@@ -91,6 +110,8 @@ export const Slogan = styled.div`
   `};
 
   ${media.greaterThan('xl')`
+    min-height: 550px;
+    width: 70%;
     padding: ${triplePx()} ${quadruplePx()};
   `};
 `
@@ -106,6 +127,10 @@ export const Headline = styled.h1`
 
   ${media.greaterThan('lg')`
     font-size: 2rem;
+  `};
+
+  ${media.greaterThan('xl')`
+    font-size: 2.5rem;
   `};
 `
 
@@ -126,5 +151,6 @@ export const SubHeadline = styled.h2`
 
   ${media.greaterThan('xl')`
     width: 80%;
+    font-size: 4rem;
   `};
 `
