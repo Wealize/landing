@@ -15,22 +15,23 @@ import {
 const InnovativeSME = (): JSX.Element => (
   <Container>
     <Content>
-      <Title>Proyecto financiado Pyme Innovadora</Title>
+      <Title>Innovative SMEs Stamp</Title>
       <Description>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+          The Ministry of Economy and Competitiveness of the Spanish Government
+          has awarded us the Innovative SME Stamp. At Wealize (formally The Neon
+          Project), we are committed to the development of digital products that
+          enable us to overcome challenges through technology, and we believe
+          that innovation is one of the most important paths to growth.
         </p>
         <p>
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum. Donec elementum ligula eu
-          sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis
-          sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida
-          et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra
+          For all these reasons, this recognition adds an extra dimension to the
+          R&D we have been developing. It also encourages us to go even deeper
+          into the areas of greatest technological interest from the point of
+          view of innovation: digital identity and other solutions based on
+          blockchain; the development of conversational agents as a method of
+          communication and business support; and the use of tools based on
+          cognitive services that allow complex problems to be solved.
         </p>
       </Description>
       <LogosContainer>

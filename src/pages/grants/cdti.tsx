@@ -16,22 +16,21 @@ import {
 const CDTI = (): JSX.Element => (
   <Container>
     <Content>
-      <Title>Proyecto financiado por CDTI</Title>
+      <Title>Project Financed by CDTI</Title>
       <Description>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+          Wealize (formally The Neon Project) was awarded a CDTI grant in one of
+          its most important programmes in 2019: NEOTEC, an initiative to
+          support the creation and consolidation of technology-based companies.
+          This has meant the validation and support of the R&D work in one of
+          the projects being developed by the company: Metaledger.
         </p>
         <p>
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum. Donec elementum ligula eu
-          sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis
-          sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida
-          et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra
+          At Wealize, we help organisations to overcome challenges through
+          technology. That is why we develop digital products based on
+          blockchain, cognitive services and conversational agents. In this
+          sense, Metaledger is a traceability solution for gold and other
+          high-value metals that are mined in difficult environments.
         </p>
       </Description>
       <LogosContainer>
