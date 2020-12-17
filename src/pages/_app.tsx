@@ -38,11 +38,6 @@ const ExtendedApp = (props: AppProps) => {
     router.events.on('routeChangeStart', () => {
       const html = document.querySelector('html')
       html.style.scrollBehavior = 'auto'
-      window.scrollTo({
-        top: 2,
-        left: 0,
-        behavior: "auto"
-      });
     })
 
     router.events.on('routeChangeComplete', () => {
