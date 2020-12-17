@@ -34,11 +34,12 @@ const ExtendedApp = (props: AppProps) => {
   const { layoutOptions = DEFAULT_LAYOUT_OPTIONS } = pageProps
 
   useEffect(() => {
+
     router.events.on('routeChangeStart', () => {
       const html = document.querySelector('html')
       html.style.scrollBehavior = 'auto'
       window.scrollTo({
-        top: 0,
+        top: 2,
         left: 0,
         behavior: "auto"
       });
@@ -48,6 +49,7 @@ const ExtendedApp = (props: AppProps) => {
       const html = document.querySelector('html')
       html.style.scrollBehavior = 'smooth'
     })
+
   }, [])
 
 
