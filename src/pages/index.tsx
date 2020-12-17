@@ -6,6 +6,7 @@ import RoundedCard from '../components/Cards/Rounded'
 import { CardRounded } from '../interfaces/CardRounded'
 import HomeSpecial from '../components/HomeSpecial'
 import Partners from '../components/Partners'
+import { LayoutOptions } from '../interfaces/Page'
 
 const Index = (): JSX.Element => (
   <>
@@ -34,5 +35,16 @@ const Index = (): JSX.Element => (
     <Partners />
   </>
 )
+
+export const getStaticProps = async (): Promise<{
+  props: { layoutOptions: LayoutOptions }
+}> => {
+  const layoutOptions: LayoutOptions = {
+    showFooter: true,
+    showNavigationBarClosablePage: false
+  }
+
+  return { props: { layoutOptions } }
+}
 
 export default Index

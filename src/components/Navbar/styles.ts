@@ -4,7 +4,10 @@ import { WHITE, DARK_GRAY, LIGHT_GRAY, ACCENT } from '../../theme/color'
 import { halfPx, singlePx, triplePx } from '../../theme/space'
 import { media } from '../../theme/media'
 
-export const Navbar = styled.nav<{ isVisible: boolean }>`
+export const Navbar = styled.nav<{
+  isVisible: boolean
+  showNavigationBarClosablePage: boolean
+}>`
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -16,16 +19,22 @@ export const Navbar = styled.nav<{ isVisible: boolean }>`
   top: 0;
   left: 0;
   right: 0;
-  max-height: ${triplePx()};
+  height: ${triplePx()};
   transition: all 0.4s;
   z-index: 2;
 
   transform: ${({ isVisible }) =>
     isVisible ? 'inherit' : 'translateY(-100%)'};
 
-  ${media.greaterThan('md')`
-    background-color: ${LIGHT_GRAY};
+  ${({ showNavigationBarClosablePage }) =>
+    showNavigationBarClosablePage
+      ? `border: 1.5px solid ${LIGHT_GRAY}`
+      : `border: none`};
+
+  ${({ showNavigationBarClosablePage }) => media.greaterThan('md')`
+    background-color: ${showNavigationBarClosablePage ? WHITE : LIGHT_GRAY};
     padding: ${singlePx()} ${triplePx()};
+    border: none;
   `};
 `
 
@@ -60,7 +69,7 @@ export const NavLink = styled.a<{ isCurrentPage: boolean }>`
   color: ${DARK_GRAY};
   margin: 0 ${halfPx()};
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.1rem;
   cursor: pointer;
   transition: border-bottom 0.7s;
   border-bottom: 3px solid

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { ButtonSize } from '../../../interfaces/ButtonSize'
+import { MEDIUM } from './sizes'
 import {
   Container,
   ContainerButtonOriginal,
@@ -10,21 +12,31 @@ import {
 interface ButtonProps {
   backgroundColor: string
   textColor: string
-  accentColor: string
+  animatedBackgroundColor: string
+  animatedTextColor: string
   children?: string
+  size: ButtonSize
+  handleClick?: (e?: Event) => void | null
 }
+const ButtonRounded = (props: ButtonProps) => {
+  const {
+    backgroundColor,
+    textColor,
+    animatedBackgroundColor,
+    animatedTextColor,
+    children,
+    size = MEDIUM,
+    handleClick
+  } = props
 
-const ButtonRounded = ({
-  backgroundColor,
-  textColor,
-  accentColor,
-  children
-}: ButtonProps) => {
   return (
     <Container
       backgroundColor={backgroundColor}
       textColor={textColor}
-      accentColor={accentColor}
+      animatedBackgroundColor={animatedBackgroundColor}
+      size={size}
+      animatedTextColor={animatedTextColor}
+      onClick={() => handleClick && handleClick()}
     >
       <ContainerButtonOriginal
         backgroundColor={backgroundColor}
@@ -33,7 +45,7 @@ const ButtonRounded = ({
         <Content textColor={textColor}>{children}</Content>
       </ContainerButtonOriginal>
       <ContainerButtonAnimated
-        accentColor={accentColor}
+        animatedBackgroundColor={animatedBackgroundColor}
         aria-label={`${children} animated`}
       >
         <Content textColor={textColor}>{children}</Content>

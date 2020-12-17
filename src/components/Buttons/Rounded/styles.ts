@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 import { twoThirdPx, singlePx } from '../../../theme/space'
 import { media } from '../../../theme/media'
+import { ButtonSize } from '../../../interfaces/ButtonSize'
 
 const BUTTON_SHARED_STYLES = `
   display: flex;
@@ -14,6 +15,8 @@ const BUTTON_SHARED_STYLES = `
   border: none;
   position: absolute;
   bottom: 0;
+  transition: all ease-out 0.3s;
+  cursor: pointer;
 `
 
 export const ContainerButtonOriginal = styled.button<{
@@ -23,66 +26,16 @@ export const ContainerButtonOriginal = styled.button<{
 
   top: 0;
   background-color: ${({ backgroundColor }) => backgroundColor};
-  transition: all ease-out 0.3s;
 `
 
 export const ContainerButtonAnimated = styled.button<{
-  accentColor: string
+  animatedBackgroundColor: string
 }>`
   ${BUTTON_SHARED_STYLES};
 
-  background-color: ${({ accentColor }) => accentColor};
+  background-color: ${({ animatedBackgroundColor }) => animatedBackgroundColor};
   top: 150%;
   left: 0;
-  transition: all ease-in 0.3s;
-`
-
-export const Container = styled.div<{
-  backgroundColor: string
-  textColor: string
-  accentColor: string
-}>`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 50px;
-  border: 2px solid ${({ textColor }) => textColor};
-
-  min-width: 150px;
-  min-height: 80px;
-  transition: all 0.3s;
-  position: relative;
-  overflow-y: hidden;
-  overflow-x: hidden;
-
-  &:hover {
-    border: none;
-  }
-
-  &:hover ${ContainerButtonOriginal} {
-    top: -120%;
-  }
-
-  &:hover ${ContainerButtonAnimated} {
-    top: 0%;
-    border: none;
-  }
-
-  ${media.greaterThan('md')`
-    min-width: 180px;
-  `};
-
-  ${media.greaterThan('lg')`
-    min-width: 200px;
-    min-height: 100px;
-  `};
-
-  ${media.greaterThan('xl')`
-    min-width: 250px;
-    min-height: 100px;
-  `};
 `
 
 export const Content = styled.span<{ textColor: string }>`
@@ -108,5 +61,60 @@ export const Content = styled.span<{ textColor: string }>`
 
   ${media.greaterThan('xl')`
     font-size: 1.4rem;
+  `};
+`
+
+export const Container = styled.div<{
+  backgroundColor: string
+  textColor: string
+  animatedBackgroundColor: string
+  animatedTextColor: string
+  size: ButtonSize
+}>`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50px;
+  border: 2px solid ${({ textColor }) => textColor};
+
+  min-width: ${({ size }) => size.mobile[0]}px;
+  min-height: ${({ size }) => size.mobile[1]}px;
+  transition: all 0.3s;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  cursor: pointer;
+
+  ${({ size }) => media.greaterThan('md')`
+    min-width: ${size.tablet[0]}px;
+  `};
+
+  ${({ size, animatedTextColor }) => media.greaterThan('lg')`
+    min-width: ${size.desktop[0]}px;
+    min-height: ${size.desktop[1]}px;
+
+    &:hover {
+      border: none;
+    }
+
+    &:hover ${ContainerButtonOriginal} {
+      top: -120%;
+    }
+
+    &:hover ${ContainerButtonAnimated} {
+      top: 0%;
+      border: none;
+    }
+
+    &:hover ${Content} {
+      color: ${animatedTextColor};
+    }
+  `};
+
+  ${({ size }) => media.greaterThan('xl')`
+    min-width: ${size.wide[0]}px;
+    min-height: ${size.wide[1]}px;
   `};
 `

@@ -14,6 +14,7 @@ export const Container = styled.div`
   width: 100%;
   background: ${WHITE};
   padding: ${doubleAndHalfPx()} ${singlePx()};
+  z-index: 1;
 
   ${media.greaterThan('md')`
     padding: ${triplePx()} ${doublePx()};

@@ -1,5 +1,4 @@
 import React, { useRef } from 'react'
-import Lottie from 'react-lottie'
 import Scroll from 'react-scroll'
 
 import RoundArrowIcon from '../icons/RoundArrowIcon'
@@ -11,7 +10,7 @@ import {
   Slogan,
   SubHeadline
 } from './styles'
-import animationStartedWealize from '../../animations/w-started-wealize-light-gray.json'
+import WStaticIcon from '../icons/WStaticIcon'
 
 const HomeSpecial = () => {
   const containerRef = useRef(null)
@@ -37,19 +36,10 @@ const HomeSpecial = () => {
     }
   }
 
-  const defaultLottieOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationStartedWealize,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
-
   return (
     <Container ref={containerRef}>
       <Background>
-        <Lottie options={defaultLottieOptions} width="100%" height="100%" />
+        <WStaticIcon />
       </Background>
       <Slogan>
         <Headline>Unlock today’s world</Headline>

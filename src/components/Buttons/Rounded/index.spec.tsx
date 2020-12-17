@@ -8,18 +8,23 @@ import {
   ContainerButtonAnimated,
   Content
 } from './styles'
+import { SMALL } from './sizes'
 
 describe('<ButtonRounded />', () => {
   const buttonProps = {
     backgroundColor: DARK_GRAY,
     textColor: WHITE,
-    accentColor: ACCENT,
-    children: 'Test text'
+    animatedBackgroundColor: ACCENT,
+    animatedTextColor: WHITE,
+    size: SMALL,
+    children: 'Test text',
+    handleClick: null
   }
   const wrapper = shallow(<ButtonRounded {...buttonProps} />)
 
   it('wrapper: should render', () => {
     expect(wrapper).toBeDefined()
+    expect(wrapper).toMatchSnapshot()
   })
 
   it('wrapper: should render content correctly', () => {
