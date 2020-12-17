@@ -30,7 +30,11 @@ import TwitterIcon from '../icons/social/TwitterIcon'
 import DevtoIcon from '../icons/social/DevtoIcon'
 import CDTIIcon from '../icons/grants/CDTIIcon'
 import InnovationPymeIcon from '../icons/grants/InnovationPymeIcon'
-import { CDTI_HREF, INNOVATION_SME_HREF } from '../../constants/hrefs'
+import {
+  CDTI_HREF,
+  INNOVATION_SME_HREF,
+  PRIVACY_LEGAL
+} from '../../constants/hrefs'
 const Footer = () => {
   return (
     <Container id="footer">
@@ -92,7 +96,7 @@ const Footer = () => {
           </Link>
         </ContainerSocialMobile>
         <ContainerPrivacyCopyright>
-          <Link href="">
+          <Link href={PRIVACY_LEGAL} passHref>
             <PrivacyLegalLink aria-label="Privacy & Legal">
               Privacy & Legal
             </PrivacyLegalLink>
