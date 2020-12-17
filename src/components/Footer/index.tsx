@@ -76,7 +76,7 @@ const Footer = () => {
             href="https://www.linkedin.com/company/wealizedigital/"
             passHref
           >
-            <Social target="_blank" rel="noreferrer">
+            <Social target="_blank" aria-label="Linkedin" rel="noreferrer">
               <LinkedinIcon />
             </Social>
           </Link>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Document from 'next/document'
+import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
 // https://github.com/zeit/next.js/tree/canary/examples/with-styled-components
@@ -28,6 +28,26 @@ class ExtendedDocument extends Document {
     } finally {
       sheet.seal()
     }
+  }
+
+  render () {
+    const {
+      __NEXT_DATA__: {
+        query: {
+          __lng = "en"
+        }
+      }
+    } = this.props
+
+    return (
+      <Html lang={__lng as string}>
+        <Head />
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
   }
 }
 
