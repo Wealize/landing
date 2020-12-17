@@ -2,7 +2,7 @@
 
 exports[`<ButtonRounded /> wrapper: should render 1`] = `
 <styled.div
-  animatedBackground="#6666ff"
+  animatedBackgroundColor="#6666ff"
   animatedTextColor="#ffffff"
   backgroundColor="#3c3c3b"
   onClick={[Function]}
@@ -39,7 +39,7 @@ exports[`<ButtonRounded /> wrapper: should render 1`] = `
     </styled.span>
   </styled.button>
   <styled.button
-    animatedBackground="#6666ff"
+    animatedBackgroundColor="#6666ff"
     aria-label="Test text animated"
   >
     <styled.span

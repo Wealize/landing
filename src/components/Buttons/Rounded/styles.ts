@@ -29,11 +29,11 @@ export const ContainerButtonOriginal = styled.button<{
 `
 
 export const ContainerButtonAnimated = styled.button<{
-  animatedBackground: string
+  animatedBackgroundColor: string
 }>`
   ${BUTTON_SHARED_STYLES};
 
-  background-color: ${({ animatedBackground }) => animatedBackground};
+  background-color: ${({ animatedBackgroundColor }) => animatedBackgroundColor};
   top: 150%;
   left: 0;
 `
@@ -67,7 +67,7 @@ export const Content = styled.span<{ textColor: string }>`
 export const Container = styled.div<{
   backgroundColor: string
   textColor: string
-  animatedBackground: string
+  animatedBackgroundColor: string
   animatedTextColor: string
   size: ButtonSize
 }>`

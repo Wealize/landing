@@ -15,7 +15,7 @@ import {
 import WealizeMinimalMediumIcon from '../icons/WealizeMinimalMediumIcon'
 import WealizeNormalMediumIcon from '../icons/WealizeNormalMediumIcon'
 import ButtonRounded from '../Buttons/Rounded'
-import { ACCENT, LIGHT_GRAY, WHITE } from '../../theme/color'
+import { ACCENT, WHITE } from '../../theme/color'
 import { SMALL } from '../Buttons/Rounded/sizes'
 
 interface NavbarProps {
@@ -38,8 +38,6 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
   }
 
   const isCurrentPage = (url: string) => url === router.pathname
-
-  const goToHomePage = () => router.push(HOME_HREF)
 
   return (
     <Navbar
@@ -67,11 +65,11 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
         <ButtonRounded
           backgroundColor={WHITE}
           textColor={ACCENT}
-          animatedBackground={ACCENT}
+          animatedBackgroundColor={ACCENT}
           animatedTextColor={WHITE}
           size={SMALL}
-          aria-label="Go to previous page"
-          handleClick={goToHomePage}
+          aria-label="Go to home page"
+          handleClick={() => router.push(HOME_HREF)}
         >
           Return
         </ButtonRounded>

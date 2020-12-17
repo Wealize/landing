@@ -1,8 +1,6 @@
 import React, { ReactChild } from 'react'
-import styled from 'styled-components'
 
-import { WHITE, LIGHT_GRAY } from '../../theme/color'
-import { triplePx } from '../../theme/space'
+import { Main } from './styles'
 import Footer from '../Footer'
 import Navbar from '../Navbar'
 import { LayoutOptions } from '../../interfaces/Page'
@@ -33,16 +31,5 @@ const Layout = (props: LayoutProps) => {
     </>
   )
 }
-
-export const Main = styled.main<{ showNavigationBarClosablePage: boolean }>`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: ${({ showNavigationBarClosablePage }) =>
-    showNavigationBarClosablePage ? WHITE : LIGHT_GRAY};
-  padding-top: ${triplePx()};
-  overflow-x: hidden;
-`
 
 export default React.memo(Layout)

@@ -46,10 +46,9 @@ const Footer = () => {
           <ButtonRounded
             backgroundColor={DARK_GRAY}
             textColor={WHITE}
-            animatedBackground={ACCENT}
+            animatedBackgroundColor={ACCENT}
             animatedTextColor={WHITE}
             size={MEDIUM}
-            handleClick={null}
           >
             Get in touch
           </ButtonRounded>
@@ -62,10 +61,9 @@ const Footer = () => {
           <ButtonRounded
             backgroundColor={DARK_GRAY}
             textColor={WHITE}
-            animatedBackground={ACCENT}
+            animatedBackgroundColor={ACCENT}
             animatedTextColor={WHITE}
             size={MEDIUM}
-            handleClick={null}
           >
             Work with us
           </ButtonRounded>

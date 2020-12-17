@@ -14,7 +14,7 @@ describe('<ButtonRounded />', () => {
   const buttonProps = {
     backgroundColor: DARK_GRAY,
     textColor: WHITE,
-    animatedBackground: ACCENT,
+    animatedBackgroundColor: ACCENT,
     animatedTextColor: WHITE,
     size: SMALL,
     children: 'Test text',

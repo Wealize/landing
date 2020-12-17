@@ -12,7 +12,7 @@ import {
 interface ButtonProps {
   backgroundColor: string
   textColor: string
-  animatedBackground: string
+  animatedBackgroundColor: string
   animatedTextColor: string
   children?: string
   size: ButtonSize
@@ -22,7 +22,7 @@ const ButtonRounded = (props: ButtonProps) => {
   const {
     backgroundColor,
     textColor,
-    animatedBackground,
+    animatedBackgroundColor,
     animatedTextColor,
     children,
     size = MEDIUM,
@@ -33,7 +33,7 @@ const ButtonRounded = (props: ButtonProps) => {
     <Container
       backgroundColor={backgroundColor}
       textColor={textColor}
-      animatedBackground={animatedBackground}
+      animatedBackgroundColor={animatedBackgroundColor}
       size={size}
       animatedTextColor={animatedTextColor}
       onClick={() => handleClick && handleClick()}
@@ -45,7 +45,7 @@ const ButtonRounded = (props: ButtonProps) => {
         <Content textColor={textColor}>{children}</Content>
       </ContainerButtonOriginal>
       <ContainerButtonAnimated
-        animatedBackground={animatedBackground}
+        animatedBackgroundColor={animatedBackgroundColor}
         aria-label={`${children} animated`}
       >
         <Content textColor={textColor}>{children}</Content>
