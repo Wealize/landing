@@ -13,7 +13,7 @@ module.exports = {
         'categories:seo': ['error', { minScore: 0.85 }],
         'categories:best-practices': ['error', { minScore: 0.85 }],
         'categories:accessibility': ['error', { minScore: 0.85 }],
-        'categories:pwa': ['error', { minScore: 0.9 }]
+        'categories:pwa': ['error', { minScore: 0.68 }]
       }
     },
     upload: {
