@@ -86,6 +86,7 @@ export const Container = styled.div<{
   overflow-y: hidden;
   overflow-x: hidden;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   ${({ size }) => media.greaterThan('md')`
     min-width: ${size.tablet[0]}px;
