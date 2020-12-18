@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 import { GRAY_300, LIGHT_GRAY, WHITE } from '../../theme/color'
 import {
-  halfPx,
   doubleAndHalfPx,
   singlePx,
   doublePx,
@@ -15,6 +14,10 @@ import { media } from '../../theme/media'
 export const Container = styled.section`
   min-height: 100vh;
   background-color: ${LIGHT_GRAY};
+
+  ${media.greaterThan('lg')`
+    background-color: ${WHITE};
+  `};
 `
 
 export const Content = styled.article`
@@ -37,6 +40,7 @@ export const Content = styled.article`
   ${media.greaterThan('lg')`
     padding: ${quadruplePx()};
     font-size: 1.5rem;
+    background-color: ${WHITE};
   `};
 
   ${media.greaterThan('xl')`
@@ -181,6 +185,10 @@ export const QuestionTitle = styled.h4`
 export const QuestionDescription = styled.div`
   font-size: 1.1rem;
 
+  & p:last-child {
+    padding-bottom: 0;
+  }
+
   & p {
     color: ${GRAY_300};
     line-height: 1.63;
@@ -189,11 +197,11 @@ export const QuestionDescription = styled.div`
     width: 100%;
 
     ${media.greaterThan('md')`
-      font-size: 1.7rem;
+      font-size: 1.6rem;
     `}
-  }
 
-  & p:last-child {
-    padding-bottom: 0;
+    ${media.greaterThan('lg')`
+      padding-bottom: ${singlePx()};
+    `}
   }
 `
