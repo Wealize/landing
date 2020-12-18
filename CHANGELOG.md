@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [Add page for Legacy terms](https://wealize.atlassian.net/browse/WLZAA-54)
+- [Add performance and accessibility improvements](https://wealize.atlassian.net/browse/WLZAA-57)
+- [Add pages to show information on the grants](https://wealize.atlassian.net/browse/WLZAA-45)
+- [Fix spacing on SimpleCard](https://wealize.atlassian.net/browse/WLZAA-52)
+- [Fix text size of the cards in tablet resolution and bigger](https://wealize.atlassian.net/browse/WLZAA-51)
 - [Add page indicator animation](https://wealize.atlassian.net/browse/WLZAA-44)
 - [Add PWA support](https://wealize.atlassian.net/browse/WLZAA-39)
 - [Add Footer and Buttons components](https://wealize.atlassian.net/browse/WLZAA-34)
