@@ -1,4 +1,5 @@
 const withPWA = require('next-pwa')
+const runtimeCaching = require('next-pwa/cache')
 
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config()
@@ -22,6 +23,7 @@ module.exports = {
 module.exports = withPWA({
   pwa: {
     disable: process.env.NODE_ENV === 'development',
-    dest: 'public'
+    dest: 'public',
+    runtimeCaching
   }
 })
