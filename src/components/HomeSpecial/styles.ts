@@ -62,7 +62,7 @@ export const Button = styled.button`
   border: none;
   border-radius: 50%;
   position: absolute;
-  bottom: 80%;
+  bottom: 82%;
   right: 10%;
   outline: none;
   cursor: pointer;
@@ -94,7 +94,7 @@ export const Slogan = styled.div`
   bottom: 0;
   left: 0;
   padding: ${doublePx()} ${singlePx()};
-  width: 90%;
+  width: 85%;
   border-top-right-radius: ${DEFAULT_RADIUS}px;
   min-height: 250px;
 
@@ -138,6 +138,7 @@ export const SubHeadline = styled.h2`
   color: ${WHITE};
   font-size: 2rem;
   line-height: 1.29;
+  width: 95%;
 
   ${media.greaterThan('md')`
     font-size: 3rem;
