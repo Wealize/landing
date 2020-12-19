@@ -21,7 +21,7 @@ export const Navbar = styled.nav<{
   right: 0;
   height: ${triplePx()};
   transition: all 0.4s;
-  z-index: 2;
+  z-index: 5;
 
   transform: ${({ isVisible }) =>
     isVisible ? 'inherit' : 'translateY(-100%)'};
