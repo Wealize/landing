@@ -1,9 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
+import { BackgroundImage } from 'react-image-and-background-image-fade'
 
 import {
   Container,
-  ImageContainer,
+  BackgroundContainer,
   ContentContainer,
   Content,
   Title,
@@ -23,7 +24,21 @@ const RoundedCard = (props: CardRounded) => {
 
   return (
     <Container hasPrimary={hasPrimary}>
-      <ImageContainer imageUrl={imageUrl} />
+      <BackgroundContainer>
+        <BackgroundImage
+          width="100%"
+          height="100%"
+          src={imageUrl}
+          lazyLoad={true}
+          style={{
+            minWidth: '300px',
+            minHeight: '290px',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'top center'
+          }}
+        ></BackgroundImage>
+      </BackgroundContainer>
       <ContentContainer hasPrimary={hasPrimary}>
         <Content>
           <Title>{title}</Title>

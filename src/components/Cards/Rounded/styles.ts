@@ -23,13 +23,10 @@ export const Container = styled.article<{ hasPrimary: boolean }>`
   `};
 `
 
-export const ImageContainer = styled.div<{ imageUrl: string }>`
+export const BackgroundContainer = styled.div`
   width: 100%;
   display: flex;
   align-items: stretch;
-  background: url(${({ imageUrl }) => imageUrl}) no-repeat top center;
-  background-size: cover;
-  background-position: center;
   min-height: 290px;
 
   ${media.greaterThan('md')`
@@ -55,6 +52,7 @@ export const ContentContainer = styled.div<{ hasPrimary: boolean }>`
   border-top-left-radius: ${DEFAULT_RADIUS}px;
   border-top-right-radius: ${DEFAULT_RADIUS}px;
   min-height: 350px;
+  z-index: 2;
 
   ${({ hasPrimary }) => media.greaterThan('md')`
     width: 45%;
