@@ -4,7 +4,7 @@ import { mount } from 'enzyme'
 import RoundedCard from './index'
 import {
   Container,
-  ImageContainer,
+  BackgroundContainer,
   ContentContainer,
   Content,
   Title,
@@ -38,7 +38,7 @@ describe('<RoundedCard />', () => {
 
   it('wrapperWithAllProps: should show correct components content', () => {
     expect(wrapperWithAllProps.find(Container)).toHaveLength(1)
-    expect(wrapperWithAllProps.find(ImageContainer)).toHaveLength(1)
+    expect(wrapperWithAllProps.find(BackgroundContainer)).toHaveLength(1)
     expect(wrapperWithAllProps.find(ContentContainer)).toHaveLength(1)
     expect(wrapperWithAllProps.find(Content)).toHaveLength(1)
     expect(wrapperWithAllProps.find(Title)).toHaveLength(1)
@@ -82,7 +82,7 @@ describe('<RoundedCard />', () => {
     const wrapperWithoutTagsProps = mount(<RoundedCard {...cardProps} />)
 
     expect(wrapperWithoutTagsProps.find(Container)).toHaveLength(1)
-    expect(wrapperWithoutTagsProps.find(ImageContainer)).toHaveLength(1)
+    expect(wrapperWithoutTagsProps.find(BackgroundContainer)).toHaveLength(1)
     expect(wrapperWithoutTagsProps.find(ContentContainer)).toHaveLength(1)
     expect(wrapperWithoutTagsProps.find(Content)).toHaveLength(1)
     expect(wrapperWithoutTagsProps.find(Title)).toHaveLength(1)
@@ -113,7 +113,7 @@ describe('<RoundedCard />', () => {
     const wrapperWithoutLinkProps = mount(<RoundedCard {...cardProps} />)
 
     expect(wrapperWithoutLinkProps.find(Container)).toHaveLength(1)
-    expect(wrapperWithoutLinkProps.find(ImageContainer)).toHaveLength(1)
+    expect(wrapperWithoutLinkProps.find(BackgroundContainer)).toHaveLength(1)
     expect(wrapperWithoutLinkProps.find(ContentContainer)).toHaveLength(1)
     expect(wrapperWithoutLinkProps.find(Content)).toHaveLength(1)
     expect(wrapperWithoutLinkProps.find(Title)).toHaveLength(1)
