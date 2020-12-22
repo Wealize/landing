@@ -55,7 +55,7 @@ export const ThingsWeAreGoodAtContainer = styled.div`
 export const ThingsWeAreGoodAtTitle = styled.h3`
   width: 100%;
   background-color: ${ACCENT};
-  padding: 0 ${doublePx()} ${quadruplePx()};
+  padding: 0 ${singlePx()} ${quadruplePx()};
   color: ${WHITE};
   line-height: 1.33;
   font-weight: bold;
@@ -63,6 +63,7 @@ export const ThingsWeAreGoodAtTitle = styled.h3`
 
   ${media.greaterThan('md')`
     font-size: 1.3rem;
+    padding-left: ${doublePx()};
     padding-bottom: ${triplePx()};
   `};
 
