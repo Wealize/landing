@@ -57,7 +57,6 @@ export const ThingsWeAreGoodAtTitle = styled.h3`
   background-color: ${ACCENT};
   padding: 0 ${doublePx()} ${quadruplePx()};
   color: ${WHITE};
-  width: 50%;
   line-height: 1.33;
   font-weight: bold;
   text-transform: uppercase;
