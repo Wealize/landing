@@ -35,12 +35,12 @@ export const Container = styled.div<{
   `};
 
   ${media.greaterThan('xl')`
-    min-height: 930px;
+    min-height: 980px;
   `};
 
   ${media.greaterThan('xxl')`
     padding: ${quadruplePx()};
-    min-height: 950px;
+    min-height: 1100px;
   `};
 `
 
@@ -134,15 +134,11 @@ export const ImageContainer = styled.div`
     width: 40%;
 
     ${media.greaterThan('md')`
-      width: 25%;
+      width: 55%;
     `};
 
     ${media.greaterThan('lg')`
-      width: 60%;
-    `};
-
-    ${media.greaterThan('xl')`
-      width: 45%;
+      width: 65%;
     `};
   }
   ${media.greaterThan('md')`
