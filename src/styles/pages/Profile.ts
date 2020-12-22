@@ -16,11 +16,11 @@ export const Container = styled.div`
     /* FIXME: for test Intersection observer functionality*/
     margin-top: 110vh;
     /* FIXME: for test Intersection observer functionality*/
-    min-height: 150vh;
+    min-height: 170vh;
   `};
 
   ${media.greaterThan('xl')`
-    min-height: 160vh;
+    min-height: 170vh;
   `};
 `
 
