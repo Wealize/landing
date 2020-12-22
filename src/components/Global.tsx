@@ -18,6 +18,10 @@ const Global = createGlobalStyle`
   a, button {
      -webkit-tap-highlight-color: rgba(0,0,0,0);
   }
+
+  button {
+    outline: none;
+  }
 `
 
 export default Global

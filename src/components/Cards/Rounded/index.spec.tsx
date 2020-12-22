@@ -14,7 +14,7 @@ import {
   TagsContainer,
   Tag
 } from './styles'
-import { CardRounded } from '../../../interfaces/CardRounded'
+import { CardRounded } from '../../../interfaces/Cards/CardRounded'
 
 describe('<RoundedCard />', () => {
   const cardProps: CardRounded = {
