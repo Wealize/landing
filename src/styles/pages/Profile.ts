@@ -13,11 +13,14 @@ export const Container = styled.div`
   align-items: flex-end;
 
   ${media.greaterThan('lg')`
-    min-height: 120vh;
+    /* FIXME: for test Intersection observer functionality*/
+    margin-top: 110vh;
+    /* FIXME: for test Intersection observer functionality*/
+    min-height: 150vh;
   `};
 
   ${media.greaterThan('xl')`
-    min-height: 200vh;
+    min-height: 160vh;
   `};
 `
 
