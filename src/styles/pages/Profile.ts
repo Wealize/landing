@@ -87,9 +87,8 @@ export const ThingsWeAreGoodAtCardsContainer = styled.div`
 export const ThingsWeAreGoodAtFirstCard = styled.div<{
   isVisible: boolean
 }>`
-  transition: all 1s;
-
   ${({ isVisible }) => media.greaterThan('lg')`
+    transition: all 1s;
     position: absolute;
     transform: ${isVisible ? 'translateY(-5%)' : 'translateY(20%)'} ;
     left: -5%;
@@ -107,10 +106,9 @@ export const ThingsWeAreGoodAtFirstCard = styled.div<{
 export const ThingsWeAreGoodAtSecondCard = styled.div<{
   isVisible: boolean
 }>`
-  transition: all 1s;
-  transition-delay: 0.5s;
-
   ${({ isVisible }) => media.greaterThan('lg')`
+      transition: all 1s;
+      transition-delay: 0.5s;
       position: absolute;
       left: 30%;
       transform: ${isVisible ? 'translateY(5%)' : 'translateY(20%)'} ;
@@ -129,10 +127,9 @@ export const ThingsWeAreGoodAtSecondCard = styled.div<{
 export const ThingsWeAreGoodAtThirdCard = styled.div<{
   isVisible: boolean
 }>`
-  transition: all 1s;
-  transition-delay: 0.7s;
-
   ${({ isVisible }) => media.greaterThan('lg')`
+      transition: all 1s;
+      transition-delay: 0.7s;
       position: absolute;
       left: 65%;
       transform: ${isVisible ? 'translateY(15%)' : 'translateY(25%)'} ;
