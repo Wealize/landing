@@ -3,17 +3,31 @@ import React from 'react'
 const BlockchainIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
+      width="100%"
       height="100%"
       viewBox="0 0 280 280"
-      width="100%"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g fill="#f06078">
-        <path d="M85.592 88.591H47.999V50.998h37.593z" />
-        <path d="M117.43 114.146H66.795V63.511h50.635z" />
-        <path d="M156.358 153.26H92.113V89.015h64.245z" />
-        <path d="M232.648 229.436H124.235V121.023h108.413z" />
+      <title>{'blockchain@1x'}</title>
+      <g fill="none" fillRule="evenodd">
+        <g fill="#F06078" fillRule="nonzero">
+          <path
+            style={{
+              mixBlendMode: 'multiply'
+            }}
+            d="M84.976 87.703H46.361V49.06h38.615z"
+          />
+          <path d="M117.68 113.972H65.668v-52.05h52.012z" />
+          <path
+            style={{
+              mixBlendMode: 'multiply'
+            }}
+            d="M157.667 154.178H91.675v-66.04h65.992z"
+          />
+          <path d="M236.033 232.482H124.67V121.04h111.363z" />
+        </g>
+        <path fill="#E12438" d="M91.674 88.139h26.006V114H91.674z" />
       </g>
     </svg>
   )
