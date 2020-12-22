@@ -1,7 +1,14 @@
 import styled from 'styled-components'
 
 import { ACCENT, WHITE } from '../../theme/color'
-import { singlePx, doublePx, triplePx, quadruplePx } from '../../theme/space'
+import {
+  singlePx,
+  doublePx,
+  triplePx,
+  quadruplePx,
+  triple,
+  quadruple
+} from '../../theme/space'
 import { media } from '../../theme/media'
 import { DEFAULT_RADIUS } from '../../theme/border'
 
@@ -14,17 +21,7 @@ export const Container = styled.div`
 
   ${media.greaterThan('lg')`
     /* FIXME: for test Intersection observer functionality*/
-    margin-top: 110vh;
-    /* FIXME: for test Intersection observer functionality*/
-    min-height: 180vh;
-  `};
-
-  ${media.greaterThan('xl')`
-    min-height: 200vh;
-  `};
-
-  ${media.greaterThan('xxl')`
-    min-height: 210vh;
+    margin-top: 100vh;
   `};
 `
 
@@ -43,6 +40,15 @@ export const ThingsWeAreGoodAtContainer = styled.div`
     width: 90%;
     border-top-right-radius: initial;
     border-top-left-radius: ${DEFAULT_RADIUS}px;
+    margin: ${triple() * 1.5}px 0 ${triple() * 6}px;
+  `};
+
+  ${media.greaterThan('xl')`
+    margin: ${quadruple() * 1.5}px 0 ${quadruple() * 6}px;
+  `};
+
+  ${media.greaterThan('xxl')`
+    margin: ${quadruple() * 2}px 0 ${quadruple() * 8}px;
   `};
 `
 
