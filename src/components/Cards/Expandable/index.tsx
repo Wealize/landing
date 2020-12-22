@@ -43,6 +43,7 @@ const ExpandableCard = (props: CardExpandable) => {
           <RoundArrowIcon />
         </Toggle>
       </Header>
+
       <Content isExpanded={isExpandedState}>
         <ImageContainer>{image}</ImageContainer>
         <Subheadline>{subheadline}</Subheadline>

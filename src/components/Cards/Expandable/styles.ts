@@ -5,8 +5,7 @@ import {
   singleAndHalfPx,
   doublePx,
   triplePx,
-  quadruplePx,
-  quadruple
+  doubleAndHalf
 } from '../../../theme/space'
 import { media } from '../../../theme/media'
 
@@ -24,23 +23,25 @@ export const Container = styled.div<{
   transition: all 0.5s ease-out;
 
   ${media.greaterThan('md')`
-    padding: ${singleAndHalfPx()} ${quadruple() * 2}px;
+    padding: ${singleAndHalfPx()} ${doubleAndHalf() * 2}px;
   `};
 
   ${media.greaterThan('lg')`
-    padding: ${quadruplePx()} ${doublePx()};
-    min-height: 900px;
+    padding: ${singleAndHalfPx()} ${doublePx()};
+    min-height: 100%;
     min-width: 110%;
+    flex-wrap:wrap;
     justify-content: space-between;
   `};
 
   ${media.greaterThan('xl')`
-    min-height: 980px;
+    padding: ${doublePx()} ${triplePx()};
+    min-height: 115%;
   `};
 
   ${media.greaterThan('xxl')`
-    padding: ${quadruplePx()};
-    min-height: 1100px;
+    padding: ${triplePx()};
+    min-height: 135%;
   `};
 `
 
@@ -53,6 +54,7 @@ export const Header = styled.div<{
   justify-content: space-between;
   align-items: center;
   padding-bottom: ${({ isExpanded }) => (isExpanded ? singlePx() : 0)}px;
+  flex: 1 1 auto;
 `
 
 export const Content = styled.div<{
@@ -64,9 +66,10 @@ export const Content = styled.div<{
   overflow: hidden;
   height: auto;
   max-height: ${({ isExpanded }) => (isExpanded ? 1000 : 0)}px;
+  flex: 1 1 auto;
 
   ${media.greaterThan('lg')`
-    max-height: 1000px;
+    max-height: 100%;
   `};
 `
 
@@ -129,24 +132,26 @@ export const ImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: ${doublePx()} 0;
+  flex: 1 1 auto;
 
   & svg {
-    width: 40%;
-
-    ${media.greaterThan('md')`
-      width: 55%;
-    `};
+    width: 50%;
 
     ${media.greaterThan('lg')`
-      width: 65%;
+      width: 75%;
+    `};
+
+    ${media.greaterThan('xl')`
+      width: 60%;
+    `};
+
+    ${media.greaterThan('xxl')`
+      width: 55%;
     `};
   }
+
   ${media.greaterThan('md')`
     padding: ${triplePx()} 0;
-  `};
-
-  ${media.greaterThan('lg')`
-    padding: ${quadruplePx()} 0;
   `};
 `
 
