@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { PRIMARY, WHITE, DARK_GRAY, LIGHT_GRAY } from '../../../theme/color'
+import { PRIMARY_COLOR, WHITE_COLOR, DARK_GRAY_COLOR, LIGHT_GRAY_COLOR } from '../../../theme/color'
 import {
   thirdPx,
   singlePx,
@@ -12,7 +12,7 @@ import { DEFAULT_RADIUS } from '../../../theme/border'
 
 export const Container = styled.article<{ hasPrimary: boolean }>`
   width: 100%;
-  background: ${LIGHT_GRAY};
+  background: ${LIGHT_GRAY_COLOR};
   display: flex;
   flex-direction: column;
 
@@ -46,8 +46,8 @@ export const ContentContainer = styled.div<{ hasPrimary: boolean }>`
   justify-content: space-between;
   margin-top: -8%;
   top: 90%;
-  background-color: ${({ hasPrimary }) => (hasPrimary ? PRIMARY : WHITE)};
-  color: ${({ hasPrimary }) => (hasPrimary ? WHITE : DARK_GRAY)};
+  background-color: ${({ hasPrimary }) => (hasPrimary ? PRIMARY_COLOR : WHITE_COLOR)};
+  color: ${({ hasPrimary }) => (hasPrimary ? WHITE_COLOR : DARK_GRAY_COLOR)};
   padding: ${singlePx()};
   border-top-left-radius: ${DEFAULT_RADIUS}px;
   border-top-right-radius: ${DEFAULT_RADIUS}px;
@@ -141,5 +141,5 @@ export const Tag = styled.span<{ hasPrimary: boolean }>`
   text-align: center;
   padding: ${thirdPx()};
   border-radius: 16px;
-  border: 1px solid ${({ hasPrimary }) => (hasPrimary ? WHITE : DARK_GRAY)};
+  border: 1px solid ${({ hasPrimary }) => (hasPrimary ? WHITE_COLOR : DARK_GRAY_COLOR)};
 `

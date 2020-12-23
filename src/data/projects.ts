@@ -1,4 +1,4 @@
-import { CardRounded } from '../interfaces/CardRounded'
+import { CardRounded } from '../interfaces/Cards/CardRounded'
 
 const projects: CardRounded[] = [
   {

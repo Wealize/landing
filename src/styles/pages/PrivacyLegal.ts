@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { GRAY_300, LIGHT_GRAY, WHITE } from '../../theme/color'
+import { GRAY_300_COLOR, LIGHT_GRAY_COLOR, WHITE_COLOR } from '../../theme/color'
 import {
   doubleAndHalfPx,
   singlePx,
@@ -13,10 +13,10 @@ import { media } from '../../theme/media'
 
 export const Container = styled.section`
   min-height: 100vh;
-  background-color: ${LIGHT_GRAY};
+  background-color: ${LIGHT_GRAY_COLOR};
 
   ${media.greaterThan('lg')`
-    background-color: ${WHITE};
+    background-color: ${WHITE_COLOR};
   `};
 `
 
@@ -27,7 +27,7 @@ export const Content = styled.article`
   justify-content: center;
   align-items: center;
   min-height: 30vh;
-  background-color: ${LIGHT_GRAY};
+  background-color: ${LIGHT_GRAY_COLOR};
   padding: ${doubleAndHalfPx()} ${singlePx()};
 
   ${media.greaterThan('md')`
@@ -40,7 +40,7 @@ export const Content = styled.article`
   ${media.greaterThan('lg')`
     padding: ${quadruplePx()};
     font-size: 1.5rem;
-    background-color: ${WHITE};
+    background-color: ${WHITE_COLOR};
   `};
 
   ${media.greaterThan('xl')`
@@ -103,7 +103,7 @@ export const QuestionsContainer = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 30vh;
-  background-color: ${WHITE};
+  background-color: ${WHITE_COLOR};
   padding: ${doubleAndHalfPx()} ${singlePx()};
 
   ${media.greaterThan('md')`
@@ -190,7 +190,7 @@ export const QuestionDescription = styled.div`
   }
 
   & p {
-    color: ${GRAY_300};
+    color: ${GRAY_300_COLOR};
     line-height: 1.63;
     padding-bottom: ${singlePx()};
     text-align: left;

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { WHITE, DARK_GRAY } from '../../../theme/color'
+import { WHITE_COLOR, DARK_GRAY_COLOR } from '../../../theme/color'
 import {
   singlePx,
   doublePx,
@@ -12,7 +12,7 @@ import { media } from '../../../theme/media'
 
 export const Container = styled.div`
   width: 100%;
-  background: ${WHITE};
+  background: ${WHITE_COLOR};
   padding: ${doubleAndHalfPx()} ${singlePx()};
   z-index: 1;
 
@@ -26,7 +26,7 @@ export const Container = styled.div`
 `
 
 export const Text = styled.h3`
-  color: ${DARK_GRAY};
+  color: ${DARK_GRAY_COLOR};
   font-size: 2rem;
   line-height: 45px;
   word-wrap: break-word;

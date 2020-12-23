@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { WHITE, DARK_GRAY } from '../../theme/color'
+import { WHITE_COLOR, DARK_GRAY_COLOR } from '../../theme/color'
 import {
   sixthPx,
   singlePx,
@@ -15,7 +15,7 @@ export const Container = styled.footer`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-color: ${DARK_GRAY};
+  background-color: ${DARK_GRAY_COLOR};
   padding: ${doublePx()} ${singlePx()};
 
   ${media.greaterThan('md')`
@@ -77,7 +77,7 @@ export const ContainerLogo = styled.div`
 `
 
 export const BigText = styled.h5`
-  color: ${WHITE};
+  color: ${WHITE_COLOR};
   padding: ${singlePx()} 0;
   font-size: 1.8rem;
   line-height: 1.33;
@@ -115,7 +115,7 @@ export const ContainerWorkWithUs = styled.div`
 
 export const DividerMobile = styled.hr`
   width: 100%;
-  border: 1px solid ${WHITE};
+  border: 1px solid ${WHITE_COLOR};
   margin: ${doublePx()} 0;
 
   ${media.greaterThan('md')`
@@ -125,7 +125,7 @@ export const DividerMobile = styled.hr`
 
 export const Divider = styled.hr`
   width: 100%;
-  border: 1px solid ${WHITE};
+  border: 1px solid ${WHITE_COLOR};
   margin: ${doublePx()} 0;
 
   ${media.greaterThan('md')`
@@ -212,7 +212,7 @@ export const Social = styled.a`
 `
 
 export const PrivacyLegalLink = styled.a`
-  color: ${WHITE};
+  color: ${WHITE_COLOR};
   font-size: 1.1rem;
   padding: ${singlePx()} 0;
   text-decoration: underline;
@@ -228,7 +228,7 @@ export const PrivacyLegalLink = styled.a`
 `
 
 export const CopyrightText = styled.span`
-  color: ${WHITE};
+  color: ${WHITE_COLOR};
   font-size: 1.1rem;
 
   ${media.greaterThan('lg')`

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import { twoThirdPx, singlePx } from '../../../theme/space'
 import { media } from '../../../theme/media'
-import { ButtonSize } from '../../../interfaces/ButtonSize'
+import { ButtonSize } from '../../../interfaces/Buttons/ButtonSize'
 
 const BUTTON_SHARED_STYLES = `
   display: flex;
@@ -11,7 +11,6 @@ const BUTTON_SHARED_STYLES = `
   align-items: center;
   width: 100%;
   height: 100%;
-  outline: none;
   border: none;
   position: absolute;
   bottom: 0;
