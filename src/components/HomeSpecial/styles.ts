@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 
-import { PRIMARY, WHITE, LIGHT_GRAY, ACCENT } from '../../theme/color'
+import {
+  PRIMARY_COLOR,
+  WHITE_COLOR,
+  LIGHT_GRAY_COLOR,
+  ACCENT_COLOR
+} from '../../theme/color'
 import {
   twoThirdPx,
   singlePx,
@@ -15,7 +20,7 @@ import { DEFAULT_RADIUS } from '../../theme/border'
 export const Container = styled.div`
   width: 100%;
   min-height: 85vh;
-  background: ${LIGHT_GRAY};
+  background: ${LIGHT_GRAY_COLOR};
   padding: ${doubleAndHalfPx()} 0;
   position: relative;
 
@@ -55,8 +60,8 @@ export const Background = styled.div`
 `
 
 export const Button = styled.button`
-  background-color: ${ACCENT};
-  color: ${WHITE};
+  background-color: ${ACCENT_COLOR};
+  color: ${WHITE_COLOR};
   width: 90px;
   height: 90px;
   border: none;
@@ -88,7 +93,7 @@ export const Slogan = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: ${PRIMARY};
+  background-color: ${PRIMARY_COLOR};
   position: absolute;
   bottom: 0;
   left: 0;
@@ -116,7 +121,7 @@ export const Slogan = styled.div`
 `
 
 export const Headline = styled.h1`
-  color: ${WHITE};
+  color: ${WHITE_COLOR};
   font-size: 1rem;
   padding: ${twoThirdPx()} 0;
 
@@ -134,7 +139,7 @@ export const Headline = styled.h1`
 `
 
 export const SubHeadline = styled.h2`
-  color: ${WHITE};
+  color: ${WHITE_COLOR};
   font-size: 2rem;
   line-height: 1.29;
   width: 95%;

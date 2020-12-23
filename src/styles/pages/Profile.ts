@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { ACCENT, WHITE } from '../../theme/color'
+import { ACCENT_COLOR, WHITE_COLOR } from '../../theme/color'
 import {
   singlePx,
   doublePx,
@@ -14,7 +14,7 @@ import { DEFAULT_RADIUS } from '../../theme/border'
 
 export const Container = styled.div`
   min-height: 100vh;
-  background-color: ${WHITE};
+  background-color: ${WHITE_COLOR};
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -27,7 +27,7 @@ export const Container = styled.div`
 
 export const ThingsWeAreGoodAtContainer = styled.div`
   width: 100%;
-  background-color: ${ACCENT};
+  background-color: ${ACCENT_COLOR};
   padding-top: ${singlePx()};
   border-top-right-radius: ${DEFAULT_RADIUS}px;
 
@@ -54,9 +54,9 @@ export const ThingsWeAreGoodAtContainer = styled.div`
 
 export const ThingsWeAreGoodAtTitle = styled.h3`
   width: 100%;
-  background-color: ${ACCENT};
+  background-color: ${ACCENT_COLOR};
   padding: 0 ${singlePx()} ${quadruplePx()};
-  color: ${WHITE};
+  color: ${WHITE_COLOR};
   line-height: 1.33;
   font-weight: bold;
   text-transform: uppercase;
@@ -79,7 +79,7 @@ export const ThingsWeAreGoodAtTitle = styled.h3`
 
 export const ThingsWeAreGoodAtCardsContainer = styled.div`
   width: 100%;
-  background-color: ${ACCENT};
+  background-color: ${ACCENT_COLOR};
   transition: all 0.3s;
 
   ${media.greaterThan('lg')`

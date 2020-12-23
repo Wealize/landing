@@ -4,7 +4,7 @@ import { shallow } from 'enzyme'
 import CardExpandable from './index'
 import { Toggle, Content, Headline, Subheadline, Description } from './styles'
 import BlockchainIcon from '../../icons/thingsWeAreGoodAt/BlockchainIcon'
-import { PRIMARY, PRIMARY_LIGHT } from '../../../theme/color'
+import { PRIMARY_COLOR, PRIMARY_LIGHT_COLOR } from '../../../theme/color'
 
 describe('<CardExpanded />', () => {
   const cardProps = {
@@ -12,8 +12,8 @@ describe('<CardExpanded />', () => {
     subheadline: 'subheadline',
     description: 'description',
     image: <BlockchainIcon />,
-    backgroundColor: PRIMARY_LIGHT,
-    textColor: PRIMARY,
+    backgroundColor: PRIMARY_LIGHT_COLOR,
+    textColor: PRIMARY_COLOR,
     isExpanded: false
   }
   const wrapper = shallow(<CardExpandable {...cardProps} />)
@@ -55,7 +55,7 @@ describe('<CardExpanded />', () => {
   it('should click on toggle button', async () => {
     const mockOnClick = jest.fn()
     const toggleComponent = shallow(
-      <Toggle onClick={mockOnClick} textColor={PRIMARY} isExpanded={false} />
+      <Toggle onClick={mockOnClick} textColor={PRIMARY_COLOR} isExpanded={false} />
     )
     toggleComponent.simulate('click')
     expect(mockOnClick.mock.calls.length).toEqual(1)

@@ -7,11 +7,11 @@ import CognitiveIcon from '../components/icons/thingsWeAreGoodAt/CognitiveIcon'
 import ConversationalIcon from '../components/icons/thingsWeAreGoodAt/ConversationalIcon'
 import { LayoutOptions } from '../interfaces/Page'
 import {
-  PRIMARY,
-  SECONDARY,
-  WHITE,
-  PRIMARY_LIGHT,
-  ACCENT
+  PRIMARY_COLOR,
+  SECONDARY_COLOR,
+  WHITE_COLOR,
+  PRIMARY_LIGHT_COLOR,
+  ACCENT_COLOR
 } from '../theme/color'
 import {
   Container,
@@ -24,6 +24,22 @@ import {
 } from '../styles/pages/Profile'
 
 const Profile = (): JSX.Element => {
+  const FIRST_CARD_HEADLINE = 'Blockchain development'
+  const FIRST_CARD_SUBHEADLINE =
+    'When transparency and trust are hard requirements'
+  const FIRST_CARD_DESCRIPTION =
+    'We build distributed ledgers and consensus networks for identity, traceability and accountability'
+
+  const SECOND_CARD_HEADLINE = 'Cognitive services'
+  const SECOND_CARD_SUBHEADLINE = 'Think, predict and act'
+  const SECOND_CARD_DESCRIPTION =
+    'We utilize machine learning and artificial intelligence to empower businesses by making better decisions'
+
+  const THIRD_CARD_HEADLINE = 'Conversational agents'
+  const THIRD_CARD_SUBHEADLINE = 'Enhace customer experience'
+  const THIRD_CARD_DESCRIPTION =
+    'We build text- and voice-based conversational interfaces for industries like health, tourism, legal, banking and insurance'
+
   const { ref, entry } = useInView({
     threshold: 0,
     triggerOnce: true
@@ -36,36 +52,36 @@ const Profile = (): JSX.Element => {
         <ThingsWeAreGoodAtCardsContainer>
           <ThingsWeAreGoodAtFirstCard isVisible={entry?.isIntersecting}>
             <CardExpandable
-              headline="Blockchain development"
-              subheadline="When transparency and trust are hard requirements"
-              description="We build distributed ledgers and consensus networks for identity, traceability and accountability"
+              headline={FIRST_CARD_HEADLINE}
+              subheadline={FIRST_CARD_SUBHEADLINE}
+              description={FIRST_CARD_DESCRIPTION}
               image={<BlockchainIcon />}
-              backgroundColor={PRIMARY_LIGHT}
-              textColor={PRIMARY}
+              backgroundColor={PRIMARY_LIGHT_COLOR}
+              textColor={PRIMARY_COLOR}
               isExpanded={true}
             />
           </ThingsWeAreGoodAtFirstCard>
 
           <ThingsWeAreGoodAtSecondCard isVisible={entry?.isIntersecting}>
             <CardExpandable
-              headline="Cognitive services"
-              subheadline="Think, predict and act"
-              description="We utilize machine learning and artificial intelligence to empower businesses by making better decisions"
+              headline={SECOND_CARD_HEADLINE}
+              subheadline={SECOND_CARD_SUBHEADLINE}
+              description={SECOND_CARD_DESCRIPTION}
               image={<CognitiveIcon />}
-              backgroundColor={PRIMARY}
-              textColor={WHITE}
+              backgroundColor={PRIMARY_COLOR}
+              textColor={WHITE_COLOR}
               isExpanded={false}
             />
           </ThingsWeAreGoodAtSecondCard>
 
           <ThingsWeAreGoodAtThirdCard isVisible={entry?.isIntersecting}>
             <CardExpandable
-              headline="Conversational agents"
-              subheadline="Enhace customer experience"
-              description="We build text- and voice-based conversational interfaces for industries like health, tourism, legal, banking and insurance"
+              headline={THIRD_CARD_HEADLINE}
+              subheadline={THIRD_CARD_SUBHEADLINE}
+              description={THIRD_CARD_DESCRIPTION}
               image={<ConversationalIcon />}
-              backgroundColor={SECONDARY}
-              textColor={ACCENT}
+              backgroundColor={SECONDARY_COLOR}
+              textColor={ACCENT_COLOR}
               isExpanded={false}
             />
           </ThingsWeAreGoodAtThirdCard>
