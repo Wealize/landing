@@ -28,6 +28,7 @@ const ExpandableCard = (props: CardExpandable) => {
 
   return (
     <Container
+      className="ExpandableCard"
       backgroundColor={backgroundColor}
       textColor={textColor}
       isExpanded={isExpandedState}

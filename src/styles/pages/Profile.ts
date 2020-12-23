@@ -94,7 +94,7 @@ export const ThingsWeAreGoodAtCardsContainer = styled.div`
   `};
 `
 
-export const ThingsWeAreGoodAtFirstCard = styled.div<{
+export const ThingsWeAreGoodAtFirstCard = styled.article<{
   isVisible: boolean
 }>`
   ${({ isVisible }) => media.greaterThan('lg')`
@@ -113,7 +113,7 @@ export const ThingsWeAreGoodAtFirstCard = styled.div<{
     max-width: 33.3%;
   `};
 `
-export const ThingsWeAreGoodAtSecondCard = styled.div<{
+export const ThingsWeAreGoodAtSecondCard = styled.article<{
   isVisible: boolean
 }>`
   ${({ isVisible }) => media.greaterThan('lg')`
@@ -134,7 +134,7 @@ export const ThingsWeAreGoodAtSecondCard = styled.div<{
       max-width: 33.3%;
   `};
 `
-export const ThingsWeAreGoodAtThirdCard = styled.div<{
+export const ThingsWeAreGoodAtThirdCard = styled.article<{
   isVisible: boolean
 }>`
   ${({ isVisible }) => media.greaterThan('lg')`
@@ -152,5 +152,42 @@ export const ThingsWeAreGoodAtThirdCard = styled.div<{
       left: 66%;
       height: 100%;
       max-width: 33.3%;
+  `};
+`
+
+export const WeDeliverContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: ${doublePx()} 0;
+
+  ${media.greaterThan('lg')`
+    padding: ${singlePx()} ${singlePx()} ${triplePx()};
+  `};
+`
+
+export const WeDeliverTitle = styled.h5`
+  font-size: 1.7rem;
+  padding: ${singlePx()} ${singlePx()} 0;
+
+  ${media.greaterThan('md')`
+    padding: ${singlePx()} ${doublePx()} 0;
+  `};
+
+  ${media.greaterThan('lg')`
+    font-size: 2rem;
+    padding: ${singlePx()} ${triplePx()} 0;
+  `};
+`
+
+export const WeDeliverContainerCards = styled.h5`
+  ${media.greaterThan('lg')`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    > .SimpleBigTitleCard {
+      width: 50%;
+    }
   `};
 `
