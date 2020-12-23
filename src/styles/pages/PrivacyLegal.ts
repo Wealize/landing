@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
-import { GRAY_300_COLOR, LIGHT_GRAY_COLOR, WHITE_COLOR } from '../../theme/color'
+import {
+  GRAY_300_COLOR,
+  LIGHT_GRAY_COLOR,
+  WHITE_COLOR
+} from '../../theme/color'
 import {
   doubleAndHalfPx,
   singlePx,
@@ -32,7 +36,7 @@ export const Content = styled.article`
 
   ${media.greaterThan('md')`
     padding: ${triplePx()} ${doublePx()};
-        font-size: 1.2rem;
+    font-size: 1.2rem;
     justify-content: initial;
     align-items: initial;
   `};

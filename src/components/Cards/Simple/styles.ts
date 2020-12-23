@@ -20,7 +20,7 @@ export const Container = styled.div`
     padding: ${triplePx()} ${doublePx()};
   `};
 
-  ${media.greaterThan('lg')`
+  ${media.greaterThan('xl')`
     padding: ${quadruplePx()};
   `};
 `
