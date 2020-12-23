@@ -1,5 +1,5 @@
 import React from 'react'
-import { mount } from 'enzyme'
+import { shallow } from 'enzyme'
 
 import SimpleBigTitleCard from './index'
 import { Headline, SubHeadline } from './styles'
@@ -9,7 +9,7 @@ describe('<SimpleCard />', () => {
     title: 'title test',
     description: 'description test'
   }
-  const wrapper = mount(<SimpleBigTitleCard {...cardProps} />)
+  const wrapper = shallow(<SimpleBigTitleCard {...cardProps} />)
 
   it('should render', () => {
     expect(wrapper).toBeDefined()
