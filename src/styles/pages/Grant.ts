@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { GRAY_300 } from '../../theme/color'
+import { GRAY_300_COLOR } from '../../theme/color'
 import {
   halfPx,
   doubleAndHalfPx,
@@ -132,7 +132,7 @@ export const ProjectContent = styled.div`
   padding: ${halfPx()} 0;
   font-size: 1.3rem;
   line-height: 1.46;
-  color: ${GRAY_300};
+  color: ${GRAY_300_COLOR};
 
   ${media.greaterThan('md')`
     font-size: 1.4rem;

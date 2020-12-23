@@ -24,7 +24,7 @@ import {
   ContainerGrants,
   Grant
 } from './styles'
-import { ACCENT, DARK_GRAY, WHITE } from '../../theme/color'
+import { ACCENT_COLOR, DARK_GRAY_COLOR, WHITE_COLOR } from '../../theme/color'
 import LinkedinIcon from '../icons/social/LinkedinIcon'
 import TwitterIcon from '../icons/social/TwitterIcon'
 import DevtoIcon from '../icons/social/DevtoIcon'
@@ -48,10 +48,10 @@ const Footer = () => {
             about our Work
           </BigText>
           <ButtonRounded
-            backgroundColor={DARK_GRAY}
-            textColor={WHITE}
-            animatedBackgroundColor={ACCENT}
-            animatedTextColor={WHITE}
+            backgroundColor={DARK_GRAY_COLOR}
+            textColor={WHITE_COLOR}
+            animatedBackgroundColor={ACCENT_COLOR}
+            animatedTextColor={WHITE_COLOR}
             size={MEDIUM}
           >
             Get in touch
@@ -63,10 +63,10 @@ const Footer = () => {
             global community
           </BigText>
           <ButtonRounded
-            backgroundColor={DARK_GRAY}
-            textColor={WHITE}
-            animatedBackgroundColor={ACCENT}
-            animatedTextColor={WHITE}
+            backgroundColor={DARK_GRAY_COLOR}
+            textColor={WHITE_COLOR}
+            animatedBackgroundColor={ACCENT_COLOR}
+            animatedTextColor={WHITE_COLOR}
             size={MEDIUM}
           >
             Work with us

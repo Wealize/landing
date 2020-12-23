@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardExpanded /> wrapper: should render 1`] = `
+<styled.div
+  backgroundColor="#ffc9c9"
+  isExpanded={false}
+  textColor="#f06078"
+>
+  <styled.div
+    isExpanded={false}
+  >
+    <styled.h3>
+      headline
+    </styled.h3>
+    <styled.button
+      aria-label="expand card content button"
+      isExpanded={false}
+      onClick={[Function]}
+      textColor="#f06078"
+    >
+      <Memo(RoundArrowIcon) />
+    </styled.button>
+  </styled.div>
+  <styled.div
+    isExpanded={false}
+  >
+    <styled.div>
+      <Memo(BlockchainIcon) />
+    </styled.div>
+    <styled.h4>
+      subheadline
+    </styled.h4>
+    <styled.h5>
+      description
+    </styled.h5>
+  </styled.div>
+</styled.div>
+`;

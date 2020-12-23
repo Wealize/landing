@@ -2,7 +2,7 @@ import React from 'react'
 import { shallow } from 'enzyme'
 
 import ButtonRounded from './index'
-import { ACCENT, DARK_GRAY, WHITE } from '../../../theme/color'
+import { ACCENT_COLOR, DARK_GRAY_COLOR, WHITE_COLOR } from '../../../theme/color'
 import {
   ContainerButtonOriginal,
   ContainerButtonAnimated,
@@ -12,10 +12,10 @@ import { SMALL } from './sizes'
 
 describe('<ButtonRounded />', () => {
   const buttonProps = {
-    backgroundColor: DARK_GRAY,
-    textColor: WHITE,
-    animatedBackgroundColor: ACCENT,
-    animatedTextColor: WHITE,
+    backgroundColor: DARK_GRAY_COLOR,
+    textColor: WHITE_COLOR,
+    animatedBackgroundColor: ACCENT_COLOR,
+    animatedTextColor: WHITE_COLOR,
     size: SMALL,
     children: 'Test text',
     handleClick: null
@@ -30,15 +30,15 @@ describe('<ButtonRounded />', () => {
   it('wrapper: should render content correctly', () => {
     expect(wrapper.find(ContainerButtonOriginal)).toHaveStyleRule(
       'background-color',
-      DARK_GRAY
+      DARK_GRAY_COLOR
     )
     expect(wrapper.find(ContainerButtonAnimated)).toHaveStyleRule(
       'background-color',
-      ACCENT
+      ACCENT_COLOR
     )
 
-    expect(wrapper.find(Content).first()).toHaveStyleRule('color', WHITE)
-    expect(wrapper.find(Content).at(1)).toHaveStyleRule('color', WHITE)
+    expect(wrapper.find(Content).first()).toHaveStyleRule('color', WHITE_COLOR)
+    expect(wrapper.find(Content).at(1)).toHaveStyleRule('color', WHITE_COLOR)
 
     expect(wrapper.find(Content).first().text()).toEqual(buttonProps.children)
     expect(wrapper.find(Content).at(1).text()).toEqual(buttonProps.children)

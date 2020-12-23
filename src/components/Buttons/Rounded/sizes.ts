@@ -1,4 +1,4 @@
-import { ButtonSize } from '../../../interfaces/ButtonSize'
+import { ButtonSize } from '../../../interfaces/Buttons/ButtonSize'
 
 export const SMALL: ButtonSize = {
   mobile: [90, 50],

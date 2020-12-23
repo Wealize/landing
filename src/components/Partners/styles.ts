@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
-import { DARK_GRAY, LIGHT_GRAY } from '../../theme/color'
+import { DARK_GRAY_COLOR, LIGHT_GRAY_COLOR } from '../../theme/color'
 import { singlePx, doublePx, triplePx, quadruplePx } from '../../theme/space'
 import { media } from '../../theme/media'
 
 export const Container = styled.div`
-  background-color: ${LIGHT_GRAY};
+  background-color: ${LIGHT_GRAY_COLOR};
   padding: ${doublePx()} ${singlePx()};
 
   ${media.greaterThan('md')`
@@ -42,7 +42,7 @@ export const Content = styled.div`
 export const TextContent = styled.h5`
   font-size: 2rem;
   line-height: 1.32;
-  color: ${DARK_GRAY};
+  color: ${DARK_GRAY_COLOR};
 
   ${media.greaterThan('md')`
     font-size: 2.2rem;
