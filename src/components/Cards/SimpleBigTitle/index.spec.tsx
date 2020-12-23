@@ -4,7 +4,7 @@ import { shallow } from 'enzyme'
 import SimpleBigTitleCard from './index'
 import { Headline, SubHeadline } from './styles'
 
-describe('<SimpleCard />', () => {
+describe('<SimpleBigTitleCard />', () => {
   const cardProps = {
     title: 'title test',
     description: 'description test'
