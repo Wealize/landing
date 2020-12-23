@@ -23,7 +23,7 @@ const RoundedCard = (props: CardRounded) => {
   const hasTags = () => tags && tags.length > 0
 
   return (
-    <Container hasPrimary={hasPrimary}>
+    <Container className="RoundedCard" hasPrimary={hasPrimary}>
       <BackgroundContainer>
         <BackgroundImage
           width="100%"

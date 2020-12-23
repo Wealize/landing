@@ -3,6 +3,7 @@
 exports[`<CardExpanded /> wrapper: should render 1`] = `
 <styled.div
   backgroundColor="#ffc9c9"
+  className="ExpandableCard"
   isExpanded={false}
   textColor="#f06078"
 >
