@@ -15,7 +15,7 @@ import {
   Tag
 } from './styles'
 import OpenUrlIcon from '../../icons/OpenUrlIcon'
-import { CardRounded } from '../../../interfaces/CardRounded'
+import { CardRounded } from '../../../interfaces/Cards/CardRounded'
 
 const RoundedCard = (props: CardRounded) => {
   const { imageUrl, title, description, link, tags, hasPrimary } = props

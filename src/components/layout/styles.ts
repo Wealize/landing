@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { WHITE, LIGHT_GRAY } from '../../theme/color'
+import { WHITE_COLOR, LIGHT_GRAY_COLOR } from '../../theme/color'
 import { triplePx } from '../../theme/space'
 
 export const Main = styled.main<{ showNavigationBarClosablePage: boolean }>`
@@ -9,7 +9,7 @@ export const Main = styled.main<{ showNavigationBarClosablePage: boolean }>`
   flex-direction: column;
   min-height: 100vh;
   background-color: ${({ showNavigationBarClosablePage }) =>
-    showNavigationBarClosablePage ? WHITE : LIGHT_GRAY};
+    showNavigationBarClosablePage ? WHITE_COLOR : LIGHT_GRAY_COLOR};
   padding-top: ${triplePx()};
   overflow-x: hidden;
 `

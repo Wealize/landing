@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { WHITE, DARK_GRAY, LIGHT_GRAY, ACCENT } from '../../theme/color'
+import { WHITE_COLOR, DARK_GRAY_COLOR, LIGHT_GRAY_COLOR, ACCENT_COLOR } from '../../theme/color'
 import { halfPx, singlePx, triplePx } from '../../theme/space'
 import { media } from '../../theme/media'
 
@@ -13,7 +13,7 @@ export const Navbar = styled.nav<{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: ${WHITE};
+  background-color: ${WHITE_COLOR};
   padding: ${halfPx()} ${singlePx()};
   position: fixed;
   top: 0;
@@ -28,11 +28,11 @@ export const Navbar = styled.nav<{
 
   ${({ showNavigationBarClosablePage }) =>
     showNavigationBarClosablePage
-      ? `border: 1.5px solid ${LIGHT_GRAY}`
+      ? `border: 1.5px solid ${LIGHT_GRAY_COLOR}`
       : `border: none`};
 
   ${({ showNavigationBarClosablePage }) => media.greaterThan('md')`
-    background-color: ${showNavigationBarClosablePage ? WHITE : LIGHT_GRAY};
+    background-color: ${showNavigationBarClosablePage ? WHITE_COLOR : LIGHT_GRAY_COLOR};
     padding: ${singlePx()} ${triplePx()};
     border: none;
   `};
@@ -66,14 +66,14 @@ export const LinksContainer = styled.div`
 
 export const NavLink = styled.a<{ isCurrentPage: boolean }>`
   text-decoration: none;
-  color: ${DARK_GRAY};
+  color: ${DARK_GRAY_COLOR};
   margin: 0 ${halfPx()};
   font-weight: bold;
   font-size: 1.1rem;
   cursor: pointer;
   transition: border-bottom 0.7s;
   border-bottom: 3px solid
-    ${({ isCurrentPage }) => (!isCurrentPage ? 'transparent' : ACCENT)};
+    ${({ isCurrentPage }) => (!isCurrentPage ? 'transparent' : ACCENT_COLOR)};
 
   ${media.greaterThan('md')`
     font-size: 1.2rem;
@@ -83,7 +83,7 @@ export const NavLink = styled.a<{ isCurrentPage: boolean }>`
     font-size: 1.5rem;
 
     &:hover {
-      border-bottom: 3px solid ${ACCENT};
+      border-bottom: 3px solid ${ACCENT_COLOR};
     }
   `};
 `
