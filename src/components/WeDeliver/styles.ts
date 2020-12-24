@@ -36,7 +36,13 @@ export const Title = styled.h5`
   `};
 `
 
-export const ContainerCards = styled.h5`
+export const ContainerCards = styled.div`
+  ${media.greaterThan('md')`
+    > .SimpleBigTitleCard > h5 {
+      width: 80%;
+    }
+  `};
+
   ${media.greaterThan('lg')`
     display: flex;
     flex-direction: row;
@@ -45,6 +51,10 @@ export const ContainerCards = styled.h5`
 
     > .SimpleBigTitleCard {
       width: 50%;
+    }
+
+    > .SimpleBigTitleCard > h5 {
+      width: 100%;
     }
   `};
 `

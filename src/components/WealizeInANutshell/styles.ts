@@ -59,6 +59,10 @@ export const Title = styled.h3`
   ${media.greaterThan('xl')`
     font-size: 1.5rem;
   `};
+
+  ${media.greaterThan('xxl')`
+    font-size: 1.8rem;
+  `};
 `
 
 export const Content = styled.div`
@@ -119,5 +123,9 @@ export const Paragraph = styled.h3<{
 
   ${media.greaterThan('xl')`
     font-size: 2.3rem;
+  `};
+
+  ${media.greaterThan('xxl')`
+    font-size: 2.7rem;
   `};
 `
