@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [Add component for show the we deliver enhancement](https://wealize.atlassian.net/browse/WLZAA-64)
+- [Add Expandable card component and things we are good at section enhancement](https://wealize.atlassian.net/browse/WLZAA-63)
+- [add lazy-loading for background images enhancement](https://wealize.atlassian.net/browse/WLZAA-59)
 - [Add page for Legacy terms](https://wealize.atlassian.net/browse/WLZAA-54)
 - [Add performance and accessibility improvements](https://wealize.atlassian.net/browse/WLZAA-57)
 - [Add pages to show information on the grants](https://wealize.atlassian.net/browse/WLZAA-45)
