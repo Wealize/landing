@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 
-import { WHITE_COLOR, DARK_GRAY_COLOR, LIGHT_GRAY_COLOR, ACCENT_COLOR } from '../../theme/color'
+import {
+  WHITE_COLOR,
+  DARK_GRAY_COLOR,
+  LIGHT_GRAY_COLOR,
+  ACCENT_COLOR
+} from '../../theme/color'
 import { halfPx, singlePx, triplePx } from '../../theme/space'
 import { media } from '../../theme/media'
 
@@ -32,7 +37,9 @@ export const Navbar = styled.nav<{
       : `border: none`};
 
   ${({ showNavigationBarClosablePage }) => media.greaterThan('md')`
-    background-color: ${showNavigationBarClosablePage ? WHITE_COLOR : LIGHT_GRAY_COLOR};
+    background-color: ${
+      showNavigationBarClosablePage ? WHITE_COLOR : LIGHT_GRAY_COLOR
+    };
     padding: ${singlePx()} ${triplePx()};
     border: none;
   `};
