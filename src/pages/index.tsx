@@ -1,6 +1,6 @@
 import React from 'react'
 
-import projects from '../data/projects'
+import projectsData from '../data/projectsData'
 import SimpleCard from '../components/Cards/Simple'
 import RoundedCard from '../components/Cards/Rounded'
 import { CardRounded } from '../interfaces/Cards/CardRounded'
@@ -19,7 +19,7 @@ const Index = (): JSX.Element => (
     </SimpleCard>
 
     <section>
-      {projects.map((project: CardRounded, index: number) => (
+      {projectsData.map((project: CardRounded, index: number) => (
         <RoundedCard
           key={index}
           imageUrl={project.imageUrl}

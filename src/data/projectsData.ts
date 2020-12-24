@@ -1,6 +1,6 @@
 import { CardRounded } from '../interfaces/Cards/CardRounded'
 
-const projects: CardRounded[] = [
+const projectsData: CardRounded[] = [
   {
     imageUrl: '/img/projects/odos.jpeg',
     title: 'The ODOS Network',
@@ -89,4 +89,4 @@ const projects: CardRounded[] = [
   }
 ]
 
-export default projects
+export default projectsData
