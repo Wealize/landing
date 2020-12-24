@@ -11,7 +11,7 @@
     "dev": "next",
     "start": "next start -p $PORT",
     "lint": "eslint './**/*.{js,ts,tsx}'",
-    "jest": "jest",
+    "jest": "jest --config='./jest.config.js' --coverage",
     "jest-with-coverage": "jest --coverage",
     "jest-collect-coverage": "jest --collectCoverage --coverageReporters=json-summary",
     "cypress-run": "cypress run",
