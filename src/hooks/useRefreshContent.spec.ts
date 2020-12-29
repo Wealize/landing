@@ -133,7 +133,7 @@ describe('useRefreshContent()', () => {
     expect(dataToDisplay.length).toEqual(MAX_ITEMS_TO_SHOW)
   })
 
-  it('should have changed elements', async () => {
+  it('should have changed elements', () => {
     const oldDataToDisplay = dataToDisplay
     act(() => refreshData())
     const elementsChanged = differenceWith(dataToDisplay, oldDataToDisplay)
@@ -143,9 +143,6 @@ describe('useRefreshContent()', () => {
 })
 
 describe('useRefreshContent() with wrong values', () => {
-  const MAX_ITEMS_TO_SHOW = 6
-  const MAX_ITEMS_TO_REFRESH = 2
-
   let dataToDisplay, refreshData
   const data = [
     {
