@@ -1,19 +1,7 @@
 import styled from 'styled-components'
 
-import {
-  WHITE_COLOR,
-  ACCENT_COLOR,
-  DARK_GRAY_COLOR,
-  LIGHT_GRAY_COLOR
-} from '../../theme/color'
-import {
-  singlePx,
-  singleAndHalfPx,
-  doublePx,
-  doubleAndHalfPx,
-  triplePx,
-  quadruplePx
-} from '../../theme/space'
+import { ACCENT_COLOR, LIGHT_GRAY_COLOR } from '../../theme/color'
+import { singlePx, doublePx, triplePx, quadruplePx } from '../../theme/space'
 import { media } from '../../theme/media'
 
 export const Container = styled.div`
@@ -21,17 +9,18 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   background: ${LIGHT_GRAY_COLOR};
-  padding: 0 ${singlePx()} ${singlePx()};
+  padding: 0 ${singlePx()} ${doublePx()};
   z-index: 1;
 
   ${media.greaterThan('md')`
-    padding: ${triplePx()} ${doublePx()};
+    padding: ${doublePx()};
   `};
 
   ${media.greaterThan('lg')`
     flex-wrap: wrap;
     flex-direction: row;
     align-items: stretch;
+    padding: ${triplePx()} ${quadruplePx()};
   `};
 
   ${media.greaterThan('xl')`
@@ -47,6 +36,7 @@ export const Title = styled.h3`
 
   ${media.greaterThan('md')`
     font-size: 1.1rem;
+    padding:  0 0 ${doublePx()};
   `};
 
   ${media.greaterThan('lg')`
