@@ -6,13 +6,11 @@
   },
   "extends": [
     "standard",
-    "plugin:jest/recommended",
+    "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier/@typescript-eslint",
-    "plugin:react/recommended",
     "plugin:cypress/recommended",
-    "plugin:prettier/recommended",
-    "prettier"
+    "plugin:jest/recommended"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -21,8 +19,11 @@
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module"
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "ignorePatterns": [
     "*.json", "next.config.js",
@@ -53,7 +54,8 @@
         "groups": [
           ["builtin"],
           ["external"],
-          ["parent", "internal", "sibling", "index", "unknown"]
+          ["parent"],
+          ["internal", "sibling", "index", "unknown"]
         ]
       }
     ]

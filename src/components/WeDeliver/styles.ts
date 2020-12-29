@@ -1,16 +1,7 @@
 import styled from 'styled-components'
 
-import { ACCENT_COLOR, WHITE_COLOR } from '../../theme/color'
-import {
-  singlePx,
-  doublePx,
-  triplePx,
-  quadruplePx,
-  triple,
-  quadruple
-} from '../../theme/space'
+import { singlePx, doublePx, triplePx } from '../../theme/space'
 import { media } from '../../theme/media'
-import { DEFAULT_RADIUS } from '../../theme/border'
 
 export const Container = styled.div`
   display: flex;
