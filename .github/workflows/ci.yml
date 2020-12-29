@@ -28,6 +28,9 @@ jobs:
 
       - name: Run unit tests
         run: yarn jest
+        env:
+          NODE_ENV: development
+
 
       - name: Run integration tests
         uses: cypress-io/github-action@v2
