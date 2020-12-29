@@ -25,7 +25,7 @@ describe('useRefreshContent()', () => {
   it('should have changed elements', async () => {
     const oldDataToDisplay = dataToDisplay
     await act(async () => await refreshData())
-    const elementsChanged = differenceWith(dataToDisplay, oldDataToDisplay)
+    const elementsChanged = await differenceWith(dataToDisplay, oldDataToDisplay)
     expect(elementsChanged.length).toEqual(MAX_ITEMS_TO_REFRESH)
     expect(dataToDisplay.length).toEqual(MAX_ITEMS_TO_SHOW)
   })
