@@ -2,6 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 import { BackgroundImage } from 'react-image-and-background-image-fade'
 
+import OpenUrlIcon from '../../icons/OpenUrlIcon'
+import { CardRounded } from '../../../interfaces/Cards/CardRounded'
+
 import {
   Container,
   BackgroundContainer,
@@ -14,8 +17,6 @@ import {
   TagsContainer,
   Tag
 } from './styles'
-import OpenUrlIcon from '../../icons/OpenUrlIcon'
-import { CardRounded } from '../../../interfaces/Cards/CardRounded'
 
 const RoundedCard = (props: CardRounded) => {
   const { imageUrl, title, description, link, tags, hasPrimary } = props
@@ -43,7 +44,8 @@ const RoundedCard = (props: CardRounded) => {
         <Content>
           <Title>{title}</Title>
           <Description>{description}</Description>
-          {link ? (
+          {link
+            ? (
             <LinkContainer color={link.color}>
               <Link href={link.url} passHref>
                 <LinkAnchor
@@ -57,10 +59,12 @@ const RoundedCard = (props: CardRounded) => {
               </Link>
               <OpenUrlIcon color={link.color}></OpenUrlIcon>
             </LinkContainer>
-          ) : null}
+              )
+            : null}
         </Content>
 
-        {hasTags() ? (
+        {hasTags()
+          ? (
           <TagsContainer>
             {tags.map((tag: string, index: number) => (
               <Tag hasPrimary={hasPrimary} key={index}>
@@ -68,7 +72,8 @@ const RoundedCard = (props: CardRounded) => {
               </Tag>
             ))}
           </TagsContainer>
-        ) : null}
+            )
+          : null}
       </ContentContainer>
     </Container>
   )

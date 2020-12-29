@@ -1,9 +1,10 @@
 import React from 'react'
 import { mount } from 'enzyme'
 
+import SimpleBigTitle from '../Cards/SimpleBigTitle'
+
 import { Title, ContainerCards } from './styles'
 import WeDeliver from './index'
-import SimpleBigTitle from '../Cards/SimpleBigTitle'
 
 describe('<WeDeliver />', () => {
   const wrapper = mount(<WeDeliver />)

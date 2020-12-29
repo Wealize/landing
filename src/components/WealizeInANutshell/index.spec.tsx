@@ -1,9 +1,10 @@
 import React from 'react'
 import { mount } from 'enzyme'
 
+import { ACCENT_COLOR } from '../../theme/color'
+
 import { Title, Paragraph } from './styles'
 import WealizeInANutshell from './index'
-import { ACCENT_COLOR } from '../../theme/color'
 
 describe('<WealizeInANutshell />', () => {
   const componentProps = {

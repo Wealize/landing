@@ -1,8 +1,9 @@
 import React from 'react'
 import { mount } from 'enzyme'
 
-import NavBar from './index'
 import ButtonRounded from '../Buttons/Rounded'
+
+import NavBar from './index'
 
 // eslint-disable-next-line
 const useRouter = jest.spyOn(require('next/router'), 'useRouter')

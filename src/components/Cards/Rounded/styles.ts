@@ -62,7 +62,7 @@ export const ContentContainer = styled.div<{ hasPrimary: boolean }>`
     display: flex;
     padding: ${singleAndHalfPx()};
     border-top-left-radius: ${hasPrimary ? 'initial' : `${DEFAULT_RADIUS}px`};
-    border-top-right-radius: ${hasPrimary ? `${DEFAULT_RADIUS}px` : `initial`};
+    border-top-right-radius: ${hasPrimary ? `${DEFAULT_RADIUS}px` : 'initial'};
     min-height: 450px;
   `};
 

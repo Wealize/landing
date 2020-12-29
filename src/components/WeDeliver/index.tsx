@@ -2,8 +2,9 @@ import React from 'react'
 
 import { CardSimpleBigTitle } from '../../interfaces/Cards/CardSimpleBigTitle'
 import SimpleBigTitleCard from '../Cards/SimpleBigTitle'
-import { Container, Title, ContainerCards } from './styles'
 import { WE_DELIVER_TITLE, WE_DELIVER_DATA } from '../../data/weDeliverData'
+
+import { Container, Title, ContainerCards } from './styles'
 const WeDeliver = () => {
   return (
     <Container>

@@ -2,6 +2,8 @@ import React, { useRef } from 'react'
 import Scroll from 'react-scroll'
 
 import RoundArrowIcon from '../icons/RoundArrowIcon'
+import WStaticIcon from '../icons/WStaticIcon'
+
 import {
   Container,
   Background,
@@ -10,7 +12,6 @@ import {
   Slogan,
   SubHeadline
 } from './styles'
-import WStaticIcon from '../icons/WStaticIcon'
 
 const HomeSpecial = () => {
   const containerRef = useRef(null)

@@ -2,9 +2,9 @@ import { act } from '@testing-library/react'
 import { differenceWith } from 'lodash'
 
 import { testHook } from '../utils/testHook'
+import talentsData from '../data/talentsData'
 
 import useRefreshContent from './useRefreshContent'
-import talentsData from '../data/talentsData'
 describe('useRefreshContent()', () => {
   const MAX_ITEMS_TO_SHOW = 6
   const MAX_ITEMS_TO_REFRESH = 2
@@ -22,9 +22,9 @@ describe('useRefreshContent()', () => {
     expect(dataToDisplay.length).toEqual(MAX_ITEMS_TO_SHOW)
   })
 
-  it('should have changed elements', async() => {
+  it('should have changed elements', async () => {
     const oldDataToDisplay = dataToDisplay
-    await act(async() => await refreshData())
+    await act(async () => await refreshData())
     const elementsChanged = differenceWith(dataToDisplay, oldDataToDisplay)
     expect(elementsChanged.length).toEqual(MAX_ITEMS_TO_REFRESH)
     expect(dataToDisplay.length).toEqual(MAX_ITEMS_TO_SHOW)
