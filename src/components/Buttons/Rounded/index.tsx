@@ -31,6 +31,7 @@ const ButtonRounded = (props: ButtonProps) => {
 
   return (
     <Container
+      className="button-rounded"
       backgroundColor={backgroundColor}
       textColor={textColor}
       animatedBackgroundColor={animatedBackgroundColor}
