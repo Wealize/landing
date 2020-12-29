@@ -32,7 +32,8 @@
     "__tests__/__mocks__/next/index.ts",
     "src/pages/_document.tsx",
     "src/pages/_app.tsx",
-    "global.d.ts"
+    "global.d.ts",
+    "public/*.js"
   ],
   "plugins": ["@typescript-eslint", "jest", "cypress"],
   "rules": {
