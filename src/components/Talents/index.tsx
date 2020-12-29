@@ -1,7 +1,7 @@
 import React from 'react'
 
 import TalentCard from '../Cards/Talent'
-import talentsData from '../../data/TalentsData'
+import talentsData from '../../data/talentsData'
 import { CardTalent } from '../../interfaces/Cards/CardTalent'
 import RoundedButton from '../Buttons/Rounded'
 import { SMALL } from '../Buttons/Rounded/sizes'
