@@ -34,7 +34,7 @@ export const Navbar = styled.nav<{
   ${({ showNavigationBarClosablePage }) =>
     showNavigationBarClosablePage
       ? `border: 1.5px solid ${LIGHT_GRAY_COLOR}`
-      : `border: none`};
+      : 'border: none'};
 
   ${({ showNavigationBarClosablePage }) => media.greaterThan('md')`
     background-color: ${

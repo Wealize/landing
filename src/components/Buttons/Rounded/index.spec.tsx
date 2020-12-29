@@ -1,12 +1,13 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import ButtonRounded from './index'
 import {
   ACCENT_COLOR,
   DARK_GRAY_COLOR,
   WHITE_COLOR
 } from '../../../theme/color'
+
+import ButtonRounded from './index'
 import {
   ContainerButtonOriginal,
   ContainerButtonAnimated,

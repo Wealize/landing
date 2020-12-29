@@ -11,19 +11,19 @@ window.IntersectionObserver = class {
 
   readonly thresholds: ReadonlyArray<number>
 
-  constructor() {
+  constructor () {
     this.root = null
     this.rootMargin = ''
     this.thresholds = []
   }
 
-  disconnect() {}
+  disconnect () {}
 
-  observe() {}
+  observe () {}
 
-  takeRecords(): IntersectionObserverEntry[] {
+  takeRecords (): IntersectionObserverEntry[] {
     return []
   }
 
-  unobserve() {}
+  unobserve () {}
 }

@@ -1,9 +1,10 @@
 import React, { ReactChild } from 'react'
 
-import { Main } from './styles'
 import Footer from '../Footer'
 import Navbar from '../Navbar'
 import { LayoutOptions } from '../../interfaces/Page'
+
+import { Main } from './styles'
 
 interface LayoutProps {
   children: ReactChild | ReactChild[] | Element | Element[]
