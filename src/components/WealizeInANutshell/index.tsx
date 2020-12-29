@@ -2,11 +2,12 @@ import React from 'react'
 import { InView } from 'react-intersection-observer'
 
 import { ACCENT_COLOR, DARK_GRAY_COLOR } from '../../theme/color'
-import { Container, Title, Content, Paragraph } from './styles'
 import {
   InANutshellTitle,
   InANutshellData
 } from '../../data/WealizeInANutshellData'
+
+import { Container, Title, Content, Paragraph } from './styles'
 
 interface CardProps {
   highlightColor: string

@@ -1,13 +1,9 @@
 import styled from 'styled-components'
 
-import { ACCENT_COLOR, WHITE_COLOR } from '../../../theme/color'
 import {
   singlePx,
   doublePx,
-  triplePx,
-  quadruplePx,
-  triple,
-  quadruple
+  triplePx
 } from '../../../theme/space'
 import { media } from '../../../theme/media'
 

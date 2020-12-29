@@ -5,6 +5,12 @@ import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 import Scroll from 'react-scroll'
 
 import { HOME_HREF, PROFILE_HREF } from '../../constants/hrefs'
+import WealizeMinimalMediumIcon from '../icons/WealizeMinimalMediumIcon'
+import WealizeNormalMediumIcon from '../icons/WealizeNormalMediumIcon'
+import ButtonRounded from '../Buttons/Rounded'
+import { ACCENT_COLOR, WHITE_COLOR } from '../../theme/color'
+import { SMALL } from '../Buttons/Rounded/sizes'
+
 import {
   Navbar,
   LogoMobileContainer,
@@ -12,11 +18,6 @@ import {
   NavLink,
   LinksContainer
 } from './styles'
-import WealizeMinimalMediumIcon from '../icons/WealizeMinimalMediumIcon'
-import WealizeNormalMediumIcon from '../icons/WealizeNormalMediumIcon'
-import ButtonRounded from '../Buttons/Rounded'
-import { ACCENT_COLOR, WHITE_COLOR } from '../../theme/color'
-import { SMALL } from '../Buttons/Rounded/sizes'
 
 interface NavbarProps {
   showNavigationBarClosablePage: boolean
@@ -61,7 +62,8 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
         </Link>
       </LogoContainer>
 
-      {showNavigationBarClosablePage ? (
+      {showNavigationBarClosablePage
+        ? (
         <ButtonRounded
           backgroundColor={WHITE_COLOR}
           textColor={ACCENT_COLOR}
@@ -73,7 +75,8 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
         >
           Return
         </ButtonRounded>
-      ) : (
+          )
+        : (
         <LinksContainer>
           <Link href={PROFILE_HREF}>
             <NavLink
@@ -94,7 +97,7 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
             Contact
           </NavLink>
         </LinksContainer>
-      )}
+          )}
     </Navbar>
   )
 }

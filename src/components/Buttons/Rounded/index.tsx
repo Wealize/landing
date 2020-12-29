@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { ButtonSize } from '../../../interfaces/Buttons/ButtonSize'
+
 import { MEDIUM } from './sizes'
 import {
   Container,

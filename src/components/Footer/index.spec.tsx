@@ -1,8 +1,10 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import Footer from './index'
 import ButtonRounded from '../Buttons/Rounded'
+import WealizeWhiteNormalMediumIcon from '../icons/WealizeWhiteNormalMediumIcon'
+
+import Footer from './index'
 import {
   BigText,
   Social,
@@ -10,7 +12,7 @@ import {
   CopyrightText,
   Grant
 } from './styles'
-import WealizeWhiteNormalMediumIcon from '../icons/WealizeWhiteNormalMediumIcon'
+
 
 describe('<Footer />', () => {
   const wrapper = shallow(<Footer />)

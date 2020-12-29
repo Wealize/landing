@@ -6,14 +6,6 @@ import BlockchainIcon from '../icons/thingsWeAreGoodAt/BlockchainIcon'
 import CognitiveIcon from '../icons/thingsWeAreGoodAt/CognitiveIcon'
 import ConversationalIcon from '../icons/thingsWeAreGoodAt/ConversationalIcon'
 import {
-  Container,
-  Title,
-  CardsContainer,
-  FirstCard,
-  SecondCard,
-  ThirdCard
-} from './styles'
-import {
   THINGS_WE_ARE_GOOD_AT_FIRST_CARD_HEADLINE,
   THINGS_WE_ARE_GOOD_AT_FIRST_CARD_SUBHEADLINE,
   THINGS_WE_ARE_GOOD_AT_FIRST_CARD_DESCRIPTION,
@@ -31,6 +23,15 @@ import {
   PRIMARY_LIGHT_COLOR,
   ACCENT_COLOR
 } from '../../theme/color'
+
+import {
+  Container,
+  Title,
+  CardsContainer,
+  FirstCard,
+  SecondCard,
+  ThirdCard
+} from './styles'
 
 const ThingsWeAreGoodAt = () => {
   const { ref, entry } = useInView({

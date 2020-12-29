@@ -4,6 +4,18 @@ import Link from 'next/link'
 import WealizeWhiteNormalMediumIcon from '../icons/WealizeWhiteNormalMediumIcon'
 import ButtonRounded from '../Buttons/Rounded/'
 import { MEDIUM } from '../Buttons/Rounded/sizes'
+import { ACCENT_COLOR, DARK_GRAY_COLOR, WHITE_COLOR } from '../../theme/color'
+import LinkedinIcon from '../icons/social/LinkedinIcon'
+import TwitterIcon from '../icons/social/TwitterIcon'
+import DevtoIcon from '../icons/social/DevtoIcon'
+import CDTIIcon from '../icons/grants/CDTIIcon'
+import InnovationPymeIcon from '../icons/grants/InnovationPymeIcon'
+import {
+  CDTI_HREF,
+  INNOVATION_SME_HREF,
+  PRIVACY_LEGAL
+} from '../../constants/hrefs'
+
 import {
   Container,
   ContainerContent,
@@ -24,17 +36,6 @@ import {
   ContainerGrants,
   Grant
 } from './styles'
-import { ACCENT_COLOR, DARK_GRAY_COLOR, WHITE_COLOR } from '../../theme/color'
-import LinkedinIcon from '../icons/social/LinkedinIcon'
-import TwitterIcon from '../icons/social/TwitterIcon'
-import DevtoIcon from '../icons/social/DevtoIcon'
-import CDTIIcon from '../icons/grants/CDTIIcon'
-import InnovationPymeIcon from '../icons/grants/InnovationPymeIcon'
-import {
-  CDTI_HREF,
-  INNOVATION_SME_HREF,
-  PRIVACY_LEGAL
-} from '../../constants/hrefs'
 const Footer = () => {
   return (
     <Container id="footer">
