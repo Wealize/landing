@@ -30,12 +30,12 @@ export const Title = styled.h3`
 
   ${media.greaterThan('lg')`
     width: 60%;
-    font-size: 2rem
+    font-size: 2.1rem
   `};
 
   ${media.greaterThan('xl')`
-    width: 50%;
-    font-size: 2.1rem
+    width: 55%;
+    font-size: 2.5rem
   `};
 `
 
@@ -49,6 +49,18 @@ export const ContentContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: ${doublePx()};
+  `};
+
+  ${media.greaterThan('lg')`
+    grid-gap: ${doubleAndHalfPx()};
+  `};
+
+  ${media.greaterThan('xl')`
+    grid-gap: ${triplePx()};
+  `};
+
+  ${media.greaterThan('xxl')`
+    grid-gap: ${quadruplePx()};
   `};
 `
 
