@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 import { ACCENT_COLOR, LIGHT_GRAY_COLOR } from '../../theme/color'
-import { singlePx, doublePx, triplePx, quadruplePx } from '../../theme/space'
+import { singlePx, doublePx, doubleAndHalfPx, triplePx, quadruplePx } from '../../theme/space'
 import { media } from '../../theme/media'
 
 export const Container = styled.div`
@@ -9,18 +9,18 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   background: ${LIGHT_GRAY_COLOR};
-  padding: 0 ${singlePx()} ${doublePx()};
+  padding: ${doubleAndHalfPx()} ${singlePx()};
   z-index: 1;
 
   ${media.greaterThan('md')`
-    padding: ${doublePx()};
+    padding: ${triplePx()} ${doublePx()};
   `};
 
   ${media.greaterThan('lg')`
     flex-wrap: wrap;
     flex-direction: row;
     align-items: stretch;
-    padding: ${triplePx()} ${quadruplePx()};
+    padding: ${triplePx()} ${doublePx()};
   `};
 
   ${media.greaterThan('xl')`
@@ -32,7 +32,7 @@ export const Title = styled.h3`
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  padding: ${doublePx()} 0;
+  padding:  0 0 ${doublePx()};
 
   ${media.greaterThan('md')`
     font-size: 1.1rem;
@@ -68,6 +68,10 @@ export const Content = styled.div`
 
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  > .wealize-nutshell-paragraph:last-child {
+    padding-bottom: 0;
   }
 
   ${media.greaterThan('md')`
