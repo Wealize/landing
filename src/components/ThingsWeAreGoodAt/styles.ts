@@ -27,15 +27,15 @@ export const Container = styled.div`
     width: 90%;
     border-top-right-radius: initial;
     border-top-left-radius: ${DEFAULT_RADIUS}px;
-    margin: ${triple() * 1.5}px 0 ${triple() * 6}px;
+    margin: ${triplePx()} 0 ${triple() * 6}px;
   `};
 
   ${media.greaterThan('xl')`
-    margin: ${quadruple() * 1.5}px 0 ${quadruple() * 6}px;
+    margin: ${quadruplePx()} 0 ${quadruple() * 6}px;
   `};
 
   ${media.greaterThan('xxl')`
-    margin: ${quadruple() * 2}px 0 ${quadruple() * 8}px;
+    margin: ${quadruplePx()} 0 ${quadruple() * 8}px;
   `};
 `
 
