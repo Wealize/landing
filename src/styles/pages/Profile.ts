@@ -23,13 +23,19 @@ export const StartedContainer = styled.div`
     position: absolute;
     bottom: -15%;
     right: -50%;
-    z-index: 1;
     height: 50%;
     z-index: -1;
   }
 
   ${media.greaterThan('md')`
     padding: ${triplePx()} ${doublePx()};
+
+    > .w-static-logo {
+      bottom: -15%;
+      right: -50%;
+      width: 90%;
+      height: 50%;
+    }
   `};
 
   ${media.greaterThan('lg')`
