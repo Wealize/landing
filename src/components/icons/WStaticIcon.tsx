@@ -7,6 +7,7 @@ const WStaticIcon = (props: React.SVGProps<SVGSVGElement>) => {
       width="100%"
       height="100%"
       viewBox="0 0 1223.851 743.141"
+      className="w-static-logo"
       {...props}
     >
       <defs>
