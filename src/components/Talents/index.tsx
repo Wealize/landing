@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import TalentCard from '../Cards/Talent'
 import talentsData from '../../data/talentsData'
@@ -15,11 +15,15 @@ const Talents = () => {
 
   const MAX_ITEMS_TO_SHOW = 6
   const MAX_ITEMS_TO_REFRESH = 2
-  const { dataToDisplay, refreshData } = useRefreshContent(
+  const { dataToDisplay, elementsReplacedLastRefresh, refreshData } = useRefreshContent(
     talentsData,
     MAX_ITEMS_TO_SHOW,
     MAX_ITEMS_TO_REFRESH
   )
+
+  useEffect(() => {
+    console.warn(elementsReplacedLastRefresh.length)
+  }, [elementsReplacedLastRefresh])
 
   return (
     <Container>

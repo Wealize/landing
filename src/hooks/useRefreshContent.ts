@@ -3,6 +3,7 @@ import { isEqual, differenceWith } from 'lodash'
 
 interface IUseRefreshContent {
   dataToDisplay: any[]
+  elementsReplacedLastRefresh: number[]
   refreshData: () => void
 }
 
@@ -13,6 +14,7 @@ const useRefreshContent = (
 ): IUseRefreshContent => {
   const [dataToDisplay, setDataToDisplay] = useState(data)
   const [dataNotDisplayed, setDataNotDisplayed] = useState([])
+  const [elementsReplacedLastRefresh, setElementsReplacedLastRefresh] = useState([])
 
   useEffect(() => {
     setDataToDisplay(getDataToShow(data, MAX_ITEMS_TO_SHOW))
@@ -76,9 +78,12 @@ const useRefreshContent = (
         return indexesToReplace.includes(index) ? elementsToAdd.pop() : element
       })
     )
+
+    setElementsReplacedLastRefresh(indexesToReplace)
   }
 
-  return { dataToDisplay, refreshData }
+
+  return { dataToDisplay, elementsReplacedLastRefresh, refreshData }
 }
 
 export default useRefreshContent
