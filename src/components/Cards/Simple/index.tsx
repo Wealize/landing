@@ -8,7 +8,7 @@ interface CardProps {
 
 const SimpleCard = ({ children }: CardProps) => {
   return (
-    <Container className="SimpleCard">
+    <Container className="simple-card">
       <Text>{children}</Text>
     </Container>
   )

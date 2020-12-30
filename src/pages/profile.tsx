@@ -7,10 +7,12 @@ import ThingsWeAreGoodAt from '../components/ThingsWeAreGoodAt'
 import WeDeliver from '../components/WeDeliver'
 import { Container } from '../styles/pages/Profile'
 import Talents from '../components/Talents'
+import ServicesAndVentures from '../components/ServicesAndVentures'
 
 const Profile = (): JSX.Element => {
   return (
     <Container>
+      <ServicesAndVentures/>
       <ThingsWeAreGoodAt />
       <WeDeliver />
       <WealizeInANutshell highlightColor={ACCENT_COLOR} />
