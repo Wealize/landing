@@ -1,51 +1,62 @@
 import styled from 'styled-components'
 
-import { singlePx, doublePx, triplePx } from '../../theme/space'
+import { doublePx, doubleAndHalfPx, triplePx, quadruplePx } from '../../theme/space'
 import { media } from '../../theme/media'
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: ${doublePx()} 0;
+  padding: ${doubleAndHalfPx()} 0;
 
-  ${media.greaterThan('lg')`
-    padding: ${singlePx()} ${singlePx()} ${triplePx()};
+  ${media.greaterThan('md')`
+    padding: ${triplePx()} ${doublePx()};
+  `};
+
+  ${media.greaterThan('xl')`
+    padding: ${quadruplePx()};
   `};
 `
 
 export const Title = styled.h5`
   font-size: 1.7rem;
-  padding: ${singlePx()} ${singlePx()} 0;
+  padding: 0;
 
-  ${media.greaterThan('md')`
-    padding: ${singlePx()} ${doublePx()} 0;
-  `};
 
   ${media.greaterThan('lg')`
     font-size: 2rem;
-    padding: ${singlePx()} ${triplePx()} 0;
   `};
 `
 
 export const ContainerCards = styled.div`
+
+  > .simple-big-title-card:last-child h5{
+    padding-bottom: 0;
+  }
+
   ${media.greaterThan('md')`
-    > .SimpleBigTitleCard > h5 {
+
+    > .simple-big-title-card {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    > .simple-big-title-card > h5 {
       width: 80%;
+    }
+
+    > .simple-big-title-card:last-child {
+      padding-bottom: 0;
     }
   `};
 
   ${media.greaterThan('lg')`
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: ${doublePx()};
 
-    > .SimpleBigTitleCard {
-      width: 50%;
-    }
-
-    > .SimpleBigTitleCard > h5 {
+    > .simple-big-title-card > h5 {
       width: 100%;
     }
   `};
+
 `

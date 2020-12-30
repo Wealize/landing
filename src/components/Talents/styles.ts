@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { singlePx, doublePx, triplePx } from '../../theme/space'
+import { singlePx, doublePx, doubleAndHalfPx, triplePx, quadruplePx } from '../../theme/space'
 import { media } from '../../theme/media'
 
 export const Container = styled.div`
@@ -9,18 +9,14 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: ${doublePx()} 0;
+  padding: ${doubleAndHalfPx()} ${singlePx()};
 
-  ${media.greaterThan('lg')`
-    padding: ${doublePx()};
+  ${media.greaterThan('md')`
+    padding: ${triplePx()} ${doublePx()};
   `};
 
   ${media.greaterThan('xl')`
-    padding: ${singlePx()} ${singlePx()} ${triplePx()};
-  `};
-
-  ${media.greaterThan('xxl')`
-    padding: ${singlePx()} ${singlePx()} ${triplePx()};
+    padding: ${quadruplePx()};
   `};
 `
 
@@ -37,7 +33,7 @@ export const ContentContainer = styled.div`
   }
 
   ${media.greaterThan('md')`
-    padding: ${doublePx()};
+    padding: 0;
 
     & .button-rounded {
       max-width: 200px;
@@ -49,7 +45,6 @@ export const ContentContainer = styled.div`
 
   ${media.greaterThan('lg')`
     width: 100%;
-    padding: ${triplePx()};
     flex-direction: row;
     justify-content: space-between;
 
@@ -93,31 +88,32 @@ export const CardsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: ${doublePx()} 0 0;
   flex-wrap: wrap;
+
+  & .talent-card {
+    padding-left: initial;
+    padding-right: initial;
+  }
 
   ${media.greaterThan('md')`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: ${singlePx()};
-    padding: ${singlePx()} ${doublePx()} 0;
 
     & .talent-card {
       padding-left: initial;
       padding-right: initial;
-      padding-top: initial;
+      padding-bottom: initial;
     }
   `};
 
   ${media.greaterThan('lg')`
-    padding: 0 ${triplePx()} 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: ${doublePx()};
   `};
 
   ${media.greaterThan('xxl')`
-    padding: 0 ${triplePx()} ${doublePx()};
     grid-template-columns: repeat(4, 1fr);
   `};
 `

@@ -9,7 +9,7 @@ interface CardProps {
 
 const SimpleBigTitleCard = ({ title, description }: CardProps) => {
   return (
-    <Container className="SimpleBigTitleCard">
+    <Container className="simple-big-title-card">
       <Headline>{title}</Headline>
       <SubHeadline>{description}</SubHeadline>
     </Container>

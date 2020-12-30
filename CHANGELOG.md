@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [Add services and ventures component](https://wealize.atlassian.net/browse/WLZAA-62)
 - [Add wealize talents component](https://wealize.atlassian.net/browse/WLZAA-60)
 - [Add wealize in a nutshell component](https://wealize.atlassian.net/browse/WLZAA-61)
 - [Add component for show the we deliver](https://wealize.atlassian.net/browse/WLZAA-64)
