@@ -23,7 +23,7 @@ export const Container = styled.div`
 export const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0 ${singlePx()};
+  padding: 0;
 
   & .button-rounded {
     max-width: 150px;
