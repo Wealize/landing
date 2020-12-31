@@ -182,7 +182,6 @@ export const SectionContentContainer = styled.div<{isExpanded: boolean}>`
 `
 
 export const SectionElement = styled.span`
-  padding-right: ${singlePx()};
   padding-top: ${twoThirdPx()};
 
   &:before {
