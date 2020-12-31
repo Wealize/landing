@@ -35,6 +35,7 @@ describe('<RoundedCard />', () => {
 
   it('wrapper: should render', () => {
     expect(wrapperWithAllProps).toBeDefined()
+    expect(wrapperWithAllProps).toMatchSnapshot()
   })
 
   it('wrapperWithAllProps: should show correct components content', () => {

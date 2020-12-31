@@ -1,0 +1,386 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RoundedCard /> wrapper: should render 1`] = `
+<Memo(RoundedCard)
+  description="Deployment of a WhatsApp Business Chatbot integrated with the Spanish fact-checking platform focused on combating the spread of disinformation in order to expand their service’s reach"
+  hasPrimary={false}
+  imageUrl="/img/projects/maldita.jpg"
+  link={
+    Object {
+      "color": "#6666ff",
+      "text": "hola",
+      "url": "url",
+    }
+  }
+  tags={
+    Array [
+      "Media",
+      "Fact-checking",
+      "Chatbots",
+    ]
+  }
+  title="Maldita"
+>
+  <styled.article
+    className="RoundedCard"
+    hasPrimary={false}
+  >
+    <article
+      className="eDhfeL RoundedCard"
+    >
+      <styled.div>
+        <div
+          className="hOKZVf"
+        >
+          <BackgroundImage
+            element="div"
+            height="100%"
+            lazyLoad={true}
+            src="/img/projects/maldita.jpg"
+            style={
+              Object {
+                "backgroundPosition": "top center",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover",
+                "minHeight": "290px",
+                "minWidth": "300px",
+              }
+            }
+            transitionTime="0.3s"
+            width="100%"
+          >
+            <ImageLoader
+              lazyLoad={true}
+              src="/img/projects/maldita.jpg"
+              transitionTime="0.3s"
+            >
+              <VisibilitySensor
+                active={true}
+                containment={null}
+                delayedCall={false}
+                intervalCheck={true}
+                intervalDelay={100}
+                minTopValue={0}
+                offset={Object {}}
+                onChange={[Function]}
+                partialVisibility={true}
+                resizeCheck={false}
+                resizeDelay={250}
+                resizeThrottle={-1}
+                scrollCheck={false}
+                scrollDelay={250}
+                scrollThrottle={-1}
+              >
+                <styled.div
+                  height="100%"
+                  width="100%"
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "",
+                          "isStatic": false,
+                          "lastClassName": "YfvHE",
+                          "rules": Array [
+                            "
+  ",
+                            [Function],
+                            ";
+  ",
+                            [Function],
+                            ";
+  ",
+                            [Function],
+                            ";
+  position: relative;
+  overflow: hidden;
+",
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    height="100%"
+                    width="100%"
+                  >
+                    <div
+                      className="YfvHE"
+                      height="100%"
+                      width="100%"
+                    >
+                      <div
+                        style={
+                          Object {
+                            "backgroundPosition": "top center",
+                            "backgroundRepeat": "no-repeat",
+                            "backgroundSize": "cover",
+                            "height": "100%",
+                            "minHeight": "290px",
+                            "minWidth": "300px",
+                            "width": "100%",
+                          }
+                        }
+                      />
+                      <Loader
+                        hasLoaded={false}
+                        isOnTop={true}
+                        transitionTime="0.3s"
+                      >
+                        <styled.div
+                          hasLoaded={false}
+                          isOnTop={true}
+                          transitionTime="0.3s"
+                        >
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "",
+                                  "isStatic": false,
+                                  "lastClassName": "iVGwIn",
+                                  "rules": Array [
+                                    "
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: ",
+                                    [Function],
+                                    ";
+  opacity: ",
+                                    [Function],
+                                    ";
+  transition: opacity ",
+                                    [Function],
+                                    " ease;
+
+  &:before {
+    content: \\"\\";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 120%;
+    transform: rotate(-30deg);
+    background-image: linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0) 80%
+    );
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100px 100%;
+    animation: ",
+                                    Keyframes {
+                                      "id": "sc-keyframes-ksXkoA",
+                                      "inject": [Function],
+                                      "name": "ksXkoA",
+                                      "rules": Array [
+                                        "@-webkit-keyframes ksXkoA{from{background-position:0 0;}to{background-position:calc(100% + 50px);}}",
+                                        "@keyframes ksXkoA{from{background-position:0 0;}to{background-position:calc(100% + 50px);}}",
+                                      ],
+                                      "toString": [Function],
+                                    },
+                                    " 1s infinite linear;
+  }
+",
+                                  ],
+                                },
+                                "displayName": "styled.div",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "",
+                                "target": "div",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            hasLoaded={false}
+                            isOnTop={true}
+                            transitionTime="0.3s"
+                          >
+                            <div
+                              className="iVGwIn"
+                            />
+                          </StyledComponent>
+                        </styled.div>
+                      </Loader>
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+              </VisibilitySensor>
+            </ImageLoader>
+          </BackgroundImage>
+        </div>
+      </styled.div>
+      <styled.div
+        hasPrimary={false}
+      >
+        <div
+          className="kUhGJu"
+        >
+          <styled.div>
+            <div
+              className="ipWHXD"
+            >
+              <styled.h4>
+                <h4
+                  className="kSFCSf"
+                >
+                  Maldita
+                </h4>
+              </styled.h4>
+              <styled.p>
+                <p
+                  className="zWgDW"
+                >
+                  Deployment of a WhatsApp Business Chatbot integrated with the Spanish fact-checking platform focused on combating the spread of disinformation in order to expand their service’s reach
+                </p>
+              </styled.p>
+              <styled.div
+                color="#6666ff"
+              >
+                <div
+                  className="kjYhTJ"
+                  color="#6666ff"
+                >
+                  <Link
+                    href="url"
+                    passHref={true}
+                  >
+                    <styled.a
+                      aria-label="hola"
+                      color="#6666ff"
+                      href="/url"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <a
+                        aria-label="hola"
+                        className="eBnzaz"
+                        color="#6666ff"
+                        href="/url"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        hola
+                      </a>
+                    </styled.a>
+                  </Link>
+                  <Memo(OpenUrlIcon)
+                    color="#6666ff"
+                  >
+                    <svg
+                      color="#6666ff"
+                      height=".8em"
+                      viewBox="0 0 11.966 12.059"
+                      width=".8em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g
+                        id="prefix__Grupo_4662"
+                        transform="translate(-281.995 -7112.112)"
+                      >
+                        <g
+                          id="prefix__Grupo_4426"
+                          transform="translate(282.745 7112.862)"
+                        >
+                          <path
+                            className="prefix__cls-1"
+                            d="M6889.425-3355.839h-5.518v10.559h10.466v-5.392"
+                            fill="none"
+                            id="prefix__Trazado_11470"
+                            stroke="#6666ff"
+                            strokeWidth={1.5}
+                            transform="translate(-6883.908 3355.839)"
+                          />
+                          <path
+                            className="prefix__cls-1"
+                            d="M6907.384-3355.839h3.2v3.307"
+                            fill="none"
+                            id="prefix__Trazado_11471"
+                            stroke="#6666ff"
+                            strokeWidth={1.5}
+                            transform="translate(-6900.186 3355.839)"
+                          />
+                          <path
+                            className="prefix__cls-1"
+                            d="M6902.391-3355.839l-6.067 6.306"
+                            fill="none"
+                            id="prefix__Trazado_11472"
+                            stroke="#6666ff"
+                            strokeWidth={1.5}
+                            transform="translate(-6891.996 3355.839)"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </Memo(OpenUrlIcon)>
+                </div>
+              </styled.div>
+            </div>
+          </styled.div>
+          <styled.div>
+            <div
+              className="jlfqVc"
+            >
+              <styled.span
+                hasPrimary={false}
+                key="0"
+              >
+                <span
+                  className="gCttWV"
+                >
+                  Media
+                </span>
+              </styled.span>
+              <styled.span
+                hasPrimary={false}
+                key="1"
+              >
+                <span
+                  className="gCttWV"
+                >
+                  Fact-checking
+                </span>
+              </styled.span>
+              <styled.span
+                hasPrimary={false}
+                key="2"
+              >
+                <span
+                  className="gCttWV"
+                >
+                  Chatbots
+                </span>
+              </styled.span>
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+    </article>
+  </styled.article>
+</Memo(RoundedCard)>
+`;

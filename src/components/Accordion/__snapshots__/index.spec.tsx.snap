@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Accordion /> should render 1`] = `
+<styled.div
+  backgroundColor="#6666ff"
+  textColor="#ffffff"
+>
+  <styled.div>
+    <styled.h5
+      textColor="#ffffff"
+    >
+      Tools & Tech Stack
+    </styled.h5>
+    <styled.hr
+      className="accordion-separator"
+      textColor="#ffffff"
+    />
+  </styled.div>
+  <styled.div
+    className="accordion-section-container"
+    key="0"
+  >
+    <styled.div
+      isExpanded={true}
+    >
+      <styled.h6>
+        Languages & frameworks
+      </styled.h6>
+      <styled.button
+        aria-label="expand Languages & frameworks content button"
+        backgroundColor="#6666ff"
+        className="accordion-section-toggle-button"
+        isExpanded={true}
+        onClick={[Function]}
+        textColor="#ffffff"
+      >
+        <Memo(RoundArrowIcon) />
+      </styled.button>
+      <Memo(ButtonRounded)
+        animatedBackgroundColor="#ffffff"
+        animatedTextColor="#6666ff"
+        backgroundColor="#6666ff"
+        handleClick={[Function]}
+        size={
+          Object {
+            "desktop": Array [
+              170,
+              50,
+            ],
+            "mobile": Array [
+              90,
+              50,
+            ],
+            "tablet": Array [
+              150,
+              50,
+            ],
+            "wide": Array [
+              190,
+              50,
+            ],
+          }
+        }
+        textColor="#ffffff"
+      >
+        Close
+      </Memo(ButtonRounded)>
+    </styled.div>
+    <styled.div
+      isExpanded={true}
+    >
+      <styled.span
+        key="0"
+      >
+        Cypress
+      </styled.span>
+      <styled.span
+        key="1"
+      >
+        Jest
+      </styled.span>
+      <styled.span
+        key="2"
+      >
+        Redux
+      </styled.span>
+      <styled.span
+        key="3"
+      >
+        Fabric
+      </styled.span>
+      <styled.span
+        key="4"
+      >
+        Hyperledger Besu
+      </styled.span>
+      <styled.span
+        key="5"
+      >
+        Quorum
+      </styled.span>
+      <styled.span
+        key="6"
+      >
+        web3
+      </styled.span>
+    </styled.div>
+    <styled.hr
+      className="accordion-separator"
+      textColor="#ffffff"
+    />
+  </styled.div>
+  <styled.div
+    className="accordion-section-container"
+    key="1"
+  >
+    <styled.div
+      isExpanded={false}
+    >
+      <styled.h6>
+        Devops, Architecture & Systems
+      </styled.h6>
+      <styled.button
+        aria-label="expand Devops, Architecture & Systems content button"
+        backgroundColor="#6666ff"
+        className="accordion-section-toggle-button"
+        isExpanded={false}
+        onClick={[Function]}
+        textColor="#ffffff"
+      >
+        <Memo(RoundArrowIcon) />
+      </styled.button>
+      <Memo(ButtonRounded)
+        animatedBackgroundColor="#ffffff"
+        animatedTextColor="#6666ff"
+        backgroundColor="#6666ff"
+        handleClick={[Function]}
+        size={
+          Object {
+            "desktop": Array [
+              170,
+              50,
+            ],
+            "mobile": Array [
+              90,
+              50,
+            ],
+            "tablet": Array [
+              150,
+              50,
+            ],
+            "wide": Array [
+              190,
+              50,
+            ],
+          }
+        }
+        textColor="#ffffff"
+      >
+        See more
+      </Memo(ButtonRounded)>
+    </styled.div>
+    <styled.div
+      isExpanded={false}
+    >
+      <styled.span
+        key="0"
+      >
+        Cypress
+      </styled.span>
+      <styled.span
+        key="1"
+      >
+        Jest
+      </styled.span>
+      <styled.span
+        key="2"
+      >
+        Redux
+      </styled.span>
+      <styled.span
+        key="3"
+      >
+        Fabric
+      </styled.span>
+      <styled.span
+        key="4"
+      >
+        Hyperledger Besu
+      </styled.span>
+      <styled.span
+        key="5"
+      >
+        Quorum
+      </styled.span>
+      <styled.span
+        key="6"
+      >
+        web3
+      </styled.span>
+    </styled.div>
+    <styled.hr
+      className="accordion-separator"
+      textColor="#ffffff"
+    />
+  </styled.div>
+</styled.div>
+`;

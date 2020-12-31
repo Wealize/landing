@@ -1,0 +1,472 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ThingsWeAreGoodAt /> should render 1`] = `
+<Memo(ThingsWeAreGoodAt)>
+  <styled.div>
+    <div
+      className="fbEXcP"
+    >
+      <styled.h3>
+        <h3
+          className="jsgfGs"
+        >
+          Things we are good at
+        </h3>
+      </styled.h3>
+      <styled.div>
+        <div
+          className="gUBCSt"
+        >
+          <styled.article>
+            <article
+              className="gfWFot"
+            >
+              <Memo(ExpandableCard)
+                backgroundColor="#ffc9c9"
+                description="We build distributed ledgers and consensus networks for identity, traceability and accountability"
+                headline="Blockchain development"
+                image={<Memo(BlockchainIcon) />}
+                isExpanded={true}
+                subheadline="When transparency and trust are hard requirements"
+                textColor="#f06078"
+              >
+                <styled.div
+                  backgroundColor="#ffc9c9"
+                  className="ExpandableCard"
+                  isExpanded={true}
+                  textColor="#f06078"
+                >
+                  <div
+                    className="rAuDJ ExpandableCard"
+                  >
+                    <styled.div
+                      isExpanded={true}
+                    >
+                      <div
+                        className="kPrrwy"
+                      >
+                        <styled.h3>
+                          <h3
+                            className="bqIrWW"
+                          >
+                            Blockchain development
+                          </h3>
+                        </styled.h3>
+                        <styled.button
+                          aria-label="expand card content button"
+                          isExpanded={true}
+                          onClick={[Function]}
+                          textColor="#f06078"
+                        >
+                          <button
+                            aria-label="expand card content button"
+                            className="fmgOP"
+                            onClick={[Function]}
+                          >
+                            <Memo(RoundArrowIcon)>
+                              <svg
+                                height="100%"
+                                viewBox="0 0 40 40"
+                                width="100%"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M20 40a20 20 0 1120-20 20 20 0 01-20 20z"
+                                  />
+                                  <path
+                                    d="M20 38.5c4.942 0 9.587-1.924 13.081-5.419A18.375 18.375 0 0038.5 20c0-4.942-1.924-9.587-5.419-13.081A18.375 18.375 0 0020 1.5 18.374 18.374 0 006.919 6.919 18.375 18.375 0 001.5 20c0 4.942 1.924 9.587 5.419 13.081A18.375 18.375 0 0020 38.5m0 1.5C8.954 40 0 31.046 0 20S8.954 0 20 0s20 8.954 20 20-8.954 20-20 20z"
+                                    fill="#f06078"
+                                  />
+                                </g>
+                                <path
+                                  d="M13.79 15.465l5.4-4.139v19.673h1.5V11.325l5.4 4.139.912-1.19-6.311-4.839-.045-.035h-1.41l-.045.034-6.312 4.839z"
+                                  fill="#f06078"
+                                />
+                              </svg>
+                            </Memo(RoundArrowIcon)>
+                          </button>
+                        </styled.button>
+                      </div>
+                    </styled.div>
+                    <styled.div
+                      isExpanded={true}
+                    >
+                      <div
+                        className="jIPIAm"
+                      >
+                        <styled.div>
+                          <div
+                            className="cLPOj"
+                          >
+                            <Memo(BlockchainIcon)>
+                              <svg
+                                height="100%"
+                                viewBox="0 0 280 280"
+                                width="100%"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  blockchain@1x
+                                </title>
+                                <g
+                                  fill="none"
+                                  fillRule="evenodd"
+                                >
+                                  <g
+                                    fill="#F06078"
+                                    fillRule="nonzero"
+                                  >
+                                    <path
+                                      d="M84.976 87.703H46.361V49.06h38.615z"
+                                      style={
+                                        Object {
+                                          "mixBlendMode": "multiply",
+                                        }
+                                      }
+                                    />
+                                    <path
+                                      d="M117.68 113.972H65.668v-52.05h52.012z"
+                                    />
+                                    <path
+                                      d="M157.667 154.178H91.675v-66.04h65.992z"
+                                      style={
+                                        Object {
+                                          "mixBlendMode": "multiply",
+                                        }
+                                      }
+                                    />
+                                    <path
+                                      d="M236.033 232.482H124.67V121.04h111.363z"
+                                    />
+                                  </g>
+                                  <path
+                                    d="M91.674 88.139h26.006V114H91.674z"
+                                    fill="#E12438"
+                                  />
+                                </g>
+                              </svg>
+                            </Memo(BlockchainIcon)>
+                          </div>
+                        </styled.div>
+                        <styled.h4>
+                          <h4
+                            className="kpakfC"
+                          >
+                            When transparency and trust are hard requirements
+                          </h4>
+                        </styled.h4>
+                        <styled.h5>
+                          <h5
+                            className="gYdFIO"
+                          >
+                            We build distributed ledgers and consensus networks for identity, traceability and accountability
+                          </h5>
+                        </styled.h5>
+                      </div>
+                    </styled.div>
+                  </div>
+                </styled.div>
+              </Memo(ExpandableCard)>
+            </article>
+          </styled.article>
+          <styled.article>
+            <article
+              className="crCrwq"
+            >
+              <Memo(ExpandableCard)
+                backgroundColor="#f06078"
+                description="We utilize machine learning and artificial intelligence to empower businesses by making better decisions"
+                headline="Cognitive services"
+                image={<Memo(CognitiveIcon) />}
+                isExpanded={false}
+                subheadline="Think, predict and act"
+                textColor="#ffffff"
+              >
+                <styled.div
+                  backgroundColor="#f06078"
+                  className="ExpandableCard"
+                  isExpanded={false}
+                  textColor="#ffffff"
+                >
+                  <div
+                    className="iLBFFl ExpandableCard"
+                  >
+                    <styled.div
+                      isExpanded={false}
+                    >
+                      <div
+                        className="igLjXA"
+                      >
+                        <styled.h3>
+                          <h3
+                            className="bqIrWW"
+                          >
+                            Cognitive services
+                          </h3>
+                        </styled.h3>
+                        <styled.button
+                          aria-label="expand card content button"
+                          isExpanded={false}
+                          onClick={[Function]}
+                          textColor="#ffffff"
+                        >
+                          <button
+                            aria-label="expand card content button"
+                            className="llWzua"
+                            onClick={[Function]}
+                          >
+                            <Memo(RoundArrowIcon)>
+                              <svg
+                                height="100%"
+                                viewBox="0 0 40 40"
+                                width="100%"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M20 40a20 20 0 1120-20 20 20 0 01-20 20z"
+                                  />
+                                  <path
+                                    d="M20 38.5c4.942 0 9.587-1.924 13.081-5.419A18.375 18.375 0 0038.5 20c0-4.942-1.924-9.587-5.419-13.081A18.375 18.375 0 0020 1.5 18.374 18.374 0 006.919 6.919 18.375 18.375 0 001.5 20c0 4.942 1.924 9.587 5.419 13.081A18.375 18.375 0 0020 38.5m0 1.5C8.954 40 0 31.046 0 20S8.954 0 20 0s20 8.954 20 20-8.954 20-20 20z"
+                                    fill="#f06078"
+                                  />
+                                </g>
+                                <path
+                                  d="M13.79 15.465l5.4-4.139v19.673h1.5V11.325l5.4 4.139.912-1.19-6.311-4.839-.045-.035h-1.41l-.045.034-6.312 4.839z"
+                                  fill="#f06078"
+                                />
+                              </svg>
+                            </Memo(RoundArrowIcon)>
+                          </button>
+                        </styled.button>
+                      </div>
+                    </styled.div>
+                    <styled.div
+                      isExpanded={false}
+                    >
+                      <div
+                        className="bnjewn"
+                      >
+                        <styled.div>
+                          <div
+                            className="cLPOj"
+                          >
+                            <Memo(CognitiveIcon)>
+                              <svg
+                                height="100%"
+                                viewBox="0 0 280 280"
+                                width="100%"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  cognitives@1x
+                                </title>
+                                <g
+                                  fill="#FFC9C9"
+                                  fillRule="nonzero"
+                                  transform="translate(-1 94)"
+                                >
+                                  <path
+                                    d="M137.098 0h92.046v92.047h-92.046z"
+                                  />
+                                  <path
+                                    d="M45.985 0h92.046v92.047H45.985z"
+                                  />
+                                  <path
+                                    d="M229.144.001l-53.143 92.046h106.286z"
+                                    style={
+                                      Object {
+                                        "mixBlendMode": "multiply",
+                                      }
+                                    }
+                                  />
+                                  <circle
+                                    cx={45.985}
+                                    cy={46.024}
+                                    r={45.985}
+                                    style={
+                                      Object {
+                                        "mixBlendMode": "multiply",
+                                      }
+                                    }
+                                  />
+                                </g>
+                              </svg>
+                            </Memo(CognitiveIcon)>
+                          </div>
+                        </styled.div>
+                        <styled.h4>
+                          <h4
+                            className="kpakfC"
+                          >
+                            Think, predict and act
+                          </h4>
+                        </styled.h4>
+                        <styled.h5>
+                          <h5
+                            className="gYdFIO"
+                          >
+                            We utilize machine learning and artificial intelligence to empower businesses by making better decisions
+                          </h5>
+                        </styled.h5>
+                      </div>
+                    </styled.div>
+                  </div>
+                </styled.div>
+              </Memo(ExpandableCard)>
+            </article>
+          </styled.article>
+          <styled.article>
+            <article
+              className="iGBiiu"
+            >
+              <Memo(ExpandableCard)
+                backgroundColor="#8fd0c8"
+                description="We build text- and voice-based conversational interfaces for industries like health, tourism, legal, banking and insurance"
+                headline="Conversational agents"
+                image={<Memo(ConversationalIcon) />}
+                isExpanded={false}
+                subheadline="Enhace customer experience"
+                textColor="#6666ff"
+              >
+                <styled.div
+                  backgroundColor="#8fd0c8"
+                  className="ExpandableCard"
+                  isExpanded={false}
+                  textColor="#6666ff"
+                >
+                  <div
+                    className="kRcZpn ExpandableCard"
+                  >
+                    <styled.div
+                      isExpanded={false}
+                    >
+                      <div
+                        className="igLjXA"
+                      >
+                        <styled.h3>
+                          <h3
+                            className="bqIrWW"
+                          >
+                            Conversational agents
+                          </h3>
+                        </styled.h3>
+                        <styled.button
+                          aria-label="expand card content button"
+                          isExpanded={false}
+                          onClick={[Function]}
+                          textColor="#6666ff"
+                        >
+                          <button
+                            aria-label="expand card content button"
+                            className="geAcBe"
+                            onClick={[Function]}
+                          >
+                            <Memo(RoundArrowIcon)>
+                              <svg
+                                height="100%"
+                                viewBox="0 0 40 40"
+                                width="100%"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M20 40a20 20 0 1120-20 20 20 0 01-20 20z"
+                                  />
+                                  <path
+                                    d="M20 38.5c4.942 0 9.587-1.924 13.081-5.419A18.375 18.375 0 0038.5 20c0-4.942-1.924-9.587-5.419-13.081A18.375 18.375 0 0020 1.5 18.374 18.374 0 006.919 6.919 18.375 18.375 0 001.5 20c0 4.942 1.924 9.587 5.419 13.081A18.375 18.375 0 0020 38.5m0 1.5C8.954 40 0 31.046 0 20S8.954 0 20 0s20 8.954 20 20-8.954 20-20 20z"
+                                    fill="#f06078"
+                                  />
+                                </g>
+                                <path
+                                  d="M13.79 15.465l5.4-4.139v19.673h1.5V11.325l5.4 4.139.912-1.19-6.311-4.839-.045-.035h-1.41l-.045.034-6.312 4.839z"
+                                  fill="#f06078"
+                                />
+                              </svg>
+                            </Memo(RoundArrowIcon)>
+                          </button>
+                        </styled.button>
+                      </div>
+                    </styled.div>
+                    <styled.div
+                      isExpanded={false}
+                    >
+                      <div
+                        className="bnjewn"
+                      >
+                        <styled.div>
+                          <div
+                            className="cLPOj"
+                          >
+                            <Memo(ConversationalIcon)>
+                              <svg
+                                height="100%"
+                                viewBox="0 0 280 280"
+                                width="100%"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  conversational@1x
+                                </title>
+                                <g
+                                  fill="#66F"
+                                  fillRule="nonzero"
+                                  transform="translate(34 46)"
+                                >
+                                  <circle
+                                    cx={59.263}
+                                    cy={128.993}
+                                    r={59.263}
+                                  />
+                                  <path
+                                    d="M59.269 24.45h118.526v118.526H59.269z"
+                                    style={
+                                      Object {
+                                        "mixBlendMode": "multiply",
+                                      }
+                                    }
+                                  />
+                                  <circle
+                                    cx={177.79}
+                                    cy={35.119}
+                                    r={35.119}
+                                  />
+                                </g>
+                              </svg>
+                            </Memo(ConversationalIcon)>
+                          </div>
+                        </styled.div>
+                        <styled.h4>
+                          <h4
+                            className="kpakfC"
+                          >
+                            Enhace customer experience
+                          </h4>
+                        </styled.h4>
+                        <styled.h5>
+                          <h5
+                            className="gYdFIO"
+                          >
+                            We build text- and voice-based conversational interfaces for industries like health, tourism, legal, banking and insurance
+                          </h5>
+                        </styled.h5>
+                      </div>
+                    </styled.div>
+                  </div>
+                </styled.div>
+              </Memo(ExpandableCard)>
+            </article>
+          </styled.article>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</Memo(ThingsWeAreGoodAt)>
+`;

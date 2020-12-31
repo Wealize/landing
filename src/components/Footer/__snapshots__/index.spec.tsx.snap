@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> wrapper: should render 1`] = `
+<styled.footer
+  id="footer"
+>
+  <styled.div>
+    <Memo(WealizeWhiteNormalMediumIcon) />
+  </styled.div>
+  <styled.div>
+    <styled.div>
+      <styled.h5>
+        Contact us about your project, your idea or for more information about our Work
+      </styled.h5>
+      <Memo(ButtonRounded)
+        animatedBackgroundColor="#6666ff"
+        animatedTextColor="#ffffff"
+        backgroundColor="#3c3c3b"
+        size={
+          Object {
+            "desktop": Array [
+              200,
+              100,
+            ],
+            "mobile": Array [
+              150,
+              80,
+            ],
+            "tablet": Array [
+              180,
+              80,
+            ],
+            "wide": Array [
+              250,
+              100,
+            ],
+          }
+        }
+        textColor="#ffffff"
+      >
+        Get in touch
+      </Memo(ButtonRounded)>
+    </styled.div>
+    <styled.div>
+      <styled.h5>
+        Join the culture. We are always looking for talent to grow our global community
+      </styled.h5>
+      <Memo(ButtonRounded)
+        animatedBackgroundColor="#6666ff"
+        animatedTextColor="#ffffff"
+        backgroundColor="#3c3c3b"
+        size={
+          Object {
+            "desktop": Array [
+              200,
+              100,
+            ],
+            "mobile": Array [
+              150,
+              80,
+            ],
+            "tablet": Array [
+              180,
+              80,
+            ],
+            "wide": Array [
+              250,
+              100,
+            ],
+          }
+        }
+        textColor="#ffffff"
+      >
+        Work with us
+      </Memo(ButtonRounded)>
+    </styled.div>
+  </styled.div>
+  <styled.div>
+    <styled.hr />
+    <styled.div>
+      <Link
+        href="https://www.linkedin.com/company/wealizedigital/"
+        passHref={true}
+      >
+        <styled.a
+          aria-label="Linkedin"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <LinkedinIcon />
+        </styled.a>
+      </Link>
+      <Link
+        href="https://twitter.com/wealizedigital"
+        passHref={true}
+      >
+        <styled.a
+          aria-label="Twitter"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <TwitterIcon />
+        </styled.a>
+      </Link>
+      <Link
+        href="https://dev.to/wealize"
+        passHref={true}
+      >
+        <styled.a
+          aria-label="Dev.to"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <DevtoIcon />
+        </styled.a>
+      </Link>
+    </styled.div>
+    <styled.div>
+      <Link
+        href="/privacy-legal"
+        passHref={true}
+      >
+        <styled.a
+          aria-label="Privacy & Legal"
+        >
+          Privacy & Legal
+        </styled.a>
+      </Link>
+      <styled.span>
+        Wealize 2020. All Rights Reserved.
+      </styled.span>
+    </styled.div>
+    <styled.hr />
+    <styled.div>
+      <styled.div>
+        <styled.div>
+          <Link
+            href="/grants/cdti"
+            passHref={true}
+          >
+            <a
+              aria-label="CDTI"
+            >
+              <Memo(CDTIIcon) />
+            </a>
+          </Link>
+        </styled.div>
+        <styled.div>
+          <Link
+            href="/grants/innovative-sme"
+            passHref={true}
+          >
+            <a
+              aria-label="Innovation Pyme"
+            >
+              <Memo(InnovationPymeIcon) />
+            </a>
+          </Link>
+        </styled.div>
+      </styled.div>
+      <styled.div>
+        <Link
+          href="https://www.linkedin.com/company/wealizedigital/"
+          passHref={true}
+        >
+          <styled.a
+            rel="noreferrer"
+            target="_blank"
+          >
+            <LinkedinIcon />
+          </styled.a>
+        </Link>
+        <Link
+          href="https://twitter.com/wealizedigital"
+          passHref={true}
+        >
+          <styled.a
+            rel="noreferrer"
+            target="_blank"
+          >
+            <TwitterIcon />
+          </styled.a>
+        </Link>
+        <Link
+          href="https://dev.to/wealize"
+          passHref={true}
+        >
+          <styled.a
+            rel="noreferrer"
+            target="_blank"
+          >
+            <DevtoIcon />
+          </styled.a>
+        </Link>
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</styled.footer>
+`;

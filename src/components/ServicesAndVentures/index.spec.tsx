@@ -10,6 +10,7 @@ describe('<ServicesAndVentures />', () => {
 
   it('should render', () => {
     expect(wrapper).toBeDefined()
+    expect(wrapper).toMatchSnapshot()
   })
 
   it('should render content correctly', () => {

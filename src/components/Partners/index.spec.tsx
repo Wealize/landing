@@ -9,6 +9,7 @@ describe('<Partners />', () => {
 
   it('should render', () => {
     expect(wrapper).toBeDefined()
+    expect(wrapper).toMatchSnapshot()
   })
 
   it('should render the logos correctly', () => {

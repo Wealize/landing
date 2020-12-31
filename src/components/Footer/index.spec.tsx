@@ -19,6 +19,7 @@ describe('<Footer />', () => {
 
   it('wrapper: should render', () => {
     expect(wrapper).toBeDefined()
+    expect(wrapper).toMatchSnapshot()
   })
 
   it('wrapper: render content correctly', () => {

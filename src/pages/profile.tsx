@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { LayoutOptions } from '../interfaces/Page'
-import { ACCENT_COLOR } from '../theme/color'
+import { ACCENT_COLOR, WHITE_COLOR } from '../theme/color'
 import WealizeInANutshell from '../components/WealizeInANutshell'
 import ThingsWeAreGoodAt from '../components/ThingsWeAreGoodAt'
 import WeDeliver from '../components/WeDeliver'
@@ -10,6 +10,8 @@ import Talents from '../components/Talents'
 import ServicesAndVentures from '../components/ServicesAndVentures'
 import WStaticIcon from '../components/icons/WStaticIcon'
 import profileDescriptionData from '../data/profileDescriptionData'
+import Accordion from '../components/Accordion'
+import toolsTechStackAccordionData from '../data/toolsTechStackAccordionData'
 
 const Profile = (): JSX.Element => {
   return (
@@ -27,6 +29,16 @@ const Profile = (): JSX.Element => {
       <WeDeliver />
       <WealizeInANutshell highlightColor={ACCENT_COLOR} />
       <Talents />
+      <Accordion
+        backgroundColor={ACCENT_COLOR}
+        textColor={WHITE_COLOR}
+        title="Tools & Tech Stack"
+        sectionsData={toolsTechStackAccordionData}
+        ToggleButtonBackgroundColor={ACCENT_COLOR}
+        ToggleButtonTextColor={WHITE_COLOR}
+        ToggleButtonAnimatedBackgroundColor={WHITE_COLOR}
+        ToggleButtonAnimatedTextColor={ACCENT_COLOR}
+      />
     </Container>
   )
 }
