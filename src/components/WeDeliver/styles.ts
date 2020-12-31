@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
-import { doublePx, doubleAndHalfPx, triplePx, quadruplePx } from '../../theme/space'
+import { singlePx, doublePx, doubleAndHalfPx, triplePx, quadruplePx } from '../../theme/space'
 import { media } from '../../theme/media'
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: ${doubleAndHalfPx()} 0;
+  padding: ${doubleAndHalfPx()} ${singlePx()};
 
   ${media.greaterThan('md')`
     padding: ${triplePx()} ${doublePx()};
@@ -28,6 +28,11 @@ export const Title = styled.h5`
 `
 
 export const ContainerCards = styled.div`
+
+  > .simple-big-title-card {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   > .simple-big-title-card:last-child h5{
     padding-bottom: 0;

@@ -86,15 +86,15 @@ export const CardContainer = styled.div`
 `
 
 export const CardHeadline = styled.div`
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.52;
 
   ${media.greaterThan('lg')`
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   `};
 
   ${media.greaterThan('xl')`
-    font-size: 2rem;
+    font-size: 1.9rem;
   `};
 `
 
