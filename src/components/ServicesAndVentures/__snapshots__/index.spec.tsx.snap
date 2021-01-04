@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ServicesAndVentures /> should render 1`] = `
+<Memo(ServicesAndVentures)>
+  <styled.div>
+    <div
+      className="mPdND"
+    >
+      <styled.h3>
+        <h3
+          className="gxcBLJ"
+        >
+          We craft digital products with real-world impact and build sustainable ventures  that contribute positively to the community
+        </h3>
+      </styled.h3>
+      <styled.div>
+        <div
+          className="cySEK"
+        >
+          <styled.div>
+            <div
+              className=""
+            >
+              <styled.h4>
+                <h4
+                  className="eDfkbp"
+                >
+                  Services
+                </h4>
+              </styled.h4>
+              <styled.div
+                key="0"
+              >
+                <div
+                  className="cGNQSf"
+                >
+                  <styled.div>
+                    <div
+                      className="kIpVJm"
+                    >
+                      Product development
+                    </div>
+                  </styled.div>
+                  <styled.h5>
+                    <h5
+                      className="JvsHx"
+                    >
+                      We drive ideas from inception to prototype to launch and beyond. We are committed to delivering high-quality work at light speed
+                    </h5>
+                  </styled.h5>
+                </div>
+              </styled.div>
+              <styled.div
+                key="1"
+              >
+                <div
+                  className="cGNQSf"
+                >
+                  <styled.div>
+                    <div
+                      className="kIpVJm"
+                    >
+                      Feature team
+                    </div>
+                  </styled.div>
+                  <styled.h5>
+                    <h5
+                      className="JvsHx"
+                    >
+                      We integrate seamlessly as your feature team ensuring transparency of vision and requirements throughout the project
+                    </h5>
+                  </styled.h5>
+                </div>
+              </styled.div>
+              <styled.div
+                key="2"
+              >
+                <div
+                  className="cGNQSf"
+                >
+                  <styled.div>
+                    <div
+                      className="kIpVJm"
+                    >
+                      Project rescue
+                    </div>
+                  </styled.div>
+                  <styled.h5>
+                    <h5
+                      className="JvsHx"
+                    >
+                      We uncover what went wrong and work with you to develop a recovery plan which we can either implement or you can set forth and execute yourself
+                    </h5>
+                  </styled.h5>
+                </div>
+              </styled.div>
+            </div>
+          </styled.div>
+          <styled.div>
+            <div
+              className=""
+            >
+              <styled.h4>
+                <h4
+                  className="eDfkbp"
+                >
+                  Ventures
+                </h4>
+              </styled.h4>
+              <styled.div
+                key="0"
+              >
+                <div
+                  className="cGNQSf"
+                >
+                  <styled.div>
+                    <div
+                      className="kIpVJm"
+                    >
+                      Startup studio
+                    </div>
+                  </styled.div>
+                  <styled.h5>
+                    <h5
+                      className="JvsHx"
+                    >
+                      We act industry-independent and develop our own products to open doors of opportunity
+                    </h5>
+                  </styled.h5>
+                </div>
+              </styled.div>
+              <styled.div
+                key="1"
+              >
+                <div
+                  className="cGNQSf"
+                >
+                  <styled.div>
+                    <div
+                      className="kIpVJm"
+                    >
+                      Research partner
+                    </div>
+                  </styled.div>
+                  <styled.h5>
+                    <h5
+                      className="JvsHx"
+                    >
+                      We close society’s gaps by partnering with active community members.
+                    </h5>
+                  </styled.h5>
+                </div>
+              </styled.div>
+              <styled.div
+                key="2"
+              >
+                <div
+                  className="cGNQSf"
+                >
+                  <styled.div>
+                    <div
+                      className="kIpVJm"
+                    >
+                      R&D Funding Strategy
+                    </div>
+                  </styled.div>
+                  <styled.h5>
+                    <h5
+                      className="JvsHx"
+                    >
+                      We look for funding and tender opportunities to innovate together
+                    </h5>
+                  </styled.h5>
+                </div>
+              </styled.div>
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</Memo(ServicesAndVentures)>
+`;

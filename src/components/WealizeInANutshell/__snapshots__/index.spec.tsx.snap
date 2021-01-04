@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WealizeInANutshell /> should render 1`] = `
+<Memo(WealizeInANutshell)
+  highlightColor="#6666ff"
+>
+  <styled.div
+    className="WealizeInANutshell"
+  >
+    <div
+      className="cUYhzr WealizeInANutshell"
+    >
+      <styled.h3>
+        <h3
+          className="eUBRGi"
+        >
+          Wealize in a nutshell
+        </h3>
+      </styled.h3>
+      <styled.div>
+        <div
+          className="imGuPe"
+        >
+          <InView
+            initialInView={false}
+            key="0"
+            onChange={[Function]}
+            threshold={0.3}
+            triggerOnce={false}
+          >
+            <styled.h3
+              className="wealize-nutshell-paragraph "
+              highlightColor="#6666ff"
+              isIntersecting={false}
+            >
+              <h3
+                className="eQcHhv wealize-nutshell-paragraph "
+              >
+                Our strong remote working culture keeps the best talent around
+              </h3>
+            </styled.h3>
+          </InView>
+          <InView
+            initialInView={false}
+            key="1"
+            onChange={[Function]}
+            threshold={0.3}
+            triggerOnce={false}
+          >
+            <styled.h3
+              className="wealize-nutshell-paragraph "
+              highlightColor="#6666ff"
+              isIntersecting={false}
+            >
+              <h3
+                className="eQcHhv wealize-nutshell-paragraph "
+              >
+                We work the agile way, delivering tried and tested solutions at light speed
+              </h3>
+            </styled.h3>
+          </InView>
+          <InView
+            initialInView={false}
+            key="2"
+            onChange={[Function]}
+            threshold={0.3}
+            triggerOnce={false}
+          >
+            <styled.h3
+              className="wealize-nutshell-paragraph "
+              highlightColor="#6666ff"
+              isIntersecting={false}
+            >
+              <h3
+                className="eQcHhv wealize-nutshell-paragraph "
+              >
+                We follow trends and movements in the market, so we know the suitable solutions
+              </h3>
+            </styled.h3>
+          </InView>
+          <InView
+            initialInView={false}
+            key="3"
+            onChange={[Function]}
+            threshold={0.3}
+            triggerOnce={false}
+          >
+            <styled.h3
+              className="wealize-nutshell-paragraph "
+              highlightColor="#6666ff"
+              isIntersecting={false}
+            >
+              <h3
+                className="eQcHhv wealize-nutshell-paragraph "
+              >
+                We are active community members, creating open source projects for the benefit of the ecosystem
+              </h3>
+            </styled.h3>
+          </InView>
+          <InView
+            initialInView={false}
+            key="4"
+            onChange={[Function]}
+            threshold={0.3}
+            triggerOnce={false}
+          >
+            <styled.h3
+              className="wealize-nutshell-paragraph "
+              highlightColor="#6666ff"
+              isIntersecting={false}
+            >
+              <h3
+                className="eQcHhv wealize-nutshell-paragraph "
+              >
+                As your technology agnostic partner,we can help you find the right solutions in the early stages of a project
+              </h3>
+            </styled.h3>
+          </InView>
+          <InView
+            initialInView={false}
+            key="5"
+            onChange={[Function]}
+            threshold={0.3}
+            triggerOnce={false}
+          >
+            <styled.h3
+              className="wealize-nutshell-paragraph "
+              highlightColor="#6666ff"
+              isIntersecting={false}
+            >
+              <h3
+                className="eQcHhv wealize-nutshell-paragraph "
+              >
+                We work collaboratively in a fairly decentralized environment
+              </h3>
+            </styled.h3>
+          </InView>
+          <InView
+            initialInView={false}
+            key="6"
+            onChange={[Function]}
+            threshold={0.3}
+            triggerOnce={false}
+          >
+            <styled.h3
+              className="wealize-nutshell-paragraph "
+              highlightColor="#6666ff"
+              isIntersecting={false}
+            >
+              <h3
+                className="eQcHhv wealize-nutshell-paragraph "
+              >
+                Every one of us truly represents the spirit of Wealize: curious, bold, data-driven, creative, value oriented, zero nonsense
+              </h3>
+            </styled.h3>
+          </InView>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</Memo(WealizeInANutshell)>
+`;

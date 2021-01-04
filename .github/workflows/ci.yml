@@ -26,6 +26,11 @@ jobs:
       - name: Increase watchers limit
         run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
+      - name: Run linter
+        run: yarn lint
+        env:
+          NODE_ENV: development
+
       - name: Run unit tests
         run: yarn jest
         env:

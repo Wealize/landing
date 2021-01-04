@@ -10,6 +10,7 @@ describe('<Talents />', () => {
 
   it('should render', () => {
     expect(wrapper).toBeDefined()
+    expect(wrapper).toMatchSnapshot()
   })
 
   it('render content correctly', () => {

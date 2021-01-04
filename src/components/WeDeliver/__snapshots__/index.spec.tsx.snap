@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WeDeliver /> should render 1`] = `
+<Memo(WeDeliver)>
+  <styled.div>
+    <div
+      className="fbiKbH"
+    >
+      <styled.h5>
+        <h5
+          className="iVcQmv"
+        >
+          We deliver
+        </h5>
+      </styled.h5>
+      <styled.div>
+        <div
+          className="cVnNRX"
+        >
+          <Memo(SimpleBigTitleCard)
+            description="We gain a complete understanding of our client’s needs and environment, so we can provide the most personalized service"
+            key="0"
+            title="01"
+          >
+            <styled.div
+              className="simple-big-title-card"
+            >
+              <div
+                className="hvgwOq simple-big-title-card"
+              >
+                <styled.span>
+                  <span
+                    className="lkgoDy"
+                  >
+                    01
+                  </span>
+                </styled.span>
+                <styled.h5>
+                  <h5
+                    className="mmzIs"
+                  >
+                    We gain a complete understanding of our client’s needs and environment, so we can provide the most personalized service
+                  </h5>
+                </styled.h5>
+              </div>
+            </styled.div>
+          </Memo(SimpleBigTitleCard)>
+          <Memo(SimpleBigTitleCard)
+            description="We work the agile way with Scrum as a framework, an iterative approach that helps us deliver value to our clients faster"
+            key="1"
+            title="02"
+          >
+            <styled.div
+              className="simple-big-title-card"
+            >
+              <div
+                className="hvgwOq simple-big-title-card"
+              >
+                <styled.span>
+                  <span
+                    className="lkgoDy"
+                  >
+                    02
+                  </span>
+                </styled.span>
+                <styled.h5>
+                  <h5
+                    className="mmzIs"
+                  >
+                    We work the agile way with Scrum as a framework, an iterative approach that helps us deliver value to our clients faster
+                  </h5>
+                </styled.h5>
+              </div>
+            </styled.div>
+          </Memo(SimpleBigTitleCard)>
+          <Memo(SimpleBigTitleCard)
+            description="We deploy to production and get real feedback since the first sprint"
+            key="2"
+            title="03"
+          >
+            <styled.div
+              className="simple-big-title-card"
+            >
+              <div
+                className="hvgwOq simple-big-title-card"
+              >
+                <styled.span>
+                  <span
+                    className="lkgoDy"
+                  >
+                    03
+                  </span>
+                </styled.span>
+                <styled.h5>
+                  <h5
+                    className="mmzIs"
+                  >
+                    We deploy to production and get real feedback since the first sprint
+                  </h5>
+                </styled.h5>
+              </div>
+            </styled.div>
+          </Memo(SimpleBigTitleCard)>
+          <Memo(SimpleBigTitleCard)
+            description="We validate and evaluate. Adjustments and improvements are also made before the launch"
+            key="3"
+            title="04"
+          >
+            <styled.div
+              className="simple-big-title-card"
+            >
+              <div
+                className="hvgwOq simple-big-title-card"
+              >
+                <styled.span>
+                  <span
+                    className="lkgoDy"
+                  >
+                    04
+                  </span>
+                </styled.span>
+                <styled.h5>
+                  <h5
+                    className="mmzIs"
+                  >
+                    We validate and evaluate. Adjustments and improvements are also made before the launch
+                  </h5>
+                </styled.h5>
+              </div>
+            </styled.div>
+          </Memo(SimpleBigTitleCard)>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</Memo(WeDeliver)>
+`;

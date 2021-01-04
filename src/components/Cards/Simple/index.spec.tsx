@@ -12,6 +12,7 @@ describe('<SimpleCard />', () => {
 
   it('wrapper: should render', () => {
     expect(wrapper).toBeDefined()
+    expect(wrapper).toMatchSnapshot()
   })
 
   it('should render h3 text content correctly', () => {

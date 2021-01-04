@@ -19,6 +19,7 @@ describe('<NavBar />', () => {
 
   it('should render', () => {
     expect(wrapperWithClosablePage).toBeDefined()
+    expect(wrapperWithClosablePage).toMatchSnapshot()
   })
 
   it('should render content correctly', () => {
