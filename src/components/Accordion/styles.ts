@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { halfPx, twoThirdPx, singlePx, singleAndHalfPx, doublePx, doubleAndHalfPx, triplePx, quadruplePx, quadruple } from '../../theme/space'
+import { sixthPx, halfPx, twoThirdPx, singlePx, singleAndHalfPx, doublePx, doubleAndHalfPx, triplePx, quadruplePx, quadruple } from '../../theme/space'
 import { media } from '../../theme/media'
 
 export const Container = styled.div<{ backgroundColor: string, textColor: string}>`
@@ -179,10 +179,18 @@ export const SectionContentContainer = styled.div<{isExpanded: boolean}>`
   max-height: ${({ isExpanded }) => (isExpanded ? 1000 : 0)}px;
   padding-top: ${({ isExpanded }) => (isExpanded ? singleAndHalfPx() : 0)};
 
+  ${media.greaterThan('lg')`
+    grid-template-columns: repeat(3, 1fr);
+  `};
+
+  ${media.greaterThan('xl')`
+    grid-template-columns: repeat(4, 1fr);
+  `};
+
 `
 
 export const SectionElement = styled.span`
-  padding-top: ${twoThirdPx()};
+  padding: ${twoThirdPx()} 0 ${sixthPx()};
 
   &:before {
     content: '- '
@@ -190,6 +198,7 @@ export const SectionElement = styled.span`
 
   ${media.greaterThan('md')`
     font-size: 1.2rem;
+    padding: ${twoThirdPx()};
   `};
 
   ${media.greaterThan('lg')`
