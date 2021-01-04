@@ -15,7 +15,7 @@ exports[`<WeDeliver /> should render 1`] = `
       </styled.h5>
       <styled.div>
         <div
-          className="dCebms"
+          className="cVnNRX"
         >
           <Memo(SimpleBigTitleCard)
             description="We gain a complete understanding of our client’s needs and environment, so we can provide the most personalized service"
