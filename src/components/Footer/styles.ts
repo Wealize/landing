@@ -5,6 +5,7 @@ import {
   sixthPx,
   singlePx,
   doublePx,
+  doubleAndHalfPx,
   triplePx,
   quadruplePx
 } from '../../theme/space'
@@ -16,14 +17,14 @@ export const Container = styled.footer`
   justify-content: center;
   align-items: flex-start;
   background-color: ${DARK_GRAY_COLOR};
-  padding: ${doublePx()} ${singlePx()};
+  padding: ${doubleAndHalfPx()} ${singlePx()};
 
   ${media.greaterThan('md')`
-    padding: ${doublePx()};
+    padding: ${triplePx()} ${doublePx()};
   `}
 
   ${media.greaterThan('xl')`
-    padding: ${triplePx()} ${quadruplePx()};
+    padding: ${quadruplePx()};
   `};
 `
 
@@ -57,7 +58,7 @@ export const ContainerLogo = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: ${singlePx()} 0;
+  padding: 0;
 
   ${media.greaterThan('md')`
     width: 20%;
