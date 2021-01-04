@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Talents /> should render 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.h3>
+      As of now our teams are spread across Spain, Germany, Estonia, Ireland and growing...
+    </styled.h3>
+    <Memo(ButtonRounded)
+      animatedBackgroundColor="#6666ff"
+      animatedTextColor="#ffffff"
+      backgroundColor="#ffffff"
+      handleClick={[Function]}
+      size={
+        Object {
+          "desktop": Array [
+            170,
+            50,
+          ],
+          "mobile": Array [
+            90,
+            50,
+          ],
+          "tablet": Array [
+            150,
+            50,
+          ],
+          "wide": Array [
+            190,
+            50,
+          ],
+        }
+      }
+      textColor="#6666ff"
+    >
+      Refresh talent
+    </Memo(ButtonRounded)>
+  </styled.div>
+  <styled.div>
+    <Memo(TalentCard)
+      description="Magía y hechicería"
+      imageUrl="/img/talents/placeholder.png"
+      key="0"
+      name="Miguel Calero"
+      socialNetworks={
+        Array [
+          Object {
+            "name": "Email",
+            "url": "",
+          },
+          Object {
+            "name": "Twitter",
+            "url": "",
+          },
+          Object {
+            "name": "Linkedin",
+            "url": "",
+          },
+          Object {
+            "name": "Dev.to",
+            "url": "",
+          },
+        ]
+      }
+    />
+    <Memo(TalentCard)
+      description="Magía y hechicería"
+      imageUrl="/img/talents/placeholder.png"
+      key="1"
+      name="Javier Aguirre"
+      socialNetworks={
+        Array [
+          Object {
+            "name": "Email",
+            "url": "",
+          },
+        ]
+      }
+    />
+    <Memo(TalentCard)
+      description="Magía y hechicería"
+      imageUrl="/img/talents/placeholder.png"
+      key="2"
+      name="Jesús Mejías"
+      socialNetworks={
+        Array [
+          Object {
+            "name": "Email",
+            "url": "",
+          },
+        ]
+      }
+    />
+    <Memo(TalentCard)
+      description="Magía y hechicería"
+      imageUrl="/img/talents/placeholder.png"
+      key="3"
+      name="Miguel Gavilán"
+      socialNetworks={
+        Array [
+          Object {
+            "name": "Email",
+            "url": "",
+          },
+        ]
+      }
+    />
+    <Memo(TalentCard)
+      description="Magía y hechicería"
+      imageUrl="/img/talents/placeholder.png"
+      key="4"
+      name="Javier Martín"
+      socialNetworks={
+        Array [
+          Object {
+            "name": "Email",
+            "url": "",
+          },
+        ]
+      }
+    />
+    <Memo(TalentCard)
+      description="Magía y hechicería"
+      imageUrl="/img/talents/placeholder.png"
+      key="5"
+      name="Daniel Ranchal"
+      socialNetworks={
+        Array [
+          Object {
+            "name": "Email",
+            "url": "",
+          },
+        ]
+      }
+    />
+    <Memo(TalentCard)
+      description="Magía y hechicería"
+      imageUrl="/img/talents/placeholder.png"
+      key="6"
+      name="Nieves borrego"
+      socialNetworks={
+        Array [
+          Object {
+            "name": "Email",
+            "url": "",
+          },
+        ]
+      }
+    />
+    <Memo(TalentCard)
+      description="Magía y hechicería"
+      imageUrl="/img/talents/placeholder.png"
+      key="7"
+      name="Victoria"
+      socialNetworks={
+        Array [
+          Object {
+            "name": "Email",
+            "url": "",
+          },
+        ]
+      }
+    />
+    <Memo(TalentCard)
+      description="Magía y hechicería"
+      imageUrl="/img/talents/placeholder.png"
+      key="8"
+      name="Maca Torralba"
+      socialNetworks={
+        Array [
+          Object {
+            "name": "Email",
+            "url": "",
+          },
+        ]
+      }
+    />
+  </styled.div>
+</styled.div>
+`;

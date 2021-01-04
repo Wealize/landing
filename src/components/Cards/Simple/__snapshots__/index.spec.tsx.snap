@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SimpleCard /> wrapper: should render 1`] = `
+<Memo(SimpleCard)>
+  <styled.div
+    className="simple-card"
+  >
+    <div
+      className="cHiPuV simple-card"
+    >
+      <styled.h3>
+        <h3
+          className="evLOcS"
+        >
+          We are a digital product studio with the upper hand in blockchain, conversational agents, cognitives services, mobile apps and web development
+        </h3>
+      </styled.h3>
+    </div>
+  </styled.div>
+</Memo(SimpleCard)>
+`;

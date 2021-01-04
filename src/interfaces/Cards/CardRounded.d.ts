@@ -1,5 +1,3 @@
-/* eslint-disable camelcase */
-
 export interface CardRounded {
   imageUrl: string
   title: string

@@ -32,10 +32,14 @@ export const ContainerCards = styled.div`
   > .simple-big-title-card {
     padding-left: 0;
     padding-right: 0;
-  }
 
-  > .simple-big-title-card:last-child h5{
-    padding-bottom: 0;
+    &:last-child {
+      padding-bottom: 0;
+
+      & h5 {
+        padding-bottom: 0;
+      }
+    }
   }
 
   ${media.greaterThan('md')`
