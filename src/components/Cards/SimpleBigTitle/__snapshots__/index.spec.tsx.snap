@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SimpleBigTitleCard /> should render 1`] = `
+<styled.div
+  className="simple-big-title-card"
+>
+  <styled.span>
+    title test
+  </styled.span>
+  <styled.h5>
+    description test
+  </styled.h5>
+</styled.div>
+`;
