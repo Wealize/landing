@@ -26,9 +26,7 @@ describe('<HomeSpecial />', () => {
     expect(wrapper.find(Slogan)).toHaveLength(1)
     expect(wrapper.find(Headline)).toHaveLength(1)
     expect(wrapper.find(SubHeadline)).toHaveLength(1)
-    expect(wrapper.find(Headline).text()).toEqual('Unlock today’s world')
-    expect(wrapper.find(SubHeadline).text()).toEqual(
-      'Crafting digital products with real-world impact'
-    )
+    expect(wrapper.find(Headline).text().length).toBeGreaterThan(0)
+    expect(wrapper.find(SubHeadline).text().length).toBeGreaterThan(0)
   })
 })
