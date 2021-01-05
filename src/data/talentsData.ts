@@ -149,7 +149,7 @@ const talentsData: CardTalent[] = [
     trans_key: 'nieves_borrero',
     imageUrl: '/img/talents/placeholder.png',
     name: 'Nieves Borrero',
-    description: 'Nieves Borrero is a Software Developer who enjoys programming and converting code into a piece of art that improves other people’s lives that’s why she also is dedicated to colaborate as Organizer in Google Developers Group and Women TechMackers.',
+    description: 'Nieves Borrero is a Software Developer who enjoys programming and converting code into a piece of art that improves other people\'s lives that\'s why she also is dedicated to colaborate as Organizer in Google Developers Group and Women TechMackers.',
     socialNetworks: [
       {
         name: 'Linkedin',
@@ -205,7 +205,7 @@ const talentsData: CardTalent[] = [
     trans_key: 'miriam_flores',
     imageUrl: '/img/talents/placeholder.png',
     name: 'Miriam Flores',
-    description: 'She’s a versatile and dynamic person who seeks to excel in everything she does. She loves learning about completely different disciplines and developing herself in new areas because she’s one of those who think that all knowledge is good.',
+    description: 'She\'s a versatile and dynamic person who seeks to excel in everything she does. She loves learning about completely different disciplines and developing herself in new areas because she’s one of those who think that all knowledge is good.',
     socialNetworks: [
       {
         name: 'Linkedin',
