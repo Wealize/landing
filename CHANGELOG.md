@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [Add linter to CI](https://wealize.atlassian.net/browse/WLZAA-68)
+- [Add Accordion component](https://wealize.atlassian.net/browse/WLZAA-38)
 - [Add component for show description for the profile page](https://wealize.atlassian.net/browse/WLZAA-69)
 - [Add services and ventures component](https://wealize.atlassian.net/browse/WLZAA-62)
 - [Add wealize talents component](https://wealize.atlassian.net/browse/WLZAA-60)

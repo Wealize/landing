@@ -1,4 +1,5 @@
 import React from 'react'
+import useTranslation from 'next-translate/useTranslation'
 
 import projectsData from '../data/projectsData'
 import SimpleCard from '../components/Cards/Simple'
@@ -8,33 +9,39 @@ import HomeSpecial from '../components/HomeSpecial'
 import Partners from '../components/Partners'
 import { LayoutOptions } from '../interfaces/Page'
 
-const Index = (): JSX.Element => (
+const Index = (): JSX.Element => {
+  const { t } = useTranslation('home')
+
+  return (
   <>
     <HomeSpecial />
 
     <SimpleCard>
-      We are a digital product studio with the upper hand in blockchain,
-      conversational agents, cognitives services, mobile apps and web
-      development
+      {t('principal_description')}
     </SimpleCard>
 
     <section>
-      {projectsData.map((project: CardRounded, index: number) => (
-        <RoundedCard
-          key={index}
-          imageUrl={project.imageUrl}
-          title={project.title}
-          description={project.description}
-          link={project.link}
-          tags={project.tags}
-          hasPrimary={project.hasPrimary}
-        />
-      ))}
+      {projectsData.map((project: CardRounded, index: number) => {
+        const { t } = useTranslation('common')
+        return (
+          <RoundedCard
+            key={index}
+            imageUrl={project.imageUrl}
+            title={t(`projects.${project.trans_key}.title`, { title: project.title })}
+            description={t(`projects.${project.trans_key}.description`, { description: project.description })}
+            link={project.link}
+            tags={project.tags.map((tag: string, index: number) => t(`projects.${project.trans_key}.tag-${index}`, { text: tag }))}
+            hasPrimary={project.hasPrimary}
+          />
+        )
+      })}
     </section>
 
     <Partners />
   </>
-)
+  )
+}
+
 
 export const getStaticProps = async (): Promise<{
   props: { layoutOptions: LayoutOptions }

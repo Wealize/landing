@@ -1,4 +1,5 @@
 import React from 'react'
+import useTranslation from 'next-translate/useTranslation'
 
 import { LayoutOptions } from '../interfaces/Page'
 import { ACCENT_COLOR, WHITE_COLOR } from '../theme/color'
@@ -14,12 +15,14 @@ import Accordion from '../components/Accordion'
 import toolsTechStackAccordionData from '../data/toolsTechStackAccordionData'
 
 const Profile = (): JSX.Element => {
+  const { t } = useTranslation('profile')
+
   return (
     <Container>
       <StartedContainer>
         <StartedDescription>
           {profileDescriptionData.map((paragraph: string, index: number) =>
-            <p key={index}>{paragraph}</p>
+            <p key={index}>{t(`started-description.paragraph-${index}`, { text: paragraph })}</p>
           )}
         </StartedDescription>
         <WStaticIcon />

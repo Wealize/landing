@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import useTranslation from 'next-translate/useTranslation'
 
 import { AccordionProps, AccordionSectionData } from '../../interfaces/Accordion'
 import ButtonRounded from '../Buttons/Rounded'
@@ -29,10 +30,12 @@ const Accordion = (props: AccordionProps) => {
     ToggleButtonAnimatedTextColor
   } = props
 
+  const { t } = useTranslation('profile')
+
   return (
     <Container backgroundColor={backgroundColor} textColor={textColor}>
       <TitleContainer>
-        <Title textColor={textColor}>{title}</Title>
+        <Title textColor={textColor}>{t('accordion.title', { text: title })}</Title>
         <Separator className="accordion-separator" textColor={textColor}/>
       </TitleContainer>
 
@@ -45,7 +48,7 @@ const Accordion = (props: AccordionProps) => {
             key={index}
           >
             <SectionHeader isExpanded={isExpanded}>
-              <SectionTitle>{section.title}</SectionTitle>
+              <SectionTitle>{t(`accordion.section-${index}.title`, { text: section.title })}</SectionTitle>
               <SectionToggle
                 className="accordion-section-toggle-button"
                 textColor={textColor}
@@ -64,7 +67,7 @@ const Accordion = (props: AccordionProps) => {
                 size={SMALL}
                 handleClick={() => setIsExpanded(!isExpanded)}
               >
-                {isExpanded ? 'Close' : 'See more'}
+                {isExpanded ? t('accordion.toogle-button-opened-text') : t('accordion.toogle-button-closed-text')}
               </ButtonRounded>
             </SectionHeader>
             <SectionContentContainer isExpanded={isExpanded}>

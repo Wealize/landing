@@ -91,6 +91,7 @@ export const Subheadline = styled.h5`
   font-weight: lighter;
   padding-bottom: ${thirdPx()};
   color: ${GRAY_300_COLOR};
+  line-height: 1.45;
 
   ${media.greaterThan('md')`
     font-size: 1.2rem;
