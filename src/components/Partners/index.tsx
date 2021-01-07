@@ -1,4 +1,5 @@
 import React from 'react'
+import useTranslation from 'next-translate/useTranslation'
 
 import AlastriaIcon from '../icons/partners/AlastriaIcon'
 import AWSIcon from '../icons/partners/AWSIcon'
@@ -19,13 +20,13 @@ import {
   Partner
 } from './styles'
 const Partners = () => {
+  const { t } = useTranslation('home')
+
   return (
     <Container>
       <Content>
         <TextContent>
-          We open doors of opportunity, equip organisations to thrive in the
-          digital age and close society’s gaps by developing our own solutions
-          and partnering with active community members
+          {t('partners_description')}
         </TextContent>
       </Content>
       <ContainerPartners>

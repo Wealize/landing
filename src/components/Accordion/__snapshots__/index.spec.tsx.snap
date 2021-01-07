@@ -9,7 +9,7 @@ exports[`<Accordion /> should render 1`] = `
     <styled.h5
       textColor="#ffffff"
     >
-      Tools & Tech Stack
+      profile:accordion.title
     </styled.h5>
     <styled.hr
       className="accordion-separator"
@@ -24,7 +24,7 @@ exports[`<Accordion /> should render 1`] = `
       isExpanded={true}
     >
       <styled.h6>
-        Languages & frameworks
+        profile:accordion.section-0.title
       </styled.h6>
       <styled.button
         aria-label="expand Languages & frameworks content button"
@@ -63,7 +63,7 @@ exports[`<Accordion /> should render 1`] = `
         }
         textColor="#ffffff"
       >
-        Close
+        profile:accordion.toogle-button-opened-text
       </Memo(ButtonRounded)>
     </styled.div>
     <styled.div
@@ -118,7 +118,7 @@ exports[`<Accordion /> should render 1`] = `
       isExpanded={false}
     >
       <styled.h6>
-        Devops, Architecture & Systems
+        profile:accordion.section-1.title
       </styled.h6>
       <styled.button
         aria-label="expand Devops, Architecture & Systems content button"
@@ -157,7 +157,7 @@ exports[`<Accordion /> should render 1`] = `
         }
         textColor="#ffffff"
       >
-        See more
+        profile:accordion.toogle-button-closed-text
       </Memo(ButtonRounded)>
     </styled.div>
     <styled.div

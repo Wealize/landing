@@ -1,0 +1,13 @@
+{
+  "title" : "Proyecto Financiado por CDTI",
+  "description": {
+    "first_paragraph": "Wealize (formalmente The Neon Project) obtuvo en 2019 una subvención de CDTI en uno de sus programas más importantes: NEOTEC, una iniciativa de apoyo a la creación y consolidación de empresas de base tecnológica. Esto ha supuesto la validación y apoyo a la labor de I+D en uno de los proyectos que está desarrollando la empresa: Metaledger. En Wealize ayudamos a las organizaciones a superar retos a través de la tecnología. Por ello desarrollamos productos digitales basados en blockchain, servicios cognitivos y agentes conversacionales. En este sentido, Metaledger es una solución para la trazabilidad para el oro y otros metales de alto valor que se extraen en entornos difíciles.",
+    "second_paragraph": "En Wealize, ayudamos a las organizaciones a superar los desafíos a través de la tecnología. Por eso desarrollamos productos digitales basados ​​en blockchain, servicios cognitivos y agentes conversacionales. En este sentido, Metaledger es una solución de trazabilidad para oro y otros metales de alto valor que se extraen en entornos difíciles."
+  },
+  "financing_content" : "Financiado por los Presupuestos Generales del Estado a cargo de la aplicación 27.12.467C.74908.",
+  "project_content" : {
+    "first_line" : "Nº DE PROYECTO: XXXXXXX",
+    "second_line": "FECHA INICIO: XX/XX/XXXX",
+    "third_line": "FECHA FIN: XX/XX/XXXX"
+  }
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import { InView } from 'react-intersection-observer'
+import useTranslation from 'next-translate/useTranslation'
 
 import { ACCENT_COLOR, DARK_GRAY_COLOR } from '../../theme/color'
 import {
@@ -14,9 +15,11 @@ interface CardProps {
 }
 
 const WealizeInANutshell = ({ highlightColor }: CardProps) => {
+  const { t } = useTranslation('profile')
+
   return (
     <Container className="WealizeInANutshell">
-      <Title>{InANutshellTitle}</Title>
+      <Title>{t('wealize-in-a-nutshell.title', { text: InANutshellTitle })}</Title>
       <Content>
         {InANutshellData.map((content: string, index: number) => (
           <InView
@@ -44,7 +47,7 @@ const WealizeInANutshell = ({ highlightColor }: CardProps) => {
                   }`}
                   highlightColor={highlightColor}
                 >
-                  {content}
+                  {t(`wealize-in-a-nutshell.paragraph-${index}`, { text: content })}
                 </Paragraph>
               )
             }}

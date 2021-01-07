@@ -14,7 +14,7 @@ exports[`<Partners /> should render 1`] = `
             <h5
               className="bjkawu"
             >
-              We open doors of opportunity, equip organisations to thrive in the digital age and close society’s gaps by developing our own solutions and partnering with active community members
+              home:partners_description
             </h5>
           </styled.h5>
         </div>
