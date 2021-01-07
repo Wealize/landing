@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import Scroll from 'react-scroll'
+import useTranslation from 'next-translate/useTranslation'
 
 import RoundArrowIcon from '../icons/RoundArrowIcon'
 import WStaticIcon from '../icons/WStaticIcon'
@@ -17,6 +18,7 @@ const HomeSpecial = () => {
   const containerRef = useRef(null)
   const buttonScrollRef = useRef(null)
   const BREAKPOINT_LG_PX = 992
+  const { t } = useTranslation('home')
 
   const scrollToNextElement = () => {
     const navbarHeight = document.getElementById('navbar').clientHeight
@@ -43,9 +45,9 @@ const HomeSpecial = () => {
         <WStaticIcon />
       </Background>
       <Slogan>
-        <Headline>Unlock today’s world</Headline>
+        <Headline>{t('slogan.headline')}</Headline>
         <SubHeadline>
-          Crafting digital products with real-world impact
+          {t('slogan.subheadline')}
         </SubHeadline>
         <Button
           onClick={scrollToNextElement}

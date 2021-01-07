@@ -1,0 +1,82 @@
+{
+  "navbar": {
+    "profile": "Perfil",
+    "contact": "Contacto",
+    "return_button_text": "Volver"
+  },
+  "footer" : {
+    "get_in_touch": {
+      "text": "Contáctanos para contarnos tu proyecto, tu idea o para darnos más información",
+      "button_text": "Contactar"
+    },
+    "work_with_us": {
+      "text": "Únete a la cultura. Siempre estamos buscando talento para hacer crecer nuestra comunidad global.",
+      "button_text": "Trabaja con nosotros"
+    },
+    "privacy_legal": "Privacidad & legal",
+    "copyright": "Wealize 2020. Todos los derechos reservados."
+  },
+  "projects" : {
+    "odos": {
+      "title": "La red ODOS",
+      "description": "Plataforma basada en blockchain que proporciona pruebas de identidad para mujeres y niños migrantes y gestiona datos confidenciales.",
+      "tag-0": "ONGS",
+      "tag-1": "Inmigración",
+      "tag-2": "Blockchain",
+      "tag-3": "Identidad digital",
+      "tag-4": "Datos sensitivos"
+    },
+    "polder": {
+      "title": "ITEA POLDER",
+      "description": "Partnership con 15 organizaciones en 4 países europeos para construir un centro de datos descentralizado para que las ciudades inteligentes auditen y moneticen los datos con FiWARE e Hyperledger Fabric.",
+      "tag-0": "Ciudades inteligentes",
+      "tag-1": "${text}",
+      "tag-2": "${text}",
+      "tag-3": "${text}"
+    },
+    "coloqio": {
+      "title": "${title}",
+      "description": "Creamos nuestra propia infraestructura flexible para desarrolladores que permite que los ecosistemas conversacionales de grandes organizaciones y startups escalen orquestando todos los canales conversacionales, motores de NLP y fuentes de datos para sus procesos comerciales.",
+      "tag-0": "Estudio de startup",
+      "tag-1": "Agentes conversacionales",
+      "tag-2": "IaaS"
+    },
+    "metaledger": {
+      "title": "${title}",
+      "description": "Diseño y desarrollo de un ecosistema de aplicaciones y dispositivos de IoT para proporcionar trazabilidad de punta a punta de oro y otros metales preciosos desde minas artesanales y de pequeña escala (ASM) en el tercer mundo hasta mayoristas en el primer mundo.",
+      "tag-0": "${text}",
+      "tag-1": "Producto propio",
+      "tag-2": "${text}",
+      "tag-3": "Trazabilidad"
+    },
+    "maldita": {
+      "title": "${title}",
+      "description": "Despliegue de WhatsApp Business Chatbot integrado con la plataforma española de verificación de datos enfocado a combatir la propagación de desinformación para expandir el alcance de su servicio.",
+      "tag-0": "${text}",
+      "tag-1": "${text}",
+      "tag-2": "${text}"
+    },
+    "pdc": {
+      "title": "${title}",
+      "description": "Desarrollo de un motor de procesamiento de lenguaje natural (NLP) para procesar datos globales no estructurados y noticias relacionadas con peligros para que sean útiles para la plataforma de monitoreo de alerta temprana y peligros múltiples.",
+      "tag-0": "Inteligencia de riesgo de desastres",
+      "tag-1": "Servicios cognitivos",
+      "tag-2": "${text}"
+    },
+    "medecins": {
+      "title": "${title}",
+      "description": "Diseño y desarrollo de una plataforma totalmente móvil y offline para gestionar las operaciones logísticas y supervisar la infraestructura de Internet en todas las ubicaciones de campo de MSF con el fin de crear una red de ICT común.",
+      "tag-0": "ONGS",
+      "tag-1": "${text}",
+      "tag-2": "Móvil"
+    },
+    "yotengo": {
+      "title": "${title}",
+      "description": "Plataforma para implementar una constelación de chatbot que ayuda a los abogados de inmigración de EE.UU a conectarse con clientes potenciales a través de Facebook Messenger, WhatsApp Business y chat web con conocimiento experto del lenguaje legal.",
+      "tag-0": "Legal",
+      "tag-1": "Inmigración",
+      "tag-2": "${text}",
+      "tag-3": "${text}"
+    }
+  }
+}

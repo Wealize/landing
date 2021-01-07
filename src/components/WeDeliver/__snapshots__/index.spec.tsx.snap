@@ -10,7 +10,7 @@ exports[`<WeDeliver /> should render 1`] = `
         <h5
           className="iVcQmv"
         >
-          We deliver
+          profile:we-deliver.title
         </h5>
       </styled.h5>
       <styled.div>
@@ -18,9 +18,9 @@ exports[`<WeDeliver /> should render 1`] = `
           className="cVnNRX"
         >
           <Memo(SimpleBigTitleCard)
-            description="We gain a complete understanding of our client’s needs and environment, so we can provide the most personalized service"
+            description="profile:we-deliver.card-0.description"
             key="0"
-            title="01"
+            title="profile:we-deliver.card-0.title"
           >
             <styled.div
               className="simple-big-title-card"
@@ -32,23 +32,23 @@ exports[`<WeDeliver /> should render 1`] = `
                   <span
                     className="lkgoDy"
                   >
-                    01
+                    profile:we-deliver.card-0.title
                   </span>
                 </styled.span>
                 <styled.h5>
                   <h5
                     className="mmzIs"
                   >
-                    We gain a complete understanding of our client’s needs and environment, so we can provide the most personalized service
+                    profile:we-deliver.card-0.description
                   </h5>
                 </styled.h5>
               </div>
             </styled.div>
           </Memo(SimpleBigTitleCard)>
           <Memo(SimpleBigTitleCard)
-            description="We work the agile way with Scrum as a framework, an iterative approach that helps us deliver value to our clients faster"
+            description="profile:we-deliver.card-1.description"
             key="1"
-            title="02"
+            title="profile:we-deliver.card-1.title"
           >
             <styled.div
               className="simple-big-title-card"
@@ -60,23 +60,23 @@ exports[`<WeDeliver /> should render 1`] = `
                   <span
                     className="lkgoDy"
                   >
-                    02
+                    profile:we-deliver.card-1.title
                   </span>
                 </styled.span>
                 <styled.h5>
                   <h5
                     className="mmzIs"
                   >
-                    We work the agile way with Scrum as a framework, an iterative approach that helps us deliver value to our clients faster
+                    profile:we-deliver.card-1.description
                   </h5>
                 </styled.h5>
               </div>
             </styled.div>
           </Memo(SimpleBigTitleCard)>
           <Memo(SimpleBigTitleCard)
-            description="We deploy to production and get real feedback since the first sprint"
+            description="profile:we-deliver.card-2.description"
             key="2"
-            title="03"
+            title="profile:we-deliver.card-2.title"
           >
             <styled.div
               className="simple-big-title-card"
@@ -88,23 +88,23 @@ exports[`<WeDeliver /> should render 1`] = `
                   <span
                     className="lkgoDy"
                   >
-                    03
+                    profile:we-deliver.card-2.title
                   </span>
                 </styled.span>
                 <styled.h5>
                   <h5
                     className="mmzIs"
                   >
-                    We deploy to production and get real feedback since the first sprint
+                    profile:we-deliver.card-2.description
                   </h5>
                 </styled.h5>
               </div>
             </styled.div>
           </Memo(SimpleBigTitleCard)>
           <Memo(SimpleBigTitleCard)
-            description="We validate and evaluate. Adjustments and improvements are also made before the launch"
+            description="profile:we-deliver.card-3.description"
             key="3"
-            title="04"
+            title="profile:we-deliver.card-3.title"
           >
             <styled.div
               className="simple-big-title-card"
@@ -116,14 +116,14 @@ exports[`<WeDeliver /> should render 1`] = `
                   <span
                     className="lkgoDy"
                   >
-                    04
+                    profile:we-deliver.card-3.title
                   </span>
                 </styled.span>
                 <styled.h5>
                   <h5
                     className="mmzIs"
                   >
-                    We validate and evaluate. Adjustments and improvements are also made before the launch
+                    profile:we-deliver.card-3.description
                   </h5>
                 </styled.h5>
               </div>

@@ -808,14 +808,14 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
             <h1
               className="xtqKs"
             >
-              Unlock today’s world
+              home:slogan.headline
             </h1>
           </styled.h1>
           <styled.h2>
             <h2
               className="kMBPoY"
             >
-              Crafting digital products with real-world impact
+              home:slogan.subheadline
             </h2>
           </styled.h2>
           <styled.button

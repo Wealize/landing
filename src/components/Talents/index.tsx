@@ -1,4 +1,5 @@
 import React from 'react'
+import useTranslation from 'next-translate/useTranslation'
 
 import TalentCard from '../Cards/Talent'
 import talentsData from '../../data/talentsData'
@@ -10,8 +11,7 @@ import useRefreshContent from '../../hooks/useRefreshContent'
 
 import { Container, ContentContainer, Headline, CardsContainer } from './styles'
 const Talents = () => {
-  const SECTION_TITLE =
-    'As of now our teams are spread across Spain, Germany, Estonia, Ireland and growing...'
+  const { t } = useTranslation('profile')
 
   const MAX_ITEMS_TO_SHOW = 6
   const MAX_ITEMS_TO_REFRESH = 2
@@ -24,7 +24,7 @@ const Talents = () => {
   return (
     <Container>
       <ContentContainer>
-        <Headline>{SECTION_TITLE}</Headline>
+        <Headline>{t('talents.title')}</Headline>
         <RoundedButton
           backgroundColor={WHITE_COLOR}
           textColor={ACCENT_COLOR}
@@ -33,7 +33,7 @@ const Talents = () => {
           size={SMALL}
           handleClick={refreshData}
         >
-          Refresh talent
+          {t('talents.refresh-button-text')}
         </RoundedButton>
       </ContentContainer>
       <CardsContainer>
@@ -42,7 +42,7 @@ const Talents = () => {
             key={index}
             imageUrl={talent.imageUrl}
             name={talent.name}
-            description={talent.description}
+            description={t(`talents.${talent.trans_key}.description`, { text: talent.description })}
             socialNetworks={talent.socialNetworks}
           />
         ))}

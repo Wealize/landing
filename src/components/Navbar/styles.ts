@@ -82,6 +82,10 @@ export const NavLink = styled.a<{ isCurrentPage: boolean }>`
   border-bottom: 3px solid
     ${({ isCurrentPage }) => (!isCurrentPage ? 'transparent' : ACCENT_COLOR)};
 
+  &#change-language-toggle {
+    text-transform: uppercase;
+  }
+
   ${media.greaterThan('md')`
     font-size: 1.2rem;
   `}

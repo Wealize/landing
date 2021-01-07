@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import useTranslation from 'next-translate/useTranslation'
 
 import WealizeWhiteNormalMediumIcon from '../icons/WealizeWhiteNormalMediumIcon'
 import ButtonRounded from '../Buttons/Rounded/'
@@ -37,6 +38,8 @@ import {
   Grant
 } from './styles'
 const Footer = () => {
+  const { t } = useTranslation('common')
+
   return (
     <Container id="footer">
       <ContainerLogo>
@@ -45,8 +48,7 @@ const Footer = () => {
       <ContainerContent>
         <ContainerGetInTouch>
           <BigText>
-            Contact us about your project, your idea or for more information
-            about our Work
+            {t('footer.get_in_touch.text')}
           </BigText>
           <ButtonRounded
             backgroundColor={DARK_GRAY_COLOR}
@@ -55,13 +57,12 @@ const Footer = () => {
             animatedTextColor={WHITE_COLOR}
             size={MEDIUM}
           >
-            Get in touch
+            {t('footer.get_in_touch.button_text')}
           </ButtonRounded>
         </ContainerGetInTouch>
         <ContainerWorkWithUs>
           <BigText>
-            Join the culture. We are always looking for talent to grow our
-            global community
+            {t('footer.work_with_us.text')}
           </BigText>
           <ButtonRounded
             backgroundColor={DARK_GRAY_COLOR}
@@ -70,7 +71,7 @@ const Footer = () => {
             animatedTextColor={WHITE_COLOR}
             size={MEDIUM}
           >
-            Work with us
+           {t('footer.work_with_us.button_text')}
           </ButtonRounded>
         </ContainerWorkWithUs>
       </ContainerContent>
@@ -99,10 +100,10 @@ const Footer = () => {
         <ContainerPrivacyCopyright>
           <Link href={PRIVACY_LEGAL} passHref>
             <PrivacyLegalLink aria-label="Privacy & Legal">
-              Privacy & Legal
+              {t('footer.privacy_legal')}
             </PrivacyLegalLink>
           </Link>
-          <CopyrightText>Wealize 2020. All Rights Reserved.</CopyrightText>
+          <CopyrightText>{t('footer.copyright')}</CopyrightText>
         </ContainerPrivacyCopyright>
         <Divider></Divider>
         <ContainerGrantsAndSocials>
