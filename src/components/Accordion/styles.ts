@@ -184,6 +184,10 @@ export const SectionContentContainer = styled.div<{isExpanded: boolean}>`
   `};
 
   ${media.greaterThan('xl')`
+    grid-template-columns: repeat(3, 1fr);
+  `};
+
+  ${media.greaterThan('xxl')`
     grid-template-columns: repeat(4, 1fr);
   `};
 
