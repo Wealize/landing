@@ -10,7 +10,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
         <h3
           className="jsgfGs"
         >
-          Things we are good at
+          profile:things-we-are-good-at.title
         </h3>
       </styled.h3>
       <styled.div>
@@ -23,11 +23,11 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
             >
               <Memo(ExpandableCard)
                 backgroundColor="#ffc9c9"
-                description="We build distributed ledgers and consensus networks for identity, traceability and accountability"
-                headline="Blockchain development"
+                description="profile:things-we-are-good-at.first-card.description"
+                headline="profile:things-we-are-good-at.first-card.headline"
                 image={<Memo(BlockchainIcon) />}
                 isExpanded={true}
-                subheadline="When transparency and trust are hard requirements"
+                subheadline="profile:things-we-are-good-at.first-card.subheadline"
                 textColor="#f06078"
               >
                 <styled.div
@@ -49,7 +49,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                           <h3
                             className="bqIrWW"
                           >
-                            Blockchain development
+                            profile:things-we-are-good-at.first-card.headline
                           </h3>
                         </styled.h3>
                         <styled.button
@@ -155,14 +155,14 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                           <h4
                             className="kpakfC"
                           >
-                            When transparency and trust are hard requirements
+                            profile:things-we-are-good-at.first-card.subheadline
                           </h4>
                         </styled.h4>
                         <styled.h5>
                           <h5
                             className="gYdFIO"
                           >
-                            We build distributed ledgers and consensus networks for identity, traceability and accountability
+                            profile:things-we-are-good-at.first-card.description
                           </h5>
                         </styled.h5>
                       </div>
@@ -178,11 +178,11 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
             >
               <Memo(ExpandableCard)
                 backgroundColor="#f06078"
-                description="We utilize machine learning and artificial intelligence to empower businesses by making better decisions"
-                headline="Cognitive services"
+                description="profile:things-we-are-good-at.second-card.description"
+                headline="profile:things-we-are-good-at.second-card.headline"
                 image={<Memo(CognitiveIcon) />}
                 isExpanded={false}
-                subheadline="Think, predict and act"
+                subheadline="profile:things-we-are-good-at.second-card.subheadline"
                 textColor="#ffffff"
               >
                 <styled.div
@@ -204,7 +204,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                           <h3
                             className="bqIrWW"
                           >
-                            Cognitive services
+                            profile:things-we-are-good-at.second-card.headline
                           </h3>
                         </styled.h3>
                         <styled.button
@@ -304,14 +304,14 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                           <h4
                             className="kpakfC"
                           >
-                            Think, predict and act
+                            profile:things-we-are-good-at.second-card.subheadline
                           </h4>
                         </styled.h4>
                         <styled.h5>
                           <h5
                             className="gYdFIO"
                           >
-                            We utilize machine learning and artificial intelligence to empower businesses by making better decisions
+                            profile:things-we-are-good-at.second-card.description
                           </h5>
                         </styled.h5>
                       </div>
@@ -327,11 +327,11 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
             >
               <Memo(ExpandableCard)
                 backgroundColor="#8fd0c8"
-                description="We build text- and voice-based conversational interfaces for industries like health, tourism, legal, banking and insurance"
-                headline="Conversational agents"
+                description="profile:things-we-are-good-at.third-card.description"
+                headline="profile:things-we-are-good-at.third-card.headline"
                 image={<Memo(ConversationalIcon) />}
                 isExpanded={false}
-                subheadline="Enhace customer experience"
+                subheadline="profile:things-we-are-good-at.third-card.subheadline"
                 textColor="#6666ff"
               >
                 <styled.div
@@ -353,7 +353,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                           <h3
                             className="bqIrWW"
                           >
-                            Conversational agents
+                            profile:things-we-are-good-at.third-card.headline
                           </h3>
                         </styled.h3>
                         <styled.button
@@ -447,14 +447,14 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                           <h4
                             className="kpakfC"
                           >
-                            Enhace customer experience
+                            profile:things-we-are-good-at.third-card.subheadline
                           </h4>
                         </styled.h4>
                         <styled.h5>
                           <h5
                             className="gYdFIO"
                           >
-                            We build text- and voice-based conversational interfaces for industries like health, tourism, legal, banking and insurance
+                            profile:things-we-are-good-at.third-card.description
                           </h5>
                         </styled.h5>
                       </div>

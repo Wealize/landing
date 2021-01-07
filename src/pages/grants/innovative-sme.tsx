@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import useTranslation from 'next-translate/useTranslation'
 
 import { LayoutOptions } from '../../interfaces/Page'
 import {
@@ -12,26 +13,18 @@ import {
   FinancingContent,
   ProjectContent
 } from '../../styles/pages/Grant'
-const InnovativeSME = (): JSX.Element => (
+const InnovativeSME = (): JSX.Element => {
+  const { t } = useTranslation('grants_innovative-sme')
+  return (
   <Container>
     <Content>
-      <Title>Innovative SMEs Stamp</Title>
+      <Title>{t('title')}</Title>
       <Description>
         <p>
-          The Ministry of Economy and Competitiveness of the Spanish Government
-          has awarded us the Innovative SME Stamp. At Wealize (formally The Neon
-          Project), we are committed to the development of digital products that
-          enable us to overcome challenges through technology, and we believe
-          that innovation is one of the most important paths to growth.
+         {t('description.first_paragraph')}
         </p>
         <p>
-          For all these reasons, this recognition adds an extra dimension to the
-          R&D we have been developing. It also encourages us to go even deeper
-          into the areas of greatest technological interest from the point of
-          view of innovation: digital identity and other solutions based on
-          blockchain; the development of conversational agents as a method of
-          communication and business support; and the use of tools based on
-          cognitive services that allow complex problems to be solved.
+          {t('description.second_paragraph')}
         </p>
       </Description>
       <LogosContainer>
@@ -45,18 +38,18 @@ const InnovativeSME = (): JSX.Element => (
       </LogosContainer>
       <BottomContainer>
         <FinancingContent>
-          Financed by the General State Budgets in charge of the application
-          27.12.467C.74908.
+          {t('financing_content')}
         </FinancingContent>
         <ProjectContent>
-          Nº OF THE PROJECT: XXXXXXX <br />
-          START DATE: XX/XX/XXXX <br />
-          END DATE: XX/XX/XXXX
+          {t('project_content.first_line')} <br />
+          {t('project_content.second_line')} <br />
+          {t('project_content.third_line')}
         </ProjectContent>
       </BottomContainer>
     </Content>
   </Container>
-)
+  )
+}
 
 export const getStaticProps = async (): Promise<{
   props: { layoutOptions: LayoutOptions }

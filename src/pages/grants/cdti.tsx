@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import useTranslation from 'next-translate/useTranslation'
 
 import { LayoutOptions } from '../../interfaces/Page'
 import {
@@ -13,24 +14,19 @@ import {
   ProjectContent
 } from '../../styles/pages/Grant'
 
-const CDTI = (): JSX.Element => (
+const CDTI = (): JSX.Element => {
+  const { t } = useTranslation('grants_cdti')
+
+  return (
   <Container>
     <Content>
-      <Title>Project Financed by CDTI</Title>
+      <Title>{t('title')}</Title>
       <Description>
         <p>
-          Wealize (formally The Neon Project) was awarded a CDTI grant in one of
-          its most important programmes in 2019: NEOTEC, an initiative to
-          support the creation and consolidation of technology-based companies.
-          This has meant the validation and support of the R&D work in one of
-          the projects being developed by the company: Metaledger.
+          {t('description.first_paragraph')}
         </p>
         <p>
-          At Wealize, we help organisations to overcome challenges through
-          technology. That is why we develop digital products based on
-          blockchain, cognitive services and conversational agents. In this
-          sense, Metaledger is a traceability solution for gold and other
-          high-value metals that are mined in difficult environments.
+          {t('description.second_paragraph')}
         </p>
       </Description>
       <LogosContainer>
@@ -44,18 +40,18 @@ const CDTI = (): JSX.Element => (
       </LogosContainer>
       <BottomContainer>
         <FinancingContent>
-          Financed by the General State Budgets in charge of the application
-          27.12.467C.74908.
+          {t('financing_content')}
         </FinancingContent>
         <ProjectContent>
-          Nº OF THE PROJECT: XXXXXXX <br />
-          START DATE: XX/XX/XXXX <br />
-          END DATE: XX/XX/XXXX
+          {t('project_content.first_line')} <br />
+          {t('project_content.second_line')} <br />
+          {t('project_content.third_line')}
         </ProjectContent>
       </BottomContainer>
     </Content>
   </Container>
-)
+  )
+}
 
 export const getStaticProps = async (): Promise<{
   props: { layoutOptions: LayoutOptions }

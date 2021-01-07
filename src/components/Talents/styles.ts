@@ -99,6 +99,7 @@ export const CardsContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: ${singlePx()};
+    align-items: start;
 
     & .talent-card {
       padding-left: initial;

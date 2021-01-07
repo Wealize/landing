@@ -160,11 +160,11 @@ exports[`<NavBar /> should render 1`] = `
             }
           >
             <styled.button
-              aria-label="Return"
+              aria-label="common:navbar.return_button_text"
               backgroundColor="#ffffff"
             >
               <button
-                aria-label="Return"
+                aria-label="common:navbar.return_button_text"
                 className="dbnkaG"
               >
                 <styled.span
@@ -173,17 +173,17 @@ exports[`<NavBar /> should render 1`] = `
                   <span
                     className="hEOWLJ"
                   >
-                    Return
+                    common:navbar.return_button_text
                   </span>
                 </styled.span>
               </button>
             </styled.button>
             <styled.button
               animatedBackgroundColor="#6666ff"
-              aria-label="Return animated"
+              aria-label="common:navbar.return_button_text animated"
             >
               <button
-                aria-label="Return animated"
+                aria-label="common:navbar.return_button_text animated"
                 className="eobazg"
               >
                 <styled.span
@@ -192,7 +192,7 @@ exports[`<NavBar /> should render 1`] = `
                   <span
                     className="hEOWLJ"
                   >
-                    Return
+                    common:navbar.return_button_text
                   </span>
                 </styled.span>
               </button>

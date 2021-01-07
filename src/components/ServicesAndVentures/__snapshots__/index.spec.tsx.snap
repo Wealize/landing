@@ -10,7 +10,7 @@ exports[`<ServicesAndVentures /> should render 1`] = `
         <h3
           className="gxcBLJ"
         >
-          We craft digital products with real-world impact and build sustainable ventures  that contribute positively to the community
+          profile:services-ventures.title
         </h3>
       </styled.h3>
       <styled.div>
@@ -25,7 +25,7 @@ exports[`<ServicesAndVentures /> should render 1`] = `
                 <h4
                   className="eDfkbp"
                 >
-                  Services
+                  profile:services-ventures.services-section.title
                 </h4>
               </styled.h4>
               <styled.div
@@ -38,14 +38,14 @@ exports[`<ServicesAndVentures /> should render 1`] = `
                     <div
                       className="kIpVJm"
                     >
-                      Product development
+                      profile:services-ventures.services-section.section-title-0
                     </div>
                   </styled.div>
                   <styled.h5>
                     <h5
                       className="JvsHx"
                     >
-                      We drive ideas from inception to prototype to launch and beyond. We are committed to delivering high-quality work at light speed
+                      profile:services-ventures.services-section.section-description-0
                     </h5>
                   </styled.h5>
                 </div>
@@ -60,14 +60,14 @@ exports[`<ServicesAndVentures /> should render 1`] = `
                     <div
                       className="kIpVJm"
                     >
-                      Feature team
+                      profile:services-ventures.services-section.section-title-1
                     </div>
                   </styled.div>
                   <styled.h5>
                     <h5
                       className="JvsHx"
                     >
-                      We integrate seamlessly as your feature team ensuring transparency of vision and requirements throughout the project
+                      profile:services-ventures.services-section.section-description-1
                     </h5>
                   </styled.h5>
                 </div>
@@ -82,14 +82,14 @@ exports[`<ServicesAndVentures /> should render 1`] = `
                     <div
                       className="kIpVJm"
                     >
-                      Project rescue
+                      profile:services-ventures.services-section.section-title-2
                     </div>
                   </styled.div>
                   <styled.h5>
                     <h5
                       className="JvsHx"
                     >
-                      We uncover what went wrong and work with you to develop a recovery plan which we can either implement or you can set forth and execute yourself
+                      profile:services-ventures.services-section.section-description-2
                     </h5>
                   </styled.h5>
                 </div>
@@ -104,7 +104,7 @@ exports[`<ServicesAndVentures /> should render 1`] = `
                 <h4
                   className="eDfkbp"
                 >
-                  Ventures
+                  profile:services-ventures.ventures-section.title
                 </h4>
               </styled.h4>
               <styled.div
@@ -117,14 +117,14 @@ exports[`<ServicesAndVentures /> should render 1`] = `
                     <div
                       className="kIpVJm"
                     >
-                      Startup studio
+                      profile:services-ventures.ventures-section.section-title-0
                     </div>
                   </styled.div>
                   <styled.h5>
                     <h5
                       className="JvsHx"
                     >
-                      We act industry-independent and develop our own products to open doors of opportunity
+                      profile:services-ventures.ventures-section.section-description-0
                     </h5>
                   </styled.h5>
                 </div>
@@ -139,14 +139,14 @@ exports[`<ServicesAndVentures /> should render 1`] = `
                     <div
                       className="kIpVJm"
                     >
-                      Research partner
+                      profile:services-ventures.ventures-section.section-title-1
                     </div>
                   </styled.div>
                   <styled.h5>
                     <h5
                       className="JvsHx"
                     >
-                      We close society’s gaps by partnering with active community members.
+                      profile:services-ventures.ventures-section.section-description-1
                     </h5>
                   </styled.h5>
                 </div>
@@ -161,14 +161,14 @@ exports[`<ServicesAndVentures /> should render 1`] = `
                     <div
                       className="kIpVJm"
                     >
-                      R&D Funding Strategy
+                      profile:services-ventures.ventures-section.section-title-2
                     </div>
                   </styled.div>
                   <styled.h5>
                     <h5
                       className="JvsHx"
                     >
-                      We look for funding and tender opportunities to innovate together
+                      profile:services-ventures.ventures-section.section-description-2
                     </h5>
                   </styled.h5>
                 </div>

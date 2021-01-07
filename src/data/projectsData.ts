@@ -2,6 +2,7 @@ import { CardRounded } from '../interfaces/Cards/CardRounded'
 
 const projectsData: CardRounded[] = [
   {
+    trans_key: 'odos',
     imageUrl: '/img/projects/odos.jpeg',
     title: 'The ODOS Network',
     description:
@@ -17,6 +18,7 @@ const projectsData: CardRounded[] = [
     hasPrimary: true
   },
   {
+    trans_key: 'polder',
     imageUrl: '/img/projects/polder.jpeg',
     title: 'The ITEA POLDER project',
     description:
@@ -26,6 +28,7 @@ const projectsData: CardRounded[] = [
     hasPrimary: false
   },
   {
+    trans_key: 'coloqio',
     imageUrl: '/img/projects/coloqio.jpeg',
     title: 'Coloq.io',
     description:
@@ -39,6 +42,7 @@ const projectsData: CardRounded[] = [
     hasPrimary: true
   },
   {
+    trans_key: 'metaledger',
     imageUrl: '/img/projects/metaledger.jpeg',
     title: 'Metaledger',
     description:
@@ -48,6 +52,7 @@ const projectsData: CardRounded[] = [
     hasPrimary: false
   },
   {
+    trans_key: 'maldita',
     imageUrl: '/img/projects/maldita.jpeg',
     title: 'Maldita',
     description:
@@ -57,6 +62,7 @@ const projectsData: CardRounded[] = [
     hasPrimary: true
   },
   {
+    trans_key: 'pdc',
     imageUrl: '/img/projects/pdc.jpeg',
     title: 'DisasterAWARE',
     description:
@@ -66,6 +72,7 @@ const projectsData: CardRounded[] = [
     hasPrimary: false
   },
   {
+    trans_key: 'medecins',
     imageUrl: '/img/projects/MedecinsSansFrontieres.jpeg',
     title: 'Médecins Sans Frontières',
     description:
@@ -75,10 +82,11 @@ const projectsData: CardRounded[] = [
     hasPrimary: true
   },
   {
+    trans_key: 'yotengo',
     imageUrl: '/img/projects/yotengo.jpeg',
     title: 'Yotengo.bot',
     description:
-      'Developed a platform to deploy a chatbot constellation helping US immigration lawyers to connect with potential clients via Facebook Messenger, WhatsApp Business and webchat with expert knowledge of legal language ',
+      'Developed a platform to deploy a chatbot constellation helping US immigration lawyers to connect with potential clients via Facebook Messenger, WhatsApp Business and webchat with expert knowledge of legal language',
     link: {
       url: 'https://yotengo.bot/',
       text: 'Yotengo.bot',

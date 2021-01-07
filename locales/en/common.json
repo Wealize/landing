@@ -1,0 +1,82 @@
+{
+  "navbar": {
+    "profile": "Profile",
+    "contact": "Contact",
+    "return_button_text": "Return"
+  },
+  "footer" : {
+    "get_in_touch": {
+      "text": "Contact us about your project, your idea or for more information about our Work",
+      "button_text": "Get in touch"
+    },
+    "work_with_us": {
+      "text": "Join the culture. We are always looking for talent to grow our global community",
+      "button_text": "Work with us"
+    },
+    "privacy_legal": "Privacy & legal",
+    "copyright": "Wealize 2020. All Rights Reserved."
+  },
+  "projects" : {
+    "odos": {
+      "title": "${title}",
+      "description": "${description}",
+      "tag-0": "${text}",
+      "tag-1": "${text}",
+      "tag-2": "${text}",
+      "tag-3": "${text}",
+      "tag-4": "${text}"
+    },
+    "polder": {
+      "title": "${title}",
+      "description": "${description}",
+      "tag-0": "${text}",
+      "tag-1": "${text}",
+      "tag-2": "${text}",
+      "tag-3": "${text}"
+    },
+    "coloqio": {
+      "title": "${title}",
+      "description": "${description}",
+      "tag-0": "${text}",
+      "tag-1": "${text}",
+      "tag-2": "${text}"
+    },
+    "metaledger": {
+      "title": "${title}",
+      "description": "${description}",
+      "tag-0": "${text}",
+      "tag-1": "${text}",
+      "tag-2": "${text}",
+      "tag-3": "${text}"
+    },
+    "maldita": {
+      "title": "${title}",
+      "description": "${description}",
+      "tag-0": "${text}",
+      "tag-1": "${text}",
+      "tag-2": "${text}"
+    },
+    "pdc": {
+      "title": "${title}",
+      "description": "${description}",
+      "tag-0": "${text}",
+      "tag-1": "${text}",
+      "tag-2": "${text}"
+    },
+    "medecins": {
+      "title": "${title}",
+      "description": "${description}",
+      "tag-0": "${text}",
+      "tag-1": "${text}",
+      "tag-2": "${text}"
+    },
+    "yotengo": {
+      "title": "${title}",
+      "description": "${description}",
+      "tag-0": "${text}",
+      "tag-1": "${text}",
+      "tag-2": "${text}",
+      "tag-3": "${text}"
+    }
+  }
+}

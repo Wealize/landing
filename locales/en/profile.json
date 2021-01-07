@@ -1,0 +1,147 @@
+{
+  "started-description" : {
+    "paragraph-0": "${text}",
+    "paragraph-1": "${text}",
+    "paragraph-2": "${text}"
+  },
+  "services-ventures" : {
+    "title" : "We craft digital products with real-world impact and build sustainable ventures  that contribute positively to the community",
+    "services-section": {
+      "title": "Services",
+      "section-title-0": "${text}",
+      "section-description-0": "${text}",
+      "section-title-1": "${text}",
+      "section-description-1": "${text}",
+      "section-title-2": "${text}",
+      "section-description-2": "${text}"
+    },
+    "ventures-section" : {
+      "title": "Ventures",
+      "section-title-0": "${text}",
+      "section-description-0": "${text}",
+      "section-title-1": "${text}",
+      "section-description-1": "${text}",
+      "section-title-2": "${text}",
+      "section-description-2": "${text}"
+    }
+  },
+  "things-we-are-good-at" : {
+    "title": "Things we are good at",
+    "first-card": {
+      "headline": "${text}",
+      "subheadline": "${text}",
+      "description": "${text}"
+    },
+    "second-card": {
+      "headline": "${text}",
+      "subheadline": "${text}",
+      "description": "${text}"
+    },
+    "third-card": {
+      "headline": "${text}",
+      "subheadline": "${text}",
+      "description": "${text}"
+    }
+  },
+  "we-deliver": {
+    "title": "${text}",
+    "card-0": {
+      "title": "${text}",
+      "description": "${text}"
+    },
+    "card-1": {
+      "title": "${text}",
+      "description": "${text}"
+    },
+    "card-2": {
+      "title": "${text}",
+      "description": "${text}"
+    },
+    "card-3": {
+      "title": "${text}",
+      "description": "${text}"
+    }
+  },
+  "wealize-in-a-nutshell" : {
+    "title": "${text}",
+    "paragraph-0": "${text}",
+    "paragraph-1": "${text}",
+    "paragraph-2": "${text}",
+    "paragraph-3": "${text}",
+    "paragraph-4": "${text}",
+    "paragraph-5": "${text}",
+    "paragraph-6": "${text}"
+  },
+  "talents": {
+    "title": "As of now our teams are spread across Spain, Germany, Estonia, Ireland and growing...",
+    "refresh-button-text": "Refresh talents",
+    "miguel_calero": {
+      "description": "${text}"
+    },
+    "javier_aguirre": {
+      "description": "${text}"
+    },
+    "dani_luque": {
+      "description": "${text}"
+    },
+    "dani_ranchal": {
+      "description": "${text}"
+    },
+    "jesus_mejias": {
+      "description": "${text}"
+    },
+    "miguel_gavilan": {
+      "description": "${text}"
+    },
+    "maca_torralba": {
+      "description": "${text}"
+    },
+    "angel_heredia": {
+      "description": "${text}"
+    },
+    "antonio_romero": {
+      "description": "${text}"
+    },
+    "nieves_borrero": {
+      "description": "${text}"
+    },
+    "victoria_perez": {
+      "description": "${text}"
+    },
+    "marisa_ruiz": {
+      "description": "${text}"
+    },
+    "joaquin_lopez": {
+      "description": "${text}"
+    },
+    "toni_parn": {
+      "description": "${text}"
+    },
+    "miriam_flores": {
+      "description": "${text}"
+    },
+    "rafael_rodriguez": {
+      "description": "${text}"
+    },
+    "mariano_morera": {
+      "description": "${text}"
+    }
+  },
+  "accordion": {
+    "title": "${text}",
+    "toogle-button-closed-text": "See more",
+    "toogle-button-opened-text": "Close",
+    "section-0": {
+      "title": "${text}"
+    },
+    "section-1": {
+      "title": "${text}"
+    },
+    "section-2": {
+      "title": "${text}"
+    },
+    "section-3": {
+      "title": "${text}"
+    }
+  }
+}
