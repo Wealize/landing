@@ -5,7 +5,9 @@ import { singlePx, doublePx, doubleAndHalfPx, triplePx, quadruplePx } from '../.
 import { media } from '../../theme/media'
 
 export const ContainerOverflowXHidden = styled.div`
-  overflow-x: hidden;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 `
 
 export const Container = styled.div`

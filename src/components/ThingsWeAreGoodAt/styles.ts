@@ -25,9 +25,10 @@ export const Container = styled.div`
   ${media.greaterThan('lg')`
     position: relative;
     width: 90%;
+    float: right;
     border-top-right-radius: initial;
     border-top-left-radius: ${DEFAULT_RADIUS}px;
-    margin: ${triplePx()} 0 ${triple() * 6}px;
+    margin: ${triplePx()} 0 ${triple() * 7}px;
   `};
 
   ${media.greaterThan('xl')`
