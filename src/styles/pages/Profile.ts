@@ -4,6 +4,10 @@ import { WHITE_COLOR, LIGHT_GRAY_COLOR } from '../../theme/color'
 import { singlePx, doublePx, doubleAndHalfPx, triplePx, quadruplePx } from '../../theme/space'
 import { media } from '../../theme/media'
 
+export const ContainerOverflowXHidden = styled.div`
+  overflow-x: hidden;
+`
+
 export const Container = styled.div`
   min-height: 100vh;
   background-color: ${WHITE_COLOR};

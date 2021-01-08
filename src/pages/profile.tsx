@@ -6,7 +6,7 @@ import { ACCENT_COLOR, WHITE_COLOR } from '../theme/color'
 import WealizeInANutshell from '../components/WealizeInANutshell'
 import ThingsWeAreGoodAt from '../components/ThingsWeAreGoodAt'
 import WeDeliver from '../components/WeDeliver'
-import { Container, StartedContainer, StartedDescription } from '../styles/pages/Profile'
+import { Container, ContainerOverflowXHidden, StartedContainer, StartedDescription } from '../styles/pages/Profile'
 import Talents from '../components/Talents'
 import ServicesAndVentures from '../components/ServicesAndVentures'
 import WStaticIcon from '../components/icons/WStaticIcon'
@@ -19,15 +19,17 @@ const Profile = (): JSX.Element => {
 
   return (
     <Container>
-      <StartedContainer>
-        <StartedDescription>
-          {profileDescriptionData.map((paragraph: string, index: number) =>
-            <p key={index}>{t(`started-description.paragraph-${index}`, { text: paragraph })}</p>
-          )}
-        </StartedDescription>
-        <WStaticIcon />
-      </StartedContainer>
-      <ServicesAndVentures/>
+      <ContainerOverflowXHidden>
+        <StartedContainer>
+          <StartedDescription>
+            {profileDescriptionData.map((paragraph: string, index: number) =>
+              <p key={index}>{t(`started-description.paragraph-${index}`, { text: paragraph })}</p>
+            )}
+          </StartedDescription>
+          <WStaticIcon />
+        </StartedContainer>
+        <ServicesAndVentures/>
+      </ContainerOverflowXHidden>
       <ThingsWeAreGoodAt />
       <WeDeliver />
       <WealizeInANutshell highlightColor={ACCENT_COLOR} />

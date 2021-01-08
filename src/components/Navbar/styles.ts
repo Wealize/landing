@@ -20,7 +20,7 @@ export const Navbar = styled.nav<{
   align-items: center;
   background-color: ${WHITE_COLOR};
   padding: ${halfPx()} ${singlePx()};
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import useTranslation from 'next-translate/useTranslation'
+import { useRouter } from 'next/router'
 
 import WealizeWhiteNormalMediumIcon from '../icons/WealizeWhiteNormalMediumIcon'
 import ButtonRounded from '../Buttons/Rounded/'
@@ -14,7 +15,8 @@ import InnovationPymeIcon from '../icons/grants/InnovationPymeIcon'
 import {
   CDTI_HREF,
   INNOVATION_SME_HREF,
-  PRIVACY_LEGAL
+  PRIVACY_LEGAL,
+  GET_IN_TOUCH_HREF
 } from '../../constants/hrefs'
 
 import {
@@ -39,6 +41,7 @@ import {
 } from './styles'
 const Footer = () => {
   const { t } = useTranslation('common')
+  const router = useRouter()
 
   return (
     <Container id="footer">
@@ -56,6 +59,7 @@ const Footer = () => {
             animatedBackgroundColor={ACCENT_COLOR}
             animatedTextColor={WHITE_COLOR}
             size={MEDIUM}
+            handleClick={() => router.push(GET_IN_TOUCH_HREF)}
           >
             {t('footer.get_in_touch.button_text')}
           </ButtonRounded>

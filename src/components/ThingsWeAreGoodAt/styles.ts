@@ -107,16 +107,15 @@ export const SecondCard = styled.article<{
       transition: all 1s;
       transition-delay: 0.5s;
       position: absolute;
-      left: 30%;
+      left: 29%;
       transform: ${isVisible ? 'translateY(5%)' : 'translateY(20%)'} ;
-      *transform: translateY(0%);
       height: 100%;
       max-width: 33.3%;
   `};
 
   ${media.greaterThan('xl')`
       position: absolute;
-      left: 32%;
+      left: 31%;
       height: 100%;
       max-width: 33.3%;
   `};
@@ -128,7 +127,7 @@ export const ThirdCard = styled.article<{
       transition: all 1s;
       transition-delay: 0.7s;
       position: absolute;
-      left: 65%;
+      left: 63.4%;
       transform: ${isVisible ? 'translateY(15%)' : 'translateY(25%)'} ;
       height: 100%;
       max-width: 33.3%;
@@ -136,7 +135,7 @@ export const ThirdCard = styled.article<{
 
   ${media.greaterThan('xl')`
       position: absolute;
-      left: 66%;
+      left: 63.4%;
       height: 100%;
       max-width: 33.3%;
   `};

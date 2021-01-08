@@ -38,7 +38,7 @@ const projectsData: CardRounded[] = [
       text: 'Coloq.io',
       color: 'rgba(255,255,255,.7)'
     },
-    tags: ['Startup studio', 'Conversational agents', 'IaaS'],
+    tags: ['Startup studio', 'Conversational agents', 'IaaS', 'Own product'],
     hasPrimary: true
   },
   {

@@ -28,7 +28,7 @@ export const Container = styled.div<{
 
   ${media.greaterThan('lg')`
     padding: ${singleAndHalfPx()} ${doublePx()};
-    min-height: 100%;
+    min-height: 115%;
     min-width: 110%;
     flex-wrap:wrap;
     justify-content: space-between;
@@ -36,12 +36,12 @@ export const Container = styled.div<{
 
   ${media.greaterThan('xl')`
     padding: ${doublePx()} ${triplePx()};
-    min-height: 115%;
+    min-height: 125%;
   `};
 
   ${media.greaterThan('xxl')`
     padding: ${triplePx()};
-    min-height: 135%;
+    min-height: 145%;
   `};
 `
 

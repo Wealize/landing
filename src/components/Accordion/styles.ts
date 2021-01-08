@@ -195,7 +195,7 @@ export const SectionContentContainer = styled.div<{isExpanded: boolean}>`
 
 export const SectionElement = styled.span`
   padding: ${twoThirdPx()} 0 ${sixthPx()};
-  white-space: nowrap;
+  line-height: 1.4;
 
   &:before {
     content: '- '
