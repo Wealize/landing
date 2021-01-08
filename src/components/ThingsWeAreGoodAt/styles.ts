@@ -96,7 +96,7 @@ export const FirstCard = styled.article<{
 
   ${media.greaterThan('xl')`
     position: absolute;
-    left: -2%;
+    left: -5%;
     height: 100%;
     max-width: 33.3%;
   `};
@@ -116,7 +116,7 @@ export const SecondCard = styled.article<{
 
   ${media.greaterThan('xl')`
       position: absolute;
-      left: 31%;
+      left: 29%;
       height: 100%;
       max-width: 33.3%;
   `};

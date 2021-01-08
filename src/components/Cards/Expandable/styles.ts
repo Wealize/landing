@@ -5,7 +5,8 @@ import {
   singleAndHalfPx,
   doublePx,
   triplePx,
-  doubleAndHalf
+  doubleAndHalf,
+  quadruplePx
 } from '../../../theme/space'
 import { media } from '../../../theme/media'
 
@@ -40,7 +41,7 @@ export const Container = styled.div<{
   `};
 
   ${media.greaterThan('xxl')`
-    padding: ${triplePx()};
+    padding: ${quadruplePx()};
     min-height: 145%;
   `};
 `
