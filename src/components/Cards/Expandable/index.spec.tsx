@@ -26,7 +26,6 @@ describe('<CardExpanded />', () => {
 
   it('should render content correctly', () => {
     expect(wrapper.find(Toggle).length).toEqual(1)
-    expect(wrapper.find(Content)).toHaveStyleRule('max-height', '0px')
     expect(wrapper.find(BlockchainIcon).length).toEqual(1)
     expect(wrapper.find(Headline).text()).toEqual(cardProps.headline)
     expect(wrapper.find(Subheadline).text()).toEqual(cardProps.subheadline)
@@ -39,10 +38,6 @@ describe('<CardExpanded />', () => {
     const wrapperExpanded = shallow(<CardExpandable {...cardPropsExpanded} />)
 
     expect(wrapperExpanded.find(Toggle).length).toEqual(1)
-    expect(wrapperExpanded.find(Content)).toHaveStyleRule(
-      'max-height',
-      '1000px'
-    )
     expect(wrapperExpanded.find(BlockchainIcon).length).toEqual(1)
     expect(wrapperExpanded.find(Headline).text()).toEqual(cardProps.headline)
     expect(wrapperExpanded.find(Subheadline).text()).toEqual(

@@ -105,6 +105,7 @@ export const SectionHeader = styled.div<{isExpanded: boolean}>`
     > .button-rounded {
       display: block;
       min-height: 75px;
+      min-width: 200px;
     }
   `};
 

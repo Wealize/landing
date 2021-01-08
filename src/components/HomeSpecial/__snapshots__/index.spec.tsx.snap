@@ -2,40 +2,40 @@
 
 exports[`<HomeSpecial /> wrapper: should render 1`] = `
 <Memo(HomeSpecial)>
-  <styled.div>
+  <styles__Container>
     <div
-      className="kAkGEl"
+      className="styles__Container-gjaj1n-0 fKDDDD"
     >
-      <styled.div>
+      <styles__Background>
         <div
-          className="eNYwLQ"
+          className="styles__Background-gjaj1n-1 cHJHkT"
         />
-      </styled.div>
-      <styled.div>
+      </styles__Background>
+      <styles__Slogan>
         <div
-          className="SNEBj"
+          className="styles__Slogan-gjaj1n-3 dPzzXq"
         >
-          <styled.h1>
+          <styles__Headline>
             <h1
-              className="xtqKs"
+              className="styles__Headline-gjaj1n-4 mTwNI"
             >
               home:slogan.headline
             </h1>
-          </styled.h1>
-          <styled.h2>
+          </styles__Headline>
+          <styles__SubHeadline>
             <h2
-              className="kMBPoY"
+              className="styles__SubHeadline-gjaj1n-5 KVLRt"
             >
               home:slogan.subheadline
             </h2>
-          </styled.h2>
-          <styled.button
+          </styles__SubHeadline>
+          <styles__Button
             aria-label="scroll-button"
             onClick={[Function]}
           >
             <button
               aria-label="scroll-button"
-              className="cJLbsF"
+              className="styles__Button-gjaj1n-2 exZLOl"
               onClick={[Function]}
             >
               <Memo(RoundArrowIcon)>
@@ -56,10 +56,10 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
                 </svg>
               </Memo(RoundArrowIcon)>
             </button>
-          </styled.button>
+          </styles__Button>
         </div>
-      </styled.div>
+      </styles__Slogan>
     </div>
-  </styled.div>
+  </styles__Container>
 </Memo(HomeSpecial)>
 `;

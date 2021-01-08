@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Talents /> should render 1`] = `
-<styled.div>
-  <styled.div>
-    <styled.h3>
+<styles__Container>
+  <styles__ContentContainer>
+    <styles__Headline>
       profile:talents.title
-    </styled.h3>
+    </styles__Headline>
     <Memo(ButtonRounded)
       animatedBackgroundColor="#6666ff"
       animatedTextColor="#ffffff"
@@ -35,8 +35,8 @@ exports[`<Talents /> should render 1`] = `
     >
       profile:talents.refresh-button-text
     </Memo(ButtonRounded)>
-  </styled.div>
-  <styled.div>
+  </styles__ContentContainer>
+  <styles__CardsContainer>
     <Memo(TalentCard)
       description="profile:talents.miguel_calero.description"
       imageUrl="/img/talents/placeholder.png"
@@ -301,6 +301,6 @@ exports[`<Talents /> should render 1`] = `
         ]
       }
     />
-  </styled.div>
-</styled.div>
+  </styles__CardsContainer>
+</styles__Container>
 `;

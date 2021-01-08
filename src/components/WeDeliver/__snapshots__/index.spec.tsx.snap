@@ -2,136 +2,136 @@
 
 exports[`<WeDeliver /> should render 1`] = `
 <Memo(WeDeliver)>
-  <styled.div>
+  <styles__Container>
     <div
-      className="fbiKbH"
+      className="styles__Container-m0mkjy-0 hfobv"
     >
-      <styled.h5>
+      <styles__Title>
         <h5
-          className="iVcQmv"
+          className="styles__Title-m0mkjy-1 edNgxp"
         >
           profile:we-deliver.title
         </h5>
-      </styled.h5>
-      <styled.div>
+      </styles__Title>
+      <styles__ContainerCards>
         <div
-          className="cVnNRX"
+          className="styles__ContainerCards-m0mkjy-2 hjWAim"
         >
           <Memo(SimpleBigTitleCard)
             description="profile:we-deliver.card-0.description"
             key="0"
             title="profile:we-deliver.card-0.title"
           >
-            <styled.div
+            <styles__Container
               className="simple-big-title-card"
             >
               <div
-                className="hvgwOq simple-big-title-card"
+                className="styles__Container-oswoju-0 lYOa simple-big-title-card"
               >
-                <styled.span>
+                <styles__Headline>
                   <span
-                    className="lkgoDy"
+                    className="styles__Headline-oswoju-1 fUjaxr"
                   >
                     profile:we-deliver.card-0.title
                   </span>
-                </styled.span>
-                <styled.h5>
+                </styles__Headline>
+                <styles__SubHeadline>
                   <h5
-                    className="mmzIs"
+                    className="styles__SubHeadline-oswoju-2 eUiSQi"
                   >
                     profile:we-deliver.card-0.description
                   </h5>
-                </styled.h5>
+                </styles__SubHeadline>
               </div>
-            </styled.div>
+            </styles__Container>
           </Memo(SimpleBigTitleCard)>
           <Memo(SimpleBigTitleCard)
             description="profile:we-deliver.card-1.description"
             key="1"
             title="profile:we-deliver.card-1.title"
           >
-            <styled.div
+            <styles__Container
               className="simple-big-title-card"
             >
               <div
-                className="hvgwOq simple-big-title-card"
+                className="styles__Container-oswoju-0 lYOa simple-big-title-card"
               >
-                <styled.span>
+                <styles__Headline>
                   <span
-                    className="lkgoDy"
+                    className="styles__Headline-oswoju-1 fUjaxr"
                   >
                     profile:we-deliver.card-1.title
                   </span>
-                </styled.span>
-                <styled.h5>
+                </styles__Headline>
+                <styles__SubHeadline>
                   <h5
-                    className="mmzIs"
+                    className="styles__SubHeadline-oswoju-2 eUiSQi"
                   >
                     profile:we-deliver.card-1.description
                   </h5>
-                </styled.h5>
+                </styles__SubHeadline>
               </div>
-            </styled.div>
+            </styles__Container>
           </Memo(SimpleBigTitleCard)>
           <Memo(SimpleBigTitleCard)
             description="profile:we-deliver.card-2.description"
             key="2"
             title="profile:we-deliver.card-2.title"
           >
-            <styled.div
+            <styles__Container
               className="simple-big-title-card"
             >
               <div
-                className="hvgwOq simple-big-title-card"
+                className="styles__Container-oswoju-0 lYOa simple-big-title-card"
               >
-                <styled.span>
+                <styles__Headline>
                   <span
-                    className="lkgoDy"
+                    className="styles__Headline-oswoju-1 fUjaxr"
                   >
                     profile:we-deliver.card-2.title
                   </span>
-                </styled.span>
-                <styled.h5>
+                </styles__Headline>
+                <styles__SubHeadline>
                   <h5
-                    className="mmzIs"
+                    className="styles__SubHeadline-oswoju-2 eUiSQi"
                   >
                     profile:we-deliver.card-2.description
                   </h5>
-                </styled.h5>
+                </styles__SubHeadline>
               </div>
-            </styled.div>
+            </styles__Container>
           </Memo(SimpleBigTitleCard)>
           <Memo(SimpleBigTitleCard)
             description="profile:we-deliver.card-3.description"
             key="3"
             title="profile:we-deliver.card-3.title"
           >
-            <styled.div
+            <styles__Container
               className="simple-big-title-card"
             >
               <div
-                className="hvgwOq simple-big-title-card"
+                className="styles__Container-oswoju-0 lYOa simple-big-title-card"
               >
-                <styled.span>
+                <styles__Headline>
                   <span
-                    className="lkgoDy"
+                    className="styles__Headline-oswoju-1 fUjaxr"
                   >
                     profile:we-deliver.card-3.title
                   </span>
-                </styled.span>
-                <styled.h5>
+                </styles__Headline>
+                <styles__SubHeadline>
                   <h5
-                    className="mmzIs"
+                    className="styles__SubHeadline-oswoju-2 eUiSQi"
                   >
                     profile:we-deliver.card-3.description
                   </h5>
-                </styled.h5>
+                </styles__SubHeadline>
               </div>
-            </styled.div>
+            </styles__Container>
           </Memo(SimpleBigTitleCard)>
         </div>
-      </styled.div>
+      </styles__ContainerCards>
     </div>
-  </styled.div>
+  </styles__Container>
 </Memo(WeDeliver)>
 `;

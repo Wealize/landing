@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Footer /> wrapper: should render 1`] = `
-<styled.footer
+<styles__Container
   id="footer"
 >
-  <styled.div>
+  <styles__ContainerLogo>
     <Memo(WealizeWhiteNormalMediumIcon) />
-  </styled.div>
-  <styled.div>
-    <styled.div>
-      <styled.h5>
+  </styles__ContainerLogo>
+  <styles__ContainerContent>
+    <styles__ContainerGetInTouch>
+      <styles__BigText>
         common:footer.get_in_touch.text
-      </styled.h5>
+      </styles__BigText>
       <Memo(ButtonRounded)
         animatedBackgroundColor="#6666ff"
         animatedTextColor="#ffffff"
@@ -41,11 +41,11 @@ exports[`<Footer /> wrapper: should render 1`] = `
       >
         common:footer.get_in_touch.button_text
       </Memo(ButtonRounded)>
-    </styled.div>
-    <styled.div>
-      <styled.h5>
+    </styles__ContainerGetInTouch>
+    <styles__ContainerWorkWithUs>
+      <styles__BigText>
         common:footer.work_with_us.text
-      </styled.h5>
+      </styles__BigText>
       <Memo(ButtonRounded)
         animatedBackgroundColor="#6666ff"
         animatedTextColor="#ffffff"
@@ -74,67 +74,67 @@ exports[`<Footer /> wrapper: should render 1`] = `
       >
         common:footer.work_with_us.button_text
       </Memo(ButtonRounded)>
-    </styled.div>
-  </styled.div>
-  <styled.div>
-    <styled.hr />
-    <styled.div>
+    </styles__ContainerWorkWithUs>
+  </styles__ContainerContent>
+  <styles__ContainerBottom>
+    <styles__DividerMobile />
+    <styles__ContainerSocialMobile>
       <Link
         href="https://www.linkedin.com/company/wealizedigital/"
         passHref={true}
       >
-        <styled.a
+        <styles__Social
           aria-label="Linkedin"
           rel="noreferrer"
           target="_blank"
         >
           <LinkedinIcon />
-        </styled.a>
+        </styles__Social>
       </Link>
       <Link
         href="https://twitter.com/wealizedigital"
         passHref={true}
       >
-        <styled.a
+        <styles__Social
           aria-label="Twitter"
           rel="noreferrer"
           target="_blank"
         >
           <TwitterIcon />
-        </styled.a>
+        </styles__Social>
       </Link>
       <Link
         href="https://dev.to/wealize"
         passHref={true}
       >
-        <styled.a
+        <styles__Social
           aria-label="Dev.to"
           rel="noreferrer"
           target="_blank"
         >
           <DevtoIcon />
-        </styled.a>
+        </styles__Social>
       </Link>
-    </styled.div>
-    <styled.div>
+    </styles__ContainerSocialMobile>
+    <styles__ContainerPrivacyCopyright>
       <Link
         href="/privacy-legal"
         passHref={true}
       >
-        <styled.a
+        <styles__PrivacyLegalLink
           aria-label="Privacy & Legal"
         >
           common:footer.privacy_legal
-        </styled.a>
+        </styles__PrivacyLegalLink>
       </Link>
-      <styled.span>
+      <styles__CopyrightText>
         common:footer.copyright
-      </styled.span>
-    </styled.div>
-    <styled.hr />
-    <styled.div>
-      <styled.div>
-        <styled.div>
+      </styles__CopyrightText>
+    </styles__ContainerPrivacyCopyright>
+    <styles__Divider />
+    <styles__ContainerGrantsAndSocials>
+      <styles__ContainerGrants>
+        <styles__Grant>
           <Link
             href="/grants/cdti"
             passHref={true}
@@ -145,8 +145,8 @@ exports[`<Footer /> wrapper: should render 1`] = `
               <Memo(CDTIIcon) />
             </a>
           </Link>
-        </styled.div>
-        <styled.div>
+        </styles__Grant>
+        <styles__Grant>
           <Link
             href="/grants/innovative-sme"
             passHref={true}
@@ -157,44 +157,44 @@ exports[`<Footer /> wrapper: should render 1`] = `
               <Memo(InnovationPymeIcon) />
             </a>
           </Link>
-        </styled.div>
-      </styled.div>
-      <styled.div>
+        </styles__Grant>
+      </styles__ContainerGrants>
+      <styles__ContainerSocial>
         <Link
           href="https://www.linkedin.com/company/wealizedigital/"
           passHref={true}
         >
-          <styled.a
+          <styles__Social
             rel="noreferrer"
             target="_blank"
           >
             <LinkedinIcon />
-          </styled.a>
+          </styles__Social>
         </Link>
         <Link
           href="https://twitter.com/wealizedigital"
           passHref={true}
         >
-          <styled.a
+          <styles__Social
             rel="noreferrer"
             target="_blank"
           >
             <TwitterIcon />
-          </styled.a>
+          </styles__Social>
         </Link>
         <Link
           href="https://dev.to/wealize"
           passHref={true}
         >
-          <styled.a
+          <styles__Social
             rel="noreferrer"
             target="_blank"
           >
             <DevtoIcon />
-          </styled.a>
+          </styles__Social>
         </Link>
-      </styled.div>
-    </styled.div>
-  </styled.div>
-</styled.footer>
+      </styles__ContainerSocial>
+    </styles__ContainerGrantsAndSocials>
+  </styles__ContainerBottom>
+</styles__Container>
 `;

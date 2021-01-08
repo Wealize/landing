@@ -4,22 +4,22 @@ exports[`<WealizeInANutshell /> should render 1`] = `
 <Memo(WealizeInANutshell)
   highlightColor="#6666ff"
 >
-  <styled.div
+  <styles__Container
     className="WealizeInANutshell"
   >
     <div
-      className="cUYhzr WealizeInANutshell"
+      className="styles__Container-sc-1wwnm82-0 hdMqDx WealizeInANutshell"
     >
-      <styled.h3>
+      <styles__Title>
         <h3
-          className="eUBRGi"
+          className="styles__Title-sc-1wwnm82-1 hzIpNL"
         >
           profile:wealize-in-a-nutshell.title
         </h3>
-      </styled.h3>
-      <styled.div>
+      </styles__Title>
+      <styles__Content>
         <div
-          className="imGuPe"
+          className="styles__Content-sc-1wwnm82-2 drboVR"
         >
           <InView
             initialInView={false}
@@ -28,17 +28,17 @@ exports[`<WealizeInANutshell /> should render 1`] = `
             threshold={0.3}
             triggerOnce={false}
           >
-            <styled.h3
+            <styles__Paragraph
               className="wealize-nutshell-paragraph "
               highlightColor="#6666ff"
               isIntersecting={false}
             >
               <h3
-                className="eQcHhv wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 euRAII wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-0
               </h3>
-            </styled.h3>
+            </styles__Paragraph>
           </InView>
           <InView
             initialInView={false}
@@ -47,17 +47,17 @@ exports[`<WealizeInANutshell /> should render 1`] = `
             threshold={0.3}
             triggerOnce={false}
           >
-            <styled.h3
+            <styles__Paragraph
               className="wealize-nutshell-paragraph "
               highlightColor="#6666ff"
               isIntersecting={false}
             >
               <h3
-                className="eQcHhv wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 euRAII wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-1
               </h3>
-            </styled.h3>
+            </styles__Paragraph>
           </InView>
           <InView
             initialInView={false}
@@ -66,17 +66,17 @@ exports[`<WealizeInANutshell /> should render 1`] = `
             threshold={0.3}
             triggerOnce={false}
           >
-            <styled.h3
+            <styles__Paragraph
               className="wealize-nutshell-paragraph "
               highlightColor="#6666ff"
               isIntersecting={false}
             >
               <h3
-                className="eQcHhv wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 euRAII wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-2
               </h3>
-            </styled.h3>
+            </styles__Paragraph>
           </InView>
           <InView
             initialInView={false}
@@ -85,17 +85,17 @@ exports[`<WealizeInANutshell /> should render 1`] = `
             threshold={0.3}
             triggerOnce={false}
           >
-            <styled.h3
+            <styles__Paragraph
               className="wealize-nutshell-paragraph "
               highlightColor="#6666ff"
               isIntersecting={false}
             >
               <h3
-                className="eQcHhv wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 euRAII wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-3
               </h3>
-            </styled.h3>
+            </styles__Paragraph>
           </InView>
           <InView
             initialInView={false}
@@ -104,17 +104,17 @@ exports[`<WealizeInANutshell /> should render 1`] = `
             threshold={0.3}
             triggerOnce={false}
           >
-            <styled.h3
+            <styles__Paragraph
               className="wealize-nutshell-paragraph "
               highlightColor="#6666ff"
               isIntersecting={false}
             >
               <h3
-                className="eQcHhv wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 euRAII wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-4
               </h3>
-            </styled.h3>
+            </styles__Paragraph>
           </InView>
           <InView
             initialInView={false}
@@ -123,17 +123,17 @@ exports[`<WealizeInANutshell /> should render 1`] = `
             threshold={0.3}
             triggerOnce={false}
           >
-            <styled.h3
+            <styles__Paragraph
               className="wealize-nutshell-paragraph "
               highlightColor="#6666ff"
               isIntersecting={false}
             >
               <h3
-                className="eQcHhv wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 euRAII wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-5
               </h3>
-            </styled.h3>
+            </styles__Paragraph>
           </InView>
           <InView
             initialInView={false}
@@ -142,21 +142,21 @@ exports[`<WealizeInANutshell /> should render 1`] = `
             threshold={0.3}
             triggerOnce={false}
           >
-            <styled.h3
+            <styles__Paragraph
               className="wealize-nutshell-paragraph "
               highlightColor="#6666ff"
               isIntersecting={false}
             >
               <h3
-                className="eQcHhv wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 euRAII wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-6
               </h3>
-            </styled.h3>
+            </styles__Paragraph>
           </InView>
         </div>
-      </styled.div>
+      </styles__Content>
     </div>
-  </styled.div>
+  </styles__Container>
 </Memo(WealizeInANutshell)>
 `;
