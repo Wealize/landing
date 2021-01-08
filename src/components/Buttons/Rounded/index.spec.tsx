@@ -9,8 +9,6 @@ import {
 
 import ButtonRounded from './index'
 import {
-  ContainerButtonOriginal,
-  ContainerButtonAnimated,
   Content
 } from './styles'
 import { SMALL } from './sizes'

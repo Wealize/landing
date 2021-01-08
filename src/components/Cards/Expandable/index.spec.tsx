@@ -5,7 +5,7 @@ import BlockchainIcon from '../../icons/thingsWeAreGoodAt/BlockchainIcon'
 import { PRIMARY_COLOR, PRIMARY_LIGHT_COLOR } from '../../../theme/color'
 
 import CardExpandable from './index'
-import { Toggle, Content, Headline, Subheadline, Description } from './styles'
+import { Toggle, Headline, Subheadline, Description } from './styles'
 
 describe('<CardExpanded />', () => {
   const cardProps = {
