@@ -1,7 +1,7 @@
 import React from 'react'
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-
+import useTranslation from 'next-translate/useTranslation'
 // https://github.com/zeit/next.js/tree/canary/examples/with-styled-components
 class ExtendedDocument extends Document {
   public static async getInitialProps(ctx) {
@@ -34,7 +34,7 @@ class ExtendedDocument extends Document {
     const {
       __NEXT_DATA__: {
         query: {
-          __lng = "en"
+          __lng
         }
       }
     } = this.props
