@@ -4,7 +4,7 @@ import { WHITE_COLOR, LIGHT_GRAY_COLOR } from '../../theme/color'
 import { singlePx, doublePx, doubleAndHalfPx, triplePx, quadruplePx } from '../../theme/space'
 import { media } from '../../theme/media'
 
-export const ContainerOverflowXHidden = styled.div`
+export const ContainerOverflowHidden = styled.div`
   overflow: hidden;
   width: 100%;
   height: 100%;
