@@ -27,15 +27,15 @@ export const Container = styled.div`
     width: 90%;
     border-top-right-radius: initial;
     border-top-left-radius: ${DEFAULT_RADIUS}px;
-    margin: ${triplePx()} 0 ${triple() * 6}px;
+    margin: ${triplePx()} 0 ${triple() * 7}px 10%;
   `};
 
   ${media.greaterThan('xl')`
-    margin: ${quadruplePx()} 0 ${quadruple() * 6}px;
+    margin: ${quadruplePx()} 0 ${quadruple() * 6}px 10%;
   `};
 
   ${media.greaterThan('xxl')`
-    margin: ${quadruplePx()} 0 ${quadruple() * 8}px;
+    margin: ${quadruplePx()} 0 ${quadruple() * 8}px 10%;
   `};
 `
 
@@ -95,7 +95,7 @@ export const FirstCard = styled.article<{
 
   ${media.greaterThan('xl')`
     position: absolute;
-    left: -2%;
+    left: -5%;
     height: 100%;
     max-width: 33.3%;
   `};
@@ -107,16 +107,15 @@ export const SecondCard = styled.article<{
       transition: all 1s;
       transition-delay: 0.5s;
       position: absolute;
-      left: 30%;
+      left: 29%;
       transform: ${isVisible ? 'translateY(5%)' : 'translateY(20%)'} ;
-      *transform: translateY(0%);
       height: 100%;
       max-width: 33.3%;
   `};
 
   ${media.greaterThan('xl')`
       position: absolute;
-      left: 32%;
+      left: 29%;
       height: 100%;
       max-width: 33.3%;
   `};
@@ -128,7 +127,7 @@ export const ThirdCard = styled.article<{
       transition: all 1s;
       transition-delay: 0.7s;
       position: absolute;
-      left: 65%;
+      left: 63.4%;
       transform: ${isVisible ? 'translateY(15%)' : 'translateY(25%)'} ;
       height: 100%;
       max-width: 33.3%;
@@ -136,7 +135,7 @@ export const ThirdCard = styled.article<{
 
   ${media.greaterThan('xl')`
       position: absolute;
-      left: 66%;
+      left: 63.4%;
       height: 100%;
       max-width: 33.3%;
   `};

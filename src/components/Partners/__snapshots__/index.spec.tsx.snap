@@ -2,30 +2,30 @@
 
 exports[`<Partners /> should render 1`] = `
 <Memo(Partners)>
-  <styled.div>
+  <styles__Container>
     <div
-      className="ksVCha"
+      className="styles__Container-st6sme-0 eTtNjP"
     >
-      <styled.div>
+      <styles__Content>
         <div
-          className="hXDteF"
+          className="styles__Content-st6sme-1 jbTdPC"
         >
-          <styled.h5>
+          <styles__TextContent>
             <h5
-              className="bjkawu"
+              className="styles__TextContent-st6sme-2 jwgwQP"
             >
               home:partners_description
             </h5>
-          </styled.h5>
+          </styles__TextContent>
         </div>
-      </styled.div>
-      <styled.div>
+      </styles__Content>
+      <styles__ContainerPartners>
         <div
-          className="caWWKE"
+          className="styles__ContainerPartners-st6sme-3 kvYJHQ"
         >
-          <styled.div>
+          <styles__Partner>
             <div
-              className="jdsupo"
+              className="styles__Partner-st6sme-4 hKCyaT"
             >
               <Memo(AlastriaIcon)>
                 <svg
@@ -72,10 +72,10 @@ exports[`<Partners /> should render 1`] = `
                 </svg>
               </Memo(AlastriaIcon)>
             </div>
-          </styled.div>
-          <styled.div>
+          </styles__Partner>
+          <styles__Partner>
             <div
-              className="jdsupo"
+              className="styles__Partner-st6sme-4 hKCyaT"
             >
               <Memo(IBMWatsonIcon)>
                 <svg
@@ -198,10 +198,10 @@ exports[`<Partners /> should render 1`] = `
                 </svg>
               </Memo(IBMWatsonIcon)>
             </div>
-          </styled.div>
-          <styled.div>
+          </styles__Partner>
+          <styles__Partner>
             <div
-              className="jdsupo"
+              className="styles__Partner-st6sme-4 hKCyaT"
             >
               <Memo(ODOSIcon)>
                 <svg
@@ -293,10 +293,10 @@ exports[`<Partners /> should render 1`] = `
                 </svg>
               </Memo(ODOSIcon)>
             </div>
-          </styled.div>
-          <styled.div>
+          </styles__Partner>
+          <styles__Partner>
             <div
-              className="jdsupo"
+              className="styles__Partner-st6sme-4 hKCyaT"
             >
               <Memo(UniversityCordobaIcon)>
                 <svg
@@ -443,10 +443,10 @@ exports[`<Partners /> should render 1`] = `
                 </svg>
               </Memo(UniversityCordobaIcon)>
             </div>
-          </styled.div>
-          <styled.div>
+          </styles__Partner>
+          <styles__Partner>
             <div
-              className="jdsupo"
+              className="styles__Partner-st6sme-4 hKCyaT"
             >
               <Memo(MalditaIcon)>
                 <svg
@@ -462,10 +462,10 @@ exports[`<Partners /> should render 1`] = `
                 </svg>
               </Memo(MalditaIcon)>
             </div>
-          </styled.div>
-          <styled.div>
+          </styles__Partner>
+          <styles__Partner>
             <div
-              className="jdsupo"
+              className="styles__Partner-st6sme-4 hKCyaT"
             >
               <Memo(NestleIcon)>
                 <svg
@@ -482,10 +482,10 @@ exports[`<Partners /> should render 1`] = `
                 </svg>
               </Memo(NestleIcon)>
             </div>
-          </styled.div>
-          <styled.div>
+          </styles__Partner>
+          <styles__Partner>
             <div
-              className="jdsupo"
+              className="styles__Partner-st6sme-4 hKCyaT"
             >
               <Memo(UniversityLoyolaIcon)>
                 <svg
@@ -872,10 +872,10 @@ exports[`<Partners /> should render 1`] = `
                 </svg>
               </Memo(UniversityLoyolaIcon)>
             </div>
-          </styled.div>
-          <styled.div>
+          </styles__Partner>
+          <styles__Partner>
             <div
-              className="jdsupo"
+              className="styles__Partner-st6sme-4 hKCyaT"
             >
               <Memo(AWSIcon)>
                 <svg
@@ -925,10 +925,10 @@ exports[`<Partners /> should render 1`] = `
                 </svg>
               </Memo(AWSIcon)>
             </div>
-          </styled.div>
-          <styled.div>
+          </styles__Partner>
+          <styles__Partner>
             <div
-              className="jdsupo"
+              className="styles__Partner-st6sme-4 hKCyaT"
             >
               <Memo(ColoqioIcon)>
                 <svg
@@ -1009,10 +1009,10 @@ exports[`<Partners /> should render 1`] = `
                 </svg>
               </Memo(ColoqioIcon)>
             </div>
-          </styled.div>
-          <styled.div>
+          </styles__Partner>
+          <styles__Partner>
             <div
-              className="jdsupo"
+              className="styles__Partner-st6sme-4 hKCyaT"
             >
               <Memo(MetaledgerIcon)>
                 <svg
@@ -1068,10 +1068,10 @@ exports[`<Partners /> should render 1`] = `
                 </svg>
               </Memo(MetaledgerIcon)>
             </div>
-          </styled.div>
+          </styles__Partner>
         </div>
-      </styled.div>
+      </styles__ContainerPartners>
     </div>
-  </styled.div>
+  </styles__Container>
 </Memo(Partners)>
 `;

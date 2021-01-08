@@ -9,8 +9,6 @@ import {
 
 import ButtonRounded from './index'
 import {
-  ContainerButtonOriginal,
-  ContainerButtonAnimated,
   Content
 } from './styles'
 import { SMALL } from './sizes'
@@ -33,18 +31,6 @@ describe('<ButtonRounded />', () => {
   })
 
   it('wrapper: should render content correctly', () => {
-    expect(wrapper.find(ContainerButtonOriginal)).toHaveStyleRule(
-      'background-color',
-      DARK_GRAY_COLOR
-    )
-    expect(wrapper.find(ContainerButtonAnimated)).toHaveStyleRule(
-      'background-color',
-      ACCENT_COLOR
-    )
-
-    expect(wrapper.find(Content).first()).toHaveStyleRule('color', WHITE_COLOR)
-    expect(wrapper.find(Content).at(1)).toHaveStyleRule('color', WHITE_COLOR)
-
     expect(wrapper.find(Content).first().text()).toEqual(buttonProps.children)
     expect(wrapper.find(Content).at(1).text()).toEqual(buttonProps.children)
   })

@@ -2,182 +2,182 @@
 
 exports[`<ServicesAndVentures /> should render 1`] = `
 <Memo(ServicesAndVentures)>
-  <styled.div>
+  <styles__Container>
     <div
-      className="mPdND"
+      className="styles__Container-g6vj63-0 lcSTBo"
     >
-      <styled.h3>
+      <styles__Title>
         <h3
-          className="gxcBLJ"
+          className="styles__Title-g6vj63-1 fJcvKJ"
         >
           profile:services-ventures.title
         </h3>
-      </styled.h3>
-      <styled.div>
+      </styles__Title>
+      <styles__ContentContainer>
         <div
-          className="cySEK"
+          className="styles__ContentContainer-g6vj63-2 hrBVPv"
         >
-          <styled.div>
+          <styles__SectionContainer>
             <div
-              className=""
+              className="styles__SectionContainer-g6vj63-3"
             >
-              <styled.h4>
+              <styles__SectionTitle>
                 <h4
-                  className="eDfkbp"
+                  className="styles__SectionTitle-g6vj63-4 lpmoOr"
                 >
                   profile:services-ventures.services-section.title
                 </h4>
-              </styled.h4>
-              <styled.div
+              </styles__SectionTitle>
+              <styles__CardContainer
                 key="0"
               >
                 <div
-                  className="cGNQSf"
+                  className="styles__CardContainer-g6vj63-5 fBpjOa"
                 >
-                  <styled.div>
+                  <styles__CardHeadline>
                     <div
-                      className="kIpVJm"
+                      className="styles__CardHeadline-g6vj63-6 iLWeu"
                     >
                       profile:services-ventures.services-section.section-title-0
                     </div>
-                  </styled.div>
-                  <styled.h5>
+                  </styles__CardHeadline>
+                  <styles__CardDescription>
                     <h5
-                      className="JvsHx"
+                      className="styles__CardDescription-g6vj63-7 QYEiH"
                     >
                       profile:services-ventures.services-section.section-description-0
                     </h5>
-                  </styled.h5>
+                  </styles__CardDescription>
                 </div>
-              </styled.div>
-              <styled.div
+              </styles__CardContainer>
+              <styles__CardContainer
                 key="1"
               >
                 <div
-                  className="cGNQSf"
+                  className="styles__CardContainer-g6vj63-5 fBpjOa"
                 >
-                  <styled.div>
+                  <styles__CardHeadline>
                     <div
-                      className="kIpVJm"
+                      className="styles__CardHeadline-g6vj63-6 iLWeu"
                     >
                       profile:services-ventures.services-section.section-title-1
                     </div>
-                  </styled.div>
-                  <styled.h5>
+                  </styles__CardHeadline>
+                  <styles__CardDescription>
                     <h5
-                      className="JvsHx"
+                      className="styles__CardDescription-g6vj63-7 QYEiH"
                     >
                       profile:services-ventures.services-section.section-description-1
                     </h5>
-                  </styled.h5>
+                  </styles__CardDescription>
                 </div>
-              </styled.div>
-              <styled.div
+              </styles__CardContainer>
+              <styles__CardContainer
                 key="2"
               >
                 <div
-                  className="cGNQSf"
+                  className="styles__CardContainer-g6vj63-5 fBpjOa"
                 >
-                  <styled.div>
+                  <styles__CardHeadline>
                     <div
-                      className="kIpVJm"
+                      className="styles__CardHeadline-g6vj63-6 iLWeu"
                     >
                       profile:services-ventures.services-section.section-title-2
                     </div>
-                  </styled.div>
-                  <styled.h5>
+                  </styles__CardHeadline>
+                  <styles__CardDescription>
                     <h5
-                      className="JvsHx"
+                      className="styles__CardDescription-g6vj63-7 QYEiH"
                     >
                       profile:services-ventures.services-section.section-description-2
                     </h5>
-                  </styled.h5>
+                  </styles__CardDescription>
                 </div>
-              </styled.div>
+              </styles__CardContainer>
             </div>
-          </styled.div>
-          <styled.div>
+          </styles__SectionContainer>
+          <styles__SectionContainer>
             <div
-              className=""
+              className="styles__SectionContainer-g6vj63-3"
             >
-              <styled.h4>
+              <styles__SectionTitle>
                 <h4
-                  className="eDfkbp"
+                  className="styles__SectionTitle-g6vj63-4 lpmoOr"
                 >
                   profile:services-ventures.ventures-section.title
                 </h4>
-              </styled.h4>
-              <styled.div
+              </styles__SectionTitle>
+              <styles__CardContainer
                 key="0"
               >
                 <div
-                  className="cGNQSf"
+                  className="styles__CardContainer-g6vj63-5 fBpjOa"
                 >
-                  <styled.div>
+                  <styles__CardHeadline>
                     <div
-                      className="kIpVJm"
+                      className="styles__CardHeadline-g6vj63-6 iLWeu"
                     >
                       profile:services-ventures.ventures-section.section-title-0
                     </div>
-                  </styled.div>
-                  <styled.h5>
+                  </styles__CardHeadline>
+                  <styles__CardDescription>
                     <h5
-                      className="JvsHx"
+                      className="styles__CardDescription-g6vj63-7 QYEiH"
                     >
                       profile:services-ventures.ventures-section.section-description-0
                     </h5>
-                  </styled.h5>
+                  </styles__CardDescription>
                 </div>
-              </styled.div>
-              <styled.div
+              </styles__CardContainer>
+              <styles__CardContainer
                 key="1"
               >
                 <div
-                  className="cGNQSf"
+                  className="styles__CardContainer-g6vj63-5 fBpjOa"
                 >
-                  <styled.div>
+                  <styles__CardHeadline>
                     <div
-                      className="kIpVJm"
+                      className="styles__CardHeadline-g6vj63-6 iLWeu"
                     >
                       profile:services-ventures.ventures-section.section-title-1
                     </div>
-                  </styled.div>
-                  <styled.h5>
+                  </styles__CardHeadline>
+                  <styles__CardDescription>
                     <h5
-                      className="JvsHx"
+                      className="styles__CardDescription-g6vj63-7 QYEiH"
                     >
                       profile:services-ventures.ventures-section.section-description-1
                     </h5>
-                  </styled.h5>
+                  </styles__CardDescription>
                 </div>
-              </styled.div>
-              <styled.div
+              </styles__CardContainer>
+              <styles__CardContainer
                 key="2"
               >
                 <div
-                  className="cGNQSf"
+                  className="styles__CardContainer-g6vj63-5 fBpjOa"
                 >
-                  <styled.div>
+                  <styles__CardHeadline>
                     <div
-                      className="kIpVJm"
+                      className="styles__CardHeadline-g6vj63-6 iLWeu"
                     >
                       profile:services-ventures.ventures-section.section-title-2
                     </div>
-                  </styled.div>
-                  <styled.h5>
+                  </styles__CardHeadline>
+                  <styles__CardDescription>
                     <h5
-                      className="JvsHx"
+                      className="styles__CardDescription-g6vj63-7 QYEiH"
                     >
                       profile:services-ventures.ventures-section.section-description-2
                     </h5>
-                  </styled.h5>
+                  </styles__CardDescription>
                 </div>
-              </styled.div>
+              </styles__CardContainer>
             </div>
-          </styled.div>
+          </styles__SectionContainer>
         </div>
-      </styled.div>
+      </styles__ContentContainer>
     </div>
-  </styled.div>
+  </styles__Container>
 </Memo(ServicesAndVentures)>
 `;

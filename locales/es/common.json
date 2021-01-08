@@ -39,7 +39,8 @@
       "description": "Creamos nuestra propia infraestructura flexible para desarrolladores que permite que los ecosistemas conversacionales de grandes organizaciones y startups escalen orquestando todos los canales conversacionales, motores de NLP y fuentes de datos para sus procesos comerciales.",
       "tag-0": "Estudio de startup",
       "tag-1": "Agentes conversacionales",
-      "tag-2": "IaaS"
+      "tag-2": "IaaS",
+      "tag-3": "Producto propio"
     },
     "metaledger": {
       "title": "${title}",

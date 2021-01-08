@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ButtonRounded /> wrapper: should render 1`] = `
-<styled.div
+<styles__Container
   animatedBackgroundColor="#6666ff"
   animatedTextColor="#ffffff"
   backgroundColor="#3c3c3b"
@@ -29,25 +29,25 @@ exports[`<ButtonRounded /> wrapper: should render 1`] = `
   }
   textColor="#ffffff"
 >
-  <styled.button
+  <styles__ContainerButtonOriginal
     aria-label="Test text"
     backgroundColor="#3c3c3b"
   >
-    <styled.span
+    <styles__Content
       textColor="#ffffff"
     >
       Test text
-    </styled.span>
-  </styled.button>
-  <styled.button
+    </styles__Content>
+  </styles__ContainerButtonOriginal>
+  <styles__ContainerButtonAnimated
     animatedBackgroundColor="#6666ff"
     aria-label="Test text animated"
   >
-    <styled.span
+    <styles__Content
       textColor="#ffffff"
     >
       Test text
-    </styled.span>
-  </styled.button>
-</styled.div>
+    </styles__Content>
+  </styles__ContainerButtonAnimated>
+</styles__Container>
 `;

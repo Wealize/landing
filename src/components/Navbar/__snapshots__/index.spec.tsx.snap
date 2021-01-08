@@ -4,20 +4,20 @@ exports[`<NavBar /> should render 1`] = `
 <Memo(NavBar)
   showNavigationBarClosablePage={true}
 >
-  <styled.nav
+  <styles__Navbar
     id="navbar"
     isVisible={true}
     showNavigationBarClosablePage={true}
   >
     <nav
-      className="hxNwcS"
+      className="styles__Navbar-dfawgb-0 qkVmZ"
       id="navbar"
     >
-      <styled.div
+      <styles__LogoMobileContainer
         data-cy="navbar-logo-mobile-container"
       >
         <div
-          className="jcroSH"
+          className="styles__LogoMobileContainer-dfawgb-1 ccyuWw"
           data-cy="navbar-logo-mobile-container"
         >
           <Link
@@ -45,12 +45,12 @@ exports[`<NavBar /> should render 1`] = `
             </a>
           </Link>
         </div>
-      </styled.div>
-      <styled.div
+      </styles__LogoMobileContainer>
+      <styles__LogoContainer
         data-cy="navbar-logo-container"
       >
         <div
-          className="iXyhlw"
+          className="styles__LogoContainer-dfawgb-2 icGsST"
           data-cy="navbar-logo-container"
         >
           <Link
@@ -78,7 +78,7 @@ exports[`<NavBar /> should render 1`] = `
             </a>
           </Link>
         </div>
-      </styled.div>
+      </styles__LogoContainer>
       <Memo(ButtonRounded)
         animatedBackgroundColor="#6666ff"
         animatedTextColor="#ffffff"
@@ -107,7 +107,7 @@ exports[`<NavBar /> should render 1`] = `
         }
         textColor="#6666ff"
       >
-        <styled.div
+        <styles__Container
           animatedBackgroundColor="#6666ff"
           animatedTextColor="#ffffff"
           backgroundColor="#ffffff"
@@ -136,7 +136,7 @@ exports[`<NavBar /> should render 1`] = `
           textColor="#6666ff"
         >
           <div
-            className="hmDnaE button-rounded"
+            className="styles__Container-ater0w-3 lplMMT button-rounded"
             onClick={[Function]}
             size={
               Object {
@@ -159,48 +159,48 @@ exports[`<NavBar /> should render 1`] = `
               }
             }
           >
-            <styled.button
+            <styles__ContainerButtonOriginal
               aria-label="common:navbar.return_button_text"
               backgroundColor="#ffffff"
             >
               <button
                 aria-label="common:navbar.return_button_text"
-                className="dbnkaG"
+                className="styles__ContainerButtonOriginal-ater0w-0 hwQUBf"
               >
-                <styled.span
+                <styles__Content
                   textColor="#6666ff"
                 >
                   <span
-                    className="hEOWLJ"
+                    className="styles__Content-ater0w-2 evwAKy"
                   >
                     common:navbar.return_button_text
                   </span>
-                </styled.span>
+                </styles__Content>
               </button>
-            </styled.button>
-            <styled.button
+            </styles__ContainerButtonOriginal>
+            <styles__ContainerButtonAnimated
               animatedBackgroundColor="#6666ff"
               aria-label="common:navbar.return_button_text animated"
             >
               <button
                 aria-label="common:navbar.return_button_text animated"
-                className="eobazg"
+                className="styles__ContainerButtonAnimated-ater0w-1 XdFHj"
               >
-                <styled.span
+                <styles__Content
                   textColor="#6666ff"
                 >
                   <span
-                    className="hEOWLJ"
+                    className="styles__Content-ater0w-2 evwAKy"
                   >
                     common:navbar.return_button_text
                   </span>
-                </styled.span>
+                </styles__Content>
               </button>
-            </styled.button>
+            </styles__ContainerButtonAnimated>
           </div>
-        </styled.div>
+        </styles__Container>
       </Memo(ButtonRounded)>
     </nav>
-  </styled.nav>
+  </styles__Navbar>
 </Memo(NavBar)>
 `;
