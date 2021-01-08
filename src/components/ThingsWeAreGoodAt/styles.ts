@@ -25,18 +25,17 @@ export const Container = styled.div`
   ${media.greaterThan('lg')`
     position: relative;
     width: 90%;
-    float: right;
     border-top-right-radius: initial;
     border-top-left-radius: ${DEFAULT_RADIUS}px;
-    margin: ${triplePx()} 0 ${triple() * 7}px;
+    margin: ${triplePx()} 0 ${triple() * 7}px 10%;
   `};
 
   ${media.greaterThan('xl')`
-    margin: ${quadruplePx()} 0 ${quadruple() * 6}px;
+    margin: ${quadruplePx()} 0 ${quadruple() * 6}px 10%;
   `};
 
   ${media.greaterThan('xxl')`
-    margin: ${quadruplePx()} 0 ${quadruple() * 8}px;
+    margin: ${quadruplePx()} 0 ${quadruple() * 8}px 10%;
   `};
 `
 
