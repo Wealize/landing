@@ -12,7 +12,7 @@ export const toolsTechStackAccordionData: AccordionSectionData[] = [
   },
   {
     title: 'Tools & Platforms',
-    data: ['Sentry', 'Slack', 'Microsoft Clarity', 'Google Tag Manager', 'Segment', 'Figma', 'Storybook', 'Notion', 'IBM Watson', 'Jira', 'Abstract', 'Twilio', 'Zeplin']
+    data: ['Sentry', 'Slack', 'Microsoft Clarity', 'Google Tag Manager', 'Segment', 'Figma', 'Storybook', 'Notion', 'IBM Watson', 'Jira', 'Abstract', 'Twilio', 'Zeplin', 'Sketch']
   },
   {
     title: 'Techniques',

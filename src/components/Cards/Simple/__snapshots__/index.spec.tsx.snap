@@ -2,20 +2,20 @@
 
 exports[`<SimpleCard /> wrapper: should render 1`] = `
 <Memo(SimpleCard)>
-  <styled.div
+  <styles__Container
     className="simple-card"
   >
     <div
-      className="cHiPuV simple-card"
+      className="styles__Container-sc-58pc36-0 isdsPo simple-card"
     >
-      <styled.h3>
+      <styles__Text>
         <h3
-          className="evLOcS"
+          className="styles__Text-sc-58pc36-1 iYohbp"
         >
           We are a digital product studio with the upper hand in blockchain, conversational agents, cognitives services, mobile apps and web development
         </h3>
-      </styled.h3>
+      </styles__Text>
     </div>
-  </styled.div>
+  </styles__Container>
 </Memo(SimpleCard)>
 `;

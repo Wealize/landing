@@ -21,16 +21,16 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
   }
   title="Maldita"
 >
-  <styled.article
+  <styles__Container
     className="RoundedCard"
     hasPrimary={false}
   >
     <article
-      className="eDhfeL RoundedCard"
+      className="styles__Container-sc-1ukl2m-0 kXnjOF RoundedCard"
     >
-      <styled.div>
+      <styles__BackgroundContainer>
         <div
-          className="hOKZVf"
+          className="styles__BackgroundContainer-sc-1ukl2m-1 iqFCmf"
         >
           <BackgroundImage
             element="div"
@@ -230,43 +230,43 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
             </ImageLoader>
           </BackgroundImage>
         </div>
-      </styled.div>
-      <styled.div
+      </styles__BackgroundContainer>
+      <styles__ContentContainer
         hasPrimary={false}
       >
         <div
-          className="kUhGJu"
+          className="styles__ContentContainer-sc-1ukl2m-2 hKHQZG"
         >
-          <styled.div>
+          <styles__Content>
             <div
-              className="ipWHXD"
+              className="styles__Content-sc-1ukl2m-3 fFcpoX"
             >
-              <styled.h4>
+              <styles__Title>
                 <h4
-                  className="kSFCSf"
+                  className="styles__Title-sc-1ukl2m-4 eHcafd"
                 >
                   Maldita
                 </h4>
-              </styled.h4>
-              <styled.p>
+              </styles__Title>
+              <styles__Description>
                 <p
-                  className="zWgDW"
+                  className="styles__Description-sc-1ukl2m-5 jXcWvP"
                 >
                   Deployment of a WhatsApp Business Chatbot integrated with the Spanish fact-checking platform focused on combating the spread of disinformation in order to expand their service’s reach
                 </p>
-              </styled.p>
-              <styled.div
+              </styles__Description>
+              <styles__LinkContainer
                 color="#6666ff"
               >
                 <div
-                  className="kjYhTJ"
+                  className="styles__LinkContainer-sc-1ukl2m-6 dzNsrd"
                   color="#6666ff"
                 >
                   <Link
                     href="url"
                     passHref={true}
                   >
-                    <styled.a
+                    <styles__LinkAnchor
                       aria-label="hola"
                       color="#6666ff"
                       href="/url"
@@ -277,7 +277,7 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
                     >
                       <a
                         aria-label="hola"
-                        className="eBnzaz"
+                        className="styles__LinkAnchor-sc-1ukl2m-7 jFchFf"
                         color="#6666ff"
                         href="/url"
                         onClick={[Function]}
@@ -287,7 +287,7 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
                       >
                         hola
                       </a>
-                    </styled.a>
+                    </styles__LinkAnchor>
                   </Link>
                   <Memo(OpenUrlIcon)
                     color="#6666ff"
@@ -339,48 +339,48 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
                     </svg>
                   </Memo(OpenUrlIcon)>
                 </div>
-              </styled.div>
+              </styles__LinkContainer>
             </div>
-          </styled.div>
-          <styled.div>
+          </styles__Content>
+          <styles__TagsContainer>
             <div
-              className="jlfqVc"
+              className="styles__TagsContainer-sc-1ukl2m-8 bBNJvf"
             >
-              <styled.span
+              <styles__Tag
                 hasPrimary={false}
                 key="0"
               >
                 <span
-                  className="gCttWV"
+                  className="styles__Tag-sc-1ukl2m-9 eBUEOf"
                 >
                   Media
                 </span>
-              </styled.span>
-              <styled.span
+              </styles__Tag>
+              <styles__Tag
                 hasPrimary={false}
                 key="1"
               >
                 <span
-                  className="gCttWV"
+                  className="styles__Tag-sc-1ukl2m-9 eBUEOf"
                 >
                   Fact-checking
                 </span>
-              </styled.span>
-              <styled.span
+              </styles__Tag>
+              <styles__Tag
                 hasPrimary={false}
                 key="2"
               >
                 <span
-                  className="gCttWV"
+                  className="styles__Tag-sc-1ukl2m-9 eBUEOf"
                 >
                   Chatbots
                 </span>
-              </styled.span>
+              </styles__Tag>
             </div>
-          </styled.div>
+          </styles__TagsContainer>
         </div>
-      </styled.div>
+      </styles__ContentContainer>
     </article>
-  </styled.article>
+  </styles__Container>
 </Memo(RoundedCard)>
 `;

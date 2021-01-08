@@ -2,24 +2,24 @@
 
 exports[`<ThingsWeAreGoodAt /> should render 1`] = `
 <Memo(ThingsWeAreGoodAt)>
-  <styled.div>
+  <styles__Container>
     <div
-      className="fbEXcP"
+      className="styles__Container-sc-3xtj1d-0 detdMV"
     >
-      <styled.h3>
+      <styles__Title>
         <h3
-          className="jsgfGs"
+          className="styles__Title-sc-3xtj1d-1 jBWgwR"
         >
           profile:things-we-are-good-at.title
         </h3>
-      </styled.h3>
-      <styled.div>
+      </styles__Title>
+      <styles__CardsContainer>
         <div
-          className="gUBCSt"
+          className="styles__CardsContainer-sc-3xtj1d-2 kMdbNb"
         >
-          <styled.article>
+          <styles__FirstCard>
             <article
-              className="gfWFot"
+              className="styles__FirstCard-sc-3xtj1d-3 hDjILB"
             >
               <Memo(ExpandableCard)
                 backgroundColor="#ffc9c9"
@@ -30,29 +30,29 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                 subheadline="profile:things-we-are-good-at.first-card.subheadline"
                 textColor="#f06078"
               >
-                <styled.div
+                <styles__Container
                   backgroundColor="#ffc9c9"
                   className="ExpandableCard"
                   isExpanded={true}
                   textColor="#f06078"
                 >
                   <div
-                    className="rAuDJ ExpandableCard"
+                    className="styles__Container-qa6j6v-0 KcqsE ExpandableCard"
                   >
-                    <styled.div
+                    <styles__Header
                       isExpanded={true}
                     >
                       <div
-                        className="kPrrwy"
+                        className="styles__Header-qa6j6v-1 fiKvFj"
                       >
-                        <styled.h3>
+                        <styles__Headline>
                           <h3
-                            className="bqIrWW"
+                            className="styles__Headline-qa6j6v-3 jljNbf"
                           >
                             profile:things-we-are-good-at.first-card.headline
                           </h3>
-                        </styled.h3>
-                        <styled.button
+                        </styles__Headline>
+                        <styles__Toggle
                           aria-label="expand card content button"
                           isExpanded={true}
                           onClick={[Function]}
@@ -60,7 +60,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                         >
                           <button
                             aria-label="expand card content button"
-                            className="fmgOP"
+                            className="styles__Toggle-qa6j6v-4 oOZiH"
                             onClick={[Function]}
                           >
                             <Memo(RoundArrowIcon)>
@@ -88,18 +88,18 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                               </svg>
                             </Memo(RoundArrowIcon)>
                           </button>
-                        </styled.button>
+                        </styles__Toggle>
                       </div>
-                    </styled.div>
-                    <styled.div
+                    </styles__Header>
+                    <styles__Content
                       isExpanded={true}
                     >
                       <div
-                        className="jIPIAm"
+                        className="styles__Content-qa6j6v-2 eBbzIZ"
                       >
-                        <styled.div>
+                        <styles__ImageContainer>
                           <div
-                            className="cLPOj"
+                            className="styles__ImageContainer-qa6j6v-5 dFQBrB"
                           >
                             <Memo(BlockchainIcon)>
                               <svg
@@ -150,31 +150,31 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                               </svg>
                             </Memo(BlockchainIcon)>
                           </div>
-                        </styled.div>
-                        <styled.h4>
+                        </styles__ImageContainer>
+                        <styles__Subheadline>
                           <h4
-                            className="kpakfC"
+                            className="styles__Subheadline-qa6j6v-6 icxGOO"
                           >
                             profile:things-we-are-good-at.first-card.subheadline
                           </h4>
-                        </styled.h4>
-                        <styled.h5>
+                        </styles__Subheadline>
+                        <styles__Description>
                           <h5
-                            className="gYdFIO"
+                            className="styles__Description-qa6j6v-7 dfLxeL"
                           >
                             profile:things-we-are-good-at.first-card.description
                           </h5>
-                        </styled.h5>
+                        </styles__Description>
                       </div>
-                    </styled.div>
+                    </styles__Content>
                   </div>
-                </styled.div>
+                </styles__Container>
               </Memo(ExpandableCard)>
             </article>
-          </styled.article>
-          <styled.article>
+          </styles__FirstCard>
+          <styles__SecondCard>
             <article
-              className="crCrwq"
+              className="styles__SecondCard-sc-3xtj1d-4 jqlxyg"
             >
               <Memo(ExpandableCard)
                 backgroundColor="#f06078"
@@ -185,29 +185,29 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                 subheadline="profile:things-we-are-good-at.second-card.subheadline"
                 textColor="#ffffff"
               >
-                <styled.div
+                <styles__Container
                   backgroundColor="#f06078"
                   className="ExpandableCard"
                   isExpanded={false}
                   textColor="#ffffff"
                 >
                   <div
-                    className="iLBFFl ExpandableCard"
+                    className="styles__Container-qa6j6v-0 eYJWiM ExpandableCard"
                   >
-                    <styled.div
+                    <styles__Header
                       isExpanded={false}
                     >
                       <div
-                        className="igLjXA"
+                        className="styles__Header-qa6j6v-1 kozwsZ"
                       >
-                        <styled.h3>
+                        <styles__Headline>
                           <h3
-                            className="bqIrWW"
+                            className="styles__Headline-qa6j6v-3 jljNbf"
                           >
                             profile:things-we-are-good-at.second-card.headline
                           </h3>
-                        </styled.h3>
-                        <styled.button
+                        </styles__Headline>
+                        <styles__Toggle
                           aria-label="expand card content button"
                           isExpanded={false}
                           onClick={[Function]}
@@ -215,7 +215,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                         >
                           <button
                             aria-label="expand card content button"
-                            className="llWzua"
+                            className="styles__Toggle-qa6j6v-4 euQgEa"
                             onClick={[Function]}
                           >
                             <Memo(RoundArrowIcon)>
@@ -243,18 +243,18 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                               </svg>
                             </Memo(RoundArrowIcon)>
                           </button>
-                        </styled.button>
+                        </styles__Toggle>
                       </div>
-                    </styled.div>
-                    <styled.div
+                    </styles__Header>
+                    <styles__Content
                       isExpanded={false}
                     >
                       <div
-                        className="bnjewn"
+                        className="styles__Content-qa6j6v-2 lfJPFE"
                       >
-                        <styled.div>
+                        <styles__ImageContainer>
                           <div
-                            className="cLPOj"
+                            className="styles__ImageContainer-qa6j6v-5 dFQBrB"
                           >
                             <Memo(CognitiveIcon)>
                               <svg
@@ -299,31 +299,31 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                               </svg>
                             </Memo(CognitiveIcon)>
                           </div>
-                        </styled.div>
-                        <styled.h4>
+                        </styles__ImageContainer>
+                        <styles__Subheadline>
                           <h4
-                            className="kpakfC"
+                            className="styles__Subheadline-qa6j6v-6 icxGOO"
                           >
                             profile:things-we-are-good-at.second-card.subheadline
                           </h4>
-                        </styled.h4>
-                        <styled.h5>
+                        </styles__Subheadline>
+                        <styles__Description>
                           <h5
-                            className="gYdFIO"
+                            className="styles__Description-qa6j6v-7 dfLxeL"
                           >
                             profile:things-we-are-good-at.second-card.description
                           </h5>
-                        </styled.h5>
+                        </styles__Description>
                       </div>
-                    </styled.div>
+                    </styles__Content>
                   </div>
-                </styled.div>
+                </styles__Container>
               </Memo(ExpandableCard)>
             </article>
-          </styled.article>
-          <styled.article>
+          </styles__SecondCard>
+          <styles__ThirdCard>
             <article
-              className="iGBiiu"
+              className="styles__ThirdCard-sc-3xtj1d-5 jwTsKt"
             >
               <Memo(ExpandableCard)
                 backgroundColor="#8fd0c8"
@@ -334,29 +334,29 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                 subheadline="profile:things-we-are-good-at.third-card.subheadline"
                 textColor="#6666ff"
               >
-                <styled.div
+                <styles__Container
                   backgroundColor="#8fd0c8"
                   className="ExpandableCard"
                   isExpanded={false}
                   textColor="#6666ff"
                 >
                   <div
-                    className="kRcZpn ExpandableCard"
+                    className="styles__Container-qa6j6v-0 bGxjSi ExpandableCard"
                   >
-                    <styled.div
+                    <styles__Header
                       isExpanded={false}
                     >
                       <div
-                        className="igLjXA"
+                        className="styles__Header-qa6j6v-1 kozwsZ"
                       >
-                        <styled.h3>
+                        <styles__Headline>
                           <h3
-                            className="bqIrWW"
+                            className="styles__Headline-qa6j6v-3 jljNbf"
                           >
                             profile:things-we-are-good-at.third-card.headline
                           </h3>
-                        </styled.h3>
-                        <styled.button
+                        </styles__Headline>
+                        <styles__Toggle
                           aria-label="expand card content button"
                           isExpanded={false}
                           onClick={[Function]}
@@ -364,7 +364,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                         >
                           <button
                             aria-label="expand card content button"
-                            className="geAcBe"
+                            className="styles__Toggle-qa6j6v-4 jCmDwW"
                             onClick={[Function]}
                           >
                             <Memo(RoundArrowIcon)>
@@ -392,18 +392,18 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                               </svg>
                             </Memo(RoundArrowIcon)>
                           </button>
-                        </styled.button>
+                        </styles__Toggle>
                       </div>
-                    </styled.div>
-                    <styled.div
+                    </styles__Header>
+                    <styles__Content
                       isExpanded={false}
                     >
                       <div
-                        className="bnjewn"
+                        className="styles__Content-qa6j6v-2 lfJPFE"
                       >
-                        <styled.div>
+                        <styles__ImageContainer>
                           <div
-                            className="cLPOj"
+                            className="styles__ImageContainer-qa6j6v-5 dFQBrB"
                           >
                             <Memo(ConversationalIcon)>
                               <svg
@@ -442,31 +442,31 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                               </svg>
                             </Memo(ConversationalIcon)>
                           </div>
-                        </styled.div>
-                        <styled.h4>
+                        </styles__ImageContainer>
+                        <styles__Subheadline>
                           <h4
-                            className="kpakfC"
+                            className="styles__Subheadline-qa6j6v-6 icxGOO"
                           >
                             profile:things-we-are-good-at.third-card.subheadline
                           </h4>
-                        </styled.h4>
-                        <styled.h5>
+                        </styles__Subheadline>
+                        <styles__Description>
                           <h5
-                            className="gYdFIO"
+                            className="styles__Description-qa6j6v-7 dfLxeL"
                           >
                             profile:things-we-are-good-at.third-card.description
                           </h5>
-                        </styled.h5>
+                        </styles__Description>
                       </div>
-                    </styled.div>
+                    </styles__Content>
                   </div>
-                </styled.div>
+                </styles__Container>
               </Memo(ExpandableCard)>
             </article>
-          </styled.article>
+          </styles__ThirdCard>
         </div>
-      </styled.div>
+      </styles__CardsContainer>
     </div>
-  </styled.div>
+  </styles__Container>
 </Memo(ThingsWeAreGoodAt)>
 `;
