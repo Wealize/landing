@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [Refactor some styles](https://wealize.atlassian.net/browse/WLZAA-76)
 - [Complete the data for the profile accordion component](https://wealize.atlassian.net/browse/WLZAA-70)
 - [Add translations EN-ES](https://wealize.atlassian.net/browse/WLZAA-10)
 - [Add linter to CI](https://wealize.atlassian.net/browse/WLZAA-68)
