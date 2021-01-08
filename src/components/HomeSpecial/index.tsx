@@ -41,7 +41,6 @@ const HomeSpecial = () => {
   return (
     <Container ref={containerRef}>
       <Background>
-        {/* <WStaticIcon /> */}
       </Background>
       <Slogan>
         <Headline>{t('slogan.headline')}</Headline>

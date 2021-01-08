@@ -106,7 +106,7 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
                   if (lng === lang) return null
 
                   return (
-                    <Link href={HOME_HREF} locale={lng} key={lng}>
+                    <Link href={router.pathname} locale={lng} key={lng}>
                       <NavLink
                       id="change-language-toggle"
                       isCurrentPage={null}

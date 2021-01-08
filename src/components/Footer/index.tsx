@@ -15,9 +15,11 @@ import InnovationPymeIcon from '../icons/grants/InnovationPymeIcon'
 import {
   CDTI_HREF,
   INNOVATION_SME_HREF,
-  PRIVACY_LEGAL,
-  GET_IN_TOUCH_HREF
+  PRIVACY_LEGAL
 } from '../../constants/hrefs'
+import {
+  GET_IN_TOUCH_HREF
+} from '../../constants/contacts'
 
 import {
   Container,
