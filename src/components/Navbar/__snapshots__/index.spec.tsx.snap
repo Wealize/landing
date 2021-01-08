@@ -10,7 +10,7 @@ exports[`<NavBar /> should render 1`] = `
     showNavigationBarClosablePage={true}
   >
     <nav
-      className="hxNwcS"
+      className="fuIwHP"
       id="navbar"
     >
       <styled.div

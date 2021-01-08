@@ -16,6 +16,7 @@ exports[`<Footer /> wrapper: should render 1`] = `
         animatedBackgroundColor="#6666ff"
         animatedTextColor="#ffffff"
         backgroundColor="#3c3c3b"
+        handleClick={[Function]}
         size={
           Object {
             "desktop": Array [
