@@ -1,32 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Accordion /> should render 1`] = `
-<styled.div
+<styles__Container
   backgroundColor="#6666ff"
   textColor="#ffffff"
 >
-  <styled.div>
-    <styled.h5
+  <styles__TitleContainer>
+    <styles__Title
       textColor="#ffffff"
     >
       profile:accordion.title
-    </styled.h5>
-    <styled.hr
+    </styles__Title>
+    <styles__Separator
       className="accordion-separator"
       textColor="#ffffff"
     />
-  </styled.div>
-  <styled.div
+  </styles__TitleContainer>
+  <styles__SectionContainer
     className="accordion-section-container"
     key="0"
   >
-    <styled.div
+    <styles__SectionHeader
       isExpanded={true}
     >
-      <styled.h6>
+      <styles__SectionTitle>
         profile:accordion.section-0.title
-      </styled.h6>
-      <styled.button
+      </styles__SectionTitle>
+      <styles__SectionToggle
         aria-label="expand Languages & frameworks content button"
         backgroundColor="#6666ff"
         className="accordion-section-toggle-button"
@@ -35,7 +35,7 @@ exports[`<Accordion /> should render 1`] = `
         textColor="#ffffff"
       >
         <Memo(RoundArrowIcon) />
-      </styled.button>
+      </styles__SectionToggle>
       <Memo(ButtonRounded)
         animatedBackgroundColor="#ffffff"
         animatedTextColor="#6666ff"
@@ -65,62 +65,62 @@ exports[`<Accordion /> should render 1`] = `
       >
         profile:accordion.toogle-button-opened-text
       </Memo(ButtonRounded)>
-    </styled.div>
-    <styled.div
+    </styles__SectionHeader>
+    <styles__SectionContentContainer
       isExpanded={true}
     >
-      <styled.span
+      <styles__SectionElement
         key="0"
       >
         Cypress
-      </styled.span>
-      <styled.span
+      </styles__SectionElement>
+      <styles__SectionElement
         key="1"
       >
         Jest
-      </styled.span>
-      <styled.span
+      </styles__SectionElement>
+      <styles__SectionElement
         key="2"
       >
         Redux
-      </styled.span>
-      <styled.span
+      </styles__SectionElement>
+      <styles__SectionElement
         key="3"
       >
         Fabric
-      </styled.span>
-      <styled.span
+      </styles__SectionElement>
+      <styles__SectionElement
         key="4"
       >
         Hyperledger Besu
-      </styled.span>
-      <styled.span
+      </styles__SectionElement>
+      <styles__SectionElement
         key="5"
       >
         Quorum
-      </styled.span>
-      <styled.span
+      </styles__SectionElement>
+      <styles__SectionElement
         key="6"
       >
         web3
-      </styled.span>
-    </styled.div>
-    <styled.hr
+      </styles__SectionElement>
+    </styles__SectionContentContainer>
+    <styles__Separator
       className="accordion-separator"
       textColor="#ffffff"
     />
-  </styled.div>
-  <styled.div
+  </styles__SectionContainer>
+  <styles__SectionContainer
     className="accordion-section-container"
     key="1"
   >
-    <styled.div
+    <styles__SectionHeader
       isExpanded={false}
     >
-      <styled.h6>
+      <styles__SectionTitle>
         profile:accordion.section-1.title
-      </styled.h6>
-      <styled.button
+      </styles__SectionTitle>
+      <styles__SectionToggle
         aria-label="expand Devops, Architecture & Systems content button"
         backgroundColor="#6666ff"
         className="accordion-section-toggle-button"
@@ -129,7 +129,7 @@ exports[`<Accordion /> should render 1`] = `
         textColor="#ffffff"
       >
         <Memo(RoundArrowIcon) />
-      </styled.button>
+      </styles__SectionToggle>
       <Memo(ButtonRounded)
         animatedBackgroundColor="#ffffff"
         animatedTextColor="#6666ff"
@@ -159,50 +159,50 @@ exports[`<Accordion /> should render 1`] = `
       >
         profile:accordion.toogle-button-closed-text
       </Memo(ButtonRounded)>
-    </styled.div>
-    <styled.div
+    </styles__SectionHeader>
+    <styles__SectionContentContainer
       isExpanded={false}
     >
-      <styled.span
+      <styles__SectionElement
         key="0"
       >
         Cypress
-      </styled.span>
-      <styled.span
+      </styles__SectionElement>
+      <styles__SectionElement
         key="1"
       >
         Jest
-      </styled.span>
-      <styled.span
+      </styles__SectionElement>
+      <styles__SectionElement
         key="2"
       >
         Redux
-      </styled.span>
-      <styled.span
+      </styles__SectionElement>
+      <styles__SectionElement
         key="3"
       >
         Fabric
-      </styled.span>
-      <styled.span
+      </styles__SectionElement>
+      <styles__SectionElement
         key="4"
       >
         Hyperledger Besu
-      </styled.span>
-      <styled.span
+      </styles__SectionElement>
+      <styles__SectionElement
         key="5"
       >
         Quorum
-      </styled.span>
-      <styled.span
+      </styles__SectionElement>
+      <styles__SectionElement
         key="6"
       >
         web3
-      </styled.span>
-    </styled.div>
-    <styled.hr
+      </styles__SectionElement>
+    </styles__SectionContentContainer>
+    <styles__Separator
       className="accordion-separator"
       textColor="#ffffff"
     />
-  </styled.div>
-</styled.div>
+  </styles__SectionContainer>
+</styles__Container>
 `;

@@ -5,7 +5,8 @@ import {
   singleAndHalfPx,
   doublePx,
   triplePx,
-  doubleAndHalf
+  doubleAndHalf,
+  quadruplePx
 } from '../../../theme/space'
 import { media } from '../../../theme/media'
 
@@ -28,7 +29,7 @@ export const Container = styled.div<{
 
   ${media.greaterThan('lg')`
     padding: ${singleAndHalfPx()} ${doublePx()};
-    min-height: 100%;
+    min-height: 115%;
     min-width: 110%;
     flex-wrap:wrap;
     justify-content: space-between;
@@ -36,12 +37,12 @@ export const Container = styled.div<{
 
   ${media.greaterThan('xl')`
     padding: ${doublePx()} ${triplePx()};
-    min-height: 115%;
+    min-height: 125%;
   `};
 
   ${media.greaterThan('xxl')`
-    padding: ${triplePx()};
-    min-height: 135%;
+    padding: ${quadruplePx()};
+    min-height: 145%;
   `};
 `
 

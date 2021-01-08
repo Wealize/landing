@@ -1,4 +1,29 @@
+/* eslint-disable camelcase */
 import { CardRounded } from '../interfaces/Cards/CardRounded'
+
+const STARTUP_STUDIO_TAG = 'Startup studio'
+const CONVERSATIONAL_AGENTS = 'Conversational agents'
+const IAAS_TAG = 'IaaS'
+const OWN_PRODUCT_TAG = 'Own product'
+const SMART_CITIES_TAG = 'Smart Cities'
+const RD_TAG = 'R&D'
+const BLOCKCHAIN_TAG = 'Blockchain'
+const FiWARE_TAG = 'FiWARE'
+const NGOS_TAG = 'NGOs'
+const INMIGRATION_TAG = 'Immigration'
+const DIGITAL_IDENTITY_TAG = 'Digital identity'
+const SENSITIVE_DATA_TAG = 'Sensitive data'
+const TRACEABILITY_TAG = 'Traceability'
+const MEDIA_TAG = 'Media'
+const FACT_CHECKING_TAG = 'Fact-checking'
+const CHATBOTS_TAG = 'Chatbots'
+const DISASTER_RISK_INTELLIGENCE_TAG = 'Disaster risk intelligence'
+const COGNITIVES_SERVICES_TAG = 'Cognitive services'
+const NLP_TAG = 'NLP'
+const OFFLINE_FIRST_TAG = 'Offline-first'
+const MOBILE_TAG = 'Mobile'
+const LEGAL_TAG = 'Legal'
+const IMIGRATION_TAG = 'Immigration'
 
 const projectsData: CardRounded[] = [
   {
@@ -9,11 +34,11 @@ const projectsData: CardRounded[] = [
       'Developed a blockchain-based platform that provides identity proofing for women and children migrants and manages sensitive data',
     link: null,
     tags: [
-      'NGOs',
-      'Immigration',
-      'Blockchain',
-      'Digital identity',
-      'Sensitive data'
+      NGOS_TAG,
+      INMIGRATION_TAG,
+      BLOCKCHAIN_TAG,
+      DIGITAL_IDENTITY_TAG,
+      SENSITIVE_DATA_TAG
     ],
     hasPrimary: true
   },
@@ -24,7 +49,7 @@ const projectsData: CardRounded[] = [
     description:
       'Partnership with 15 more organizations across 4 European countries to build a decentralized data hub for Smart Cities to audit and monetize data with FiWARE and Hyperledger Fabric',
     link: null,
-    tags: ['Smart Cities', 'R&D', 'Blockchain', 'FiWARE'],
+    tags: [SMART_CITIES_TAG, RD_TAG, BLOCKCHAIN_TAG, FiWARE_TAG],
     hasPrimary: false
   },
   {
@@ -38,7 +63,7 @@ const projectsData: CardRounded[] = [
       text: 'Coloq.io',
       color: 'rgba(255,255,255,.7)'
     },
-    tags: ['Startup studio', 'Conversational agents', 'IaaS'],
+    tags: [STARTUP_STUDIO_TAG, CONVERSATIONAL_AGENTS, IAAS_TAG, OWN_PRODUCT_TAG],
     hasPrimary: true
   },
   {
@@ -48,7 +73,7 @@ const projectsData: CardRounded[] = [
     description:
       'Design and development of an ecosystem of apps and IoT devices to provide end-to-end traceability of gold and other precious metals from artisanal and small-scale mines (ASM) in the third world to wholesalers in the first world',
     link: null,
-    tags: ['R&D', 'Own product', 'Blockchain', 'Traceability'],
+    tags: [RD_TAG, OWN_PRODUCT_TAG, BLOCKCHAIN_TAG, TRACEABILITY_TAG],
     hasPrimary: false
   },
   {
@@ -58,7 +83,7 @@ const projectsData: CardRounded[] = [
     description:
       'Deployment of a WhatsApp Business Chatbot integrated with the Spanish fact-checking platform focused on combating the spread of disinformation in order to expand their service’s reach',
     link: null,
-    tags: ['Media', 'Fact-checking', 'Chatbots'],
+    tags: [MEDIA_TAG, FACT_CHECKING_TAG, CHATBOTS_TAG],
     hasPrimary: true
   },
   {
@@ -68,7 +93,7 @@ const projectsData: CardRounded[] = [
     description:
       'Development of a Natural Language Processing (NLP) engine to process global unstructured data and hazard-related news to make them useful by the early warning and multi-hazard monitoring platform',
     link: null,
-    tags: ['Disaster risk intelligence', 'Cognitive services', 'NLP'],
+    tags: [DISASTER_RISK_INTELLIGENCE_TAG, COGNITIVES_SERVICES_TAG, NLP_TAG],
     hasPrimary: false
   },
   {
@@ -78,7 +103,7 @@ const projectsData: CardRounded[] = [
     description:
       'Design and development of a fully mobile- and offline-first platform to manage logistics operations and monitor the internet infrastructure across all MSF field locations in order to create a common ICT network',
     link: null,
-    tags: ['NGOs', 'Offline-first', 'Mobile'],
+    tags: [NGOS_TAG, OFFLINE_FIRST_TAG, MOBILE_TAG],
     hasPrimary: true
   },
   {
@@ -92,7 +117,7 @@ const projectsData: CardRounded[] = [
       text: 'Yotengo.bot',
       color: '#6666ff'
     },
-    tags: ['Legal', 'Immigration', 'NLP', 'Chatbots'],
+    tags: [LEGAL_TAG, IMIGRATION_TAG, NLP_TAG, CHATBOTS_TAG],
     hasPrimary: false
   }
 ]

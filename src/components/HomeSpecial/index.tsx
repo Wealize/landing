@@ -3,7 +3,6 @@ import Scroll from 'react-scroll'
 import useTranslation from 'next-translate/useTranslation'
 
 import RoundArrowIcon from '../icons/RoundArrowIcon'
-import WStaticIcon from '../icons/WStaticIcon'
 
 import {
   Container,
@@ -42,7 +41,6 @@ const HomeSpecial = () => {
   return (
     <Container ref={containerRef}>
       <Background>
-        <WStaticIcon />
       </Background>
       <Slogan>
         <Headline>{t('slogan.headline')}</Headline>
