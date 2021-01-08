@@ -19,7 +19,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
         >
           <styled.article>
             <article
-              className="gfWFot"
+              className="imjkmm"
             >
               <Memo(ExpandableCard)
                 backgroundColor="#ffc9c9"
@@ -37,7 +37,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                   textColor="#f06078"
                 >
                   <div
-                    className="bpOPnZ ExpandableCard"
+                    className="enJNHj ExpandableCard"
                   >
                     <styled.div
                       isExpanded={true}
@@ -174,7 +174,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
           </styled.article>
           <styled.article>
             <article
-              className="lfVObb"
+              className="hirUwe"
             >
               <Memo(ExpandableCard)
                 backgroundColor="#f06078"
@@ -192,7 +192,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                   textColor="#ffffff"
                 >
                   <div
-                    className="helNyx ExpandableCard"
+                    className="jSieeD ExpandableCard"
                   >
                     <styled.div
                       isExpanded={false}
@@ -341,7 +341,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                   textColor="#6666ff"
                 >
                   <div
-                    className="eYDScb ExpandableCard"
+                    className="caITIR ExpandableCard"
                   >
                     <styled.div
                       isExpanded={false}
