@@ -1,9 +1,13 @@
 import React from 'react'
+import useTranslation from 'next-translate/useTranslation'
 import Head from 'next/head'
 
-const HeadComponent = (): JSX.Element => (
+const HeadComponent = (): JSX.Element => {
+  const { t } = useTranslation('common')
+
+  return (
   <Head>
-    <title>Wealize unlocks today&apos;s world</title>
+    <title>{t('meta_title')}</title>
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#f06078" />
@@ -70,6 +74,7 @@ const HeadComponent = (): JSX.Element => (
       }}
     />
   </Head>
-)
+  )
+}
 
 export default HeadComponent
