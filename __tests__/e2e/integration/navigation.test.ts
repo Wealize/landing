@@ -23,7 +23,7 @@ describe('User want navigate between pages', () => {
     it('Location should be profile page', () => {
       cy.intercept(PROFILE_HREF, []).as('getProfile')
       cy.wait('@getProfile', { timeout: 15000 })
-      cy.location('pathname').should('eq', PROFILE_HREF)
+      cy.location('pathname', { timeout: 15000 }).should('eq', PROFILE_HREF)
     })
   })
 
@@ -35,7 +35,7 @@ describe('User want navigate between pages', () => {
     it('Location should be home page', () => {
       cy.intercept(HOME_HREF, []).as('getHome')
       cy.wait('@getHome', { timeout: 15000 })
-      cy.location('pathname').should('eq', HOME_HREF)
+      cy.location('pathname', { timeout: 15000 }).should('eq', HOME_HREF)
     })
   })
 
@@ -47,37 +47,46 @@ describe('User want navigate between pages', () => {
     it('Location should be privacy page', () => {
       cy.intercept(PRIVACY_LEGAL_HREF, []).as('getPrivacy')
       cy.wait('@getPrivacy', { timeout: 15000 })
-      cy.location('pathname').should('eq', PRIVACY_LEGAL_HREF)
+      cy.location('pathname', { timeout: 15000 }).should('eq', PRIVACY_LEGAL_HREF)
     })
   })
 
   describe('User want see CDTI page', () => {
-    it('Location should be CDTI page', () => {
+    it('Should click on cdti link', () => {
       cy.visit(HOME_HREF)
-      cy.intercept(CDTI_HREF, []).as('getCdti')
       cy.get('[data-cy="footer-cdti-link"]').click({ force: true })
+    })
+
+    it('Location should be CDTI page', () => {
+      cy.intercept(CDTI_HREF, []).as('getCdti')
       cy.wait('@getCdti', { timeout: 15000 })
-      cy.location('pathname').should('eq', CDTI_HREF)
+      cy.location('pathname', { timeout: 15000 }).should('eq', CDTI_HREF)
     })
   })
 
   describe('User want see Innovation PYME page', () => {
-    it('Location should be Innovation PYME page', () => {
+    it('Should click on innovation pyme link', () => {
       cy.visit(HOME_HREF)
-      cy.intercept(INNOVATION_SME_HREF, []).as('getInnovation')
       cy.get('[data-cy="footer-innovation-pyme-link"]').click({ force: true })
+    })
+
+    it('Location should be Innovation PYME page', () => {
+      cy.intercept(INNOVATION_SME_HREF, []).as('getInnovation')
       cy.wait('@getInnovation', { timeout: 15000 })
-      cy.location('pathname').should('eq', INNOVATION_SME_HREF)
+      cy.location('pathname', { timeout: 15000 }).should('eq', INNOVATION_SME_HREF)
     })
   })
 
   describe('User want see get in touch page', () => {
-    it('Location should be get in touch page', () => {
+    it('Should click on get in touch link', () => {
       cy.visit(HOME_HREF)
-      cy.intercept(GET_IN_TOUCH_HREF, []).as('getInTouch')
       cy.get('#footer-get-in-touch-button').click({ force: true })
+    })
+
+    it('Location should be get in touch page', () => {
+      cy.intercept(GET_IN_TOUCH_HREF, []).as('getInTouch')
       cy.wait('@getInTouch', { timeout: 15000 })
-      cy.location('href').should('eq', GET_IN_TOUCH_HREF)
+      cy.location('href', { timeout: 15000 }).should('eq', GET_IN_TOUCH_HREF)
     })
   })
 })
