@@ -77,7 +77,7 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
               size={SMALL}
               aria-label="Go to home page"
               handleClick={() => router.push(HOME_HREF)}
-              data-cy="nav-return-button"
+              id="nav-return-button"
             >
               {t('navbar.return_button_text')}
             </ButtonRounded>
