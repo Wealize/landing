@@ -13,18 +13,16 @@ exports[`<NavBar /> should render 1`] = `
       className="styles__Navbar-dfawgb-0 qkVmZ"
       id="navbar"
     >
-      <styles__LogoMobileContainer
-        data-cy="navbar-logo-mobile-container"
-      >
+      <styles__LogoMobileContainer>
         <div
           className="styles__LogoMobileContainer-dfawgb-1 ccyuWw"
-          data-cy="navbar-logo-mobile-container"
         >
           <Link
             href="/"
           >
             <a
               aria-label="Home"
+              data-cy="navbar-logo-mobile-container"
               href="/"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -46,18 +44,16 @@ exports[`<NavBar /> should render 1`] = `
           </Link>
         </div>
       </styles__LogoMobileContainer>
-      <styles__LogoContainer
-        data-cy="navbar-logo-container"
-      >
+      <styles__LogoContainer>
         <div
           className="styles__LogoContainer-dfawgb-2 icGsST"
-          data-cy="navbar-logo-container"
         >
           <Link
             href="/"
           >
             <a
               aria-label="Home"
+              data-cy="navbar-logo-container"
               href="/"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -84,6 +80,7 @@ exports[`<NavBar /> should render 1`] = `
         animatedTextColor="#ffffff"
         aria-label="Go to home page"
         backgroundColor="#ffffff"
+        data-cy="nav-return-button"
         handleClick={[Function]}
         size={
           Object {

@@ -15,7 +15,7 @@ import InnovationPymeIcon from '../icons/grants/InnovationPymeIcon'
 import {
   CDTI_HREF,
   INNOVATION_SME_HREF,
-  PRIVACY_LEGAL
+  PRIVACY_LEGAL_HREF
 } from '../../constants/hrefs'
 import {
   GET_IN_TOUCH_HREF
@@ -62,6 +62,7 @@ const Footer = () => {
             animatedTextColor={WHITE_COLOR}
             size={MEDIUM}
             handleClick={() => router.push(GET_IN_TOUCH_HREF)}
+            id="footer-get-in-touch-button"
           >
             {t('footer.get_in_touch.button_text')}
           </ButtonRounded>
@@ -104,8 +105,8 @@ const Footer = () => {
           </Link>
         </ContainerSocialMobile>
         <ContainerPrivacyCopyright>
-          <Link href={PRIVACY_LEGAL} passHref>
-            <PrivacyLegalLink aria-label="Privacy & Legal">
+          <Link href={PRIVACY_LEGAL_HREF} passHref>
+            <PrivacyLegalLink aria-label="Privacy & Legal" data-cy="footer-privacy-link">
               {t('footer.privacy_legal')}
             </PrivacyLegalLink>
           </Link>
@@ -116,14 +117,14 @@ const Footer = () => {
           <ContainerGrants>
             <Grant>
               <Link href={CDTI_HREF} passHref>
-                <a aria-label="CDTI">
+                <a aria-label="CDTI" data-cy="footer-cdti-link">
                   <CDTIIcon />
                 </a>
               </Link>
             </Grant>
             <Grant>
               <Link href={INNOVATION_SME_HREF} passHref>
-                <a aria-label="Innovation Pyme">
+                <a aria-label="Innovation Pyme" data-cy="footer-innovation-pyme-link">
                   <InnovationPymeIcon />
                 </a>
               </Link>

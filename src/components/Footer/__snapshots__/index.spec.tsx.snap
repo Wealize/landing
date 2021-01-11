@@ -17,6 +17,7 @@ exports[`<Footer /> wrapper: should render 1`] = `
         animatedTextColor="#ffffff"
         backgroundColor="#3c3c3b"
         handleClick={[Function]}
+        id="footer-get-in-touch-button"
         size={
           Object {
             "desktop": Array [
@@ -123,6 +124,7 @@ exports[`<Footer /> wrapper: should render 1`] = `
       >
         <styles__PrivacyLegalLink
           aria-label="Privacy & Legal"
+          data-cy="footer-privacy-link"
         >
           common:footer.privacy_legal
         </styles__PrivacyLegalLink>
@@ -141,6 +143,7 @@ exports[`<Footer /> wrapper: should render 1`] = `
           >
             <a
               aria-label="CDTI"
+              data-cy="footer-cdti-link"
             >
               <Memo(CDTIIcon) />
             </a>
@@ -153,6 +156,7 @@ exports[`<Footer /> wrapper: should render 1`] = `
           >
             <a
               aria-label="Innovation Pyme"
+              data-cy="footer-innovation-pyme-link"
             >
               <Memo(InnovationPymeIcon) />
             </a>
