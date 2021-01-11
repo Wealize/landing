@@ -80,8 +80,8 @@ exports[`<NavBar /> should render 1`] = `
         animatedTextColor="#ffffff"
         aria-label="Go to home page"
         backgroundColor="#ffffff"
-        data-cy="nav-return-button"
         handleClick={[Function]}
+        id="nav-return-button"
         size={
           Object {
             "desktop": Array [
@@ -109,6 +109,7 @@ exports[`<NavBar /> should render 1`] = `
           animatedTextColor="#ffffff"
           backgroundColor="#ffffff"
           className="button-rounded"
+          id="nav-return-button"
           onClick={[Function]}
           size={
             Object {
@@ -134,6 +135,7 @@ exports[`<NavBar /> should render 1`] = `
         >
           <div
             className="styles__Container-ater0w-3 lplMMT button-rounded"
+            id="nav-return-button"
             onClick={[Function]}
             size={
               Object {
