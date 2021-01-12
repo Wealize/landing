@@ -1,4 +1,5 @@
 import React from 'react'
+import useTranslation from 'next-translate/useTranslation'
 
 import { LayoutOptions } from '../interfaces/Page'
 import {
@@ -12,221 +13,139 @@ import {
   QuestionDescription
 } from '../styles/pages/PrivacyLegal'
 
-const PrivacyLegal = (): JSX.Element => (
+const PrivacyLegal = (): JSX.Element => {
+  const { t } = useTranslation('privacy-legal')
+
+  return (
   <Container>
     <Content>
-      <Title>Privacy & legal</Title>
+      <Title>{ t('page_title') }</Title>
       <Description>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum. Donec elementum
-          ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum
-          sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum
-          gravida et. Integer lectus nisi, facilisis sit amet eleifend nec,
-          pharetra
+          {t('paragraph-0')}
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum. Donec elementum
-          ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum
-          sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum
-          gravida et. Integer lectus nisi, facilisis sit amet eleifend nec,
-          pharetra
+          {t('paragraph-1')}
+        </p>
+        <p>
+          {t('paragraph-2')}
+        </p>
+        <p>
+          {t('paragraph-3')}
+        </p>
+        <p>
+          {t('paragraph-4')}
         </p>
       </Description>
     </Content>
     <QuestionsContainer>
       <Question>
-        <QuestionTitle>¿Quiénes somos?</QuestionTitle>
+        <QuestionTitle>{t('question-0.title')}</QuestionTitle>
         <QuestionDescription>
           <p>
-            Nuestra denominación: xxxxxxxxxxxxxxxxxxx Nuestro CIF / NIF:
-            xxxxxxxxxxxxxxxxxx
-            <br />
-            Nuestra actividad principal: xxxxxxxxxxxx
-            <br />
-            Nuestra dirección:xxxxxxxx
-            <br />
-            Nuestra dirección de correo electrónico de contacto: xxxxxxxxxxxxxx
-            <br />
-            Nuestra página web: xxxxxxxxxxxxxxxxxxxxx
+            {t('question-0.paragraph-0')} <br/>
+            {t('question-0.paragraph-1')} <br/>
+            {t('question-0.paragraph-2')} <br/>
+            {t('question-0.paragraph-3')} <br/>
+            {t('question-0.paragraph-4')}
           </p>
-
-          <p>
-            Para su confianza y seguridad, le informamos que somos una entidad
-            inscrita en el siguiente Registro Mercantil /Registro Público:
-            xxxxxxx
-          </p>
-          <p>Estamos a su disposición, no dude en contactar con nosotros.</p>
+          <p>{t('question-0.paragraph-5')}</p>
+          <p>{t('question-0.paragraph-6')}</p>
         </QuestionDescription>
       </Question>
       <Question>
-        <QuestionTitle>¿Para qué vamos a usar sus datos?</QuestionTitle>
+        <QuestionTitle>{t('question-1.title')}</QuestionTitle>
         <QuestionDescription>
-          <p>
-            Con carácter general, sus datos personales serán usados para poder
-            relacionarnos con usted y poder prestarle nuestros servicios.
-          </p>
-
-          <p>
-            Asimismo, también pueden ser usados para otras actividades, como
-            enviarle publicidad o promocionar nuestras actividades.{' '}
-          </p>
+          <p>{t('question-1.paragraph-0')}</p>
+          <p>{t('question-1.paragraph-1')}</p>
         </QuestionDescription>
       </Question>
       <Question>
-        <QuestionTitle>¿Para qué vamos a usar sus datos?</QuestionTitle>
+        <QuestionTitle>{t('question-2.title')}</QuestionTitle>
         <QuestionDescription>
-          <p>
-            Con carácter general, sus datos personales serán usados para poder
-            relacionarnos con usted y poder prestarle nuestros servicios.
-          </p>
-
-          <p>
-            Asimismo, también pueden ser usados para otras actividades, como
-            enviarle publicidad o promocionar nuestras actividades.{' '}
-          </p>
+          <p>{t('question-2.paragraph-0')}</p>
         </QuestionDescription>
       </Question>
       <Question>
-        <QuestionTitle>¿Para qué vamos a usar sus datos?</QuestionTitle>
+        <QuestionTitle>{t('question-3.title')}</QuestionTitle>
         <QuestionDescription>
-          <p>
-            Con carácter general, sus datos personales serán usados para poder
-            relacionarnos con usted y poder prestarle nuestros servicios.
-          </p>
-
-          <p>
-            Asimismo, también pueden ser usados para otras actividades, como
-            enviarle publicidad o promocionar nuestras actividades.{' '}
-          </p>
+          <p>{t('question-3.paragraph-0')}</p>
+          <p>{t('question-3.paragraph-1')}</p>
         </QuestionDescription>
       </Question>
       <Question>
-        <QuestionTitle>¿Para qué vamos a usar sus datos?</QuestionTitle>
+        <QuestionTitle>{t('question-4.title')}</QuestionTitle>
         <QuestionDescription>
+          <p>{t('question-4.paragraph-0')}</p>
+        </QuestionDescription>
+      </Question>
+      <Question>
+        <QuestionTitle>{t('question-5.title')}</QuestionTitle>
+        <QuestionDescription>
+          <p>{t('question-5.paragraph-0')}</p>
+          <p>{t('question-5.paragraph-1')}</p>
+          <p>{t('question-5.paragraph-2')}</p>
+          <p>{t('question-5.paragraph-3')}</p>
+          <p>{t('question-5.paragraph-4')}</p>
           <p>
-            Con carácter general, sus datos personales serán usados para poder
-            relacionarnos con usted y poder prestarle nuestros servicios.
+            {t('question-5.paragraph-5')} <br/>
+            {t('question-5.paragraph-6')} <br/>
+            {t('question-5.paragraph-7')}
           </p>
-
           <p>
-            Asimismo, también pueden ser usados para otras actividades, como
-            enviarle publicidad o promocionar nuestras actividades.{' '}
+            {t('question-5.paragraph-8')} <br/>
+            {t('question-5.paragraph-9')} <br/>
+            {t('question-5.paragraph-9')}
+          </p>
+          <p>
+            {t('question-5.paragraph-11')}
           </p>
         </QuestionDescription>
       </Question>
       <Question>
-        <QuestionTitle>¿Para qué vamos a usar sus datos?</QuestionTitle>
+        <QuestionTitle>{t('question-6.title')}</QuestionTitle>
         <QuestionDescription>
-          <p>
-            Con carácter general, sus datos personales serán usados para poder
-            relacionarnos con usted y poder prestarle nuestros servicios.
-          </p>
-
-          <p>
-            Asimismo, también pueden ser usados para otras actividades, como
-            enviarle publicidad o promocionar nuestras actividades.{' '}
-          </p>
+          <p>{t('question-6.paragraph-0')}</p>
         </QuestionDescription>
       </Question>
       <Question>
-        <QuestionTitle>¿Para qué vamos a usar sus datos?</QuestionTitle>
+        <QuestionTitle>{t('question-7.title')}</QuestionTitle>
         <QuestionDescription>
-          <p>
-            Con carácter general, sus datos personales serán usados para poder
-            relacionarnos con usted y poder prestarle nuestros servicios.
-          </p>
-
-          <p>
-            Asimismo, también pueden ser usados para otras actividades, como
-            enviarle publicidad o promocionar nuestras actividades.{' '}
-          </p>
+          <p>{t('question-7.paragraph-0')}</p>
+          <p>{t('question-7.paragraph-1')}</p>
+          <p>{t('question-7.paragraph-2')}</p>
+          <p>{t('question-7.paragraph-3')}</p>
         </QuestionDescription>
       </Question>
       <Question>
-        <QuestionTitle>¿Para qué vamos a usar sus datos?</QuestionTitle>
+        <QuestionTitle>{t('question-8.title')}</QuestionTitle>
         <QuestionDescription>
-          <p>
-            Con carácter general, sus datos personales serán usados para poder
-            relacionarnos con usted y poder prestarle nuestros servicios.
-          </p>
-
-          <p>
-            Asimismo, también pueden ser usados para otras actividades, como
-            enviarle publicidad o promocionar nuestras actividades.{' '}
-          </p>
+          <p>{t('question-8.paragraph-0')}</p>
+          <p>{t('question-8.paragraph-1')}</p>
         </QuestionDescription>
       </Question>
       <Question>
-        <QuestionTitle>¿Para qué vamos a usar sus datos?</QuestionTitle>
+        <QuestionTitle>{t('question-9.title')}</QuestionTitle>
         <QuestionDescription>
-          <p>
-            Con carácter general, sus datos personales serán usados para poder
-            relacionarnos con usted y poder prestarle nuestros servicios.
-          </p>
-
-          <p>
-            Asimismo, también pueden ser usados para otras actividades, como
-            enviarle publicidad o promocionar nuestras actividades.{' '}
-          </p>
+          <p>{t('question-9.paragraph-0')}</p>
+          <p>{t('question-9.paragraph-1')}</p>
+          <p>{t('question-9.paragraph-2')}</p>
+          <p>{t('question-9.paragraph-3')}</p>
+          <p>{t('question-9.paragraph-4')}</p>
         </QuestionDescription>
       </Question>
       <Question>
-        <QuestionTitle>¿Para qué vamos a usar sus datos?</QuestionTitle>
+        <QuestionTitle>{t('question-10.title')}</QuestionTitle>
         <QuestionDescription>
-          <p>
-            Con carácter general, sus datos personales serán usados para poder
-            relacionarnos con usted y poder prestarle nuestros servicios.
-          </p>
-
-          <p>
-            Asimismo, también pueden ser usados para otras actividades, como
-            enviarle publicidad o promocionar nuestras actividades.{' '}
-          </p>
-        </QuestionDescription>
-      </Question>
-      <Question>
-        <QuestionTitle>¿Para qué vamos a usar sus datos?</QuestionTitle>
-        <QuestionDescription>
-          <p>
-            Con carácter general, sus datos personales serán usados para poder
-            relacionarnos con usted y poder prestarle nuestros servicios.
-          </p>
-
-          <p>
-            Asimismo, también pueden ser usados para otras actividades, como
-            enviarle publicidad o promocionar nuestras actividades.{' '}
-          </p>
-        </QuestionDescription>
-      </Question>
-      <Question>
-        <QuestionTitle>¿Para qué vamos a usar sus datos?</QuestionTitle>
-        <QuestionDescription>
-          <p>
-            Con carácter general, sus datos personales serán usados para poder
-            relacionarnos con usted y poder prestarle nuestros servicios.
-          </p>
-
-          <p>
-            Asimismo, también pueden ser usados para otras actividades, como
-            enviarle publicidad o promocionar nuestras actividades.{' '}
-          </p>
+          <p>{t('question-10.paragraph-0')}</p>
+          <p>{t('question-10.paragraph-1')}</p>
+          <p>{t('question-10.paragraph-2')}</p>
         </QuestionDescription>
       </Question>
     </QuestionsContainer>
   </Container>
-)
+  )
+}
 
 export const getStaticProps = async (): Promise<{
   props: { layoutOptions: LayoutOptions }

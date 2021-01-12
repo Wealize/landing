@@ -1,1 +1,81 @@
-{}
+{
+  "page_title": "Privacidad & legal",
+  "paragraph-0" : "Información en cumplimiento de la normativa de protección de datos personales.",
+  "paragraph-1": "En Europa y en España existen normas de protección de datos pensadas para proteger su información personal de obligado cumplimiento para nuestra entidad.",
+  "paragraph-2": "Por ello, es muy importante para nosotros que entienda perfectamente qué vamos a hacer con los datos personales que le pedimos.",
+  "paragraph-3": "‍Así, seremos transparentes y le daremos el control de sus datos, con un lenguaje sencillo y opciones claras que le permitirán decidir qué haremos con su información personal.",
+  "paragraph-4": "Por favor, si una vez leída la presente información le queda alguna duda, no dude en preguntarnos. Muchas gracias por su colaboración.",
+  "question-0" : {
+    "title": "¿Quiénes somos?",
+    "paragraph-0": "Nuestra denominación: Wealize, SL",
+    "paragraph-1": "Nuestro CIF / NIF: B56103468",
+    "paragraph-2": "Nuestra dirección: Secretario Carretero, 7, Córdoba, España (14004)",
+    "paragraph-3": "Nuestra dirección de correo electrónico de contacto: notificaciones@wealize.digital",
+    "paragraph-4": "Nuestra página web: wealize.digital",
+    "paragraph-5": "Para su confianza y seguridad, le informamos que somos una entidad inscrita en el siguiente Registro Mercantil de Córdoba, tomo 2.658, folio 21, S. 8, hoja CO-39705, inscripción 1ª",
+    "paragraph-6": "Estamos a su disposición, no dude en contactar con nosotros."
+  },
+  "question-1" : {
+    "title": "¿Para qué vamos a usar sus datos?",
+    "paragraph-0": "Con carácter general, sus datos personales serán usados para poder relacionarnos con usted y poder prestarle nuestros servicios.",
+    "paragraph-1": "Asimismo, también pueden ser usados para otras actividades, como enviarle publicidad o promocionar nuestras actividades."
+  },
+  "question-2" : {
+    "title": "¿Por qué necesitamos usar sus datos?",
+    "paragraph-0": "Sus datos personales son necesarios para poder relacionarnos con usted y poder prestarle nuestros servicios. En este sentido, pondremos a su disposición una serie de casillas que le permitirán decidir de manera clara y sencilla sobre el uso de su información personal."
+  },
+  "question-3" : {
+    "title": "¿Cómo vamos a proteger sus datos?",
+    "paragraph-0": "Protegeremos sus datos con medidas de seguridad eficaces en función de los riesgos que conlleve el uso de su información.",
+    "paragraph-1": "Para ello, nuestra entidad ha aprobado una Política de Protección de Datos y se realizan controles y auditorías anuales para verificar que sus datos personales están seguros en todo momento."
+  },
+  "question-4" : {
+    "title": "¿Durante cuánto tiempo vamos a conservar sus datos?",
+    "paragraph-0" : "Conservaremos sus datos durante nuestra relación y mientras nos obliguen las leyes. Una vez finalizados los plazos legales aplicables, procederemos a eliminarlos de forma segura y respetuosa con el medio ambiente."
+  },
+  "question-5" : {
+    "title": "¿Puede retirar su consentimiento si cambia de opinión en un momento posterior?",
+    "paragraph-0" : "Usted puede retirar su consentimiento si cambia de opinión sobre el uso de sus datos en cualquier momento.",
+    "paragraph-1" : "Así por ejemplo, si usted en su día estuvo interesado/a en recibir publicidad de nuestros productos o servicios, pero ya no desea recibir más publicidad, puede hacérnoslo constar a través del formulario de oposición al tratamiento disponible en las oficinas de nuestra entidad.",
+    "paragraph-2" : "En caso de que entienda que sus derechos han sido desatendidos, ¿dónde puede formular una reclamación?",
+    "paragraph-3" : "En caso de que entienda que sus derechos han sido desatendidos por nuestra entidad, puede formular una reclamación en la Agencia Española de Protección de Datos, a través de alguno de los medios siguientes:",
+    "paragraph-4" : "Sede electrónica: www.agpd.es",
+    "paragraph-5" : "Dirección postal: Agencia Española de Protección de Datos",
+    "paragraph-6" : "C/ Jorge Juan, 6",
+    "paragraph-7" : "28001-Madrid",
+    "paragraph-8" : "Vía telefónica:",
+    "paragraph-9" : "Telf. 901 100 099",
+    "paragraph-10" : "Telf. 91 266 35 17",
+    "paragraph-11" : "Formular una reclamación en la Agencia Española de Protección de Datos no conlleva ningún coste y no es necesaria la asistencia de abogado ni procurador."
+  },
+  "question-6" : {
+    "title": "¿Usaremos sus datos para otros fines?",
+    "paragraph-0" : "Nuestra política es no usar sus datos para otras finalidades distintas a las que le hemos explicado. Si, no obstante, necesitásemos usar sus datos para actividades distintas, siempre le solicitaremos previamente su permiso a través de opciones claras que le permitirán decidir al respecto."
+  },
+  "question-7" : {
+    "title": "¿Quién va a conocer la información que le pedimos?",
+    "paragraph-0": "Con carácter general, sólo el personal de nuestra entidad que esté debidamente autorizado podrá tener conocimiento de la información que le pedimos.",
+    "paragraph-1": "De igual modo, podrán tener conocimiento de su información personal aquellas entidades que necesiten tener acceso a la misma para que podamos prestarle nuestros servicios. Así por ejemplo, nuestro banco conocerá sus datos si el pago de nuestros servicios se realiza mediante tarjeta o transferencia bancaria.",
+    "paragraph-2": "Asimismo, tendrán conocimiento de su información aquellas entidades públicas o privadas a las cuales estemos obligados a facilitar sus datos personales con motivo del cumplimiento de alguna ley. Poniéndole un ejemplo, la Ley Tributaria obliga a facilitar a la Agencia Tributaria determinada información sobre operaciones económicas que superen una determinada cantidad.",
+    "paragraph-3": "En el caso de que, al margen de los supuestos comentados, necesitemos dar a conocer  su información personal a otras entidades, le solicitaremos previamente su permiso a través de opciones claras que le permitirán decidir a este respecto."
+  },
+  "question-8" : {
+    "title": "¿Enviaremos sus datos a otros países?",
+    "paragraph-0": "En el mundo hay países que son seguros para sus datos y otros que no lo son tanto. Así por ejemplo, la Unión Europea es un entorno seguro para sus datos. Nuestra política es no enviar su información personal a ningún país que no sea seguro desde el punto de vista de la protección de sus datos.",
+    "paragraph-1": "En el caso de que, con motivo de prestarle el servicio, sea imprescindible enviar sus datos a un país que no sea tan seguro como España, siempre le solicitaremos previamente su permiso y aplicaremos medidas de seguridad eficaces que reduzcan los riesgos del envío de su información personal a otro país."
+  },
+  "question-9" : {
+    "title": "¿Cuáles son sus derechos de protección de datos?",
+    "paragraph-0": "En cualquier momento puede dirigirse a nosotros para saber qué información tenemos sobre usted, rectificarla si fuese incorrecta y eliminarla una vez finalizada nuestra relación, en el caso de que ello sea legalmente posible.",
+    "paragraph-1": "También tiene derecho a solicitar el traspaso de su información a otra entidad. Este derecho se llama “portabilidad” y puede ser útil en determinadas situaciones.",
+    "paragraph-2": "Para solicitar alguno de estos derechos, deberá realizar una solicitud escrita a nuestra dirección, junto con una fotocopia de su DNI, para poder identificarle.",
+    "paragraph-3": "En las oficinas de nuestra entidad disponemos de formularios específicos para solicitar dichos derechos y le ofrecemos nuestra ayuda para su cumplimentación.",
+    "paragraph-4": "Para saber más sobre sus derechos de protección de datos, puede consultar la  página web de la Agencia Española de Protección de Datos (www.agpd.es)."
+  },
+  "question-10" : {
+    "title": "¿Elaboraremos perfiles sobre usted?",
+    "paragraph-0": "Nuestra política es no elaborar perfiles sobre los usuarios de nuestros servicios.",
+    "paragraph-1": "No obstante, pueden existir situaciones en las que, con fines de prestación del servicio, comerciales o de otro tipo, necesitemos elaborar perfiles de información sobre usted. Un ejemplo pudiera ser la utilización de su historial de compras o servicios para poder ofrecerle productos o servicios adaptados a sus gustos o necesidades.",
+    "paragraph-2": "En tal caso, aplicaremos medidas de seguridad eficaces que protejan su información en todo momento de personas no autorizadas que pretendan utilizarla en su propio beneficio."
+  }
+}
