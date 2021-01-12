@@ -171,6 +171,7 @@ export const Question = styled.div`
     font-size: 1.5rem;
     display: inline-block;
     -webkit-column-break-inside: avoid;
+    min-height: initial;
 
     &:nth-child(odd) {
       padding-right: ${triplePx()};
