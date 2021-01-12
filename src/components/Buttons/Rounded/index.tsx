@@ -11,6 +11,7 @@ import {
 } from './styles'
 
 interface ButtonProps {
+  id?: string,
   backgroundColor: string
   textColor: string
   animatedBackgroundColor: string
@@ -21,6 +22,7 @@ interface ButtonProps {
 }
 const ButtonRounded = (props: ButtonProps) => {
   const {
+    id,
     backgroundColor,
     textColor,
     animatedBackgroundColor,
@@ -39,6 +41,7 @@ const ButtonRounded = (props: ButtonProps) => {
       size={size}
       animatedTextColor={animatedTextColor}
       onClick={() => handleClick && handleClick()}
+      id={id}
     >
       <ContainerButtonOriginal
         backgroundColor={backgroundColor}

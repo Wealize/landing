@@ -51,17 +51,17 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
       isVisible={visible}
       showNavigationBarClosablePage={showNavigationBarClosablePage}
     >
-      <LogoMobileContainer data-cy="navbar-logo-mobile-container">
+      <LogoMobileContainer>
         <Link href={HOME_HREF}>
-          <a aria-label="Home">
+          <a aria-label="Home" data-cy="navbar-logo-mobile-container">
             <WealizeMinimalMediumIcon />
           </a>
         </Link>
       </LogoMobileContainer>
 
-      <LogoContainer data-cy="navbar-logo-container">
+      <LogoContainer >
         <Link href={HOME_HREF}>
-          <a aria-label="Home">
+          <a aria-label="Home" data-cy="navbar-logo-container">
             <WealizeNormalMediumIcon />
           </a>
         </Link>
@@ -77,6 +77,7 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
               size={SMALL}
               aria-label="Go to home page"
               handleClick={() => router.push(HOME_HREF)}
+              id="nav-return-button"
             >
               {t('navbar.return_button_text')}
             </ButtonRounded>

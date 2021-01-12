@@ -6,6 +6,8 @@
   "screenshotsFolder": "__tests__/e2e/screenshots",
   "videosFolder": "__tests__/e2e/videos",
   "supportFile": "__tests__/e2e/support/index.js",
+  "chromeWebSecurity": false,
+  "experimentalFetchPolyfill": true,
   "env": {
     "RETRIES": 3
   }
