@@ -13,18 +13,16 @@ exports[`<NavBar /> should render 1`] = `
       className="styles__Navbar-dfawgb-0 qkVmZ"
       id="navbar"
     >
-      <styles__LogoMobileContainer
-        data-cy="navbar-logo-mobile-container"
-      >
+      <styles__LogoMobileContainer>
         <div
           className="styles__LogoMobileContainer-dfawgb-1 ccyuWw"
-          data-cy="navbar-logo-mobile-container"
         >
           <Link
             href="/"
           >
             <a
               aria-label="Home"
+              data-cy="navbar-logo-mobile-container"
               href="/"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -46,18 +44,16 @@ exports[`<NavBar /> should render 1`] = `
           </Link>
         </div>
       </styles__LogoMobileContainer>
-      <styles__LogoContainer
-        data-cy="navbar-logo-container"
-      >
+      <styles__LogoContainer>
         <div
           className="styles__LogoContainer-dfawgb-2 icGsST"
-          data-cy="navbar-logo-container"
         >
           <Link
             href="/"
           >
             <a
               aria-label="Home"
+              data-cy="navbar-logo-container"
               href="/"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -85,6 +81,7 @@ exports[`<NavBar /> should render 1`] = `
         aria-label="Go to home page"
         backgroundColor="#ffffff"
         handleClick={[Function]}
+        id="nav-return-button"
         size={
           Object {
             "desktop": Array [
@@ -112,6 +109,7 @@ exports[`<NavBar /> should render 1`] = `
           animatedTextColor="#ffffff"
           backgroundColor="#ffffff"
           className="button-rounded"
+          id="nav-return-button"
           onClick={[Function]}
           size={
             Object {
@@ -137,6 +135,7 @@ exports[`<NavBar /> should render 1`] = `
         >
           <div
             className="styles__Container-ater0w-3 lplMMT button-rounded"
+            id="nav-return-button"
             onClick={[Function]}
             size={
               Object {

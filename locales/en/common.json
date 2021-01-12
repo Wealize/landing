@@ -40,7 +40,8 @@
       "description": "${description}",
       "tag-0": "${text}",
       "tag-1": "${text}",
-      "tag-2": "${text}"
+      "tag-2": "${text}",
+      "tag-3": "${text}"
     },
     "metaledger": {
       "title": "${title}",

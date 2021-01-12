@@ -10,13 +10,18 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+
     steps:
       - uses: actions/checkout@v1
 
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: '10.x'
+          node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
         run: yarn install
@@ -41,7 +46,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           install: false
-          browser: electron
+          browser: chrome
           headless: true
           start: yarn run dev
           wait-on: 'http://localhost:3000'
@@ -60,12 +65,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
+    strategy:
+      matrix:
+        node-version: [14.x]
+
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 10.x
         uses: actions/setup-node@v1
         with:
-          node-version: 10.x
+          node-version: ${{ matrix.node-version }}
       - name: yarn install
         run: yarn install
         env:
