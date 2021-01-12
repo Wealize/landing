@@ -6,7 +6,8 @@ import {
   INNOVATION_SME_HREF
 } from '../../../src/constants/hrefs'
 import {
-  GET_IN_TOUCH_HREF
+  GET_IN_TOUCH_HREF,
+  WORK_WITH_US
 } from '../../../src/constants/contacts'
 
 describe('User want navigate between pages', () => {
@@ -76,6 +77,17 @@ describe('User want navigate between pages', () => {
 
     it('Location should be get in touch page', () => {
       cy.location('href').should('eq', GET_IN_TOUCH_HREF)
+    })
+  })
+
+  describe('User want see work with us page', () => {
+    it('Should click on work with us link', () => {
+      cy.visit(HOME_HREF)
+      cy.get('#footer-work-whit-us-button').click({ force: true })
+    })
+
+    it('Location should be work with us page', () => {
+      cy.location('href').should('eq', WORK_WITH_US)
     })
   })
 })

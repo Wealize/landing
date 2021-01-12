@@ -18,7 +18,8 @@ import {
   PRIVACY_LEGAL_HREF
 } from '../../constants/hrefs'
 import {
-  GET_IN_TOUCH_HREF
+  GET_IN_TOUCH_HREF,
+  WORK_WITH_US
 } from '../../constants/contacts'
 
 import {
@@ -77,6 +78,8 @@ const Footer = () => {
             animatedBackgroundColor={ACCENT_COLOR}
             animatedTextColor={WHITE_COLOR}
             size={MEDIUM}
+            handleClick={() => router.push(WORK_WITH_US)}
+            id="footer-work-whit-us-button"
           >
            {t('footer.work_with_us.button_text')}
           </ButtonRounded>
