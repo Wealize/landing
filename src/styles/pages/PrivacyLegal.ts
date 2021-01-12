@@ -170,7 +170,6 @@ export const Question = styled.div`
   ${media.greaterThan('lg')`
     font-size: 1.5rem;
     display: inline-block;
-    -webkit-column-break-inside: avoid;
     min-height: initial;
 
     &:nth-child(odd) {
