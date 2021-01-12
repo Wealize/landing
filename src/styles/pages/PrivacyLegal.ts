@@ -87,11 +87,15 @@ export const Description = styled.div`
   line-height: 1.46;
 
   ${media.greaterThan('md')`
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   `}
 
   ${media.greaterThan('lg')`
-    font-size: 1.7rem;
+    font-size: 1.9rem;
+  `};
+
+  ${media.greaterThan('xl')`
+    font-size: 2.2rem;
   `};
 
   & p {
@@ -101,6 +105,7 @@ export const Description = styled.div`
 
 export const QuestionsContainer = styled.div`
   width: 100%;
+  height: 100%;
   font-size: 1.1rem;
   display: flex;
   flex-direction: column;
@@ -117,19 +122,24 @@ export const QuestionsContainer = styled.div`
 
   ${media.greaterThan('lg')`
     font-size: 1.5rem;
+    display: block;
     padding: ${quadruplePx()};
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
+    column-count: 2;
+    column-gap: ${doubleAndHalfPx()};
+    column-fill: auto;
   `};
 
   ${media.greaterThan('xl')`
     padding: ${quadruplePx()};
+    column-count: 2;
+    column-gap: ${triplePx()};
+    column-fill: auto;
+
   `};
 
   ${media.greaterThan('xxl')`
     padding: ${quadruplePx()};
+    column-gap: ${quadruplePx()};
   `};
 `
 
@@ -140,7 +150,7 @@ export const Question = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 250px;
   margin-bottom: ${doublePx()};
 
@@ -159,9 +169,8 @@ export const Question = styled.div`
 
   ${media.greaterThan('lg')`
     font-size: 1.5rem;
-    width: 50%;
-    justify-content: flex-start;
-    align-items: flex-start;
+    display: inline-block;
+    -webkit-column-break-inside: avoid;
 
     &:nth-child(odd) {
       padding-right: ${triplePx()};
@@ -182,12 +191,13 @@ export const QuestionTitle = styled.h4`
   `}
 
   ${media.greaterThan('xl')`
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   `}
 `
 
 export const QuestionDescription = styled.div`
   font-size: 1.1rem;
+  line-height: 1.94;
 
   & p:last-child {
     padding-bottom: 0;
@@ -201,7 +211,7 @@ export const QuestionDescription = styled.div`
     width: 100%;
 
     ${media.greaterThan('md')`
-      font-size: 1.6rem;
+      font-size: 1.3rem;
     `}
 
     ${media.greaterThan('lg')`

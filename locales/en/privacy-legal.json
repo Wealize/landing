@@ -1,2 +1,81 @@
 {
+  "page_title": "Privacy & legal",
+  "paragraph-0" : "Information in compliance with The General Data Protection Regulation.",
+  "paragraph-1": "In Europe and in Spain there are data protection regulations designed to protect your personal information, which are obligatory for our entity.",
+  "paragraph-2": "Therefore, it’s very important for us that you understand perfectly what we are going to do with the personal data we ask you for.",
+  "paragraph-3": "‍Thus, we’ll be transparent and give you the control of your data, with a simple language and clear options that will allow you to decide what we’ll do with your personal information.",
+  "paragraph-4": "Please do not hesitate to ask us if you have any questions after reading this information. Thank you very much for your cooperation.",
+  "question-0" : {
+    "title": "Who are we?",
+    "paragraph-0": "Our designation: Wealize, SL",
+    "paragraph-1": "Our CIF / NIF: B56103468",
+    "paragraph-2": "Our address: Secretario Carretero, 7, Córdoba, España (14004)",
+    "paragraph-3": "Our contact email address: notificaciones@wealize.digital",
+    "paragraph-4": "Our website: wealize.digital",
+    "paragraph-5": "For your confidence and security, we inform you that we’re an entity registered in the following registration: Registro Mercantil de Córdoba, volume 2.658, page 21, S. 8, sheet CO-39705, 1st inscription",
+    "paragraph-6": "We are at your disposal, do not hesitate to contact us."
+  },
+  "question-1" : {
+    "title": "What will we use your data for?",
+    "paragraph-0": "In general, your personal data will be used in order to relate to you and to provide you with our services.",
+    "paragraph-1": "They may also be used for other activities, such as sending you advertising or promoting our activities."
+  },
+  "question-2" : {
+    "title": "Why do we need to use your data?",
+    "paragraph-0": "Your personal data are necessary for us to be able to relate to you and provide you with our services. In this respect, we will provide you with a number of boxes that will allow you to decide clearly and simply on the use of your personal information."
+  },
+  "question-3" : {
+    "title": "How are we going to protect your data?",
+    "paragraph-0": "We’ll protect your data with effective security measures depending on the risks involved in the use of your information.",
+    "paragraph-1": "To do this, our entity has approved a Data Protection Policy and annual controls and audits are carried out to verify that your personal data are safe at all times."
+  },
+  "question-4" : {
+    "title": "How long will we keep your data?",
+    "paragraph-0" : "We'll keep your data during our relationship and for as long as we are required by law. Once the applicable legal deadlines have expired, we will proceed to dispose of your data in a safe and environmentally friendly manner."
+  },
+  "question-5" : {
+    "title": "Can you withdraw your consent if you change your mind at a later date?",
+    "paragraph-0" : "You can withdraw your consent if you change your mind about the use of your data at any time.",
+    "paragraph-1" : "Thus, for example, if you were once interested in receiving advertising for our products or services, but no longer wish to receive advertising, you can tell us so using the form to oppose treatment available at our offices.",
+    "paragraph-2" : "If you believe that your rights have been disregarded, where can you make a complaint?",
+    "paragraph-3" : "If you believe that your rights have been disregarded by our entity, you can file a complaint with the Spanish Data Protection Agency, through any of the following means:",
+    "paragraph-4" : "Website: www.agpd.es",
+    "paragraph-5" : "Postal address: Agencia Española de Protección de Datos",
+    "paragraph-6" : "C/ Jorge Juan, 6",
+    "paragraph-7" : "28001-Madrid",
+    "paragraph-8" : "By telephone:",
+    "paragraph-9" : "Phone. 901 100 099",
+    "paragraph-10" : "Phone. 91 266 35 17",
+    "paragraph-11" : "Formulating a claim at the Spanish Data Protection Agency does not involve any cost and the assistance of a lawyer or solicitor is not necessary."
+  },
+  "question-6" : {
+    "title": "Will we use your data for other purposes?",
+    "paragraph-0" : "Our policy is not to use your data for purposes other than those explained to you. If, however, we need to use your data for different activities, we will always ask your permission beforehand through clear options that will allow you to decide on this."
+  },
+  "question-7" : {
+    "title": "Who will know the information we ask for?",
+    "paragraph-0": "In general, only the personnel of our entity who are duly authorised may have knowledge of the information we request.",
+    "paragraph-1": "Similarly, those entities that need to have access to your personal information in order for us to provide you with our services may have knowledge of it. Thus, for example, our bank will know your data if the payment of our services is made by card or bank transfer.",
+    "paragraph-2": "In addition, those public or private entities to which we are obliged to provide your personal data in order to comply with any law will have knowledge of your information. To give you an example, the Tax Law obliges you to provide the Tax Office with certain information on economic operations that exceed a certain amount.",
+    "paragraph-3": "If we need to disclose your personal information to other entities, other than those mentioned above, we will ask for your permission beforehand through clear options that will allow you to decide."
+  },
+  "question-8" : {
+    "title": "Will we send your data to other countries?",
+    "paragraph-0": "There are countries in the world that are safe for your data and others that are not so safe. For example, the European Union is a safe environment for your data. Our policy is not to send your personal information to any country that is not safe from the point of view of data protection.",
+    "paragraph-1": "In the event that, in order to provide you with the service, it is essential to send your data to a country that is not as safe as Spain, we will always ask for your permission beforehand and will apply effective security measures that reduce the risks of sending your personal information to another country."
+  },
+  "question-9" : {
+    "title": "What are your rights to protection of data?",
+    "paragraph-0": "You can contact us at any time to find out what information we have about you, rectify it if it is incorrect and delete it once our relationship has ended, if this is legally possible.",
+    "paragraph-1": "You also have the right to request the transfer of your information to another entity. This right is called “portability” and may be useful in certain situations.",
+    "paragraph-2": "To request any of these rights, you must make a written request to our address, along with a photocopy of your ID card, so that we can identify you.",
+    "paragraph-3": "In our offices we have specific forms to apply for these rights and we offer you our help to fill them in.",
+    "paragraph-4": "To find out more about your data protection rights, you can consult the website of the Spanish Data Protection Agency (www.agpd.es)."
+  },
+  "question-10" : {
+    "title": "Will we create profiles about you?",
+    "paragraph-0": "Our policy is not to profile the users of our services.",
+    "paragraph-1": "However, there may be situations where, for service provision purposes, commercial or otherwise, we need to profile information about you. An example might be the use of your purchase or service history to provide you with products or services tailored to your tastes or needs.",
+    "paragraph-2": "In such cases, we will implement effective security measures to protect your information at all times from unauthorised persons who may seek to use it for their own benefit."
+  }
 }
