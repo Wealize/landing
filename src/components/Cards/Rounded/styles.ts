@@ -5,7 +5,9 @@ import {
   thirdPx,
   singlePx,
   singleAndHalfPx,
-  doubleAndHalfPx
+  doublePx,
+  doubleAndHalfPx,
+  triplePx
 } from '../../../theme/space'
 import { media } from '../../../theme/media'
 import { DEFAULT_RADIUS } from '../../../theme/border'
@@ -70,6 +72,11 @@ export const ContentContainer = styled.div<{ hasPrimary: boolean }>`
     padding: ${doubleAndHalfPx()};
     min-height: 550px;
   `};
+
+  ${media.greaterThan('xl')`
+    padding: ${doubleAndHalfPx()} ${triplePx()};
+    min-height: 550px;
+  `};
 `
 
 export const Content = styled.div`
@@ -88,7 +95,11 @@ export const Title = styled.h4`
   `};
 
   ${media.greaterThan('lg')`
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+  `};
+
+  ${media.greaterThan('xxl')`
+    max-width: 65%;
   `};
 `
 
@@ -100,8 +111,8 @@ export const Description = styled.p`
     font-size: 1.2rem;
   `};
 
-  ${media.greaterThan('lg')`
-    font-size: 1.5rem;
+  ${media.greaterThan('xxl')`
+    max-width: 65%;
   `};
 `
 
@@ -123,7 +134,7 @@ export const LinkAnchor = styled.a<{ color: string }>`
   color: ${({ color }) => color};
 
   ${media.greaterThan('lg')`
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   `};
 `
 
@@ -132,7 +143,11 @@ export const TagsContainer = styled.div`
 
   ${media.greaterThan('md')`
     order: 1;
-    padding: 0 0 ${singlePx()} 0;
+    padding: 0 0 ${doublePx()} 0;
+  `};
+
+  ${media.greaterThan('xxl')`
+    max-width: 65%;
   `};
 `
 

@@ -58,12 +58,6 @@ export const Navbar = styled.nav<{
     padding-top: ${singlePx()};
     padding-bottom: ${singlePx()};
   `};
-
-  ${media.greaterThan('xxl')`
-    ${CONTAINER_SPACING.WIDE};
-    padding-top: ${singlePx()};
-    padding-bottom: ${singlePx()};
-  `};
 `
 
 export const LogoMobileContainer = styled.div`

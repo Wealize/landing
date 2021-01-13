@@ -44,7 +44,11 @@ export const Text = styled.h3`
 
   ${media.greaterThan('xl')`
     max-width: 70%;
-    font-size: 4rem;
     line-height: 75px;
+  `};
+
+  ${media.greaterThan('xxl')`
+    font-size: 3.5rem;
+    max-width: 85%;
   `};
 `
