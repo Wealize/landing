@@ -1,30 +1,35 @@
 import styled from 'styled-components'
 
 import { ACCENT_COLOR, LIGHT_GRAY_COLOR } from '../../theme/color'
-import { singlePx, doublePx, doubleAndHalfPx, triplePx, quadruplePx } from '../../theme/space'
+import { doublePx } from '../../theme/space'
 import { media } from '../../theme/media'
+import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 
 export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   background: ${LIGHT_GRAY_COLOR};
-  padding: ${doubleAndHalfPx()} ${singlePx()};
+  ${CONTAINER_SPACING.MOBILE}
   z-index: 1;
 
   ${media.greaterThan('md')`
-    padding: ${triplePx()} ${doublePx()};
+    ${CONTAINER_SPACING.TABLET}
   `};
 
   ${media.greaterThan('lg')`
     flex-wrap: wrap;
     flex-direction: row;
     align-items: stretch;
-    padding: ${triplePx()} ${doublePx()};
+    ${CONTAINER_SPACING.SMALL_DESKTOP};
   `};
 
   ${media.greaterThan('xl')`
-    padding: ${quadruplePx()};
+    ${CONTAINER_SPACING.DESKTOP};
+  `};
+
+  ${media.greaterThan('xxl')`
+    ${CONTAINER_SPACING.WIDE};
   `};
 `
 
@@ -40,18 +45,14 @@ export const Title = styled.h3`
   `};
 
   ${media.greaterThan('lg')`
-    width: 30%;
+    width: 40%;
     padding-top: 0;
     line-height: 2;
-    font-size: 1.3rem;
   `};
 
   ${media.greaterThan('xl')`
-    font-size: 1.5rem;
-  `};
-
-  ${media.greaterThan('xxl')`
-    font-size: 1.8rem;
+    width: 50%;
+    font-size: 1.3rem;
   `};
 `
 
@@ -79,12 +80,13 @@ export const Content = styled.div`
   `};
 
   ${media.greaterThan('lg')`
-    width: 70%;
+    width: 60%;
     padding-left: ${doublePx()};
   `};
 
   ${media.greaterThan('xl')`
     max-height: 45vh;
+    width: 50%;
   `};
 
   ${media.greaterThan('xxl')`
@@ -112,14 +114,5 @@ export const Paragraph = styled.h3<{
 
   ${media.greaterThan('lg')`
     font-size: 2rem;
-    width: 100%;
-  `};
-
-  ${media.greaterThan('xl')`
-    font-size: 2.3rem;
-  `};
-
-  ${media.greaterThan('xxl')`
-    font-size: 2.7rem;
   `};
 `

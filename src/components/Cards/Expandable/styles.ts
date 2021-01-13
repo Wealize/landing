@@ -9,6 +9,7 @@ import {
   quadruplePx
 } from '../../../theme/space'
 import { media } from '../../../theme/media'
+import { CONTAINER_SPACING } from '../../../theme/spacingGuide'
 
 export const Container = styled.div<{
   backgroundColor: string
@@ -18,10 +19,10 @@ export const Container = styled.div<{
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: ${singleAndHalfPx()} ${singlePx()};
   background-color: ${({ backgroundColor }) => backgroundColor};
   color: ${({ textColor }) => textColor};
   transition: all 0.5s ease-out;
+  ${CONTAINER_SPACING.MOBILE};
 
   ${media.greaterThan('md')`
     padding: ${singleAndHalfPx()} ${doubleAndHalf() * 2}px;
