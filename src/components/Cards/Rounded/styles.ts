@@ -7,7 +7,7 @@ import {
   singleAndHalfPx,
   doublePx,
   doubleAndHalfPx,
-  triplePx
+  quadruplePx
 } from '../../../theme/space'
 import { media } from '../../../theme/media'
 import { DEFAULT_RADIUS } from '../../../theme/border'
@@ -74,7 +74,7 @@ export const ContentContainer = styled.div<{ hasPrimary: boolean }>`
   `};
 
   ${media.greaterThan('xl')`
-    padding: ${doubleAndHalfPx()} ${triplePx()};
+    padding: ${doubleAndHalfPx()} ${quadruplePx()};
     min-height: 550px;
   `};
 `

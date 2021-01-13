@@ -90,6 +90,14 @@ export const Button = styled.button`
 
   ${media.greaterThan('xl')`
     right: -25%;
+    width: 120px;
+    height: 120px;
+  `};
+
+  ${media.greaterThan('xxl')`
+    right: -35%;
+    width: 135px;
+    height: 135px;
   `};
 `
 
@@ -113,20 +121,20 @@ export const Slogan = styled.div`
   `};
 
   ${media.greaterThan('lg')`
-    min-height: 450px;
+    min-height: 400px;
     width: 80%;
     ${CONTAINER_SPACING.SMALL_DESKTOP};
   `};
 
   ${media.greaterThan('xl')`
-    min-height: 550px;
+    min-height: 400px;
     width: 70%;
     ${CONTAINER_SPACING.DESKTOP};
   `};
 
   ${media.greaterThan('xxl')`
-    min-height: 550px;
-    width: 70%;
+    min-height: 400px;
+    width: 60%;
     ${CONTAINER_SPACING.WIDE};
     padding-right: ${triplePx()};
   `};
@@ -146,7 +154,7 @@ export const Headline = styled.h1`
   `};
 
   ${media.greaterThan('xxl')`
-    font-size: 2rem;
+    font-size: 1.9rem;
   `};
 `
 
@@ -157,21 +165,16 @@ export const SubHeadline = styled.h2`
   width: 95%;
 
   ${media.greaterThan('md')`
-    font-size: 3rem;
+    font-size: 2.5rem;
     width: 92%;
   `};
 
   ${media.greaterThan('lg')`
-    font-size: 3.5rem;
+    font-size: 3rem;
     width: 90%;
   `};
 
   ${media.greaterThan('xl')`
     width: 85%;
-  `};
-
-  ${media.greaterThan('xxl')`
-    width: 100%;
-    font-size: 4.5rem;
   `};
 `

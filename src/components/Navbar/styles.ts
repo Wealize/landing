@@ -6,7 +6,7 @@ import {
   LIGHT_GRAY_COLOR,
   ACCENT_COLOR
 } from '../../theme/color'
-import { halfPx, singlePx, triplePx } from '../../theme/space'
+import { halfPx, singlePx, doublePx, triplePx } from '../../theme/space'
 import { media } from '../../theme/media'
 import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 
@@ -55,8 +55,8 @@ export const Navbar = styled.nav<{
 
   ${media.greaterThan('xl')`
     ${CONTAINER_SPACING.DESKTOP};
-    padding-top: ${singlePx()};
-    padding-bottom: ${singlePx()};
+    padding-top: ${doublePx()};
+    padding-bottom: ${doublePx()};
   `};
 `
 
@@ -72,10 +72,6 @@ export const LogoContainer = styled.div`
   ${media.greaterThan('md')`
     display: block;
     width: 130px;
-  `}
-
-  ${media.greaterThan('lg')`
-    width: 150px;
   `}
 `
 
@@ -106,7 +102,7 @@ export const NavLink = styled.a<{ isCurrentPage: boolean }>`
   `}
 
   ${media.greaterThan('lg')`
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 
     &:hover {
       border-bottom: 3px solid ${ACCENT_COLOR};
