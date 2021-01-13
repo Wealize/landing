@@ -10,7 +10,7 @@ exports[`<NavBar /> should render 1`] = `
     showNavigationBarClosablePage={true}
   >
     <nav
-      className="styles__Navbar-dfawgb-0 kSXTCQ"
+      className="styles__Navbar-dfawgb-0 gyCwrw"
       id="navbar"
     >
       <styles__LogoMobileContainer>
@@ -46,7 +46,7 @@ exports[`<NavBar /> should render 1`] = `
       </styles__LogoMobileContainer>
       <styles__LogoContainer>
         <div
-          className="styles__LogoContainer-dfawgb-2 icGsST"
+          className="styles__LogoContainer-dfawgb-2 hpDmyf"
         >
           <Link
             href="/"

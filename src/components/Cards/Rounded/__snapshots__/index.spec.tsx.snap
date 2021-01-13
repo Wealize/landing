@@ -235,7 +235,7 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
         hasPrimary={false}
       >
         <div
-          className="styles__ContentContainer-sc-1ukl2m-2 gHLKfP"
+          className="styles__ContentContainer-sc-1ukl2m-2 eASEmx"
         >
           <styles__Content>
             <div

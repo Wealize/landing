@@ -10,7 +10,7 @@ exports[`<SimpleCard /> wrapper: should render 1`] = `
     >
       <styles__Text>
         <h3
-          className="styles__Text-sc-58pc36-1 hVEsMA"
+          className="styles__Text-sc-58pc36-1 euGlbe"
         >
           We are a digital product studio with the upper hand in blockchain, conversational agents, cognitives services, mobile apps and web development
         </h3>
