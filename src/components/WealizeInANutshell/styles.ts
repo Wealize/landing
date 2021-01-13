@@ -45,18 +45,14 @@ export const Title = styled.h3`
   `};
 
   ${media.greaterThan('lg')`
-    width: 30%;
+    width: 40%;
     padding-top: 0;
     line-height: 2;
-    font-size: 1.3rem;
   `};
 
   ${media.greaterThan('xl')`
-    font-size: 1.5rem;
-  `};
-
-  ${media.greaterThan('xxl')`
-    font-size: 1.8rem;
+    width: 50%;
+    font-size: 1.3rem;
   `};
 `
 
@@ -84,12 +80,13 @@ export const Content = styled.div`
   `};
 
   ${media.greaterThan('lg')`
-    width: 70%;
+    width: 60%;
     padding-left: ${doublePx()};
   `};
 
   ${media.greaterThan('xl')`
     max-height: 45vh;
+    width: 50%;
   `};
 
   ${media.greaterThan('xxl')`
@@ -117,14 +114,5 @@ export const Paragraph = styled.h3<{
 
   ${media.greaterThan('lg')`
     font-size: 2rem;
-    width: 100%;
-  `};
-
-  ${media.greaterThan('xl')`
-    font-size: 2.3rem;
-  `};
-
-  ${media.greaterThan('xxl')`
-    font-size: 2.7rem;
   `};
 `
