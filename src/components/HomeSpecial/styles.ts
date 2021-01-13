@@ -137,6 +137,8 @@ export const Slogan = styled.div`
     width: 60%;
     ${CONTAINER_SPACING.WIDE};
     padding-right: ${triplePx()};
+    padding-top: ${triplePx()};
+    padding-bottom: ${triplePx()};
   `};
 `
 
@@ -175,6 +177,7 @@ export const SubHeadline = styled.h2`
   `};
 
   ${media.greaterThan('xl')`
-    width: 85%;
+    font-size: 3.5rem;
+    width: 90%;
   `};
 `
