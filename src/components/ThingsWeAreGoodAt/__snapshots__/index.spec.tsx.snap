@@ -37,7 +37,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                   textColor="#f06078"
                 >
                   <div
-                    className="styles__Container-qa6j6v-0 KcqsE ExpandableCard"
+                    className="styles__Container-qa6j6v-0 bxtHMV ExpandableCard"
                   >
                     <styles__Header
                       isExpanded={true}
@@ -192,7 +192,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                   textColor="#ffffff"
                 >
                   <div
-                    className="styles__Container-qa6j6v-0 eYJWiM ExpandableCard"
+                    className="styles__Container-qa6j6v-0 dyoVcF ExpandableCard"
                   >
                     <styles__Header
                       isExpanded={false}
@@ -341,7 +341,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                   textColor="#6666ff"
                 >
                   <div
-                    className="styles__Container-qa6j6v-0 bGxjSi ExpandableCard"
+                    className="styles__Container-qa6j6v-0 ioGXdn ExpandableCard"
                   >
                     <styles__Header
                       isExpanded={false}

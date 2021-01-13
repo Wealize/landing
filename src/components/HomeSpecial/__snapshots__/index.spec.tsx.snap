@@ -13,18 +13,18 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
       </styles__Background>
       <styles__Slogan>
         <div
-          className="styles__Slogan-gjaj1n-3 cSIYpQ"
+          className="styles__Slogan-gjaj1n-3 iukMOM"
         >
           <styles__Headline>
             <h1
-              className="styles__Headline-gjaj1n-4 mTwNI"
+              className="styles__Headline-gjaj1n-4 jKQJrf"
             >
               home:slogan.headline
             </h1>
           </styles__Headline>
           <styles__SubHeadline>
             <h2
-              className="styles__SubHeadline-gjaj1n-5 KVLRt"
+              className="styles__SubHeadline-gjaj1n-5 egTjZw"
             >
               home:slogan.subheadline
             </h2>

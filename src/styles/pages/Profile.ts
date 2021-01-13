@@ -68,9 +68,9 @@ export const StartedContainer = styled.div`
   ${media.greaterThan('xxl')`
     ${CONTAINER_SPACING.WIDE};
     > .w-static-logo {
-      bottom: -50%;
+      bottom: -25%;
       right: -45%;
-      height: 115%;
+      height: 75%;
     }
   `};
 `
@@ -96,5 +96,10 @@ export const StartedDescription = styled.div`
 
   ${media.greaterThan('xl')`
     font-size: 3rem;
+  `};
+
+  ${media.greaterThan('xxl')`
+    width: 55%;
+    font-size: 4rem;
   `};
 `

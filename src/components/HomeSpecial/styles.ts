@@ -8,7 +8,8 @@ import {
 } from '../../theme/color'
 import {
   twoThirdPx,
-  doubleAndHalfPx
+  doubleAndHalfPx,
+  triplePx
 } from '../../theme/space'
 import { media } from '../../theme/media'
 import { DEFAULT_RADIUS } from '../../theme/border'
@@ -127,6 +128,7 @@ export const Slogan = styled.div`
     min-height: 550px;
     width: 70%;
     ${CONTAINER_SPACING.WIDE};
+    padding-right: ${triplePx()};
   `};
 `
 
@@ -144,7 +146,7 @@ export const Headline = styled.h1`
   `};
 
   ${media.greaterThan('xl')`
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   `};
 `
 
@@ -167,5 +169,10 @@ export const SubHeadline = styled.h2`
   ${media.greaterThan('xl')`
     width: 80%;
     font-size: 4rem;
+  `};
+
+  ${media.greaterThan('xxl')`
+    width: 100%;
+    font-size: 4.5rem;
   `};
 `

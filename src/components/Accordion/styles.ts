@@ -22,7 +22,7 @@ export const Container = styled.div<{ backgroundColor: string, textColor: string
   `};
 
   ${media.greaterThan('xxl')`
-    padding: ${quadruplePx()} ${quadruple() * 1.5}px;
+    padding: ${quadruple() * 1.5}px ${quadruple() * 4}px;
   `};
 
   color: ${({ textColor }) => textColor};

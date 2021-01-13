@@ -6,7 +6,8 @@ import {
   singlePx,
   doublePx,
   triplePx,
-  singleAndHalfPx
+  singleAndHalfPx,
+  quadruplePx
 } from '../../theme/space'
 import { media } from '../../theme/media'
 import { CONTAINER_SPACING } from '../../theme/spacingGuide'
@@ -53,7 +54,7 @@ export const ContainerContent = styled.div`
   `}
 
   ${media.greaterThan('xxl')`
-    column-gap: ${triplePx()};
+    column-gap: ${quadruplePx()};
   `}
 `
 
@@ -65,6 +66,10 @@ export const ContainerGetInTouch = styled.div`
 
   > .button-rounded {
     margin-top: 5%;
+
+    & span {
+      font-weight: normal;
+    }
   }
 
   ${media.greaterThan('md')`
@@ -83,6 +88,8 @@ export const ContainerGetInTouch = styled.div`
   ${media.greaterThan('xxl')`
     > .button-rounded {
       margin-top: 2%;
+      margin-bottom: 20%;
+      max-width: 350px;
     }
   `}
 `
@@ -131,7 +138,7 @@ export const BigText = styled.h5`
   `};
 
   ${media.greaterThan('xxl')`
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   `};
 `
 
@@ -144,6 +151,10 @@ export const ContainerWorkWithUs = styled.div`
 
   > .button-rounded {
     margin-top: 5%;
+
+    & span {
+      font-weight: normal;
+    }
   }
 
   ${media.greaterThan('md')`
@@ -165,6 +176,8 @@ export const ContainerWorkWithUs = styled.div`
   ${media.greaterThan('xxl')`
     > .button-rounded {
       margin-top: 2%;
+      margin-bottom: 20%;
+      max-width: 350px;
     }
   `}
 `
@@ -302,6 +315,10 @@ export const ContainerGrantsAndSocials = styled.div`
 
   ${media.greaterThan('md')`
     justify-content: space-between;
+  `};
+
+  ${media.greaterThan('xl')`
+    padding-top: ${doublePx()};
   `};
 `
 
