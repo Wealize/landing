@@ -1,19 +1,28 @@
 import styled from 'styled-components'
 
 import { DARK_GRAY_COLOR, LIGHT_GRAY_COLOR } from '../../theme/color'
-import { singlePx, doublePx, triplePx, quadruplePx } from '../../theme/space'
+import { singlePx, doublePx, triplePx } from '../../theme/space'
 import { media } from '../../theme/media'
+import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 
 export const Container = styled.div`
   background-color: ${LIGHT_GRAY_COLOR};
-  padding: ${doublePx()} ${singlePx()};
+  ${CONTAINER_SPACING.MOBILE}
 
   ${media.greaterThan('md')`
-    padding: ${doublePx()};
+    ${CONTAINER_SPACING.TABLET}
+  `};
+
+  ${media.greaterThan('lg')`
+    ${CONTAINER_SPACING.SMALL_DESKTOP};
   `};
 
   ${media.greaterThan('xl')`
-    padding: ${triplePx()} ${quadruplePx()};
+    ${CONTAINER_SPACING.DESKTOP};
+  `};
+
+  ${media.greaterThan('xxl')`
+    ${CONTAINER_SPACING.WIDE};
   `};
 `
 
@@ -72,6 +81,10 @@ export const ContainerPartners = styled.div`
   ${media.greaterThan('xl')`
     padding: ${singlePx()} 0;
   `};
+
+  ${media.greaterThan('xl')`
+    padding: ${triplePx()} 0;
+  `};
 `
 
 export const Partner = styled.div`
@@ -90,6 +103,6 @@ export const Partner = styled.div`
   `};
 
   ${media.greaterThan('xxl')`
-    width: 10%;
+    width: 12%;
   `};
 `

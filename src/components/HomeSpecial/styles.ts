@@ -8,14 +8,12 @@ import {
 } from '../../theme/color'
 import {
   twoThirdPx,
-  singlePx,
-  doublePx,
-  triplePx,
-  quadruplePx,
-  doubleAndHalfPx
+  doubleAndHalfPx,
+  triplePx
 } from '../../theme/space'
 import { media } from '../../theme/media'
 import { DEFAULT_RADIUS } from '../../theme/border'
+import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 
 export const Container = styled.div`
   width: 100%;
@@ -34,35 +32,38 @@ export const Container = styled.div`
 `
 
 export const Background = styled.div`
-  width: 100%;
-  height: 70%;
+  width: 70%;
   position: absolute;
-  bottom: 0%;
-  height: 100%;
+  bottom: -5%;
+  right: 0;
+  height: 70%;
 
   background-image: url('/img/w-static.svg');
   background-repeat: no-repeat;
-  background-position: -25% 100%;
-  background-size: 800px;
+  background-size: cover;
 
   ${media.greaterThan('md')`
-    background-position: -100% 120%;
-    background-size: 140%;
+    width: 70%;
+    bottom: -15%;
+    height: 80%;
   `};
 
   ${media.greaterThan('lg')`
-    background-position: -100% -20%;
-    background-size: 120%;
+    width: 55%;
+    bottom: -25%;
+    height: 90%;
   `};
 
   ${media.greaterThan('xl')`
-    background-position: 230% -15%;
-    background-size: 85%;
+    width: 50%;
+    bottom: -30%;
+    height: 90%;
   `};
 
-  ${media.greaterThan('xxl')`
-    background-position: 180% -15%;
-    background-size: 80%;
+  ${media.greaterThan('xxxl')`
+    width: 45%;
+    bottom: -45%;
+    height: 100%;
   `};
 `
 
@@ -92,6 +93,24 @@ export const Button = styled.button`
 
   ${media.greaterThan('xl')`
     right: -25%;
+    width: 120px;
+    height: 120px;
+
+    > svg {
+      width: 7em;
+      height: 7em;
+    }
+  `};
+
+  ${media.greaterThan('xxl')`
+    right: -35%;
+    width: 135px;
+    height: 135px;
+
+    > svg {
+      width: 9em;
+      height: 9em;
+    }
   `};
 `
 
@@ -104,26 +123,35 @@ export const Slogan = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: ${doublePx()} ${singlePx()};
+  ${CONTAINER_SPACING.MOBILE}
   width: 85%;
   border-top-right-radius: ${DEFAULT_RADIUS}px;
   min-height: 250px;
 
   ${media.greaterThan('md')`
     min-height: 350px;
-    padding: ${doublePx()};
+    ${CONTAINER_SPACING.TABLET}
   `};
 
   ${media.greaterThan('lg')`
-    min-height: 450px;
+    min-height: 400px;
     width: 80%;
-    padding: ${doublePx()};
+    ${CONTAINER_SPACING.SMALL_DESKTOP};
   `};
 
   ${media.greaterThan('xl')`
-    min-height: 550px;
+    min-height: 400px;
     width: 70%;
-    padding: ${triplePx()} ${quadruplePx()};
+    ${CONTAINER_SPACING.DESKTOP};
+  `};
+
+  ${media.greaterThan('xxl')`
+    min-height: 400px;
+    width: 60%;
+    ${CONTAINER_SPACING.WIDE};
+    padding-right: ${triplePx()};
+    padding-top: ${triplePx()};
+    padding-bottom: ${triplePx()};
   `};
 `
 
@@ -136,12 +164,8 @@ export const Headline = styled.h1`
     font-size: 1.5rem;
   `};
 
-  ${media.greaterThan('lg')`
-    font-size: 2rem;
-  `};
-
   ${media.greaterThan('xl')`
-    font-size: 2.5rem;
+    font-size: 1.7rem;
   `};
 `
 
@@ -152,17 +176,16 @@ export const SubHeadline = styled.h2`
   width: 95%;
 
   ${media.greaterThan('md')`
-    font-size: 3rem;
+    font-size: 2.5rem;
     width: 92%;
   `};
 
   ${media.greaterThan('lg')`
-    font-size: 3.5rem;
+    font-size: 3rem;
     width: 90%;
   `};
 
   ${media.greaterThan('xl')`
-    width: 80%;
-    font-size: 4rem;
+    font-size: 3.5rem;
   `};
 `
