@@ -1,27 +1,29 @@
 import styled from 'styled-components'
 
 import { WHITE_COLOR, DARK_GRAY_COLOR } from '../../../theme/color'
-import {
-  singlePx,
-  doublePx,
-  doubleAndHalfPx,
-  triplePx,
-  quadruplePx
-} from '../../../theme/space'
 import { media } from '../../../theme/media'
+import { CONTAINER_SPACING } from '../../../theme/spacingGuide'
 
 export const Container = styled.div`
   width: 100%;
   background: ${WHITE_COLOR};
-  padding: ${doubleAndHalfPx()} ${singlePx()};
   z-index: 1;
+  ${CONTAINER_SPACING.MOBILE}
 
   ${media.greaterThan('md')`
-    padding: ${triplePx()} ${doublePx()};
+    ${CONTAINER_SPACING.TABLET}
+  `};
+
+  ${media.greaterThan('lg')`
+    ${CONTAINER_SPACING.SMALL_DESKTOP};
   `};
 
   ${media.greaterThan('xl')`
-    padding: ${quadruplePx()};
+    ${CONTAINER_SPACING.DESKTOP};
+  `};
+
+  ${media.greaterThan('xxl')`
+    ${CONTAINER_SPACING.WIDE};
   `};
 `
 

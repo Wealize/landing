@@ -8,14 +8,11 @@ import {
 } from '../../theme/color'
 import {
   twoThirdPx,
-  singlePx,
-  doublePx,
-  triplePx,
-  quadruplePx,
   doubleAndHalfPx
 } from '../../theme/space'
 import { media } from '../../theme/media'
 import { DEFAULT_RADIUS } from '../../theme/border'
+import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 
 export const Container = styled.div`
   width: 100%;
@@ -104,26 +101,32 @@ export const Slogan = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: ${doublePx()} ${singlePx()};
+  ${CONTAINER_SPACING.MOBILE}
   width: 85%;
   border-top-right-radius: ${DEFAULT_RADIUS}px;
   min-height: 250px;
 
   ${media.greaterThan('md')`
     min-height: 350px;
-    padding: ${doublePx()};
+    ${CONTAINER_SPACING.TABLET}
   `};
 
   ${media.greaterThan('lg')`
     min-height: 450px;
     width: 80%;
-    padding: ${doublePx()};
+    ${CONTAINER_SPACING.SMALL_DESKTOP};
   `};
 
   ${media.greaterThan('xl')`
     min-height: 550px;
     width: 70%;
-    padding: ${triplePx()} ${quadruplePx()};
+    ${CONTAINER_SPACING.DESKTOP};
+  `};
+
+  ${media.greaterThan('xxl')`
+    min-height: 550px;
+    width: 70%;
+    ${CONTAINER_SPACING.WIDE};
   `};
 `
 

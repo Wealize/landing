@@ -5,11 +5,10 @@ import {
   sixthPx,
   singlePx,
   doublePx,
-  doubleAndHalfPx,
-  triplePx,
-  quadruplePx
+  triplePx
 } from '../../theme/space'
 import { media } from '../../theme/media'
+import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 
 export const Container = styled.footer`
   display: flex;
@@ -17,14 +16,22 @@ export const Container = styled.footer`
   justify-content: center;
   align-items: flex-start;
   background-color: ${DARK_GRAY_COLOR};
-  padding: ${doubleAndHalfPx()} ${singlePx()};
+  ${CONTAINER_SPACING.MOBILE}
 
   ${media.greaterThan('md')`
-    padding: ${triplePx()} ${doublePx()};
-  `}
+    ${CONTAINER_SPACING.TABLET}
+  `};
+
+  ${media.greaterThan('lg')`
+    ${CONTAINER_SPACING.SMALL_DESKTOP};
+  `};
 
   ${media.greaterThan('xl')`
-    padding: ${quadruplePx()};
+    ${CONTAINER_SPACING.DESKTOP};
+  `};
+
+  ${media.greaterThan('xxl')`
+    ${CONTAINER_SPACING.WIDE};
   `};
 `
 

@@ -1,30 +1,35 @@
 import styled from 'styled-components'
 
 import { ACCENT_COLOR, LIGHT_GRAY_COLOR } from '../../theme/color'
-import { singlePx, doublePx, doubleAndHalfPx, triplePx, quadruplePx } from '../../theme/space'
+import { doublePx } from '../../theme/space'
 import { media } from '../../theme/media'
+import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 
 export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   background: ${LIGHT_GRAY_COLOR};
-  padding: ${doubleAndHalfPx()} ${singlePx()};
+  ${CONTAINER_SPACING.MOBILE}
   z-index: 1;
 
   ${media.greaterThan('md')`
-    padding: ${triplePx()} ${doublePx()};
+    ${CONTAINER_SPACING.TABLET}
   `};
 
   ${media.greaterThan('lg')`
     flex-wrap: wrap;
     flex-direction: row;
     align-items: stretch;
-    padding: ${triplePx()} ${doublePx()};
+    ${CONTAINER_SPACING.SMALL_DESKTOP};
   `};
 
   ${media.greaterThan('xl')`
-    padding: ${quadruplePx()};
+    ${CONTAINER_SPACING.DESKTOP};
+  `};
+
+  ${media.greaterThan('xxl')`
+    ${CONTAINER_SPACING.WIDE};
   `};
 `
 
