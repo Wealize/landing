@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 import { WHITE_COLOR, LIGHT_GRAY_COLOR } from '../../theme/color'
-import { singlePx, doublePx, doubleAndHalfPx, triplePx, quadruplePx } from '../../theme/space'
+import { doublePx } from '../../theme/space'
 import { media } from '../../theme/media'
+import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 
 export const ContainerOverflowHidden = styled.div`
   overflow: hidden;
@@ -20,7 +21,7 @@ export const Container = styled.div`
 export const StartedContainer = styled.div`
   min-height: 50vh;
   background: ${LIGHT_GRAY_COLOR};
-  padding: ${doubleAndHalfPx()} ${singlePx()};
+  ${CONTAINER_SPACING.MOBILE}
   line-height: 1.32;
   position: relative;
   z-index: 1;
@@ -34,7 +35,7 @@ export const StartedContainer = styled.div`
   }
 
   ${media.greaterThan('md')`
-    padding: ${triplePx()} ${doublePx()};
+    ${CONTAINER_SPACING.TABLET}
 
     > .w-static-logo {
       bottom: -15%;
@@ -45,6 +46,8 @@ export const StartedContainer = styled.div`
   `};
 
   ${media.greaterThan('lg')`
+  ${CONTAINER_SPACING.SMALL_DESKTOP};
+
     > .w-static-logo {
       bottom: -30%;
       right: -50%;
@@ -53,7 +56,7 @@ export const StartedContainer = styled.div`
   `}
 
   ${media.greaterThan('xl')`
-    padding: ${quadruplePx()};
+    ${CONTAINER_SPACING.DESKTOP};
 
     > .w-static-logo {
       bottom: -40%;
@@ -63,11 +66,11 @@ export const StartedContainer = styled.div`
   `};
 
   ${media.greaterThan('xxl')`
-
+    ${CONTAINER_SPACING.WIDE};
     > .w-static-logo {
-      bottom: -50%;
+      bottom: -25%;
       right: -45%;
-      height: 115%;
+      height: 75%;
     }
   `};
 `
@@ -93,5 +96,10 @@ export const StartedDescription = styled.div`
 
   ${media.greaterThan('xl')`
     font-size: 3rem;
+  `};
+
+  ${media.greaterThan('xxl')`
+    width: 55%;
+    font-size: 4rem;
   `};
 `

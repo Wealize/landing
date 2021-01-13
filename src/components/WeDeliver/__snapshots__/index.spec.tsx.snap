@@ -4,7 +4,7 @@ exports[`<WeDeliver /> should render 1`] = `
 <Memo(WeDeliver)>
   <styles__Container>
     <div
-      className="styles__Container-m0mkjy-0 hfobv"
+      className="styles__Container-m0mkjy-0 jBNMSV"
     >
       <styles__Title>
         <h5
@@ -26,7 +26,7 @@ exports[`<WeDeliver /> should render 1`] = `
               className="simple-big-title-card"
             >
               <div
-                className="styles__Container-oswoju-0 lYOa simple-big-title-card"
+                className="styles__Container-oswoju-0 hEOPoV simple-big-title-card"
               >
                 <styles__Headline>
                   <span
@@ -54,7 +54,7 @@ exports[`<WeDeliver /> should render 1`] = `
               className="simple-big-title-card"
             >
               <div
-                className="styles__Container-oswoju-0 lYOa simple-big-title-card"
+                className="styles__Container-oswoju-0 hEOPoV simple-big-title-card"
               >
                 <styles__Headline>
                   <span
@@ -82,7 +82,7 @@ exports[`<WeDeliver /> should render 1`] = `
               className="simple-big-title-card"
             >
               <div
-                className="styles__Container-oswoju-0 lYOa simple-big-title-card"
+                className="styles__Container-oswoju-0 hEOPoV simple-big-title-card"
               >
                 <styles__Headline>
                   <span
@@ -110,7 +110,7 @@ exports[`<WeDeliver /> should render 1`] = `
               className="simple-big-title-card"
             >
               <div
-                className="styles__Container-oswoju-0 lYOa simple-big-title-card"
+                className="styles__Container-oswoju-0 hEOPoV simple-big-title-card"
               >
                 <styles__Headline>
                   <span

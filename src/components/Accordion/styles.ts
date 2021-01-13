@@ -1,27 +1,28 @@
 import styled from 'styled-components'
 
-import { sixthPx, halfPx, twoThirdPx, singlePx, singleAndHalfPx, doublePx, doubleAndHalfPx, triplePx, quadruplePx, quadruple } from '../../theme/space'
+import { sixthPx, halfPx, twoThirdPx, singlePx, singleAndHalfPx, doublePx, quadruplePx, quadruple } from '../../theme/space'
 import { media } from '../../theme/media'
+import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 
 export const Container = styled.div<{ backgroundColor: string, textColor: string}>`
   width: 100%;
   min-height: 20vh;
-  padding: ${doubleAndHalfPx()} ${singlePx()};
+  ${CONTAINER_SPACING.MOBILE}
 
   ${media.greaterThan('md')`
-    padding: ${triplePx()} ${quadruplePx()};
+    ${CONTAINER_SPACING.TABLET}
   `};
 
   ${media.greaterThan('lg')`
-    padding: ${quadruplePx()} ${quadruple() * 1.5}px;
+    ${CONTAINER_SPACING.SMALL_DESKTOP}
   `};
 
   ${media.greaterThan('xl')`
-    padding: ${quadruplePx()} ${quadruple() * 2.5}px;
+    padding: ${quadruplePx()};
   `};
 
   ${media.greaterThan('xxl')`
-    padding: ${quadruplePx()} ${quadruple() * 3.5}px;
+    padding: ${quadruple() * 1.5}px ${quadruple() * 4}px;
   `};
 
   color: ${({ textColor }) => textColor};

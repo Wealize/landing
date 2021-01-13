@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
-import { singlePx, doublePx, doubleAndHalfPx, triplePx, quadruplePx } from '../../theme/space'
+import { singlePx, doublePx } from '../../theme/space'
 import { media } from '../../theme/media'
+import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 
 export const Container = styled.div`
   display: flex;
@@ -9,14 +10,22 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: ${doubleAndHalfPx()} ${singlePx()};
+  ${CONTAINER_SPACING.MOBILE}
 
   ${media.greaterThan('md')`
-    padding: ${triplePx()} ${doublePx()};
+    ${CONTAINER_SPACING.TABLET}
+  `};
+
+  ${media.greaterThan('lg')`
+    ${CONTAINER_SPACING.SMALL_DESKTOP};
   `};
 
   ${media.greaterThan('xl')`
-    padding: ${quadruplePx()};
+    ${CONTAINER_SPACING.DESKTOP};
+  `};
+
+  ${media.greaterThan('xxl')`
+    ${CONTAINER_SPACING.WIDE};
   `};
 `
 

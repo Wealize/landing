@@ -47,7 +47,6 @@ export const Content = styled.span<{ textColor: string }>`
   background-color: transparent;
   color: ${({ textColor }) => textColor};
   font-size: 1rem;
-  font-weight: bold;
   border-radius: 50px;
 
   ${media.greaterThan('md')`

@@ -6,11 +6,11 @@ exports[`<SimpleCard /> wrapper: should render 1`] = `
     className="simple-card"
   >
     <div
-      className="styles__Container-sc-58pc36-0 isdsPo simple-card"
+      className="styles__Container-sc-58pc36-0 cvYCcG simple-card"
     >
       <styles__Text>
         <h3
-          className="styles__Text-sc-58pc36-1 iYohbp"
+          className="styles__Text-sc-58pc36-1 euGlbe"
         >
           We are a digital product studio with the upper hand in blockchain, conversational agents, cognitives services, mobile apps and web development
         </h3>

@@ -6,8 +6,9 @@ import {
   LIGHT_GRAY_COLOR,
   ACCENT_COLOR
 } from '../../theme/color'
-import { halfPx, singlePx, triplePx } from '../../theme/space'
+import { halfPx, singlePx, doublePx, triplePx } from '../../theme/space'
 import { media } from '../../theme/media'
+import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 
 export const Navbar = styled.nav<{
   isVisible: boolean
@@ -19,7 +20,6 @@ export const Navbar = styled.nav<{
   justify-content: space-between;
   align-items: center;
   background-color: ${WHITE_COLOR};
-  padding: ${halfPx()} ${singlePx()};
   position: sticky;
   top: 0;
   left: 0;
@@ -27,6 +27,7 @@ export const Navbar = styled.nav<{
   height: ${triplePx()};
   transition: all 0.4s;
   z-index: 5;
+  ${CONTAINER_SPACING.MOBILE}
 
   transform: ${({ isVisible }) =>
     isVisible ? 'inherit' : 'translateY(-100%)'};
@@ -40,8 +41,22 @@ export const Navbar = styled.nav<{
     background-color: ${
       showNavigationBarClosablePage ? WHITE_COLOR : LIGHT_GRAY_COLOR
     };
-    padding: ${singlePx()} ${triplePx()};
     border: none;
+    ${CONTAINER_SPACING.TABLET}
+    padding-top: ${singlePx()};
+    padding-bottom: ${singlePx()};
+  `};
+
+  ${media.greaterThan('lg')`
+    ${CONTAINER_SPACING.SMALL_DESKTOP};
+    padding-top: ${singlePx()};
+    padding-bottom: ${singlePx()};
+  `};
+
+  ${media.greaterThan('xl')`
+    ${CONTAINER_SPACING.DESKTOP};
+    padding-top: ${doublePx()};
+    padding-bottom: ${doublePx()};
   `};
 `
 
@@ -57,10 +72,6 @@ export const LogoContainer = styled.div`
   ${media.greaterThan('md')`
     display: block;
     width: 130px;
-  `}
-
-  ${media.greaterThan('lg')`
-    width: 150px;
   `}
 `
 
@@ -91,7 +102,14 @@ export const NavLink = styled.a<{ isCurrentPage: boolean }>`
   `}
 
   ${media.greaterThan('lg')`
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+
+    &:hover {
+      border-bottom: 3px solid ${ACCENT_COLOR};
+    }
+  `};
+
+  ${media.greaterThan('lg')`
 
     &:hover {
       border-bottom: 3px solid ${ACCENT_COLOR};

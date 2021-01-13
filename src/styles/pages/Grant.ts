@@ -3,25 +3,24 @@ import styled from 'styled-components'
 import { GRAY_300_COLOR } from '../../theme/color'
 import {
   halfPx,
-  doubleAndHalfPx,
   singlePx,
   doublePx,
-  triplePx,
   quadruplePx,
   quadruple
 } from '../../theme/space'
 import { media } from '../../theme/media'
+import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 
 export const Container = styled.section`
-  padding: ${doubleAndHalfPx()} ${singlePx()};
+  ${CONTAINER_SPACING.MOBILE}
   min-height: 100vh;
 
   ${media.greaterThan('md')`
-    padding: ${triplePx()} ${doublePx()};
+    ${CONTAINER_SPACING.TABLET}
   `};
 
   ${media.greaterThan('lg')`
-    padding: ${quadruplePx()};
+    ${CONTAINER_SPACING.WIDE};
   `};
 
   ${media.greaterThan('xl')`

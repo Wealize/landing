@@ -14,8 +14,9 @@ import {
   quadruple
 } from '../../theme/space'
 import { media } from '../../theme/media'
+import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 
-export const Container = styled.section`
+export const Container = styled.div`
   min-height: 100vh;
   background-color: ${LIGHT_GRAY_COLOR};
 
@@ -24,7 +25,7 @@ export const Container = styled.section`
   `};
 `
 
-export const Content = styled.article`
+export const Content = styled.div`
   font-size: 1.1rem;
   display: flex;
   flex-direction: column;
@@ -32,17 +33,17 @@ export const Content = styled.article`
   align-items: center;
   min-height: 30vh;
   background-color: ${LIGHT_GRAY_COLOR};
-  padding: ${doubleAndHalfPx()} ${singlePx()};
+  ${CONTAINER_SPACING.MOBILE}
 
   ${media.greaterThan('md')`
-    padding: ${triplePx()} ${doublePx()};
+    ${CONTAINER_SPACING.TABLET}
     font-size: 1.2rem;
     justify-content: initial;
     align-items: initial;
   `};
 
   ${media.greaterThan('lg')`
-    padding: ${quadruplePx()};
+    ${CONTAINER_SPACING.SMALL_DESKTOP};
     font-size: 1.5rem;
     background-color: ${WHITE_COLOR};
   `};
@@ -113,24 +114,24 @@ export const QuestionsContainer = styled.div`
   align-items: center;
   min-height: 30vh;
   background-color: ${WHITE_COLOR};
-  padding: ${doubleAndHalfPx()} ${singlePx()};
+  ${CONTAINER_SPACING.MOBILE}
 
   ${media.greaterThan('md')`
     font-size: 1.2rem;
-    padding: ${triplePx()} ${doublePx()};
+    ${CONTAINER_SPACING.TABLET}
   `}
 
   ${media.greaterThan('lg')`
     font-size: 1.5rem;
     display: block;
-    padding: ${quadruplePx()};
+    ${CONTAINER_SPACING.SMALL_DESKTOP};
     column-count: 2;
     column-gap: ${doubleAndHalfPx()};
     column-fill: auto;
   `};
 
   ${media.greaterThan('xl')`
-    padding: ${quadruplePx()};
+    ${CONTAINER_SPACING.DESKTOP};
     column-count: 2;
     column-gap: ${triplePx()};
     column-fill: auto;
@@ -138,7 +139,7 @@ export const QuestionsContainer = styled.div`
   `};
 
   ${media.greaterThan('xxl')`
-    padding: ${quadruplePx()};
+    ${CONTAINER_SPACING.WIDE};
     column-gap: ${quadruplePx()};
   `};
 `
