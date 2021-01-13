@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [Review HomeSpecial component](https://wealize.atlassian.net/browse/WLZAA-84)
+- [Review general spacing on large resolutions](https://wealize.atlassian.net/browse/WLZAA-95)
 - [Add copy for privacy page](https://wealize.atlassian.net/browse/WLZAA-72)
 - [Add contacts links on the footer component](https://wealize.atlassian.net/browse/WLZAA-71)
 - [Add e2e tests](https://wealize.atlassian.net/browse/WLZAA-77)

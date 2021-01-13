@@ -8,7 +8,7 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
     >
       <styles__Background>
         <div
-          className="styles__Background-gjaj1n-1 cHJHkT"
+          className="styles__Background-gjaj1n-1 PfvFJ"
         />
       </styles__Background>
       <styles__Slogan>
@@ -17,7 +17,7 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
         >
           <styles__Headline>
             <h1
-              className="styles__Headline-gjaj1n-4 lfBZzQ"
+              className="styles__Headline-gjaj1n-4 debjRw"
             >
               home:slogan.headline
             </h1>
@@ -35,7 +35,7 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
           >
             <button
               aria-label="scroll-button"
-              className="styles__Button-gjaj1n-2 fcDxWJ"
+              className="styles__Button-gjaj1n-2 jIlGcl"
               onClick={[Function]}
             >
               <Memo(RoundArrowIcon)>

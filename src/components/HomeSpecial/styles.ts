@@ -32,35 +32,38 @@ export const Container = styled.div`
 `
 
 export const Background = styled.div`
-  width: 100%;
-  height: 70%;
+  width: 70%;
   position: absolute;
-  bottom: 0%;
-  height: 100%;
+  bottom: -5%;
+  right: 0;
+  height: 70%;
 
   background-image: url('/img/w-static.svg');
   background-repeat: no-repeat;
-  background-position: -25% 100%;
-  background-size: 800px;
+  background-size: cover;
 
   ${media.greaterThan('md')`
-    background-position: -100% 120%;
-    background-size: 140%;
+    width: 70%;
+    bottom: -15%;
+    height: 80%;
   `};
 
   ${media.greaterThan('lg')`
-    background-position: -100% -20%;
-    background-size: 120%;
+    width: 55%;
+    bottom: -25%;
+    height: 90%;
   `};
 
   ${media.greaterThan('xl')`
-    background-position: 230% -15%;
-    background-size: 85%;
+    width: 50%;
+    bottom: -30%;
+    height: 90%;
   `};
 
-  ${media.greaterThan('xxl')`
-    background-position: 180% -15%;
-    background-size: 80%;
+  ${media.greaterThan('xxxl')`
+    width: 45%;
+    bottom: -45%;
+    height: 100%;
   `};
 `
 
@@ -92,12 +95,22 @@ export const Button = styled.button`
     right: -25%;
     width: 120px;
     height: 120px;
+
+    > svg {
+      width: 7em;
+      height: 7em;
+    }
   `};
 
   ${media.greaterThan('xxl')`
     right: -35%;
     width: 135px;
     height: 135px;
+
+    > svg {
+      width: 9em;
+      height: 9em;
+    }
   `};
 `
 
@@ -153,10 +166,6 @@ export const Headline = styled.h1`
 
   ${media.greaterThan('xl')`
     font-size: 1.7rem;
-  `};
-
-  ${media.greaterThan('xxl')`
-    font-size: 1.9rem;
   `};
 `
 
