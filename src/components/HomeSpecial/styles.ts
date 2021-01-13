@@ -178,6 +178,5 @@ export const SubHeadline = styled.h2`
 
   ${media.greaterThan('xl')`
     font-size: 3.5rem;
-    width: 90%;
   `};
 `
