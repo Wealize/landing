@@ -17,14 +17,14 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
         >
           <styles__Headline>
             <h1
-              className="styles__Headline-gjaj1n-4 jKQJrf"
+              className="styles__Headline-gjaj1n-4 ipnnjw"
             >
               home:slogan.headline
             </h1>
           </styles__Headline>
           <styles__SubHeadline>
             <h2
-              className="styles__SubHeadline-gjaj1n-5 jpTKUV"
+              className="styles__SubHeadline-gjaj1n-5 gZAcmP"
             >
               home:slogan.subheadline
             </h2>

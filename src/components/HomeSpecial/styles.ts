@@ -141,12 +141,12 @@ export const Headline = styled.h1`
     font-size: 1.5rem;
   `};
 
-  ${media.greaterThan('lg')`
-    font-size: 2rem;
+  ${media.greaterThan('xl')`
+    font-size: 1.7rem;
   `};
 
-  ${media.greaterThan('xl')`
-    font-size: 2.2rem;
+  ${media.greaterThan('xxl')`
+    font-size: 2rem;
   `};
 `
 
@@ -168,7 +168,6 @@ export const SubHeadline = styled.h2`
 
   ${media.greaterThan('xl')`
     width: 85%;
-    font-size: 4rem;
   `};
 
   ${media.greaterThan('xxl')`
