@@ -92,7 +92,6 @@ export const ContainerGetInTouch = styled.div`
     > .button-rounded {
       margin-top: 2%;
       margin-bottom: 20%;
-      max-width: 350px;
     }
   `}
 `
@@ -174,7 +173,6 @@ export const ContainerWorkWithUs = styled.div`
     > .button-rounded {
       margin-top: 2%;
       margin-bottom: 20%;
-      max-width: 350px;
     }
   `}
 `

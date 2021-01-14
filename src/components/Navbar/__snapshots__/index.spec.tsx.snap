@@ -170,7 +170,7 @@ exports[`<NavBar /> should render 1`] = `
                   textColor="#6666ff"
                 >
                   <span
-                    className="styles__Content-ater0w-2 jXAWys"
+                    className="styles__Content-ater0w-2 kHgDFT"
                   >
                     common:navbar.return_button_text
                   </span>
@@ -189,7 +189,7 @@ exports[`<NavBar /> should render 1`] = `
                   textColor="#6666ff"
                 >
                   <span
-                    className="styles__Content-ater0w-2 jXAWys"
+                    className="styles__Content-ater0w-2 kHgDFT"
                   >
                     common:navbar.return_button_text
                   </span>
