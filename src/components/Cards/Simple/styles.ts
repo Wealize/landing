@@ -31,6 +31,7 @@ export const Text = styled.h3`
   color: ${DARK_GRAY_COLOR};
   font-size: 2rem;
   line-height: 45px;
+  letter-spacing: -0.3px;
   word-wrap: break-word;
 
   ${media.greaterThan('md')`

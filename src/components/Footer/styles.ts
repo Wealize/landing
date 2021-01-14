@@ -47,6 +47,7 @@ export const ContainerContent = styled.div`
     display: inline-block;
     column-count: 2;
     column-gap: ${singlePx()};
+    column-fill: balance;
   `}
 
   ${media.greaterThan('xl')`
@@ -73,6 +74,8 @@ export const ContainerGetInTouch = styled.div`
   }
 
   ${media.greaterThan('md')`
+    display: inline-block;
+
     > .button-rounded {
       margin-top: 15%;
       max-width: 200px;
@@ -89,14 +92,13 @@ export const ContainerGetInTouch = styled.div`
     > .button-rounded {
       margin-top: 2%;
       margin-bottom: 20%;
-      max-width: 350px;
     }
   `}
 `
 
 export const ContainerLogo = styled.div`
   display: flex;
-  width: 30%;
+  width: 25%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -127,18 +129,12 @@ export const BigText = styled.h5`
   font-size: 1.6rem;
   line-height: 1.33;
 
-
   ${media.greaterThan('lg')`
-    font-size: 2rem;
+    font-size: 2.5rem;
   `};
 
   ${media.greaterThan('xl')`
-    font-size: 2.4rem;
     min-height: 270px;
-  `};
-
-  ${media.greaterThan('xxl')`
-    font-size: 2.5rem;
   `};
 `
 
@@ -159,7 +155,7 @@ export const ContainerWorkWithUs = styled.div`
 
   ${media.greaterThan('md')`
     padding: 0;
-    display: inline-block;
+    display: inline;
 
     > .button-rounded {
       margin-top: 15%;
@@ -177,7 +173,6 @@ export const ContainerWorkWithUs = styled.div`
     > .button-rounded {
       margin-top: 2%;
       margin-bottom: 20%;
-      max-width: 350px;
     }
   `}
 `

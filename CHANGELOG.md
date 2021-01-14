@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [Review WeDeliver component](https://wealize.atlassian.net/browse/WLZAA-91)
+- [Review Services and Ventures component](https://wealize.atlassian.net/browse/WLZAA-89)
+- [Review projects cards](https://wealize.atlassian.net/browse/WLZAA-85)
+- [Review Accordion component](https://wealize.atlassian.net/browse/WLZAA-94)
+- [Review Navbar component](https://wealize.atlassian.net/browse/WLZAA-83)
 - [Review HomeSpecial component](https://wealize.atlassian.net/browse/WLZAA-84)
 - [Review general spacing on large resolutions](https://wealize.atlassian.net/browse/WLZAA-95)
 - [Add copy for privacy page](https://wealize.atlassian.net/browse/WLZAA-72)

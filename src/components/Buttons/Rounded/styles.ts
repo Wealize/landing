@@ -48,6 +48,7 @@ export const Content = styled.span<{ textColor: string }>`
   color: ${({ textColor }) => textColor};
   font-size: 1rem;
   border-radius: 50px;
+  line-height: 1.5;
 
   ${media.greaterThan('md')`
     padding: ${singlePx()};
@@ -55,10 +56,6 @@ export const Content = styled.span<{ textColor: string }>`
 
   ${media.greaterThan('lg')`
     font-size: 1.2rem;
-  `};
-
-  ${media.greaterThan('xl')`
-    font-size: 1.4rem;
   `};
 `
 

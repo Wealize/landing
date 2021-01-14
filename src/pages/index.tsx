@@ -8,6 +8,7 @@ import { CardRounded } from '../interfaces/Cards/CardRounded'
 import HomeSpecial from '../components/HomeSpecial'
 import Partners from '../components/Partners'
 import { LayoutOptions } from '../interfaces/Page'
+import { ContainerProjects } from '../styles/pages/Home'
 
 const Index = (): JSX.Element => {
   const { t } = useTranslation('home')
@@ -20,7 +21,7 @@ const Index = (): JSX.Element => {
       {t('principal_description')}
     </SimpleCard>
 
-    <section>
+    <ContainerProjects>
       {projectsData.map((project: CardRounded, index: number) => {
         const { t } = useTranslation('common')
         return (
@@ -35,8 +36,7 @@ const Index = (): JSX.Element => {
           />
         )
       })}
-    </section>
-
+    </ContainerProjects>
     <Partners />
   </>
   )

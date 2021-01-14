@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { singlePx, doublePx } from '../../theme/space'
 import { media } from '../../theme/media'
 import { CONTAINER_SPACING } from '../../theme/spacingGuide'
+import { WHITE_COLOR } from '../../theme/color'
 
 export const Container = styled.div`
   display: flex;
@@ -10,6 +11,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: ${WHITE_COLOR};
   ${CONTAINER_SPACING.MOBILE}
 
   ${media.greaterThan('md')`

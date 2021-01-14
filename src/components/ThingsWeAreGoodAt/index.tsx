@@ -26,6 +26,7 @@ import {
 } from '../../theme/color'
 
 import {
+  BgContainer,
   Container,
   Title,
   CardsContainer,
@@ -43,46 +44,48 @@ const ThingsWeAreGoodAt = () => {
   const { t } = useTranslation('profile')
 
   return (
-    <Container ref={ref}>
-      <Title>{t('things-we-are-good-at.title')}</Title>
-      <CardsContainer>
-        <FirstCard isVisible={entry?.isIntersecting}>
-          <CardExpandable
-            headline={t('things-we-are-good-at.first-card.headline', { text: THINGS_WE_ARE_GOOD_AT_FIRST_CARD_HEADLINE })}
-            subheadline={t('things-we-are-good-at.first-card.subheadline', { text: THINGS_WE_ARE_GOOD_AT_FIRST_CARD_SUBHEADLINE })}
-            description={t('things-we-are-good-at.first-card.description', { text: THINGS_WE_ARE_GOOD_AT_FIRST_CARD_DESCRIPTION })}
-            image={<BlockchainIcon />}
-            backgroundColor={PRIMARY_LIGHT_COLOR}
-            textColor={PRIMARY_COLOR}
-            isExpanded={true}
-          />
-        </FirstCard>
+    <BgContainer ref={ref}>
+      <Container>
+        <Title>{t('things-we-are-good-at.title')}</Title>
+        <CardsContainer>
+          <FirstCard isVisible={entry?.isIntersecting}>
+            <CardExpandable
+              headline={t('things-we-are-good-at.first-card.headline', { text: THINGS_WE_ARE_GOOD_AT_FIRST_CARD_HEADLINE })}
+              subheadline={t('things-we-are-good-at.first-card.subheadline', { text: THINGS_WE_ARE_GOOD_AT_FIRST_CARD_SUBHEADLINE })}
+              description={t('things-we-are-good-at.first-card.description', { text: THINGS_WE_ARE_GOOD_AT_FIRST_CARD_DESCRIPTION })}
+              image={<BlockchainIcon />}
+              backgroundColor={PRIMARY_LIGHT_COLOR}
+              textColor={PRIMARY_COLOR}
+              isExpanded={true}
+            />
+          </FirstCard>
 
-        <SecondCard isVisible={entry?.isIntersecting}>
-          <CardExpandable
-            headline={t('things-we-are-good-at.second-card.headline', { text: THINGS_WE_ARE_GOOD_AT_SECOND_CARD_HEADLINE })}
-            subheadline={t('things-we-are-good-at.second-card.subheadline', { text: THINGS_WE_ARE_GOOD_AT_SECOND_CARD_SUBHEADLINE })}
-            description={t('things-we-are-good-at.second-card.description', { text: THINGS_WE_ARE_GOOD_AT_SECOND_CARD_DESCRIPTION })}
-            image={<CognitiveIcon />}
-            backgroundColor={PRIMARY_COLOR}
-            textColor={WHITE_COLOR}
-            isExpanded={false}
-          />
-        </SecondCard>
+          <SecondCard isVisible={entry?.isIntersecting}>
+            <CardExpandable
+              headline={t('things-we-are-good-at.second-card.headline', { text: THINGS_WE_ARE_GOOD_AT_SECOND_CARD_HEADLINE })}
+              subheadline={t('things-we-are-good-at.second-card.subheadline', { text: THINGS_WE_ARE_GOOD_AT_SECOND_CARD_SUBHEADLINE })}
+              description={t('things-we-are-good-at.second-card.description', { text: THINGS_WE_ARE_GOOD_AT_SECOND_CARD_DESCRIPTION })}
+              image={<CognitiveIcon />}
+              backgroundColor={PRIMARY_COLOR}
+              textColor={WHITE_COLOR}
+              isExpanded={false}
+            />
+          </SecondCard>
 
-        <ThirdCard isVisible={entry?.isIntersecting}>
-          <CardExpandable
-            headline={t('things-we-are-good-at.third-card.headline', { text: THINGS_WE_ARE_GOOD_AT_THIRD_CARD_HEADLINE })}
-            subheadline={t('things-we-are-good-at.third-card.subheadline', { text: THINGS_WE_ARE_GOOD_AT_THIRD_CARD_SUBHEADLINE })}
-            description={t('things-we-are-good-at.third-card.description', { text: THINGS_WE_ARE_GOOD_AT_THIRD_CARD_DESCRIPTION })}
-            image={<ConversationalIcon />}
-            backgroundColor={SECONDARY_COLOR}
-            textColor={ACCENT_COLOR}
-            isExpanded={false}
-          />
-        </ThirdCard>
-      </CardsContainer>
-    </Container>
+          <ThirdCard isVisible={entry?.isIntersecting}>
+            <CardExpandable
+              headline={t('things-we-are-good-at.third-card.headline', { text: THINGS_WE_ARE_GOOD_AT_THIRD_CARD_HEADLINE })}
+              subheadline={t('things-we-are-good-at.third-card.subheadline', { text: THINGS_WE_ARE_GOOD_AT_THIRD_CARD_SUBHEADLINE })}
+              description={t('things-we-are-good-at.third-card.description', { text: THINGS_WE_ARE_GOOD_AT_THIRD_CARD_DESCRIPTION })}
+              image={<ConversationalIcon />}
+              backgroundColor={SECONDARY_COLOR}
+              textColor={ACCENT_COLOR}
+              isExpanded={false}
+            />
+          </ThirdCard>
+        </CardsContainer>
+      </Container>
+    </BgContainer>
   )
 }
 

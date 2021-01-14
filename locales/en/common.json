@@ -3,7 +3,7 @@
   "navbar": {
     "profile": "Profile",
     "contact": "Contact",
-    "return_button_text": "Return"
+    "return_button_text": "Back"
   },
   "footer" : {
     "get_in_touch": {

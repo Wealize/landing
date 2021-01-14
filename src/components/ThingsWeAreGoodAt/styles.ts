@@ -12,6 +12,13 @@ import {
 import { media } from '../../theme/media'
 import { DEFAULT_RADIUS } from '../../theme/border'
 
+export const BgContainer = styled.div`
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: ${WHITE_COLOR};
+`
+
 export const Container = styled.div`
   width: 100%;
   background-color: ${ACCENT_COLOR};
@@ -49,19 +56,15 @@ export const Title = styled.h3`
   text-transform: uppercase;
 
   ${media.greaterThan('md')`
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding-left: ${doublePx()};
     padding-bottom: ${triplePx()};
   `};
 
   ${media.greaterThan('lg')`
     padding: ${doublePx()} ${doublePx()} ${quadruplePx()};
-    font-size: 1.5rem;
   `};
 
-  ${media.greaterThan('xl')`
-    font-size: 2rem;
-  `};
 `
 
 export const CardsContainer = styled.div`

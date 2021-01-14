@@ -22,11 +22,11 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
   title="Maldita"
 >
   <styles__Container
-    className="RoundedCard"
+    className="rounded-card"
     hasPrimary={false}
   >
     <article
-      className="styles__Container-sc-1ukl2m-0 kXnjOF RoundedCard"
+      className="styles__Container-sc-1ukl2m-0 kXnjOF rounded-card"
     >
       <styles__BackgroundContainer>
         <div
@@ -243,14 +243,14 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
             >
               <styles__Title>
                 <h4
-                  className="styles__Title-sc-1ukl2m-4 eEjrll"
+                  className="styles__Title-sc-1ukl2m-4 ihOJtW"
                 >
                   Maldita
                 </h4>
               </styles__Title>
               <styles__Description>
                 <p
-                  className="styles__Description-sc-1ukl2m-5 kPgGTM"
+                  className="styles__Description-sc-1ukl2m-5 dBXyiW"
                 >
                   Deployment of a WhatsApp Business Chatbot integrated with the Spanish fact-checking platform focused on combating the spread of disinformation in order to expand their service’s reach
                 </p>
@@ -351,7 +351,7 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
                 key="0"
               >
                 <span
-                  className="styles__Tag-sc-1ukl2m-9 eBUEOf"
+                  className="styles__Tag-sc-1ukl2m-9 fAAZRM"
                 >
                   Media
                 </span>
@@ -361,7 +361,7 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
                 key="1"
               >
                 <span
-                  className="styles__Tag-sc-1ukl2m-9 eBUEOf"
+                  className="styles__Tag-sc-1ukl2m-9 fAAZRM"
                 >
                   Fact-checking
                 </span>
@@ -371,7 +371,7 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
                 key="2"
               >
                 <span
-                  className="styles__Tag-sc-1ukl2m-9 eBUEOf"
+                  className="styles__Tag-sc-1ukl2m-9 fAAZRM"
                 >
                   Chatbots
                 </span>

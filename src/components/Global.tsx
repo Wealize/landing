@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-import { DARK_GRAY_COLOR } from '../theme/color'
+import { DARK_GRAY_COLOR, WHITE_COLOR } from '../theme/color'
 
 const Global = createGlobalStyle`
   * {
@@ -13,6 +13,7 @@ const Global = createGlobalStyle`
     font-family: 'DM Sans', sans-serif;
     scroll-behavior: smooth;
     color: ${DARK_GRAY_COLOR};
+    background-color: ${WHITE_COLOR};
   }
 
   a, button {

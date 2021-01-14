@@ -11,7 +11,7 @@ import WealizeMinimalMediumIcon from '../icons/WealizeMinimalMediumIcon'
 import WealizeNormalMediumIcon from '../icons/WealizeNormalMediumIcon'
 import ButtonRounded from '../Buttons/Rounded'
 import { ACCENT_COLOR, WHITE_COLOR } from '../../theme/color'
-import { SMALL } from '../Buttons/Rounded/sizes'
+import { MEDIUM } from '../Buttons/Rounded/sizes'
 
 import {
   Navbar,
@@ -74,7 +74,7 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
               textColor={ACCENT_COLOR}
               animatedBackgroundColor={ACCENT_COLOR}
               animatedTextColor={WHITE_COLOR}
-              size={SMALL}
+              size={MEDIUM}
               aria-label="Go to home page"
               handleClick={() => router.push(HOME_HREF)}
               id="nav-return-button"
