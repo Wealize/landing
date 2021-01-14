@@ -22,11 +22,11 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
   title="Maldita"
 >
   <styles__Container
-    className="RoundedCard"
+    className="rounded-card"
     hasPrimary={false}
   >
     <article
-      className="styles__Container-sc-1ukl2m-0 kXnjOF RoundedCard"
+      className="styles__Container-sc-1ukl2m-0 kXnjOF rounded-card"
     >
       <styles__BackgroundContainer>
         <div
