@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { sixthPx, halfPx, twoThirdPx, singlePx, singleAndHalfPx, doublePx, quadruplePx, quadruple } from '../../theme/space'
+import { halfPx, twoThirdPx, singlePx, singleAndHalfPx, doublePx, quadruplePx, quadruple } from '../../theme/space'
 import { media } from '../../theme/media'
 import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 
@@ -46,14 +46,6 @@ export const Title = styled.h5<{ textColor: string}>`
   ${media.greaterThan('xl')`
     font-size: 1.1rem;
   `};
-
-  ${media.greaterThan('lg')`
-    font-size: 1.2rem;
-  `};
-
-  ${media.greaterThan('xxl')`
-    font-size: 1.2rem;
-  `};
 `
 
 export const Separator = styled.hr<{ textColor: string}>`
@@ -89,10 +81,12 @@ export const SectionHeader = styled.div<{isExpanded: boolean}>`
   align-items: center;
   padding-bottom: 0;
 
+
   > .button-rounded {
     display: none;
 
     & span {
+      font-size: 1.1rem;
       font-weight: lighter;
     }
   }
@@ -106,7 +100,7 @@ export const SectionHeader = styled.div<{isExpanded: boolean}>`
     > .button-rounded {
       display: block;
       min-height: 75px;
-      min-width: 200px;
+      min-width: 180px;
     }
   `};
 
@@ -119,18 +113,6 @@ export const SectionTitle = styled.h6`
 
   ${media.greaterThan('md')`
     font-size: 1.8rem;
-  `};
-
-  ${media.greaterThan('lg')`
-    font-size: 2.2em;
-  `};
-
-  ${media.greaterThan('xl')`
-    font-size: 2.4rem;
-  `};
-
-  ${media.greaterThan('xxl')`
-    font-size: 2.7rem;
   `};
 `
 
@@ -172,51 +154,59 @@ export const SectionToggle = styled.button<{
 
 export const SectionContentContainer = styled.div<{isExpanded: boolean}>`
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: ${singlePx()};
   transition: all 0.5s ease-out;
   overflow: hidden;
   height: auto;
   max-height: ${({ isExpanded }) => (isExpanded ? 1000 : 0)}px;
   padding-top: ${({ isExpanded }) => (isExpanded ? singleAndHalfPx() : 0)};
+  display: inline-block;
+  column-count: 2;
+  column-gap: ${singlePx()};
+  column-fill: auto;
 
   ${media.greaterThan('lg')`
-    grid-template-columns: repeat(3, 1fr);
-  `};
-
-  ${media.greaterThan('xl')`
-    grid-template-columns: repeat(3, 1fr);
+    column-count: 3;
+    column-gap: ${singleAndHalfPx()};
   `};
 
   ${media.greaterThan('xxl')`
-    grid-template-columns: repeat(4, 1fr);
+    column-count: 4;
+    column-gap: ${doublePx()};
   `};
 
 `
 
-export const SectionElement = styled.span`
-  padding: ${twoThirdPx()} 0 ${sixthPx()};
-  line-height: 1.4;
+export const SectionElementContainer = styled.div`
+  display: block;
+`
 
-  &:before {
-    content: '- '
+export const SectionRowElementContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: ${twoThirdPx()};
+
+  > i {
+    line-height: 1.3;
+    min-height: 100%;
+
+    ${media.greaterThan('md')`
+      font-size: 1.2rem;
+    `};
+
+    ${media.greaterThan('lg')`
+      font-size: 1.1rem;
+    `};
   }
+`
+
+export const SectionElement = styled.span`
+  line-height: 1.4;
+  display: inline-block;
+  min-width: 60%;
+  height: 100%;
 
   ${media.greaterThan('md')`
-    font-size: 1.2rem;
-    padding: ${twoThirdPx()};
-  `};
-
-  ${media.greaterThan('lg')`
-    font-size: 1.3rem;
-  `};
-
-  ${media.greaterThan('xl')`
-    font-size: 1.4rem;
-  `};
-
-  ${media.greaterThan('xxl')`
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   `};
 `

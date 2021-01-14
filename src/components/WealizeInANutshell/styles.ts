@@ -40,7 +40,7 @@ export const Title = styled.h3`
   padding:  0 0 ${doublePx()};
 
   ${media.greaterThan('md')`
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     padding:  0 0 ${doublePx()};
   `};
 
@@ -52,7 +52,7 @@ export const Title = styled.h3`
 
   ${media.greaterThan('xl')`
     width: 50%;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   `};
 `
 
@@ -110,9 +110,5 @@ export const Paragraph = styled.h3<{
   ${media.greaterThan('md')`
     width: 80%;
     text-align: left;
-  `};
-
-  ${media.greaterThan('lg')`
-    font-size: 2rem;
   `};
 `

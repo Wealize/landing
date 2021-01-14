@@ -4,18 +4,18 @@ exports[`<WeDeliver /> should render 1`] = `
 <Memo(WeDeliver)>
   <styles__Container>
     <div
-      className="styles__Container-m0mkjy-0 jBNMSV"
+      className="styles__Container-m0mkjy-0 djDqMl"
     >
       <styles__Title>
         <h5
-          className="styles__Title-m0mkjy-1 edNgxp"
+          className="styles__Title-m0mkjy-1 kBHlkw"
         >
           profile:we-deliver.title
         </h5>
       </styles__Title>
       <styles__ContainerCards>
         <div
-          className="styles__ContainerCards-m0mkjy-2 hjWAim"
+          className="styles__ContainerCards-m0mkjy-2 izzWBL"
         >
           <Memo(SimpleBigTitleCard)
             description="profile:we-deliver.card-0.description"
@@ -30,14 +30,14 @@ exports[`<WeDeliver /> should render 1`] = `
               >
                 <styles__Headline>
                   <span
-                    className="styles__Headline-oswoju-1 fUjaxr"
+                    className="styles__Headline-oswoju-1 cZqBeJ"
                   >
                     profile:we-deliver.card-0.title
                   </span>
                 </styles__Headline>
                 <styles__SubHeadline>
                   <h5
-                    className="styles__SubHeadline-oswoju-2 eUiSQi"
+                    className="styles__SubHeadline-oswoju-2 hGfjMj"
                   >
                     profile:we-deliver.card-0.description
                   </h5>
@@ -58,14 +58,14 @@ exports[`<WeDeliver /> should render 1`] = `
               >
                 <styles__Headline>
                   <span
-                    className="styles__Headline-oswoju-1 fUjaxr"
+                    className="styles__Headline-oswoju-1 cZqBeJ"
                   >
                     profile:we-deliver.card-1.title
                   </span>
                 </styles__Headline>
                 <styles__SubHeadline>
                   <h5
-                    className="styles__SubHeadline-oswoju-2 eUiSQi"
+                    className="styles__SubHeadline-oswoju-2 hGfjMj"
                   >
                     profile:we-deliver.card-1.description
                   </h5>
@@ -86,14 +86,14 @@ exports[`<WeDeliver /> should render 1`] = `
               >
                 <styles__Headline>
                   <span
-                    className="styles__Headline-oswoju-1 fUjaxr"
+                    className="styles__Headline-oswoju-1 cZqBeJ"
                   >
                     profile:we-deliver.card-2.title
                   </span>
                 </styles__Headline>
                 <styles__SubHeadline>
                   <h5
-                    className="styles__SubHeadline-oswoju-2 eUiSQi"
+                    className="styles__SubHeadline-oswoju-2 hGfjMj"
                   >
                     profile:we-deliver.card-2.description
                   </h5>
@@ -114,14 +114,14 @@ exports[`<WeDeliver /> should render 1`] = `
               >
                 <styles__Headline>
                   <span
-                    className="styles__Headline-oswoju-1 fUjaxr"
+                    className="styles__Headline-oswoju-1 cZqBeJ"
                   >
                     profile:we-deliver.card-3.title
                   </span>
                 </styles__Headline>
                 <styles__SubHeadline>
                   <h5
-                    className="styles__SubHeadline-oswoju-2 eUiSQi"
+                    className="styles__SubHeadline-oswoju-2 hGfjMj"
                   >
                     profile:we-deliver.card-3.description
                   </h5>

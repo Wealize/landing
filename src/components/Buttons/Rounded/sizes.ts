@@ -8,8 +8,8 @@ export const SMALL: ButtonSize = {
 }
 
 export const MEDIUM: ButtonSize = {
-  mobile: [150, 80],
+  mobile: [150, 70],
   tablet: [180, 80],
-  desktop: [200, 100],
-  wide: [250, 100]
+  desktop: [200, 85],
+  wide: [220, 90]
 }

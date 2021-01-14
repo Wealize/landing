@@ -12,7 +12,7 @@ exports[`<Partners /> should render 1`] = `
         >
           <styles__TextContent>
             <h5
-              className="styles__TextContent-st6sme-2 jwgwQP"
+              className="styles__TextContent-st6sme-2 sEpxE"
             >
               home:partners_description
             </h5>
