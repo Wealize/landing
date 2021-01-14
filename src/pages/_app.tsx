@@ -9,6 +9,8 @@ import Global from '../components/Global'
 import HeadComponent from '../components/layout/Head/'
 import Layout from '../components/layout/'
 import { LayoutOptions } from '../interfaces/Page'
+import useWindowSize from '../hooks/useWindowSize'
+import { WHITE_COLOR } from '../theme/color'
 
 
 Sentry.init({
@@ -24,7 +26,8 @@ const ExtendedApp = (props: AppProps) => {
     pageProps,
    } = props
 
-   const router = useRouter()
+  const router = useRouter()
+  const windowSize = useWindowSize()
 
   const DEFAULT_LAYOUT_OPTIONS: LayoutOptions = {
     showFooter: false,
@@ -32,6 +35,20 @@ const ExtendedApp = (props: AppProps) => {
   }
 
   const { layoutOptions = DEFAULT_LAYOUT_OPTIONS } = pageProps
+
+  const changeBodyBackgroundColor = ()=> {
+    const UNSET_VALUE_BG = "rgba(0, 0, 0, 0)"
+
+    const mainElement = document.querySelector('main')
+    if (!mainElement.hasChildNodes() || typeof window === 'undefined') return
+
+    const firstChildrenFromMain = mainElement.childNodes[0] as HTMLElement
+    if (!firstChildrenFromMain) return
+
+    const firstChildrenFromMainBgColor = window.getComputedStyle(firstChildrenFromMain, null).getPropertyValue('background-color')
+
+    document.body.style.backgroundColor = firstChildrenFromMainBgColor === UNSET_VALUE_BG ? WHITE_COLOR : `${firstChildrenFromMainBgColor}`
+  }
 
   useEffect(() => {
 
@@ -43,10 +60,14 @@ const ExtendedApp = (props: AppProps) => {
     router.events.on('routeChangeComplete', () => {
       const html = document.querySelector('html')
       html.style.scrollBehavior = 'smooth'
-    })
 
+      changeBodyBackgroundColor()
+    })
   }, [])
 
+  useEffect(() => {
+    changeBodyBackgroundColor()
+  }, [windowSize])
 
   return (
     <React.Fragment>

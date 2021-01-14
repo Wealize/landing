@@ -11,6 +11,7 @@ const HeadComponent = (): JSX.Element => {
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#f06078" />
+    <meta httpEquiv="ScreenOrientation" content="autoRotate:disabled" />
     <meta charSet="utf-8" />
     <meta
       name="viewport"

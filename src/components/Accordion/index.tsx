@@ -7,6 +7,8 @@ import { SMALL } from '../Buttons/Rounded/sizes'
 import RoundArrowIcon from '../icons/thingsWeAreGoodAt/RoundArrowIcon'
 
 import {
+  SectionRowElementContainer,
+  SectionElementContainer,
   Container,
   Separator,
   TitleContainer,
@@ -72,7 +74,13 @@ const Accordion = (props: AccordionProps) => {
             </SectionHeader>
             <SectionContentContainer isExpanded={isExpanded}>
               {section.data.map((element: string, index: number) => (
-                <SectionElement key={index}>{element}</SectionElement>
+                <SectionElementContainer key={index}>
+                  <SectionRowElementContainer>
+                    <i> -&nbsp; </i>
+                    <SectionElement>{element}</SectionElement>
+                  </SectionRowElementContainer>
+                </SectionElementContainer>
+
               ))}
             </SectionContentContainer>
             <Separator className="accordion-separator" textColor={textColor}/>

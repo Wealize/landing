@@ -58,8 +58,8 @@ export const ImageContainer = styled.div`
   `};
 
   ${media.greaterThan('xl')`
-    min-width: 350px;
-    min-height: 350px;
+    min-width: 300px;
+    min-height: 300px;
   `};
 `
 
@@ -77,11 +77,7 @@ export const Headline = styled.h4`
   `};
 
   ${media.greaterThan('lg')`
-    font-size: 1.2rem;
-  `};
-
-  ${media.greaterThan('xl')`
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   `};
 `
 
@@ -94,12 +90,8 @@ export const Subheadline = styled.h5`
   line-height: 1.45;
 
   ${media.greaterThan('md')`
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding-bottom: ${thirdPx()};
-  `};
-
-  ${media.greaterThan('xl')`
-    font-size: 1.5rem;
   `};
 `
 
@@ -120,11 +112,7 @@ export const SocialNetworksContainer = styled.div`
     margin-right: ${thirdPx()};
 
     ${media.greaterThan('md')`
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     `};
-
-    ${media.greaterThan('xl')`
-    font-size: 1.5rem;
-  `};
   }
 `
