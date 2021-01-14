@@ -85,6 +85,7 @@ export const Content = styled.div`
 `
 
 export const Title = styled.h4`
+  letter-spacing: 1.35px;
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: bold;
@@ -157,4 +158,6 @@ export const Tag = styled.span<{ hasPrimary: boolean }>`
   padding: ${thirdPx()};
   border-radius: 16px;
   border: 1px solid ${({ hasPrimary }) => (hasPrimary ? WHITE_COLOR : DARK_GRAY_COLOR)};
+  margin-top: -1px;
+  margin-left: -1px;
 `

@@ -10,7 +10,7 @@ exports[`<NavBar /> should render 1`] = `
     showNavigationBarClosablePage={true}
   >
     <nav
-      className="styles__Navbar-dfawgb-0 gyCwrw"
+      className="styles__Navbar-dfawgb-0 jvhzFs"
       id="navbar"
     >
       <styles__LogoMobileContainer>
@@ -85,20 +85,20 @@ exports[`<NavBar /> should render 1`] = `
         size={
           Object {
             "desktop": Array [
-              170,
-              50,
+              200,
+              85,
             ],
             "mobile": Array [
-              90,
-              50,
+              150,
+              70,
             ],
             "tablet": Array [
-              150,
-              50,
+              180,
+              80,
             ],
             "wide": Array [
-              190,
-              50,
+              220,
+              90,
             ],
           }
         }
@@ -114,46 +114,46 @@ exports[`<NavBar /> should render 1`] = `
           size={
             Object {
               "desktop": Array [
-                170,
-                50,
+                200,
+                85,
               ],
               "mobile": Array [
-                90,
-                50,
+                150,
+                70,
               ],
               "tablet": Array [
-                150,
-                50,
+                180,
+                80,
               ],
               "wide": Array [
-                190,
-                50,
+                220,
+                90,
               ],
             }
           }
           textColor="#6666ff"
         >
           <div
-            className="styles__Container-ater0w-3 lplMMT button-rounded"
+            className="styles__Container-ater0w-3 cQhMSp button-rounded"
             id="nav-return-button"
             onClick={[Function]}
             size={
               Object {
                 "desktop": Array [
-                  170,
-                  50,
+                  200,
+                  85,
                 ],
                 "mobile": Array [
-                  90,
-                  50,
+                  150,
+                  70,
                 ],
                 "tablet": Array [
-                  150,
-                  50,
+                  180,
+                  80,
                 ],
                 "wide": Array [
-                  190,
-                  50,
+                  220,
+                  90,
                 ],
               }
             }

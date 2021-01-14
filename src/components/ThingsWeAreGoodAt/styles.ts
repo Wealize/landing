@@ -12,6 +12,13 @@ import {
 import { media } from '../../theme/media'
 import { DEFAULT_RADIUS } from '../../theme/border'
 
+export const BgContainer = styled.div`
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: ${WHITE_COLOR};
+`
+
 export const Container = styled.div`
   width: 100%;
   background-color: ${ACCENT_COLOR};

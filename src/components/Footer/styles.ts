@@ -47,6 +47,7 @@ export const ContainerContent = styled.div`
     display: inline-block;
     column-count: 2;
     column-gap: ${singlePx()};
+    column-fill: balance;
   `}
 
   ${media.greaterThan('xl')`
@@ -73,6 +74,8 @@ export const ContainerGetInTouch = styled.div`
   }
 
   ${media.greaterThan('md')`
+    display: inline-block;
+
     > .button-rounded {
       margin-top: 15%;
       max-width: 200px;
@@ -159,7 +162,7 @@ export const ContainerWorkWithUs = styled.div`
 
   ${media.greaterThan('md')`
     padding: 0;
-    display: inline-block;
+    display: inline;
 
     > .button-rounded {
       margin-top: 15%;

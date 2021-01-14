@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { WHITE_COLOR, LIGHT_GRAY_COLOR } from '../../theme/color'
+import { LIGHT_GRAY_COLOR } from '../../theme/color'
 import { doublePx } from '../../theme/space'
 import { media } from '../../theme/media'
 import { CONTAINER_SPACING } from '../../theme/spacingGuide'
@@ -13,7 +13,7 @@ export const ContainerOverflowHidden = styled.div`
 
 export const Container = styled.div`
   min-height: 100vh;
-  background-color: ${WHITE_COLOR};
+  background-color: ${LIGHT_GRAY_COLOR};
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -61,7 +61,7 @@ export const StartedContainer = styled.div`
     > .w-static-logo {
       bottom: -40%;
       right: -50%;
-      height: 85%;
+      height: 75%;
     }
   `};
 
@@ -70,7 +70,7 @@ export const StartedContainer = styled.div`
     > .w-static-logo {
       bottom: -25%;
       right: -45%;
-      height: 75%;
+      height: 65%;
     }
   `};
 `

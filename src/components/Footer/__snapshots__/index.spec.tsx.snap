@@ -22,19 +22,19 @@ exports[`<Footer /> wrapper: should render 1`] = `
           Object {
             "desktop": Array [
               200,
-              100,
+              85,
             ],
             "mobile": Array [
               150,
-              80,
+              70,
             ],
             "tablet": Array [
               180,
               80,
             ],
             "wide": Array [
-              250,
-              100,
+              220,
+              90,
             ],
           }
         }
@@ -57,19 +57,19 @@ exports[`<Footer /> wrapper: should render 1`] = `
           Object {
             "desktop": Array [
               200,
-              100,
+              85,
             ],
             "mobile": Array [
               150,
-              80,
+              70,
             ],
             "tablet": Array [
               180,
               80,
             ],
             "wide": Array [
-              250,
-              100,
+              220,
+              90,
             ],
           }
         }

@@ -2,471 +2,477 @@
 
 exports[`<ThingsWeAreGoodAt /> should render 1`] = `
 <Memo(ThingsWeAreGoodAt)>
-  <styles__Container>
+  <styles__BgContainer>
     <div
-      className="styles__Container-sc-3xtj1d-0 detdMV"
+      className="styles__BgContainer-sc-3xtj1d-0 bJnlOi"
     >
-      <styles__Title>
-        <h3
-          className="styles__Title-sc-3xtj1d-1 jBWgwR"
-        >
-          profile:things-we-are-good-at.title
-        </h3>
-      </styles__Title>
-      <styles__CardsContainer>
+      <styles__Container>
         <div
-          className="styles__CardsContainer-sc-3xtj1d-2 kMdbNb"
+          className="styles__Container-sc-3xtj1d-1 kEmkHI"
         >
-          <styles__FirstCard>
-            <article
-              className="styles__FirstCard-sc-3xtj1d-3 hDjILB"
+          <styles__Title>
+            <h3
+              className="styles__Title-sc-3xtj1d-2 kEmfdu"
             >
-              <Memo(ExpandableCard)
-                backgroundColor="#ffc9c9"
-                description="profile:things-we-are-good-at.first-card.description"
-                headline="profile:things-we-are-good-at.first-card.headline"
-                image={<Memo(BlockchainIcon) />}
-                isExpanded={true}
-                subheadline="profile:things-we-are-good-at.first-card.subheadline"
-                textColor="#f06078"
-              >
-                <styles__Container
-                  backgroundColor="#ffc9c9"
-                  className="ExpandableCard"
-                  isExpanded={true}
-                  textColor="#f06078"
+              profile:things-we-are-good-at.title
+            </h3>
+          </styles__Title>
+          <styles__CardsContainer>
+            <div
+              className="styles__CardsContainer-sc-3xtj1d-3 lhdAuS"
+            >
+              <styles__FirstCard>
+                <article
+                  className="styles__FirstCard-sc-3xtj1d-4 cjOqPK"
                 >
-                  <div
-                    className="styles__Container-qa6j6v-0 bxtHMV ExpandableCard"
+                  <Memo(ExpandableCard)
+                    backgroundColor="#ffc9c9"
+                    description="profile:things-we-are-good-at.first-card.description"
+                    headline="profile:things-we-are-good-at.first-card.headline"
+                    image={<Memo(BlockchainIcon) />}
+                    isExpanded={true}
+                    subheadline="profile:things-we-are-good-at.first-card.subheadline"
+                    textColor="#f06078"
                   >
-                    <styles__Header
+                    <styles__Container
+                      backgroundColor="#ffc9c9"
+                      className="ExpandableCard"
                       isExpanded={true}
+                      textColor="#f06078"
                     >
                       <div
-                        className="styles__Header-qa6j6v-1 fiKvFj"
+                        className="styles__Container-qa6j6v-0 bxtHMV ExpandableCard"
                       >
-                        <styles__Headline>
-                          <h3
-                            className="styles__Headline-qa6j6v-3 jljNbf"
-                          >
-                            profile:things-we-are-good-at.first-card.headline
-                          </h3>
-                        </styles__Headline>
-                        <styles__Toggle
-                          aria-label="expand card content button"
+                        <styles__Header
                           isExpanded={true}
-                          onClick={[Function]}
-                          textColor="#f06078"
                         >
-                          <button
-                            aria-label="expand card content button"
-                            className="styles__Toggle-qa6j6v-4 oOZiH"
-                            onClick={[Function]}
-                          >
-                            <Memo(RoundArrowIcon)>
-                              <svg
-                                height="100%"
-                                viewBox="0 0 40 40"
-                                width="100%"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <g
-                                  fill="none"
-                                >
-                                  <path
-                                    d="M20 40a20 20 0 1120-20 20 20 0 01-20 20z"
-                                  />
-                                  <path
-                                    d="M20 38.5c4.942 0 9.587-1.924 13.081-5.419A18.375 18.375 0 0038.5 20c0-4.942-1.924-9.587-5.419-13.081A18.375 18.375 0 0020 1.5 18.374 18.374 0 006.919 6.919 18.375 18.375 0 001.5 20c0 4.942 1.924 9.587 5.419 13.081A18.375 18.375 0 0020 38.5m0 1.5C8.954 40 0 31.046 0 20S8.954 0 20 0s20 8.954 20 20-8.954 20-20 20z"
-                                    fill="#f06078"
-                                  />
-                                </g>
-                                <path
-                                  d="M13.79 15.465l5.4-4.139v19.673h1.5V11.325l5.4 4.139.912-1.19-6.311-4.839-.045-.035h-1.41l-.045.034-6.312 4.839z"
-                                  fill="#f06078"
-                                />
-                              </svg>
-                            </Memo(RoundArrowIcon)>
-                          </button>
-                        </styles__Toggle>
-                      </div>
-                    </styles__Header>
-                    <styles__Content
-                      isExpanded={true}
-                    >
-                      <div
-                        className="styles__Content-qa6j6v-2 eBbzIZ"
-                      >
-                        <styles__ImageContainer>
                           <div
-                            className="styles__ImageContainer-qa6j6v-5 dFQBrB"
+                            className="styles__Header-qa6j6v-1 fiKvFj"
                           >
-                            <Memo(BlockchainIcon)>
-                              <svg
-                                height="100%"
-                                viewBox="0 0 280 280"
-                                width="100%"
-                                xmlns="http://www.w3.org/2000/svg"
+                            <styles__Headline>
+                              <h3
+                                className="styles__Headline-qa6j6v-3 jljNbf"
                               >
-                                <title>
-                                  blockchain@1x
-                                </title>
-                                <g
-                                  fill="none"
-                                  fillRule="evenodd"
-                                >
-                                  <g
-                                    fill="#F06078"
-                                    fillRule="nonzero"
+                                profile:things-we-are-good-at.first-card.headline
+                              </h3>
+                            </styles__Headline>
+                            <styles__Toggle
+                              aria-label="expand card content button"
+                              isExpanded={true}
+                              onClick={[Function]}
+                              textColor="#f06078"
+                            >
+                              <button
+                                aria-label="expand card content button"
+                                className="styles__Toggle-qa6j6v-4 oOZiH"
+                                onClick={[Function]}
+                              >
+                                <Memo(RoundArrowIcon)>
+                                  <svg
+                                    height="100%"
+                                    viewBox="0 0 40 40"
+                                    width="100%"
+                                    xmlns="http://www.w3.org/2000/svg"
                                   >
+                                    <g
+                                      fill="none"
+                                    >
+                                      <path
+                                        d="M20 40a20 20 0 1120-20 20 20 0 01-20 20z"
+                                      />
+                                      <path
+                                        d="M20 38.5c4.942 0 9.587-1.924 13.081-5.419A18.375 18.375 0 0038.5 20c0-4.942-1.924-9.587-5.419-13.081A18.375 18.375 0 0020 1.5 18.374 18.374 0 006.919 6.919 18.375 18.375 0 001.5 20c0 4.942 1.924 9.587 5.419 13.081A18.375 18.375 0 0020 38.5m0 1.5C8.954 40 0 31.046 0 20S8.954 0 20 0s20 8.954 20 20-8.954 20-20 20z"
+                                        fill="#f06078"
+                                      />
+                                    </g>
                                     <path
-                                      d="M84.976 87.703H46.361V49.06h38.615z"
-                                      style={
-                                        Object {
-                                          "mixBlendMode": "multiply",
-                                        }
-                                      }
+                                      d="M13.79 15.465l5.4-4.139v19.673h1.5V11.325l5.4 4.139.912-1.19-6.311-4.839-.045-.035h-1.41l-.045.034-6.312 4.839z"
+                                      fill="#f06078"
                                     />
-                                    <path
-                                      d="M117.68 113.972H65.668v-52.05h52.012z"
-                                    />
-                                    <path
-                                      d="M157.667 154.178H91.675v-66.04h65.992z"
-                                      style={
-                                        Object {
-                                          "mixBlendMode": "multiply",
-                                        }
-                                      }
-                                    />
-                                    <path
-                                      d="M236.033 232.482H124.67V121.04h111.363z"
-                                    />
-                                  </g>
-                                  <path
-                                    d="M91.674 88.139h26.006V114H91.674z"
-                                    fill="#E12438"
-                                  />
-                                </g>
-                              </svg>
-                            </Memo(BlockchainIcon)>
+                                  </svg>
+                                </Memo(RoundArrowIcon)>
+                              </button>
+                            </styles__Toggle>
                           </div>
-                        </styles__ImageContainer>
-                        <styles__Subheadline>
-                          <h4
-                            className="styles__Subheadline-qa6j6v-6 icxGOO"
-                          >
-                            profile:things-we-are-good-at.first-card.subheadline
-                          </h4>
-                        </styles__Subheadline>
-                        <styles__Description>
-                          <h5
-                            className="styles__Description-qa6j6v-7 dfLxeL"
-                          >
-                            profile:things-we-are-good-at.first-card.description
-                          </h5>
-                        </styles__Description>
-                      </div>
-                    </styles__Content>
-                  </div>
-                </styles__Container>
-              </Memo(ExpandableCard)>
-            </article>
-          </styles__FirstCard>
-          <styles__SecondCard>
-            <article
-              className="styles__SecondCard-sc-3xtj1d-4 jqlxyg"
-            >
-              <Memo(ExpandableCard)
-                backgroundColor="#f06078"
-                description="profile:things-we-are-good-at.second-card.description"
-                headline="profile:things-we-are-good-at.second-card.headline"
-                image={<Memo(CognitiveIcon) />}
-                isExpanded={false}
-                subheadline="profile:things-we-are-good-at.second-card.subheadline"
-                textColor="#ffffff"
-              >
-                <styles__Container
-                  backgroundColor="#f06078"
-                  className="ExpandableCard"
-                  isExpanded={false}
-                  textColor="#ffffff"
-                >
-                  <div
-                    className="styles__Container-qa6j6v-0 dyoVcF ExpandableCard"
-                  >
-                    <styles__Header
-                      isExpanded={false}
-                    >
-                      <div
-                        className="styles__Header-qa6j6v-1 kozwsZ"
-                      >
-                        <styles__Headline>
-                          <h3
-                            className="styles__Headline-qa6j6v-3 jljNbf"
-                          >
-                            profile:things-we-are-good-at.second-card.headline
-                          </h3>
-                        </styles__Headline>
-                        <styles__Toggle
-                          aria-label="expand card content button"
-                          isExpanded={false}
-                          onClick={[Function]}
-                          textColor="#ffffff"
+                        </styles__Header>
+                        <styles__Content
+                          isExpanded={true}
                         >
-                          <button
-                            aria-label="expand card content button"
-                            className="styles__Toggle-qa6j6v-4 euQgEa"
-                            onClick={[Function]}
-                          >
-                            <Memo(RoundArrowIcon)>
-                              <svg
-                                height="100%"
-                                viewBox="0 0 40 40"
-                                width="100%"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <g
-                                  fill="none"
-                                >
-                                  <path
-                                    d="M20 40a20 20 0 1120-20 20 20 0 01-20 20z"
-                                  />
-                                  <path
-                                    d="M20 38.5c4.942 0 9.587-1.924 13.081-5.419A18.375 18.375 0 0038.5 20c0-4.942-1.924-9.587-5.419-13.081A18.375 18.375 0 0020 1.5 18.374 18.374 0 006.919 6.919 18.375 18.375 0 001.5 20c0 4.942 1.924 9.587 5.419 13.081A18.375 18.375 0 0020 38.5m0 1.5C8.954 40 0 31.046 0 20S8.954 0 20 0s20 8.954 20 20-8.954 20-20 20z"
-                                    fill="#f06078"
-                                  />
-                                </g>
-                                <path
-                                  d="M13.79 15.465l5.4-4.139v19.673h1.5V11.325l5.4 4.139.912-1.19-6.311-4.839-.045-.035h-1.41l-.045.034-6.312 4.839z"
-                                  fill="#f06078"
-                                />
-                              </svg>
-                            </Memo(RoundArrowIcon)>
-                          </button>
-                        </styles__Toggle>
-                      </div>
-                    </styles__Header>
-                    <styles__Content
-                      isExpanded={false}
-                    >
-                      <div
-                        className="styles__Content-qa6j6v-2 lfJPFE"
-                      >
-                        <styles__ImageContainer>
                           <div
-                            className="styles__ImageContainer-qa6j6v-5 dFQBrB"
+                            className="styles__Content-qa6j6v-2 eBbzIZ"
                           >
-                            <Memo(CognitiveIcon)>
-                              <svg
-                                height="100%"
-                                viewBox="0 0 280 280"
-                                width="100%"
-                                xmlns="http://www.w3.org/2000/svg"
+                            <styles__ImageContainer>
+                              <div
+                                className="styles__ImageContainer-qa6j6v-5 dFQBrB"
                               >
-                                <title>
-                                  cognitives@1x
-                                </title>
-                                <g
-                                  fill="#FFC9C9"
-                                  fillRule="nonzero"
-                                  transform="translate(-1 94)"
-                                >
-                                  <path
-                                    d="M137.098 0h92.046v92.047h-92.046z"
-                                  />
-                                  <path
-                                    d="M45.985 0h92.046v92.047H45.985z"
-                                  />
-                                  <path
-                                    d="M229.144.001l-53.143 92.046h106.286z"
-                                    style={
-                                      Object {
-                                        "mixBlendMode": "multiply",
-                                      }
-                                    }
-                                  />
-                                  <circle
-                                    cx={45.985}
-                                    cy={46.024}
-                                    r={45.985}
-                                    style={
-                                      Object {
-                                        "mixBlendMode": "multiply",
-                                      }
-                                    }
-                                  />
-                                </g>
-                              </svg>
-                            </Memo(CognitiveIcon)>
+                                <Memo(BlockchainIcon)>
+                                  <svg
+                                    height="100%"
+                                    viewBox="0 0 280 280"
+                                    width="100%"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <title>
+                                      blockchain@1x
+                                    </title>
+                                    <g
+                                      fill="none"
+                                      fillRule="evenodd"
+                                    >
+                                      <g
+                                        fill="#F06078"
+                                        fillRule="nonzero"
+                                      >
+                                        <path
+                                          d="M84.976 87.703H46.361V49.06h38.615z"
+                                          style={
+                                            Object {
+                                              "mixBlendMode": "multiply",
+                                            }
+                                          }
+                                        />
+                                        <path
+                                          d="M117.68 113.972H65.668v-52.05h52.012z"
+                                        />
+                                        <path
+                                          d="M157.667 154.178H91.675v-66.04h65.992z"
+                                          style={
+                                            Object {
+                                              "mixBlendMode": "multiply",
+                                            }
+                                          }
+                                        />
+                                        <path
+                                          d="M236.033 232.482H124.67V121.04h111.363z"
+                                        />
+                                      </g>
+                                      <path
+                                        d="M91.674 88.139h26.006V114H91.674z"
+                                        fill="#E12438"
+                                      />
+                                    </g>
+                                  </svg>
+                                </Memo(BlockchainIcon)>
+                              </div>
+                            </styles__ImageContainer>
+                            <styles__Subheadline>
+                              <h4
+                                className="styles__Subheadline-qa6j6v-6 icxGOO"
+                              >
+                                profile:things-we-are-good-at.first-card.subheadline
+                              </h4>
+                            </styles__Subheadline>
+                            <styles__Description>
+                              <h5
+                                className="styles__Description-qa6j6v-7 dfLxeL"
+                              >
+                                profile:things-we-are-good-at.first-card.description
+                              </h5>
+                            </styles__Description>
                           </div>
-                        </styles__ImageContainer>
-                        <styles__Subheadline>
-                          <h4
-                            className="styles__Subheadline-qa6j6v-6 icxGOO"
-                          >
-                            profile:things-we-are-good-at.second-card.subheadline
-                          </h4>
-                        </styles__Subheadline>
-                        <styles__Description>
-                          <h5
-                            className="styles__Description-qa6j6v-7 dfLxeL"
-                          >
-                            profile:things-we-are-good-at.second-card.description
-                          </h5>
-                        </styles__Description>
+                        </styles__Content>
                       </div>
-                    </styles__Content>
-                  </div>
-                </styles__Container>
-              </Memo(ExpandableCard)>
-            </article>
-          </styles__SecondCard>
-          <styles__ThirdCard>
-            <article
-              className="styles__ThirdCard-sc-3xtj1d-5 jwTsKt"
-            >
-              <Memo(ExpandableCard)
-                backgroundColor="#8fd0c8"
-                description="profile:things-we-are-good-at.third-card.description"
-                headline="profile:things-we-are-good-at.third-card.headline"
-                image={<Memo(ConversationalIcon) />}
-                isExpanded={false}
-                subheadline="profile:things-we-are-good-at.third-card.subheadline"
-                textColor="#6666ff"
-              >
-                <styles__Container
-                  backgroundColor="#8fd0c8"
-                  className="ExpandableCard"
-                  isExpanded={false}
-                  textColor="#6666ff"
+                    </styles__Container>
+                  </Memo(ExpandableCard)>
+                </article>
+              </styles__FirstCard>
+              <styles__SecondCard>
+                <article
+                  className="styles__SecondCard-sc-3xtj1d-5 dtjNzZ"
                 >
-                  <div
-                    className="styles__Container-qa6j6v-0 ioGXdn ExpandableCard"
+                  <Memo(ExpandableCard)
+                    backgroundColor="#f06078"
+                    description="profile:things-we-are-good-at.second-card.description"
+                    headline="profile:things-we-are-good-at.second-card.headline"
+                    image={<Memo(CognitiveIcon) />}
+                    isExpanded={false}
+                    subheadline="profile:things-we-are-good-at.second-card.subheadline"
+                    textColor="#ffffff"
                   >
-                    <styles__Header
+                    <styles__Container
+                      backgroundColor="#f06078"
+                      className="ExpandableCard"
                       isExpanded={false}
+                      textColor="#ffffff"
                     >
                       <div
-                        className="styles__Header-qa6j6v-1 kozwsZ"
+                        className="styles__Container-qa6j6v-0 dyoVcF ExpandableCard"
                       >
-                        <styles__Headline>
-                          <h3
-                            className="styles__Headline-qa6j6v-3 jljNbf"
-                          >
-                            profile:things-we-are-good-at.third-card.headline
-                          </h3>
-                        </styles__Headline>
-                        <styles__Toggle
-                          aria-label="expand card content button"
+                        <styles__Header
                           isExpanded={false}
-                          onClick={[Function]}
-                          textColor="#6666ff"
                         >
-                          <button
-                            aria-label="expand card content button"
-                            className="styles__Toggle-qa6j6v-4 jCmDwW"
-                            onClick={[Function]}
+                          <div
+                            className="styles__Header-qa6j6v-1 kozwsZ"
                           >
-                            <Memo(RoundArrowIcon)>
-                              <svg
-                                height="100%"
-                                viewBox="0 0 40 40"
-                                width="100%"
-                                xmlns="http://www.w3.org/2000/svg"
+                            <styles__Headline>
+                              <h3
+                                className="styles__Headline-qa6j6v-3 jljNbf"
                               >
-                                <g
-                                  fill="none"
-                                >
-                                  <path
-                                    d="M20 40a20 20 0 1120-20 20 20 0 01-20 20z"
-                                  />
-                                  <path
-                                    d="M20 38.5c4.942 0 9.587-1.924 13.081-5.419A18.375 18.375 0 0038.5 20c0-4.942-1.924-9.587-5.419-13.081A18.375 18.375 0 0020 1.5 18.374 18.374 0 006.919 6.919 18.375 18.375 0 001.5 20c0 4.942 1.924 9.587 5.419 13.081A18.375 18.375 0 0020 38.5m0 1.5C8.954 40 0 31.046 0 20S8.954 0 20 0s20 8.954 20 20-8.954 20-20 20z"
-                                    fill="#f06078"
-                                  />
-                                </g>
-                                <path
-                                  d="M13.79 15.465l5.4-4.139v19.673h1.5V11.325l5.4 4.139.912-1.19-6.311-4.839-.045-.035h-1.41l-.045.034-6.312 4.839z"
-                                  fill="#f06078"
-                                />
-                              </svg>
-                            </Memo(RoundArrowIcon)>
-                          </button>
-                        </styles__Toggle>
+                                profile:things-we-are-good-at.second-card.headline
+                              </h3>
+                            </styles__Headline>
+                            <styles__Toggle
+                              aria-label="expand card content button"
+                              isExpanded={false}
+                              onClick={[Function]}
+                              textColor="#ffffff"
+                            >
+                              <button
+                                aria-label="expand card content button"
+                                className="styles__Toggle-qa6j6v-4 euQgEa"
+                                onClick={[Function]}
+                              >
+                                <Memo(RoundArrowIcon)>
+                                  <svg
+                                    height="100%"
+                                    viewBox="0 0 40 40"
+                                    width="100%"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g
+                                      fill="none"
+                                    >
+                                      <path
+                                        d="M20 40a20 20 0 1120-20 20 20 0 01-20 20z"
+                                      />
+                                      <path
+                                        d="M20 38.5c4.942 0 9.587-1.924 13.081-5.419A18.375 18.375 0 0038.5 20c0-4.942-1.924-9.587-5.419-13.081A18.375 18.375 0 0020 1.5 18.374 18.374 0 006.919 6.919 18.375 18.375 0 001.5 20c0 4.942 1.924 9.587 5.419 13.081A18.375 18.375 0 0020 38.5m0 1.5C8.954 40 0 31.046 0 20S8.954 0 20 0s20 8.954 20 20-8.954 20-20 20z"
+                                        fill="#f06078"
+                                      />
+                                    </g>
+                                    <path
+                                      d="M13.79 15.465l5.4-4.139v19.673h1.5V11.325l5.4 4.139.912-1.19-6.311-4.839-.045-.035h-1.41l-.045.034-6.312 4.839z"
+                                      fill="#f06078"
+                                    />
+                                  </svg>
+                                </Memo(RoundArrowIcon)>
+                              </button>
+                            </styles__Toggle>
+                          </div>
+                        </styles__Header>
+                        <styles__Content
+                          isExpanded={false}
+                        >
+                          <div
+                            className="styles__Content-qa6j6v-2 lfJPFE"
+                          >
+                            <styles__ImageContainer>
+                              <div
+                                className="styles__ImageContainer-qa6j6v-5 dFQBrB"
+                              >
+                                <Memo(CognitiveIcon)>
+                                  <svg
+                                    height="100%"
+                                    viewBox="0 0 280 280"
+                                    width="100%"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <title>
+                                      cognitives@1x
+                                    </title>
+                                    <g
+                                      fill="#FFC9C9"
+                                      fillRule="nonzero"
+                                      transform="translate(-1 94)"
+                                    >
+                                      <path
+                                        d="M137.098 0h92.046v92.047h-92.046z"
+                                      />
+                                      <path
+                                        d="M45.985 0h92.046v92.047H45.985z"
+                                      />
+                                      <path
+                                        d="M229.144.001l-53.143 92.046h106.286z"
+                                        style={
+                                          Object {
+                                            "mixBlendMode": "multiply",
+                                          }
+                                        }
+                                      />
+                                      <circle
+                                        cx={45.985}
+                                        cy={46.024}
+                                        r={45.985}
+                                        style={
+                                          Object {
+                                            "mixBlendMode": "multiply",
+                                          }
+                                        }
+                                      />
+                                    </g>
+                                  </svg>
+                                </Memo(CognitiveIcon)>
+                              </div>
+                            </styles__ImageContainer>
+                            <styles__Subheadline>
+                              <h4
+                                className="styles__Subheadline-qa6j6v-6 icxGOO"
+                              >
+                                profile:things-we-are-good-at.second-card.subheadline
+                              </h4>
+                            </styles__Subheadline>
+                            <styles__Description>
+                              <h5
+                                className="styles__Description-qa6j6v-7 dfLxeL"
+                              >
+                                profile:things-we-are-good-at.second-card.description
+                              </h5>
+                            </styles__Description>
+                          </div>
+                        </styles__Content>
                       </div>
-                    </styles__Header>
-                    <styles__Content
+                    </styles__Container>
+                  </Memo(ExpandableCard)>
+                </article>
+              </styles__SecondCard>
+              <styles__ThirdCard>
+                <article
+                  className="styles__ThirdCard-sc-3xtj1d-6 fxJHtu"
+                >
+                  <Memo(ExpandableCard)
+                    backgroundColor="#8fd0c8"
+                    description="profile:things-we-are-good-at.third-card.description"
+                    headline="profile:things-we-are-good-at.third-card.headline"
+                    image={<Memo(ConversationalIcon) />}
+                    isExpanded={false}
+                    subheadline="profile:things-we-are-good-at.third-card.subheadline"
+                    textColor="#6666ff"
+                  >
+                    <styles__Container
+                      backgroundColor="#8fd0c8"
+                      className="ExpandableCard"
                       isExpanded={false}
+                      textColor="#6666ff"
                     >
                       <div
-                        className="styles__Content-qa6j6v-2 lfJPFE"
+                        className="styles__Container-qa6j6v-0 ioGXdn ExpandableCard"
                       >
-                        <styles__ImageContainer>
+                        <styles__Header
+                          isExpanded={false}
+                        >
                           <div
-                            className="styles__ImageContainer-qa6j6v-5 dFQBrB"
+                            className="styles__Header-qa6j6v-1 kozwsZ"
                           >
-                            <Memo(ConversationalIcon)>
-                              <svg
-                                height="100%"
-                                viewBox="0 0 280 280"
-                                width="100%"
-                                xmlns="http://www.w3.org/2000/svg"
+                            <styles__Headline>
+                              <h3
+                                className="styles__Headline-qa6j6v-3 jljNbf"
                               >
-                                <title>
-                                  conversational@1x
-                                </title>
-                                <g
-                                  fill="#66F"
-                                  fillRule="nonzero"
-                                  transform="translate(34 46)"
-                                >
-                                  <circle
-                                    cx={59.263}
-                                    cy={128.993}
-                                    r={59.263}
-                                  />
-                                  <path
-                                    d="M59.269 24.45h118.526v118.526H59.269z"
-                                    style={
-                                      Object {
-                                        "mixBlendMode": "multiply",
-                                      }
-                                    }
-                                  />
-                                  <circle
-                                    cx={177.79}
-                                    cy={35.119}
-                                    r={35.119}
-                                  />
-                                </g>
-                              </svg>
-                            </Memo(ConversationalIcon)>
+                                profile:things-we-are-good-at.third-card.headline
+                              </h3>
+                            </styles__Headline>
+                            <styles__Toggle
+                              aria-label="expand card content button"
+                              isExpanded={false}
+                              onClick={[Function]}
+                              textColor="#6666ff"
+                            >
+                              <button
+                                aria-label="expand card content button"
+                                className="styles__Toggle-qa6j6v-4 jCmDwW"
+                                onClick={[Function]}
+                              >
+                                <Memo(RoundArrowIcon)>
+                                  <svg
+                                    height="100%"
+                                    viewBox="0 0 40 40"
+                                    width="100%"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g
+                                      fill="none"
+                                    >
+                                      <path
+                                        d="M20 40a20 20 0 1120-20 20 20 0 01-20 20z"
+                                      />
+                                      <path
+                                        d="M20 38.5c4.942 0 9.587-1.924 13.081-5.419A18.375 18.375 0 0038.5 20c0-4.942-1.924-9.587-5.419-13.081A18.375 18.375 0 0020 1.5 18.374 18.374 0 006.919 6.919 18.375 18.375 0 001.5 20c0 4.942 1.924 9.587 5.419 13.081A18.375 18.375 0 0020 38.5m0 1.5C8.954 40 0 31.046 0 20S8.954 0 20 0s20 8.954 20 20-8.954 20-20 20z"
+                                        fill="#f06078"
+                                      />
+                                    </g>
+                                    <path
+                                      d="M13.79 15.465l5.4-4.139v19.673h1.5V11.325l5.4 4.139.912-1.19-6.311-4.839-.045-.035h-1.41l-.045.034-6.312 4.839z"
+                                      fill="#f06078"
+                                    />
+                                  </svg>
+                                </Memo(RoundArrowIcon)>
+                              </button>
+                            </styles__Toggle>
                           </div>
-                        </styles__ImageContainer>
-                        <styles__Subheadline>
-                          <h4
-                            className="styles__Subheadline-qa6j6v-6 icxGOO"
+                        </styles__Header>
+                        <styles__Content
+                          isExpanded={false}
+                        >
+                          <div
+                            className="styles__Content-qa6j6v-2 lfJPFE"
                           >
-                            profile:things-we-are-good-at.third-card.subheadline
-                          </h4>
-                        </styles__Subheadline>
-                        <styles__Description>
-                          <h5
-                            className="styles__Description-qa6j6v-7 dfLxeL"
-                          >
-                            profile:things-we-are-good-at.third-card.description
-                          </h5>
-                        </styles__Description>
+                            <styles__ImageContainer>
+                              <div
+                                className="styles__ImageContainer-qa6j6v-5 dFQBrB"
+                              >
+                                <Memo(ConversationalIcon)>
+                                  <svg
+                                    height="100%"
+                                    viewBox="0 0 280 280"
+                                    width="100%"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <title>
+                                      conversational@1x
+                                    </title>
+                                    <g
+                                      fill="#66F"
+                                      fillRule="nonzero"
+                                      transform="translate(34 46)"
+                                    >
+                                      <circle
+                                        cx={59.263}
+                                        cy={128.993}
+                                        r={59.263}
+                                      />
+                                      <path
+                                        d="M59.269 24.45h118.526v118.526H59.269z"
+                                        style={
+                                          Object {
+                                            "mixBlendMode": "multiply",
+                                          }
+                                        }
+                                      />
+                                      <circle
+                                        cx={177.79}
+                                        cy={35.119}
+                                        r={35.119}
+                                      />
+                                    </g>
+                                  </svg>
+                                </Memo(ConversationalIcon)>
+                              </div>
+                            </styles__ImageContainer>
+                            <styles__Subheadline>
+                              <h4
+                                className="styles__Subheadline-qa6j6v-6 icxGOO"
+                              >
+                                profile:things-we-are-good-at.third-card.subheadline
+                              </h4>
+                            </styles__Subheadline>
+                            <styles__Description>
+                              <h5
+                                className="styles__Description-qa6j6v-7 dfLxeL"
+                              >
+                                profile:things-we-are-good-at.third-card.description
+                              </h5>
+                            </styles__Description>
+                          </div>
+                        </styles__Content>
                       </div>
-                    </styles__Content>
-                  </div>
-                </styles__Container>
-              </Memo(ExpandableCard)>
-            </article>
-          </styles__ThirdCard>
+                    </styles__Container>
+                  </Memo(ExpandableCard)>
+                </article>
+              </styles__ThirdCard>
+            </div>
+          </styles__CardsContainer>
         </div>
-      </styles__CardsContainer>
+      </styles__Container>
     </div>
-  </styles__Container>
+  </styles__BgContainer>
 </Memo(ThingsWeAreGoodAt)>
 `;

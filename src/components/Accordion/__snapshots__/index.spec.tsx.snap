@@ -69,41 +69,90 @@ exports[`<Accordion /> should render 1`] = `
     <styles__SectionContentContainer
       isExpanded={true}
     >
-      <styles__SectionElement
+      <styles__SectionElementContainer
         key="0"
       >
-        Cypress
-      </styles__SectionElement>
-      <styles__SectionElement
+        <styles__SectionRowElementContainer>
+          <i>
+             -  
+          </i>
+          <styles__SectionElement>
+            Cypress
+          </styles__SectionElement>
+        </styles__SectionRowElementContainer>
+      </styles__SectionElementContainer>
+      <styles__SectionElementContainer
         key="1"
       >
-        Jest
-      </styles__SectionElement>
-      <styles__SectionElement
+        <styles__SectionRowElementContainer>
+          <i>
+             -  
+          </i>
+          <styles__SectionElement>
+            Jest
+          </styles__SectionElement>
+        </styles__SectionRowElementContainer>
+      </styles__SectionElementContainer>
+      <styles__SectionElementContainer
         key="2"
       >
-        Redux
-      </styles__SectionElement>
-      <styles__SectionElement
+        <styles__SectionRowElementContainer>
+          <i>
+             -  
+          </i>
+          <styles__SectionElement>
+            Redux
+          </styles__SectionElement>
+        </styles__SectionRowElementContainer>
+      </styles__SectionElementContainer>
+      <styles__SectionElementContainer
         key="3"
       >
-        Fabric
-      </styles__SectionElement>
-      <styles__SectionElement
+        <styles__SectionRowElementContainer>
+          <i>
+             -  
+          </i>
+          <styles__SectionElement>
+            Fabric
+          </styles__SectionElement>
+        </styles__SectionRowElementContainer>
+      </styles__SectionElementContainer>
+      <styles__SectionElementContainer
         key="4"
       >
-        Hyperledger Besu
-      </styles__SectionElement>
-      <styles__SectionElement
+        <styles__SectionRowElementContainer>
+          <i>
+             -  
+          </i>
+          <styles__SectionElement>
+            Hyperledger Besu
+          </styles__SectionElement>
+        </styles__SectionRowElementContainer>
+      </styles__SectionElementContainer>
+      <styles__SectionElementContainer
         key="5"
       >
-        Quorum
-      </styles__SectionElement>
-      <styles__SectionElement
+        <styles__SectionRowElementContainer>
+          <i>
+             -  
+          </i>
+          <styles__SectionElement>
+            Quorum
+          </styles__SectionElement>
+        </styles__SectionRowElementContainer>
+      </styles__SectionElementContainer>
+      <styles__SectionElementContainer
         key="6"
       >
-        web3
-      </styles__SectionElement>
+        <styles__SectionRowElementContainer>
+          <i>
+             -  
+          </i>
+          <styles__SectionElement>
+            web3
+          </styles__SectionElement>
+        </styles__SectionRowElementContainer>
+      </styles__SectionElementContainer>
     </styles__SectionContentContainer>
     <styles__Separator
       className="accordion-separator"
@@ -163,41 +212,90 @@ exports[`<Accordion /> should render 1`] = `
     <styles__SectionContentContainer
       isExpanded={false}
     >
-      <styles__SectionElement
+      <styles__SectionElementContainer
         key="0"
       >
-        Cypress
-      </styles__SectionElement>
-      <styles__SectionElement
+        <styles__SectionRowElementContainer>
+          <i>
+             -  
+          </i>
+          <styles__SectionElement>
+            Cypress
+          </styles__SectionElement>
+        </styles__SectionRowElementContainer>
+      </styles__SectionElementContainer>
+      <styles__SectionElementContainer
         key="1"
       >
-        Jest
-      </styles__SectionElement>
-      <styles__SectionElement
+        <styles__SectionRowElementContainer>
+          <i>
+             -  
+          </i>
+          <styles__SectionElement>
+            Jest
+          </styles__SectionElement>
+        </styles__SectionRowElementContainer>
+      </styles__SectionElementContainer>
+      <styles__SectionElementContainer
         key="2"
       >
-        Redux
-      </styles__SectionElement>
-      <styles__SectionElement
+        <styles__SectionRowElementContainer>
+          <i>
+             -  
+          </i>
+          <styles__SectionElement>
+            Redux
+          </styles__SectionElement>
+        </styles__SectionRowElementContainer>
+      </styles__SectionElementContainer>
+      <styles__SectionElementContainer
         key="3"
       >
-        Fabric
-      </styles__SectionElement>
-      <styles__SectionElement
+        <styles__SectionRowElementContainer>
+          <i>
+             -  
+          </i>
+          <styles__SectionElement>
+            Fabric
+          </styles__SectionElement>
+        </styles__SectionRowElementContainer>
+      </styles__SectionElementContainer>
+      <styles__SectionElementContainer
         key="4"
       >
-        Hyperledger Besu
-      </styles__SectionElement>
-      <styles__SectionElement
+        <styles__SectionRowElementContainer>
+          <i>
+             -  
+          </i>
+          <styles__SectionElement>
+            Hyperledger Besu
+          </styles__SectionElement>
+        </styles__SectionRowElementContainer>
+      </styles__SectionElementContainer>
+      <styles__SectionElementContainer
         key="5"
       >
-        Quorum
-      </styles__SectionElement>
-      <styles__SectionElement
+        <styles__SectionRowElementContainer>
+          <i>
+             -  
+          </i>
+          <styles__SectionElement>
+            Quorum
+          </styles__SectionElement>
+        </styles__SectionRowElementContainer>
+      </styles__SectionElementContainer>
+      <styles__SectionElementContainer
         key="6"
       >
-        web3
-      </styles__SectionElement>
+        <styles__SectionRowElementContainer>
+          <i>
+             -  
+          </i>
+          <styles__SectionElement>
+            web3
+          </styles__SectionElement>
+        </styles__SectionRowElementContainer>
+      </styles__SectionElementContainer>
     </styles__SectionContentContainer>
     <styles__Separator
       className="accordion-separator"

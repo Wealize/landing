@@ -20,20 +20,16 @@ export const Container = styled.section`
   `};
 
   ${media.greaterThan('lg')`
-    ${CONTAINER_SPACING.WIDE};
+    ${CONTAINER_SPACING.SMALL_DESKTOP};
   `};
 
   ${media.greaterThan('xl')`
-    padding-top: ${quadruplePx()};
-    padding-bottom: ${quadruplePx()};
-    padding-left: ${quadruplePx()};
+    ${CONTAINER_SPACING.DESKTOP};
     padding-right: ${quadruple() * 5}px;
   `};
 
   ${media.greaterThan('xxl')`
-    padding-top: ${quadruplePx()};
-    padding-bottom: ${quadruplePx()};
-    padding-left: ${quadruplePx()};
+    ${CONTAINER_SPACING.WIDE};
     padding-right: ${quadruple() * 7}px;
   `};
 `

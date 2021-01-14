@@ -30,9 +30,7 @@ const Profile = (): JSX.Element => {
         </StartedContainer>
         <ServicesAndVentures/>
       </ContainerOverflowHidden>
-      <ContainerOverflowHidden>
-        <ThingsWeAreGoodAt />
-      </ContainerOverflowHidden>
+      <ThingsWeAreGoodAt />
       <WeDeliver />
       <WealizeInANutshell highlightColor={ACCENT_COLOR} />
       <Talents />

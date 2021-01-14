@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
-import { singlePx, singleAndHalfPx, doublePx, doubleAndHalfPx, triplePx, quadruplePx } from '../../theme/space'
+import { halfPx, singlePx, singleAndHalfPx, doublePx, doubleAndHalfPx, triplePx, quadruplePx } from '../../theme/space'
 import { media } from '../../theme/media'
 import { CONTAINER_SPACING } from '../../theme/spacingGuide'
+import { WHITE_COLOR, GRAY_300_COLOR } from '../../theme/color'
 
 
 export const Container = styled.div`
@@ -10,6 +11,7 @@ export const Container = styled.div`
   width: 100%;
   flex-direction: column;
   justify-content: center;
+  background-color: ${WHITE_COLOR};
   ${CONTAINER_SPACING.MOBILE}
 
   ${media.greaterThan('md')`
@@ -81,6 +83,7 @@ export const SectionTitle = styled.h4`
   font-size: 1.1rem;
   font-weight: bold;
   padding-top: ${doubleAndHalfPx()};
+  letter-spacing: 1.44px;
 
   ${media.greaterThan('lg')`
     font-size: 1.2rem;
@@ -98,6 +101,7 @@ export const CardContainer = styled.div`
 export const CardHeadline = styled.div`
   font-size: 1.6rem;
   line-height: 1.52;
+  padding: ${halfPx()} 0;
 
   ${media.greaterThan('lg')`
     font-size: 1.8rem;
@@ -111,12 +115,13 @@ export const CardHeadline = styled.div`
 export const CardDescription = styled.h5`
   font-size: 1.1rem;
   line-height: 1.52;
+  color: ${GRAY_300_COLOR};
 
   ${media.greaterThan('lg')`
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   `};
 
   ${media.greaterThan('xl')`
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   `};
 `

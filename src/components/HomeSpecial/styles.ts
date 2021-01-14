@@ -56,13 +56,13 @@ export const Background = styled.div`
 
   ${media.greaterThan('xl')`
     width: 50%;
-    bottom: -30%;
+    bottom: -20%;
     height: 90%;
   `};
 
   ${media.greaterThan('xxxl')`
     width: 45%;
-    bottom: -45%;
+    bottom: -35%;
     height: 100%;
   `};
 `
@@ -75,7 +75,7 @@ export const Button = styled.button`
   border: none;
   border-radius: 50%;
   position: absolute;
-  bottom: 82%;
+  bottom: 85%;
   right: 10%;
   cursor: pointer;
   z-index: 2;
