@@ -82,6 +82,10 @@ export const Headline = styled.h3`
   ${media.greaterThan('md')`
     font-size: 1.2rem;
   `};
+
+  ${media.greaterThan('lg')`
+    font-size: 1.3rem;
+  `};
 `
 
 export const Toggle = styled.button<{

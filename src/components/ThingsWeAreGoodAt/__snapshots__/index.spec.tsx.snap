@@ -51,7 +51,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                           >
                             <styles__Headline>
                               <h3
-                                className="styles__Headline-qa6j6v-3 kvZrWG"
+                                className="styles__Headline-qa6j6v-3 bTfiDn"
                               >
                                 profile:things-we-are-good-at.first-card.headline
                               </h3>
@@ -206,7 +206,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                           >
                             <styles__Headline>
                               <h3
-                                className="styles__Headline-qa6j6v-3 kvZrWG"
+                                className="styles__Headline-qa6j6v-3 bTfiDn"
                               >
                                 profile:things-we-are-good-at.second-card.headline
                               </h3>
@@ -355,7 +355,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                           >
                             <styles__Headline>
                               <h3
-                                className="styles__Headline-qa6j6v-3 kvZrWG"
+                                className="styles__Headline-qa6j6v-3 bTfiDn"
                               >
                                 profile:things-we-are-good-at.third-card.headline
                               </h3>
