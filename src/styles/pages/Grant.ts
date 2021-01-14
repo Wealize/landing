@@ -5,7 +5,6 @@ import {
   halfPx,
   singlePx,
   doublePx,
-  quadruplePx,
   quadruple
 } from '../../theme/space'
 import { media } from '../../theme/media'

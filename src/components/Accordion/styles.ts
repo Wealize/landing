@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { sixthPx, halfPx, twoThirdPx, singlePx, singleAndHalfPx, doublePx, quadruplePx, quadruple } from '../../theme/space'
+import { halfPx, twoThirdPx, singlePx, singleAndHalfPx, doublePx, quadruplePx, quadruple } from '../../theme/space'
 import { media } from '../../theme/media'
 import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 
