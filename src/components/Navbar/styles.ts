@@ -109,13 +109,7 @@ export const NavLink = styled.a<{ isCurrentPage: boolean }>`
     text-transform: uppercase;
   }
 
-  ${media.greaterThan('md')`
-    font-size: 1.2rem;
-  `}
-
   ${media.greaterThan('lg')`
-    font-size: 1.3rem;
-
     &:hover {
       border-bottom: 3px solid ${ACCENT_COLOR};
     }

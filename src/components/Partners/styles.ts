@@ -49,26 +49,19 @@ export const Content = styled.div`
   `};
 `
 export const TextContent = styled.h5`
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.32;
   color: ${DARK_GRAY_COLOR};
 
   ${media.greaterThan('md')`
-    font-size: 2.2rem;
     line-height: 1.35;
   `};
 
   ${media.greaterThan('lg')`
-    font-size: 2.5rem;
   `};
 
   ${media.greaterThan('xl')`
-    font-size: 2.7rem;
     width: 60%;
-  `};
-
-  ${media.greaterThan('xxl')`
-    font-size: 3rem;
   `};
 `
 

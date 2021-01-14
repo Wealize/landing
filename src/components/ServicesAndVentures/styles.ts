@@ -42,12 +42,10 @@ export const Title = styled.h3`
 
   ${media.greaterThan('lg')`
     width: 60%;
-    font-size: 2.1rem
   `};
 
   ${media.greaterThan('xl')`
     width: 55%;
-    font-size: 2.5rem
   `};
 `
 
@@ -84,14 +82,6 @@ export const SectionTitle = styled.h4`
   font-weight: bold;
   padding-top: ${doubleAndHalfPx()};
   letter-spacing: 1.44px;
-
-  ${media.greaterThan('lg')`
-    font-size: 1.2rem;
-  `};
-
-  ${media.greaterThan('xl')`
-    font-size: 1.3rem;
-  `};
 `
 
 export const CardContainer = styled.div`
@@ -106,10 +96,6 @@ export const CardHeadline = styled.div`
   ${media.greaterThan('lg')`
     font-size: 1.8rem;
   `};
-
-  ${media.greaterThan('xl')`
-    font-size: 1.9rem;
-  `};
 `
 
 export const CardDescription = styled.h5`
@@ -117,11 +103,7 @@ export const CardDescription = styled.h5`
   line-height: 1.52;
   color: ${GRAY_300_COLOR};
 
-  ${media.greaterThan('lg')`
-    font-size: 1.3rem;
-  `};
-
   ${media.greaterThan('xl')`
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   `};
 `

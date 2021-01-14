@@ -94,12 +94,15 @@ export const StartedDescription = styled.div`
     width: 70%;
   `};
 
+  ${media.greaterThan('lg')`
+    font-size: 3.5rem;
+  `};
+
   ${media.greaterThan('xl')`
-    font-size: 3rem;
+    font-size: 3.7rem;
   `};
 
   ${media.greaterThan('xxl')`
     width: 55%;
-    font-size: 4rem;
   `};
 `

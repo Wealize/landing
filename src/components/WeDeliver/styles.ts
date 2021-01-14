@@ -37,7 +37,7 @@ export const Title = styled.h5`
 
 
   ${media.greaterThan('lg')`
-    font-size: 2rem;
+    font-size: 1.1rem;
     margin-bottom: ${doublePx()};
   `};
 `

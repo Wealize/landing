@@ -99,7 +99,7 @@ export const ContainerGetInTouch = styled.div`
 
 export const ContainerLogo = styled.div`
   display: flex;
-  width: 30%;
+  width: 25%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -130,18 +130,12 @@ export const BigText = styled.h5`
   font-size: 1.6rem;
   line-height: 1.33;
 
-
   ${media.greaterThan('lg')`
-    font-size: 2rem;
+    font-size: 2.5rem;
   `};
 
   ${media.greaterThan('xl')`
-    font-size: 2.4rem;
     min-height: 270px;
-  `};
-
-  ${media.greaterThan('xxl')`
-    font-size: 2.5rem;
   `};
 `
 

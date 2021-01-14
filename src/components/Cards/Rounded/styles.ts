@@ -87,17 +87,10 @@ export const Content = styled.div`
 export const Title = styled.h4`
   letter-spacing: 1.35px;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
   padding: 0 0 ${singlePx()} 0;
 
-  ${media.greaterThan('md')`
-    font-size: 1.2rem;
-  `};
-
-  ${media.greaterThan('lg')`
-    font-size: 1.5rem;
-  `};
 
   ${media.greaterThan('xxl')`
     max-width: 65%;
@@ -108,12 +101,10 @@ export const Description = styled.p`
   line-height: 1.5;
   font-size: 1rem;
 
-  ${media.greaterThan('md')`
-    font-size: 1.2rem;
-  `};
 
   ${media.greaterThan('xxl')`
     max-width: 65%;
+    font-size: 18px;
   `};
 `
 
@@ -160,4 +151,5 @@ export const Tag = styled.span<{ hasPrimary: boolean }>`
   border: 1px solid ${({ hasPrimary }) => (hasPrimary ? WHITE_COLOR : DARK_GRAY_COLOR)};
   margin-top: -1px;
   margin-left: -1px;
+  font-size: 0.9rem;
 `

@@ -41,7 +41,7 @@ export const Headline = styled.span`
   `};
 
   ${media.greaterThan('xl')`
-    font-size: 4rem;
+    font-size: 3.7rem;
   `};
 `
 
@@ -54,9 +54,5 @@ export const SubHeadline = styled.h5`
   ${media.greaterThan('md')`
     padding: ${doublePx()} 0;
     font-size: 1.8rem;
-  `};
-
-  ${media.greaterThan('xl')`
-    font-size: 2.3rem;
   `};
 `

@@ -56,19 +56,15 @@ export const Title = styled.h3`
   text-transform: uppercase;
 
   ${media.greaterThan('md')`
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding-left: ${doublePx()};
     padding-bottom: ${triplePx()};
   `};
 
   ${media.greaterThan('lg')`
     padding: ${doublePx()} ${doublePx()} ${quadruplePx()};
-    font-size: 1.5rem;
   `};
 
-  ${media.greaterThan('xl')`
-    font-size: 2rem;
-  `};
 `
 
 export const CardsContainer = styled.div`

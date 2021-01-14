@@ -44,25 +44,25 @@ export const Background = styled.div`
 
   ${media.greaterThan('md')`
     width: 70%;
-    bottom: -15%;
+    bottom: -5%;
     height: 80%;
   `};
 
   ${media.greaterThan('lg')`
     width: 55%;
-    bottom: -25%;
+    bottom: -5%;
     height: 90%;
   `};
 
   ${media.greaterThan('xl')`
     width: 50%;
-    bottom: -20%;
+    bottom: -5%;
     height: 90%;
   `};
 
   ${media.greaterThan('xxxl')`
     width: 45%;
-    bottom: -35%;
+    bottom: -20%;
     height: 100%;
   `};
 `
@@ -162,10 +162,6 @@ export const Headline = styled.h1`
 
   ${media.greaterThan('md')`
     font-size: 1.5rem;
-  `};
-
-  ${media.greaterThan('xl')`
-    font-size: 1.7rem;
   `};
 `
 

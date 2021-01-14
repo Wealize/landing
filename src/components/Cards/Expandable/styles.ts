@@ -82,18 +82,6 @@ export const Headline = styled.h3`
   ${media.greaterThan('md')`
     font-size: 1.2rem;
   `};
-
-  ${media.greaterThan('lg')`
-    font-size: 1.3rem;
-  `};
-
-  ${media.greaterThan('xl')`
-    font-size: 1.5rem;
-  `};
-
-  ${media.greaterThan('xxl')`
-    font-size: 2rem;
-  `};
 `
 
 export const Toggle = styled.button<{
@@ -172,14 +160,6 @@ export const Subheadline = styled.h4`
 
   ${media.greaterThan('lg')`
     font-size: 1.8rem;
-  `};
-
-  ${media.greaterThan('xl')`
-    font-size: 2.2rem;
-  `};
-
-  ${media.greaterThan('xxl')`
-    font-size: 2.5rem;
   `};
 `
 

@@ -46,14 +46,6 @@ export const Title = styled.h5<{ textColor: string}>`
   ${media.greaterThan('xl')`
     font-size: 1.1rem;
   `};
-
-  ${media.greaterThan('lg')`
-    font-size: 1.2rem;
-  `};
-
-  ${media.greaterThan('xxl')`
-    font-size: 1.2rem;
-  `};
 `
 
 export const Separator = styled.hr<{ textColor: string}>`
@@ -89,10 +81,12 @@ export const SectionHeader = styled.div<{isExpanded: boolean}>`
   align-items: center;
   padding-bottom: 0;
 
+
   > .button-rounded {
     display: none;
 
     & span {
+      font-size: 1.1rem;
       font-weight: lighter;
     }
   }
@@ -106,7 +100,7 @@ export const SectionHeader = styled.div<{isExpanded: boolean}>`
     > .button-rounded {
       display: block;
       min-height: 75px;
-      min-width: 200px;
+      min-width: 180px;
     }
   `};
 
@@ -119,18 +113,6 @@ export const SectionTitle = styled.h6`
 
   ${media.greaterThan('md')`
     font-size: 1.8rem;
-  `};
-
-  ${media.greaterThan('lg')`
-    font-size: 2.2em;
-  `};
-
-  ${media.greaterThan('xl')`
-    font-size: 2.4rem;
-  `};
-
-  ${media.greaterThan('xxl')`
-    font-size: 2.7rem;
   `};
 `
 
@@ -213,15 +195,7 @@ export const SectionRowElementContainer = styled.div`
     `};
 
     ${media.greaterThan('lg')`
-      font-size: 1.3rem;
-    `};
-
-    ${media.greaterThan('xl')`
-      font-size: 1.4rem;
-    `};
-
-    ${media.greaterThan('xxl')`
-      font-size: 1.5rem;
+      font-size: 1.1rem;
     `};
   }
 `
@@ -233,18 +207,6 @@ export const SectionElement = styled.span`
   height: 100%;
 
   ${media.greaterThan('md')`
-    font-size: 1.2rem;
-  `};
-
-  ${media.greaterThan('lg')`
-    font-size: 1.3rem;
-  `};
-
-  ${media.greaterThan('xl')`
-    font-size: 1.4rem;
-  `};
-
-  ${media.greaterThan('xxl')`
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   `};
 `
