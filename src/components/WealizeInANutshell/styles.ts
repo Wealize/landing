@@ -34,13 +34,12 @@ export const Container = styled.div`
 `
 
 export const Title = styled.h3`
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
   text-transform: uppercase;
   padding:  0 0 ${doublePx()};
 
   ${media.greaterThan('md')`
-    font-size: 1.5rem;
     padding:  0 0 ${doublePx()};
   `};
 

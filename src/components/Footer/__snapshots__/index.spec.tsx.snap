@@ -8,7 +8,7 @@ exports[`<Footer /> wrapper: should render 1`] = `
     <Memo(WealizeWhiteNormalMediumIcon) />
   </styles__ContainerLogo>
   <styles__ContainerContent>
-    <styles__ContainerGetInTouch>
+    <styles__ContainerContactSection>
       <styles__BigText>
         common:footer.get_in_touch.text
       </styles__BigText>
@@ -42,8 +42,8 @@ exports[`<Footer /> wrapper: should render 1`] = `
       >
         common:footer.get_in_touch.button_text
       </Memo(ButtonRounded)>
-    </styles__ContainerGetInTouch>
-    <styles__ContainerWorkWithUs>
+    </styles__ContainerContactSection>
+    <styles__ContainerContactSection>
       <styles__BigText>
         common:footer.work_with_us.text
       </styles__BigText>
@@ -77,7 +77,7 @@ exports[`<Footer /> wrapper: should render 1`] = `
       >
         common:footer.work_with_us.button_text
       </Memo(ButtonRounded)>
-    </styles__ContainerWorkWithUs>
+    </styles__ContainerContactSection>
   </styles__ContainerContent>
   <styles__ContainerBottom>
     <styles__DividerMobile />

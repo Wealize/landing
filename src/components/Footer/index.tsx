@@ -25,10 +25,9 @@ import {
 import {
   Container,
   ContainerContent,
-  ContainerGetInTouch,
+  ContainerContactSection,
   ContainerLogo,
   BigText,
-  ContainerWorkWithUs,
   ContainerBottom,
   Divider,
   DividerMobile,
@@ -52,7 +51,7 @@ const Footer = () => {
         <WealizeWhiteNormalMediumIcon />
       </ContainerLogo>
       <ContainerContent>
-        <ContainerGetInTouch>
+        <ContainerContactSection>
           <BigText>
             {t('footer.get_in_touch.text')}
           </BigText>
@@ -67,8 +66,8 @@ const Footer = () => {
           >
             {t('footer.get_in_touch.button_text')}
           </ButtonRounded>
-        </ContainerGetInTouch>
-        <ContainerWorkWithUs>
+        </ContainerContactSection>
+        <ContainerContactSection>
           <BigText>
             {t('footer.work_with_us.text')}
           </BigText>
@@ -83,7 +82,7 @@ const Footer = () => {
           >
            {t('footer.work_with_us.button_text')}
           </ButtonRounded>
-        </ContainerWorkWithUs>
+        </ContainerContactSection>
       </ContainerContent>
       <ContainerBottom>
         <DividerMobile></DividerMobile>

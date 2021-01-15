@@ -12,7 +12,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
     >
       <styles__Title>
         <h3
-          className="styles__Title-sc-1wwnm82-1 fYyfFO"
+          className="styles__Title-sc-1wwnm82-1 gBehdp"
         >
           profile:wealize-in-a-nutshell.title
         </h3>
