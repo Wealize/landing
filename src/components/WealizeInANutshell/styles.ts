@@ -51,7 +51,6 @@ export const Title = styled.h3`
 
   ${media.greaterThan('xl')`
     width: 50%;
-    font-size: 1.8rem;
   `};
 `
 
