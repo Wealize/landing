@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WAnimation /> wrapper: should render 1`] = `
+<Memo(WAnimation)>
+  <styles__Video
+    autoPlay={true}
+    id="video"
+    loop={true}
+    muted={true}
+  >
+    <video
+      autoPlay={true}
+      className="styles__Video-sc-1iarrbt-0 gnUHoD"
+      id="video"
+      loop={true}
+      muted={true}
+    >
+      <source
+        src="/video/w_2048.mp4"
+        type="video/mp4"
+      />
+    </video>
+  </styles__Video>
+</Memo(WAnimation)>
+`;

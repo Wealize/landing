@@ -32,37 +32,30 @@ export const Container = styled.div`
 `
 
 export const Background = styled.div`
-  width: 70%;
+  width: 110%;
   position: absolute;
-  bottom: -5%;
-  right: 0;
-  height: 70%;
-
-  background-image: url('/img/w-static.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow: hidden;
+  bottom: 0%;
+  right: 0%;
+  height: 85%;
 
   ${media.greaterThan('md')`
-    width: 70%;
-    bottom: -5%;
-    height: 80%;
+    width: 75%;
+    height: 95%;
   `};
 
   ${media.greaterThan('lg')`
-    width: 55%;
-    bottom: -5%;
-    height: 90%;
+    width: 70%;
+    height: 100%;
   `};
 
   ${media.greaterThan('xl')`
-    width: 50%;
-    bottom: -5%;
-    height: 90%;
+    width: 70%;
+    height: 100%;
   `};
 
   ${media.greaterThan('xxxl')`
-    width: 45%;
-    bottom: -20%;
+    width: 70%;
     height: 100%;
   `};
 `

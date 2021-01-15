@@ -106,3 +106,28 @@ export const StartedDescription = styled.div`
     width: 55%;
   `};
 `
+
+export const WAnimationContainer = styled.div`
+  width: 80%;
+  position: absolute;
+  bottom: -15%;
+  right: 0%;
+  height: 50%;
+  z-index: -3;
+
+  ${media.greaterThan('md')`
+    bottom: -10%;
+    width: 50%;
+    height: 40%;
+  `};
+
+  ${media.greaterThan('xl')`
+    width: 35%;
+  `};
+
+  ${media.greaterThan('xxl')`
+    bottom: -15%;
+    width: 35%;
+    height: 40%;
+  `};
+`

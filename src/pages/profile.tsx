@@ -6,13 +6,13 @@ import { ACCENT_COLOR, WHITE_COLOR } from '../theme/color'
 import WealizeInANutshell from '../components/WealizeInANutshell'
 import ThingsWeAreGoodAt from '../components/ThingsWeAreGoodAt'
 import WeDeliver from '../components/WeDeliver'
-import { Container, ContainerOverflowHidden, StartedContainer, StartedDescription } from '../styles/pages/Profile'
+import { Container, ContainerOverflowHidden, StartedContainer, StartedDescription, WAnimationContainer } from '../styles/pages/Profile'
 import Talents from '../components/Talents'
 import ServicesAndVentures from '../components/ServicesAndVentures'
-import WStaticIcon from '../components/icons/WStaticIcon'
 import profileDescriptionData from '../data/profileDescriptionData'
 import Accordion from '../components/Accordion'
 import toolsTechStackAccordionData from '../data/toolsTechStackAccordionData'
+import WAnimation from '../components/WAnimation'
 
 const Profile = (): JSX.Element => {
   const { t } = useTranslation('profile')
@@ -26,7 +26,9 @@ const Profile = (): JSX.Element => {
               <p key={index}>{t(`started-description.paragraph-${index}`, { text: paragraph })}</p>
             )}
           </StartedDescription>
-          <WStaticIcon />
+          <WAnimationContainer>
+            <WAnimation />
+          </WAnimationContainer>
         </StartedContainer>
         <ServicesAndVentures/>
       </ContainerOverflowHidden>
