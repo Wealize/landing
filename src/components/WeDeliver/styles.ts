@@ -29,7 +29,7 @@ export const Container = styled.div`
 `
 
 export const Title = styled.h5`
-  font-size: 1.7rem;
+  font-size: 1.1rem;
   padding: 0;
   text-transform: uppercase;
   letter-spacing: 1.44px;
@@ -37,7 +37,6 @@ export const Title = styled.h5`
 
 
   ${media.greaterThan('lg')`
-    font-size: 1.1rem;
     margin-bottom: ${doublePx()};
   `};
 `

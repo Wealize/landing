@@ -8,7 +8,7 @@ exports[`<WeDeliver /> should render 1`] = `
     >
       <styles__Title>
         <h5
-          className="styles__Title-m0mkjy-1 kBHlkw"
+          className="styles__Title-m0mkjy-1 iwdcAe"
         >
           profile:we-deliver.title
         </h5>
