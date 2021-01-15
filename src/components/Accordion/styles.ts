@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { halfPx, twoThirdPx, singlePx, singleAndHalfPx, doublePx, quadruplePx, quadruple } from '../../theme/space'
+import { halfPx, twoThirdPx, singleAndHalfPx, doublePx, quadruplePx, quadruple } from '../../theme/space'
 import { media } from '../../theme/media'
 import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 
@@ -154,26 +154,22 @@ export const SectionToggle = styled.button<{
 
 export const SectionContentContainer = styled.div<{isExpanded: boolean}>`
   width: 100%;
-  transition: all 0.5s ease-out;
   overflow: hidden;
-  height: auto;
   max-height: ${({ isExpanded }) => (isExpanded ? 1000 : 0)}px;
   padding-top: ${({ isExpanded }) => (isExpanded ? singleAndHalfPx() : 0)};
-  display: inline-block;
-  column-count: 2;
-  column-gap: ${singlePx()};
-  column-fill: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+
+  transition: all 0.5s ease;
 
   ${media.greaterThan('lg')`
-    column-count: 3;
-    column-gap: ${singleAndHalfPx()};
+    grid-template-columns: repeat(3, 1fr);
   `};
 
   ${media.greaterThan('xxl')`
-    column-count: 4;
-    column-gap: ${doublePx()};
+    grid-template-columns: repeat(4, 1fr);
   `};
-
 `
 
 export const SectionElementContainer = styled.div`
