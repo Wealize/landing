@@ -44,55 +44,17 @@ export const ContainerContent = styled.div`
   align-items: flex-start;
 
   ${media.greaterThan('md')`
-    display: inline-block;
-    column-count: 2;
-    column-gap: ${singlePx()};
-    column-fill: balance;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: ${singlePx()};
   `}
 
   ${media.greaterThan('xl')`
-    column-gap: ${doublePx()};
+    grid-gap: ${doublePx()};
   `}
 
   ${media.greaterThan('xxl')`
-    column-gap: ${quadruplePx()};
-  `}
-`
-
-export const ContainerGetInTouch = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-
-  > .button-rounded {
-    margin-top: 5%;
-
-    & span {
-      font-weight: normal;
-    }
-  }
-
-  ${media.greaterThan('md')`
-    display: inline-block;
-
-    > .button-rounded {
-      margin-top: 15%;
-      max-width: 200px;
-    }
-  `}
-
-  ${media.greaterThan('xl')`
-    > .button-rounded {
-      margin-top: 10%;
-    }
-  `}
-
-  ${media.greaterThan('xxl')`
-    > .button-rounded {
-      margin-top: 2%;
-      margin-bottom: 20%;
-    }
+    grid-gap: ${quadruplePx()};
   `}
 `
 
@@ -132,13 +94,9 @@ export const BigText = styled.h5`
   ${media.greaterThan('lg')`
     font-size: 2.5rem;
   `};
-
-  ${media.greaterThan('xl')`
-    min-height: 270px;
-  `};
 `
 
-export const ContainerWorkWithUs = styled.div`
+export const ContainerContactSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -155,26 +113,22 @@ export const ContainerWorkWithUs = styled.div`
 
   ${media.greaterThan('md')`
     padding: 0;
-    display: inline;
+    justify-content: space-between;
+    min-height: 350px;
 
     > .button-rounded {
-      margin-top: 15%;
+      margin-top: 0;
       max-width: 200px;
     }
   `};
 
-  ${media.greaterThan('xl')`
-    > .button-rounded {
-      margin-top: 10%;
-    }
-  `}
+  ${media.greaterThan('lg')`
+    min-height: 450px;
+  `};
 
-  ${media.greaterThan('xxl')`
-    > .button-rounded {
-      margin-top: 2%;
-      margin-bottom: 20%;
-    }
-  `}
+  ${media.greaterThan('xl')`
+    min-height: 400px;
+  `};
 `
 
 export const DividerMobile = styled.hr`
