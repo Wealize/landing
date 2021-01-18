@@ -19,7 +19,7 @@ exports[`<ServicesAndVentures /> should render 1`] = `
         >
           <styles__SectionContainer>
             <div
-              className="styles__SectionContainer-g6vj63-3"
+              className="styles__SectionContainer-g6vj63-3 kjIGhE"
             >
               <styles__SectionTitle>
                 <h4
@@ -98,7 +98,7 @@ exports[`<ServicesAndVentures /> should render 1`] = `
           </styles__SectionContainer>
           <styles__SectionContainer>
             <div
-              className="styles__SectionContainer-g6vj63-3"
+              className="styles__SectionContainer-g6vj63-3 kjIGhE"
             >
               <styles__SectionTitle>
                 <h4

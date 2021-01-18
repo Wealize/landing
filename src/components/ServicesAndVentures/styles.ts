@@ -75,7 +75,9 @@ export const ContentContainer = styled.div`
   `};
 `
 
-export const SectionContainer = styled.div``
+export const SectionContainer = styled.div`
+  z-index: 1;
+`
 
 export const SectionTitle = styled.h4`
   text-transform: uppercase;
