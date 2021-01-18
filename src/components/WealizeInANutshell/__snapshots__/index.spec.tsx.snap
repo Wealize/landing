@@ -5,27 +5,29 @@ exports[`<WealizeInANutshell /> should render 1`] = `
   highlightColor="#6666ff"
 >
   <styles__Container
-    className="WealizeInANutshell"
+    className="wealize-in-a-nutshell"
   >
     <div
-      className="styles__Container-sc-1wwnm82-0 kDpYcP WealizeInANutshell"
+      className="styles__Container-sc-1wwnm82-0 kDpYcP wealize-in-a-nutshell"
     >
-      <styles__Title>
+      <styles__Title
+        isNavbarVisible={true}
+      >
         <h3
-          className="styles__Title-sc-1wwnm82-1 qMzrs"
+          className="styles__Title-sc-1wwnm82-1 iWFXeP"
         >
           profile:wealize-in-a-nutshell.title
         </h3>
       </styles__Title>
       <styles__Content>
         <div
-          className="styles__Content-sc-1wwnm82-2 dxjnBp"
+          className="styles__Content-sc-1wwnm82-2 kCuTtK"
         >
           <InView
             initialInView={false}
             key="0"
             onChange={[Function]}
-            threshold={0.3}
+            threshold={0.75}
             triggerOnce={false}
           >
             <styles__Paragraph
@@ -34,7 +36,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
               isIntersecting={false}
             >
               <h3
-                className="styles__Paragraph-sc-1wwnm82-3 hTYHAB wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 bwQZUQ wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-0
               </h3>
@@ -44,7 +46,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
             initialInView={false}
             key="1"
             onChange={[Function]}
-            threshold={0.3}
+            threshold={0.75}
             triggerOnce={false}
           >
             <styles__Paragraph
@@ -53,7 +55,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
               isIntersecting={false}
             >
               <h3
-                className="styles__Paragraph-sc-1wwnm82-3 hTYHAB wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 bwQZUQ wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-1
               </h3>
@@ -63,7 +65,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
             initialInView={false}
             key="2"
             onChange={[Function]}
-            threshold={0.3}
+            threshold={0.75}
             triggerOnce={false}
           >
             <styles__Paragraph
@@ -72,7 +74,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
               isIntersecting={false}
             >
               <h3
-                className="styles__Paragraph-sc-1wwnm82-3 hTYHAB wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 bwQZUQ wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-2
               </h3>
@@ -82,7 +84,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
             initialInView={false}
             key="3"
             onChange={[Function]}
-            threshold={0.3}
+            threshold={0.75}
             triggerOnce={false}
           >
             <styles__Paragraph
@@ -91,7 +93,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
               isIntersecting={false}
             >
               <h3
-                className="styles__Paragraph-sc-1wwnm82-3 hTYHAB wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 bwQZUQ wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-3
               </h3>
@@ -101,7 +103,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
             initialInView={false}
             key="4"
             onChange={[Function]}
-            threshold={0.3}
+            threshold={0.75}
             triggerOnce={false}
           >
             <styles__Paragraph
@@ -110,7 +112,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
               isIntersecting={false}
             >
               <h3
-                className="styles__Paragraph-sc-1wwnm82-3 hTYHAB wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 bwQZUQ wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-4
               </h3>
@@ -120,7 +122,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
             initialInView={false}
             key="5"
             onChange={[Function]}
-            threshold={0.3}
+            threshold={0.75}
             triggerOnce={false}
           >
             <styles__Paragraph
@@ -129,7 +131,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
               isIntersecting={false}
             >
               <h3
-                className="styles__Paragraph-sc-1wwnm82-3 hTYHAB wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 bwQZUQ wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-5
               </h3>
@@ -139,7 +141,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
             initialInView={false}
             key="6"
             onChange={[Function]}
-            threshold={0.3}
+            threshold={0.75}
             triggerOnce={false}
           >
             <styles__Paragraph
@@ -148,7 +150,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
               isIntersecting={false}
             >
               <h3
-                className="styles__Paragraph-sc-1wwnm82-3 hTYHAB wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 bwQZUQ wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-6
               </h3>

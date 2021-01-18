@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
@@ -13,6 +13,7 @@ import ButtonRounded from '../Buttons/Rounded'
 import { ACCENT_COLOR, WHITE_COLOR } from '../../theme/color'
 import { MEDIUM } from '../Buttons/Rounded/sizes'
 
+import { useGlobalState } from './store/visibilityStore'
 import {
   Navbar,
   LogoMobileContainer,
@@ -28,9 +29,10 @@ interface NavbarProps {
 
 const { locales } = i18nConfig
 const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
-  const [visible, setVisible] = useState(true)
   const router = useRouter()
   const { t, lang } = useTranslation('common')
+  const [visible, setVisible] = useGlobalState('isVisible')
+
 
   useScrollPosition(({ prevPos, currPos }) => {
     setVisible(prevPos.y < currPos.y || (currPos.y >= 0 && currPos.y <= 5))
