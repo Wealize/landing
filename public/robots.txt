@@ -1,2 +1,3 @@
+# Sitemap: https://wealize.digital/sitemap.xml
 User-agent: *
-Allow: /
+Disallow: /
