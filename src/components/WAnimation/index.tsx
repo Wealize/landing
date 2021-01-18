@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactPlayer from 'react-player'
 
 import useWindowSize from '../../hooks/useWindowSize'
 import { BREAKPOINT_MD, BREAKPOINT_LG } from '../../theme/media'
@@ -22,10 +23,14 @@ const WAnimation = () => {
   }
 
   return (
-    <Video id="video" autoPlay muted loop>
-      <source src={getVideoUrl()} type="video/mp4"></source>
+    <Video className="w-animation">
+      <ReactPlayer className="react-player" url={[
+        { src: `${getVideoUrl()}`, type: 'video/mp4' }
+      ]} width='100%' height='100%' preload playing autoPlay muted loop lights>
+      </ReactPlayer>
     </Video>
   )
 }
+
 
 export default React.memo(WAnimation)
