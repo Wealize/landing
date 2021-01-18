@@ -35,6 +35,7 @@ export const Title = styled.h3`
   font-size: 1.8rem;
   line-height: 1.40;
   padding: 0;
+  z-index: 1;
 
   ${media.greaterThan('md')`
     width: 70%;
@@ -82,6 +83,7 @@ export const SectionTitle = styled.h4`
   font-weight: bold;
   padding-top: ${doubleAndHalfPx()};
   letter-spacing: 1.44px;
+  z-index: 1;
 `
 
 export const CardContainer = styled.div`
@@ -92,6 +94,7 @@ export const CardHeadline = styled.div`
   font-size: 1.6rem;
   line-height: 1.52;
   padding: ${halfPx()} 0;
+  z-index: 1;
 
   ${media.greaterThan('lg')`
     font-size: 1.8rem;
@@ -102,6 +105,7 @@ export const CardDescription = styled.h5`
   font-size: 1.1rem;
   line-height: 1.52;
   color: ${GRAY_300_COLOR};
+  z-index: 1;
 
   ${media.greaterThan('xl')`
     font-size: 1.1rem;

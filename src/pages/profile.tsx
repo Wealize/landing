@@ -27,7 +27,7 @@ const Profile = (): JSX.Element => {
             )}
           </StartedDescription>
           <WAnimationContainer>
-            <WAnimation />
+            <WAnimation isMixMultiplyBlendMode={true}/>
           </WAnimationContainer>
         </StartedContainer>
         <ServicesAndVentures/>

@@ -42,7 +42,7 @@ const HomeSpecial = () => {
   return (
     <Container ref={containerRef}>
       <Background>
-        <WAnimation />
+        <WAnimation isMixMultiplyBlendMode={false} />
       </Background>
       <Slogan>
         <Headline>{t('slogan.headline')}</Headline>

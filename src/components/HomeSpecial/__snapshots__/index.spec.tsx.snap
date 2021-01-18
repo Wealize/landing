@@ -10,12 +10,15 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
         <div
           className="styles__Background-gjaj1n-1 kzejV"
         >
-          <Memo(WAnimation)>
+          <Memo(WAnimation)
+            isMixMultiplyBlendMode={false}
+          >
             <styles__Video
               className="w-animation"
+              isMixMultiplyBlendMode={false}
             >
               <div
-                className="styles__Video-sc-1iarrbt-0 dsdcdU w-animation"
+                className="styles__Video-sc-1iarrbt-0 fKOhSW w-animation"
               >
                 <ReactPlayer
                   autoPlay={true}

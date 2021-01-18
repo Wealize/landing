@@ -112,8 +112,9 @@ export const WAnimationContainer = styled.div`
   position: absolute;
   bottom: -15%;
   right: 0%;
-  height: 50%;
+  height: 40%;
   z-index: -3;
+  mix-blend-mode: multiply;
 
   ${media.greaterThan('md')`
     bottom: -10%;
