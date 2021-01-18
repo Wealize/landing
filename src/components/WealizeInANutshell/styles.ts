@@ -48,11 +48,11 @@ export const Title = styled.h3<{isNavbarVisible: boolean}>`
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
 
-  top: ${({ isNavbarVisible }) => isNavbarVisible ? '9%' : '0'};
+  top: ${({ isNavbarVisible }) => isNavbarVisible ? '9.5%' : '0'};
 
   ${({ isNavbarVisible }) => media.greaterThan('md')`
     padding-left: ${doublePx()};
-    top: ${isNavbarVisible ? '5%' : '0'};
+    top: ${isNavbarVisible ? '5%' : '-1px'};
   `};
 
   ${({ isNavbarVisible }) => media.greaterThan('lg')`
@@ -60,7 +60,7 @@ export const Title = styled.h3<{isNavbarVisible: boolean}>`
     line-height: 2;
     margin-left: initial;
     margin-right: initial;
-    top: ${isNavbarVisible ? '10%' : '0'};
+    top: ${isNavbarVisible ? '10%' : '-1px'};
   `};
 
   ${media.greaterThan('xl')`

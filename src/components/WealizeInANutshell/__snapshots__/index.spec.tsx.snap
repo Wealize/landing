@@ -11,10 +11,10 @@ exports[`<WealizeInANutshell /> should render 1`] = `
       className="styles__Container-sc-1wwnm82-0 kDpYcP wealize-in-a-nutshell"
     >
       <styles__Title
-        isNavbarVisible={false}
+        isNavbarVisible={true}
       >
         <h3
-          className="styles__Title-sc-1wwnm82-1 hrtxYY"
+          className="styles__Title-sc-1wwnm82-1 iWFXeP"
         >
           profile:wealize-in-a-nutshell.title
         </h3>

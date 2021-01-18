@@ -6,7 +6,7 @@ interface navbarVisibility {
 }
 
 const initialState: navbarVisibility = {
-  isVisible: false
+  isVisible: true
 }
 
 export const { useGlobalState } = createGlobalState(initialState)
