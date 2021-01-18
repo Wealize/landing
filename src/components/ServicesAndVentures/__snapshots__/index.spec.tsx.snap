@@ -8,7 +8,7 @@ exports[`<ServicesAndVentures /> should render 1`] = `
     >
       <styles__Title>
         <h3
-          className="styles__Title-g6vj63-1 bBVjzJ"
+          className="styles__Title-g6vj63-1 jUxUps"
         >
           profile:services-ventures.title
         </h3>
@@ -19,11 +19,11 @@ exports[`<ServicesAndVentures /> should render 1`] = `
         >
           <styles__SectionContainer>
             <div
-              className="styles__SectionContainer-g6vj63-3"
+              className="styles__SectionContainer-g6vj63-3 kjIGhE"
             >
               <styles__SectionTitle>
                 <h4
-                  className="styles__SectionTitle-g6vj63-4 kfuTNx"
+                  className="styles__SectionTitle-g6vj63-4 iSfpKk"
                 >
                   profile:services-ventures.services-section.title
                 </h4>
@@ -36,14 +36,14 @@ exports[`<ServicesAndVentures /> should render 1`] = `
                 >
                   <styles__CardHeadline>
                     <div
-                      className="styles__CardHeadline-g6vj63-6 dvFeWB"
+                      className="styles__CardHeadline-g6vj63-6 xCsHo"
                     >
                       profile:services-ventures.services-section.section-title-0
                     </div>
                   </styles__CardHeadline>
                   <styles__CardDescription>
                     <h5
-                      className="styles__CardDescription-g6vj63-7 ceIxbP"
+                      className="styles__CardDescription-g6vj63-7 fAUxye"
                     >
                       profile:services-ventures.services-section.section-description-0
                     </h5>
@@ -58,14 +58,14 @@ exports[`<ServicesAndVentures /> should render 1`] = `
                 >
                   <styles__CardHeadline>
                     <div
-                      className="styles__CardHeadline-g6vj63-6 dvFeWB"
+                      className="styles__CardHeadline-g6vj63-6 xCsHo"
                     >
                       profile:services-ventures.services-section.section-title-1
                     </div>
                   </styles__CardHeadline>
                   <styles__CardDescription>
                     <h5
-                      className="styles__CardDescription-g6vj63-7 ceIxbP"
+                      className="styles__CardDescription-g6vj63-7 fAUxye"
                     >
                       profile:services-ventures.services-section.section-description-1
                     </h5>
@@ -80,14 +80,14 @@ exports[`<ServicesAndVentures /> should render 1`] = `
                 >
                   <styles__CardHeadline>
                     <div
-                      className="styles__CardHeadline-g6vj63-6 dvFeWB"
+                      className="styles__CardHeadline-g6vj63-6 xCsHo"
                     >
                       profile:services-ventures.services-section.section-title-2
                     </div>
                   </styles__CardHeadline>
                   <styles__CardDescription>
                     <h5
-                      className="styles__CardDescription-g6vj63-7 ceIxbP"
+                      className="styles__CardDescription-g6vj63-7 fAUxye"
                     >
                       profile:services-ventures.services-section.section-description-2
                     </h5>
@@ -98,11 +98,11 @@ exports[`<ServicesAndVentures /> should render 1`] = `
           </styles__SectionContainer>
           <styles__SectionContainer>
             <div
-              className="styles__SectionContainer-g6vj63-3"
+              className="styles__SectionContainer-g6vj63-3 kjIGhE"
             >
               <styles__SectionTitle>
                 <h4
-                  className="styles__SectionTitle-g6vj63-4 kfuTNx"
+                  className="styles__SectionTitle-g6vj63-4 iSfpKk"
                 >
                   profile:services-ventures.ventures-section.title
                 </h4>
@@ -115,14 +115,14 @@ exports[`<ServicesAndVentures /> should render 1`] = `
                 >
                   <styles__CardHeadline>
                     <div
-                      className="styles__CardHeadline-g6vj63-6 dvFeWB"
+                      className="styles__CardHeadline-g6vj63-6 xCsHo"
                     >
                       profile:services-ventures.ventures-section.section-title-0
                     </div>
                   </styles__CardHeadline>
                   <styles__CardDescription>
                     <h5
-                      className="styles__CardDescription-g6vj63-7 ceIxbP"
+                      className="styles__CardDescription-g6vj63-7 fAUxye"
                     >
                       profile:services-ventures.ventures-section.section-description-0
                     </h5>
@@ -137,14 +137,14 @@ exports[`<ServicesAndVentures /> should render 1`] = `
                 >
                   <styles__CardHeadline>
                     <div
-                      className="styles__CardHeadline-g6vj63-6 dvFeWB"
+                      className="styles__CardHeadline-g6vj63-6 xCsHo"
                     >
                       profile:services-ventures.ventures-section.section-title-1
                     </div>
                   </styles__CardHeadline>
                   <styles__CardDescription>
                     <h5
-                      className="styles__CardDescription-g6vj63-7 ceIxbP"
+                      className="styles__CardDescription-g6vj63-7 fAUxye"
                     >
                       profile:services-ventures.ventures-section.section-description-1
                     </h5>
@@ -159,14 +159,14 @@ exports[`<ServicesAndVentures /> should render 1`] = `
                 >
                   <styles__CardHeadline>
                     <div
-                      className="styles__CardHeadline-g6vj63-6 dvFeWB"
+                      className="styles__CardHeadline-g6vj63-6 xCsHo"
                     >
                       profile:services-ventures.ventures-section.section-title-2
                     </div>
                   </styles__CardHeadline>
                   <styles__CardDescription>
                     <h5
-                      className="styles__CardDescription-g6vj63-7 ceIxbP"
+                      className="styles__CardDescription-g6vj63-7 fAUxye"
                     >
                       profile:services-ventures.ventures-section.section-description-2
                     </h5>
