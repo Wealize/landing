@@ -31,6 +31,7 @@ const RoundedCard = (props: CardRounded) => {
           height="100%"
           src={imageUrl}
           lazyLoad={true}
+          transitionTime="0"
           style={{
             minWidth: '300px',
             minHeight: '290px',
