@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-import { ACCENT_COLOR, LIGHT_GRAY_COLOR } from '../../theme/color'
-import { doublePx } from '../../theme/space'
+import { LIGHT_GRAY_COLOR, GRAY_300_COLOR } from '../../theme/color'
+import { singlePx, singleAndHalfPx, doublePx } from '../../theme/space'
 import { media } from '../../theme/media'
 import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 
@@ -12,6 +12,7 @@ export const Container = styled.div`
   background: ${LIGHT_GRAY_COLOR};
   ${CONTAINER_SPACING.MOBILE}
   z-index: 1;
+
 
   ${media.greaterThan('md')`
     ${CONTAINER_SPACING.TABLET}
@@ -33,20 +34,33 @@ export const Container = styled.div`
   `};
 `
 
-export const Title = styled.h3`
+export const Title = styled.h3<{isNavbarVisible: boolean}>`
   font-size: 1.1rem;
   font-weight: bold;
   text-transform: uppercase;
-  padding:  0 0 ${doublePx()};
+  padding:  ${singleAndHalfPx()} 0 ${singleAndHalfPx()} ${singlePx()};
+  background-color: ${LIGHT_GRAY_COLOR};
+  position: sticky;
+  left: 0px;
+  max-height: 100px;
+  transition: all 0.4s;
+  text-align: left;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 
-  ${media.greaterThan('md')`
-    padding:  0 0 ${doublePx()};
+  top: ${({ isNavbarVisible }) => isNavbarVisible ? '9%' : '0'};
+
+  ${({ isNavbarVisible }) => media.greaterThan('md')`
+    padding-left: ${doublePx()};
+    top: ${isNavbarVisible ? '5%' : '0'};
   `};
 
-  ${media.greaterThan('lg')`
+  ${({ isNavbarVisible }) => media.greaterThan('lg')`
     width: 40%;
-    padding-top: 0;
     line-height: 2;
+    margin-left: initial;
+    margin-right: initial;
+    top: ${isNavbarVisible ? '10%' : '0'};
   `};
 
   ${media.greaterThan('xl')`
@@ -55,27 +69,16 @@ export const Title = styled.h3`
 `
 
 export const Content = styled.div`
-  max-height: 55vh;
-  overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  scroll-snap-type: y mandatory;
-  scroll-snap-points-y: repeat(50px);
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  padding-top: ${doublePx()};
 
   > .wealize-nutshell-paragraph:last-child {
     padding-bottom: 0;
   }
-
-  ${media.greaterThan('md')`
-    max-height: 45vh;
-  `};
 
   ${media.greaterThan('lg')`
     width: 60%;
@@ -83,12 +86,7 @@ export const Content = styled.div`
   `};
 
   ${media.greaterThan('xl')`
-    max-height: 45vh;
     width: 50%;
-  `};
-
-  ${media.greaterThan('xxl')`
-    max-height: 60vh;
   `};
 `
 
@@ -100,9 +98,10 @@ export const Paragraph = styled.h3<{
   padding-bottom: ${doublePx()};
   line-height: 1.46;
   scroll-snap-align: start;
+  color: ${GRAY_300_COLOR};
 
   &.intersecting {
-    color: ${ACCENT_COLOR};
+    color: ${({ highlightColor }) => highlightColor};
   }
 
   ${media.greaterThan('md')`
