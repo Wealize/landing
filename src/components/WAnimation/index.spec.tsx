@@ -12,7 +12,6 @@ describe('<WAnimation />', () => {
   })
 
   it('should render content correctly', () => {
-    expect(wrapper.find('video').length).toEqual(1)
-    expect(wrapper.find('source').length).toEqual(1)
+    expect(wrapper.find('Player').length).toEqual(1)
   })
 })

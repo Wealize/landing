@@ -26,7 +26,7 @@ const WAnimation = () => {
     <Video className="w-animation">
       <ReactPlayer className="react-player" url={[
         { src: `${getVideoUrl()}`, type: 'video/mp4' }
-      ]} width='100%' height='100%' preload playing autoPlay muted loop lights>
+      ]} width='100%' height='100%' playing autoPlay muted loop stopOnUnmount>
       </ReactPlayer>
     </Video>
   )
