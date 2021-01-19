@@ -5,8 +5,7 @@ import {
   singleAndHalfPx,
   doublePx,
   triplePx,
-  doubleAndHalf,
-  quadruplePx
+  doubleAndHalf
 } from '../../../theme/space'
 import { media } from '../../../theme/media'
 import { CONTAINER_SPACING } from '../../../theme/spacingGuide'
@@ -33,17 +32,17 @@ export const Container = styled.div<{
     min-height: 115%;
     min-width: 110%;
     flex-wrap:wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
   `};
 
   ${media.greaterThan('xl')`
-    padding: ${doublePx()} ${triplePx()};
-    min-height: 125%;
+    padding: ${doublePx()};
+    min-height: 110%;
   `};
 
   ${media.greaterThan('xxl')`
-    padding: ${quadruplePx()};
-    min-height: 145%;
+    min-height: 115%;
   `};
 `
 
@@ -56,7 +55,6 @@ export const Header = styled.div<{
   justify-content: space-between;
   align-items: center;
   padding-bottom: ${({ isExpanded }) => (isExpanded ? singlePx() : 0)}px;
-  flex: 1 1 auto;
 `
 
 export const Content = styled.div<{
@@ -68,7 +66,6 @@ export const Content = styled.div<{
   overflow: hidden;
   height: auto;
   max-height: ${({ isExpanded }) => (isExpanded ? 1000 : 0)}px;
-  flex: 1 1 auto;
 
   ${media.greaterThan('lg')`
     max-height: 100%;
@@ -78,14 +75,6 @@ export const Content = styled.div<{
 export const Headline = styled.h3`
   font-size: 1.2rem;
   font-weight: bold;
-
-  ${media.greaterThan('md')`
-    font-size: 1.2rem;
-  `};
-
-  ${media.greaterThan('lg')`
-    font-size: 1.3rem;
-  `};
 `
 
 export const Toggle = styled.button<{
@@ -126,21 +115,16 @@ export const ImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: ${doublePx()} 0;
-  flex: 1 1 auto;
 
   & svg {
-    width: 50%;
+    width: 60%;
 
     ${media.greaterThan('lg')`
-      width: 75%;
+      width: 80%;
     `};
 
     ${media.greaterThan('xl')`
-      width: 60%;
-    `};
-
-    ${media.greaterThan('xxl')`
-      width: 55%;
+      width: 70%;
     `};
   }
 
@@ -163,7 +147,7 @@ export const Subheadline = styled.h4`
   `};
 
   ${media.greaterThan('lg')`
-    font-size: 1.8rem;
+    font-size: 1.75rem;
   `};
 `
 
@@ -173,14 +157,14 @@ export const Description = styled.h5`
   line-height: 1.43;
 
   ${media.greaterThan('md')`
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   `};
 
   ${media.greaterThan('lg')`
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   `};
 
   ${media.greaterThan('xl')`
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   `};
 `
