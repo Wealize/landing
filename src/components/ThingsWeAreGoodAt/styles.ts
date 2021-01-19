@@ -56,7 +56,7 @@ export const Title = styled.h3`
   text-transform: uppercase;
 
   ${media.greaterThan('md')`
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding-left: ${doublePx()};
     padding-bottom: ${triplePx()};
   `};
@@ -87,59 +87,65 @@ export const CardsContainer = styled.div`
 export const FirstCard = styled.article<{
   isVisible: boolean
 }>`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
   ${({ isVisible }) => media.greaterThan('lg')`
     transition: all 1s;
     position: absolute;
     transform: ${isVisible ? 'translateY(-5%)' : 'translateY(20%)'} ;
-    left: -5%;
+    left: -11.5%;
     height: 100%;
     max-width: 33.3%;
   `};
 
-  ${media.greaterThan('xl')`
-    position: absolute;
-    left: -5%;
-    height: 100%;
-    max-width: 33.3%;
+  ${media.greaterThan('xxl')`
+    left: 17%;
+    max-width: 20%;
   `};
 `
 export const SecondCard = styled.article<{
   isVisible: boolean
 }>`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
   ${({ isVisible }) => media.greaterThan('lg')`
       transition: all 1s;
       transition-delay: 0.5s;
       position: absolute;
-      left: 29%;
+      left: 23%;
       transform: ${isVisible ? 'translateY(5%)' : 'translateY(20%)'} ;
       height: 100%;
       max-width: 33.3%;
   `};
 
-  ${media.greaterThan('xl')`
-      position: absolute;
-      left: 29%;
-      height: 100%;
-      max-width: 33.3%;
+  ${media.greaterThan('xxl')`
+    left: 38%;
+    max-width: 20%;
   `};
 `
 export const ThirdCard = styled.article<{
   isVisible: boolean
 }>`
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+
   ${({ isVisible }) => media.greaterThan('lg')`
       transition: all 1s;
       transition-delay: 0.7s;
       position: absolute;
-      left: 63.4%;
+      left: 58%;
       transform: ${isVisible ? 'translateY(15%)' : 'translateY(25%)'} ;
       height: 100%;
       max-width: 33.3%;
   `};
 
-  ${media.greaterThan('xl')`
-      position: absolute;
-      left: 63.4%;
-      height: 100%;
-      max-width: 33.3%;
+  ${media.greaterThan('xxl')`
+    left: 59%;
+    max-width: 20%;
   `};
 `
