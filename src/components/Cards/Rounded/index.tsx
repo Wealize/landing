@@ -54,6 +54,7 @@ const RoundedCard = (props: CardRounded) => {
                   target="_blank"
                   rel="noreferrer"
                   aria-label={link.text}
+                  title={`Link for ${title.toLowerCase()} project`}
                 >
                   {link.text}
                 </LinkAnchor>

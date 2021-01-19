@@ -91,24 +91,24 @@ const Footer = () => {
             href="https://www.linkedin.com/company/wealizedigital/"
             passHref
           >
-            <Social target="_blank" aria-label="Linkedin" rel="noreferrer">
+            <Social title="Wealize Linkedin link" target="_blank" aria-label="Linkedin" rel="noreferrer">
               <LinkedinIcon />
             </Social>
           </Link>
           <Link href="https://twitter.com/wealizedigital" passHref>
-            <Social target="_blank" aria-label="Twitter" rel="noreferrer">
+            <Social title="Wealize Twitter link" target="_blank" aria-label="Twitter" rel="noreferrer">
               <TwitterIcon />
             </Social>
           </Link>
           <Link href="https://dev.to/wealize" passHref>
-            <Social target="_blank" aria-label="Dev.to" rel="noreferrer">
+            <Social title="Wealize Dev.to link" target="_blank" aria-label="Dev.to" rel="noreferrer">
               <DevtoIcon />
             </Social>
           </Link>
         </ContainerSocialMobile>
         <ContainerPrivacyCopyright>
           <Link href={PRIVACY_LEGAL_HREF} passHref>
-            <PrivacyLegalLink aria-label="Privacy & Legal" data-cy="footer-privacy-link">
+            <PrivacyLegalLink title="Privacy page link" aria-label="Privacy & Legal" data-cy="footer-privacy-link">
               {t('footer.privacy_legal')}
             </PrivacyLegalLink>
           </Link>
@@ -119,14 +119,14 @@ const Footer = () => {
           <ContainerGrants>
             <Grant>
               <Link href={CDTI_HREF} passHref>
-                <a aria-label="CDTI" data-cy="footer-cdti-link">
+                <a title="CDTI page link" aria-label="CDTI" data-cy="footer-cdti-link">
                   <CDTIIcon />
                 </a>
               </Link>
             </Grant>
             <Grant>
               <Link href={INNOVATION_SME_HREF} passHref>
-                <a aria-label="Innovation Pyme" data-cy="footer-innovation-pyme-link">
+                <a title="Innovation Pyme page link" aria-label="Innovation Pyme" data-cy="footer-innovation-pyme-link">
                   <InnovationPymeIcon />
                 </a>
               </Link>

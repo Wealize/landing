@@ -90,6 +90,7 @@ exports[`<Footer /> wrapper: should render 1`] = `
           aria-label="Linkedin"
           rel="noreferrer"
           target="_blank"
+          title="Wealize Linkedin link"
         >
           <LinkedinIcon />
         </styles__Social>
@@ -102,6 +103,7 @@ exports[`<Footer /> wrapper: should render 1`] = `
           aria-label="Twitter"
           rel="noreferrer"
           target="_blank"
+          title="Wealize Twitter link"
         >
           <TwitterIcon />
         </styles__Social>
@@ -114,6 +116,7 @@ exports[`<Footer /> wrapper: should render 1`] = `
           aria-label="Dev.to"
           rel="noreferrer"
           target="_blank"
+          title="Wealize Dev.to link"
         >
           <DevtoIcon />
         </styles__Social>
@@ -127,6 +130,7 @@ exports[`<Footer /> wrapper: should render 1`] = `
         <styles__PrivacyLegalLink
           aria-label="Privacy & Legal"
           data-cy="footer-privacy-link"
+          title="Privacy page link"
         >
           common:footer.privacy_legal
         </styles__PrivacyLegalLink>
@@ -146,6 +150,7 @@ exports[`<Footer /> wrapper: should render 1`] = `
             <a
               aria-label="CDTI"
               data-cy="footer-cdti-link"
+              title="CDTI page link"
             >
               <Memo(CDTIIcon) />
             </a>
@@ -159,6 +164,7 @@ exports[`<Footer /> wrapper: should render 1`] = `
             <a
               aria-label="Innovation Pyme"
               data-cy="footer-innovation-pyme-link"
+              title="Innovation Pyme page link"
             >
               <Memo(InnovationPymeIcon) />
             </a>
