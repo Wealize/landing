@@ -37,12 +37,8 @@ export const Container = styled.div`
     margin: ${triplePx()} 0 ${triple() * 7}px 10%;
   `};
 
-  ${media.greaterThan('xl')`
-    margin: ${quadruplePx()} 0 ${quadruple() * 6}px 10%;
-  `};
-
   ${media.greaterThan('xxl')`
-    margin: ${quadruplePx()} 0 ${quadruple() * 8}px 10%;
+    margin: ${quadruplePx()} 0 ${quadruple() * 6}px 10%;
   `};
 `
 
@@ -101,8 +97,8 @@ export const FirstCard = styled.article<{
   `};
 
   ${media.greaterThan('xxl')`
-    left: 17%;
-    max-width: 20%;
+    left: 12%;
+    max-width: 23%;
   `};
 `
 export const SecondCard = styled.article<{
@@ -123,8 +119,8 @@ export const SecondCard = styled.article<{
   `};
 
   ${media.greaterThan('xxl')`
-    left: 38%;
-    max-width: 20%;
+    left: 36%;
+    max-width: 23%;
   `};
 `
 export const ThirdCard = styled.article<{
@@ -145,7 +141,7 @@ export const ThirdCard = styled.article<{
   `};
 
   ${media.greaterThan('xxl')`
-    left: 59%;
-    max-width: 20%;
+    left: 60%;
+    max-width: 23%;
   `};
 `

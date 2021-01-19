@@ -8,7 +8,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
     >
       <styles__Container>
         <div
-          className="styles__Container-sc-3xtj1d-1 kEmkHI"
+          className="styles__Container-sc-3xtj1d-1 bydjCK"
         >
           <styles__Title>
             <h3
@@ -23,7 +23,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
             >
               <styles__FirstCard>
                 <article
-                  className="styles__FirstCard-sc-3xtj1d-4 cpKwzg"
+                  className="styles__FirstCard-sc-3xtj1d-4 CuGla"
                 >
                   <Memo(ExpandableCard)
                     backgroundColor="#ffc9c9"
@@ -178,7 +178,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
               </styles__FirstCard>
               <styles__SecondCard>
                 <article
-                  className="styles__SecondCard-sc-3xtj1d-5 ieWkRZ"
+                  className="styles__SecondCard-sc-3xtj1d-5 hDLePU"
                 >
                   <Memo(ExpandableCard)
                     backgroundColor="#f06078"
@@ -327,7 +327,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
               </styles__SecondCard>
               <styles__ThirdCard>
                 <article
-                  className="styles__ThirdCard-sc-3xtj1d-6 yaxnC"
+                  className="styles__ThirdCard-sc-3xtj1d-6 gqpYNn"
                 >
                   <Memo(ExpandableCard)
                     backgroundColor="#8fd0c8"
