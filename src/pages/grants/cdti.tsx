@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import useTranslation from 'next-translate/useTranslation'
+import Head from 'next/head'
 
 import { LayoutOptions } from '../../interfaces/Page'
 import {
@@ -18,8 +19,12 @@ const CDTI = (): JSX.Element => {
   const { t } = useTranslation('grants_cdti')
 
   return (
-  <Container>
-    <Content>
+    <>
+      <Head>
+        <meta name="robots" content="noindex,nofollow" />
+      </Head>
+      <Container>
+        <Content>
       <Title>{t('title')}</Title>
       <Description>
         <p>
@@ -49,7 +54,9 @@ const CDTI = (): JSX.Element => {
         </ProjectContent>
       </BottomContainer>
     </Content>
-  </Container>
+      </Container>
+    </>
+
   )
 }
 

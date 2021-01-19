@@ -1,5 +1,6 @@
 import React from 'react'
 import useTranslation from 'next-translate/useTranslation'
+import Head from 'next/head'
 
 import { LayoutOptions } from '../interfaces/Page'
 import { ACCENT_COLOR, WHITE_COLOR } from '../theme/color'
@@ -15,10 +16,26 @@ import toolsTechStackAccordionData from '../data/toolsTechStackAccordionData'
 import WAnimation from '../components/WAnimation'
 
 const Profile = (): JSX.Element => {
-  const { t } = useTranslation('profile')
+  const { t, lang } = useTranslation('profile')
 
   return (
-    <Container>
+    <>
+      <Head>
+        <title>{t('meta_title')}</title>
+        <meta
+          name="description"
+          content={t('meta_description')}
+        />
+        <link rel="alternate" hrefLang="es" href="https://wealize.digital/es/profile" />
+        <link rel="alternate" hrefLang="en" href="https://wealize.digital/profile" />
+        {lang.toLowerCase() === 'en'
+          ? <link rel="canonical" href="https://wealize.digital/profile" />
+          : null}
+        {lang.toLowerCase() === 'es'
+          ? <link rel="canonical" href="https://wealize.digital/es/profile" />
+          : null}
+      </Head>
+      <Container>
       <ContainerOverflowHidden>
         <StartedContainer>
           <StartedDescription>
@@ -47,6 +64,8 @@ const Profile = (): JSX.Element => {
         ToggleButtonAnimatedTextColor={ACCENT_COLOR}
       />
     </Container>
+    </>
+
   )
 }
 
