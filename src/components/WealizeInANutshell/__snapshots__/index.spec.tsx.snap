@@ -14,7 +14,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
         isNavbarVisible={true}
       >
         <h3
-          className="styles__Title-sc-1wwnm82-1 iWFXeP"
+          className="styles__Title-sc-1wwnm82-1 fbxXKO"
         >
           profile:wealize-in-a-nutshell.title
         </h3>

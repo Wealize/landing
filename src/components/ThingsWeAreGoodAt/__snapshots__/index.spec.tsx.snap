@@ -8,11 +8,11 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
     >
       <styles__Container>
         <div
-          className="styles__Container-sc-3xtj1d-1 kEmkHI"
+          className="styles__Container-sc-3xtj1d-1 bydjCK"
         >
           <styles__Title>
             <h3
-              className="styles__Title-sc-3xtj1d-2 iirieU"
+              className="styles__Title-sc-3xtj1d-2 bCWcjP"
             >
               profile:things-we-are-good-at.title
             </h3>
@@ -23,7 +23,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
             >
               <styles__FirstCard>
                 <article
-                  className="styles__FirstCard-sc-3xtj1d-4 cjOqPK"
+                  className="styles__FirstCard-sc-3xtj1d-4 CuGla"
                 >
                   <Memo(ExpandableCard)
                     backgroundColor="#ffc9c9"
@@ -41,17 +41,17 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                       textColor="#f06078"
                     >
                       <div
-                        className="styles__Container-qa6j6v-0 bxtHMV ExpandableCard"
+                        className="styles__Container-qa6j6v-0 dWuots ExpandableCard"
                       >
                         <styles__Header
                           isExpanded={true}
                         >
                           <div
-                            className="styles__Header-qa6j6v-1 fiKvFj"
+                            className="styles__Header-qa6j6v-1 jeKrYK"
                           >
                             <styles__Headline>
                               <h3
-                                className="styles__Headline-qa6j6v-3 bTfiDn"
+                                className="styles__Headline-qa6j6v-3 ewkpmO"
                               >
                                 profile:things-we-are-good-at.first-card.headline
                               </h3>
@@ -99,11 +99,11 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                           isExpanded={true}
                         >
                           <div
-                            className="styles__Content-qa6j6v-2 eBbzIZ"
+                            className="styles__Content-qa6j6v-2 gkxgYk"
                           >
                             <styles__ImageContainer>
                               <div
-                                className="styles__ImageContainer-qa6j6v-5 dFQBrB"
+                                className="styles__ImageContainer-qa6j6v-5 kNExPN"
                               >
                                 <Memo(BlockchainIcon)>
                                   <svg
@@ -157,14 +157,14 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                             </styles__ImageContainer>
                             <styles__Subheadline>
                               <h4
-                                className="styles__Subheadline-qa6j6v-6 feBOZp"
+                                className="styles__Subheadline-qa6j6v-6 dgfMQj"
                               >
                                 profile:things-we-are-good-at.first-card.subheadline
                               </h4>
                             </styles__Subheadline>
                             <styles__Description>
                               <h5
-                                className="styles__Description-qa6j6v-7 dfLxeL"
+                                className="styles__Description-qa6j6v-7 gWlZeG"
                               >
                                 profile:things-we-are-good-at.first-card.description
                               </h5>
@@ -178,7 +178,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
               </styles__FirstCard>
               <styles__SecondCard>
                 <article
-                  className="styles__SecondCard-sc-3xtj1d-5 dtjNzZ"
+                  className="styles__SecondCard-sc-3xtj1d-5 hDLePU"
                 >
                   <Memo(ExpandableCard)
                     backgroundColor="#f06078"
@@ -196,17 +196,17 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                       textColor="#ffffff"
                     >
                       <div
-                        className="styles__Container-qa6j6v-0 dyoVcF ExpandableCard"
+                        className="styles__Container-qa6j6v-0 kJruNI ExpandableCard"
                       >
                         <styles__Header
                           isExpanded={false}
                         >
                           <div
-                            className="styles__Header-qa6j6v-1 kozwsZ"
+                            className="styles__Header-qa6j6v-1 WstWs"
                           >
                             <styles__Headline>
                               <h3
-                                className="styles__Headline-qa6j6v-3 bTfiDn"
+                                className="styles__Headline-qa6j6v-3 ewkpmO"
                               >
                                 profile:things-we-are-good-at.second-card.headline
                               </h3>
@@ -254,11 +254,11 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                           isExpanded={false}
                         >
                           <div
-                            className="styles__Content-qa6j6v-2 lfJPFE"
+                            className="styles__Content-qa6j6v-2 jLwxFh"
                           >
                             <styles__ImageContainer>
                               <div
-                                className="styles__ImageContainer-qa6j6v-5 dFQBrB"
+                                className="styles__ImageContainer-qa6j6v-5 kNExPN"
                               >
                                 <Memo(CognitiveIcon)>
                                   <svg
@@ -306,14 +306,14 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                             </styles__ImageContainer>
                             <styles__Subheadline>
                               <h4
-                                className="styles__Subheadline-qa6j6v-6 feBOZp"
+                                className="styles__Subheadline-qa6j6v-6 dgfMQj"
                               >
                                 profile:things-we-are-good-at.second-card.subheadline
                               </h4>
                             </styles__Subheadline>
                             <styles__Description>
                               <h5
-                                className="styles__Description-qa6j6v-7 dfLxeL"
+                                className="styles__Description-qa6j6v-7 gWlZeG"
                               >
                                 profile:things-we-are-good-at.second-card.description
                               </h5>
@@ -327,7 +327,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
               </styles__SecondCard>
               <styles__ThirdCard>
                 <article
-                  className="styles__ThirdCard-sc-3xtj1d-6 fxJHtu"
+                  className="styles__ThirdCard-sc-3xtj1d-6 gqpYNn"
                 >
                   <Memo(ExpandableCard)
                     backgroundColor="#8fd0c8"
@@ -345,17 +345,17 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                       textColor="#6666ff"
                     >
                       <div
-                        className="styles__Container-qa6j6v-0 ioGXdn ExpandableCard"
+                        className="styles__Container-qa6j6v-0 hNFqhu ExpandableCard"
                       >
                         <styles__Header
                           isExpanded={false}
                         >
                           <div
-                            className="styles__Header-qa6j6v-1 kozwsZ"
+                            className="styles__Header-qa6j6v-1 WstWs"
                           >
                             <styles__Headline>
                               <h3
-                                className="styles__Headline-qa6j6v-3 bTfiDn"
+                                className="styles__Headline-qa6j6v-3 ewkpmO"
                               >
                                 profile:things-we-are-good-at.third-card.headline
                               </h3>
@@ -403,11 +403,11 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                           isExpanded={false}
                         >
                           <div
-                            className="styles__Content-qa6j6v-2 lfJPFE"
+                            className="styles__Content-qa6j6v-2 jLwxFh"
                           >
                             <styles__ImageContainer>
                               <div
-                                className="styles__ImageContainer-qa6j6v-5 dFQBrB"
+                                className="styles__ImageContainer-qa6j6v-5 kNExPN"
                               >
                                 <Memo(ConversationalIcon)>
                                   <svg
@@ -449,14 +449,14 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                             </styles__ImageContainer>
                             <styles__Subheadline>
                               <h4
-                                className="styles__Subheadline-qa6j6v-6 feBOZp"
+                                className="styles__Subheadline-qa6j6v-6 dgfMQj"
                               >
                                 profile:things-we-are-good-at.third-card.subheadline
                               </h4>
                             </styles__Subheadline>
                             <styles__Description>
                               <h5
-                                className="styles__Description-qa6j6v-7 dfLxeL"
+                                className="styles__Description-qa6j6v-7 gWlZeG"
                               >
                                 profile:things-we-are-good-at.third-card.description
                               </h5>
