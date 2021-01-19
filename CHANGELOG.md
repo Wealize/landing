@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [Review ThingsWeAreGoodAt component](https://wealize.atlassian.net/browse/WLZAA-90)
+- [Review WealizeInANutshell component](https://wealize.atlassian.net/browse/WLZAA-92)
 - [Review WeDeliver component](https://wealize.atlassian.net/browse/WLZAA-91)
 - [Review Services and Ventures component](https://wealize.atlassian.net/browse/WLZAA-89)
 - [Review projects cards](https://wealize.atlassian.net/browse/WLZAA-85)
