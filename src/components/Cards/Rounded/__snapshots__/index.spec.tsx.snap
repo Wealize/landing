@@ -274,6 +274,7 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
                       onMouseEnter={[Function]}
                       rel="noreferrer"
                       target="_blank"
+                      title="Link for maldita project"
                     >
                       <a
                         aria-label="hola"
@@ -284,6 +285,7 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
                         onMouseEnter={[Function]}
                         rel="noreferrer"
                         target="_blank"
+                        title="Link for maldita project"
                       >
                         hola
                       </a>
