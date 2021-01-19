@@ -1,5 +1,6 @@
 import React from 'react'
 import useTranslation from 'next-translate/useTranslation'
+import Head from 'next/head'
 
 import projectsData from '../data/projectsData'
 import SimpleCard from '../components/Cards/Simple'
@@ -11,10 +12,26 @@ import { LayoutOptions } from '../interfaces/Page'
 import { ContainerProjects } from '../styles/pages/Home'
 
 const Index = (): JSX.Element => {
-  const { t } = useTranslation('home')
+  const { t, lang } = useTranslation('home')
 
   return (
   <>
+    <Head>
+      <title>{t('meta_title')}</title>
+      <meta
+        name="description"
+        content={t('meta_description')}
+      />
+      <link rel="alternate" hrefLang="es" href="https://wealize.digital/es" />
+      <link rel="alternate" hrefLang="en" href="https://wealize.digital/" />
+      {lang.toLowerCase() === 'en'
+        ? <link rel="canonical" href="https://wealize.digital/" />
+        : null}
+      {lang.toLowerCase() === 'es'
+        ? <link rel="canonical" href="https://wealize.digital/es" />
+        : null}
+    </Head>
+
     <HomeSpecial />
 
     <SimpleCard>
