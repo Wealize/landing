@@ -16,7 +16,6 @@ const HeadComponent = (): JSX.Element => {
   const isProfilePage = () => router.pathname === PROFILE_HREF
   const isIndexedPage = () => isHomePage() || isProfilePage()
 
-
   return (
   <Head>
     { isHomePage()
@@ -30,8 +29,11 @@ const HeadComponent = (): JSX.Element => {
           <link rel="alternate" hrefLang="es" href="https://wealize.digital/es" />
           <link rel="alternate" hrefLang="en" href="https://wealize.digital/" />
           {lang.toLowerCase() === EN_LANG_KEY
-            ? <link rel="canonical" href ="https://wealize.digital/" />
-            : <link rel="canonical" href ="https://wealize.digital/es" />}
+            ? <link rel="canonical" href="https://wealize.digital/" />
+            : null}
+          {lang.toLowerCase() === ES_LANG_KEY
+            ? <link rel="canonical" href="https://wealize.digital/es" />
+            : null}
         </>
         )
       : null }
@@ -47,8 +49,11 @@ const HeadComponent = (): JSX.Element => {
           <link rel="alternate" hrefLang="es" href="https://wealize.digital/es/profile" />
           <link rel="alternate" hrefLang="en" href="https://wealize.digital/profile" />
           {lang.toLowerCase() === EN_LANG_KEY
-            ? <link rel="canonical" href ="https://wealize.digital/profile" />
-            : <link rel="canonical" href ="https://wealize.digital/es/profile" />}
+            ? <link rel="canonical" href="https://wealize.digital/profile" />
+            : null}
+          {lang.toLowerCase() === ES_LANG_KEY
+            ? <link rel="canonical" href="https://wealize.digital/es/profile" />
+            : null}
         </>
         )
       : null }
