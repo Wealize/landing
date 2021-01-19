@@ -94,7 +94,7 @@ export const LinksContainer = styled.div`
   justify-content: center;
 `
 
-export const NavLink = styled.a<{ isCurrentPage: boolean }>`
+export const NavLink = styled.a<{ isCurrentPage: boolean, hreflang?: string }>`
   text-decoration: none;
   color: ${DARK_GRAY_COLOR};
   margin: 0 ${halfPx()};

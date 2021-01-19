@@ -33,7 +33,7 @@ const TalentCard = ({
             ? socialNetworks.map(
                 (socialNetwork: SocialNetwork, index: number) => (
                   <Link href={socialNetwork.url} key={index} passHref>
-                    <a target="_blank">{socialNetwork.name}</a>
+                    <a rel="noreferrer" target="_blank" title={`${socialNetwork.name} talent link`}>{socialNetwork.name}</a>
                   </Link>
                 )
               )

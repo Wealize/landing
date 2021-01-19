@@ -55,7 +55,7 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
     >
       <LogoMobileContainer>
         <Link href={HOME_HREF}>
-          <a aria-label="Home" data-cy="navbar-logo-mobile-container">
+          <a title="Home page link" aria-label="Home" data-cy="navbar-logo-mobile-container">
             <WealizeMinimalMediumIcon />
           </a>
         </Link>
@@ -63,7 +63,7 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
 
       <LogoContainer >
         <Link href={HOME_HREF}>
-          <a aria-label="Home" data-cy="navbar-logo-container">
+          <a title="Home page link" aria-label="Home" data-cy="navbar-logo-container">
             <WealizeNormalMediumIcon />
           </a>
         </Link>
@@ -88,6 +88,7 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
             <LinksContainer>
               <Link href={PROFILE_HREF}>
                 <NavLink
+                  title="Profile page link"
                   aria-label="Profile"
                   data-cy="nav-profile-link"
                   isCurrentPage={isCurrentPage(PROFILE_HREF)}
@@ -97,6 +98,7 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
               </Link>
 
               <NavLink
+                title="Contact"
                 aria-label="Contact"
                 data-cy="nav-contact-link"
                 onClick={scrollToFooter}
@@ -111,9 +113,10 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
                   return (
                     <Link href={router.pathname} locale={lng} key={lng}>
                       <NavLink
-                      id="change-language-toggle"
-                      isCurrentPage={null}
-                      aria-label="Change language">
+                        title="Change language button"
+                        id="change-language-toggle"
+                        isCurrentPage={null}
+                        aria-label="Change language">
                         {`${lng}`}
                       </NavLink>
                     </Link>
