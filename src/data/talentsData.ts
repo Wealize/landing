@@ -177,7 +177,7 @@ const talentsData: CardTalent[] = [
     trans_key: 'marisa_ruiz',
     imageUrl: '/img/talents/wealize_marisa.png',
     name: 'Marisa Ruiz',
-    role: 'role',
+    role: 'Research Funding Manager',
     socialNetworks: [
       {
         name: 'Linkedin',
