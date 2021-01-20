@@ -121,6 +121,9 @@
     },
     "mariano_morera": {
       "role": "${text}"
+    },
+    "javier_martin": {
+      "role": "${text}"
     }
   },
   "accordion": {
