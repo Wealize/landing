@@ -5,7 +5,7 @@ const talentsData: CardTalent[] = [
     trans_key: 'miguel_calero',
     imageUrl: '/img/talents/wealize_miguel.png',
     name: 'Miguel Calero',
-    role: 'Co-Founder and CEO',
+    role: 'Co-Founder & CEO',
     socialNetworks: [
       {
         name: 'Twitter',
@@ -201,7 +201,7 @@ const talentsData: CardTalent[] = [
     trans_key: 'toni_parn',
     imageUrl: '/img/talents/wealize_toni.png',
     name: 'Toni Pärn',
-    role: 'Business developer',
+    role: 'Business Developer',
     socialNetworks: [
       {
         name: 'Linkedin',
@@ -213,7 +213,7 @@ const talentsData: CardTalent[] = [
     trans_key: 'mariano_morera',
     imageUrl: '/img/talents/wealize_mariano.png',
     name: 'Mariano Morera',
-    role: 'Business specialist',
+    role: 'Business Specialist',
     socialNetworks: [
       {
         name: 'Linkedin',
