@@ -3,9 +3,9 @@ import { CardTalent } from '../interfaces/Cards/CardTalent'
 const talentsData: CardTalent[] = [
   {
     trans_key: 'miguel_calero',
-    imageUrl: '/img/talents/placeholder.png',
+    imageUrl: '/img/talents/wealize_miguel.png',
     name: 'Miguel Calero',
-    role: 'Co-founder',
+    role: 'Co-Founder and CEO',
     socialNetworks: [
       {
         name: 'Twitter',
@@ -19,9 +19,9 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'javier_aguirre',
-    imageUrl: '/img/talents/placeholder.png',
+    imageUrl: '/img/talents/wealize_javier.png',
     name: 'Javier Aguirre',
-    role: 'Co-founder',
+    role: 'Co-Founder & CTO',
     socialNetworks: [
       {
         name: 'Linkedin',
@@ -35,7 +35,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'dani_luque',
-    imageUrl: '/img/talents/placeholder.png',
+    imageUrl: '/img/talents/wealize_daniel.png',
     name: 'Dani Luque',
     role: 'Software Engineer',
     socialNetworks: [
@@ -51,7 +51,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'dani_ranchal',
-    imageUrl: '/img/talents/placeholder.png',
+    imageUrl: '/img/talents/wealize_danielr.png',
     name: 'Dani Ranchal',
     role: 'Software Engineer',
     socialNetworks: [
@@ -67,9 +67,9 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'jesus_mejias',
-    imageUrl: '/img/talents/placeholder.png',
+    imageUrl: '/img/talents/wealize_jesus.png',
     name: 'Jesús Mejías',
-    role: 'Software Developer',
+    role: 'Software Engineer',
     socialNetworks: [
       {
         name: 'Linkedin',
@@ -87,9 +87,9 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'miguel_gavilan',
-    imageUrl: '/img/talents/placeholder.png',
+    imageUrl: '/img/talents/wealize_miguelg.png',
     name: 'Miguel A. Gavilán',
-    role: 'Software Developer',
+    role: 'Software Engineer',
     socialNetworks: [
       {
         name: 'Linkedin',
@@ -103,7 +103,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'maca_torralba',
-    imageUrl: '/img/talents/placeholder.png',
+    imageUrl: '/img/talents/wealize_maca.png',
     name: 'Maca Torralba',
     role: 'UX/UI Designer',
     socialNetworks: [
@@ -119,7 +119,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'angel_heredia',
-    imageUrl: '/img/talents/placeholder.png',
+    imageUrl: '/img/talents/wealize_angel.png',
     name: 'Ángel Heredia',
     role: 'Software Engineer',
     socialNetworks: [
@@ -135,9 +135,9 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'antonio_romero',
-    imageUrl: '/img/talents/placeholder.png',
+    imageUrl: '/img/talents/wealize_antonio.png',
     name: 'Antonio Romero',
-    role: 'Software Developer',
+    role: 'Software Engineer',
     socialNetworks: [
       {
         name: 'Linkedin',
@@ -149,7 +149,7 @@ const talentsData: CardTalent[] = [
     trans_key: 'nieves_borrero',
     imageUrl: '/img/talents/placeholder.png',
     name: 'Nieves Borrero',
-    role: 'Software Developer',
+    role: 'Software Engineer',
     socialNetworks: [
       {
         name: 'Linkedin',
@@ -163,7 +163,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'victoria_perez',
-    imageUrl: '/img/talents/placeholder.png',
+    imageUrl: '/img/talents/wealize_victoria.png',
     name: 'Victoria Pérez',
     role: 'Software Engineer',
     socialNetworks: [
@@ -175,23 +175,31 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'marisa_ruiz',
-    imageUrl: '/img/talents/placeholder.png',
+    imageUrl: '/img/talents/wealize_marisa.png',
     name: 'Marisa Ruiz',
     role: 'role',
     socialNetworks: [
+      {
+        name: 'Linkedin',
+        url: 'https://www.linkedin.com/in/marisaruizgarcia/'
+      }
     ]
   },
   {
     trans_key: 'joaquin_lopez',
-    imageUrl: '/img/talents/placeholder.png',
+    imageUrl: '/img/talents/wealize_joaquin.png',
     name: 'Joaquín López',
-    role: 'role',
+    role: 'Blockchain Specialist',
     socialNetworks: [
+      {
+        name: 'Linkedin',
+        url: 'https://www.linkedin.com/in/marisaruizgarcia/'
+      }
     ]
   },
   {
     trans_key: 'toni_parn',
-    imageUrl: '/img/talents/placeholder.png',
+    imageUrl: '/img/talents/wealize_toni.png',
     name: 'Toni Pärn',
     role: 'Business developer',
     socialNetworks: [
@@ -203,13 +211,29 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'mariano_morera',
-    imageUrl: '/img/talents/placeholder.png',
+    imageUrl: '/img/talents/wealize_mariano.png',
     name: 'Mariano Morera',
     role: 'Business specialist',
     socialNetworks: [
       {
         name: 'Linkedin',
         url: 'https://www.linkedin.com/in/marianomorerasanchez'
+      }
+    ]
+  },
+  {
+    trans_key: 'javier_martin',
+    imageUrl: '/img/talents/wealize_javierm.png',
+    name: 'Javier Martín',
+    role: 'Trainee Software Engineer',
+    socialNetworks: [
+      {
+        name: 'Linkedin',
+        url: 'https://www.linkedin.com/in/javiermartingarcia93/'
+      },
+      {
+        name: 'Twitter',
+        url: 'https://twitter.com/JaviM_G'
       }
     ]
   }

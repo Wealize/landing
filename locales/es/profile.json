@@ -78,10 +78,10 @@
     "title": "A partir de ahora nuestros equipos están repartidos por España, Alemania, Estonia, Irlanda y creciendo ...",
     "refresh-button-text": "Refrescar talentos",
     "miguel_calero": {
-      "role": "Cofundador"
+      "role": "Cofundador y CEO"
     },
     "javier_aguirre": {
-      "role": "Cofundador"
+      "role": "Cofundador y CTO"
     },
     "dani_luque": {
       "role": "Ingeniero de software"
@@ -90,10 +90,10 @@
       "role": "Ingeniero de software"
     },
     "jesus_mejias": {
-      "role": "Desarrollador de software"
+      "role": "Ingeniero de software"
     },
     "miguel_gavilan": {
-      "role": "Desarrollador de software"
+      "role": "Ingeniero de software"
     },
     "maca_torralba": {
       "role": "Diseñadora UX/UI"
@@ -102,25 +102,28 @@
       "role": "Ingeniero de software"
     },
     "antonio_romero": {
-      "role": "Desarrollador de software"
+      "role": "Ingeniero de software"
     },
     "nieves_borrero": {
-      "role": "Desarrollador de software"
+      "role": "Ingeniera de software"
     },
     "victoria_perez": {
       "role": "Ingeniera de software"
     },
     "marisa_ruiz": {
-      "role": "rol"
+      "role": "Research Funding Manager"
     },
     "joaquin_lopez": {
-      "role": "rol"
+      "role": "Especialista en blockchain"
     },
     "toni_parn": {
       "role": "Desarrollador de negocios"
     },
     "mariano_morera": {
       "role": "Especialista en negocios"
+    },
+    "javier_martin": {
+      "role": "Ingeniero de software en prácticas"
     }
   },
   "accordion": {

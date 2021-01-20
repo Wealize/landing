@@ -35,7 +35,7 @@ const useRefreshContent = (
     if (numberElements > array.length) return ranTalents
 
     while (numberElements--) {
-      randomIndex = Math.floor(Math.random() * (copyArray.length - 1))
+      randomIndex = Math.floor(Math.random() * (copyArray.length))
       const talent = copyArray[randomIndex]
 
       ranTalents.push(talent)
@@ -55,7 +55,7 @@ const useRefreshContent = (
     if (numbersOfIndex > array.length) return ranTalents
 
     while (numbersOfIndex--) {
-      randomIndex = Math.floor(Math.random() * (copyArray.length - 1))
+      randomIndex = Math.floor(Math.random() * (copyArray.length))
 
       ranTalents.push(randomIndex)
       copyArray.splice(randomIndex, 1)
