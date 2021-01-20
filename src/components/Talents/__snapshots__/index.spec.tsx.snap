@@ -14,20 +14,20 @@ exports[`<Talents /> should render 1`] = `
       size={
         Object {
           "desktop": Array [
-            170,
-            50,
+            200,
+            85,
           ],
           "mobile": Array [
-            90,
-            50,
+            150,
+            70,
           ],
           "tablet": Array [
-            150,
-            50,
+            180,
+            80,
           ],
           "wide": Array [
-            190,
-            50,
+            220,
+            90,
           ],
         }
       }
@@ -38,82 +38,10 @@ exports[`<Talents /> should render 1`] = `
   </styles__ContentContainer>
   <styles__CardsContainer>
     <Memo(TalentCard)
-      description="profile:talents.miguel_calero.description"
       imageUrl="/img/talents/placeholder.png"
       key="0"
-      name="Miguel Calero"
-      socialNetworks={
-        Array [
-          Object {
-            "name": "Twitter",
-            "url": "https://twitter.com/miguelcalero",
-          },
-          Object {
-            "name": "Linkedin",
-            "url": "https://www.linkedin.com/in/miguelcalero/",
-          },
-        ]
-      }
-    />
-    <Memo(TalentCard)
-      description="profile:talents.javier_aguirre.description"
-      imageUrl="/img/talents/placeholder.png"
-      key="1"
-      name="Javier Aguirre"
-      socialNetworks={
-        Array [
-          Object {
-            "name": "Linkedin",
-            "url": "https://www.linkedin.com/in/javaguirre/",
-          },
-          Object {
-            "name": "Twitter",
-            "url": "https://twitter.com/javaguirre",
-          },
-        ]
-      }
-    />
-    <Memo(TalentCard)
-      description="profile:talents.dani_luque.description"
-      imageUrl="/img/talents/placeholder.png"
-      key="2"
-      name="Dani Luque"
-      socialNetworks={
-        Array [
-          Object {
-            "name": "Linkedin",
-            "url": "https://www.linkedin.com/in/danielluquequintana/",
-          },
-          Object {
-            "name": "Twitter",
-            "url": "https://twitter.com/DaniLuque20",
-          },
-        ]
-      }
-    />
-    <Memo(TalentCard)
-      description="profile:talents.dani_ranchal.description"
-      imageUrl="/img/talents/placeholder.png"
-      key="3"
-      name="Dani Ranchal"
-      socialNetworks={
-        Array [
-          Object {
-            "name": "Linkedin",
-            "url": "https://www.linkedin.com/in/danielranchal",
-          },
-          Object {
-            "name": "Twitter",
-            "url": "https://www.twitter.com/daniranchal",
-          },
-        ]
-      }
-    />
-    <Memo(TalentCard)
-      description="profile:talents.jesus_mejias.description"
-      imageUrl="/img/talents/placeholder.png"
-      key="4"
       name="Jesús Mejías"
+      role="profile:talents.jesus_mejias.role"
       socialNetworks={
         Array [
           Object {
@@ -132,28 +60,28 @@ exports[`<Talents /> should render 1`] = `
       }
     />
     <Memo(TalentCard)
-      description="profile:talents.miguel_gavilan.description"
       imageUrl="/img/talents/placeholder.png"
-      key="5"
-      name="Miguel A. Gavilán"
+      key="1"
+      name="Dani Luque"
+      role="profile:talents.dani_luque.role"
       socialNetworks={
         Array [
           Object {
             "name": "Linkedin",
-            "url": "https://www.linkedin.com/in/miguel-ángel-gavilán-merino-111438138/",
+            "url": "https://www.linkedin.com/in/danielluquequintana/",
           },
           Object {
             "name": "Twitter",
-            "url": "https://twitter.com/miguel5gavilan",
+            "url": "https://twitter.com/DaniLuque20",
           },
         ]
       }
     />
     <Memo(TalentCard)
-      description="profile:talents.maca_torralba.description"
       imageUrl="/img/talents/placeholder.png"
-      key="6"
+      key="2"
       name="Maca Torralba"
+      role="profile:talents.maca_torralba.role"
       socialNetworks={
         Array [
           Object {
@@ -168,42 +96,10 @@ exports[`<Talents /> should render 1`] = `
       }
     />
     <Memo(TalentCard)
-      description="profile:talents.angel_heredia.description"
       imageUrl="/img/talents/placeholder.png"
-      key="7"
-      name="Ángel Heredia"
-      socialNetworks={
-        Array [
-          Object {
-            "name": "Linkedin",
-            "url": "https://www.linkedin.com/in/angelherediaperez/",
-          },
-          Object {
-            "name": "Twitter",
-            "url": "https://twitter.com/Anthares101",
-          },
-        ]
-      }
-    />
-    <Memo(TalentCard)
-      description="profile:talents.antonio_romero.description"
-      imageUrl="/img/talents/placeholder.png"
-      key="8"
-      name="Antonio Romero"
-      socialNetworks={
-        Array [
-          Object {
-            "name": "Linkedin",
-            "url": "www.linkedin.com/in/antonio-romero-cañete-a8488531",
-          },
-        ]
-      }
-    />
-    <Memo(TalentCard)
-      description="profile:talents.nieves_borrero.description"
-      imageUrl="/img/talents/placeholder.png"
-      key="9"
+      key="3"
       name="Nieves Borrero"
+      role="profile:talents.nieves_borrero.role"
       socialNetworks={
         Array [
           Object {
@@ -218,10 +114,85 @@ exports[`<Talents /> should render 1`] = `
       }
     />
     <Memo(TalentCard)
-      description="profile:talents.victoria_perez.description"
       imageUrl="/img/talents/placeholder.png"
-      key="10"
+      key="4"
+      name="Ángel Heredia"
+      role="profile:talents.angel_heredia.role"
+      socialNetworks={
+        Array [
+          Object {
+            "name": "Linkedin",
+            "url": "https://www.linkedin.com/in/angelherediaperez/",
+          },
+          Object {
+            "name": "Twitter",
+            "url": "https://twitter.com/Anthares101",
+          },
+        ]
+      }
+    />
+    <Memo(TalentCard)
+      imageUrl="/img/talents/placeholder.png"
+      key="5"
+      name="Joaquín López"
+      role="profile:talents.joaquin_lopez.role"
+      socialNetworks={Array []}
+    />
+    <Memo(TalentCard)
+      imageUrl="/img/talents/placeholder.png"
+      key="6"
+      name="Miguel A. Gavilán"
+      role="profile:talents.miguel_gavilan.role"
+      socialNetworks={
+        Array [
+          Object {
+            "name": "Linkedin",
+            "url": "https://www.linkedin.com/in/miguel-ángel-gavilán-merino-111438138/",
+          },
+          Object {
+            "name": "Twitter",
+            "url": "https://twitter.com/miguel5gavilan",
+          },
+        ]
+      }
+    />
+    <Memo(TalentCard)
+      imageUrl="/img/talents/placeholder.png"
+      key="7"
+      name="Mariano Morera"
+      role="profile:talents.mariano_morera.role"
+      socialNetworks={
+        Array [
+          Object {
+            "name": "Linkedin",
+            "url": "https://www.linkedin.com/in/marianomorerasanchez",
+          },
+        ]
+      }
+    />
+    <Memo(TalentCard)
+      imageUrl="/img/talents/placeholder.png"
+      key="8"
+      name="Javier Aguirre"
+      role="profile:talents.javier_aguirre.role"
+      socialNetworks={
+        Array [
+          Object {
+            "name": "Linkedin",
+            "url": "https://www.linkedin.com/in/javaguirre/",
+          },
+          Object {
+            "name": "Twitter",
+            "url": "https://twitter.com/javaguirre",
+          },
+        ]
+      }
+    />
+    <Memo(TalentCard)
+      imageUrl="/img/talents/placeholder.png"
+      key="9"
       name="Victoria Pérez"
+      role="profile:talents.victoria_perez.role"
       socialNetworks={
         Array [
           Object {
@@ -232,24 +203,10 @@ exports[`<Talents /> should render 1`] = `
       }
     />
     <Memo(TalentCard)
-      description="profile:talents.marisa_ruiz.description"
       imageUrl="/img/talents/placeholder.png"
-      key="11"
-      name="Marisa Ruiz"
-      socialNetworks={Array []}
-    />
-    <Memo(TalentCard)
-      description="profile:talents.joaquin_lopez.description"
-      imageUrl="/img/talents/placeholder.png"
-      key="12"
-      name="Joaquín López"
-      socialNetworks={Array []}
-    />
-    <Memo(TalentCard)
-      description="profile:talents.toni_parn.description"
-      imageUrl="/img/talents/placeholder.png"
-      key="13"
+      key="10"
       name="Toni Pärn"
+      role="profile:talents.toni_parn.role"
       socialNetworks={
         Array [
           Object {
@@ -260,43 +217,58 @@ exports[`<Talents /> should render 1`] = `
       }
     />
     <Memo(TalentCard)
-      description="profile:talents.miriam_flores.description"
+      imageUrl="/img/talents/placeholder.png"
+      key="11"
+      name="Marisa Ruiz"
+      role="profile:talents.marisa_ruiz.role"
+      socialNetworks={Array []}
+    />
+    <Memo(TalentCard)
+      imageUrl="/img/talents/placeholder.png"
+      key="12"
+      name="Miguel Calero"
+      role="profile:talents.miguel_calero.role"
+      socialNetworks={
+        Array [
+          Object {
+            "name": "Twitter",
+            "url": "https://twitter.com/miguelcalero",
+          },
+          Object {
+            "name": "Linkedin",
+            "url": "https://www.linkedin.com/in/miguelcalero/",
+          },
+        ]
+      }
+    />
+    <Memo(TalentCard)
+      imageUrl="/img/talents/placeholder.png"
+      key="13"
+      name="Antonio Romero"
+      role="profile:talents.antonio_romero.role"
+      socialNetworks={
+        Array [
+          Object {
+            "name": "Linkedin",
+            "url": "www.linkedin.com/in/antonio-romero-cañete-a8488531",
+          },
+        ]
+      }
+    />
+    <Memo(TalentCard)
       imageUrl="/img/talents/placeholder.png"
       key="14"
-      name="Miriam Flores"
+      name="Dani Ranchal"
+      role="profile:talents.dani_ranchal.role"
       socialNetworks={
         Array [
           Object {
             "name": "Linkedin",
-            "url": "https://es.linkedin.com/in/mfarribas",
+            "url": "https://www.linkedin.com/in/danielranchal",
           },
-        ]
-      }
-    />
-    <Memo(TalentCard)
-      description="profile:talents.rafael_rodriguez.description"
-      imageUrl="/img/talents/placeholder.png"
-      key="15"
-      name="Rafael Rodríguez"
-      socialNetworks={
-        Array [
           Object {
-            "name": "Linkedin",
-            "url": "https://es.linkedin.com/in/mfarribas",
-          },
-        ]
-      }
-    />
-    <Memo(TalentCard)
-      description="profile:talents.mariano_morera.description"
-      imageUrl="/img/talents/placeholder.png"
-      key="16"
-      name="Mariano Morera"
-      socialNetworks={
-        Array [
-          Object {
-            "name": "Linkedin",
-            "url": "https://www.linkedin.com/in/marianomorerasanchez",
+            "name": "Twitter",
+            "url": "https://www.twitter.com/daniranchal",
           },
         ]
       }

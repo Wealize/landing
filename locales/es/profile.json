@@ -27,7 +27,6 @@
       "section-description-2": "Buscamos oportunidades de financiación y licitación para innovar juntos."
     }
   },
-
   "things-we-are-good-at" : {
     "title": "Cosas en las que somos buenos",
     "first-card": {
@@ -79,55 +78,49 @@
     "title": "A partir de ahora nuestros equipos están repartidos por España, Alemania, Estonia, Irlanda y creciendo ...",
     "refresh-button-text": "Refrescar talentos",
     "miguel_calero": {
-      "description": "Miguel Calero es un emprendedor en serie, consultor, conferencista, ponente, catalizador de la innovación en espacios donde la digitalización empresarial agrega potencial para un cambio relevante y padre de dos hijos."
+      "role": "Cofundador"
     },
     "javier_aguirre": {
-      "description": "Javi es ingeniero de software. Está obsesionado con aprender nuevas formas de superarse y mantenerse despierto en el mundo de la tecnología. Cree en la forma de pensar de las startups para hacer una persona adaptable e ingeniosa."
+      "role": "Cofundador"
     },
     "dani_luque": {
-      "description": "Dani es un ingeniero de software, apasionado por construir y entregar software de alta calidad. Se preocupa por la automatización, el trabajo en equipo y la mejora continua."
+      "role": "Ingeniero de software"
     },
     "dani_ranchal": {
-      "description": "Daniel es un ingeniero de software graduado. Le interesa el mundo de la inteligencia artificial."
+      "role": "Ingeniero de software"
     },
     "jesus_mejias": {
-      "description": "Jesús es un desarrollador web Full-Stack. Apasionado de la tecnología, Open-source, trabajo en equipo, siempre con ganas de seguir aprendiendo."
+      "role": "Desarrollador de software"
     },
     "miguel_gavilan": {
-      "description": "Miguel es una persona trabajadora, carismática y un poco perfeccionista. Nunca cree que algo sea lo suficientemente bueno. Le encanta sentirse realizado, por eso nunca deja de investigar sobre nuevas tecnologías."
+      "role": "Desarrollador de software"
     },
     "maca_torralba": {
-      "description": "Maca es un diseñadora visual especializada en UX / UI con habilidades en marca e identidad, startups lean, ágil, comunicación y trato con el cliente."
+      "role": "Diseñadora UX/UI"
     },
     "angel_heredia": {
-      "description": "Ángel es ingeniero de software y miembro del Aula de Software Libre. Apasionado del desarrollo de software y videojuegos. Siempre está aprendiendo cosas nuevas sobre tecnología, en campos como la ciberseguridad, el análisis numérico o la IA."
+      "role": "Ingeniero de software"
     },
     "antonio_romero": {
-      "description": "Antonio es un desarrollador de software, precursor del buen rollo, que disfruta de la programación, los desafíos, el trabajo en equipo, el café y la música. Siempre dispuesto a seguir aprendiendo. ¡Cuanto mayor es el esfuerzo, mayor es la gloria!"
+      "role": "Desarrollador de software"
     },
     "nieves_borrero": {
-      "description": "Nieves Borrero es una desarrolladora de software que disfruta programando y convirtiendo código en una obra de arte que mejora la vida de otras personas, por eso también se dedica a colaborar como organizadora en Google Developers Group y Women TechMackers."
+      "role": "Desarrollador de software"
     },
     "victoria_perez": {
-      "description": "descripción"
+      "role": "Ingeniera de software"
     },
     "marisa_ruiz": {
-      "description": "descripción"
+      "role": "rol"
     },
     "joaquin_lopez": {
-      "description": "descripción"
+      "role": "rol"
     },
     "toni_parn": {
-      "description": "Solo estoy aquí para ayudar :)"
-    },
-    "miriam_flores": {
-      "description": "Es una persona versátil y dinámica que busca sobresalir en todo lo que hace. Le encanta aprender sobre disciplinas completamente diferentes y desarrollarse en nuevas áreas porque es de las que piensa que todo conocimiento es bueno."
-    },
-    "rafael_rodriguez": {
-      "description": "descripción"
+      "role": "Desarrollador de negocios"
     },
     "mariano_morera": {
-      "description": "Natural de Sevilla, estudió en Córdoba y vivió en otros lugares como Barcelona y Madrid (también otros países). Licenciado en administración de empresas, trabajador en tecnología e interesado en diseño."
+      "role": "Especialista en negocios"
     }
   },
   "accordion": {
