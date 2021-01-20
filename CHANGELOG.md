@@ -7,12 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [Review talents component](https://wealize.atlassian.net/browse/WLZAA-93)
 - [Hide indexing in pages that we do not want to index](https://wealize.atlassian.net/browse/WLZAA-111)
 - [Review language links on Navbar](https://wealize.atlassian.net/browse/WLZAA-110)
 - [Review internal linking](https://wealize.atlassian.net/browse/WLZAA-109)
 - [Add attribute title on links](https://wealize.atlassian.net/browse/WLZAA-107)
 - [Review title and description metatags](https://wealize.atlassian.net/browse/WLZAA-106)
-
 - [Review ThingsWeAreGoodAt component](https://wealize.atlassian.net/browse/WLZAA-90)
 - [Review WealizeInANutshell component](https://wealize.atlassian.net/browse/WLZAA-92)
 - [Review WeDeliver component](https://wealize.atlassian.net/browse/WLZAA-91)
