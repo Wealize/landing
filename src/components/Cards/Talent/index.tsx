@@ -17,7 +17,7 @@ import {
 const TalentCard = ({
   imageUrl,
   name,
-  description,
+  role,
   socialNetworks
 }: CardTalent) => {
   return (
@@ -27,7 +27,7 @@ const TalentCard = ({
       </ImageContainer>
       <ContentContainer>
         <Headline>{name}</Headline>
-        <Subheadline>{description}</Subheadline>
+        <Subheadline>{role}</Subheadline>
         <SocialNetworksContainer>
           {socialNetworks
             ? socialNetworks.map(

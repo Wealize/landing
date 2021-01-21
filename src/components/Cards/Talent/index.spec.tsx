@@ -7,7 +7,7 @@ describe('<TalentCard />', () => {
   const cardProps = {
     imageUrl: '/img/talents/placeholder1.jpg',
     name: 'Jhon',
-    description: 'test description',
+    role: 'test role',
     socialNetworks: [
       {
         name: 'Linkedin',
@@ -24,7 +24,7 @@ describe('<TalentCard />', () => {
   it('should render content correctly', () => {
     expect(wrapper.find('img').length).toEqual(1)
     expect(wrapper.find(Headline).text()).toEqual(cardProps.name)
-    expect(wrapper.find(Subheadline).text()).toEqual(cardProps.description)
+    expect(wrapper.find(Subheadline).text()).toEqual(cardProps.role)
     expect(wrapper.find(SocialNetworksContainer).children().length).toEqual(1)
   })
 })
