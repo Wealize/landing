@@ -78,55 +78,52 @@
     "title": "As of now our teams are spread across Spain, Germany, Estonia, Ireland and growing...",
     "refresh-button-text": "Refresh talents",
     "miguel_calero": {
-      "description": "${text}"
+      "role": "${text}"
     },
     "javier_aguirre": {
-      "description": "${text}"
+      "role": "${text}"
     },
     "dani_luque": {
-      "description": "${text}"
+      "role": "${text}"
     },
     "dani_ranchal": {
-      "description": "${text}"
+      "role": "${text}"
     },
     "jesus_mejias": {
-      "description": "${text}"
+      "role": "${text}"
     },
     "miguel_gavilan": {
-      "description": "${text}"
+      "role": "${text}"
     },
     "maca_torralba": {
-      "description": "${text}"
+      "role": "${text}"
     },
     "angel_heredia": {
-      "description": "${text}"
+      "role": "${text}"
     },
     "antonio_romero": {
-      "description": "${text}"
+      "role": "${text}"
     },
     "nieves_borrero": {
-      "description": "${text}"
+      "role": "${text}"
     },
     "victoria_perez": {
-      "description": "${text}"
+      "role": "${text}"
     },
     "marisa_ruiz": {
-      "description": "${text}"
+      "role": "${text}"
     },
     "joaquin_lopez": {
-      "description": "${text}"
+      "role": "${text}"
     },
     "toni_parn": {
-      "description": "${text}"
-    },
-    "miriam_flores": {
-      "description": "${text}"
-    },
-    "rafael_rodriguez": {
-      "description": "${text}"
+      "role": "${text}"
     },
     "mariano_morera": {
-      "description": "${text}"
+      "role": "${text}"
+    },
+    "javier_martin": {
+      "role": "${text}"
     }
   },
   "accordion": {

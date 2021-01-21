@@ -37,7 +37,7 @@ export const ContentContainer = styled.div`
   padding: 0;
 
   & .button-rounded {
-    max-width: 150px;
+    max-width: 200px;
     & span {
       font-size: 0.9rem;
     }
