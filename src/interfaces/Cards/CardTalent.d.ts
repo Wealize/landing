@@ -5,6 +5,6 @@ export interface CardTalent {
   trans_key?: string
   imageUrl: string
   name: string
-  description: string
+  role: string
   socialNetworks: SocialNetwork[]
 }
