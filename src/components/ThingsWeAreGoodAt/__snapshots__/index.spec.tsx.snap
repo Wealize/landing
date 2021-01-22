@@ -4,11 +4,11 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
 <Memo(ThingsWeAreGoodAt)>
   <styles__BgContainer>
     <div
-      className="styles__BgContainer-sc-3xtj1d-0 bJnlOi"
+      className="styles__BgContainer-sc-3xtj1d-0 cPYCuj"
     >
       <styles__Container>
         <div
-          className="styles__Container-sc-3xtj1d-1 bydjCK"
+          className="styles__Container-sc-3xtj1d-1 gosfSK"
         >
           <styles__Title>
             <h3
@@ -19,7 +19,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
           </styles__Title>
           <styles__CardsContainer>
             <div
-              className="styles__CardsContainer-sc-3xtj1d-3 lhdAuS"
+              className="styles__CardsContainer-sc-3xtj1d-3 bmGMGR"
             >
               <styles__FirstCard>
                 <article
@@ -41,7 +41,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                       textColor="#f06078"
                     >
                       <div
-                        className="styles__Container-qa6j6v-0 gHtomM ExpandableCard"
+                        className="styles__Container-qa6j6v-0 iEVIme ExpandableCard"
                       >
                         <styles__Header
                           isExpanded={true}
@@ -196,7 +196,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                       textColor="#ffffff"
                     >
                       <div
-                        className="styles__Container-qa6j6v-0 GDHfI ExpandableCard"
+                        className="styles__Container-qa6j6v-0 kCjMoC ExpandableCard"
                       >
                         <styles__Header
                           isExpanded={false}
@@ -345,7 +345,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
                       textColor="#6666ff"
                     >
                       <div
-                        className="styles__Container-qa6j6v-0 gkkyHe ExpandableCard"
+                        className="styles__Container-qa6j6v-0 gmgZlU ExpandableCard"
                       >
                         <styles__Header
                           isExpanded={false}

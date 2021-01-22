@@ -5,18 +5,49 @@ import {
   singlePx,
   doublePx,
   triplePx,
-  quadruplePx,
-  triple,
-  quadruple
+  quadruplePx
 } from '../../theme/space'
 import { media } from '../../theme/media'
 import { DEFAULT_RADIUS } from '../../theme/border'
+import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 
 export const BgContainer = styled.div`
   overflow: hidden;
   width: 100%;
   height: 100%;
   background-color: ${WHITE_COLOR};
+
+  ${CONTAINER_SPACING.MOBILE}
+  padding-left: 0;
+  padding-right: 0;
+
+  ${media.greaterThan('md')`
+    ${CONTAINER_SPACING.TABLET}
+    padding-left: 0;
+    padding-right: 0;
+  `};
+
+  ${media.greaterThan('lg')`
+    ${CONTAINER_SPACING.SMALL_DESKTOP};
+    padding-left: 0;
+    padding-right: 0;
+  `};
+
+  ${media.greaterThan('xl')`
+    ${CONTAINER_SPACING.DESKTOP};
+    padding-left: 0;
+    padding-right: 0;
+  `};
+
+  ${media.greaterThan('xxl')`
+    ${CONTAINER_SPACING.WIDE};
+    padding-left: 0;
+    padding-right: 0;
+  `};
+
+  ${media.greaterThan('xxxl')`
+
+  `};
 `
 
 export const Container = styled.div`
@@ -34,11 +65,11 @@ export const Container = styled.div`
     width: 90%;
     border-top-right-radius: initial;
     border-top-left-radius: ${DEFAULT_RADIUS}px;
-    margin: ${triplePx()} 0 ${triple() * 7}px 10%;
+    margin: 0 0 0 10%;
   `};
 
   ${media.greaterThan('xxl')`
-    margin: ${quadruplePx()} 0 ${quadruple() * 6}px 10%;
+    margin: 0 0 0 10%;
   `};
 `
 
@@ -71,12 +102,8 @@ export const CardsContainer = styled.div`
   ${media.greaterThan('lg')`
     display: flex;
     flex-direction: row;
-    min-height: 500px;
-  `};
-
-  ${media.greaterThan('xl')`
-    display: flex;
-    flex-direction: row;
+    min-height: 600px;
+    margin-bottom: 21.3rem;
   `};
 `
 

@@ -29,7 +29,7 @@ export const Container = styled.div<{
 
   ${media.greaterThan('lg')`
     padding: ${singleAndHalfPx()} ${doublePx()};
-    min-height: 107%;
+    min-height: 100%;
     min-width: 110%;
     flex-wrap:wrap;
     justify-content: flex-start;
@@ -37,7 +37,11 @@ export const Container = styled.div<{
   `};
 
   ${media.greaterThan('xxl')`
-    min-height: 110%;
+    min-height: 100%;
+  `};
+
+  ${media.greaterThan('xxxl')`
+    min-height: 100%;
   `};
 `
 
