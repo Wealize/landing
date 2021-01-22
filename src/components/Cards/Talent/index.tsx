@@ -22,25 +22,25 @@ const TalentCard = ({
 }: CardTalent) => {
   return (
     <Container className="talent-card">
-      <ImageContainer>
-        <Image src={imageUrl} layout="fill" aria-label={`${name} image`} />
-      </ImageContainer>
-      <ContentContainer>
-        <Headline>{name}</Headline>
-        <Subheadline>{role}</Subheadline>
-        <SocialNetworksContainer>
-          {socialNetworks
-            ? socialNetworks.map(
-                (socialNetwork: SocialNetwork, index: number) => (
-                  <Link href={socialNetwork.url} key={index} passHref>
-                    <a rel="noreferrer" target="_blank" title={`${socialNetwork.name} talent link`}>{socialNetwork.name}</a>
-                  </Link>
-                )
-              )
-            : null}
-        </SocialNetworksContainer>
-      </ContentContainer>
-    </Container>
+          <ImageContainer>
+            <Image src={imageUrl} layout="fill" aria-label={`${name} image`} />
+          </ImageContainer>
+          <ContentContainer>
+            <Headline>{name}</Headline>
+            <Subheadline>{role}</Subheadline>
+            <SocialNetworksContainer>
+              {socialNetworks
+                ? socialNetworks.map(
+                    (socialNetwork: SocialNetwork, index: number) => (
+                      <Link href={socialNetwork.url} key={index} passHref>
+                        <a rel="noreferrer" target="_blank" title={`${socialNetwork.name} talent link`}>{socialNetwork.name}</a>
+                      </Link>
+                    )
+                  )
+                : null}
+            </SocialNetworksContainer>
+          </ContentContainer>
+        </Container>
   )
 }
 

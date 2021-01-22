@@ -45,13 +45,11 @@ export const Title = styled.h3<{isNavbarVisible: boolean}>`
   max-height: 100px;
   transition: all 0.4s;
   text-align: left;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
 
   top: ${({ isNavbarVisible }) => isNavbarVisible ? '9.5%' : '0'};
 
   ${({ isNavbarVisible }) => media.greaterThan('md')`
-    padding-left: ${doublePx()};
+    padding-left: 0;
     top: ${isNavbarVisible ? '5%' : '-1px'};
   `};
 
@@ -95,7 +93,7 @@ export const Paragraph = styled.h3<{
   highlightColor: string
   isIntersecting: boolean
 }>`
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding-bottom: ${doublePx()};
   line-height: 1.46;
   scroll-snap-align: start;
@@ -108,5 +106,6 @@ export const Paragraph = styled.h3<{
   ${media.greaterThan('md')`
     width: 80%;
     text-align: left;
+    font-size: 1.8rem;
   `};
 `

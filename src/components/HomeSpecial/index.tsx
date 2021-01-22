@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import Scroll from 'react-scroll'
 import useTranslation from 'next-translate/useTranslation'
+import Trans from 'next-translate/Trans'
 
 import RoundArrowIcon from '../icons/RoundArrowIcon'
 import { BREAKPOINT_LG } from '../../theme/media'
@@ -46,8 +47,11 @@ const HomeSpecial = () => {
       </Background>
       <Slogan>
         <Headline>{t('slogan.headline')}</Headline>
-        <SubHeadline>
-          {t('slogan.subheadline')}
+        <SubHeadline id="slogan-subheadline">
+          {<Trans
+            i18nKey="home:slogan.subheadline"
+            components={[<br key={0} />]}
+           />}
         </SubHeadline>
         <Button
           onClick={scrollToNextElement}

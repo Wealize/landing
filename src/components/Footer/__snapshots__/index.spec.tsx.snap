@@ -25,8 +25,8 @@ exports[`<Footer /> wrapper: should render 1`] = `
               85,
             ],
             "mobile": Array [
-              150,
-              70,
+              180,
+              75,
             ],
             "tablet": Array [
               180,
@@ -60,8 +60,8 @@ exports[`<Footer /> wrapper: should render 1`] = `
               85,
             ],
             "mobile": Array [
-              150,
-              70,
+              180,
+              75,
             ],
             "tablet": Array [
               180,
