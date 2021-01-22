@@ -35,14 +35,6 @@ export const Container = styled.div<{
     justify-content: flex-start;
     align-items: flex-start;
   `};
-
-  ${media.greaterThan('xxl')`
-    min-height: 100%;
-  `};
-
-  ${media.greaterThan('xxxl')`
-    min-height: 100%;
-  `};
 `
 
 export const Header = styled.div<{
