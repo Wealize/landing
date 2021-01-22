@@ -102,16 +102,12 @@ export const CardsContainer = styled.div`
   ${media.greaterThan('lg')`
     display: flex;
     flex-direction: row;
-    min-height: 500px;
-    margin-bottom: 20.3rem;
+    min-height: 34.375rem;
+    margin-bottom: 20.7rem;
   `};
 
-  ${media.greaterThan('xl')`
-    min-height: 500px;
-  `};
-
-  ${media.greaterThan('xxl')`
-    min-height: 550px;
+  ${media.greaterThan('xxxl')`
+    min-height: 36rem;
   `};
 `
 

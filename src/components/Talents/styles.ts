@@ -99,8 +99,8 @@ export const ContentContainer = styled.div`
     justify-content: space-between;
 
     & .button-rounded {
-      min-width: 200px;
-      max-height: 80px;
+      min-width: 250px;
+      max-height: 95px;
       & span {
         font-size: 1rem;
       }
