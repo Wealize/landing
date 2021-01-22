@@ -49,7 +49,7 @@ export const Title = styled.h3<{isNavbarVisible: boolean}>`
   top: ${({ isNavbarVisible }) => isNavbarVisible ? '9.5%' : '0'};
 
   ${({ isNavbarVisible }) => media.greaterThan('md')`
-    padding-left: ${doublePx()};
+    padding-left: 0;
     top: ${isNavbarVisible ? '5%' : '-1px'};
   `};
 
