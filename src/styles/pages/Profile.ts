@@ -26,52 +26,20 @@ export const StartedContainer = styled.div`
   position: relative;
   z-index: 1;
 
-  > .w-static-logo {
-    position: absolute;
-    bottom: -15%;
-    right: -50%;
-    height: 50%;
-    z-index: -1;
-  }
-
   ${media.greaterThan('md')`
     ${CONTAINER_SPACING.TABLET}
-
-    > .w-static-logo {
-      bottom: -15%;
-      right: -50%;
-      width: 90%;
-      height: 50%;
-    }
   `};
 
   ${media.greaterThan('lg')`
-  ${CONTAINER_SPACING.SMALL_DESKTOP};
-
-    > .w-static-logo {
-      bottom: -30%;
-      right: -50%;
-      height: 90%;
-    }
+    ${CONTAINER_SPACING.SMALL_DESKTOP};
   `}
 
   ${media.greaterThan('xl')`
     ${CONTAINER_SPACING.DESKTOP};
-
-    > .w-static-logo {
-      bottom: -40%;
-      right: -50%;
-      height: 75%;
-    }
   `};
 
   ${media.greaterThan('xxl')`
     ${CONTAINER_SPACING.WIDE};
-    > .w-static-logo {
-      bottom: -25%;
-      right: -45%;
-      height: 65%;
-    }
   `};
 `
 
@@ -101,10 +69,6 @@ export const StartedDescription = styled.div`
   ${media.greaterThan('xl')`
     font-size: 3.7rem;
   `};
-
-  ${media.greaterThan('xxl')`
-    width: 55%;
-  `};
 `
 
 export const WAnimationContainer = styled.div`
@@ -112,30 +76,39 @@ export const WAnimationContainer = styled.div`
   position: absolute;
   bottom: -15%;
   right: 0%;
-  height: 40%;
   z-index: -3;
   mix-blend-mode: multiply;
 
+  ${media.greaterThan('xs')`
+    width: 70%;
+    bottom: -25%;
+  `};
+
+  ${media.greaterThan('sm')`
+    width: 60%;
+  `};
+
   ${media.greaterThan('md')`
-    bottom: -10%;
+    bottom: -15%;
     width: 50%;
-    height: 40%;
   `};
 
   ${media.greaterThan('lg')`
     width: 60%;
-    height: 40%;
   `};
 
   ${media.greaterThan('xl')`
-    width: 55%;
-    height: 55%;
-    bottom:-15%;
+    width: 50%;
+    bottom: -20%;
   `};
 
   ${media.greaterThan('xxl')`
-    bottom: -20%;
+    bottom: -15%;
     width: 45%;
-    height: 65%;
+  `};
+
+  ${media.greaterThan('xxxl')`
+    bottom: -25%;
+    width: 35%;
   `};
 `

@@ -5,6 +5,7 @@ import { media } from '../../theme/media'
 import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 import { WHITE_COLOR } from '../../theme/color'
 
+
 export const Container = styled.div`
   display: flex;
   width: 100%;
@@ -29,6 +30,43 @@ export const Container = styled.div`
   ${media.greaterThan('xxl')`
     ${CONTAINER_SPACING.WIDE};
   `};
+
+  > .talents-container {
+      display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    & .talent-card {
+      padding-left: initial;
+      padding-right: initial;
+    }
+
+    ${media.greaterThan('md')`
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: ${singlePx()};
+      align-items: start;
+
+      & .talent-card {
+        padding-left: initial;
+        padding-right: initial;
+        padding-bottom: initial;
+      }
+    `};
+
+    ${media.greaterThan('lg')`
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: ${doublePx()};
+    `};
+
+    ${media.greaterThan('xxl')`
+      grid-template-columns: repeat(4, 1fr);
+    `};
+  }
 `
 
 export const ContentContainer = styled.div`
@@ -38,6 +76,7 @@ export const ContentContainer = styled.div`
 
   & .button-rounded {
     max-width: 200px;
+
     & span {
       font-size: 0.9rem;
     }
@@ -60,7 +99,7 @@ export const ContentContainer = styled.div`
     justify-content: space-between;
 
     & .button-rounded {
-      min-width: 250px;
+      min-width: 200px;
       max-height: 80px;
       & span {
         font-size: 1rem;
@@ -80,7 +119,6 @@ export const Headline = styled.h3`
 
   ${media.greaterThan('lg')`
     width: 55%;
-    font-size: 2.2rem;
   `}
 
   ${media.greaterThan('xl')`
@@ -88,7 +126,6 @@ export const Headline = styled.h3`
   `}
 
   ${media.greaterThan('xxl')`
-    font-size: 2.7rem;
     width: 45%;
   `}
 `
@@ -98,7 +135,7 @@ export const CardsContainer = styled.div`
   width: 100%;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
 
   & .talent-card {
