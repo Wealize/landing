@@ -110,7 +110,7 @@ export const ContainerContactSection = styled.div`
 
     > .button-rounded {
       margin-top: 0;
-      min-width: 250px;
+      min-width: 55%;
     }
   `};
 
