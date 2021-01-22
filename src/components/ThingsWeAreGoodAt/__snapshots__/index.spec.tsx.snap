@@ -19,7 +19,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
           </styles__Title>
           <styles__CardsContainer>
             <div
-              className="styles__CardsContainer-sc-3xtj1d-3 bmGMGR"
+              className="styles__CardsContainer-sc-3xtj1d-3 gdwoNh"
             >
               <styles__FirstCard>
                 <article

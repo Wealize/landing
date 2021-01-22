@@ -79,6 +79,15 @@ export const WAnimationContainer = styled.div`
   z-index: -3;
   mix-blend-mode: multiply;
 
+  ${media.greaterThan('xs')`
+    width: 70%;
+    bottom: -25%;
+  `};
+
+  ${media.greaterThan('sm')`
+    width: 60%;
+  `};
+
   ${media.greaterThan('md')`
     bottom: -15%;
     width: 50%;
