@@ -8,7 +8,7 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
     >
       <styles__Background>
         <div
-          className="styles__Background-gjaj1n-1 kzejV"
+          className="styles__Background-gjaj1n-1 htmclh"
         >
           <Memo(WAnimation)
             isMixMultiplyBlendMode={false}
@@ -18,7 +18,7 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
               isMixMultiplyBlendMode={false}
             >
               <div
-                className="styles__Video-sc-1iarrbt-0 fKOhSW w-animation"
+                className="styles__Video-sc-1iarrbt-0 iPxjyf w-animation"
               >
                 <ReactPlayer
                   autoPlay={true}
@@ -293,7 +293,7 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
       </styles__Background>
       <styles__Slogan>
         <div
-          className="styles__Slogan-gjaj1n-3 QNtvo"
+          className="styles__Slogan-gjaj1n-3 giIdYG"
         >
           <styles__Headline>
             <h1
@@ -302,11 +302,23 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
               home:slogan.headline
             </h1>
           </styles__Headline>
-          <styles__SubHeadline>
+          <styles__SubHeadline
+            id="slogan-subheadline"
+          >
             <h2
-              className="styles__SubHeadline-gjaj1n-5 fbTpmc"
+              className="styles__SubHeadline-gjaj1n-5 eAfoAJ"
+              id="slogan-subheadline"
             >
-              home:slogan.subheadline
+              <Trans
+                components={
+                  Array [
+                    <br />,
+                  ]
+                }
+                i18nKey="home:slogan.subheadline"
+              >
+                home:slogan.subheadline
+              </Trans>
             </h2>
           </styles__SubHeadline>
           <styles__Button

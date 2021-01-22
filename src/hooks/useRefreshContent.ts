@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useEffect } from 'react'
-import { isEqual, differenceWith } from 'lodash'
+import { isEqual, differenceWith, shuffle } from 'lodash'
 
 interface IUseRefreshContent {
   dataToDisplay: any[]
@@ -75,9 +75,9 @@ const useRefreshContent = (
     if (!elementsToAdd.length || !indexesToReplace.length) return null
 
     setDataToDisplay(
-      dataToDisplay.map((element: any, index: number) => {
+      shuffle(dataToDisplay.map((element: any, index: number) => {
         return indexesToReplace.includes(index) ? elementsToAdd.pop() : element
-      })
+      }))
     )
 
     setElementsReplacedLastRefresh(indexesToReplace)

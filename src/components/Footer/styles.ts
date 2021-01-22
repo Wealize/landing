@@ -60,7 +60,7 @@ export const ContainerContent = styled.div`
 
 export const ContainerLogo = styled.div`
   display: flex;
-  width: 25%;
+  width: 30%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;

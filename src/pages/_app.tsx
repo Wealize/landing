@@ -6,6 +6,7 @@ import * as Sentry from '@sentry/browser'
 import { Integrations } from '@sentry/tracing'
 
 import Global from '../components/Global'
+import '../theme/animations.css'
 import HeadComponent from '../components/layout/Head/'
 import Layout from '../components/layout/'
 import { LayoutOptions } from '../interfaces/Page'

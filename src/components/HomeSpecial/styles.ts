@@ -35,32 +35,28 @@ export const Background = styled.div`
   position: absolute;
   right: 0;
   bottom: 0%;
-  height: 70%;
-  width: 150%;
+  height: 100%;
+  width: 110%;
 
   ${media.greaterThan('md')`
     height: 55%;
-    width: auto;
+    width: 100%;
   `};
 
   ${media.greaterThan('lg')`
-    height : 85%;
-    width: 80%;
+    width: 75%;
   `};
 
   ${media.greaterThan('xl')`
-    height : 80%;
-    width: 70%;
+    width: 60%;
   `};
 
   ${media.greaterThan('xxl')`
-    height : 80%;
-    width: 50%;
+    width: 55%;
   `};
 
   ${media.greaterThan('xxxl')`
-    height : 85%;
-    width: 45%;
+    width: 35%;
   `};
 `
 
@@ -124,6 +120,7 @@ export const Slogan = styled.div`
   width: 85%;
   border-top-right-radius: ${DEFAULT_RADIUS}px;
   min-height: 250px;
+  z-index: 2;
 
   ${media.greaterThan('md')`
     min-height: 350px;
@@ -166,7 +163,7 @@ export const SubHeadline = styled.h2`
   color: ${WHITE_COLOR};
   font-size: 2rem;
   line-height: 1.29;
-  width: 95%;
+  width: 80%;
 
   ${media.greaterThan('md')`
     font-size: 2.5rem;
@@ -175,10 +172,15 @@ export const SubHeadline = styled.h2`
 
   ${media.greaterThan('lg')`
     font-size: 3rem;
-    width: 90%;
+    width: 75%;
   `};
 
   ${media.greaterThan('xl')`
     font-size: 3.5rem;
+  `};
+
+  ${media.greaterThan('xl')`
+    font-size: 3.5rem;
+    width: 80%;
   `};
 `

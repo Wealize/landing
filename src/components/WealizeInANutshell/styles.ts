@@ -45,8 +45,6 @@ export const Title = styled.h3<{isNavbarVisible: boolean}>`
   max-height: 100px;
   transition: all 0.4s;
   text-align: left;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
 
   top: ${({ isNavbarVisible }) => isNavbarVisible ? '9.5%' : '0'};
 

@@ -29,20 +29,15 @@ export const Container = styled.div<{
 
   ${media.greaterThan('lg')`
     padding: ${singleAndHalfPx()} ${doublePx()};
-    min-height: 115%;
+    min-height: 107%;
     min-width: 110%;
     flex-wrap:wrap;
     justify-content: flex-start;
     align-items: flex-start;
   `};
 
-  ${media.greaterThan('xl')`
-    padding: ${doublePx()};
-    min-height: 110%;
-  `};
-
   ${media.greaterThan('xxl')`
-    min-height: 115%;
+    min-height: 110%;
   `};
 `
 
