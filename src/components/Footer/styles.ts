@@ -60,35 +60,26 @@ export const ContainerContent = styled.div`
 
 export const ContainerLogo = styled.div`
   display: flex;
-  width: 25%;
+  width: 9rem;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding-bottom: ${singlePx()};
 
   ${media.greaterThan('md')`
-    width: 20%;
+    width: 8rem;
     padding-bottom: ${singleAndHalfPx()};
   `};
 
   ${media.greaterThan('lg')`
     padding-bottom: ${doublePx()};
-    width: 15%;
-  `};
-
-  ${media.greaterThan('xl')`
-    width: 10%;
-  `};
-
-  ${media.greaterThan('xxl')`
-    width: 7%;
   `};
 `
 
 export const BigText = styled.h5`
   color: ${WHITE_COLOR};
   padding: ${singlePx()} 0;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.33;
 
   ${media.greaterThan('lg')`
@@ -105,6 +96,7 @@ export const ContainerContactSection = styled.div`
 
   > .button-rounded {
     margin-top: 5%;
+    min-width: 270px;
 
     & span {
       font-weight: normal;
@@ -118,7 +110,7 @@ export const ContainerContactSection = styled.div`
 
     > .button-rounded {
       margin-top: 0;
-      max-width: 200px;
+      min-width: 250px;
     }
   `};
 

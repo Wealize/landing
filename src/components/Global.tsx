@@ -20,6 +20,12 @@ const Global = createGlobalStyle`
      -webkit-tap-highlight-color: rgba(0,0,0,0);
   }
 
+  span {
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'DM Sans', sans-serif;
+  }
+
   button {
     outline: none;
   }

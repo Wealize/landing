@@ -147,7 +147,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'nieves_borrero',
-    imageUrl: '/img/talents/placeholder.png',
+    imageUrl: '/img/talents/wealize_nieves.png',
     name: 'Nieves Borrero',
     role: 'Software Engineer',
     socialNetworks: [

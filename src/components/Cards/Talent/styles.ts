@@ -1,16 +1,27 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 import { WHITE_COLOR, ACCENT_COLOR, GRAY_300_COLOR } from '../../../theme/color'
 import { thirdPx, singlePx, doublePx, triplePx } from '../../../theme/space'
 import { media } from '../../../theme/media'
+
+const FadeIn = keyframes`
+  0% {
+    max-height:0%;
+  }
+  100% {
+    max-height: 100%;
+  }
+`
 
 export const Container = styled.div`
   width: 100%;
   background: ${WHITE_COLOR};
   padding: ${singlePx()};
   z-index: 1;
-  min-width: 300px;
-  min-height: 300px;
+  width: 100%;
+  min-width: 200px;
+  min-height: 250px;
+  animation: ${FadeIn} ease 2s;
 
   ${media.greaterThan('md')`
     width: 100%;
@@ -35,8 +46,8 @@ export const Container = styled.div`
 export const ImageContainer = styled.div`
   width: 100%;
   height: 100%;
-  min-width: 300px;
-  min-height: 300px;
+  min-width: 200px;
+  min-height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,10 +80,9 @@ export const Headline = styled.h4`
   font-size: 1rem;
   text-align: left;
   font-weight: bold;
-  padding-bottom: ${thirdPx()};
+  line-height: 25px;
 
   ${media.greaterThan('md')`
-    padding-bottom: ${thirdPx()};
     font-size: 1.2rem;
   `};
 
@@ -85,13 +95,11 @@ export const Subheadline = styled.h5`
   font-size: 1rem;
   text-align: left;
   font-weight: lighter;
-  padding-bottom: ${thirdPx()};
   color: ${GRAY_300_COLOR};
-  line-height: 1.45;
+  line-height: 25px;
 
   ${media.greaterThan('md')`
     font-size: 1.1rem;
-    padding-bottom: ${thirdPx()};
   `};
 `
 
@@ -99,15 +107,12 @@ export const SocialNetworksContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
-  ${media.greaterThan('lg')`
-    padding-top: ${thirdPx()};
-  `};
+  line-height: 25px;
 
   & > a {
     text-decoration: none;
     color: ${ACCENT_COLOR};
-    font-weight: bold;
+    font-weight: regular;
     text-transform: capitalize;
     margin-right: ${thirdPx()};
 

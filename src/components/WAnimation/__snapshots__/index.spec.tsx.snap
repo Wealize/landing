@@ -9,7 +9,7 @@ exports[`<WAnimation /> wrapperWithBlendMode: should render without blend mode 1
     isMixMultiplyBlendMode={true}
   >
     <div
-      className="styles__Video-sc-1iarrbt-0 hEMZZr w-animation"
+      className="styles__Video-sc-1iarrbt-0 kRyIUq w-animation"
     >
       <ReactPlayer
         autoPlay={true}
@@ -291,7 +291,7 @@ exports[`<WAnimation /> wrapperWithoutBlendMode: should render without blend mod
     isMixMultiplyBlendMode={false}
   >
     <div
-      className="styles__Video-sc-1iarrbt-0 fKOhSW w-animation"
+      className="styles__Video-sc-1iarrbt-0 foMWSv w-animation"
     >
       <ReactPlayer
         autoPlay={true}
