@@ -13,7 +13,7 @@ export const Video = styled.div<{isMixMultiplyBlendMode: boolean}>`
     width: 100%;
     height: 0px !important;
     position: relative;
-    padding-top: 100%;
+    padding-top: ${({ isMixMultiplyBlendMode }) => (isMixMultiplyBlendMode ? '100%' : '75%')};
 
     ${({ isMixMultiplyBlendMode }) => media.greaterThan('md')`
       padding-top: ${isMixMultiplyBlendMode ? '100%' : '75%'};

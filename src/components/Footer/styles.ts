@@ -105,6 +105,7 @@ export const ContainerContactSection = styled.div`
 
   > .button-rounded {
     margin-top: 5%;
+    min-width: 270px;
 
     & span {
       font-weight: normal;
@@ -118,7 +119,7 @@ export const ContainerContactSection = styled.div`
 
     > .button-rounded {
       margin-top: 0;
-      max-width: 200px;
+      min-width: 250px;
     }
   `};
 

@@ -18,8 +18,9 @@ export const Container = styled.div`
   background: ${WHITE_COLOR};
   padding: ${singlePx()};
   z-index: 1;
-  min-width: 300px;
-  min-height: 300px;
+  width: 100%;
+  min-width: 200px;
+  min-height: 250px;
   animation: ${FadeIn} ease 2s;
 
   ${media.greaterThan('md')`
@@ -45,8 +46,8 @@ export const Container = styled.div`
 export const ImageContainer = styled.div`
   width: 100%;
   height: 100%;
-  min-width: 300px;
-  min-height: 300px;
+  min-width: 200px;
+  min-height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,7 +80,7 @@ export const Headline = styled.h4`
   font-size: 1rem;
   text-align: left;
   font-weight: bold;
-  line-height: 18px;
+  line-height: 25px;
 
   ${media.greaterThan('md')`
     font-size: 1.2rem;
@@ -95,6 +96,7 @@ export const Subheadline = styled.h5`
   text-align: left;
   font-weight: lighter;
   color: ${GRAY_300_COLOR};
+  line-height: 25px;
 
   ${media.greaterThan('md')`
     font-size: 1.1rem;

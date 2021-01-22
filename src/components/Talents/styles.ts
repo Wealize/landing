@@ -76,6 +76,7 @@ export const ContentContainer = styled.div`
 
   & .button-rounded {
     max-width: 200px;
+
     & span {
       font-size: 0.9rem;
     }
@@ -118,7 +119,6 @@ export const Headline = styled.h3`
 
   ${media.greaterThan('lg')`
     width: 55%;
-    font-size: 2.2rem;
   `}
 
   ${media.greaterThan('xl')`
@@ -126,7 +126,6 @@ export const Headline = styled.h3`
   `}
 
   ${media.greaterThan('xxl')`
-    font-size: 2.7rem;
     width: 45%;
   `}
 `
@@ -136,7 +135,7 @@ export const CardsContainer = styled.div`
   width: 100%;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
 
   & .talent-card {

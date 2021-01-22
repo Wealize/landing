@@ -36,10 +36,17 @@ export const Background = styled.div`
   right: 0;
   bottom: 0%;
   height: 100%;
-  width: 110%;
+  width: 145%;
+
+  ${media.greaterThan('xs')`
+    width: 100%;
+  `};
+
+  ${media.greaterThan('sm')`
+    width: 90%;
+  `};
 
   ${media.greaterThan('md')`
-    height: 55%;
     width: 100%;
   `};
 

@@ -93,7 +93,7 @@ export const Paragraph = styled.h3<{
   highlightColor: string
   isIntersecting: boolean
 }>`
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding-bottom: ${doublePx()};
   line-height: 1.46;
   scroll-snap-align: start;
@@ -106,5 +106,6 @@ export const Paragraph = styled.h3<{
   ${media.greaterThan('md')`
     width: 80%;
     text-align: left;
+    font-size: 1.8rem;
   `};
 `
