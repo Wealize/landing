@@ -12,7 +12,7 @@ exports[`<SimpleCard /> wrapper: should render 1`] = `
         <h3
           className="styles__Text-sc-58pc36-1 ewiBid"
         >
-          We are a digital product studio with the upper hand in blockchain, conversational agents, cognitives services, mobile apps and web development
+          We are a digital product studio with the upper hand in blockchain, conversational agents, cognitive services, mobile apps and web development
         </h3>
       </styles__Text>
     </div>

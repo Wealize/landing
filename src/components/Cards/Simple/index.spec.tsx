@@ -6,7 +6,7 @@ import SimpleCard from './index'
 describe('<SimpleCard />', () => {
   const cardProps = {
     children:
-      'We are a digital product studio with the upper hand in blockchain, conversational agents, cognitives services, mobile apps and web development'
+      'We are a digital product studio with the upper hand in blockchain, conversational agents, cognitive services, mobile apps and web development'
   }
   const wrapper = mount(<SimpleCard {...cardProps} />)
 

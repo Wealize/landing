@@ -7,7 +7,7 @@ const servicesData: VentureContent[] = [
   },
   {
     headline: 'Research partner',
-    description: 'We close society’s gaps by partnering with active community members.'
+    description: 'We close society’s gaps by partnering with active community members'
   },
   {
     headline: 'R&D Funding Strategy',

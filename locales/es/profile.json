@@ -1,63 +1,63 @@
 {
   "meta_title": "Cosas en las que somos buenos - Servicios | Wealize",
-  "meta_description": "Impulsamos el cambio que necesita para prosperar en la era digital: Desarrollo con blockchain, Servicios cognitivos, Agentes conversacionales. ¡Conócenos!",
+  "meta_description": "Impulsamos el cambio que necesitas para triunfar en la era digital: Desarrollo con blockchain, Servicios cognitivos, Agentes conversacionales. ¡Conócenos!",
   "started-description" : {
     "paragraph-0": "Impulsamos el cambio que necesita para prosperar en la era digital",
-    "paragraph-1": "Trabajamos a nivel internacional para organizaciones del mercado intermedio y startups prometedoras.",
-    "paragraph-2": "Más de 50 organizaciones en todo el mundo ya utilizan nuestras soluciones: España, Estados Unidos, Bélgica, México, Honduras, Guatemala, Guinea, Malawi y Zimbabwe."
+    "paragraph-1": "Trabajamos internacionalmente para organizaciones medias y startups prometedoras",
+    "paragraph-2": "Más de 50 organizaciones en todo el mundo ya utilizan nuestras soluciones: España, Estados Unidos, Bélgica, México, Honduras, Guatemala, Guinea, Malawi y Zimbabue..."
   },
   "services-ventures" : {
-    "title" : "Creamos productos digitales con impacto en el mundo real y construimos empresas sostenibles que contribuyen positivamente a la comunidad.",
+    "title" : "Desarrollamos productos digitales a medida con impacto en el mundo real y construimos ventures sostenibles que contribuyen positivamente a la comunidad",
     "services-section": {
       "title": "Servicios",
       "section-title-0": "Desarrollo de productos",
-      "section-description-0": "Impulsamos ideas desde el inicio hasta el prototipo, el lanzamiento y más allá. Estamos comprometidos a realizar trabajos de alta calidad a la velocidad de la luz.",
-      "section-title-1": "Equipo destacado",
-      "section-description-1": "Nos integramos perfectamente como su equipo, lo que garantiza la transparencia de la visión y los requisitos en todo el proyecto.",
+      "section-description-0": "Impulsamos ideas desde su conceptualización hasta el prototipo,lanzamiento y más allá.Nos comprometemos a entregar trabajos de alta calidad a la velocidad del pensamiento",
+      "section-title-1": "Feature team",
+      "section-description-1": "Nos integramos de manera orgánica como su Feature Team, garantizando la transparencia de objetivos y el cumplimiento de los requerimientos a lo largo de todo el proyecto",
       "section-title-2": "Rescate de proyectos",
-      "section-description-2": "Descubrimos lo que salió mal y trabajamos con usted para desarrollar un plan de recuperación que podemos implementar o usted mismo puede establecer y ejecutar."
+      "section-description-2": "Descubrimos lo que salió mal y trabajamos contigo para desarrollar un plan de rescate que podamos implementar conjuntamente o pueda ejecutarlo usted mismo"
     },
     "ventures-section" : {
-      "title": "Empresas",
-      "section-title-0": "Estudio de Startup",
-      "section-description-0": "Actuamos de manera independiente de la industria y desarrollamos nuestros propios productos para abrir puertas de oportunidad.",
+      "title": "Ventures",
+      "section-title-0": "Startup studio",
+      "section-description-0": "Somos independientes de la industria tecnológica y desarrollamos nuestros propios productos abriendo ventanas de oportunidad",
       "section-title-1": "Socio de investigación",
-      "section-description-1": "Cerramos las brechas de la sociedad al asociarnos con miembros activos de la comunidad.",
+      "section-description-1": "Cerramos brechas sociales asociándonos con miembros activos de la comunidad",
       "section-title-2": "Estrategia de financiación de I + D",
       "section-description-2": "Buscamos oportunidades de financiación y licitación para innovar juntos."
     }
   },
   "things-we-are-good-at" : {
-    "title": "Cosas en las que somos buenos",
+    "title": "Cosas que se nos da bien",
     "first-card": {
       "headline": "Desarrollo con blockchain",
-      "subheadline": "Cuando la transparencia y la confianza son requisitos estrictos",
-      "description": "Creamos libros de contabilidad distribuidos y redes de consenso para la identidad, la trazabilidad y la responsabilidad."
+      "subheadline": "Cuando la transparencia y la confianza son requerimientos claves",
+      "description": "Construimos ledgers distribuidos y redes de consenso que garantizan la trazabilidad, la identidad y la rendición de cuentas"
     },
     "second-card": {
       "headline": "Servicios cognitivos",
       "subheadline": "Piensa, predice y actúa",
-      "description": "Utilizamos el aprendizaje automático y la inteligencia artificial para empoderar a las empresas tomando mejores decisiones"
+      "description": "Utilizamos elMachine Learning y la Inteligencia Artificial para impulsar a las empresas tomando mejores decisiones"
     },
     "third-card": {
       "headline": "Agentes conversacionales",
-      "subheadline": "Mejore la experiencia del cliente",
+      "subheadline": "Mejora la experiencia de cliente",
       "description": "Creamos interfaces de conversación basadas en texto y voz para industrias como salud, turismo, legal, banca y seguros."
     }
   },
   "we-deliver": {
-    "title": "Nosotros entregamos",
+    "title": "Entregamos",
     "card-0": {
       "title": "${text}",
-      "description": "Obtenemos una comprensión completa de las necesidades y el entorno de nuestro cliente, para que podamos brindar el servicio más personalizado."
+      "description": "Comprendemos en su totalidad las necesidades y el entorno de nuestro cliente, para poder ofrecer así un servicio a medida"
     },
     "card-1": {
       "title": "${text}",
-      "description": "Trabajamos de manera ágil con Scrum como marco, un enfoque iterativo que nos ayuda a entregar valor a nuestros clientes más rápido."
+      "description": "Trabajamos en un entorno ágil basado en Scrum, un método iterativo e incremental que nos ayuda a entregar más rápidamente valor a nuestros clientes"
     },
     "card-2": {
       "title": "${text}",
-      "description": "Implementamos en producción y obtenemos comentarios reales desde el primer sprint."
+      "description": "Entramos en producción y recibimos feedback real desde el primer sprint"
     },
     "card-3": {
       "title": "${text}",
@@ -66,16 +66,16 @@
   },
   "wealize-in-a-nutshell" : {
     "title": "Wealize en pocas palabras",
-    "paragraph-0": "Nuestra sólida cultura de trabajo remoto mantiene a los mejores talentos.",
-    "paragraph-1": "Trabajamos de manera ágil, brindando soluciones probadas y comprobadas a la velocidad de la luz.",
-    "paragraph-2": "Seguimos las tendencias y movimientos del mercado, por lo que conocemos las soluciones adecuadas.",
+    "paragraph-0": "Nuestra cultura de trabajo remoto mantiene cerca a los mejores talentos",
+    "paragraph-1": "Trabajamos de manera ágil, entregando soluciones probadas y validadas a la velocidad de la luz",
+    "paragraph-2": "Observamos las tendencias y movimientos en el mercado, así que conocemos las soluciones más adecuadas",
     "paragraph-3": "Somos miembros activos de la comunidad, creando proyectos de código abierto en beneficio del ecosistema.",
-    "paragraph-4": "Como su socio agnóstico en tecnología, podemos ayudarlo a encontrar las soluciones adecuadas en las primeras etapas de un proyecto.",
-    "paragraph-5": "Trabajamos de forma colaborativa en un entorno bastante descentralizado.",
-    "paragraph-6": "Cada uno de nosotros representa verdaderamente el espíritu de Wealize: curioso, audaz, basado en datos, creativo, orientado a valores, cero tonterías."
+    "paragraph-4": "Como su socio tecnológicamente agnóstico, podemos ayudarle a encontrar las soluciones correctas en las primeras etapas del proyectos",
+    "paragraph-5": "Trabajamos de forma colaborativa en un entorno razonablemente descentralizado",
+    "paragraph-6": "Cada uno de nosotros es un representante genuino del espíritu de Wealize: curioso, audaz,guiado por datos, creativo, orientado a valores, cero tonterías"
   },
   "talents": {
-    "title": "A partir de ahora nuestros equipos están repartidos por España, Alemania, Estonia, Irlanda y creciendo ...",
+    "title": "A día de hoynuestros equipos están repartidos por España, Alemania, Estonia, Irlanda y creciendo...",
     "refresh-button-text": "Refrescar talentos",
     "miguel_calero": {
       "role": "Cofundador y CEO"
