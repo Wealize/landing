@@ -6,7 +6,7 @@
   },
   "footer" : {
     "get_in_touch": {
-      "text": "Contact us about your project, your idea or for more information about our Work",
+      "text": "Contact us about your project, your idea or for more information about our work",
       "button_text": "Get in touch"
     },
     "work_with_us": {
@@ -14,7 +14,7 @@
       "button_text": "Work with us"
     },
     "privacy_legal": "Privacy & legal",
-    "copyright": "Wealize 2020. All Rights Reserved."
+    "copyright": "Wealize 2020"
   },
   "projects" : {
     "odos": {
