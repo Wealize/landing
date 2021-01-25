@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [Add copy for cookie policy](https://wealize.atlassian.net/browse/WLZAA-96)
+- [General corrections of copys](https://wealize.atlassian.net/browse/WLZAA-82)
 - [Review talents component](https://wealize.atlassian.net/browse/WLZAA-93)
 - [Hide indexing in pages that we do not want to index](https://wealize.atlassian.net/browse/WLZAA-111)
 - [Review language links on Navbar](https://wealize.atlassian.net/browse/WLZAA-110)

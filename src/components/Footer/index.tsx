@@ -14,6 +14,7 @@ import CDTIIcon from '../icons/grants/CDTIIcon'
 import InnovationPymeIcon from '../icons/grants/InnovationPymeIcon'
 import {
   CDTI_HREF,
+  COOKIES_POLICY_HREF,
   INNOVATION_SME_HREF,
   PRIVACY_LEGAL_HREF
 } from '../../constants/hrefs'
@@ -35,7 +36,7 @@ import {
   ContainerSocial,
   Social,
   ContainerPrivacyCopyright,
-  PrivacyLegalLink,
+  InlineLink,
   CopyrightText,
   ContainerGrantsAndSocials,
   ContainerGrants,
@@ -108,9 +109,14 @@ const Footer = () => {
         </ContainerSocialMobile>
         <ContainerPrivacyCopyright>
           <Link href={PRIVACY_LEGAL_HREF} passHref>
-            <PrivacyLegalLink title="Privacy page link" aria-label="Privacy & Legal" data-cy="footer-privacy-link">
+            <InlineLink title="Privacy page link" aria-label="Privacy & Legal" data-cy="footer-privacy-link">
               {t('footer.privacy_legal')}
-            </PrivacyLegalLink>
+            </InlineLink>
+          </Link>
+          <Link href={COOKIES_POLICY_HREF} passHref>
+            <InlineLink title="Cookies page link" aria-label="Cookies page" data-cy="cookies-page-link">
+              {t('footer.cookies_policy')}
+            </InlineLink>
           </Link>
           <CopyrightText>&copy;&nbsp; {t('footer.copyright')}</CopyrightText>
         </ContainerPrivacyCopyright>

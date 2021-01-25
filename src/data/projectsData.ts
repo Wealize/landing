@@ -57,7 +57,7 @@ const projectsData: CardRounded[] = [
     imageUrl: '/img/projects/coloqio.jpeg',
     title: 'Coloq.io',
     description:
-      'Created our own flexible infrastructure for developers that allows the conversational ecosystems of large organizations and startups to scale orchestrating all conversational channels, NLP engines and data sources to their business processes.',
+      'Created our own flexible infrastructure for developers that allows the conversational ecosystems of large organizations and startups to scale orchestrating all conversational channels, NLP engines and data sources to their business processes',
     link: {
       url: 'https://talk.coloq.io/',
       text: 'Coloq.io',

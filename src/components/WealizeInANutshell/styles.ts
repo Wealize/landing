@@ -38,7 +38,7 @@ export const Title = styled.h3<{isNavbarVisible: boolean}>`
   font-size: 1.1rem;
   font-weight: bold;
   text-transform: uppercase;
-  padding:  ${singleAndHalfPx()} ${singlePx()} ${singleAndHalfPx()} ${singlePx()};
+  padding:  ${singleAndHalfPx()} ${singlePx()} ${singleAndHalfPx()} 0;
   background-color: ${LIGHT_GRAY_COLOR};
   position: sticky;
   left: 0px;
@@ -60,6 +60,7 @@ export const Title = styled.h3<{isNavbarVisible: boolean}>`
     margin-right: initial;
     top: ${isNavbarVisible ? '10%' : '-1px'};
     padding-left: 0;
+    padding-top: ${isNavbarVisible ? '0' : singleAndHalfPx()};
   `};
 
   ${media.greaterThan('xl')`
@@ -82,6 +83,7 @@ export const Content = styled.div`
   ${media.greaterThan('lg')`
     width: 60%;
     padding-left: ${doublePx()};
+    padding-top: 0;
   `};
 
   ${media.greaterThan('xl')`
