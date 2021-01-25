@@ -127,13 +127,25 @@ exports[`<Footer /> wrapper: should render 1`] = `
         href="/privacy-legal"
         passHref={true}
       >
-        <styles__PrivacyLegalLink
+        <styles__InlineLink
           aria-label="Privacy & Legal"
           data-cy="footer-privacy-link"
           title="Privacy page link"
         >
           common:footer.privacy_legal
-        </styles__PrivacyLegalLink>
+        </styles__InlineLink>
+      </Link>
+      <Link
+        href="/cookies-policy"
+        passHref={true}
+      >
+        <styles__InlineLink
+          aria-label="Cookies page"
+          data-cy="cookies-page-link"
+          title="Cookies page link"
+        >
+          common:footer.cookies_policy
+        </styles__InlineLink>
       </Link>
       <styles__CopyrightText>
         ©  

@@ -236,6 +236,22 @@ const talentsData: CardTalent[] = [
         url: 'https://twitter.com/JaviM_G'
       }
     ]
+  },
+  {
+    trans_key: 'rafa_rodriguez',
+    imageUrl: '/img/talents/wealize_rafa.png',
+    name: 'Rafael Rodríguez Julián',
+    role: 'Financial Director',
+    socialNetworks: [
+      {
+        name: 'Linkedin',
+        url: 'https://www.linkedin.com/in/rafarodriguezjulian/'
+      },
+      {
+        name: 'Twitter',
+        url: 'https://twitter.com/rafarodjul'
+      }
+    ]
   }
 ]
 

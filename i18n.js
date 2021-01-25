@@ -6,6 +6,7 @@ module.exports = {
     '/': ['home'],
     '/profile': ['profile'],
     '/privacy-legal': ['privacy-legal'],
+    '/cookies-policy': ['cookies-policy'],
     '/grants/cdti': ['grants_cdti'],
     '/grants/innovative-sme': ['grants_innovative-sme']
   },

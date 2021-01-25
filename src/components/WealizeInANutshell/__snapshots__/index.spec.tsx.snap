@@ -14,14 +14,14 @@ exports[`<WealizeInANutshell /> should render 1`] = `
         isNavbarVisible={true}
       >
         <h3
-          className="styles__Title-sc-1wwnm82-1 jLMCTJ"
+          className="styles__Title-sc-1wwnm82-1 jUxVSw"
         >
           profile:wealize-in-a-nutshell.title
         </h3>
       </styles__Title>
       <styles__Content>
         <div
-          className="styles__Content-sc-1wwnm82-2 kCuTtK"
+          className="styles__Content-sc-1wwnm82-2 gVwzYK"
         >
           <InView
             initialInView={false}

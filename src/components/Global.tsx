@@ -26,6 +26,10 @@ const Global = createGlobalStyle`
     font-family: 'DM Sans', sans-serif;
   }
 
+  ul, ol {
+    list-style: initial;
+  }
+
   button {
     outline: none;
   }

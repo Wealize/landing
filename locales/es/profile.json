@@ -11,7 +11,7 @@
     "services-section": {
       "title": "Servicios",
       "section-title-0": "Desarrollo de productos",
-      "section-description-0": "Impulsamos ideas desde su conceptualización hasta el prototipo,lanzamiento y más allá.Nos comprometemos a entregar trabajos de alta calidad a la velocidad del pensamiento",
+      "section-description-0": "Impulsamos ideas desde su conceptualización hasta el prototipo,lanzamiento y más allá. Nos comprometemos a entregar trabajos de alta calidad a la velocidad del pensamiento",
       "section-title-1": "Feature team",
       "section-description-1": "Nos integramos de manera orgánica como su Feature Team, garantizando la transparencia de objetivos y el cumplimiento de los requerimientos a lo largo de todo el proyecto",
       "section-title-2": "Rescate de proyectos",
@@ -23,7 +23,7 @@
       "section-description-0": "Somos independientes de la industria tecnológica y desarrollamos nuestros propios productos abriendo ventanas de oportunidad",
       "section-title-1": "Socio de investigación",
       "section-description-1": "Cerramos brechas sociales asociándonos con miembros activos de la comunidad",
-      "section-title-2": "Estrategia de financiación de I + D",
+      "section-title-2": "Estrategia de financiación de I+D+i",
       "section-description-2": "Buscamos oportunidades de financiación y licitación para innovar juntos."
     }
   },
@@ -37,7 +37,7 @@
     "second-card": {
       "headline": "Servicios cognitivos",
       "subheadline": "Piensa, predice y actúa",
-      "description": "Utilizamos elMachine Learning y la Inteligencia Artificial para impulsar a las empresas tomando mejores decisiones"
+      "description": "Utilizamos el Machine Learning y la Inteligencia Artificial para impulsar a las empresas tomando mejores decisiones"
     },
     "third-card": {
       "headline": "Agentes conversacionales",
@@ -124,6 +124,9 @@
     },
     "javier_martin": {
       "role": "Ingeniero de software en prácticas"
+    },
+    "rafa_rodriguez": {
+      "role": "Director Financiero"
     }
   },
   "accordion": {

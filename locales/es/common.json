@@ -14,7 +14,13 @@
       "button_text": "Trabaja con nosotros"
     },
     "privacy_legal": "Privacidad & legal",
+    "cookies_policy": "Política de cookies",
     "copyright": "Wealize 2020"
+  },
+  "cookieConsentPopup" : {
+    "button_text": "Aceptar",
+    "text": "Utilizamos cookies para asegurar que damos la mejor experiencia al usuario en nuestra web. Si sigues navegando en este sitio asumiremos que estás de acuerdo. <0></0>",
+    "more_info_link_text": "Lee más información sobre nuestra política de cookies"
   },
   "projects" : {
     "odos": {
@@ -37,15 +43,15 @@
     "coloqio": {
       "title": "${title}",
       "description": "Creamos nuestra propia plataforma de infraestructura flexible para desarrolladores que permite escalar los ecosistemas conversacionales de grandes organizaciones y startups organizando todos los canales conversacionales, los motores de procesamiento de lenguaje natural (NLP) y las fuentes de información para sus procesos de negocio",
-      "tag-0": "I+D+i",
+      "tag-0": "${text}",
       "tag-1": "Agentes conversacionales",
       "tag-2": "IaaS",
       "tag-3": "Producto propio"
     },
     "metaledger": {
       "title": "${title}",
-      "description": "Diseño y desarrollo de un ecosistema de aplicaciones y dispositivos de internet de las cosas (IoT) que permiten la trazabilidad integral del oro y otros metales preciosos desde las minas artesanales y de pequeña escala(MAPE) del tercer mundo hasta los mayoristas del primer mundo",
-      "tag-0": "${text}",
+      "description": "Diseño y desarrollo de un ecosistema de aplicaciones y dispositivos de internet de las cosas (IoT) que permiten la trazabilidad integral del oro y otros metales preciosos desde las minas artesanales y de pequeña escala (MAPE) del tercer mundo hasta los mayoristas del primer mundo",
+      "tag-0": "I+D+i",
       "tag-1": "Producto propio",
       "tag-2": "${text}",
       "tag-3": "Trazabilidad"
@@ -66,7 +72,7 @@
     },
     "medecins": {
       "title": "${title}",
-      "description": "Diseño y desarrollo de una plataforma completamente móvil- y offline-primero de gestión de operaciones logísticas y supervisión dela infraestructura de internet en todas las ubicaciones de campo de MSF con elfin de crear una red común de ICT",
+      "description": "Diseño y desarrollo de una plataforma completamente móvil y offline-first de gestión de operaciones logísticas y supervisión dela infraestructura de internet en todas las ubicaciones de campo de MSF con elfin de crear una red común de ICT",
       "tag-0": "ONGs",
       "tag-1": "${text}",
       "tag-2": "Móvil"

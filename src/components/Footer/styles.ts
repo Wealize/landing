@@ -116,10 +116,24 @@ export const ContainerContactSection = styled.div`
 
   ${media.greaterThan('lg')`
     min-height: 450px;
+
+    > .button-rounded {
+      min-width: 45%;
+    }
   `};
 
   ${media.greaterThan('xl')`
     min-height: 400px;
+
+    > .button-rounded {
+      min-width: 50%;
+    }
+  `};
+
+  ${media.greaterThan('xxl')`
+    > .button-rounded {
+      min-width: 35%;
+    }
   `};
 `
 
@@ -221,7 +235,7 @@ export const Social = styled.a`
   `};
 `
 
-export const PrivacyLegalLink = styled.a`
+export const InlineLink = styled.a`
   color: ${WHITE_COLOR};
   font-size: 1.1rem;
   padding: ${singlePx()} 0;
