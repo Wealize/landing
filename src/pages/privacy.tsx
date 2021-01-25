@@ -1,6 +1,8 @@
 import React from 'react'
 import useTranslation from 'next-translate/useTranslation'
+import Trans from 'next-translate/Trans'
 import Head from 'next/head'
+import Link from 'next/link'
 
 import { LayoutOptions } from '../interfaces/Page'
 import {
@@ -13,9 +15,10 @@ import {
   QuestionTitle,
   QuestionDescription
 } from '../styles/pages/Politics'
+import { COOKIES_POLICY_HREF } from '../constants/hrefs'
 
 const PrivacyLegal = (): JSX.Element => {
-  const { t } = useTranslation('privacy-legal')
+  const { t } = useTranslation('privacy')
 
   return (
     <>
@@ -145,6 +148,23 @@ const PrivacyLegal = (): JSX.Element => {
             <p>{t('question-10.paragraph-0')}</p>
             <p>{t('question-10.paragraph-1')}</p>
             <p>{t('question-10.paragraph-2')}</p>
+          </QuestionDescription>
+        </Question>
+        <Question>
+          <QuestionTitle>{t('question-11.title')}</QuestionTitle>
+          <QuestionDescription>
+            <p>{t('question-11.paragraph-0')}</p>
+            <p>{t('question-11.paragraph-1')}</p>
+            <p>
+              {<Trans
+                i18nKey="privacy:question-11.paragraph-2"
+                components={[(
+                  <Link key={0} href={COOKIES_POLICY_HREF} passHref>
+                    <a title="wealize cookies policy page link" aria-label="wealize cookies policy page link"></a>
+                  </Link>
+                )]}
+                />}
+            </p>
           </QuestionDescription>
         </Question>
       </QuestionsContainer>

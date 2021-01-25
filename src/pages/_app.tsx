@@ -5,7 +5,7 @@ import { AppProps } from 'next/app'
 import { Reset } from 'styled-reset'
 import * as Sentry from '@sentry/browser'
 import { Integrations } from '@sentry/tracing'
-import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
+import CookieConsent from "react-cookie-consent";
 import useTranslation from 'next-translate/useTranslation'
 import Trans from 'next-translate/Trans'
 
@@ -58,15 +58,7 @@ const ExtendedApp = (props: AppProps) => {
   }
 
   useEffect(() => {
-    router.events.on('routeChangeStart', () => {
-      const html = document.querySelector('html')
-      html.style.scrollBehavior = 'auto'
-    })
-
     router.events.on('routeChangeComplete', () => {
-      const html = document.querySelector('html')
-      html.style.scrollBehavior = 'smooth'
-
       changeBodyBackgroundColor()
     })
   }, [])

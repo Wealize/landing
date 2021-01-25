@@ -124,7 +124,7 @@ exports[`<Footer /> wrapper: should render 1`] = `
     </styles__ContainerSocialMobile>
     <styles__ContainerPrivacyCopyright>
       <Link
-        href="/privacy-legal"
+        href="/privacy"
         passHref={true}
       >
         <styles__InlineLink
@@ -132,7 +132,19 @@ exports[`<Footer /> wrapper: should render 1`] = `
           data-cy="footer-privacy-link"
           title="Privacy page link"
         >
-          common:footer.privacy_legal
+          common:footer.privacy
+        </styles__InlineLink>
+      </Link>
+      <Link
+        href="/legal"
+        passHref={true}
+      >
+        <styles__InlineLink
+          aria-label="Legal"
+          data-cy="footer-legal-link"
+          title="Legal page link"
+        >
+          common:footer.legal
         </styles__InlineLink>
       </Link>
       <Link
