@@ -118,7 +118,7 @@ export const ContainerContactSection = styled.div`
     min-height: 450px;
 
     > .button-rounded {
-      min-width: 45%;
+      min-width: 60%;
     }
   `};
 
@@ -170,6 +170,7 @@ export const ContainerSocialMobile = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-bottom: ${singlePx()};
 
   ${media.greaterThan('md')`
     display: none;
@@ -243,7 +244,7 @@ export const InlineLink = styled.a`
 
   ${media.greaterThan('md')`
     padding:  0;
-    margin-right: 10%;
+    margin-right: 4%;
   `};
 
   ${media.greaterThan('lg')`
@@ -254,6 +255,7 @@ export const InlineLink = styled.a`
 export const CopyrightText = styled.span`
   color: ${WHITE_COLOR};
   font-size: 1.1rem;
+  padding: ${singlePx()} 0;
 
   ${media.greaterThan('lg')`
     font-size: 1.5rem;

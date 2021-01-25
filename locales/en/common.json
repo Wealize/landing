@@ -13,8 +13,9 @@
       "text": "Join the culture. We are always looking for talent to grow our global community",
       "button_text": "Work with us"
     },
-    "privacy_legal": "Privacy & legal",
-    "cookies_policy": "Cookies policy",
+    "privacy": "Privacy",
+    "legal": "Legal",
+    "cookies_policy": "Cookies",
     "copyright": "Wealize 2020"
   },
   "cookieConsentPopup" : {

@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [Add legal page](https://wealize.atlassian.net/browse/WLZAA-102)
 - [Add copy for cookie policy](https://wealize.atlassian.net/browse/WLZAA-96)
 - [General corrections of copys](https://wealize.atlassian.net/browse/WLZAA-82)
 - [Review talents component](https://wealize.atlassian.net/browse/WLZAA-93)
