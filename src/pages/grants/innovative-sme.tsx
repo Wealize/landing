@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import useTranslation from 'next-translate/useTranslation'
 import Head from 'next/head'
 
@@ -33,22 +32,28 @@ const InnovativeSME = (): JSX.Element => {
         </p>
       </Description>
       <LogosContainer>
-        <Image
-          src="/img/grants/innovation-SME.png"
-          width="100%"
-          height="100%"
-          layout="responsive"
-          aria-label="Innovation SME logo"
-        />
+          <div title="Sello PYME INNOVADORA 23/01/2023" style={{ width: '238px', textAlign: 'center' }}>
+            <a style={{ textDecoration: ' none' }} target="_blank" rel="noreferrer" href="https://sede.micinn.gob.es/pyiINFO/buscarPyi.mec?&nif=B56103468" title="Ir a 'Sello Pyme Innovadora con validez 23/01/2023 ' en ventana nueva" >
+          <div>
+            <img alt="Sello PYME INNOVADORA 23/01/2023" src="https://sede.micinn.gob.es/pyiINFO/imagenes/sello.jpg" /></div>
+            <div style={{ color: '#000000', textDecoration: 'none', marginTop: '10px', marginBottom: '10px' }}><div style={{ fontWeight: 'bold', fontSize: '16px' }}>
+              PYME INNOVADORA
+            </div>
+              <div style={{ fontSize: '10px' }}>Válido hasta el 23 de enero de 2023 </div>
+            </div>
+            <div>
+              <img alt="escudo de MEIC 23/01/2023" src="https://sede.micinn.gob.es/pyiINFO/imagenes/escudo.jpg"/>
+            </div>
+            </a>
+          </div>
       </LogosContainer>
       <BottomContainer>
+
         <FinancingContent>
           {t('financing_content')}
         </FinancingContent>
         <ProjectContent>
-          {t('project_content.first_line')} <br />
-          {t('project_content.second_line')} <br />
-          {t('project_content.third_line')}
+          {t('project_content.first_line')}
         </ProjectContent>
       </BottomContainer>
     </Content>

@@ -6,45 +6,45 @@
   },
   "footer" : {
     "get_in_touch": {
-      "text": "Contáctanos para contarnos tu proyecto, tu idea o para darnos más información",
+      "text": "Cuéntanos tu idea o proyecto o solicita más información sobre nuestros trabajos",
       "button_text": "Contactar"
     },
     "work_with_us": {
-      "text": "Únete a la cultura. Siempre estamos buscando talento para hacer crecer nuestra comunidad global.",
+      "text": "Únete a la cultura. Constantemente buscamos nuevo talento para hacer crecer nuestra comunidad global",
       "button_text": "Trabaja con nosotros"
     },
     "privacy_legal": "Privacidad & legal",
-    "copyright": "Wealize 2020. Todos los derechos reservados."
+    "copyright": "Wealize 2020"
   },
   "projects" : {
     "odos": {
       "title": "La red ÖDOS",
-      "description": "Plataforma basada en blockchain que proporciona pruebas de identidad para mujeres y niños migrantes y gestiona datos confidenciales.",
-      "tag-0": "ONGS",
+      "description": "Desarrollo de una plataforma basada en blockchain que proporciona pruebas de identidad a mujeres y niños migrantes y gestiona información sensible",
+      "tag-0": "ONGs",
       "tag-1": "Inmigración",
       "tag-2": "Blockchain",
       "tag-3": "Identidad digital",
-      "tag-4": "Datos sensitivos"
+      "tag-4": "Datos sensibles"
     },
     "polder": {
-      "title": "ITEA POLDER",
-      "description": "Partnership con 15 organizaciones en 4 países europeos para construir un centro de datos descentralizado para que las ciudades inteligentes auditen y moneticen los datos con FiWARE e Hyperledger Fabric.",
+      "title": "ITEA POLDER PROJECT",
+      "description": "Partnership con 15 organizaciones de 4 países europeos para construir conjuntamente un centro de datos descentralizado para que las ciudades inteligentes (Smart Cities) auditen y moneticen sus datos con Fiware e Hyperledger Fabric",
       "tag-0": "Ciudades inteligentes",
-      "tag-1": "${text}",
-      "tag-2": "${text}",
+      "tag-1": "I+D+i",
+      "tag-2": "Blockchain",
       "tag-3": "${text}"
     },
     "coloqio": {
       "title": "${title}",
-      "description": "Creamos nuestra propia infraestructura flexible para desarrolladores que permite que los ecosistemas conversacionales de grandes organizaciones y startups escalen orquestando todos los canales conversacionales, motores de NLP y fuentes de datos para sus procesos comerciales.",
-      "tag-0": "Estudio de startup",
+      "description": "Creamos nuestra propia plataforma de infraestructura flexible para desarrolladores que permite escalar los ecosistemas conversacionales de grandes organizaciones y startups organizando todos los canales conversacionales, los motores de procesamiento de lenguaje natural (NLP) y las fuentes de información para sus procesos de negocio",
+      "tag-0": "I+D+i",
       "tag-1": "Agentes conversacionales",
       "tag-2": "IaaS",
       "tag-3": "Producto propio"
     },
     "metaledger": {
       "title": "${title}",
-      "description": "Diseño y desarrollo de un ecosistema de aplicaciones y dispositivos de IoT para proporcionar trazabilidad de punta a punta de oro y otros metales preciosos desde minas artesanales y de pequeña escala (ASM) en el tercer mundo hasta mayoristas en el primer mundo.",
+      "description": "Diseño y desarrollo de un ecosistema de aplicaciones y dispositivos de internet de las cosas (IoT) que permiten la trazabilidad integral del oro y otros metales preciosos desde las minas artesanales y de pequeña escala(MAPE) del tercer mundo hasta los mayoristas del primer mundo",
       "tag-0": "${text}",
       "tag-1": "Producto propio",
       "tag-2": "${text}",
@@ -52,28 +52,28 @@
     },
     "maldita": {
       "title": "${title}",
-      "description": "Despliegue de WhatsApp Business Chatbot integrado con la plataforma española de verificación de datos enfocado a combatir la propagación de desinformación para expandir el alcance de su servicio.",
+      "description": "Desarrollo de un Chatbot para WhatsApp Business integrado en la plataforma española de verificación de noticias Maldita.es con el objeto expandir el alcance de su servicio contra la propagación de desinformación",
       "tag-0": "${text}",
       "tag-1": "${text}",
       "tag-2": "${text}"
     },
     "pdc": {
       "title": "${title}",
-      "description": "Desarrollo de un motor de procesamiento de lenguaje natural (NLP) para procesar datos globales no estructurados y noticias relacionadas con peligros para que sean útiles para la plataforma de monitoreo de alerta temprana y peligros múltiples.",
+      "description": "Desarrollo de un motor de procesamiento de lenguaje natural (NLP) para procesar datos globales no estructurados y noticias relacionadas con desastres, de forma que resulten útiles para la plataforma DisasterAWARE de monitoreo de alerta temprana multirriesgo",
       "tag-0": "Inteligencia de riesgo de desastres",
       "tag-1": "Servicios cognitivos",
       "tag-2": "${text}"
     },
     "medecins": {
       "title": "${title}",
-      "description": "Diseño y desarrollo de una plataforma totalmente móvil y offline para gestionar las operaciones logísticas y supervisar la infraestructura de Internet en todas las ubicaciones de campo de MSF con el fin de crear una red de ICT común.",
-      "tag-0": "ONGS",
+      "description": "Diseño y desarrollo de una plataforma completamente móvil- y offline-primero de gestión de operaciones logísticas y supervisión dela infraestructura de internet en todas las ubicaciones de campo de MSF con elfin de crear una red común de ICT",
+      "tag-0": "ONGs",
       "tag-1": "${text}",
       "tag-2": "Móvil"
     },
     "yotengo": {
       "title": "${title}",
-      "description": "Plataforma para implementar una constelación de chatbot que ayuda a los abogados de inmigración de EE.UU a conectarse con clientes potenciales a través de Facebook Messenger, WhatsApp Business y chat web con conocimiento experto del lenguaje legal.",
+      "description": "Desarrollo de una plataforma de despliegue de chatbots con conocimiento experto de lenguaje jurídico para ayudar a los abogados de inmigración de EE.UU. a conectarse con clientes potenciales a través de Facebook Messenger, WhatsApp Business y webchat",
       "tag-0": "Legal",
       "tag-1": "Inmigración",
       "tag-2": "${text}",
