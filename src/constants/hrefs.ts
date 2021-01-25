@@ -1,5 +1,6 @@
 export const HOME_HREF = '/'
 export const PROFILE_HREF = '/profile'
 export const PRIVACY_LEGAL_HREF = '/privacy-legal'
+export const COOKIES_POLICY_HREF = '/cookies-policy'
 export const CDTI_HREF = '/grants/cdti'
 export const INNOVATION_SME_HREF = '/grants/innovative-sme'

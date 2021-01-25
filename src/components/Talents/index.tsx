@@ -30,7 +30,7 @@ const Talents = () => {
     leave: { opacity: 1 },
     unique: true,
     reset: true,
-    config: { duration: 300 }
+    config: { duration: 600 }
   })
 
   return (

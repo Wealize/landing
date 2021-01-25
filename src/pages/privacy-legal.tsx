@@ -12,7 +12,7 @@ import {
   Question,
   QuestionTitle,
   QuestionDescription
-} from '../styles/pages/PrivacyLegal'
+} from '../styles/pages/Politics'
 
 const PrivacyLegal = (): JSX.Element => {
   const { t } = useTranslation('privacy-legal')

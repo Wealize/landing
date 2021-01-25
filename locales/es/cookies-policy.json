@@ -1,0 +1,44 @@
+{
+  "page_title": "Política de cookies",
+  "paragraph-0" : "Esta Política de Cookies hace referencia al portal <0></0>, desbloquea el mundo de hoy, en adelante referido como el 'sitio web', así como a sus Apps para diferentes dispositivos.",
+  "paragraph-1": "En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico, hacemos saber que tanto el sitio web y/o sus Apps y Servicios hacen uso de cookies.",
+  "paragraph-2": "Una cookie es una pequeña cantidad de información que se almacena en el navegador utilizado por cada usuario para que el servidor recuerde cierta información que, posteriormente, únicamente el servidor que la implementó leerá, otro de los objetivos es adaptar el contenido de la web al perfil y necesidades del usuario. Las cookies tienen, generalmente, una duración limitada en el tiempo. Ninguna cookie permite que pueda contactarse con el número de teléfono del usuario, su dirección de correo electrónico o con cualquier otro medio de contracto. Ninguna cookie puede extraer información del disco duro del usuario o robar información personal.",
+  "paragraph-3": "‍La única manera de que la información privada de un usuario forme parte del archivo cookie es que el usuario dé personalmente esa información al servidor. Aquellos usuarios que no deseen recibir cookies o quieran ser informado de su fijación pueden configurar su navegador a tal efecto.",
+  "question-0" : {
+    "title": "Tipos de cookies",
+    "paragraph-0": "Existen cookies propias, que son las generadas por la página que está visitando, y las cookies de terceros, que son las generadas por servicios o proveedores externos como Facebook, Twitter, Google, etc. Que puedan ser utilizadas en la página visitada.",
+    "paragraph-1": "En cuanto a la función que realizan existes diferentes tipos de cookies:",
+    "paragraph-2": "<0>Cookies técnicas:</0> son las más elementales y permiten, entre otras cosas, saber cuándo está navegando un humano o una aplicación automatizada, cuándo navega un usuario anónimo y uno registrado, es decir, tareas básicas para el funcionamiento de cualquier web dinámica.",
+    "paragraph-3": "<0>Cookies de análisis:</0> recogen información sobre el tipo de navegación que está realizando, las secciones que más utiliza, productos consultados, franja horaria de uso, idioma, etc.",
+    "paragraph-4": "<0>Cookies publicitarias:</0> muestran publicidad en función de su navegación, su país de procedencia, idioma, etc."
+  },
+  "question-1" : {
+    "title": "Cookies utilizadas en este sitio web",
+    "paragraph-0": "Con el objetivo de llevar a cabo la directriz de la Agencia Española de Protección de Datos procedemos a detallar el uso de cookies que hace este sitio web, con el fin de informarle de una manera clara, detallada y concisa.",
+    "paragraph-1": "Tanto el sitio web como sus apps -en caso de que hubiese- utilizan cookies propias:",
+    "paragraph-2": "<0>Cookies de sesión:</0> Destinadas a garantizar el acceso autentificado y personalizado de los usuarios.",
+    "paragraph-3": "<0>Cookies analíticas:</0> Destinadas a realizar un seguimiento estadístico del sitio web y su uso.",
+    "paragraph-4": "Este sitio web utiliza o puede llegar a utilizar de forma puntual o habitual las siguientes cookies de terceros:",
+    "paragraph-5": "<0>Google Analytics (*):</0> su función es obtener información sobre el uso y actividad en el portal y sus Apps. Al utilizar este Portal y sus Apps está consintiendo el tratamiento de información acerca de usted por Google. Por tanto, el ejercicio de cualquier derecho en este sentido deberá hacerlo comunicando directamente con Google.",
+    "paragraph-6": "<0>Microsoft Clarity:</0> su función es analizar el comportamiento del usuario en un sitio web. Esto se consigue mediante la grabación de sesiones, mapas de calor y ML Insights.",
+    "paragraph-7": "(*) En el caso de las cookies de Google, esta empresa almacena las cookies en servidores ubicados en Estados Unidos y se compromete a no compartirla con terceros, excepto en los casos en los que sea necesario para el funcionamiento del sistema o cuando la ley obligue a tal efecto. Según Google no guarda su dirección IP. Google Inc. es una compañía adherida al Acuerdo de Puerto Seguro que garantiza que todos los datos transferidos serán tratados con un nivel de protección acorde a la normativa europea."
+  },
+  "question-2" : {
+    "title": "Desactivación o eliminación de cookies",
+    "paragraph-0": "En cualquier momento podrá ejercer su derecho a desactivar, bloquear o eliminar las cookies de este sitio web. Estas acciones se realizan de forma diferente en función del navegador que esté usando. Debe ir a la configuración de su navegador y allí podrá buscar las cookies asociadas a la web para proceder a su eliminación."
+  },
+  "question-3" : {
+    "title": "¿Qué ocurre si desactivo las cookies?",
+    "paragraph-0": "Al desactivar las cookies no podrá acceder al contenido, servicios y herramientas ofrecidos por WEALIZE S.L."
+  },
+  "question-4" : {
+    "title": "Cookies en los navegadores de uso común",
+    "paragraph-0": "Los navegadores web son las herramientas encargadas de almacenar las cookies y desde ellos se ejercita su derecho de eliminación o desactivación de las mismas.",
+    "paragraph-1": "Cabe añadir que WEALIZE S.L no puede garantizar la correcta o incorrecta manipulación de las cookies por parte de los navegadores que use.",
+    "paragraph-2": "En estos links puede encontrar la información sobre como desactivar cookies en los navegadores:"
+  },
+  "question-5" : {
+    "title": "Aceptación",
+    "paragraph-0": "Tanto el acceso al sitio web y/o a sus Apps como el uso de cualquiera de sus servicios supone la total e incondicional aceptación por el Usuario de las Condiciones Legales, Política de privacidad y Política de Cookies, quedando vinculado contractualmente con WEALIZE S.L., con los mismos efectos que su firma."
+  }
+}

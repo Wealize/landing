@@ -8,7 +8,7 @@ import Footer from './index'
 import {
   BigText,
   Social,
-  PrivacyLegalLink,
+  InlineLink,
   CopyrightText,
   Grant
 } from './styles'
@@ -26,7 +26,7 @@ describe('<Footer />', () => {
     expect(wrapper.find(WealizeWhiteNormalMediumIcon).length).toEqual(1)
     expect(wrapper.find(BigText).length).toEqual(2)
     expect(wrapper.find(ButtonRounded).length).toEqual(2)
-    expect(wrapper.find(PrivacyLegalLink).length).toEqual(1)
+    expect(wrapper.find(InlineLink).length).toEqual(2)
     expect(wrapper.find(CopyrightText).length).toEqual(1)
     expect(wrapper.find(Social).length).toEqual(6)
     expect(wrapper.find(Grant).length).toEqual(2)

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import {
+  ACCENT_COLOR,
   GRAY_300_COLOR,
   LIGHT_GRAY_COLOR,
   WHITE_COLOR
@@ -23,6 +24,11 @@ export const Container = styled.div`
   ${media.greaterThan('lg')`
     background-color: ${WHITE_COLOR};
   `};
+
+  a {
+    text-decoration: none;
+    color: ${ACCENT_COLOR};
+  }
 `
 
 export const Content = styled.div`
@@ -214,5 +220,30 @@ export const QuestionDescription = styled.div`
     ${media.greaterThan('lg')`
       padding-bottom: ${singlePx()};
     `}
+  }
+
+  > ul {
+    color: ${GRAY_300_COLOR};
+    font-size: 1.1rem;
+    line-height: 1.63;
+    text-align: left;
+    width: 100%;
+    list-style-position: inside;
+
+    ${media.greaterThan('md')`
+      font-size: 1.3rem;
+    `}
+
+    li {
+      padding-bottom: ${singlePx()};
+
+      ${media.greaterThan('lg')`
+        padding-bottom: ${singlePx()};
+      `}
+    }
+
+    li > b {
+      font-weight: bold;
+    }
   }
 `

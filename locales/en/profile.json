@@ -124,6 +124,9 @@
     },
     "javier_martin": {
       "role": "${text}"
+    },
+    "rafa_rodriguez": {
+      "role": "${text}"
     }
   },
   "accordion": {
