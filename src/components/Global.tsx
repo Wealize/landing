@@ -11,7 +11,6 @@ const Global = createGlobalStyle`
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
     font-family: 'DM Sans', sans-serif;
-    scroll-behavior: smooth;
     color: ${DARK_GRAY_COLOR};
     background-color: ${WHITE_COLOR};
   }
