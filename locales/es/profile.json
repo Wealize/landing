@@ -37,7 +37,7 @@
     "second-card": {
       "headline": "Servicios cognitivos",
       "subheadline": "Piensa, predice y actúa",
-      "description": "Utilizamos elMachine Learning y la Inteligencia Artificial para impulsar a las empresas tomando mejores decisiones"
+      "description": "Utilizamos el Machine Learning y la Inteligencia Artificial para impulsar a las empresas tomando mejores decisiones"
     },
     "third-card": {
       "headline": "Agentes conversacionales",
@@ -124,6 +124,9 @@
     },
     "javier_martin": {
       "role": "Ingeniero de software en prácticas"
+    },
+    "rafa_rodriguez": {
+      "role": "Director Financiero"
     }
   },
   "accordion": {
