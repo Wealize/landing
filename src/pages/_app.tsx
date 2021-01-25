@@ -58,8 +58,6 @@ const ExtendedApp = (props: AppProps) => {
   }
 
   useEffect(() => {
-    console.warn(getCookieConsentValue());
-
     router.events.on('routeChangeStart', () => {
       const html = document.querySelector('html')
       html.style.scrollBehavior = 'auto'

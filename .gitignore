@@ -124,4 +124,3 @@ out
 build
 __tests__/e2e/screenshots
 __tests__/e2e/videos
-yarn.lock
