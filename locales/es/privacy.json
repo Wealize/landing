@@ -1,5 +1,5 @@
 {
-  "page_title": "Privacidad & legal",
+  "page_title": "Privacidad",
   "paragraph-0" : "Información en cumplimiento de la normativa de protección de datos personales.",
   "paragraph-1": "En Europa y en España existen normas de protección de datos pensadas para proteger su información personal de obligado cumplimiento para nuestra entidad.",
   "paragraph-2": "Por ello, es muy importante para nosotros que entienda perfectamente qué vamos a hacer con los datos personales que le pedimos.",
@@ -77,5 +77,11 @@
     "paragraph-0": "Nuestra política es no elaborar perfiles sobre los usuarios de nuestros servicios.",
     "paragraph-1": "No obstante, pueden existir situaciones en las que, con fines de prestación del servicio, comerciales o de otro tipo, necesitemos elaborar perfiles de información sobre usted. Un ejemplo pudiera ser la utilización de su historial de compras o servicios para poder ofrecerle productos o servicios adaptados a sus gustos o necesidades.",
     "paragraph-2": "En tal caso, aplicaremos medidas de seguridad eficaces que protejan su información en todo momento de personas no autorizadas que pretendan utilizarla en su propio beneficio."
+  },
+  "question-11" : {
+    "title": "¿Qué ocurre con los datos recabados por las cookies?",
+    "paragraph-0": "Al navegar por este sitio, las cookies de WEALIZE S.L., y/o de las compañías de terceros, pueden depositarse en su ordenador, Tablet o teléfono móvil. Durante la primera navegación, aparecerá un banner explicativo sobre el uso de cookies.",
+    "paragraph-1": "Por lo tanto, al continuar la navegación, el usuario será considerado como informado y habrá aceptado el uso de dichas “cookies”.",
+    "paragraph-2": "Para una mayor información consulte nuestra <0>política de cookies</0>."
   }
 }

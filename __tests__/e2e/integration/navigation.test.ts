@@ -1,7 +1,7 @@
 import {
   HOME_HREF,
   PROFILE_HREF,
-  PRIVACY_LEGAL_HREF,
+  PRIVACY_HREF,
   CDTI_HREF,
   INNOVATION_SME_HREF
 } from '../../../src/constants/hrefs'
@@ -43,7 +43,7 @@ describe('User want navigate between pages', () => {
     })
 
     it('Location should be privacy page', () => {
-      cy.location('pathname').should('eq', PRIVACY_LEGAL_HREF)
+      cy.location('pathname').should('eq', PRIVACY_HREF)
     })
   })
 

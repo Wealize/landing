@@ -16,7 +16,8 @@ import {
   CDTI_HREF,
   COOKIES_POLICY_HREF,
   INNOVATION_SME_HREF,
-  PRIVACY_LEGAL_HREF
+  PRIVACY_HREF,
+  LEGAL_HREF
 } from '../../constants/hrefs'
 import {
   GET_IN_TOUCH_HREF,
@@ -108,9 +109,14 @@ const Footer = () => {
           </Link>
         </ContainerSocialMobile>
         <ContainerPrivacyCopyright>
-          <Link href={PRIVACY_LEGAL_HREF} passHref>
+          <Link href={PRIVACY_HREF} passHref>
             <InlineLink title="Privacy page link" aria-label="Privacy & Legal" data-cy="footer-privacy-link">
-              {t('footer.privacy_legal')}
+              {t('footer.privacy')}
+            </InlineLink>
+          </Link>
+          <Link href={LEGAL_HREF} passHref>
+            <InlineLink title="Legal page link" aria-label="Legal" data-cy="footer-legal-link">
+              {t('footer.legal')}
             </InlineLink>
           </Link>
           <Link href={COOKIES_POLICY_HREF} passHref>
