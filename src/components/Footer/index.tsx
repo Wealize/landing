@@ -112,7 +112,7 @@ const Footer = () => {
               {t('footer.privacy_legal')}
             </PrivacyLegalLink>
           </Link>
-          <CopyrightText>{t('footer.copyright')}</CopyrightText>
+          <CopyrightText>&copy;&nbsp; {t('footer.copyright')}</CopyrightText>
         </ContainerPrivacyCopyright>
         <Divider></Divider>
         <ContainerGrantsAndSocials>
