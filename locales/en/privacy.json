@@ -1,5 +1,5 @@
 {
-  "page_title": "Privacy & legal",
+  "page_title": "Privacy",
   "paragraph-0" : "Information in compliance with The General Data Protection Regulation.",
   "paragraph-1": "In Europe and in Spain there are data protection regulations designed to protect your personal information, which are obligatory for our entity.",
   "paragraph-2": "Therefore, it's very important for us that you understand perfectly what we are going to do with the personal data we ask you for.",
@@ -77,5 +77,11 @@
     "paragraph-0": "Our policy is not to profile the users of our services.",
     "paragraph-1": "However, there may be situations where, for service provision purposes, commercial or otherwise, we need to profile information about you. An example might be the use of your purchase or service history to provide you with products or services tailored to your tastes or needs.",
     "paragraph-2": "In such cases, we will implement effective security measures to protect your information at all times from unauthorised persons who may seek to use it for their own benefit."
+  },
+  "question-11" : {
+    "title": "What happens to the data collected by cookies?",
+    "paragraph-0": "When browsing this site, cookies from WEALIZE S.L., and/or third party companies, may be deposited on your computer, tablet or cell phone. During the first navigation, a banner explaining the use of cookies will appear.",
+    "paragraph-1": "Therefore, by continuing browsing, the user will be considered as informed and will have accepted the use of such cookies.",
+    "paragraph-2": "For more information, please see our <0>cookie policy</0>."
   }
 }

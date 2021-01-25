@@ -103,6 +103,19 @@ export const Description = styled.div`
 
   & p {
     padding: ${singlePx()} 0;
+    line-height: 35px;
+  }
+
+  & ol {
+    list-style-position: inside;
+
+    & li {
+      padding-bottom: ${singlePx()};
+
+      ${media.greaterThan('lg')`
+        padding-bottom: ${singlePx()};
+      `}
+    }
   }
 `
 
