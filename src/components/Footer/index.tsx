@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 import WealizeWhiteNormalMediumIcon from '../icons/WealizeWhiteNormalMediumIcon'
 import ButtonRounded from '../Buttons/Rounded/'
-import { MEDIUM } from '../Buttons/Rounded/sizes'
+import { MEDIUM, SMALL } from '../Buttons/Rounded/sizes'
 import { ACCENT_COLOR, DARK_GRAY_COLOR, WHITE_COLOR } from '../../theme/color'
 import LinkedinIcon from '../icons/social/LinkedinIcon'
 import TwitterIcon from '../icons/social/TwitterIcon'
@@ -35,7 +35,6 @@ import {
   DividerMobile,
   ContainerSocialMobile,
   ContainerSocial,
-  Social,
   ContainerPrivacyCopyright,
   InlineLink,
   CopyrightText,
@@ -66,7 +65,7 @@ const Footer = () => {
             handleClick={() => router.push(GET_IN_TOUCH_HREF)}
             id="footer-get-in-touch-button"
           >
-            {t('footer.get_in_touch.button_text')}
+            <span>{t('footer.get_in_touch.button_text')}</span>
           </ButtonRounded>
         </ContainerContactSection>
         <ContainerContactSection>
@@ -82,31 +81,43 @@ const Footer = () => {
             handleClick={() => router.push(WORK_WITH_US)}
             id="footer-work-whit-us-button"
           >
-           {t('footer.work_with_us.button_text')}
+           <span>{t('footer.work_with_us.button_text')}</span>
           </ButtonRounded>
         </ContainerContactSection>
       </ContainerContent>
       <ContainerBottom>
         <DividerMobile></DividerMobile>
         <ContainerSocialMobile>
-          <Link
-            href="https://www.linkedin.com/company/wealizedigital/"
-            passHref
-          >
-            <Social title="Wealize Linkedin link" target="_blank" aria-label="Linkedin" rel="noreferrer">
+            <ButtonRounded
+              backgroundColor={DARK_GRAY_COLOR}
+              textColor={WHITE_COLOR}
+              animatedBackgroundColor={ACCENT_COLOR}
+              animatedTextColor={WHITE_COLOR}
+              size={SMALL}
+              handleClick={() => router.push('https://www.linkedin.com/company/wealizedigital/')}
+            >
               <LinkedinIcon />
-            </Social>
-          </Link>
-          <Link href="https://twitter.com/wealizedigital" passHref>
-            <Social title="Wealize Twitter link" target="_blank" aria-label="Twitter" rel="noreferrer">
+            </ButtonRounded>
+            <ButtonRounded
+              backgroundColor={DARK_GRAY_COLOR}
+              textColor={WHITE_COLOR}
+              animatedBackgroundColor={ACCENT_COLOR}
+              animatedTextColor={WHITE_COLOR}
+              size={SMALL}
+              handleClick={() => router.push('https://twitter.com/wealizedigital')}
+            >
               <TwitterIcon />
-            </Social>
-          </Link>
-          <Link href="https://dev.to/wealize" passHref>
-            <Social title="Wealize Dev.to link" target="_blank" aria-label="Dev.to" rel="noreferrer">
+            </ButtonRounded>
+            <ButtonRounded
+              backgroundColor={DARK_GRAY_COLOR}
+              textColor={WHITE_COLOR}
+              animatedBackgroundColor={ACCENT_COLOR}
+              animatedTextColor={WHITE_COLOR}
+              size={SMALL}
+              handleClick={() => router.push('https://dev.to/wealize')}
+            >
               <DevtoIcon />
-            </Social>
-          </Link>
+            </ButtonRounded>
         </ContainerSocialMobile>
         <ContainerPrivacyCopyright>
           <Link href={PRIVACY_HREF} passHref>
@@ -145,24 +156,36 @@ const Footer = () => {
             </Grant>
           </ContainerGrants>
           <ContainerSocial>
-            <Link
-              href="https://www.linkedin.com/company/wealizedigital/"
-              passHref
+            <ButtonRounded
+              backgroundColor={DARK_GRAY_COLOR}
+              textColor={WHITE_COLOR}
+              animatedBackgroundColor={ACCENT_COLOR}
+              animatedTextColor={WHITE_COLOR}
+              size={SMALL}
+              handleClick={() => router.push('https://www.linkedin.com/company/wealizedigital/')}
             >
-              <Social target="_blank" rel="noreferrer">
-                <LinkedinIcon />
-              </Social>
-            </Link>
-            <Link href="https://twitter.com/wealizedigital" passHref>
-              <Social target="_blank" rel="noreferrer">
-                <TwitterIcon />
-              </Social>
-            </Link>
-            <Link href="https://dev.to/wealize" passHref>
-              <Social target="_blank" rel="noreferrer">
-                <DevtoIcon />
-              </Social>
-            </Link>
+              <LinkedinIcon />
+            </ButtonRounded>
+            <ButtonRounded
+              backgroundColor={DARK_GRAY_COLOR}
+              textColor={WHITE_COLOR}
+              animatedBackgroundColor={ACCENT_COLOR}
+              animatedTextColor={WHITE_COLOR}
+              size={SMALL}
+              handleClick={() => router.push('https://twitter.com/wealizedigital')}
+            >
+              <TwitterIcon />
+            </ButtonRounded>
+            <ButtonRounded
+              backgroundColor={DARK_GRAY_COLOR}
+              textColor={WHITE_COLOR}
+              animatedBackgroundColor={ACCENT_COLOR}
+              animatedTextColor={WHITE_COLOR}
+              size={SMALL}
+              handleClick={() => router.push('https://dev.to/wealize')}
+            >
+              <DevtoIcon />
+            </ButtonRounded>
           </ContainerSocial>
         </ContainerGrantsAndSocials>
       </ContainerBottom>

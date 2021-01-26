@@ -45,7 +45,7 @@ const Talents = () => {
           size={MEDIUM}
           handleClick={refreshData}
         >
-          {t('talents.refresh-button-text')}
+          <span>{t('talents.refresh-button-text')}</span>
         </RoundedButton>
       </ContentContainer>
 

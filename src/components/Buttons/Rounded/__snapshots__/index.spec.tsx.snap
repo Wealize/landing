@@ -30,23 +30,26 @@ exports[`<ButtonRounded /> wrapper: should render 1`] = `
   textColor="#ffffff"
 >
   <styles__ContainerButtonOriginal
-    aria-label="Test text"
     backgroundColor="#3c3c3b"
   >
     <styles__Content
       textColor="#ffffff"
     >
-      Test text
+      <span>
+        Hello
+      </span>
     </styles__Content>
   </styles__ContainerButtonOriginal>
   <styles__ContainerButtonAnimated
     animatedBackgroundColor="#6666ff"
-    aria-label="Test text animated"
+    aria-label="button animated"
   >
     <styles__Content
       textColor="#ffffff"
     >
-      Test text
+      <span>
+        Hello
+      </span>
     </styles__Content>
   </styles__ContainerButtonAnimated>
 </styles__Container>

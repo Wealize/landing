@@ -16,7 +16,7 @@ interface ButtonProps {
   textColor: string
   animatedBackgroundColor: string
   animatedTextColor: string
-  children?: string
+  children?: React.ReactElement
   size: ButtonSize
   handleClick?: (e?: Event) => void | null
 }
@@ -45,13 +45,12 @@ const ButtonRounded = (props: ButtonProps) => {
     >
       <ContainerButtonOriginal
         backgroundColor={backgroundColor}
-        aria-label={children}
       >
         <Content textColor={textColor}>{children}</Content>
       </ContainerButtonOriginal>
       <ContainerButtonAnimated
         animatedBackgroundColor={animatedBackgroundColor}
-        aria-label={`${children} animated`}
+        aria-label={'button animated'}
       >
         <Content textColor={textColor}>{children}</Content>
       </ContainerButtonAnimated>
