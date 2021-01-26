@@ -30,7 +30,7 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
     >
       <styles__BackgroundContainer>
         <div
-          className="styles__BackgroundContainer-sc-1ukl2m-1 iqFCmf"
+          className="styles__BackgroundContainer-sc-1ukl2m-1 ljKsAK"
         >
           <BackgroundImage
             element="div"
@@ -46,13 +46,13 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
                 "minWidth": "300px",
               }
             }
-            transitionTime="0"
+            transitionTime="0.3s"
             width="100%"
           >
             <ImageLoader
               lazyLoad={true}
               src="/img/projects/maldita.jpg"
-              transitionTime="0"
+              transitionTime="0.3s"
             >
               <VisibilitySensor
                 active={true}
@@ -135,12 +135,12 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
                       <Loader
                         hasLoaded={false}
                         isOnTop={true}
-                        transitionTime="0"
+                        transitionTime="0.3s"
                       >
                         <styled.div
                           hasLoaded={false}
                           isOnTop={true}
-                          transitionTime="0"
+                          transitionTime="0.3s"
                         >
                           <StyledComponent
                             forwardedComponent={
@@ -150,7 +150,7 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "",
                                   "isStatic": false,
-                                  "lastClassName": "gSTrhT",
+                                  "lastClassName": "iVGwIn",
                                   "rules": Array [
                                     "
   width: 100%;
@@ -215,10 +215,10 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
                             forwardedRef={null}
                             hasLoaded={false}
                             isOnTop={true}
-                            transitionTime="0"
+                            transitionTime="0.3s"
                           >
                             <div
-                              className="gSTrhT"
+                              className="iVGwIn"
                             />
                           </StyledComponent>
                         </styled.div>
@@ -235,7 +235,7 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
         hasPrimary={false}
       >
         <div
-          className="styles__ContentContainer-sc-1ukl2m-2 eASEmx"
+          className="styles__ContentContainer-sc-1ukl2m-2 cWFmFv"
         >
           <styles__Content>
             <div
