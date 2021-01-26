@@ -81,7 +81,7 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
               handleClick={() => router.push(HOME_HREF)}
               id="nav-return-button"
             >
-              {t('navbar.return_button_text')}
+              <span>{t('navbar.return_button_text')}</span>
             </ButtonRounded>
           )
         : (

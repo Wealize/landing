@@ -63,7 +63,9 @@ exports[`<Accordion /> should render 1`] = `
         }
         textColor="#ffffff"
       >
-        profile:accordion.toogle-button-opened-text
+        <span>
+          profile:accordion.toogle-button-opened-text
+        </span>
       </Memo(ButtonRounded)>
     </styles__SectionHeader>
     <styles__SectionContentContainer
@@ -206,7 +208,9 @@ exports[`<Accordion /> should render 1`] = `
         }
         textColor="#ffffff"
       >
-        profile:accordion.toogle-button-closed-text
+        <span>
+          profile:accordion.toogle-button-closed-text
+        </span>
       </Memo(ButtonRounded)>
     </styles__SectionHeader>
     <styles__SectionContentContainer

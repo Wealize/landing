@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { AppProps } from 'next/app'
@@ -8,6 +8,7 @@ import { Integrations } from '@sentry/tracing'
 import CookieConsent from "react-cookie-consent";
 import useTranslation from 'next-translate/useTranslation'
 import Trans from 'next-translate/Trans'
+import LoadingBar from 'react-top-loading-bar'
 
 import Global from '../components/Global'
 import HeadComponent from '../components/layout/Head/'
@@ -32,6 +33,7 @@ const ExtendedApp = (props: AppProps) => {
     pageProps,
    } = props
 
+  const [progress, setProgress] = useState(0)
   const router = useRouter()
   const windowSize = useWindowSize()
   const { t } = useTranslation('common')
@@ -42,6 +44,15 @@ const ExtendedApp = (props: AppProps) => {
   }
 
   const { layoutOptions = DEFAULT_LAYOUT_OPTIONS } = pageProps
+
+  const handleRouteChangeStart = () => {
+    setProgress(progress + 20)
+  }
+
+  const handleRouteChangeComplete = () => {
+    changeBodyBackgroundColor()
+    setProgress(100)
+  }
 
   const changeBodyBackgroundColor = ()=> {
     const UNSET_VALUE_BG = "rgba(0, 0, 0, 0)"
@@ -58,9 +69,16 @@ const ExtendedApp = (props: AppProps) => {
   }
 
   useEffect(() => {
-    router.events.on('routeChangeComplete', () => {
-      changeBodyBackgroundColor()
-    })
+    router.events.on('routeChangeStart', handleRouteChangeStart)
+    router.events.on('routeChangeComplete', handleRouteChangeComplete)
+    router.events.on('routeChangeError', handleRouteChangeComplete)
+
+    // If the component is unmounted, unsubscribe
+    return () => {
+      router.events.off('routeChangeStart', handleRouteChangeStart)
+      router.events.off('routeChangeComplete', handleRouteChangeComplete)
+      router.events.off('routeChangeError', handleRouteChangeComplete)
+    }
   }, [])
 
   useEffect(() => {
@@ -70,6 +88,12 @@ const ExtendedApp = (props: AppProps) => {
   return (
     <React.Fragment>
       <HeadComponent />
+      <LoadingBar
+        color={ACCENT_COLOR}
+        height={5}
+        progress={progress}
+        onLoaderFinished={() => setProgress(0)}
+      />
       <Reset />
       <Global />
       <Layout layoutOptions={layoutOptions}>
