@@ -20,8 +20,9 @@
     "paragraph-3": "<0>Analytical cookies:</0> Intended for statistical monitoring of the website and its use.",
     "paragraph-4": "This website uses or may use the following third-party cookies on an occasional or regular basis:",
     "paragraph-5": "<0>Google Analytics (*):</0> its function is to obtain information about the use and activity on the portal and its Apps. By using this Portal and its Apps you are consenting to the processing of information about you by Google. Therefore, the exercise of any rights in this regard should do so by communicating directly with Google.",
-    "paragraph-6": "<0>Microsoft Clarity:</0> its function is to analyze user behavior on a website. This is achieved through session recording, heat maps and ML Insights.",
-    "paragraph-7": "(*) In the case of Google cookies, Google stores cookies on servers located in the United States and undertakes not to share it with third parties, except where necessary for the operation of the system or where required by law. According to Google does not store your IP address. Google Inc. is a company adhered to the Safe Harbor Agreement which guarantees that all data transferred will be treated with a level of protection in accordance with European regulations."
+    "paragraph-6": "<0>Microsoft Clarity:</0> its function is to analyze user behavior on a website. This is achieved by recording sessions, heat maps and ML Insights. By using this Portal and its Apps you are consenting to the processing of information about you by Microsoft. Therefore, you should exercise any rights in this regard by contacting Microsoft directly.",
+    "paragraph-7": "<0>Leadfeeder:</0> its function is to show the companies that visit a website, how they found it and what interests them about it.",
+    "paragraph-8": "(*) In the case of Google cookies, Google stores cookies on servers located in the United States and undertakes not to share it with third parties, except where necessary for the operation of the system or where required by law. According to Google does not store your IP address. Google Inc. is a company adhered to the Safe Harbor Agreement which guarantees that all data transferred will be treated with a level of protection in accordance with European regulations."
   },
   "question-2" : {
     "title": "Disabling or deleting cookies",
