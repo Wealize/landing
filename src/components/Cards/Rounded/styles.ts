@@ -30,6 +30,7 @@ export const BackgroundContainer = styled.div`
   display: flex;
   align-items: stretch;
   min-height: 290px;
+  z-index: 1;
 
   ${media.greaterThan('md')`
     width: 51%;
@@ -54,7 +55,7 @@ export const ContentContainer = styled.div<{ hasPrimary: boolean }>`
   border-top-left-radius: ${DEFAULT_RADIUS}px;
   border-top-right-radius: ${DEFAULT_RADIUS}px;
   min-height: 350px;
-  z-index: 2;
+  z-index: 4;
 
   ${({ hasPrimary }) => media.greaterThan('md')`
     width: 45%;
