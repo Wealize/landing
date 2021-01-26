@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 import { WHITE_COLOR, DARK_GRAY_COLOR } from '../../theme/color'
 import {
-  sixthPx,
   singlePx,
   doublePx,
   triplePx,
@@ -106,7 +105,7 @@ export const ContainerContactSection = styled.div`
   ${media.greaterThan('md')`
     padding: 0;
     justify-content: space-between;
-    min-height: 350px;
+    min-height: 400px;
 
     > .button-rounded {
       margin-top: 0;
@@ -115,7 +114,7 @@ export const ContainerContactSection = styled.div`
   `};
 
   ${media.greaterThan('lg')`
-    min-height: 450px;
+    min-height: 500px;
 
     > .button-rounded {
       min-width: 60%;
@@ -133,6 +132,12 @@ export const ContainerContactSection = styled.div`
   ${media.greaterThan('xxl')`
     > .button-rounded {
       min-width: 35%;
+    }
+  `};
+
+  ${media.greaterThan('xxxl')`
+    > .button-rounded {
+      min-width: 45%;
     }
   `};
 `
@@ -172,6 +177,23 @@ export const ContainerSocialMobile = styled.div`
   align-items: center;
   padding-bottom: ${singlePx()};
 
+  > .button-rounded {
+    min-width: 42px;
+    min-height: 42px;
+
+    & button {
+      padding: 0;
+    }
+
+    & div {
+      padding: 0;
+    }
+
+    ${media.greaterThan('md')`
+      display: none;
+    `};
+  }
+
   ${media.greaterThan('md')`
     display: none;
   `};
@@ -199,10 +221,43 @@ export const ContainerSocial = styled.div`
   align-items: center;
   display: none;
 
+  > .button-rounded {
+    display: none;
+    min-width: 42px;
+    min-height: 42px;
+
+    & button {
+      padding: 0;
+    }
+
+    & div {
+      padding: 0;
+    }
+
+    ${media.greaterThan('md')`
+      min-width: 56px;
+      min-height: 56px;
+    `};
+
+    ${media.greaterThan('lg')`
+      min-width: 60px;
+      height: 60px;
+    `};
+
+    ${media.greaterThan('xl')`
+      min-width: 66px;
+      min-height: 66px;
+    `};
+  }
+
   ${media.greaterThan('md')`
     display: flex;
     width: 30%;
     justify-content: flex-end;
+
+    > .button-rounded {
+      display: block;
+    }
   `};
 
   ${media.greaterThan('lg')`
@@ -211,28 +266,6 @@ export const ContainerSocial = styled.div`
 
   ${media.greaterThan('xl')`
     width: 15%;
-  `};
-`
-
-export const Social = styled.a`
-  width: 46px;
-  height: 46px;
-  margin: 0 ${sixthPx()};
-  text-decoration: none;
-
-  ${media.greaterThan('md')`
-    width: 56px;
-    height: 56px;
-  `};
-
-  ${media.greaterThan('lg')`
-    width: 60px;
-    height: 66px;
-  `};
-
-  ${media.greaterThan('xl')`
-    width: 66px;
-    height: 66px;
   `};
 `
 

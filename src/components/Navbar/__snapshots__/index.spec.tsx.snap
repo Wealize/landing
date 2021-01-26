@@ -161,40 +161,42 @@ exports[`<NavBar /> should render 1`] = `
             }
           >
             <styles__ContainerButtonOriginal
-              aria-label="common:navbar.return_button_text"
               backgroundColor="#ffffff"
             >
               <button
-                aria-label="common:navbar.return_button_text"
                 className="styles__ContainerButtonOriginal-ater0w-0 hwQUBf"
               >
                 <styles__Content
                   textColor="#6666ff"
                 >
-                  <span
+                  <div
                     className="styles__Content-ater0w-2 kHgDFT"
                   >
-                    common:navbar.return_button_text
-                  </span>
+                    <span>
+                      common:navbar.return_button_text
+                    </span>
+                  </div>
                 </styles__Content>
               </button>
             </styles__ContainerButtonOriginal>
             <styles__ContainerButtonAnimated
               animatedBackgroundColor="#6666ff"
-              aria-label="common:navbar.return_button_text animated"
+              aria-label="button animated"
             >
               <button
-                aria-label="common:navbar.return_button_text animated"
+                aria-label="button animated"
                 className="styles__ContainerButtonAnimated-ater0w-1 XdFHj"
               >
                 <styles__Content
                   textColor="#6666ff"
                 >
-                  <span
+                  <div
                     className="styles__Content-ater0w-2 kHgDFT"
                   >
-                    common:navbar.return_button_text
-                  </span>
+                    <span>
+                      common:navbar.return_button_text
+                    </span>
+                  </div>
                 </styles__Content>
               </button>
             </styles__ContainerButtonAnimated>

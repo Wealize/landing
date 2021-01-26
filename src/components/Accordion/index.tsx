@@ -69,7 +69,7 @@ const Accordion = (props: AccordionProps) => {
                 size={SMALL}
                 handleClick={() => setIsExpanded(!isExpanded)}
               >
-                {isExpanded ? t('accordion.toogle-button-opened-text') : t('accordion.toogle-button-closed-text')}
+                <span>{isExpanded ? t('accordion.toogle-button-opened-text') : t('accordion.toogle-button-closed-text')}</span>
               </ButtonRounded>
             </SectionHeader>
             <SectionContentContainer isExpanded={isExpanded}>
