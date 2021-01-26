@@ -24,11 +24,36 @@ const Index = (): JSX.Element => {
       />
       <link rel="alternate" hrefLang="es" href="https://wealize.digital/es" />
       <link rel="alternate" hrefLang="en" href="https://wealize.digital/" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://wealize.digital/" />
+      <meta property="og:image" content="https://wlz-branding.s3.eu-central-1.amazonaws.com/banner_400x400.png" />
+      <meta property="og:image:width" content="400" />
+      <meta property="og:image:height" content="500" />
+      <meta property="og:image:alt" content={t('meta_title')} />
+      <meta property="og:title" content={t('meta_title')} />
+      <meta property="og:description" content={t('meta_description')} />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content={t('meta_title')} />
+      <meta name="twitter:description" content={t('meta_description')} />
+      <meta name="twitter:image" content="https://wlz-branding.s3.eu-central-1.amazonaws.com/banner_400x400.png" />
+
       {lang.toLowerCase() === 'en'
-        ? <link rel="canonical" href="https://wealize.digital/" />
+        ? (
+          <>
+            <link rel="canonical" href="https://wealize.digital/" />
+            <meta property="og:locale" content="en_En" />
+            <meta property="og:site_name" content="Wealize, digital products" />
+          </>
+          )
         : null}
       {lang.toLowerCase() === 'es'
-        ? <link rel="canonical" href="https://wealize.digital/es" />
+        ? (
+          <>
+            <link rel="canonical" href="https://wealize.digital/es" />
+            <meta property="og:locale" content="es_Es" />
+            <meta property="og:site_name" content="Wealize, productos digitales" />
+          </>
+          )
         : null}
     </Head>
 
