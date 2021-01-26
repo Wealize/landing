@@ -3,41 +3,15 @@ import React from 'react'
 const DevtoIcon = (props: React.SVGProps<SVGSVGElement>): JSX.Element => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      id="prefix__Grupo_4731"
       width="100%"
       height="100%"
-      viewBox="0 0 45.583 45.583"
+      viewBox="0 0 40 40"
+      xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <defs>
-        <style>{'.prefix__cls-20000{fill:#fff}'}</style>
-      </defs>
-      <g id="prefix__Grupo_4271">
-        <g id="prefix__Elipse_48" fill="none" stroke="#fff">
-          <circle cx={22.791} cy={22.791} r={22.791} stroke="none" />
-          <circle cx={22.791} cy={22.791} r={22.291} />
-        </g>
-        <g id="prefix__Grupo_4270" transform="translate(8.182 14.655)">
-          <path
-            id="prefix__Trazado_11457"
-            d="M291.177 468.915a1.707 1.707 0 00-1.026-.383h-1.537v9.2h1.538a1.715 1.715 0 001.026-.383 1.345 1.345 0 00.512-1.15v-6.138a1.349 1.349 0 00-.514-1.15zm3 7.3a4.023 4.023 0 01-3.876 4.165q-.192.008-.383 0h-4.088v-14.574h4.174a4.021 4.021 0 014.173 3.863q.006.15 0 .3z"
-            className="prefix__cls-20000"
-            transform="translate(-285.832 -465.803)"
-          />
-          <path
-            id="prefix__Trazado_11458"
-            d="M301.047 468.407h-4.693v3.382h2.869v2.6h-2.869v3.382h4.694v2.607h-5.477a1.78 1.78 0 01-1.825-1.734v-11.018a1.782 1.782 0 011.736-1.823h5.566z"
-            className="prefix__cls-20000"
-            transform="translate(-283.832 -465.802)"
-          />
-          <path
-            id="prefix__Trazado_11459"
-            d="M308.388 478.561c-1.162 2.708-3.246 2.17-4.179 0l-3.392-12.754h2.869l2.617 10.022 2.6-10.022h2.87l-3.382 12.754z"
-            className="prefix__cls-20000"
-            transform="translate(-282.045 -465.801)"
-          />
-        </g>
+      <title>{'devto'}</title>
+      <g fill="#FFF" fillRule="nonzero">
+        <path d="M10.862 15.83a1.552 1.552 0 00-.933-.349h-1.4v8.37h1.4a1.56 1.56 0 00.933-.349c.32-.25.494-.642.466-1.046v-5.583a1.227 1.227 0 00-.467-1.046l.001.003zm2.73 6.642a3.66 3.66 0 01-3.526 3.789 4.352 4.352 0 01-.349 0H5.999V13.002h3.8a3.658 3.658 0 013.8 3.787l-.007 5.683zM22.17 15.369h-4.268v3.077h2.609v2.369h-2.609v3.077h4.27v2.371H17.19a1.619 1.619 0 01-1.66-1.577V14.658A1.62 1.62 0 0117.109 13h5.063l-.002 2.369zM30.377 24.606c-1.057 2.464-2.952 1.974-3.8 0l-3.086-11.6H26.1l2.38 9.116 2.369-9.116h2.611l-3.077 11.6h-.006z" />
       </g>
     </svg>
   )

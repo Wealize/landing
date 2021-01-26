@@ -40,7 +40,9 @@ exports[`<Footer /> wrapper: should render 1`] = `
         }
         textColor="#ffffff"
       >
-        common:footer.get_in_touch.button_text
+        <span>
+          common:footer.get_in_touch.button_text
+        </span>
       </Memo(ButtonRounded)>
     </styles__ContainerContactSection>
     <styles__ContainerContactSection>
@@ -75,52 +77,102 @@ exports[`<Footer /> wrapper: should render 1`] = `
         }
         textColor="#ffffff"
       >
-        common:footer.work_with_us.button_text
+        <span>
+          common:footer.work_with_us.button_text
+        </span>
       </Memo(ButtonRounded)>
     </styles__ContainerContactSection>
   </styles__ContainerContent>
   <styles__ContainerBottom>
     <styles__DividerMobile />
     <styles__ContainerSocialMobile>
-      <Link
-        href="https://www.linkedin.com/company/wealizedigital/"
-        passHref={true}
+      <Memo(ButtonRounded)
+        animatedBackgroundColor="#6666ff"
+        animatedTextColor="#ffffff"
+        backgroundColor="#3c3c3b"
+        handleClick={[Function]}
+        size={
+          Object {
+            "desktop": Array [
+              170,
+              50,
+            ],
+            "mobile": Array [
+              90,
+              50,
+            ],
+            "tablet": Array [
+              150,
+              50,
+            ],
+            "wide": Array [
+              190,
+              50,
+            ],
+          }
+        }
+        textColor="#ffffff"
       >
-        <styles__Social
-          aria-label="Linkedin"
-          rel="noreferrer"
-          target="_blank"
-          title="Wealize Linkedin link"
-        >
-          <LinkedinIcon />
-        </styles__Social>
-      </Link>
-      <Link
-        href="https://twitter.com/wealizedigital"
-        passHref={true}
+        <LinkedinIcon />
+      </Memo(ButtonRounded)>
+      <Memo(ButtonRounded)
+        animatedBackgroundColor="#6666ff"
+        animatedTextColor="#ffffff"
+        backgroundColor="#3c3c3b"
+        handleClick={[Function]}
+        size={
+          Object {
+            "desktop": Array [
+              170,
+              50,
+            ],
+            "mobile": Array [
+              90,
+              50,
+            ],
+            "tablet": Array [
+              150,
+              50,
+            ],
+            "wide": Array [
+              190,
+              50,
+            ],
+          }
+        }
+        textColor="#ffffff"
       >
-        <styles__Social
-          aria-label="Twitter"
-          rel="noreferrer"
-          target="_blank"
-          title="Wealize Twitter link"
-        >
-          <TwitterIcon />
-        </styles__Social>
-      </Link>
-      <Link
-        href="https://dev.to/wealize"
-        passHref={true}
+        <TwitterIcon />
+      </Memo(ButtonRounded)>
+      <Memo(ButtonRounded)
+        animatedBackgroundColor="#6666ff"
+        animatedTextColor="#ffffff"
+        backgroundColor="#3c3c3b"
+        handleClick={[Function]}
+        size={
+          Object {
+            "desktop": Array [
+              170,
+              50,
+            ],
+            "mobile": Array [
+              90,
+              50,
+            ],
+            "tablet": Array [
+              150,
+              50,
+            ],
+            "wide": Array [
+              190,
+              50,
+            ],
+          }
+        }
+        textColor="#ffffff"
       >
-        <styles__Social
-          aria-label="Dev.to"
-          rel="noreferrer"
-          target="_blank"
-          title="Wealize Dev.to link"
-        >
-          <DevtoIcon />
-        </styles__Social>
-      </Link>
+        <DevtoIcon />
+      </Memo(ButtonRounded)>
     </styles__ContainerSocialMobile>
     <styles__ContainerPrivacyCopyright>
       <Link
@@ -197,39 +249,93 @@ exports[`<Footer /> wrapper: should render 1`] = `
         </styles__Grant>
       </styles__ContainerGrants>
       <styles__ContainerSocial>
-        <Link
-          href="https://www.linkedin.com/company/wealizedigital/"
-          passHref={true}
+        <Memo(ButtonRounded)
+          animatedBackgroundColor="#6666ff"
+          animatedTextColor="#ffffff"
+          backgroundColor="#3c3c3b"
+          handleClick={[Function]}
+          size={
+            Object {
+              "desktop": Array [
+                170,
+                50,
+              ],
+              "mobile": Array [
+                90,
+                50,
+              ],
+              "tablet": Array [
+                150,
+                50,
+              ],
+              "wide": Array [
+                190,
+                50,
+              ],
+            }
+          }
+          textColor="#ffffff"
         >
-          <styles__Social
-            rel="noreferrer"
-            target="_blank"
-          >
-            <LinkedinIcon />
-          </styles__Social>
-        </Link>
-        <Link
-          href="https://twitter.com/wealizedigital"
-          passHref={true}
+          <LinkedinIcon />
+        </Memo(ButtonRounded)>
+        <Memo(ButtonRounded)
+          animatedBackgroundColor="#6666ff"
+          animatedTextColor="#ffffff"
+          backgroundColor="#3c3c3b"
+          handleClick={[Function]}
+          size={
+            Object {
+              "desktop": Array [
+                170,
+                50,
+              ],
+              "mobile": Array [
+                90,
+                50,
+              ],
+              "tablet": Array [
+                150,
+                50,
+              ],
+              "wide": Array [
+                190,
+                50,
+              ],
+            }
+          }
+          textColor="#ffffff"
         >
-          <styles__Social
-            rel="noreferrer"
-            target="_blank"
-          >
-            <TwitterIcon />
-          </styles__Social>
-        </Link>
-        <Link
-          href="https://dev.to/wealize"
-          passHref={true}
+          <TwitterIcon />
+        </Memo(ButtonRounded)>
+        <Memo(ButtonRounded)
+          animatedBackgroundColor="#6666ff"
+          animatedTextColor="#ffffff"
+          backgroundColor="#3c3c3b"
+          handleClick={[Function]}
+          size={
+            Object {
+              "desktop": Array [
+                170,
+                50,
+              ],
+              "mobile": Array [
+                90,
+                50,
+              ],
+              "tablet": Array [
+                150,
+                50,
+              ],
+              "wide": Array [
+                190,
+                50,
+              ],
+            }
+          }
+          textColor="#ffffff"
         >
-          <styles__Social
-            rel="noreferrer"
-            target="_blank"
-          >
-            <DevtoIcon />
-          </styles__Social>
-        </Link>
+          <DevtoIcon />
+        </Memo(ButtonRounded)>
       </styles__ContainerSocial>
     </styles__ContainerGrantsAndSocials>
   </styles__ContainerBottom>

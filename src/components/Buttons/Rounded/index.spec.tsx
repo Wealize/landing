@@ -20,7 +20,7 @@ describe('<ButtonRounded />', () => {
     animatedBackgroundColor: ACCENT_COLOR,
     animatedTextColor: WHITE_COLOR,
     size: SMALL,
-    children: 'Test text',
+    children: <span>Hello</span>,
     handleClick: null
   }
   const wrapper = shallow(<ButtonRounded {...buttonProps} />)
@@ -31,7 +31,7 @@ describe('<ButtonRounded />', () => {
   })
 
   it('wrapper: should render content correctly', () => {
-    expect(wrapper.find(Content).first().text()).toEqual(buttonProps.children)
-    expect(wrapper.find(Content).at(1).text()).toEqual(buttonProps.children)
+    expect(wrapper.find(Content).first().text()).toEqual('Hello')
+    expect(wrapper.find(Content).at(1).text()).toEqual('Hello')
   })
 })

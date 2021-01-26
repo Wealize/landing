@@ -37,7 +37,7 @@ export const ContainerButtonAnimated = styled.button<{
   left: 0;
 `
 
-export const Content = styled.span<{ textColor: string }>`
+export const Content = styled.div<{ textColor: string }>`
   width: 100%;
   display: flex;
   flex-direction: column;
