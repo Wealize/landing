@@ -80,10 +80,32 @@ export const Button = styled.button`
   cursor: pointer;
   z-index: 2;
 
+  ${media.greaterThan('xs')`
+    @media screen and (orientation: landscape) {
+      bottom: 35%;
+      right: -8%;
+    }
+  `};
+
+  ${media.greaterThan('sm')`
+    @media screen and (orientation: landscape) {
+      bottom: 35%;
+      right: -8%;
+    }
+  `};
+
+
   ${media.greaterThan('md')`
     bottom: 85%;
     width: 115px;
     height: 115px;
+
+    @media screen and (orientation: landscape) {
+      bottom: 35%;
+      right: -8%;
+      width: 110px;
+      height: 110px;
+    }
   `};
 
   ${media.greaterThan('lg')`
