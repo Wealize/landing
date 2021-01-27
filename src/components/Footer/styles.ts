@@ -129,12 +129,6 @@ export const ContainerContactSection = styled.div`
     }
   `};
 
-  ${media.greaterThan('xxl')`
-    > .button-rounded {
-      min-width: 35%;
-    }
-  `};
-
   ${media.greaterThan('xxxl')`
     > .button-rounded {
       min-width: 45%;
