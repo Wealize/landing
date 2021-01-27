@@ -73,10 +73,11 @@ export const Container = styled.div<{
 
   border-radius: 50px;
   border: 2px solid ${({ textColor }) => textColor};
+  background-color: ${({ animatedBackgroundColor }) => animatedBackgroundColor};
 
   min-width: ${({ size }) => size.mobile[0]}px;
   min-height: ${({ size }) => size.mobile[1]}px;
-  transition: all 0.3s;
+  transition: all ease-out 0.3s;
   position: relative;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -87,12 +88,12 @@ export const Container = styled.div<{
     min-width: ${size.tablet[0]}px;
   `};
 
-  ${({ size, animatedTextColor }) => media.greaterThan('lg')`
+  ${({ size, animatedBackgroundColor, animatedTextColor }) => media.greaterThan('lg')`
     min-width: ${size.desktop[0]}px;
     min-height: ${size.desktop[1]}px;
 
     &:hover {
-      border: none;
+      border-color: ${animatedBackgroundColor};
     }
 
     &:hover ${ContainerButtonOriginal} {
