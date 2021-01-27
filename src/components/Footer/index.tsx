@@ -135,7 +135,7 @@ const Footer = () => {
               {t('footer.cookies_policy')}
             </InlineLink>
           </Link>
-          <CopyrightText>&copy;&nbsp; {t('footer.copyright')}</CopyrightText>
+          <CopyrightText>&copy;&nbsp;{t('footer.copyright')}</CopyrightText>
         </ContainerPrivacyCopyright>
         <Divider></Divider>
         <ContainerGrantsAndSocials>
@@ -162,7 +162,8 @@ const Footer = () => {
               animatedBackgroundColor={ACCENT_COLOR}
               animatedTextColor={WHITE_COLOR}
               size={SMALL}
-              handleClick={() => router.push('https://www.linkedin.com/company/wealizedigital/')}
+              handleClick={() => window.open(
+                'https://www.linkedin.com/company/wealizedigital/', '_blank')}
             >
               <LinkedinIcon />
             </ButtonRounded>
@@ -172,7 +173,8 @@ const Footer = () => {
               animatedBackgroundColor={ACCENT_COLOR}
               animatedTextColor={WHITE_COLOR}
               size={SMALL}
-              handleClick={() => router.push('https://twitter.com/wealizedigital')}
+              handleClick={() => window.open(
+                'https://twitter.com/wealizedigital', '_blank')}
             >
               <TwitterIcon />
             </ButtonRounded>
@@ -182,7 +184,8 @@ const Footer = () => {
               animatedBackgroundColor={ACCENT_COLOR}
               animatedTextColor={WHITE_COLOR}
               size={SMALL}
-              handleClick={() => router.push('https://dev.to/wealize')}
+              handleClick={() => window.open(
+                'https://dev.to/wealize', '_blank')}
             >
               <DevtoIcon />
             </ButtonRounded>
