@@ -136,7 +136,7 @@ exports[`<NavBar /> should render 1`] = `
           textColor="#6666ff"
         >
           <div
-            className="styles__Container-ater0w-3 hrHjxB button-rounded"
+            className="styles__Container-ater0w-3 eHOIYC button-rounded"
             id="nav-return-button"
             onClick={[Function]}
             size={
