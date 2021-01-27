@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [v2020.01.27]
+## [v2021.01.27]
 
 - [Review Button Rounded animation](https://wealize.atlassian.net/browse/WLZAA-88)
 - [Add OpenGraph cards (Facebook/Whatsapp/Twitter)](https://wealize.atlassian.net/browse/WLZAA-108)
