@@ -4,7 +4,7 @@ export const toolsTechStackAccordionData: AccordionSectionData[] = [
   {
     title: 'Languages & frameworks',
     data: ['Cypress', 'Jest', 'Redux', 'Hyperledger Fabric', 'Hyperledger Besu', 'Quorum', 'web3', 'Ether.js',
-      'Typescript', 'Javascript', 'React.js', 'Next.js', 'Python', 'Django', 'IBM Carbon', 'And Design', 'Coverage', 'PyTest', 'Danger.js', 'Mirage']
+      'Typescript', 'Javascript', 'React.js', 'Next.js', 'Python', 'Django', 'IBM Carbon', 'Ant Design', 'Coverage', 'PyTest', 'Danger.js', 'Mirage']
   },
   {
     title: 'Devops, Architecture & Systems',
