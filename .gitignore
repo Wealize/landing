@@ -125,3 +125,4 @@ build
 __tests__/e2e/screenshots
 __tests__/e2e/videos
 public/workbox-*.js
+public/robots.txt
