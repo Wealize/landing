@@ -72,15 +72,14 @@ export const StartedDescription = styled.div`
 `
 
 export const WAnimationContainer = styled.div`
-  width: 80%;
+  width: 70%;
   position: absolute;
-  bottom: -15%;
+  bottom: -5%;
   right: 0%;
   z-index: -3;
   mix-blend-mode: multiply;
 
   ${media.greaterThan('xs')`
-    width: 70%;
     bottom: -25%;
   `};
 
@@ -89,12 +88,12 @@ export const WAnimationContainer = styled.div`
   `};
 
   ${media.greaterThan('md')`
-    bottom: -15%;
+    bottom: -10%;
     width: 50%;
   `};
 
   ${media.greaterThan('lg')`
-    width: 60%;
+    width: 50%;
   `};
 
   ${media.greaterThan('xl')`

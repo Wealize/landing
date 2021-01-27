@@ -39,7 +39,7 @@
     "paragraph-1" : "Así por ejemplo, si usted en su día estuvo interesado/a en recibir publicidad de nuestros productos o servicios, pero ya no desea recibir más publicidad, puede hacérnoslo constar a través del formulario de oposición al tratamiento disponible en las oficinas de nuestra entidad.",
     "paragraph-2" : "En caso de que entienda que sus derechos han sido desatendidos, ¿dónde puede formular una reclamación?",
     "paragraph-3" : "En caso de que entienda que sus derechos han sido desatendidos por nuestra entidad, puede formular una reclamación en la Agencia Española de Protección de Datos, a través de alguno de los medios siguientes:",
-    "paragraph-4" : "Sede electrónica: www.agpd.es",
+    "paragraph-4" : "Sede electrónica: <0>www.agpd.es</0>",
     "paragraph-5" : "Dirección postal: Agencia Española de Protección de Datos",
     "paragraph-6" : "C/ Jorge Juan, 6",
     "paragraph-7" : "28001-Madrid",
@@ -70,7 +70,7 @@
     "paragraph-1": "También tiene derecho a solicitar el traspaso de su información a otra entidad. Este derecho se llama “portabilidad” y puede ser útil en determinadas situaciones.",
     "paragraph-2": "Para solicitar alguno de estos derechos, deberá realizar una solicitud escrita a nuestra dirección, junto con una fotocopia de su DNI, para poder identificarle.",
     "paragraph-3": "En las oficinas de nuestra entidad disponemos de formularios específicos para solicitar dichos derechos y le ofrecemos nuestra ayuda para su cumplimentación.",
-    "paragraph-4": "Para saber más sobre sus derechos de protección de datos, puede consultar la  página web de la Agencia Española de Protección de Datos (www.agpd.es)."
+    "paragraph-4": "Para saber más sobre sus derechos de protección de datos, puede consultar la  página web de la Agencia Española de Protección de Datos (<0>www.agpd.es</0>)."
   },
   "question-10" : {
     "title": "¿Elaboraremos perfiles sobre usted?",

@@ -94,7 +94,16 @@ const PrivacyLegal = (): JSX.Element => {
             <p>{t('question-5.paragraph-1')}</p>
             <p>{t('question-5.paragraph-2')}</p>
             <p>{t('question-5.paragraph-3')}</p>
-            <p>{t('question-5.paragraph-4')}</p>
+            <p>
+              {<Trans
+                i18nKey="privacy:question-5.paragraph-4"
+                components={[(
+                  <Link key={0} href="https://www.agpd.es" passHref>
+                    <a title="agpd" aria-label="agpd"></a>
+                  </Link>
+                )]}
+                />}
+            </p>
             <p>
               {t('question-5.paragraph-5')} <br/>
               {t('question-5.paragraph-6')} <br/>
@@ -139,7 +148,16 @@ const PrivacyLegal = (): JSX.Element => {
             <p>{t('question-9.paragraph-1')}</p>
             <p>{t('question-9.paragraph-2')}</p>
             <p>{t('question-9.paragraph-3')}</p>
-            <p>{t('question-9.paragraph-4')}</p>
+            <p>
+              {<Trans
+                i18nKey="privacy:question-5.paragraph-4"
+                components={[(
+                  <Link key={0} href="https://www.agpd.es" passHref>
+                    <a title="agpd" aria-label="agpd"></a>
+                  </Link>
+                )]}
+              />}
+            </p>
           </QuestionDescription>
         </Question>
         <Question>

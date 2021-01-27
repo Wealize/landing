@@ -212,7 +212,7 @@ exports[`<Footer /> wrapper: should render 1`] = `
         </styles__InlineLink>
       </Link>
       <styles__CopyrightText>
-        ©  
+        © 
         common:footer.copyright
       </styles__CopyrightText>
     </styles__ContainerPrivacyCopyright>

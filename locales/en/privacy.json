@@ -39,7 +39,7 @@
     "paragraph-1" : "Thus, for example, if you were once interested in receiving advertising for our products or services, but no longer wish to receive advertising, you can tell us so using the form to oppose treatment available at our offices.",
     "paragraph-2" : "If you believe that your rights have been disregarded, where can you make a complaint?",
     "paragraph-3" : "If you believe that your rights have been disregarded by our entity, you can file a complaint with the Spanish Data Protection Agency, through any of the following means:",
-    "paragraph-4" : "Website: www.agpd.es",
+    "paragraph-4" : "Website: <0>www.agpd.es</0>",
     "paragraph-5" : "Postal address: Agencia Española de Protección de Datos",
     "paragraph-6" : "C/ Jorge Juan, 6",
     "paragraph-7" : "28001-Madrid",
@@ -70,7 +70,7 @@
     "paragraph-1": "You also have the right to request the transfer of your information to another entity. This right is called “portability” and may be useful in certain situations.",
     "paragraph-2": "To request any of these rights, you must make a written request to our address, along with a photocopy of your ID card, so that we can identify you.",
     "paragraph-3": "In our offices we have specific forms to apply for these rights and we offer you our help to fill them in.",
-    "paragraph-4": "To find out more about your data protection rights, you can consult the website of the Spanish Data Protection Agency (www.agpd.es)."
+    "paragraph-4": "To find out more about your data protection rights, you can consult the website of the Spanish Data Protection Agency (<0>www.agpd.es</0>)."
   },
   "question-10" : {
     "title": "Will we create profiles about you?",

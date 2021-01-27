@@ -24,7 +24,7 @@
       "section-title-1": "Socio de investigación",
       "section-description-1": "Cerramos brechas sociales asociándonos con miembros activos de la comunidad",
       "section-title-2": "Estrategia de financiación de I+D+i",
-      "section-description-2": "Buscamos oportunidades de financiación y licitación para innovar juntos."
+      "section-description-2": "Buscamos oportunidades de financiación y licitación para innovar juntos"
     }
   },
   "things-we-are-good-at" : {
@@ -42,7 +42,7 @@
     "third-card": {
       "headline": "Agentes conversacionales",
       "subheadline": "Mejora la experiencia de cliente",
-      "description": "Creamos interfaces de conversación basadas en texto y voz para industrias como salud, turismo, legal, banca y seguros."
+      "description": "Creamos interfaces de conversación basadas en texto y voz para industrias como salud, turismo, legal, banca y seguros"
     }
   },
   "we-deliver": {
@@ -61,7 +61,7 @@
     },
     "card-3": {
       "title": "${text}",
-      "description": "Validamos y evaluamos. También se realizan ajustes y mejoras antes del lanzamiento."
+      "description": "Validamos y evaluamos. También se realizan ajustes y mejoras antes del lanzamiento"
     }
   },
   "wealize-in-a-nutshell" : {
@@ -69,7 +69,7 @@
     "paragraph-0": "Nuestra cultura de trabajo remoto mantiene cerca a los mejores talentos",
     "paragraph-1": "Trabajamos de manera ágil, entregando soluciones probadas y validadas a la velocidad de la luz",
     "paragraph-2": "Observamos las tendencias y movimientos en el mercado, así que conocemos las soluciones más adecuadas",
-    "paragraph-3": "Somos miembros activos de la comunidad, creando proyectos de código abierto en beneficio del ecosistema.",
+    "paragraph-3": "Somos miembros activos de la comunidad, creando proyectos de código abierto en beneficio del ecosistema",
     "paragraph-4": "Como su socio tecnológicamente agnóstico, podemos ayudarle a encontrar las soluciones correctas en las primeras etapas del proyectos",
     "paragraph-5": "Trabajamos de forma colaborativa en un entorno razonablemente descentralizado",
     "paragraph-6": "Cada uno de nosotros es un representante genuino del espíritu de Wealize: curioso, audaz,guiado por datos, creativo, orientado a valores, cero tonterías"
@@ -117,10 +117,10 @@
       "role": "Especialista en blockchain"
     },
     "toni_parn": {
-      "role": "Desarrollador de negocios"
+      "role": "${text}"
     },
     "mariano_morera": {
-      "role": "Especialista en negocios"
+      "role": "Especialista de negocio"
     },
     "javier_martin": {
       "role": "Ingeniero de software en prácticas"
