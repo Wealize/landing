@@ -102,6 +102,10 @@ const talentsData: CardTalent[] = [
       {
         name: 'Twitter',
         url: 'https://twitter.com/miguel5gavilan'
+      },
+      {
+        name: 'Dev.to',
+        url: 'https://dev.to/miangame'
       }
     ]
   },
