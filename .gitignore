@@ -127,3 +127,4 @@ __tests__/e2e/videos
 public/workbox-*.js
 public/robots.txt
 .vscode
+public/sw.js

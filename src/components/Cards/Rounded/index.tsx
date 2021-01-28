@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { BackgroundImage } from 'react-image-and-background-image-fade'
+import Image from 'next/image'
 
 import OpenUrlIcon from '../../icons/OpenUrlIcon'
 import { CardRounded } from '../../../interfaces/Cards/CardRounded'
@@ -26,19 +26,13 @@ const RoundedCard = (props: CardRounded) => {
   return (
     <Container className="rounded-card" hasPrimary={hasPrimary}>
       <BackgroundContainer>
-        <BackgroundImage
-          width="100%"
-          height="100%"
+        <Image
           src={imageUrl}
-          lazyLoad={true}
-          style={{
-            minWidth: '300px',
-            minHeight: '290px',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'top center'
-          }}
-        ></BackgroundImage>
+          layout="fill"
+          objectFit="cover"
+          quality={80}
+          aria-label={`${title} image`}
+          title={title} />
       </BackgroundContainer>
       <ContentContainer hasPrimary={hasPrimary}>
         <Content>

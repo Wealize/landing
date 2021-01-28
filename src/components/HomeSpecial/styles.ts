@@ -80,6 +80,11 @@ export const Button = styled.button`
   cursor: pointer;
   z-index: 2;
 
+  @media screen and (max-height: 500px) {
+    bottom: 35%;
+    right: -10%;
+  }
+
   ${media.greaterThan('xs')`
     @media screen and (orientation: landscape) {
       bottom: 35%;

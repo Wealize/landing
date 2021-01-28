@@ -30,205 +30,62 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
     >
       <styles__BackgroundContainer>
         <div
-          className="styles__BackgroundContainer-sc-1ukl2m-1 ljKsAK"
+          className="styles__BackgroundContainer-sc-1ukl2m-1 epSGqa"
         >
-          <BackgroundImage
-            element="div"
-            height="100%"
-            lazyLoad={true}
+          <Image
+            aria-label="Maldita image"
+            layout="fill"
+            objectFit="cover"
+            quality={80}
             src="/img/projects/maldita.jpg"
-            style={
-              Object {
-                "backgroundPosition": "top center",
-                "backgroundRepeat": "no-repeat",
-                "backgroundSize": "cover",
-                "minHeight": "290px",
-                "minWidth": "300px",
-              }
-            }
-            transitionTime="0.3s"
-            width="100%"
+            title="Maldita"
           >
-            <ImageLoader
-              lazyLoad={true}
-              src="/img/projects/maldita.jpg"
-              transitionTime="0.3s"
+            <div
+              style={
+                Object {
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "left": 0,
+                  "margin": 0,
+                  "overflow": "hidden",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
             >
-              <VisibilitySensor
-                active={true}
-                containment={null}
-                delayedCall={false}
-                intervalCheck={true}
-                intervalDelay={100}
-                minTopValue={0}
-                offset={Object {}}
-                onChange={[Function]}
-                partialVisibility={true}
-                resizeCheck={false}
-                resizeDelay={250}
-                resizeThrottle={-1}
-                scrollCheck={false}
-                scrollDelay={250}
-                scrollThrottle={-1}
-              >
-                <styled.div
-                  height="100%"
-                  width="100%"
-                >
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "",
-                          "isStatic": false,
-                          "lastClassName": "YfvHE",
-                          "rules": Array [
-                            "
-  ",
-                            [Function],
-                            ";
-  ",
-                            [Function],
-                            ";
-  ",
-                            [Function],
-                            ";
-  position: relative;
-  overflow: hidden;
-",
-                          ],
-                        },
-                        "displayName": "styled.div",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                    height="100%"
-                    width="100%"
-                  >
-                    <div
-                      className="YfvHE"
-                      height="100%"
-                      width="100%"
-                    >
-                      <div
-                        style={
-                          Object {
-                            "backgroundPosition": "top center",
-                            "backgroundRepeat": "no-repeat",
-                            "backgroundSize": "cover",
-                            "height": "100%",
-                            "minHeight": "290px",
-                            "minWidth": "300px",
-                            "width": "100%",
-                          }
-                        }
-                      />
-                      <Loader
-                        hasLoaded={false}
-                        isOnTop={true}
-                        transitionTime="0.3s"
-                      >
-                        <styled.div
-                          hasLoaded={false}
-                          isOnTop={true}
-                          transitionTime="0.3s"
-                        >
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "",
-                                  "isStatic": false,
-                                  "lastClassName": "iVGwIn",
-                                  "rules": Array [
-                                    "
-  width: 100%;
-  height: 100%;
-  background-color: #eee;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: ",
-                                    [Function],
-                                    ";
-  opacity: ",
-                                    [Function],
-                                    ";
-  transition: opacity ",
-                                    [Function],
-                                    " ease;
-
-  &:before {
-    content: \\"\\";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 120%;
-    height: 120%;
-    transform: rotate(-30deg);
-    background-image: linear-gradient(
-      100deg,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0.2) 50%,
-      rgba(255, 255, 255, 0) 80%
-    );
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 100px 100%;
-    animation: ",
-                                    Keyframes {
-                                      "id": "sc-keyframes-ksXkoA",
-                                      "inject": [Function],
-                                      "name": "ksXkoA",
-                                      "rules": Array [
-                                        "@-webkit-keyframes ksXkoA{from{background-position:0 0;}to{background-position:calc(100% + 50px);}}",
-                                        "@keyframes ksXkoA{from{background-position:0 0;}to{background-position:calc(100% + 50px);}}",
-                                      ],
-                                      "toString": [Function],
-                                    },
-                                    " 1s infinite linear;
-  }
-",
-                                  ],
-                                },
-                                "displayName": "styled.div",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "",
-                                "target": "div",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
-                            hasLoaded={false}
-                            isOnTop={true}
-                            transitionTime="0.3s"
-                          >
-                            <div
-                              className="iVGwIn"
-                            />
-                          </StyledComponent>
-                        </styled.div>
-                      </Loader>
-                    </div>
-                  </StyledComponent>
-                </styled.div>
-              </VisibilitySensor>
-            </ImageLoader>
-          </BackgroundImage>
+              <img
+                aria-label="Maldita image"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": "cover",
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "visibility": "hidden",
+                    "width": 0,
+                  }
+                }
+                title="Maldita"
+              />
+            </div>
+          </Image>
         </div>
       </styles__BackgroundContainer>
       <styles__ContentContainer
