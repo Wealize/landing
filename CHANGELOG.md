@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [Add documentation improvements]()
+
 ## [v2021.01.27]
 
 - [Review Button Rounded animation](https://wealize.atlassian.net/browse/WLZAA-88)
