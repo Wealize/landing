@@ -30,7 +30,7 @@ const RoundedCard = (props: CardRounded) => {
           src={imageUrl}
           layout="fill"
           objectFit="cover"
-          quality={80}
+          quality={55}
           aria-label={`${title} image`}
           title={title} />
       </BackgroundContainer>
