@@ -15,8 +15,7 @@
     "jest-with-coverage": "jest --coverage",
     "jest-collect-coverage": "jest --collectCoverage --coverageReporters=json-summary",
     "cypress-run": "cypress run",
-    "cypress": "start-server-and-test dev http://localhost:3000 cypress-run",
-    "make-badges": "istanbul-badges-readme"
+    "cypress": "start-server-and-test dev http://localhost:3000 cypress-run"
   },
   "dependencies": {
     "@lhci/cli": "^0.6.1",
