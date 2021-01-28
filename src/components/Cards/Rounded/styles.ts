@@ -27,6 +27,7 @@ export const Container = styled.article<{ hasPrimary: boolean }>`
 
 export const BackgroundContainer = styled.div`
   width: 100%;
+  position: relative;
   display: flex;
   align-items: stretch;
   min-height: 290px;

@@ -23,7 +23,12 @@ const TalentCard = ({
   return (
     <Container className="talent-card">
           <ImageContainer>
-            <Image src={imageUrl} layout="fill" aria-label={`${name} image`} />
+            <Image
+            src={imageUrl}
+            layout="fill"
+            objectFit="cover"
+            aria-label={`${name} image`}
+            title={name} />
           </ImageContainer>
           <ContentContainer>
             <Headline>{name}</Headline>
