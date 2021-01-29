@@ -36,7 +36,7 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
             aria-label="Maldita image"
             layout="fill"
             objectFit="cover"
-            quality={55}
+            quality={40}
             src="/img/projects/maldita.jpg"
             title="Maldita"
           >

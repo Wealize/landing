@@ -28,7 +28,8 @@ const TalentCard = ({
             layout="fill"
             objectFit="cover"
             aria-label={`${name} image`}
-            title={name} />
+            title={name}
+            />
           </ImageContainer>
           <ContentContainer>
             <Headline>{name}</Headline>
