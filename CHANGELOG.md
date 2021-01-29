@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v2021.01.29]
+
 - [Move static files (images/videos) to S3 bucket](https://wealize.atlassian.net/browse/WLZAA-119)
 
 ## [v2021.01.28]
