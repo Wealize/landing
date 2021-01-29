@@ -73,7 +73,7 @@
     },
     "medecins": {
       "title": "${title}",
-      "description": "Diseño y desarrollo de una plataforma completamente móvil y offline-first de gestión de operaciones logísticas y supervisión dela infraestructura de internet en todas las ubicaciones de campo de MSF con elfin de crear una red común de ICT",
+      "description": "Diseño y desarrollo de una plataforma completamente móvil y offline-first de gestión de operaciones logísticas y supervisión dela infraestructura de internet en todas las ubicaciones de campo de MSF con el fin de crear una red común de ICT",
       "tag-0": "ONGs",
       "tag-1": "${text}",
       "tag-2": "Móvil"
