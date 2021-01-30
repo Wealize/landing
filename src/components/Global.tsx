@@ -13,6 +13,7 @@ const Global = createGlobalStyle`
     font-family: 'DM Sans', sans-serif;
     color: ${DARK_GRAY_COLOR};
     background-color: ${WHITE_COLOR};
+    text-rendering: optimizeSpeed;
   }
 
   a, button {
