@@ -52,17 +52,8 @@ class ExtendedDocument extends Document {
               })(window,document,'script','dataLayer', '${process.env.GTM_ID}');`,
             }}
           />
-        </Head>
-        <body>
-          <noscript
-            dangerouslySetInnerHTML={{
-              __html:
-                `<iframe src="https://www.googletagmanager.com/ns.html?id=${process.env.GTM_ID}"
-                height="0" width="0" style="display:none;visibility:hidden;"></iframe>`
-              }}
-          />
-          <Main />
           <script
+            defer
             dangerouslySetInnerHTML={{
               __html:
               `window.chatbotSettings = {
@@ -79,6 +70,16 @@ class ExtendedDocument extends Document {
               (function(){var w=window;var d=document;var l=function(){var x=d.getElementById('__next');var c=d.createElement('div');c.id='chatbotContainer';x.parentNode.insertBefore(c,x);var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://d1hbk1yt8xmke0.cloudfront.net/137/branded-chatbot-window.min.js';x.parentNode.insertBefore(s,x);};if(d.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}})();`
             }}
           />
+        </Head>
+        <body>
+          <noscript
+            dangerouslySetInnerHTML={{
+              __html:
+                `<iframe src="https://www.googletagmanager.com/ns.html?id=${process.env.GTM_ID}"
+                height="0" width="0" style="display:none;visibility:hidden;"></iframe>`
+              }}
+          />
+          <Main />
           <NextScript />
         </body>
       </Html>
