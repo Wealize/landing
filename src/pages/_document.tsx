@@ -62,6 +62,23 @@ class ExtendedDocument extends Document {
               }}
           />
           <Main />
+          <script
+            dangerouslySetInnerHTML={{
+              __html:
+              `window.chatbotSettings = {
+                chatbotEndpoint: '${process.env.WEBCHAT_ENDPOINT}',
+                agentProfile: {
+                  teamName: 'Wealize Digital',
+                  imageUrl: 'https://a.slack-edge.com/66f9/img/avatars-teams/ava_0001-34.png'
+                },
+                theme: {
+                  brandColor: 'blue'
+                }
+              };
+
+              (function(){var w=window;var d=document;var l=function(){var x=d.getElementById('__next');var c=d.createElement('div');c.id='chatbotContainer';x.parentNode.insertBefore(c,x);var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://d1hbk1yt8xmke0.cloudfront.net/137/branded-chatbot-window.min.js';x.parentNode.insertBefore(s,x);};if(d.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}})();`
+            }}
+          />
           <NextScript />
         </body>
       </Html>

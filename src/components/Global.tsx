@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-import { DARK_GRAY_COLOR, WHITE_COLOR } from '../theme/color'
+import { ACCENT_COLOR, DARK_GRAY_COLOR, WHITE_COLOR } from '../theme/color'
 
 const Global = createGlobalStyle`
   * {
@@ -32,6 +32,16 @@ const Global = createGlobalStyle`
 
   button {
     outline: none;
+  }
+
+
+  /* Webchat */
+  .sc-launcher, .sc-chat-window  {
+    z-index: 20;
+  }
+
+  .sc-header, .sc-launcher, .sc-header--close-button {
+    background-color: ${ACCENT_COLOR} !important;
   }
 `
 
