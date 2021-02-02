@@ -12,7 +12,7 @@ interface PostPageProps {
 
 const PostPage = (props: PostPageProps): JSX.Element => {
   const { post } = props
-  console.warn(post)
+
   return (
     <Container>
       <PostHeadline>{post?.title}</PostHeadline>
