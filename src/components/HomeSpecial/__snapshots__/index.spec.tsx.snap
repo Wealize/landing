@@ -4,11 +4,11 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
 <Memo(HomeSpecial)>
   <styles__Container>
     <div
-      className="styles__Container-gjaj1n-0 jOIlbu"
+      className="styles__Container-gjaj1n-0 fKDDDD"
     >
       <styles__Background>
         <div
-          className="styles__Background-gjaj1n-1 jrUTbS"
+          className="styles__Background-gjaj1n-1 knYsMV"
         >
           <Memo(WAnimation)
             isMixMultiplyBlendMode={false}
@@ -18,7 +18,7 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
               isMixMultiplyBlendMode={false}
             >
               <div
-                className="styles__Video-sc-1iarrbt-0 fWAPTO w-animation"
+                className="styles__Video-sc-1iarrbt-0 foMWSv w-animation"
               >
                 <ReactPlayer
                   autoPlay={true}
@@ -293,11 +293,11 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
       </styles__Background>
       <styles__Slogan>
         <div
-          className="styles__Slogan-gjaj1n-3 iPJZJy"
+          className="styles__Slogan-gjaj1n-3 giIdYG"
         >
           <styles__Headline>
             <h1
-              className="styles__Headline-gjaj1n-4 hQPZMv"
+              className="styles__Headline-gjaj1n-4 dQbIBi"
             >
               home:slogan.headline
             </h1>
@@ -306,7 +306,7 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
             id="slogan-subheadline"
           >
             <h2
-              className="styles__SubHeadline-gjaj1n-5 gUoaQq"
+              className="styles__SubHeadline-gjaj1n-5 eAfoAJ"
               id="slogan-subheadline"
             >
               <Trans
@@ -327,7 +327,7 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
           >
             <button
               aria-label="scroll-button"
-              className="styles__Button-gjaj1n-2 cmJFHh"
+              className="styles__Button-gjaj1n-2 hlebHs"
               onClick={[Function]}
             >
               <Memo(RoundArrowIcon)>

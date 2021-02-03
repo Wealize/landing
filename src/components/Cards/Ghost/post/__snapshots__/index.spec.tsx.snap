@@ -53,21 +53,21 @@ exports[`<GhostPostCard /> wrapper: should render 1`] = `
       onMouseEnter={[Function]}
     >
       <a
-        className="styles__Container-djtgfn-0 klSWGu ghost-post-card"
+        className="styles__Container-djtgfn-0 glBOib ghost-post-card"
         href="/news-room/the-editor"
         onClick={[Function]}
         onMouseEnter={[Function]}
       >
         <styles__CardHeadline>
           <h4
-            className="styles__CardHeadline-djtgfn-1 cZrftu"
+            className="styles__CardHeadline-djtgfn-1 fdhgGK"
           >
             Writing posts with Ghost ✍️
           </h4>
         </styles__CardHeadline>
         <styles__CardPublishedAt>
           <span
-            className="styles__CardPublishedAt-djtgfn-2 egXIey"
+            className="styles__CardPublishedAt-djtgfn-2 WlTiu"
           >
             2021-02-01T11:00:20.000+00:00
           </span>
