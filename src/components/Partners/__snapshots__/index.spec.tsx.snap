@@ -4,15 +4,15 @@ exports[`<Partners /> should render 1`] = `
 <Memo(Partners)>
   <styles__Container>
     <div
-      className="styles__Container-st6sme-0 iLjXsv"
+      className="styles__Container-st6sme-0 jMKlVV"
     >
       <styles__Content>
         <div
-          className="styles__Content-st6sme-1 jbTdPC"
+          className="styles__Content-st6sme-1 HCIC"
         >
           <styles__TextContent>
             <h5
-              className="styles__TextContent-st6sme-2 sEpxE"
+              className="styles__TextContent-st6sme-2 BHqOA"
             >
               home:partners_description
             </h5>
@@ -21,11 +21,11 @@ exports[`<Partners /> should render 1`] = `
       </styles__Content>
       <styles__ContainerPartners>
         <div
-          className="styles__ContainerPartners-st6sme-3 fgbPJj"
+          className="styles__ContainerPartners-st6sme-3 flkkzb"
         >
           <styles__Partner>
             <div
-              className="styles__Partner-st6sme-4 gAuoNJ"
+              className="styles__Partner-st6sme-4 bwWHFQ"
             >
               <Memo(AlastriaIcon)>
                 <svg
@@ -75,7 +75,7 @@ exports[`<Partners /> should render 1`] = `
           </styles__Partner>
           <styles__Partner>
             <div
-              className="styles__Partner-st6sme-4 gAuoNJ"
+              className="styles__Partner-st6sme-4 bwWHFQ"
             >
               <Memo(IBMWatsonIcon)>
                 <svg
@@ -201,7 +201,7 @@ exports[`<Partners /> should render 1`] = `
           </styles__Partner>
           <styles__Partner>
             <div
-              className="styles__Partner-st6sme-4 gAuoNJ"
+              className="styles__Partner-st6sme-4 bwWHFQ"
             >
               <Memo(ODOSIcon)>
                 <svg
@@ -296,7 +296,7 @@ exports[`<Partners /> should render 1`] = `
           </styles__Partner>
           <styles__Partner>
             <div
-              className="styles__Partner-st6sme-4 gAuoNJ"
+              className="styles__Partner-st6sme-4 bwWHFQ"
             >
               <Memo(UniversityCordobaIcon)>
                 <svg
@@ -446,7 +446,7 @@ exports[`<Partners /> should render 1`] = `
           </styles__Partner>
           <styles__Partner>
             <div
-              className="styles__Partner-st6sme-4 gAuoNJ"
+              className="styles__Partner-st6sme-4 bwWHFQ"
             >
               <Memo(MalditaIcon)>
                 <svg
@@ -465,7 +465,7 @@ exports[`<Partners /> should render 1`] = `
           </styles__Partner>
           <styles__Partner>
             <div
-              className="styles__Partner-st6sme-4 gAuoNJ"
+              className="styles__Partner-st6sme-4 bwWHFQ"
             >
               <Memo(NestleIcon)>
                 <svg
@@ -485,7 +485,7 @@ exports[`<Partners /> should render 1`] = `
           </styles__Partner>
           <styles__Partner>
             <div
-              className="styles__Partner-st6sme-4 gAuoNJ"
+              className="styles__Partner-st6sme-4 bwWHFQ"
             >
               <Memo(UniversityLoyolaIcon)>
                 <svg
@@ -875,7 +875,7 @@ exports[`<Partners /> should render 1`] = `
           </styles__Partner>
           <styles__Partner>
             <div
-              className="styles__Partner-st6sme-4 gAuoNJ"
+              className="styles__Partner-st6sme-4 bwWHFQ"
             >
               <Memo(AWSIcon)>
                 <svg
@@ -928,7 +928,7 @@ exports[`<Partners /> should render 1`] = `
           </styles__Partner>
           <styles__Partner>
             <div
-              className="styles__Partner-st6sme-4 gAuoNJ"
+              className="styles__Partner-st6sme-4 bwWHFQ"
             >
               <Memo(ColoqioIcon)>
                 <svg
@@ -1012,7 +1012,7 @@ exports[`<Partners /> should render 1`] = `
           </styles__Partner>
           <styles__Partner>
             <div
-              className="styles__Partner-st6sme-4 gAuoNJ"
+              className="styles__Partner-st6sme-4 bwWHFQ"
             >
               <Memo(MetaledgerIcon)>
                 <svg

@@ -26,11 +26,11 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
     hasPrimary={false}
   >
     <article
-      className="styles__Container-sc-1ukl2m-0 kXnjOF rounded-card"
+      className="styles__Container-sc-1ukl2m-0 fbcEFV rounded-card"
     >
       <styles__BackgroundContainer>
         <div
-          className="styles__BackgroundContainer-sc-1ukl2m-1 djeujh"
+          className="styles__BackgroundContainer-sc-1ukl2m-1 gJEPJJ"
         >
           <ReactPlaceholder
             firstLaunchOnly={true}
@@ -129,22 +129,22 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
         hasPrimary={false}
       >
         <div
-          className="styles__ContentContainer-sc-1ukl2m-2 cWFmFv"
+          className="styles__ContentContainer-sc-1ukl2m-2 iptFKa"
         >
           <styles__Content>
             <div
-              className="styles__Content-sc-1ukl2m-3 fFcpoX"
+              className="styles__Content-sc-1ukl2m-3 jsXBFr"
             >
               <styles__Title>
                 <h4
-                  className="styles__Title-sc-1ukl2m-4 ihOJtW"
+                  className="styles__Title-sc-1ukl2m-4 glJnQR"
                 >
                   Maldita
                 </h4>
               </styles__Title>
               <styles__Description>
                 <p
-                  className="styles__Description-sc-1ukl2m-5 dBXyiW"
+                  className="styles__Description-sc-1ukl2m-5 lcEsyK"
                 >
                   Deployment of a WhatsApp Business Chatbot integrated with the Spanish fact-checking platform focused on combating the spread of disinformation in order to expand their service’s reach
                 </p>
@@ -153,7 +153,7 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
                 color="#6666ff"
               >
                 <div
-                  className="styles__LinkContainer-sc-1ukl2m-6 dzNsrd"
+                  className="styles__LinkContainer-sc-1ukl2m-6 gwySlA"
                   color="#6666ff"
                 >
                   <Link
@@ -172,7 +172,7 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
                     >
                       <a
                         aria-label="hola"
-                        className="styles__LinkAnchor-sc-1ukl2m-7 jPychA"
+                        className="styles__LinkAnchor-sc-1ukl2m-7 duDBzf"
                         color="#6666ff"
                         href="/url"
                         onClick={[Function]}
@@ -240,14 +240,14 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
           </styles__Content>
           <styles__TagsContainer>
             <div
-              className="styles__TagsContainer-sc-1ukl2m-8 lgKwGG"
+              className="styles__TagsContainer-sc-1ukl2m-8 imUFYr"
             >
               <styles__Tag
                 hasPrimary={false}
                 key="0"
               >
                 <span
-                  className="styles__Tag-sc-1ukl2m-9 fAAZRM"
+                  className="styles__Tag-sc-1ukl2m-9 hErYJH"
                 >
                   Media
                 </span>
@@ -257,7 +257,7 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
                 key="1"
               >
                 <span
-                  className="styles__Tag-sc-1ukl2m-9 fAAZRM"
+                  className="styles__Tag-sc-1ukl2m-9 hErYJH"
                 >
                   Fact-checking
                 </span>
@@ -267,7 +267,7 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
                 key="2"
               >
                 <span
-                  className="styles__Tag-sc-1ukl2m-9 fAAZRM"
+                  className="styles__Tag-sc-1ukl2m-9 hErYJH"
                 >
                   Chatbots
                 </span>

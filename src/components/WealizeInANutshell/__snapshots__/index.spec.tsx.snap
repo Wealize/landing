@@ -8,20 +8,20 @@ exports[`<WealizeInANutshell /> should render 1`] = `
     className="wealize-in-a-nutshell"
   >
     <div
-      className="styles__Container-sc-1wwnm82-0 kDpYcP wealize-in-a-nutshell"
+      className="styles__Container-sc-1wwnm82-0 fQINhi wealize-in-a-nutshell"
     >
       <styles__Title
         isNavbarVisible={true}
       >
         <h3
-          className="styles__Title-sc-1wwnm82-1 jUxVSw"
+          className="styles__Title-sc-1wwnm82-1 bEDFZZ"
         >
           profile:wealize-in-a-nutshell.title
         </h3>
       </styles__Title>
       <styles__Content>
         <div
-          className="styles__Content-sc-1wwnm82-2 gVwzYK"
+          className="styles__Content-sc-1wwnm82-2 gLBTCO"
         >
           <InView
             initialInView={false}
@@ -36,7 +36,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
               isIntersecting={false}
             >
               <h3
-                className="styles__Paragraph-sc-1wwnm82-3 ffRLgQ wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 kugBey wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-0
               </h3>
@@ -55,7 +55,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
               isIntersecting={false}
             >
               <h3
-                className="styles__Paragraph-sc-1wwnm82-3 ffRLgQ wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 kugBey wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-1
               </h3>
@@ -74,7 +74,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
               isIntersecting={false}
             >
               <h3
-                className="styles__Paragraph-sc-1wwnm82-3 ffRLgQ wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 kugBey wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-2
               </h3>
@@ -93,7 +93,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
               isIntersecting={false}
             >
               <h3
-                className="styles__Paragraph-sc-1wwnm82-3 ffRLgQ wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 kugBey wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-3
               </h3>
@@ -112,7 +112,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
               isIntersecting={false}
             >
               <h3
-                className="styles__Paragraph-sc-1wwnm82-3 ffRLgQ wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 kugBey wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-4
               </h3>
@@ -131,7 +131,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
               isIntersecting={false}
             >
               <h3
-                className="styles__Paragraph-sc-1wwnm82-3 ffRLgQ wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 kugBey wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-5
               </h3>
@@ -150,7 +150,7 @@ exports[`<WealizeInANutshell /> should render 1`] = `
               isIntersecting={false}
             >
               <h3
-                className="styles__Paragraph-sc-1wwnm82-3 ffRLgQ wealize-nutshell-paragraph "
+                className="styles__Paragraph-sc-1wwnm82-3 kugBey wealize-nutshell-paragraph "
               >
                 profile:wealize-in-a-nutshell.paragraph-6
               </h3>

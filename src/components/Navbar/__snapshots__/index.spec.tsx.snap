@@ -10,12 +10,12 @@ exports[`<NavBar /> should render 1`] = `
     showNavigationBarClosablePage={true}
   >
     <nav
-      className="styles__Navbar-dfawgb-0 jvhzFs"
+      className="styles__Navbar-dfawgb-0 eyHKzO"
       id="navbar"
     >
       <styles__LogoMobileContainer>
         <div
-          className="styles__LogoMobileContainer-dfawgb-1 ccyuWw"
+          className="styles__LogoMobileContainer-dfawgb-1 dvRJFE"
         >
           <Link
             href="/"
@@ -47,7 +47,7 @@ exports[`<NavBar /> should render 1`] = `
       </styles__LogoMobileContainer>
       <styles__LogoContainer>
         <div
-          className="styles__LogoContainer-dfawgb-2 hpDmyf"
+          className="styles__LogoContainer-dfawgb-2 creKXf"
         >
           <Link
             href="/"
@@ -136,7 +136,7 @@ exports[`<NavBar /> should render 1`] = `
           textColor="#6666ff"
         >
           <div
-            className="styles__Container-ater0w-3 eHOIYC button-rounded"
+            className="styles__Container-ater0w-3 kMRroW button-rounded"
             id="nav-return-button"
             onClick={[Function]}
             size={
@@ -164,13 +164,13 @@ exports[`<NavBar /> should render 1`] = `
               backgroundColor="#ffffff"
             >
               <button
-                className="styles__ContainerButtonOriginal-ater0w-0 hwQUBf"
+                className="styles__ContainerButtonOriginal-ater0w-0 ezlclE"
               >
                 <styles__Content
                   textColor="#6666ff"
                 >
                   <div
-                    className="styles__Content-ater0w-2 kHgDFT"
+                    className="styles__Content-ater0w-2 irSOAW"
                   >
                     <span>
                       common:navbar.return_button_text
@@ -185,13 +185,13 @@ exports[`<NavBar /> should render 1`] = `
             >
               <button
                 aria-label="button animated"
-                className="styles__ContainerButtonAnimated-ater0w-1 XdFHj"
+                className="styles__ContainerButtonAnimated-ater0w-1 jfRRWT"
               >
                 <styles__Content
                   textColor="#6666ff"
                 >
                   <div
-                    className="styles__Content-ater0w-2 kHgDFT"
+                    className="styles__Content-ater0w-2 irSOAW"
                   >
                     <span>
                       common:navbar.return_button_text

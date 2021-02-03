@@ -5,7 +5,7 @@ import GhostPost from '../../../../interfaces/Ghost/GhostPost'
 
 import GhostPostCard from './index'
 
-describe('<SimpleCard />', () => {
+describe('<GhostPostCard />', () => {
   const ghostPostCardData: GhostPost = {
     id: '6017df3f6b0d7a001c15cc7c',
     uuid: 'b4283683-b51e-4c67-ba42-66de093b1e05',
