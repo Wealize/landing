@@ -10,6 +10,7 @@ import useTranslation from 'next-translate/useTranslation'
 import Trans from 'next-translate/Trans'
 import LoadingBar from 'react-top-loading-bar'
 
+import 'react-placeholder/lib/reactPlaceholder.css'
 import Global from '../components/Global'
 import HeadComponent from '../components/layout/Head/'
 import Layout from '../components/layout/'

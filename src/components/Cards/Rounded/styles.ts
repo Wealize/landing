@@ -32,6 +32,7 @@ export const BackgroundContainer = styled.div`
   align-items: stretch;
   min-height: 290px;
   z-index: 1;
+  background-color: ${WHITE_COLOR};
 
   ${media.greaterThan('md')`
     width: 51%;

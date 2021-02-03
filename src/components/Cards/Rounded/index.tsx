@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import ReactPlaceholder from 'react-placeholder'
 
 import OpenUrlIcon from '../../icons/OpenUrlIcon'
 import { CardRounded } from '../../../interfaces/Cards/CardRounded'
@@ -26,6 +27,13 @@ const RoundedCard = (props: CardRounded) => {
   return (
     <Container className="rounded-card" hasPrimary={hasPrimary}>
       <BackgroundContainer>
+        <ReactPlaceholder
+          type='rect'
+          showLoadingAnimation={true}
+          firstLaunchOnly={true}
+          ready={false}
+          style={{ marginRight: '0', position: 'absolute' }}>
+        </ReactPlaceholder>
         <Image
           src={imageUrl}
           layout="fill"

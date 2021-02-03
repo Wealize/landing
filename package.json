@@ -41,6 +41,7 @@
     "react-dom": "^16.13.1",
     "react-hooks-global-state": "^1.0.1",
     "react-intersection-observer": "^8.31.0",
+    "react-placeholder": "^4.0.3",
     "react-player": "^2.7.2",
     "react-scroll": "^1.8.1",
     "react-spring": "^8.0.27",

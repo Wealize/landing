@@ -30,8 +30,45 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
     >
       <styles__BackgroundContainer>
         <div
-          className="styles__BackgroundContainer-sc-1ukl2m-1 epSGqa"
+          className="styles__BackgroundContainer-sc-1ukl2m-1 djeujh"
         >
+          <ReactPlaceholder
+            firstLaunchOnly={true}
+            ready={false}
+            showLoadingAnimation={true}
+            style={
+              Object {
+                "marginRight": "0",
+                "position": "absolute",
+              }
+            }
+            type="rect"
+          >
+            <RectShape
+              className="show-loading-animation"
+              color="#CDCDCD"
+              rows={3}
+              style={
+                Object {
+                  "marginRight": "0",
+                  "position": "absolute",
+                }
+              }
+            >
+              <div
+                className="rect-shape show-loading-animation"
+                style={
+                  Object {
+                    "backgroundColor": "#CDCDCD",
+                    "height": "100%",
+                    "marginRight": "0",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              />
+            </RectShape>
+          </ReactPlaceholder>
           <Image
             aria-label="Maldita image"
             layout="fill"

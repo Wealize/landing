@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import ReactPlaceholder from 'react-placeholder'
 
 import { CardTalent } from '../../../interfaces/Cards/CardTalent'
 import { SocialNetwork } from '../../../interfaces/SocialNetwork'
@@ -22,16 +23,24 @@ const TalentCard = ({
 }: CardTalent) => {
   return (
     <Container className="talent-card">
-          <ImageContainer>
-            <Image
-            src={imageUrl}
-            layout="fill"
-            objectFit="cover"
-            aria-label={`${name} image`}
-            title={name}
-            />
-          </ImageContainer>
-          <ContentContainer>
+      <ImageContainer>
+        <ReactPlaceholder
+          type='rect'
+          showLoadingAnimation={true}
+          firstLaunchOnly={true}
+          ready={false}
+          style={{ marginRight: '0', position: 'absolute' }}>
+        </ReactPlaceholder>
+        <Image
+          src={imageUrl}
+          layout="fill"
+          objectFit="cover"
+          aria-label={`${name} image`}
+          title={name}
+          onLoad={() => console.warn('load')}
+        />
+      </ImageContainer>
+      <ContentContainer>
             <Headline>{name}</Headline>
             <Subheadline>{role}</Subheadline>
             <SocialNetworksContainer>
@@ -46,7 +55,7 @@ const TalentCard = ({
                 : null}
             </SocialNetworksContainer>
           </ContentContainer>
-        </Container>
+    </Container>
   )
 }
 
