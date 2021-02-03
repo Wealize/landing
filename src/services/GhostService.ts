@@ -1,6 +1,7 @@
 import GhostContentAPI from '@tryghost/content-api'
 
 import { API_URL } from '../constants/ghost'
+import GhostPost from '../interfaces/Ghost/GhostPost'
 
 // Create API instance
 const api = new GhostContentAPI({
@@ -10,45 +11,33 @@ const api = new GhostContentAPI({
 })
 
 class GhostService {
-  public static async getPostById (id: string) {
+  public static async getPostById (id: string):Promise<GhostPost[]> {
     return await api.posts
       .browse({
         filter: `id:${id}`
       })
-      .catch(err => {
-        console.error(err)
-      })
   }
 
-  public static async getPostBySlug (slug: string) {
+  public static async getPostBySlug (slug: string):Promise<GhostPost[]> {
     return await api.posts
       .browse({
         filter: `slug:${slug}`
       })
-      .catch(err => {
-        console.error(err)
-      })
   }
 
-  public static async getAllPosts () {
+  public static async getAllPosts ():Promise<GhostPost[]> {
     return await api.posts
       .browse({
         limit: 'all',
         fields: ['title', 'slug', 'url', 'excerpt']
       })
-      .catch(err => {
-        console.error(err)
-      })
   }
 
-  public static async getFilteredPostsByTitle (title: string) {
+  public static async getFilteredPostsByTitle (title: string):Promise<GhostPost[]> {
     return await api.posts
       .browse({
         filter: `title:'${title}'`,
         order: ''
-      })
-      .catch(err => {
-        console.error(err)
       })
   }
 }

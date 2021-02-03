@@ -1,3 +1,5 @@
+import { ParsedUrlQuery } from 'querystring'
+
 import React from 'react'
 
 import GhostPost from '../../interfaces/Ghost/GhostPost'
@@ -6,7 +8,7 @@ import GhostService from '../../services/GhostService'
 import { Container, PostHeadline, PostBody } from '../../styles/pages/news-room/post'
 
 
-interface PostPageProps {
+type PostPageProps = {
   post: GhostPost
 }
 
@@ -22,15 +24,30 @@ const PostPage = (props: PostPageProps): JSX.Element => {
   )
 }
 
+type NextGetStaticPath = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  [key: string]: any
+}
 
-export const getStaticPaths = () => {
+type NextGetStaticPathsCtx = {
+  paths: NextGetStaticPath[];
+  fallback: boolean
+};
+
+export const getStaticPaths = (): NextGetStaticPathsCtx => {
   return {
     paths: [],
     fallback: true
   }
 }
 
-export const getStaticProps = async ({ params }): Promise<{
+type NextGetStaticPropsCtx = {
+  params?: ParsedUrlQuery;
+  preview?: boolean;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  previewData?: any;
+};
+export const getStaticProps = async ({ params }: NextGetStaticPropsCtx): Promise<{
   props: { layoutOptions: LayoutOptions, post: GhostPost }
 }> => {
   const layoutOptions: LayoutOptions = {
@@ -38,7 +55,9 @@ export const getStaticProps = async ({ params }): Promise<{
     showNavigationBarClosablePage: false
   }
 
-  const posts = await GhostService.getPostBySlug(params.slug)
+  const getFirstParam = Array.isArray(params) ? params[0] : params
+
+  const posts = await GhostService.getPostBySlug(getFirstParam.slug)
 
   const post = posts.length ? posts[0] : null
 

@@ -5,9 +5,7 @@ import GhostPost from '../../../../interfaces/Ghost/GhostPost'
 
 import { Container, CardHeadline, CardPublishedAt } from './styles'
 
-interface GhostPostCardProps {
-  post: GhostPost
-}
+type GhostPostCardProps = { post: GhostPost }
 
 const GhostPostCard = (props: GhostPostCardProps) => {
   const { post } = props

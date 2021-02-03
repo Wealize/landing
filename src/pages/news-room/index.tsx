@@ -6,7 +6,7 @@ import GhostService from '../../services/GhostService'
 import { Container, PageTitle, PostsContainer } from '../../styles/pages/NewsRoom'
 import GhostPostCard from '../../components/Cards/Ghost/post'
 
-interface NewsRoomProps {
+type NewsRoomProps = {
   posts: GhostPost[]
 }
 const NewsRoom = (props: NewsRoomProps): JSX.Element => {

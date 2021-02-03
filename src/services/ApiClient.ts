@@ -1,5 +1,6 @@
 class ApiClient {
-  public static get (url: string) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  public static get (url: string):Promise<any> {
     return this._handleFetch(url, {
       method: 'GET'
     })
