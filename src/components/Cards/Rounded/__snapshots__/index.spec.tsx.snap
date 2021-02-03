@@ -30,7 +30,7 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
     >
       <styles__BackgroundContainer>
         <div
-          className="styles__BackgroundContainer-sc-1ukl2m-1 epSGqa"
+          className="styles__BackgroundContainer-sc-1ukl2m-1 djeujh"
         >
           <ReactPlaceholder
             firstLaunchOnly={true}
