@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- [Create minimal version without styles](https://wealize.atlassian.net/browse/WLZAA-122)
+- [Create minimal blog version without styles](https://wealize.atlassian.net/browse/WLZAA-122)
 
 
 ## [v2021.01.29]
