@@ -1,10 +1,10 @@
 import React from 'react'
 
-import GhostPost from '../interfaces/Ghost/GhostPost'
-import { LayoutOptions } from '../interfaces/Page'
-import GhostService from '../services/GhostService'
-import { Container, PageTitle, PostsContainer } from '../styles/pages/NewsRoom'
-import GhostPostCard from '../components/Cards/Ghost/post/'
+import GhostPost from '../../interfaces/Ghost/GhostPost'
+import { LayoutOptions } from '../../interfaces/Page'
+import GhostService from '../../services/GhostService'
+import { Container, PageTitle, PostsContainer } from '../../styles/pages/NewsRoom'
+import GhostPostCard from '../../components/Cards/Ghost/post'
 
 interface NewsRoomProps {
   posts: GhostPost[]

@@ -16,7 +16,6 @@ const PostPage = (props: PostPageProps): JSX.Element => {
   return (
     <Container>
       <PostHeadline>{post?.title}</PostHeadline>
-
       <PostBody dangerouslySetInnerHTML={{ __html: post?.html }}>
       </PostBody>
     </Container>
