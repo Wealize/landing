@@ -37,6 +37,7 @@ const TalentCard = ({
           objectFit="cover"
           aria-label={`${name} image`}
           title={name}
+          quality={90}
           onLoad={() => console.warn('load')}
         />
       </ImageContainer>
