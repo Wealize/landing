@@ -5,6 +5,10 @@ on: [push]
 env:
   NODE_ENV: production
   PORT: 3000
+  GHOST_CONTENT_API_KEY: ${{ secrets.GHOST_CONTENT_API_KEY }}
+  GHOST_ADMIN_API_KEY: ${{ secrets.GHOST_ADMIN_API_KEY }}
+  LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+
 jobs:
   tests:
     runs-on: ubuntu-latest
@@ -13,7 +17,6 @@ jobs:
     strategy:
       matrix:
         node-version: [14.x]
-
 
     steps:
       - uses: actions/checkout@v1
@@ -97,5 +100,3 @@ jobs:
           lhci autorun
         env:
           NODE_ENV: production
-          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
-
