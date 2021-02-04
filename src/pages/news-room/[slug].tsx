@@ -20,7 +20,7 @@ const PostPage = (props: PostPageProps): JSX.Element => {
     <Container>
       <PostHeadline>{post?.title}</PostHeadline>
       <PostBody>
-          {parse(post?.html)}
+          {parse(`${post?.html}`)}
       </PostBody>
     </Container>
   )
