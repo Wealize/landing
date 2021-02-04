@@ -3,7 +3,7 @@ import React from 'react'
 import GhostPost from '../../interfaces/Ghost/GhostPost'
 import { LayoutOptions } from '../../interfaces/Page'
 import GhostService from '../../services/GhostService'
-import { Container, PageTitle, PostsContainer } from '../../styles/pages/NewsRoom'
+import { Container, PageHeader, PageTitle, PageDescription, PostsContainer } from '../../styles/pages/NewsRoom'
 import GhostPostCard from '../../components/Cards/Ghost/post'
 
 type NewsRoomProps = {
@@ -14,10 +14,13 @@ const NewsRoom = (props: NewsRoomProps): JSX.Element => {
 
   return (
     <Container>
-      <PageTitle>Posts</PageTitle>
+      <PageHeader>
+        <PageTitle>Newsroom</PageTitle>
+        <PageDescription>If you would like to know more about these topics and solutions, please get in touch</PageDescription>
+      </PageHeader>
       <PostsContainer>
         {posts.map((post: GhostPost, index: number) => (
-            <li key={index}><GhostPostCard post={post} /></li>
+            <GhostPostCard key={index} post={post} />
         ))}
       </PostsContainer>
     </Container>
@@ -34,7 +37,25 @@ export const getStaticProps = async (): Promise<{
 
   const posts = await GhostService.getAllPosts()
 
-  return { props: { layoutOptions, posts } }
+  if (!posts) {
+    return { props: { layoutOptions, posts: [] } }
+  }
+
+  const options: Intl.DateTimeFormatOptions = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }
+
+  const postsDateFormatted:GhostPost[] = posts.map((post: GhostPost) => {
+    post.published_at = new Intl.DateTimeFormat('en-US', options)
+      .format(new Date(post.published_at))
+
+    return post
+  })
+
+  return { props: { layoutOptions, posts: postsDateFormatted } }
 }
 
 export default NewsRoom

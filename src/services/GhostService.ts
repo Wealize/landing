@@ -28,8 +28,7 @@ class GhostService {
   public static async getAllPosts ():Promise<GhostPost[]> {
     return await api.posts
       .browse({
-        limit: 'all',
-        fields: ['title', 'slug', 'url', 'excerpt']
+        limit: 'all'
       })
   }
 

@@ -1,5 +1,6 @@
 import { ParsedUrlQuery } from 'querystring'
 
+import parse from 'html-react-parser'
 import React from 'react'
 
 import GhostPost from '../../interfaces/Ghost/GhostPost'
@@ -18,7 +19,8 @@ const PostPage = (props: PostPageProps): JSX.Element => {
   return (
     <Container>
       <PostHeadline>{post?.title}</PostHeadline>
-      <PostBody dangerouslySetInnerHTML={{ __html: post?.html }}>
+      <PostBody>
+          {parse(`${post?.html}`)}
       </PostBody>
     </Container>
   )

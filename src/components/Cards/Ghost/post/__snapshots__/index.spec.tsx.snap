@@ -47,31 +47,45 @@ exports[`<GhostPostCard /> wrapper: should render 1`] = `
     passHref={true}
   >
     <styles__Container
-      className="ghost-post-card"
+      className="post-card featured"
       href="/news-room/the-editor"
+      isFeatured={false}
       onClick={[Function]}
       onMouseEnter={[Function]}
     >
       <a
-        className="styles__Container-djtgfn-0 glBOib ghost-post-card"
+        className="styles__Container-djtgfn-0 fMCxGO post-card featured"
         href="/news-room/the-editor"
         onClick={[Function]}
         onMouseEnter={[Function]}
       >
-        <styles__CardHeadline>
-          <h4
-            className="styles__CardHeadline-djtgfn-1 fdhgGK"
+        <styles__Content>
+          <article
+            className="styles__Content-djtgfn-1 eehDoN"
           >
-            Writing posts with Ghost ✍️
-          </h4>
-        </styles__CardHeadline>
-        <styles__CardPublishedAt>
-          <span
-            className="styles__CardPublishedAt-djtgfn-2 WlTiu"
-          >
-            2021-02-01T11:00:20.000+00:00
-          </span>
-        </styles__CardPublishedAt>
+            <styles__CardHeadline>
+              <h4
+                className="styles__CardHeadline-djtgfn-2 jBiVYI"
+              >
+                Writing posts with Ghost ✍️
+              </h4>
+            </styles__CardHeadline>
+            <styles__CardBody>
+              <h5
+                className="styles__CardBody-djtgfn-3 fnQLoo"
+              >
+                Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.
+              </h5>
+            </styles__CardBody>
+            <styles__CardPublishedAt>
+              <span
+                className="styles__CardPublishedAt-djtgfn-4 gWhHiG"
+              >
+                2021-02-01T11:00:20.000+00:00
+              </span>
+            </styles__CardPublishedAt>
+          </article>
+        </styles__Content>
       </a>
     </styles__Container>
   </Link>
