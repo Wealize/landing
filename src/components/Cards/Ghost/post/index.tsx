@@ -3,18 +3,28 @@ import Link from 'next/link'
 
 import GhostPost from '../../../../interfaces/Ghost/GhostPost'
 
-import { Container, CardHeadline, CardPublishedAt } from './styles'
+import { Container, Content, CardHeadline, CardPublishedAt, CardBody } from './styles'
 
-type GhostPostCardProps = { post: GhostPost }
+type GhostPostCardProps = {
+  post: GhostPost
+}
 
 const GhostPostCard = (props: GhostPostCardProps) => {
-  const { post } = props
+  const {
+    post
+  } = props
+
   return (
     <Link href="/news-room/[slug]" as={`/news-room/${post.slug}`} passHref>
-      <Container className="ghost-post-card">
-      <CardHeadline>{post.title}</CardHeadline>
-      <CardPublishedAt>{post.published_at}</CardPublishedAt>
-    </Container>
+      <Container className={`${post.featured ? 'post-card' : 'post-card featured'}`} isFeatured={post.featured}>
+        <Content>
+          <CardHeadline>{post.title}</CardHeadline>
+          <CardBody>
+            {post.excerpt}
+          </CardBody>
+          <CardPublishedAt>{post.published_at}</CardPublishedAt>
+        </Content>
+      </Container>
     </Link>
   )
 }
