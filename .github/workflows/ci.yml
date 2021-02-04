@@ -31,6 +31,11 @@ jobs:
       - name: Increase watchers limit
         run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
+      - name: yarn build
+        run: yarn build
+        env:
+          NODE_ENV: production
+
       - name: Run linter
         run: yarn lint
         env:
@@ -41,7 +46,7 @@ jobs:
         env:
           NODE_ENV: development
 
-      # FIXME: Disabled E2E because it crashes randomly on CI when always passing local
+      # FIXME: Disabled E2E because it crashes randomly on CI
 
       # - name: Run integration tests
       #   uses: cypress-io/github-action@v2
