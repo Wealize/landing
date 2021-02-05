@@ -2,15 +2,15 @@ import { ParsedUrlQuery } from 'querystring'
 
 import parse from 'html-react-parser'
 import React from 'react'
+import { PostOrPage } from '@tryghost/content-api'
 
-import GhostPost from '../../interfaces/Ghost/GhostPost'
 import { LayoutOptions } from '../../interfaces/Page'
 import GhostService from '../../services/GhostService'
 import { Container, PostHeadline, PostBody } from '../../styles/pages/news-room/post'
 
 
 type PostPageProps = {
-  post: GhostPost
+  post: PostOrPage
 }
 
 const PostPage = (props: PostPageProps): JSX.Element => {
@@ -50,7 +50,7 @@ type NextGetStaticPropsCtx = {
   previewData?: any;
 };
 export const getStaticProps = async ({ params }: NextGetStaticPropsCtx): Promise<{
-  props: { layoutOptions: LayoutOptions, post: GhostPost }
+  props: { layoutOptions: LayoutOptions, post: PostOrPage }
 }> => {
   const layoutOptions: LayoutOptions = {
     showFooter: true,
