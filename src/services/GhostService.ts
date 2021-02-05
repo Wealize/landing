@@ -1,43 +1,43 @@
-import GhostContentAPI from '@tryghost/content-api'
+import { PostOrPage } from '@tryghost/content-api'
 
-import { API_URL } from '../constants/ghost'
-import GhostPost from '../interfaces/Ghost/GhostPost'
+import GhostPostResponse from '../interfaces/Ghost/GhostPostResponse'
 
-// Create API instance
-const api = new GhostContentAPI({
-  url: `${API_URL}`,
-  key: `${process.env.GHOST_CONTENT_API_KEY}`,
-  version: 'v3'
-})
+import ApiClient from './ApiClient'
+
+const CONTENT_API_BASE_URL = `${process.env.GHOST_API_BASE_URL}/ghost/api/v3/content/`
+const PAGE_SIZE = 3
+
+const formatPostsDate = (posts: PostOrPage[]): PostOrPage[] => {
+  const options: Intl.DateTimeFormatOptions = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }
+
+  return posts?.map((post: PostOrPage) => {
+    post.published_at = new Intl.DateTimeFormat('en-US', options)
+      .format(new Date(post.published_at))
+
+    return post
+  })
+}
 
 class GhostService {
-  public static async getPostById (id: string):Promise<GhostPost[]> {
-    return await api.posts
-      .browse({
-        filter: `id:${id}`
-      })
+  public static async getPostBySlug (slug: string): Promise<GhostPostResponse> {
+    const url = `${CONTENT_API_BASE_URL}posts/slug/${slug}/?key=${process.env.GHOST_CONTENT_API_KEY}`
+    return await ApiClient.get(url)
   }
 
-  public static async getPostBySlug (slug: string):Promise<GhostPost[]> {
-    return await api.posts
-      .browse({
-        filter: `slug:${slug}`
-      })
-  }
+  public static async getPostsByPaginationPage (page: string): Promise<GhostPostResponse> {
+    const url = `${CONTENT_API_BASE_URL}posts/?page=${page}&limit=${PAGE_SIZE}&key=${process.env.GHOST_CONTENT_API_KEY}`
+    const { posts, meta } = await ApiClient.get(url)
 
-  public static async getAllPosts ():Promise<GhostPost[]> {
-    return await api.posts
-      .browse({
-        limit: 'all'
-      })
-  }
+    if (!posts.length) return { posts: null, meta: null }
 
-  public static async getFilteredPostsByTitle (title: string):Promise<GhostPost[]> {
-    return await api.posts
-      .browse({
-        filter: `title:'${title}'`,
-        order: ''
-      })
+    const postsDateFormatted: PostOrPage[] = formatPostsDate(posts)
+
+    return { posts: postsDateFormatted, meta }
   }
 }
 

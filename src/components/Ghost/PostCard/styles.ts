@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
 
-import { DEFAULT_RADIUS } from '../../../../theme/border'
-import { ACCENT_COLOR, WHITE_COLOR } from '../../../../theme/color'
-import { media } from '../../../../theme/media'
-import { singlePx } from '../../../../theme/space'
+import { DEFAULT_RADIUS } from '../../../theme/border'
+import { ACCENT_COLOR, WHITE_COLOR } from '../../../theme/color'
+import { media } from '../../../theme/media'
+import { singlePx } from '../../../theme/space'
 
 export const Container = styled.a<{isFeatured: boolean}>`
   width: 100%;

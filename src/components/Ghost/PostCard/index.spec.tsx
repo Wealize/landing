@@ -1,12 +1,11 @@
 import React from 'react'
 import { mount } from 'enzyme'
-
-import GhostPost from '../../../../interfaces/Ghost/GhostPost'
+import { PostOrPage } from '@tryghost/content-api'
 
 import GhostPostCard from './index'
 
 describe('<GhostPostCard />', () => {
-  const ghostPostCardData: GhostPost = {
+  const ghostPostCardData: PostOrPage = {
     id: '6017df3f6b0d7a001c15cc7c',
     uuid: 'b4283683-b51e-4c67-ba42-66de093b1e05',
     title: 'Writing posts with Ghost ✍️',
@@ -15,8 +14,6 @@ describe('<GhostPostCard />', () => {
     comment_id: '6017df3f6b0d7a001c15cc7c',
     feature_image: 'https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png',
     featured: false,
-    visibility: 'public',
-    send_email_when_published: false,
     created_at: '2021-02-01T11:00:15.000+00:00',
     updated_at: '2021-02-01T11:00:15.000+00:00',
     published_at: '2021-02-01T11:00:20.000+00:00',
@@ -35,8 +32,7 @@ describe('<GhostPostCard />', () => {
     twitter_title: null,
     twitter_description: null,
     meta_title: null,
-    meta_description: null,
-    email_subject: null
+    meta_description: null
   }
   const wrapper = mount(<GhostPostCard post={ghostPostCardData} />)
 

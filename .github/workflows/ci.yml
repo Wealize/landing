@@ -5,6 +5,7 @@ on: [push]
 env:
   NODE_ENV: production
   PORT: 3000
+  GHOST_API_BASE_URL: ${{ secrets.GHOST_API_BASE_URL }}
   GHOST_CONTENT_API_KEY: ${{ secrets.GHOST_CONTENT_API_KEY }}
   GHOST_ADMIN_API_KEY: ${{ secrets.GHOST_ADMIN_API_KEY }}
   LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
