@@ -26,7 +26,6 @@ const NewsRoom = (): JSX.Element => {
         <PageDescription>If you would like to know more about these topics and solutions, please get in touch</PageDescription>
       </PageHeader>
       <PostsContainer>
-        { (!data || !data?.posts || !data.posts.length) && <h3>Not results</h3> }
         {data?.posts?.map((post: PostOrPage, index: number) => (
             <GhostPostCard key={index} post={post} />
         ))}
