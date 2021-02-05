@@ -59,7 +59,7 @@ export const getStaticProps = async ({ params }: NextGetStaticPropsCtx): Promise
 
   const getFirstParam = Array.isArray(params) ? params[0] : params
 
-  const posts = await GhostService.getPostBySlug(getFirstParam.slug)
+  const { posts } = await GhostService.getPostBySlug(getFirstParam.slug)
 
   const post = posts.length ? posts[0] : null
 
