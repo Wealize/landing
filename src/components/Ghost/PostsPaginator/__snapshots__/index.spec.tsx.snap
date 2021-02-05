@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GhostPostsPaginator /> wrapper: should render 1`] = `
+<styles__Container>
+  <Link
+    href="/news?page=1"
+    key="0"
+    passHref={true}
+  >
+    <styles__PaginationPage
+      className="pagination-page-item current"
+    >
+      1
+    </styles__PaginationPage>
+  </Link>
+  <Link
+    href="/news?page=2"
+    key="1"
+    passHref={true}
+  >
+    <styles__PaginationPage
+      className="pagination-page-item"
+    >
+      2
+    </styles__PaginationPage>
+  </Link>
+  <Link
+    href="/news?page=3"
+    key="2"
+    passHref={true}
+  >
+    <styles__PaginationPage
+      className="pagination-page-item"
+    >
+      3
+    </styles__PaginationPage>
+  </Link>
+</styles__Container>
+`;

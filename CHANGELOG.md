@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [Create Paginator component for blog posts](https://wealize.atlassian.net/browse/WLZAA-120)
 - [Add alternate layout in PostCard component when it is of type Featured](https://wealize.atlassian.net/browse/WLZAA-124)
 - [Create minimal blog version without styles](https://wealize.atlassian.net/browse/WLZAA-122)
 

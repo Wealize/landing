@@ -1,12 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
-
-import GhostPost from '../../../../interfaces/Ghost/GhostPost'
+import { PostOrPage } from '@tryghost/content-api'
 
 import { Container, Content, CardHeadline, CardPublishedAt, CardBody } from './styles'
 
 type GhostPostCardProps = {
-  post: GhostPost
+  post: PostOrPage
 }
 
 const GhostPostCard = (props: GhostPostCardProps) => {

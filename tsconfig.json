@@ -15,6 +15,7 @@
     "jsx": "preserve",
     "types": [
       "jest",
+      "@types/tryghost__content-api"
     ],
   },
   "exclude": ["node_modules"],
