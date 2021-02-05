@@ -13,10 +13,6 @@ export const Container = styled.div`
   align-items: center;
   background-color: ${WHITE_COLOR};
   padding-top: 3rem;
-
-  ${media.greaterThan('md')`
-    padding-top: 0;
-  `};
 `
 
 export const PaginationPage = styled.a`
@@ -26,7 +22,7 @@ export const PaginationPage = styled.a`
   justify-content: center;
   align-items: center;
   font-size: 1.4rem;
-  min-width: 4.5rem;
+  min-width: 4rem;
   color: ${GRAY_300_COLOR};
   text-decoration: none;
   transition: all 0.5s;
@@ -35,7 +31,15 @@ export const PaginationPage = styled.a`
     color: ${WHITE_COLOR};
     background-color: ${ACCENT_COLOR};
     font-weight: bold;
-    padding: 1rem;
+    padding: .5rem;
     border-radius: ${DEFAULT_RADIUS}px;
+
+    ${media.greaterThan('md')`
+      padding: 1rem;
+    `};
   }
+
+  ${media.greaterThan('md')`
+      min-width: 4.5rem;
+  `};
 `
