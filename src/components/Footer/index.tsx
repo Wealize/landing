@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import useTranslation from 'next-translate/useTranslation'
-import { useRouter } from 'next/router'
 
 import WealizeWhiteNormalMediumIcon from '../icons/WealizeWhiteNormalMediumIcon'
 import ButtonRounded from '../Buttons/Rounded/'
@@ -44,7 +43,6 @@ import {
 } from './styles'
 const Footer = () => {
   const { t } = useTranslation('common')
-  const router = useRouter()
 
   return (
     <Container id="footer">
@@ -62,7 +60,8 @@ const Footer = () => {
             animatedBackgroundColor={ACCENT_COLOR}
             animatedTextColor={WHITE_COLOR}
             size={MEDIUM}
-            handleClick={() => router.push(GET_IN_TOUCH_HREF)}
+            handleClick={() => window.open(
+              GET_IN_TOUCH_HREF, '_blank')}
             id="footer-get-in-touch-button"
           >
             <span>{t('footer.get_in_touch.button_text')}</span>
@@ -78,7 +77,8 @@ const Footer = () => {
             animatedBackgroundColor={ACCENT_COLOR}
             animatedTextColor={WHITE_COLOR}
             size={MEDIUM}
-            handleClick={() => router.push(WORK_WITH_US)}
+            handleClick={() => window.open(
+              WORK_WITH_US, '_blank')}
             id="footer-work-whit-us-button"
           >
            <span>{t('footer.work_with_us.button_text')}</span>
@@ -94,7 +94,8 @@ const Footer = () => {
               animatedBackgroundColor={ACCENT_COLOR}
               animatedTextColor={WHITE_COLOR}
               size={SMALL}
-              handleClick={() => router.push('https://www.linkedin.com/company/wealizedigital/')}
+              handleClick={() => window.open(
+                'https://www.linkedin.com/company/wealizedigital/', '_blank')}
             >
               <LinkedinIcon />
             </ButtonRounded>
@@ -104,7 +105,8 @@ const Footer = () => {
               animatedBackgroundColor={ACCENT_COLOR}
               animatedTextColor={WHITE_COLOR}
               size={SMALL}
-              handleClick={() => router.push('https://twitter.com/wealizedigital')}
+              handleClick={() => window.open(
+                'https://twitter.com/wealizedigital', '_blank')}
             >
               <TwitterIcon />
             </ButtonRounded>
@@ -114,7 +116,8 @@ const Footer = () => {
               animatedBackgroundColor={ACCENT_COLOR}
               animatedTextColor={WHITE_COLOR}
               size={SMALL}
-              handleClick={() => router.push('https://dev.to/wealize')}
+              handleClick={() => window.open(
+                'https://dev.to/wealize', '_blank')}
             >
               <DevtoIcon />
             </ButtonRounded>

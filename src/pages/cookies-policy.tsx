@@ -126,10 +126,16 @@ const CookiesPolicy = (): JSX.Element => {
                   i18nKey="cookies-policy:question-1.paragraph-7"
                   components={[(<b key={0}></b>)]}
                   />}
+                </li>
+                <li>
+                {<Trans
+                  i18nKey="cookies-policy:question-1.paragraph-8"
+                  components={[(<b key={0}></b>)]}
+                  />}
               </li>
             </ul>
             <p>
-              {t('question-1.paragraph-8')}
+              {t('question-1.paragraph-9')}
             </p>
           </QuestionDescription>
         </Question>
