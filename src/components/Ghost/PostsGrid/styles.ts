@@ -38,10 +38,6 @@ export const ContainerPosts = styled.div`
     padding: ${singlePx()} 0;
   `};
 
-   ${media.greaterThan('lg')`
-    grid-template-columns: repeat(3, 1fr);
-  `};
-
   ${media.greaterThan('xl')`
     grid-template-columns: repeat(4, 1fr);
   `};

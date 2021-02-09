@@ -34,11 +34,15 @@ export const Container = styled.div`
 
   > #section-back-button {
     margin-bottom: ${singleAndHalfPx()};
-    min-width: 12rem;
+    width: 12rem;
 
     ${media.greaterThan('md')`
-      min-width: 15rem;
+      width: 15rem;
     `};
+  }
+
+  & .infinite-scroll-component__outerdiv {
+    width: 100%;
   }
 `
 

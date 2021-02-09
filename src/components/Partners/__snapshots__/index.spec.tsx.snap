@@ -4,7 +4,7 @@ exports[`<Partners /> should render 1`] = `
 <Memo(Partners)>
   <styles__Container>
     <div
-      className="styles__Container-st6sme-0 iLjXsv"
+      className="styles__Container-st6sme-0 bVcCUB"
     >
       <styles__Content>
         <div
@@ -21,7 +21,7 @@ exports[`<Partners /> should render 1`] = `
       </styles__Content>
       <styles__ContainerPartners>
         <div
-          className="styles__ContainerPartners-st6sme-3 fgbPJj"
+          className="styles__ContainerPartners-st6sme-3 hMpZMn"
         >
           <styles__Partner>
             <div

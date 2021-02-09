@@ -4,7 +4,7 @@ exports[`<ThingsWeAreGoodAt /> should render 1`] = `
 <Memo(ThingsWeAreGoodAt)>
   <styles__BgContainer>
     <div
-      className="styles__BgContainer-sc-3xtj1d-0 cPYCuj"
+      className="styles__BgContainer-sc-3xtj1d-0 lapart"
     >
       <styles__Container>
         <div

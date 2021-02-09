@@ -17,14 +17,13 @@ export const Container = styled.a<{isFeatured: boolean}>`
   border-radius: ${DEFAULT_RADIUS}px;
   border: 2px solid ${({ isFeatured }) => (isFeatured ? WHITE_COLOR : ACCENT_COLOR)};
   min-height: 15rem;
-  transition: all 0.5s;
-  transform: scale(1);
+
+  ${media.greaterThan('md')`
+    min-height: 17rem;
+  `};
 
   ${media.greaterThan('lg')`
-    &:hover {
-      transform: scale(1.07);
-    }
-    min-height: 20rem;
+    min-height: 18rem;
   `};
 `
 
@@ -34,8 +33,12 @@ export const Content = styled.article`
   justify-content: space-between;
   min-height: 15rem;
 
+  ${media.greaterThan('md')`
+    min-height: 17rem;
+  `};
+
   ${media.greaterThan('lg')`
-    min-height: 20rem;
+    min-height: 18rem;
   `};
 `
 

@@ -63,11 +63,18 @@ export const StartedDescription = styled.div`
   `};
 
   ${media.greaterThan('lg')`
-    font-size: 3.5rem;
+    font-size: 3rem;
+    width: 85%;
   `};
 
   ${media.greaterThan('xl')`
-    font-size: 3.7rem;
+  font-size: 3.2rem;
+    width: 85%;
+  `};
+
+  ${media.greaterThan('xxl')`
+    font-size: 3.5rem;
+    width: 80%;
   `};
 `
 
@@ -98,20 +105,21 @@ export const WAnimationContainer = styled.div`
 
   ${media.greaterThan('lg')`
     width: 50%;
+    bottom: -15%;
   `};
 
   ${media.greaterThan('xl')`
     width: 50%;
-    bottom: -20%;
+    bottom: -35%;
   `};
 
   ${media.greaterThan('xxl')`
-    bottom: -15%;
-    width: 45%;
+    bottom: -25%;
+    width: 40%;
   `};
 
   ${media.greaterThan('xxxl')`
-    bottom: -25%;
-    width: 35%;
+    bottom: -30%;
+    width: 30%;
   `};
 `

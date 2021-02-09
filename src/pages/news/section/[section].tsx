@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { GetStaticPaths } from 'next'
+import { PostOrPage } from '@tryghost/content-api'
+import InfiniteScroll from 'react-infinite-scroll-component'
+import { union } from 'lodash'
 
 import GhostPostResponse from '../../../interfaces/Ghost/GhostPostResponse'
 import { LayoutOptions } from '../../../interfaces/Page'
 import GhostService from '../../../services/GhostService'
 import { Container, PageHeader, PageTitle } from '../../../styles/pages/news-room'
 import GhostPostsGrid from '../../../components/Ghost/PostsGrid'
-import GhostPostsPaginator from '../../../components/Ghost/PostsPaginator'
 import { useSWR } from '../../../hooks/useSWR'
 import { SMALL } from '../../../components/Buttons/Rounded/sizes'
 import { ACCENT_COLOR, WHITE_COLOR } from '../../../theme/color'
@@ -20,30 +22,43 @@ import { CLIENT_STORY_SECTION, NEWS_ARTICLES_SECTION } from '../../../constants/
 const NewsRoomSectionCover = (): JSX.Element => {
   const router = useRouter()
   const {
-    query: { section, page = '1' }
+    query: { section }
   } = router
-
-
+  const [postsToShow, setPostsToShow] = useState<PostOrPage[]>([])
+  const [page, setPage] = useState('1')
+  const [hasMore, setHasMore] = useState(true)
+  const [pageTitle, setPageTitle] = useState('')
   const getTagsForFilter = (): string[] => {
     switch (section) {
       case CLIENT_STORY_SECTION:
+        setPageTitle('Client stories')
         return [CLIENT_STORY_TAG_SLUG]
       case NEWS_ARTICLES_SECTION:
+        setPageTitle('Articles & News')
         return [ARTICLE_TAG_SLUG, NEWS_TAG_SLUG]
       default:
         return []
     }
   }
 
-  const getPageTitle = () => {
-    const sectionString:string = Array.isArray(section) ? section[0] : section
-    return sectionString.replace('-', ' ')
-  }
-
   const { data } = useSWR<GhostPostResponse>(`news-room-section-cover-${page}-${section}`, () => GhostService.getPostsByTagsAndPaginationPage(
-    Array.isArray(page) ? page[0] : page,
+    page,
     getTagsForFilter()
   ))
+
+  useEffect(() => {
+    if (data?.posts) {
+      setPostsToShow(postsToShow => union(postsToShow, data.posts))
+    }
+  }, [data])
+
+  const fetchNextPage = () => {
+    if (data?.meta?.pagination?.next) {
+      setPage(data.meta.pagination.next.toString())
+    } else {
+      setHasMore(false)
+    }
+  }
 
   return (
     <Container>
@@ -60,10 +75,24 @@ const NewsRoomSectionCover = (): JSX.Element => {
         <span>Back to news</span>
       </ButtonRounded>
       <PageHeader>
-        <PageTitle className="page-section-title">{ getPageTitle() }</PageTitle>
+        <PageTitle className="page-section-title">{ pageTitle }</PageTitle>
       </PageHeader>
-      <GhostPostsGrid posts={data?.posts} />
-      <GhostPostsPaginator metaPagination={ data?.meta?.pagination }/>
+      <InfiniteScroll
+        dataLength={postsToShow.length}
+        next={fetchNextPage}
+        hasMore={hasMore}
+        loader={
+          <span style={{ width: '100%', padding: '1rem 0', color: ACCENT_COLOR }}>
+            Loading...
+          </span>}
+        scrollThreshold={0.4}
+        style={{
+          width: '100%',
+          overflow: 'hidden'
+        }}
+      >
+        {<GhostPostsGrid posts={postsToShow} />}
+      </InfiniteScroll>
     </Container>
   )
 }
