@@ -1,23 +1,25 @@
 import React from 'react'
-import { useRouter } from 'next/router'
-import { PostOrPage } from '@tryghost/content-api'
 
 import GhostPostResponse from '../../interfaces/Ghost/GhostPostResponse'
 import { LayoutOptions } from '../../interfaces/Page'
 import GhostService from '../../services/GhostService'
-import { Container, PageHeader, PageTitle, PageDescription, PostsContainer } from '../../styles/pages/NewsRoom'
-import GhostPostCard from '../../components/Ghost/PostCard'
-import GhostPostsPaginator from '../../components/Ghost/PostsPaginator'
+import { Container, PageHeader, PageTitle, PageDescription } from '../../styles/pages/news-room'
+import GhostPostsGrid from '../../components/Ghost/PostsGrid'
 import { useSWR } from '../../hooks/useSWR'
+import { ARTICLE_TAG_SLUG, CLIENT_STORY_TAG_SLUG, NEWS_TAG_SLUG } from '../../constants/Ghost/sectionsTags'
 
 
 const NewsRoom = (): JSX.Element => {
-  const router = useRouter()
-  const {
-    query: { page = '1' }
-  } = router
+  const { data: articlesNewsData } = useSWR<GhostPostResponse>('news-room-articles-news', () =>
+    GhostService.getPostsByTagsAndPaginationPage(
+      '1',
+      [NEWS_TAG_SLUG, ARTICLE_TAG_SLUG]
+    ))
 
-  const { data } = useSWR<GhostPostResponse>(`news-room-${page}`, () => GhostService.getPostsByPaginationPage(Array.isArray(page) ? page[0] : page))
+  const { data: clientStoriesData } = useSWR<GhostPostResponse>('news-room-client-stories', () => GhostService.getPostsByTagsAndPaginationPage(
+    '1',
+    [CLIENT_STORY_TAG_SLUG]
+  ))
 
   return (
     <Container>
@@ -25,12 +27,20 @@ const NewsRoom = (): JSX.Element => {
         <PageTitle>Newsroom</PageTitle>
         <PageDescription>If you would like to know more about these topics and solutions, please get in touch</PageDescription>
       </PageHeader>
-      <PostsContainer>
-        {data?.posts?.map((post: PostOrPage, index: number) => (
-            <GhostPostCard key={index} post={post} />
-        ))}
-      </PostsContainer>
-      <GhostPostsPaginator metaPagination={data?.meta?.pagination} />
+      <GhostPostsGrid
+        posts={articlesNewsData?.posts}
+        sectionTitle="News & Articles"
+        showMoreContentButton={true}
+        maxPaginationPages={articlesNewsData?.meta?.pagination?.pages}
+        coverSectionPageName="news/section/news-articles"
+      />
+      <GhostPostsGrid
+        posts={clientStoriesData?.posts}
+        sectionTitle="Client Stories"
+        showMoreContentButton={true}
+        maxPaginationPages={clientStoriesData?.meta?.pagination?.pages}
+        coverSectionPageName="news/section/client-stories"
+      />
     </Container>
   )
 }
