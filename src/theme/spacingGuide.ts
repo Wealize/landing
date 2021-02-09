@@ -5,5 +5,5 @@ export const CONTAINER_SPACING = {
   TABLET: `padding: ${doublePx()};`,
   SMALL_DESKTOP: `padding: ${triplePx()} ${doublePx()};`,
   DESKTOP: `padding: ${triplePx()};`,
-  WIDE: `padding: ${quadruple() * 1.5}px ${quadruple() * 3}px;`
+  WIDE: `padding: ${quadruple()}px ${quadruple() * 3}px;`
 }

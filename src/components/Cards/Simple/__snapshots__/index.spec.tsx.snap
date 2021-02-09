@@ -6,7 +6,7 @@ exports[`<SimpleCard /> wrapper: should render 1`] = `
     className="simple-card"
   >
     <div
-      className="styles__Container-sc-58pc36-0 cvYCcG simple-card"
+      className="styles__Container-sc-58pc36-0 bBVPlk simple-card"
     >
       <styles__Text>
         <h3

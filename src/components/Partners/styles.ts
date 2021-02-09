@@ -72,11 +72,11 @@ export const ContainerPartners = styled.div`
   flex-wrap: wrap;
 
   ${media.greaterThan('xl')`
-    padding: ${singlePx()} 0;
+    padding-top: ${singlePx()};
   `};
 
   ${media.greaterThan('xl')`
-    padding: ${triplePx()} 0;
+    padding-top: ${triplePx()};
   `};
 `
 

@@ -29,9 +29,10 @@ class GhostService {
     return await ApiClient.get(url)
   }
 
-  public static async getPostsByTagsAndPaginationPage (page: string, tags: string[]): Promise<GhostPostResponse> {
+  public static async getPostsByTagsAndPaginationPage (
+    page: string, tags: string[], pageSize:number = PAGE_SIZE): Promise<GhostPostResponse> {
     const pageQuery = `?page=${page}`
-    const limitQuery = `&limit=${PAGE_SIZE}`
+    const limitQuery = `&limit=${pageSize}`
     const includeQuery = '&include=tags'
     const filterQuery = tags?.length ? `&filter=tags:[${tags.join()}]` : ''
     const url = `${CONTENT_API_BASE_URL}posts/${pageQuery}${limitQuery}${includeQuery}${filterQuery}&key=${process.env.GHOST_CONTENT_API_KEY}`
