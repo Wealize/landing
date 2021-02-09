@@ -24,8 +24,6 @@ const GhostPostsGrid = (props: GhostPostsGridProps) => {
     coverSectionPageName
   } = props
 
-  console.log(posts)
-
   return (
     <Container>
       {

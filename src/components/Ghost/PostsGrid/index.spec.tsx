@@ -117,7 +117,6 @@ describe('<GhostPostsGrid />', () => {
   }
   const wrapperNewsListMode = mount(<GhostPostsGrid {...postsGridNewsListMode} />)
   it('wrapperNewsListMode: should render content correctly', () => {
-    console.log(wrapperNewsListMode.debug())
     expect(wrapperNewsListMode.find('article').length).toEqual(2)
     expect(wrapperNewsListMode.find('h3').text()).toEqual(postsGridNewsListMode.sectionTitle)
     expect(wrapperNewsListMode.find('a.show-more-link').length).toEqual(1)
