@@ -19,10 +19,12 @@ const NewsRoomSectionCover = (): JSX.Element => {
   const {
     query: { section, page = '1' }
   } = router
+  const CLIENT_STORY_SECTION = 'client-stories'
+  const NEWS_ARTICLES_SECTION = 'news-articles'
 
   const getTagsForFilter = (): string[] => {
-    if (section === 'client-stories') return [CLIENT_STORY_TAG_SLUG]
-    if (section === 'news-articles') return [ARTICLE_TAG_SLUG, NEWS_TAG_SLUG]
+    if (section === CLIENT_STORY_SECTION) return [CLIENT_STORY_TAG_SLUG]
+    if (section === NEWS_ARTICLES_SECTION) return [ARTICLE_TAG_SLUG, NEWS_TAG_SLUG]
 
     return []
   }
