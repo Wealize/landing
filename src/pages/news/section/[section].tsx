@@ -81,11 +81,8 @@ const NewsRoomSectionCover = (): JSX.Element => {
         dataLength={postsToShow.length}
         next={fetchNextPage}
         hasMore={hasMore}
-        loader={
-          <span style={{ width: '100%', padding: '1rem 0', color: ACCENT_COLOR }}>
-            Loading...
-          </span>}
-        scrollThreshold={0.4}
+        loader={null}
+        scrollThreshold={0.3}
         style={{
           width: '100%',
           overflow: 'hidden'
