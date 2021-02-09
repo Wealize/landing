@@ -1,0 +1,300 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GhostPostsGrid /> wrapper: should render 1`] = `
+<Memo(GhostPostsGrid)
+  posts={
+    Array [
+      Object {
+        "canonical_url": null,
+        "codeinjection_foot": null,
+        "codeinjection_head": null,
+        "comment_id": "6017df3f6b0d7a001c15cc7c",
+        "created_at": "2021-02-01T11:00:15.000+00:00",
+        "custom_excerpt": "Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.",
+        "custom_template": null,
+        "excerpt": "Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.",
+        "feature_image": "https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png",
+        "featured": false,
+        "html": "<p>test html</p>",
+        "id": "6017df3f6b0d7a001c15cc7c",
+        "meta_description": null,
+        "meta_title": null,
+        "og_description": null,
+        "og_image": null,
+        "og_title": null,
+        "published_at": "2021-02-01T11:00:20.000+00:00",
+        "reading_time": 3,
+        "slug": "the-editor",
+        "tags": Array [
+          Object {
+            "description": null,
+            "feature_image": null,
+            "id": "602112e0638f28001c9994e3",
+            "meta_description": null,
+            "meta_title": null,
+            "name": "Client Story",
+            "slug": "client-story",
+            "url": "https://wlz-blog.herokuapp.com/tag/client-story/",
+            "visibility": "public",
+          },
+        ],
+        "title": "Writing posts with Ghost ✍️",
+        "twitter_description": null,
+        "twitter_image": null,
+        "twitter_title": null,
+        "updated_at": "2021-02-01T11:00:15.000+00:00",
+        "url": "https://wlz-blog.herokuapp.com/the-editor/",
+        "uuid": "b4283683-b51e-4c67-ba42-66de093b1e05",
+      },
+      Object {
+        "canonical_url": null,
+        "codeinjection_foot": null,
+        "codeinjection_head": null,
+        "comment_id": "6017df3f6b0d7a001c15cc7c",
+        "created_at": "2021-02-01T11:00:15.000+00:00",
+        "custom_excerpt": "Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.",
+        "custom_template": null,
+        "excerpt": "Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.",
+        "feature_image": "https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png",
+        "featured": false,
+        "html": "<p>test html</p>",
+        "id": "6017df3f6b0d7a001c15cc8c",
+        "meta_description": null,
+        "meta_title": null,
+        "og_description": null,
+        "og_image": null,
+        "og_title": null,
+        "published_at": "2021-02-01T11:00:20.000+00:00",
+        "reading_time": 3,
+        "slug": "the-editor",
+        "tags": Array [
+          Object {
+            "description": null,
+            "feature_image": null,
+            "id": "602112e0638f28001c9994e3",
+            "meta_description": null,
+            "meta_title": null,
+            "name": "Client Story",
+            "slug": "client-story",
+            "url": "https://wlz-blog.herokuapp.com/tag/client-story/",
+            "visibility": "public",
+          },
+        ],
+        "title": "Writing posts with Ghost ✍️ 2",
+        "twitter_description": null,
+        "twitter_image": null,
+        "twitter_title": null,
+        "updated_at": "2021-02-01T11:00:15.000+00:00",
+        "url": "https://wlz-blog.herokuapp.com/the-editor/",
+        "uuid": "b4283683-b51e-4c67-ba42-66de093b1e05",
+      },
+    ]
+  }
+  showMoreContentButton={false}
+>
+  <styles__Container>
+    <section
+      className="styles__Container-sc-19zaoik-0 dtOHAm"
+    >
+      <styles__ContainerPosts>
+        <div
+          className="styles__ContainerPosts-sc-19zaoik-2 kxlDoB"
+        >
+          <Memo(GhostPostCard)
+            key="0"
+            post={
+              Object {
+                "canonical_url": null,
+                "codeinjection_foot": null,
+                "codeinjection_head": null,
+                "comment_id": "6017df3f6b0d7a001c15cc7c",
+                "created_at": "2021-02-01T11:00:15.000+00:00",
+                "custom_excerpt": "Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.",
+                "custom_template": null,
+                "excerpt": "Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.",
+                "feature_image": "https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png",
+                "featured": false,
+                "html": "<p>test html</p>",
+                "id": "6017df3f6b0d7a001c15cc7c",
+                "meta_description": null,
+                "meta_title": null,
+                "og_description": null,
+                "og_image": null,
+                "og_title": null,
+                "published_at": "2021-02-01T11:00:20.000+00:00",
+                "reading_time": 3,
+                "slug": "the-editor",
+                "tags": Array [
+                  Object {
+                    "description": null,
+                    "feature_image": null,
+                    "id": "602112e0638f28001c9994e3",
+                    "meta_description": null,
+                    "meta_title": null,
+                    "name": "Client Story",
+                    "slug": "client-story",
+                    "url": "https://wlz-blog.herokuapp.com/tag/client-story/",
+                    "visibility": "public",
+                  },
+                ],
+                "title": "Writing posts with Ghost ✍️",
+                "twitter_description": null,
+                "twitter_image": null,
+                "twitter_title": null,
+                "updated_at": "2021-02-01T11:00:15.000+00:00",
+                "url": "https://wlz-blog.herokuapp.com/the-editor/",
+                "uuid": "b4283683-b51e-4c67-ba42-66de093b1e05",
+              }
+            }
+          >
+            <Link
+              as="/news/the-editor"
+              href="/news/[slug]"
+              passHref={true}
+            >
+              <styles__Container
+                className="post-card featured"
+                href="/news/the-editor"
+                isFeatured={false}
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+              >
+                <a
+                  className="styles__Container-pmxezz-0 gvtcpd post-card featured"
+                  href="/news/the-editor"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  <styles__Content>
+                    <article
+                      className="styles__Content-pmxezz-1 dkRUOv"
+                    >
+                      <styles__CardHeadline>
+                        <h4
+                          className="styles__CardHeadline-pmxezz-2 gxmtcx"
+                        >
+                          Writing posts with Ghost ✍️
+                        </h4>
+                      </styles__CardHeadline>
+                      <styles__CardBody>
+                        <h5
+                          className="styles__CardBody-pmxezz-3 fYEURh"
+                        >
+                          Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.
+                        </h5>
+                      </styles__CardBody>
+                      <styles__CardPublishedAt>
+                        <span
+                          className="styles__CardPublishedAt-pmxezz-4 dJnabr"
+                        >
+                          2021-02-01T11:00:20.000+00:00
+                        </span>
+                      </styles__CardPublishedAt>
+                    </article>
+                  </styles__Content>
+                </a>
+              </styles__Container>
+            </Link>
+          </Memo(GhostPostCard)>
+          <Memo(GhostPostCard)
+            key="1"
+            post={
+              Object {
+                "canonical_url": null,
+                "codeinjection_foot": null,
+                "codeinjection_head": null,
+                "comment_id": "6017df3f6b0d7a001c15cc7c",
+                "created_at": "2021-02-01T11:00:15.000+00:00",
+                "custom_excerpt": "Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.",
+                "custom_template": null,
+                "excerpt": "Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.",
+                "feature_image": "https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png",
+                "featured": false,
+                "html": "<p>test html</p>",
+                "id": "6017df3f6b0d7a001c15cc8c",
+                "meta_description": null,
+                "meta_title": null,
+                "og_description": null,
+                "og_image": null,
+                "og_title": null,
+                "published_at": "2021-02-01T11:00:20.000+00:00",
+                "reading_time": 3,
+                "slug": "the-editor",
+                "tags": Array [
+                  Object {
+                    "description": null,
+                    "feature_image": null,
+                    "id": "602112e0638f28001c9994e3",
+                    "meta_description": null,
+                    "meta_title": null,
+                    "name": "Client Story",
+                    "slug": "client-story",
+                    "url": "https://wlz-blog.herokuapp.com/tag/client-story/",
+                    "visibility": "public",
+                  },
+                ],
+                "title": "Writing posts with Ghost ✍️ 2",
+                "twitter_description": null,
+                "twitter_image": null,
+                "twitter_title": null,
+                "updated_at": "2021-02-01T11:00:15.000+00:00",
+                "url": "https://wlz-blog.herokuapp.com/the-editor/",
+                "uuid": "b4283683-b51e-4c67-ba42-66de093b1e05",
+              }
+            }
+          >
+            <Link
+              as="/news/the-editor"
+              href="/news/[slug]"
+              passHref={true}
+            >
+              <styles__Container
+                className="post-card featured"
+                href="/news/the-editor"
+                isFeatured={false}
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+              >
+                <a
+                  className="styles__Container-pmxezz-0 gvtcpd post-card featured"
+                  href="/news/the-editor"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  <styles__Content>
+                    <article
+                      className="styles__Content-pmxezz-1 dkRUOv"
+                    >
+                      <styles__CardHeadline>
+                        <h4
+                          className="styles__CardHeadline-pmxezz-2 gxmtcx"
+                        >
+                          Writing posts with Ghost ✍️ 2
+                        </h4>
+                      </styles__CardHeadline>
+                      <styles__CardBody>
+                        <h5
+                          className="styles__CardBody-pmxezz-3 fYEURh"
+                        >
+                          Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.
+                        </h5>
+                      </styles__CardBody>
+                      <styles__CardPublishedAt>
+                        <span
+                          className="styles__CardPublishedAt-pmxezz-4 dJnabr"
+                        >
+                          2021-02-01T11:00:20.000+00:00
+                        </span>
+                      </styles__CardPublishedAt>
+                    </article>
+                  </styles__Content>
+                </a>
+              </styles__Container>
+            </Link>
+          </Memo(GhostPostCard)>
+        </div>
+      </styles__ContainerPosts>
+    </section>
+  </styles__Container>
+</Memo(GhostPostsGrid)>
+`;

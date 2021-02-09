@@ -14,7 +14,7 @@ const GhostPostCard = (props: GhostPostCardProps) => {
   } = props
 
   return (
-    <Link href="/news-room/[slug]" as={`/news-room/${post.slug}`} passHref>
+    <Link href="/news/[slug]" as={`/news/${post.slug}`} passHref>
       <Container className={`${post.featured ? 'post-card' : 'post-card featured'}`} isFeatured={post.featured}>
         <Content>
           <CardHeadline>{post.title}</CardHeadline>

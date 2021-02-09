@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-import { WHITE_COLOR, GRAY_300_COLOR } from '../../theme/color'
-import { media } from '../../theme/media'
-import { singlePx, singleAndHalfPx, doublePx } from '../../theme/space'
-import { CONTAINER_SPACING } from '../../theme/spacingGuide'
+import { WHITE_COLOR, GRAY_300_COLOR } from '../../../theme/color'
+import { media } from '../../../theme/media'
+import { singlePx, singleAndHalfPx } from '../../../theme/space'
+import { CONTAINER_SPACING } from '../../../theme/spacingGuide'
 
 
 export const Container = styled.div`
@@ -31,16 +31,23 @@ export const Container = styled.div`
   ${media.greaterThan('xxl')`
     ${CONTAINER_SPACING.WIDE};
   `};
+
+  > #section-back-button {
+    margin-bottom: ${singleAndHalfPx()};
+    min-width: 12rem;
+
+    ${media.greaterThan('md')`
+      min-width: 15rem;
+    `};
+  }
 `
 
 export const PageHeader = styled.div`
   font-size: 1.5rem;
   font-weight: bold;
-  padding-bottom: ${singlePx()};
 
   ${media.greaterThan('md')`
     width: 70%;
-    padding-bottom: ${doublePx()};
   `};
 
   ${media.greaterThan('lg')`
@@ -49,7 +56,7 @@ export const PageHeader = styled.div`
 `
 
 export const PageTitle = styled.h2`
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 400;
   padding-bottom: ${singlePx()};
 
@@ -60,6 +67,11 @@ export const PageTitle = styled.h2`
   ${media.greaterThan('xl')`
     font-size: 2.5rem;
   `};
+
+  &.page-section-title {
+    padding-bottom: 0;
+    text-transform: capitalize;
+  }
 `
 
 export const PageDescription = styled.h3`
@@ -74,32 +86,5 @@ export const PageDescription = styled.h3`
 
   ${media.greaterThan('xl')`
     font-size: 1.5rem;
-  `};
-`
-
-export const PostsContainer = styled.section`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  & .post-card {
-    margin-top: ${singleAndHalfPx()};
-  }
-
-  ${media.greaterThan('md')`
-    display: block;
-    columns: 2;
-    column-gap: 2rem;
-    padding: ${singlePx()} 0;
-  `};
-
-   ${media.greaterThan('lg')`
-    columns: 3;
-  `};
-
-  ${media.greaterThan('xl')`
-    columns: 4;
   `};
 `

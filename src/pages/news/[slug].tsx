@@ -6,7 +6,7 @@ import { PostOrPage } from '@tryghost/content-api'
 
 import { LayoutOptions } from '../../interfaces/Page'
 import GhostService from '../../services/GhostService'
-import { Container, PostHeadline, PostBody } from '../../styles/pages/news-room/post'
+import { Container, PostHeadline, PostBody } from '../../styles/pages/news-room/postDetail'
 
 
 type PostPageProps = {

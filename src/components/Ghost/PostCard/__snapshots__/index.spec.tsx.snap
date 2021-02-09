@@ -39,26 +39,26 @@ exports[`<GhostPostCard /> wrapper: should render 1`] = `
   }
 >
   <Link
-    as="/news-room/the-editor"
-    href="/news-room/[slug]"
+    as="/news/the-editor"
+    href="/news/[slug]"
     passHref={true}
   >
     <styles__Container
       className="post-card featured"
-      href="/news-room/the-editor"
+      href="/news/the-editor"
       isFeatured={false}
       onClick={[Function]}
       onMouseEnter={[Function]}
     >
       <a
-        className="styles__Container-pmxezz-0 fBBexb post-card featured"
-        href="/news-room/the-editor"
+        className="styles__Container-pmxezz-0 gvtcpd post-card featured"
+        href="/news/the-editor"
         onClick={[Function]}
         onMouseEnter={[Function]}
       >
         <styles__Content>
           <article
-            className="styles__Content-pmxezz-1 hXBHEs"
+            className="styles__Content-pmxezz-1 dkRUOv"
           >
             <styles__CardHeadline>
               <h4
