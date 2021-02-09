@@ -5,7 +5,7 @@ import GhostPostResponse from '../interfaces/Ghost/GhostPostResponse'
 import ApiClient from './ApiClient'
 
 const CONTENT_API_BASE_URL = `${process.env.GHOST_API_BASE_URL}/ghost/api/v3/content/`
-const PAGE_SIZE = 3
+const PAGE_SIZE = 4
 
 const formatPostsDate = (posts: PostOrPage[]): PostOrPage[] => {
   const options: Intl.DateTimeFormatOptions = {
@@ -29,11 +29,16 @@ class GhostService {
     return await ApiClient.get(url)
   }
 
-  public static async getPostsByPaginationPage (page: string): Promise<GhostPostResponse> {
-    const url = `${CONTENT_API_BASE_URL}posts/?page=${page}&limit=${PAGE_SIZE}&key=${process.env.GHOST_CONTENT_API_KEY}`
+  public static async getPostsByTagsAndPaginationPage (page: string, tags: string[]): Promise<GhostPostResponse> {
+    const pageQuery = `?page=${page}`
+    const limitQuery = `&limit=${PAGE_SIZE}`
+    const includeQuery = '&include=tags'
+    const filterQuery = tags?.length ? `&filter=tags:[${tags.join()}]` : ''
+    const url = `${CONTENT_API_BASE_URL}posts/${pageQuery}${limitQuery}${includeQuery}${filterQuery}&key=${process.env.GHOST_CONTENT_API_KEY}`
+
     const { posts, meta } = await ApiClient.get(url)
 
-    if (!posts.length) return { posts: null, meta: null }
+    if (!posts.length || (Array.isArray(tags) && !tags?.length)) return { posts: null, meta: null }
 
     const postsDateFormatted: PostOrPage[] = formatPostsDate(posts)
 

@@ -3,7 +3,7 @@
 exports[`<GhostPostsPaginator /> wrapper: should render 1`] = `
 <styles__Container>
   <Link
-    href="/news?page=1"
+    href="client-stories?page=1"
     key="0"
     passHref={true}
   >
@@ -14,7 +14,7 @@ exports[`<GhostPostsPaginator /> wrapper: should render 1`] = `
     </styles__PaginationPage>
   </Link>
   <Link
-    href="/news?page=2"
+    href="client-stories?page=2"
     key="1"
     passHref={true}
   >
@@ -25,7 +25,7 @@ exports[`<GhostPostsPaginator /> wrapper: should render 1`] = `
     </styles__PaginationPage>
   </Link>
   <Link
-    href="/news?page=3"
+    href="client-stories?page=3"
     key="2"
     passHref={true}
   >

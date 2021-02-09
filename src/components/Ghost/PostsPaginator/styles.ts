@@ -25,7 +25,6 @@ export const PaginationPage = styled.a`
   min-width: 4rem;
   color: ${GRAY_300_COLOR};
   text-decoration: none;
-  transition: all 0.5s;
 
   &.current{
     color: ${WHITE_COLOR};
