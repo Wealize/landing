@@ -1,5 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router'
+import { GetStaticPaths } from 'next'
 
 import GhostPostResponse from '../../../interfaces/Ghost/GhostPostResponse'
 import { LayoutOptions } from '../../../interfaces/Page'
@@ -13,20 +14,25 @@ import { ACCENT_COLOR, WHITE_COLOR } from '../../../theme/color'
 import ButtonRounded from '../../../components/Buttons/Rounded'
 import { NEWS_ROOM_HREF } from '../../../constants/hrefs'
 import { ARTICLE_TAG_SLUG, CLIENT_STORY_TAG_SLUG, NEWS_TAG_SLUG } from '../../../constants/Ghost/sectionsTags'
+import { CLIENT_STORY_SECTION, NEWS_ARTICLES_SECTION } from '../../../constants/Ghost/hrefs'
+
 
 const NewsRoomSectionCover = (): JSX.Element => {
   const router = useRouter()
   const {
     query: { section, page = '1' }
   } = router
-  const CLIENT_STORY_SECTION = 'client-stories'
-  const NEWS_ARTICLES_SECTION = 'news-articles'
+
 
   const getTagsForFilter = (): string[] => {
-    if (section === CLIENT_STORY_SECTION) return [CLIENT_STORY_TAG_SLUG]
-    if (section === NEWS_ARTICLES_SECTION) return [ARTICLE_TAG_SLUG, NEWS_TAG_SLUG]
-
-    return []
+    switch (section) {
+      case CLIENT_STORY_SECTION:
+        return [CLIENT_STORY_TAG_SLUG]
+      case NEWS_ARTICLES_SECTION:
+        return [ARTICLE_TAG_SLUG, NEWS_TAG_SLUG]
+      default:
+        return []
+    }
   }
 
   const getPageTitle = () => {
@@ -62,17 +68,7 @@ const NewsRoomSectionCover = (): JSX.Element => {
   )
 }
 
-type NextGetStaticPath = {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [key: string]: any
-}
-
-type NextGetStaticPathsCtx = {
-  paths: NextGetStaticPath[];
-  fallback: boolean
-};
-
-export const getStaticPaths = (): NextGetStaticPathsCtx => {
+export const getStaticPaths:GetStaticPaths = async () => {
   return {
     paths: [],
     fallback: true

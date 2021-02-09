@@ -160,7 +160,7 @@ exports[`<GhostPostsGrid /> wrapper: should render 1`] = `
                 onMouseEnter={[Function]}
               >
                 <a
-                  className="styles__Container-pmxezz-0 ljtlPa post-card featured"
+                  className="styles__Container-pmxezz-0 kWJffg post-card featured"
                   href="/news/the-editor"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
@@ -256,7 +256,7 @@ exports[`<GhostPostsGrid /> wrapper: should render 1`] = `
                 onMouseEnter={[Function]}
               >
                 <a
-                  className="styles__Container-pmxezz-0 ljtlPa post-card featured"
+                  className="styles__Container-pmxezz-0 kWJffg post-card featured"
                   href="/news/the-editor"
                   onClick={[Function]}
                   onMouseEnter={[Function]}

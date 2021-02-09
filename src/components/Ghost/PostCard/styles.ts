@@ -20,17 +20,12 @@ export const Container = styled.a<{isFeatured: boolean}>`
   transition: all 0.5s;
   transform: scale(1);
 
-  ${media.greaterThan('md')`
-  `};
-
-
   ${media.greaterThan('lg')`
     &:hover {
       transform: scale(1.07);
     }
     min-height: 20rem;
   `};
-
 `
 
 export const Content = styled.article`

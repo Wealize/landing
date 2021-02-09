@@ -1,5 +1,4 @@
-import { ParsedUrlQuery } from 'querystring'
-
+import { GetStaticPaths, GetStaticPropsContext } from 'next'
 import parse from 'html-react-parser'
 import React from 'react'
 import { PostOrPage } from '@tryghost/content-api'
@@ -26,30 +25,15 @@ const PostPage = (props: PostPageProps): JSX.Element => {
   )
 }
 
-type NextGetStaticPath = {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [key: string]: any
-}
-
-type NextGetStaticPathsCtx = {
-  paths: NextGetStaticPath[];
-  fallback: boolean
-};
-
-export const getStaticPaths = (): NextGetStaticPathsCtx => {
+export const getStaticPaths:GetStaticPaths = async () => {
   return {
     paths: [],
     fallback: true
   }
 }
 
-type NextGetStaticPropsCtx = {
-  params?: ParsedUrlQuery;
-  preview?: boolean;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  previewData?: any;
-};
-export const getStaticProps = async ({ params }: NextGetStaticPropsCtx): Promise<{
+
+export const getStaticProps = async ({ params }: GetStaticPropsContext): Promise<{
   props: { layoutOptions: LayoutOptions, post: PostOrPage }
 }> => {
   const layoutOptions: LayoutOptions = {
