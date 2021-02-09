@@ -41,9 +41,11 @@ const NewsRoomSectionCover = (): JSX.Element => {
     }
   }
 
+  const PAGE_SIZE = 8
   const { data } = useSWR<GhostPostResponse>(`news-room-section-cover-${page}-${section}`, () => GhostService.getPostsByTagsAndPaginationPage(
     page,
-    getTagsForFilter()
+    getTagsForFilter(),
+    PAGE_SIZE
   ))
 
   useEffect(() => {
