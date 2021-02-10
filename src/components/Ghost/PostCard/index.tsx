@@ -5,7 +5,7 @@ import Image from 'next/image'
 import ReactPlaceholder from 'react-placeholder'
 
 import { ACCENT_COLOR, WHITE_COLOR } from '../../../theme/color'
-import { isClientStory, isExternalContent, getFirstHref } from '../../../helpers/Ghost/post.helper'
+import { isClientStory, isExternalContent, getFirstHref } from '../../../helpers/Ghost/post'
 
 import {
   Anchor,
@@ -30,9 +30,11 @@ const GhostPostCard = (props: GhostPostCardProps) => {
     textColor = ACCENT_COLOR
   } = props
 
+  const isValidExternalContent = () => isExternalContent(post) && getFirstHref(post)
+
   return (
     <Link href={
-      isExternalContent(post) && getFirstHref(post)
+      isValidExternalContent()
         ? getFirstHref(post)
         : `/news/${post.slug}`}
       passHref
@@ -44,8 +46,8 @@ const GhostPostCard = (props: GhostPostCardProps) => {
         isFeatured={post?.featured}
         title={`postcard ${post.title}`}
         aria-label={`postcard ${post.title}`}
-        target={isExternalContent(post) && getFirstHref(post) ? '_blank' : '_self'}
-        {...(isExternalContent(post) && getFirstHref(post) ? { rel: 'noreferrer' } : {})}
+        target={isValidExternalContent() ? '_blank' : '_self'}
+        {...(isValidExternalContent() ? { rel: 'noreferrer' } : {})}
       >
         <Article>
           <Header>
@@ -59,8 +61,9 @@ const GhostPostCard = (props: GhostPostCardProps) => {
                       showLoadingAnimation={true}
                       ready={false}
                       style={{ marginRight: '0', position: 'absolute' }}
-                    >
-                    </ReactPlaceholder>
+                      // eslint-disable-next-line react/no-children-prop
+                      children={null}
+                    />
                     <Image
                       src={post.feature_image}
                       layout="fill"

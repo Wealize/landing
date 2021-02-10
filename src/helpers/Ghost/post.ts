@@ -16,7 +16,7 @@ export const isExternalContent = (post: PostOrPage):boolean => {
   return getSluggedTagsFromPost(post).includes(EXTERNAL_CONTENT_TAG_SLUG)
 }
 
-export const getFirstHref = (post: PostOrPage): string => {
+export const getFirstHref = (post: PostOrPage): string | null => {
   if (!isExternalContent(post)) return null
 
   const foundUrls = getUrls(post?.html)
