@@ -1,14 +1,14 @@
 import React from 'react'
 import { mount } from 'enzyme'
 
-import { POSTS_WITH_CLIENT_STORIES_TAGS } from '../../../__fixtures__/Ghost/posts'
+import { CLIENT_STORIES } from '../../../__fixtures__/Ghost/posts'
 
 import GhostPostsGrid from './index'
 
 
 describe('<GhostPostsGrid />', () => {
   const postsGridProps = {
-    posts: POSTS_WITH_CLIENT_STORIES_TAGS,
+    posts: CLIENT_STORIES,
     showMoreContentButton: false
   }
   const wrapper = mount(<GhostPostsGrid {...postsGridProps} />)
@@ -24,7 +24,7 @@ describe('<GhostPostsGrid />', () => {
   })
 
   const postsGridNewsListMode = {
-    posts: POSTS_WITH_CLIENT_STORIES_TAGS,
+    posts: CLIENT_STORIES,
     sectionTitle: 'Section title',
     showMoreContentButton: true,
     maxPaginationPages: 3,
@@ -37,7 +37,7 @@ describe('<GhostPostsGrid />', () => {
     expect(wrapperNewsListMode.find('a.show-more-link').length).toEqual(1)
     const GhostPostsPaginatorWithoutContentForSectionCover = {
       ...postsGridNewsListMode,
-      posts: POSTS_WITH_CLIENT_STORIES_TAGS.slice(0, 1),
+      posts: CLIENT_STORIES.slice(0, 1),
       maxPaginationPages: 1
     }
     const wrapperWithoutContentForSectionCover = mount(<GhostPostsGrid {...GhostPostsPaginatorWithoutContentForSectionCover} />)

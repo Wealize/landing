@@ -1,6 +1,6 @@
 import { PostOrPage } from '@tryghost/content-api'
 
-export const POST_WITHOUT_TAGS: PostOrPage = {
+export const WITHOUT_TAGS: PostOrPage = {
   id: '6017df3f6b0d7a001c15cc7c',
   uuid: 'b4283683-b51e-4c67-ba42-66de093b1e05',
   title: 'Writing posts with Ghost ✍️',
@@ -30,7 +30,7 @@ export const POST_WITHOUT_TAGS: PostOrPage = {
   meta_description: null
 }
 
-export const POSTS_WITH_CLIENT_STORIES_TAGS: PostOrPage[] = [
+export const CLIENT_STORIES: PostOrPage[] = [
   {
     id: '6017df3f6b0d7a001c15cc7c',
     uuid: 'b4283683-b51e-4c67-ba42-66de093b1e05',
@@ -117,7 +117,7 @@ export const POSTS_WITH_CLIENT_STORIES_TAGS: PostOrPage[] = [
   }
 ]
 
-export const CLIENT_STORY_TYPE_POST:PostOrPage = {
+export const CLIENT_STORY:PostOrPage = {
   id: '602112b7638f28001c9994dc',
   uuid: 'eaa52af4-ca2e-46b1-a471-ddde428631c3',
   title: 'Test client story post',
@@ -171,7 +171,7 @@ export const CLIENT_STORY_TYPE_POST:PostOrPage = {
   meta_description: null
 }
 
-export const NEWS_TYPE_POST:PostOrPage = {
+export const NEWS:PostOrPage = {
   id: '602112b7638f28001c9994dc',
   uuid: 'eaa52af4-ca2e-46b1-a471-ddde428631c3',
   title: 'Test client story post',
@@ -225,7 +225,7 @@ export const NEWS_TYPE_POST:PostOrPage = {
   meta_description: null
 }
 
-export const EXTERNAL_CONTENT_POST:PostOrPage = {
+export const EXTERNAL_CONTENT:PostOrPage = {
   id: '602112b7638f28001c9994dc',
   uuid: 'eaa52af4-ca2e-46b1-a471-ddde428631c3',
   title: 'Test external content post',
