@@ -59,7 +59,7 @@ export const PageHeader = styled.div`
   `};
 `
 
-export const PageTitle = styled.h2`
+export const PageTitle = styled.h1`
   font-size: 2rem;
   font-weight: 400;
   padding-bottom: ${singlePx()};
@@ -78,7 +78,7 @@ export const PageTitle = styled.h2`
   }
 `
 
-export const PageDescription = styled.h3`
+export const PageDescription = styled.p`
   font-size: 1rem;
   font-weight: lighter;
   line-height: 1.3;

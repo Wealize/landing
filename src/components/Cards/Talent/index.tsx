@@ -29,8 +29,10 @@ const TalentCard = ({
           showLoadingAnimation={true}
           firstLaunchOnly={true}
           ready={false}
-          style={{ marginRight: '0', position: 'absolute' }}>
-        </ReactPlaceholder>
+          style={{ marginRight: '0', position: 'absolute' }}
+          // eslint-disable-next-line react/no-children-prop
+          children={null}
+        />
         <Image
           src={imageUrl}
           layout="fill"

@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [Add new type of PostCard to be able to link external content](https://wealize.atlassian.net/browse/WLZAA-134)
 - [Reduce top spacing in general containers](https://wealize.atlassian.net/browse/WLZAA-133)
 - [Add infinite-scroll pagination on sections cover pages](https://wealize.atlassian.net/browse/WLZAA-137)
 - [Add Two-Section Display (News / Articles) (ClientStories)](https://wealize.atlassian.net/browse/WLZAA-135)

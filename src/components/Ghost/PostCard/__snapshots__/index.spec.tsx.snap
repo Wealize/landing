@@ -39,52 +39,168 @@ exports[`<GhostPostCard /> wrapper: should render 1`] = `
   }
 >
   <Link
-    as="/news/the-editor"
-    href="/news/[slug]"
+    href="/news/the-editor"
     passHref={true}
   >
-    <styles__Container
+    <styles__Anchor
+      aria-label="postcard Writing posts with Ghost ✍️"
       className="post-card featured"
+      color="#ffffff"
       href="/news/the-editor"
       isFeatured={false}
       onClick={[Function]}
       onMouseEnter={[Function]}
+      target="_self"
+      textColor="#6666ff"
+      title="postcard Writing posts with Ghost ✍️"
     >
       <a
-        className="styles__Container-pmxezz-0 ljuPsq post-card featured"
+        aria-label="postcard Writing posts with Ghost ✍️"
+        className="styles__Anchor-pmxezz-0 goXYDO post-card featured"
+        color="#ffffff"
         href="/news/the-editor"
         onClick={[Function]}
         onMouseEnter={[Function]}
+        target="_self"
+        title="postcard Writing posts with Ghost ✍️"
       >
-        <styles__Content>
+        <styles__Article>
           <article
-            className="styles__Content-pmxezz-1 kdJwCY"
+            className="styles__Article-pmxezz-1 kulkFr"
           >
-            <styles__CardHeadline>
-              <h4
-                className="styles__CardHeadline-pmxezz-2 gxmtcx"
+            <styles__Header>
+              <header
+                className="styles__Header-pmxezz-2"
               >
-                Writing posts with Ghost ✍️
-              </h4>
-            </styles__CardHeadline>
-            <styles__CardBody>
-              <h5
-                className="styles__CardBody-pmxezz-3 fYEURh"
+                <styles__CardImage
+                  isVisible={true}
+                >
+                  <div
+                    className="styles__CardImage-pmxezz-3 loizaj"
+                  >
+                    <ReactPlaceholder
+                      firstLaunchOnly={false}
+                      ready={false}
+                      showLoadingAnimation={true}
+                      style={
+                        Object {
+                          "marginRight": "0",
+                          "position": "absolute",
+                        }
+                      }
+                      type="rect"
+                    >
+                      <RectShape
+                        className="show-loading-animation"
+                        color="#CDCDCD"
+                        rows={3}
+                        style={
+                          Object {
+                            "marginRight": "0",
+                            "position": "absolute",
+                          }
+                        }
+                      >
+                        <div
+                          className="rect-shape show-loading-animation"
+                          style={
+                            Object {
+                              "backgroundColor": "#CDCDCD",
+                              "height": "100%",
+                              "marginRight": "0",
+                              "position": "absolute",
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </RectShape>
+                    </ReactPlaceholder>
+                    <Image
+                      aria-label="post Writing posts with Ghost ✍️"
+                      layout="fill"
+                      objectFit="cover"
+                      src="https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png"
+                      title="post Writing posts with Ghost ✍️"
+                    >
+                      <div
+                        style={
+                          Object {
+                            "bottom": 0,
+                            "boxSizing": "border-box",
+                            "display": "block",
+                            "left": 0,
+                            "margin": 0,
+                            "overflow": "hidden",
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                          }
+                        }
+                      >
+                        <img
+                          aria-label="post Writing posts with Ghost ✍️"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style={
+                            Object {
+                              "border": "none",
+                              "bottom": 0,
+                              "boxSizing": "border-box",
+                              "display": "block",
+                              "height": 0,
+                              "left": 0,
+                              "margin": "auto",
+                              "maxHeight": "100%",
+                              "maxWidth": "100%",
+                              "minHeight": "100%",
+                              "minWidth": "100%",
+                              "objectFit": "cover",
+                              "objectPosition": undefined,
+                              "padding": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "visibility": "hidden",
+                              "width": 0,
+                            }
+                          }
+                          title="post Writing posts with Ghost ✍️"
+                        />
+                      </div>
+                    </Image>
+                  </div>
+                </styles__CardImage>
+                <styles__CardHeadline>
+                  <h3
+                    className="styles__CardHeadline-pmxezz-4 fpUjLl"
+                  >
+                    Writing posts with Ghost ✍️
+                  </h3>
+                </styles__CardHeadline>
+              </header>
+            </styles__Header>
+            <styles__EntryContent>
+              <div
+                className="styles__EntryContent-pmxezz-5 fbeNuV"
               >
-                Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.
-              </h5>
-            </styles__CardBody>
-            <styles__CardPublishedAt>
-              <span
-                className="styles__CardPublishedAt-pmxezz-4 dJnabr"
-              >
-                2021-02-01T11:00:20.000+00:00
-              </span>
-            </styles__CardPublishedAt>
+                <p>
+                  Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.
+                </p>
+                <styles__CardPublishedAt
+                  isShowDate={true}
+                >
+                  <span
+                    className="styles__CardPublishedAt-pmxezz-6 bjlrxv"
+                  >
+                    2021-02-01T11:00:20.000+00:00
+                  </span>
+                </styles__CardPublishedAt>
+              </div>
+            </styles__EntryContent>
           </article>
-        </styles__Content>
+        </styles__Article>
       </a>
-    </styles__Container>
+    </styles__Anchor>
   </Link>
 </Memo(GhostPostCard)>
 `;

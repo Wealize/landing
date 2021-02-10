@@ -31,7 +31,11 @@ module.exports = nextTranslate(
         1366,
         1600
       ],
-      domains: ['localhost', 'wlz-landing-assets.s3.eu-central-1.amazonaws.com']
+      domains: [
+        'localhost',
+        'wlz-landing-assets.s3.eu-central-1.amazonaws.com',
+        'static.ghost.org'
+      ]
     },
     pwa: {
       disable: process.env.NODE_ENV === 'development',

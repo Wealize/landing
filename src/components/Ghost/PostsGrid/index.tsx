@@ -9,8 +9,7 @@ import { Container, SectionTitle, ContainerPosts, ShowMoreLink } from './styles'
 
 type GhostPostsGridProps = {
   posts: PostOrPage[]
-  sectionTitle?: string
-  showMoreContentButton?: boolean,
+  sectionTitle?: string,
   maxPaginationPages?: number,
   coverSectionPageName?: string
 }
@@ -19,7 +18,6 @@ const GhostPostsGrid = (props: GhostPostsGridProps) => {
   const {
     posts,
     sectionTitle,
-    showMoreContentButton,
     maxPaginationPages,
     coverSectionPageName
   } = props
@@ -32,19 +30,23 @@ const GhostPostsGrid = (props: GhostPostsGridProps) => {
             <>
               { sectionTitle ? <SectionTitle>{sectionTitle}</SectionTitle> : null}
               <ContainerPosts>
-                {posts.map((post: PostOrPage, index: number) => (
-                  <GhostPostCard key={index} post={post} />
-                ))}
+                {posts.map((post: PostOrPage, index: number) => {
+                  return <GhostPostCard key={index} post={post} />
+                })}
               </ContainerPosts>
-              { showMoreContentButton &&
+              {
                 coverSectionPageName &&
                 maxPaginationPages > 1
-                ? (
-                  <Link href={`${coverSectionPageName}`} passHref>
-                    <ShowMoreLink className="show-more-link">Show more content</ShowMoreLink>
-                  </Link>
-                  )
-                : null}
+                  ? (
+                      <Link href={`${coverSectionPageName}`} passHref>
+                        <ShowMoreLink
+                          className="show-more-link"
+                        >
+                          Show more content
+                        </ShowMoreLink>
+                      </Link>
+                    )
+                  : null}
             </>
             )
           : null
