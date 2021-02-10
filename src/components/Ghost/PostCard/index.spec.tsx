@@ -44,7 +44,15 @@ describe('<GhostPostCard />', () => {
   it('should render content correctly', () => {
     expect(wrapper.find('a').length).toEqual(1)
     expect(wrapper.find('a').prop('href')).toContain(`/news/${ghostPostCardData.slug}`)
-    expect(wrapper.find('h4').text()).toEqual(ghostPostCardData.title)
+    expect(wrapper.find('img').length).toEqual(1)
+    expect(wrapper.find('h3').text()).toEqual(ghostPostCardData.title)
     expect(wrapper.find('span').text()).toEqual('2021-02-01T11:00:20.000+00:00')
+
+    const ghostPostCardDataWithoutFeatureImage = {
+      ...ghostPostCardData,
+      feature_image: null
+    }
+    const wrapperWithoutFeatureImage = mount(<GhostPostCard post={ghostPostCardDataWithoutFeatureImage} />)
+    expect(wrapperWithoutFeatureImage.find('img').length).toEqual(0)
   })
 })

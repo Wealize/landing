@@ -13,8 +13,8 @@ export const Container = styled.section`
   padding: ${singlePx()} 0;
 `
 
-export const SectionTitle = styled.h3`
-  font-size: 1.4rem;
+export const SectionTitle = styled.h2`
+  font-size: 1.7rem;
   width: 100%;
   text-align: left;
   margin-top: ${singleAndHalfPx()};
@@ -32,22 +32,30 @@ export const ContainerPosts = styled.div`
   }
 
   ${media.greaterThan('md')`
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
     padding: ${singlePx()} 0;
+
+    & .post-card {
+      width: calc(50% - ${singleAndHalfPx()});
+      margin-right: ${singleAndHalfPx()};
+    }
   `};
 
   ${media.greaterThan('xl')`
-    grid-template-columns: repeat(4, 1fr);
+    & .post-card {
+      width: calc(25% - ${singleAndHalfPx()});
+    }
   `};
 `
 
 export const ShowMoreLink = styled.a`
   text-decoration: none;
-  color: ${ACCENT_COLOR};
   font-size: 1.1rem;
+  color: ${ACCENT_COLOR};
   padding: ${doublePx()} 0;
+  cursor: pointer;
 
   ${media.greaterThan('md')`
       padding: ${singlePx()} 0;

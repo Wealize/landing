@@ -1,29 +1,85 @@
 import React from 'react'
 import Link from 'next/link'
 import { PostOrPage } from '@tryghost/content-api'
+import Image from 'next/image'
+import ReactPlaceholder from 'react-placeholder'
 
-import { Container, Content, CardHeadline, CardPublishedAt, CardBody } from './styles'
+import { ACCENT_COLOR, WHITE_COLOR } from '../../../theme/color'
+import { isClientStory, isExternalContent, getFirstHref } from '../../../helpers/Ghost/post.helper'
+
+import {
+  Anchor,
+  Article,
+  Header,
+  EntryContent,
+  CardImage,
+  CardHeadline,
+  CardPublishedAt
+} from './styles'
 
 type GhostPostCardProps = {
-  post: PostOrPage
+  post: PostOrPage,
+  color?: string,
+  textColor?: string
 }
 
 const GhostPostCard = (props: GhostPostCardProps) => {
   const {
-    post
+    post,
+    color = WHITE_COLOR,
+    textColor = ACCENT_COLOR
   } = props
 
   return (
-    <Link href="/news/[slug]" as={`/news/${post.slug}`} passHref>
-      <Container className={`${post.featured ? 'post-card' : 'post-card featured'}`} isFeatured={post.featured}>
-        <Content>
-          <CardHeadline>{post.title}</CardHeadline>
-          <CardBody>
-            {post.excerpt}
-          </CardBody>
-          <CardPublishedAt>{post.published_at}</CardPublishedAt>
-        </Content>
-      </Container>
+    <Link href={
+      isExternalContent(post) && getFirstHref(post)
+        ? getFirstHref(post)
+        : `/news/${post.slug}`}
+      passHref
+    >
+      <Anchor
+        className={`${post.featured ? 'post-card' : 'post-card featured'}`}
+        color={color}
+        textColor={textColor}
+        isFeatured={post?.featured}
+        title={`postcard ${post.title}`}
+        aria-label={`postcard ${post.title}`}
+        target={isExternalContent(post) && getFirstHref(post) ? '_blank' : '_self'}
+        {...(isExternalContent(post) && getFirstHref(post) ? { rel: 'noreferrer' } : {})}
+      >
+        <Article>
+          <Header>
+            <CardImage isVisible={post?.feature_image?.length > 0}>
+            {post?.feature_image
+              ? (
+                <>
+                    <ReactPlaceholder
+                      type='rect'
+                      firstLaunchOnly={false}
+                      showLoadingAnimation={true}
+                      ready={false}
+                      style={{ marginRight: '0', position: 'absolute' }}
+                    >
+                    </ReactPlaceholder>
+                    <Image
+                      src={post.feature_image}
+                      layout="fill"
+                      objectFit="cover"
+                      aria-label={`post ${post.title}`}
+                      title={`post ${post.title}`}
+                    />
+                  </>
+                )
+              : null }
+          </CardImage>
+            <CardHeadline>{post.title}</CardHeadline>
+          </Header>
+          <EntryContent>
+            <p>{post.excerpt}</p>
+            <CardPublishedAt isShowDate={!isClientStory(post)}>{post.published_at}</CardPublishedAt>
+          </EntryContent>
+        </Article>
+      </Anchor>
     </Link>
   )
 }

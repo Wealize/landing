@@ -2,21 +2,25 @@ import styled from 'styled-components'
 
 
 import { DEFAULT_RADIUS } from '../../../theme/border'
-import { ACCENT_COLOR, WHITE_COLOR } from '../../../theme/color'
 import { media } from '../../../theme/media'
-import { singlePx } from '../../../theme/space'
+import { singlePx, singleAndHalfPx } from '../../../theme/space'
 
-export const Container = styled.a<{isFeatured: boolean}>`
+export const Anchor = styled.a<{
+  color: string
+  textColor: string
+  isFeatured: boolean
+}>`
   width: 100%;
-  background-color: ${({ isFeatured }) => (isFeatured ? ACCENT_COLOR : WHITE_COLOR)};
+  background-color: ${({ color, textColor, isFeatured }) => (isFeatured ? textColor : color)};
   z-index: 1;
-  color: ${({ isFeatured }) => (isFeatured ? WHITE_COLOR : ACCENT_COLOR)};
+  color: ${({ color, textColor, isFeatured }) => (isFeatured ? color : textColor)};
   text-decoration: none;
   display: inline-block;
-  padding: ${singlePx()};
   border-radius: ${DEFAULT_RADIUS}px;
-  border: 2px solid ${({ isFeatured }) => (isFeatured ? WHITE_COLOR : ACCENT_COLOR)};
+  border: 2px solid ${({ textColor }) => textColor};
   min-height: 15rem;
+  overflow: hidden;
+  cursor: pointer;
 
   ${media.greaterThan('md')`
     min-height: 17rem;
@@ -27,38 +31,49 @@ export const Container = styled.a<{isFeatured: boolean}>`
   `};
 `
 
-export const Content = styled.article`
+export const Article = styled.article`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 15rem;
-
-  ${media.greaterThan('md')`
-    min-height: 17rem;
-  `};
-
-  ${media.greaterThan('lg')`
-    min-height: 18rem;
-  `};
+  height: 100%;
 `
 
-export const CardHeadline = styled.h4`
+export const Header = styled.header``
+
+export const CardImage = styled.div<{isVisible: boolean}>`
+  position: relative;
+  width: 100%;
+  min-height: 15rem;
+  display: ${({ isVisible }) => (isVisible ? 'block' : 'none')};
+
+  & img, .rect-shape {
+    display: ${({ isVisible }) => (isVisible ? 'block' : 'none')};
+  }
+`
+
+export const CardHeadline = styled.h3`
   font-size: 1.5rem;
   font-weight: 500;
-  padding-bottom: ${singlePx()};
+  padding: ${singlePx()} ${singlePx()} 0 ${singlePx()};
   line-height: 1.4;
 `
 
-export const CardBody = styled.h5`
+export const EntryContent = styled.div`
+  height: 100%;
+  width: 100%;
   display: flex;
-  font-size: 1rem;
+  line-height: 1.5;
   flex-direction: column;
-  justify-content: flex-start;
-  line-height: 1.4;
+  justify-content: space-between;
+  padding: ${singlePx()};
+
+  & p {
+    font-size: 1.1rem;
+  }
 `
 
-export const CardPublishedAt = styled.span`
+export const CardPublishedAt = styled.span<{isShowDate: boolean}>`
   font-size: 0.9rem;
-  padding-top: ${singlePx()};
+  padding-top: ${singleAndHalfPx()};
   font-style: italic;
+  display: ${({ isShowDate }) => (isShowDate ? 'block' : 'none')};
 `
