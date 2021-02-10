@@ -8,7 +8,6 @@ import GhostPostsGrid from '../../components/Ghost/PostsGrid'
 import { useSWR } from '../../hooks/useSWR'
 import { ARTICLE_TAG_SLUG, CLIENT_STORY_TAG_SLUG, NEWS_TAG_SLUG } from '../../constants/Ghost/sectionsTags'
 
-
 const NewsRoom = (): JSX.Element => {
   const { data: articlesNewsData } = useSWR<GhostPostResponse>('news-room-articles-news', () =>
     GhostService.getPostsByTagsAndPaginationPage(
@@ -30,14 +29,12 @@ const NewsRoom = (): JSX.Element => {
       <GhostPostsGrid
         posts={articlesNewsData?.posts}
         sectionTitle="News & Articles"
-        showMoreContentButton={true}
         maxPaginationPages={articlesNewsData?.meta?.pagination?.pages}
         coverSectionPageName="news/section/news-articles"
       />
       <GhostPostsGrid
         posts={clientStoriesData?.posts}
         sectionTitle="Client Stories"
-        showMoreContentButton={true}
         maxPaginationPages={clientStoriesData?.meta?.pagination?.pages}
         coverSectionPageName="news/section/client-stories"
       />

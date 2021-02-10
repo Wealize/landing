@@ -65,8 +65,8 @@ const NewsRoomSectionCover = (): JSX.Element => {
   return (
     <Container>
       <ButtonRounded
-        backgroundColor={WHITE_COLOR}
-        textColor={ACCENT_COLOR}
+        backgroundColor={ACCENT_COLOR}
+        textColor={WHITE_COLOR}
         animatedBackgroundColor={ACCENT_COLOR}
         animatedTextColor={WHITE_COLOR}
         size={SMALL}
