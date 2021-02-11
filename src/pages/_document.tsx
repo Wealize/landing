@@ -58,6 +58,9 @@ class ExtendedDocument extends Document {
               __html:
               `window.chatbotSettings = {
                 chatbotEndpoint: '${process.env.WEBCHAT_ENDPOINT}',
+                welcomeMessage: '¡Bienvenido al webchat de Wealize!,
+                startButton: '¡Empezar!',
+                hideUserInputWithQuickReplies: true,
                 agentProfile: {
                   teamName: 'Wealize Digital',
                   imageUrl: 'https://a.slack-edge.com/66f9/img/avatars-teams/ava_0001-34.png'
@@ -67,7 +70,7 @@ class ExtendedDocument extends Document {
                 }
               };
 
-              (function(){var w=window;var d=document;var l=function(){var x=d.getElementById('__next');var c=d.createElement('div');c.id='chatbotContainer';x.parentNode.insertBefore(c,x);var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://d1hbk1yt8xmke0.cloudfront.net/137/branded-chatbot-window.min.js';x.parentNode.insertBefore(s,x);};if(d.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}})();`
+              (function(){var w=window;var d=document;var l=function(){var x=d.getElementById('__next');var c=d.createElement('div');c.id='chatbotContainer';x.parentNode.insertBefore(c,x);var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://d1hbk1yt8xmke0.cloudfront.net/141/branded-chatbot-window.min.js';x.parentNode.insertBefore(s,x);};if(d.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}})();`
             }}
           />
         </Head>
