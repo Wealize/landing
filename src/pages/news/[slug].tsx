@@ -33,7 +33,8 @@ const PostPage = (): JSX.Element => {
   const {
     query: { slug }
   } = router
-  const { data: post } = useSWR<PostOrPage>(`post-detail-${slug}`, () => GhostService.getPostBySlug(Array.isArray(slug) ? slug[0] : slug))
+
+  const { data: post } = useSWR<PostOrPage>(`post-detail-${slug}`, () => slug && GhostService.getPostBySlug(Array.isArray(slug) ? slug[0] : slug))
 
   const getShortDateFormatted = (dateTime: string) => {
     const options: Intl.DateTimeFormatOptions = {
@@ -51,16 +52,13 @@ const PostPage = (): JSX.Element => {
     document.getElementById('navbar').style.backgroundColor = WHITE_COLOR
   }, [])
 
-  // console.log(post)
-
   const replaceDomNodesConfig = {
     replace: (domNode) => {
-      if (domNode?.name === 'img' && domNode?.children?.length) {
+      if (domNode?.name === 'figure' && domNode?.children?.length) {
         const imgSrc = domNode.children[0]?.attribs?.src
         if (!imgSrc) return
 
-        return (
-          <Figure>
+        return (<Figure>
             <ImageWithPlaceholder
               imageUrl={imgSrc}
               placeholderType='rect'
@@ -74,42 +72,55 @@ const PostPage = (): JSX.Element => {
   return (
     <>
       <Head>
-        <title>{post?.meta_title}</title>
-        <meta
-          name="description"
-          content={post?.meta_description}
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://wealize.digital/${router.asPath}`} />
-        <meta
-          property="og:image"
-          content={post?.og_image} />
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="400" />
-        <meta
-          property="og:title"
-          content={post?.og_title ? post?.og_title : post?.title} />
-        <meta
-          property="og:description"
-          content={post?.og_description ? post?.og_description : post?.custom_excerpt} />
-        <meta name="twitter:card" content="summary" />
-        <meta
-          name="twitter:title"
-          content={post?.twitter_title ? post?.twitter_title : post?.title} />
-        <meta
-          name="twitter:description"
-          content={post?.twitter_description ? post?.twitter_description : post?.custom_excerpt} />
-        <meta
-          name="twitter:image"
-          content={post?.twitter_image} />
+        { post?.meta_title ? <title>{post?.meta_title}</title> : null}
+        { post?.meta_description
+          ? <meta name="description" content={post?.meta_description} />
+          : null }
+
+        { post?.og_image
+          ? (
+            <>
+              <meta property="og:type" content="website" />
+              <meta property="og:url" content={`https://wealize.digital/${router.asPath}`} />
+              <meta property="og:image" content={post?.og_image} />
+              <meta property="og:image:width" content="400" />
+              <meta property="og:image:height" content="400" />
+            </>
+            )
+          : null }
+
+        { post?.og_title
+          ? <meta property="og:title" content={post?.og_title} />
+          : null }
+
+        { post?.og_description
+          ? <meta property="og:description" content={post?.og_description} />
+          : null }
+
+        { post?.twitter_title
+          ? <>
+              <meta name="twitter:card" content="summary" />
+              <meta
+              name="twitter:title"
+              content={post?.twitter_title} />
+            </>
+          : null }
+
+        { post?.twitter_description
+          ? <meta name="twitter:description" content={post?.twitter_description} />
+          : null }
+
+        { post?.twitter_image
+          ? <meta name="twitter:image" content={post?.twitter_image} />
+          : null }
       </Head>
       <div className="inner">
         <Container>
         { post?.title
           ? (<>
-                {post?.feature_image
-                  ? (
-                    <Figure>
+              {post?.feature_image
+                ? (
+                    <Figure className="feature-image">
                       <ImageWithPlaceholder
                         imageUrl={post.feature_image}
                         imageAriaLabel={`post ${post.title}`}
@@ -118,9 +129,8 @@ const PostPage = (): JSX.Element => {
                         style={{ position: 'absolute', top: '0' }}
                       />
                     </Figure>
-                    )
-                  : null
-                }
+                  )
+                : null}
                 <PostHeader>
                   <PostHeadline>{post?.title}</PostHeadline>
                   <AuthorContainer>
@@ -155,16 +165,13 @@ const PostPage = (): JSX.Element => {
                   </PostSubheadline>
                   <Tag>{ post?.primary_tag?.name}</Tag>
                 </PostHeader>
-              </>
-            )
+              </>)
           : null}
 
         { post?.html
           ? (
             <PostBody>
-                {parse(`${post?.html}`, replaceDomNodesConfig)}
-                {/* TODO: Responsive para resoluciones MD/LG/XL/XXL/XXXL */}
-                {/* TODO: Probar todos los elementos que nos deja meter ghost en un post de prueba */}
+              {parse(`${post?.html}`, replaceDomNodesConfig)}
             </PostBody>
             )
           : null}
@@ -180,7 +187,6 @@ export const getStaticPaths:GetStaticPaths = async () => {
     fallback: true
   }
 }
-
 
 export const getStaticProps = async (): Promise<{
   props: { layoutOptions: LayoutOptions }

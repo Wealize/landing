@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import useTranslation from 'next-translate/useTranslation'
 
 import GhostPostResponse from '../../interfaces/Ghost/GhostPostResponse'
 import { LayoutOptions } from '../../interfaces/Page'
@@ -10,15 +11,18 @@ import { ARTICLE_TAG_SLUG, CLIENT_STORY_TAG_SLUG, NEWS_TAG_SLUG } from '../../co
 import { WHITE_COLOR } from '../../theme/color'
 
 const NewsRoom = (): JSX.Element => {
-  const { data: articlesNewsData } = useSWR<GhostPostResponse>('news-room-articles-news', () =>
+  const { lang } = useTranslation('news')
+  const { data: articlesNewsData } = useSWR<GhostPostResponse>(`news-room-articles-news-${lang}`, () =>
     GhostService.getPostsByTagsAndPaginationPage(
       '1',
-      [NEWS_TAG_SLUG, ARTICLE_TAG_SLUG]
+      [NEWS_TAG_SLUG, ARTICLE_TAG_SLUG],
+      lang
     ))
 
-  const { data: clientStoriesData } = useSWR<GhostPostResponse>('news-room-client-stories', () => GhostService.getPostsByTagsAndPaginationPage(
+  const { data: clientStoriesData } = useSWR<GhostPostResponse>(`news-room-client-stories-${lang}`, () => GhostService.getPostsByTagsAndPaginationPage(
     '1',
-    [CLIENT_STORY_TAG_SLUG]
+    [CLIENT_STORY_TAG_SLUG],
+    lang
   ))
 
   useEffect(() => {

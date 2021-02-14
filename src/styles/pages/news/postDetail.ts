@@ -50,6 +50,10 @@ export const Container = styled.article`
   & h2 {
     font-size: 1.7rem;
     padding: ${singleAndHalfPx()} 0;
+
+    ${media.greaterThan('lg')`
+      font-size: 1.8rem;
+    `};
   }
 
   & h3 {
@@ -60,6 +64,10 @@ export const Container = styled.article`
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: ${singlePx()};
+
+    ${media.greaterThan('lg')`
+      font-size: 1.3rem;
+    `};
   }
 
   & ul, ol {
@@ -71,6 +79,10 @@ export const Container = styled.article`
     font-size: 1.1rem;
     margin-bottom: ${singlePx()};
     line-height: 1.5;
+
+    ${media.greaterThan('lg')`
+      font-size: 1.3rem;
+    `};
   }
 
   & blockquote {
@@ -83,6 +95,10 @@ export const Container = styled.article`
     font-style: italic;
     font-size: 1.1rem;
     line-height: 1.5;
+
+    ${media.greaterThan('lg')`
+      font-size: 1.3rem;
+    `};
   }
 
   & strong {
@@ -115,9 +131,134 @@ export const Container = styled.article`
   & hr {
     opacity: .2;
   }
+
+  & .kg-bookmark-card {
+    width: 100%;
+
+    & a {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      height: 100%;
+
+      ${media.greaterThan('lg')`
+        flex-direction: row;
+        align-items: stretch;
+      `};
+
+      & .kg-bookmark-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+        color: ${WHITE_COLOR};
+        background-color: ${ACCENT_COLOR};
+
+        ${media.greaterThan('lg')`
+          width: 70%;
+        `};
+
+        & .kg-bookmark-title {
+          color: ${WHITE_COLOR};
+          padding-bottom: 1rem;
+          font-weight: bold;
+          font-size: 1.5rem;
+        }
+
+        & .kg-bookmark-description {
+          color: ${WHITE_COLOR};
+          font-size: 1.3rem;
+          opacity: 0.9;
+        }
+
+        & .kg-bookmark-metadata {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding-top: 1rem;
+
+          & img {
+            height: 30px;
+            margin-right: .7rem;
+          }
+
+          & span {
+            color: ${WHITE_COLOR};
+            opacity: 0.9;
+          }
+        }
+      }
+
+      & .kg-bookmark-thumbnail {
+        width: 100%;
+        min-height: 10rem;
+        position: relative;
+
+        ${media.greaterThan('lg')`
+          width: 30%;
+        `};
+
+        & img {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          right: 0;
+          object-fit: cover;
+          object-position: top center;
+        }
+      }
+    }
+  }
+
+  & .kg-gallery-card {
+    margin: ${singleAndHalfPx()} 0;
+
+    & .kg-gallery-container {
+      width: 100vw;
+      max-width: 100vw;
+      margin-left: calc(50% - 50vw);
+      display: flex;
+      flex-direction: column;
+
+      ${media.greaterThan('lg')`
+        width: 100%;
+        margin-left: initial;
+      `};
+
+      & .kg-gallery-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: .5rem;
+
+        & .kg-gallery-image {
+          padding-top: 56.25%;
+          background: green;
+          position: relative;
+
+          & img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
 `
 
 export const PostHeader = styled.header`
+  width: 100%;
+
+  ${media.greaterThan('sm')`
+    width: 80%;
+  `};
+
   ${media.greaterThan('md')`
     width: 75%;
   `};
@@ -172,9 +313,18 @@ export const PostBody = styled.section`
   font-size: 1.2rem;
   line-height: 1.3;
   padding: ${singlePx()} 0;
+  width: 100%;
+
+  ${media.greaterThan('sm')`
+    width: 80%;
+  `};
 
   ${media.greaterThan('md')`
     width: 75%;
+  `};
+
+  ${media.greaterThan('lg')`
+    font-size: 1.3rem;
   `};
 
   ${media.greaterThan('xl')`
@@ -184,19 +334,24 @@ export const PostBody = styled.section`
 
 export const Figure = styled.figure`
   position: relative;
-  min-height: 15rem;
+  min-height: 10rem;
   margin-bottom: ${doublePx()};
-  width: 100vw;
-  max-width: 100vw;
-  margin-left: calc(50% - 50vw);
+  width: 100%;
 
-  ${media.greaterThan('lg')`
+  &.feature-image {
+    width: 100vw;
+
+    ${media.greaterThan('xxl')`
+      width: 100%;
+    `};
+
+    ${media.greaterThan('md')`
+      min-height: 15rem;
+    `};
+  }
+
+  ${media.greaterThan('md')`
     min-height: 20rem;
-    margin-left: initial;
-  `};
-
-  ${media.greaterThan('xl')`
-    width: 60%;
   `};
 `
 

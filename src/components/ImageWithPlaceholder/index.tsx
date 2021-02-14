@@ -10,7 +10,7 @@ type ImageWithPlaceholderProps = {
   imageTitle?: string,
   imageQuality?: number,
   showLoadingAnimation?: boolean,
-  placeholderType: 'text' | 'media' | 'textRow' | 'rect' | 'round',
+  placeholderType?: 'text' | 'media' | 'textRow' | 'rect' | 'round',
   style?: CSSProperties
 }
 

@@ -7,7 +7,7 @@ import ApiClient from './ApiClient'
 const CONTENT_API_BASE_URL = `${process.env.GHOST_API_BASE_URL}/ghost/api/v3/content/`
 const PAGE_SIZE = 4
 
-const formatPostsDate = (posts: PostOrPage[]): PostOrPage[] => {
+const formatPostsDate = (posts: PostOrPage[], lang = 'en'): PostOrPage[] => {
   const options: Intl.DateTimeFormatOptions = {
     weekday: 'long',
     year: 'numeric',
@@ -16,7 +16,7 @@ const formatPostsDate = (posts: PostOrPage[]): PostOrPage[] => {
   }
 
   return posts?.map((post: PostOrPage) => {
-    post.published_at = new Intl.DateTimeFormat('en-US', options)
+    post.published_at = new Intl.DateTimeFormat(lang, options)
       .format(new Date(post.published_at))
 
     return post
@@ -34,7 +34,7 @@ class GhostService {
   }
 
   public static async getPostsByTagsAndPaginationPage (
-    page: string, tags: string[], pageSize:number = PAGE_SIZE): Promise<GhostPostResponse> {
+    page: string, tags: string[], formatDateLang = 'en', pageSize:number = PAGE_SIZE): Promise<GhostPostResponse> {
     const pageQuery = `?page=${page}`
     const limitQuery = `&limit=${pageSize}`
     const includeQuery = '&include=tags'
@@ -46,7 +46,7 @@ class GhostService {
 
     if (!posts.length || (Array.isArray(tags) && !tags?.length)) return { posts: null, meta: null }
 
-    const postsDateFormatted: PostOrPage[] = formatPostsDate(posts)
+    const postsDateFormatted: PostOrPage[] = formatPostsDate(posts, formatDateLang)
 
     return { posts: postsDateFormatted, meta }
   }

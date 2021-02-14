@@ -4,6 +4,7 @@ import { GetStaticPaths } from 'next'
 import { PostOrPage } from '@tryghost/content-api'
 import InfiniteScroll from 'react-infinite-scroll-component'
 import { union } from 'lodash'
+import useTranslation from 'next-translate/useTranslation'
 
 import GhostPostResponse from '../../../interfaces/Ghost/GhostPostResponse'
 import { LayoutOptions } from '../../../interfaces/Page'
@@ -20,6 +21,7 @@ import { CLIENT_STORY_SECTION, NEWS_ARTICLES_SECTION } from '../../../constants/
 
 
 const NewsRoomSectionCover = (): JSX.Element => {
+  const { lang } = useTranslation('news')
   const router = useRouter()
   const {
     query: { section }
@@ -42,9 +44,10 @@ const NewsRoomSectionCover = (): JSX.Element => {
   }
 
   const PAGE_SIZE = 8
-  const { data } = useSWR<GhostPostResponse>(`news-room-section-cover-${page}-${section}`, () => GhostService.getPostsByTagsAndPaginationPage(
+  const { data } = useSWR<GhostPostResponse>(`news-room-section-cover-${page}-${section}-${lang}`, () => section && GhostService.getPostsByTagsAndPaginationPage(
     page,
     getTagsForFilter(),
+    lang,
     PAGE_SIZE
   ))
 
@@ -74,7 +77,7 @@ const NewsRoomSectionCover = (): JSX.Element => {
         handleClick={() => router.push(NEWS_ROOM_HREF)}
         id="section-back-button"
       >
-        <span>Back to news</span>
+        <span>Back to newsroom</span>
       </ButtonRounded>
       <PageHeader>
         <PageTitle className="page-section-title">{ pageTitle }</PageTitle>
