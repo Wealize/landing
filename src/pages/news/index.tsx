@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import GhostPostResponse from '../../interfaces/Ghost/GhostPostResponse'
 import { LayoutOptions } from '../../interfaces/Page'
 import GhostService from '../../services/GhostService'
-import { Container, PageHeader, PageTitle, PageDescription } from '../../styles/pages/news-room'
+import { Container, PageHeader, PageTitle, PageDescription } from '../../styles/pages/news'
 import GhostPostsGrid from '../../components/Ghost/PostsGrid'
 import { useSWR } from '../../hooks/useSWR'
 import { ARTICLE_TAG_SLUG, CLIENT_STORY_TAG_SLUG, NEWS_TAG_SLUG } from '../../constants/Ghost/sectionsTags'
+import { WHITE_COLOR } from '../../theme/color'
 
 const NewsRoom = (): JSX.Element => {
   const { data: articlesNewsData } = useSWR<GhostPostResponse>('news-room-articles-news', () =>
@@ -19,6 +20,10 @@ const NewsRoom = (): JSX.Element => {
     '1',
     [CLIENT_STORY_TAG_SLUG]
   ))
+
+  useEffect(() => {
+    document.getElementById('navbar').style.backgroundColor = WHITE_COLOR
+  }, [])
 
   return (
     <Container>

@@ -24,9 +24,13 @@ const formatPostsDate = (posts: PostOrPage[]): PostOrPage[] => {
 }
 
 class GhostService {
-  public static async getPostBySlug (slug: string): Promise<GhostPostResponse> {
-    const url = `${CONTENT_API_BASE_URL}posts/slug/${slug}/?key=${process.env.GHOST_CONTENT_API_KEY}`
-    return await ApiClient.get(url)
+  public static async getPostBySlug (slug: string): Promise<PostOrPage> {
+    const includeQuery = '?include=tags,read_time,authors'
+    const url = `${CONTENT_API_BASE_URL}posts/slug/${slug}/${includeQuery}&key=${process.env.GHOST_CONTENT_API_KEY}`
+
+    const { posts } = await ApiClient.get(url)
+
+    return posts?.length ? posts[0] : null
   }
 
   public static async getPostsByTagsAndPaginationPage (
@@ -34,8 +38,9 @@ class GhostService {
     const pageQuery = `?page=${page}`
     const limitQuery = `&limit=${pageSize}`
     const includeQuery = '&include=tags'
+    const fieldsQuery = '&fields=title,feature_image,published_at,html,featured,custom_excerpt,slug'
     const filterQuery = tags?.length ? `&filter=tags:[${tags.join()}]` : ''
-    const url = `${CONTENT_API_BASE_URL}posts/${pageQuery}${limitQuery}${includeQuery}${filterQuery}&key=${process.env.GHOST_CONTENT_API_KEY}`
+    const url = `${CONTENT_API_BASE_URL}posts/${pageQuery}${fieldsQuery}${limitQuery}${includeQuery}${filterQuery}&key=${process.env.GHOST_CONTENT_API_KEY}`
 
     const { posts, meta } = await ApiClient.get(url)
 
