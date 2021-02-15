@@ -1,4 +1,3 @@
-/* eslint-disable no-case-declarations */
 import { GetStaticPaths, GetStaticPropsContext } from 'next'
 import parse, { HTMLReactParserOptions } from 'html-react-parser'
 import React, { useEffect } from 'react'
