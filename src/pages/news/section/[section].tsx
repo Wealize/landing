@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import { GetStaticPaths } from 'next'
 import { PostOrPage } from '@tryghost/content-api'
 import InfiniteScroll from 'react-infinite-scroll-component'
 import { union } from 'lodash'
@@ -21,7 +20,7 @@ import { CLIENT_STORY_SECTION, NEWS_ARTICLES_SECTION } from '../../../constants/
 
 
 const NewsRoomSectionCover = (): JSX.Element => {
-  const { lang } = useTranslation('news')
+  const { t, lang } = useTranslation('news')
   const router = useRouter()
   const {
     query: { section }
@@ -33,10 +32,10 @@ const NewsRoomSectionCover = (): JSX.Element => {
   const getTagsForFilter = (): string[] => {
     switch (section) {
       case CLIENT_STORY_SECTION:
-        setPageTitle('Client stories')
+        setPageTitle(t('client_stories_section'))
         return [CLIENT_STORY_TAG_SLUG]
       case NEWS_ARTICLES_SECTION:
-        setPageTitle('Articles & News')
+        setPageTitle(t('news_articles_section'))
         return [ARTICLE_TAG_SLUG, NEWS_TAG_SLUG]
       default:
         return []
@@ -73,11 +72,11 @@ const NewsRoomSectionCover = (): JSX.Element => {
         animatedBackgroundColor={ACCENT_COLOR}
         animatedTextColor={WHITE_COLOR}
         size={SMALL}
-        aria-label="Go to back"
+        aria-label={t('back_to_newsroom_button')}
         handleClick={() => router.push(NEWS_ROOM_HREF)}
         id="section-back-button"
       >
-        <span>Back to newsroom</span>
+        <span>{t('back_to_newsroom_button')}</span>
       </ButtonRounded>
       <PageHeader>
         <PageTitle className="page-section-title">{ pageTitle }</PageTitle>
@@ -99,14 +98,7 @@ const NewsRoomSectionCover = (): JSX.Element => {
   )
 }
 
-export const getStaticPaths:GetStaticPaths = async () => {
-  return {
-    paths: [],
-    fallback: true
-  }
-}
-
-export const getStaticProps = async (): Promise<{
+export const getServerSideProps = async (): Promise<{
   props: { layoutOptions: LayoutOptions }
 }> => {
   const layoutOptions: LayoutOptions = {

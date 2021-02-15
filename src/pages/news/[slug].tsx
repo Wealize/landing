@@ -1,10 +1,11 @@
-import { GetStaticPaths, GetStaticPropsContext } from 'next'
+import { GetStaticPropsContext } from 'next'
 import parse, { HTMLReactParserOptions } from 'html-react-parser'
 import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { PostOrPage } from '@tryghost/content-api'
 import ReactPlaceholder from 'react-placeholder'
 import Head from 'next/head'
+import useTranslation from 'next-translate/useTranslation'
 
 import { LayoutOptions } from '../../interfaces/Page'
 import GhostService from '../../services/GhostService'
@@ -32,6 +33,7 @@ type PostPageProps = {
 const PostPage = (props: PostPageProps): JSX.Element => {
   const router = useRouter()
   const { post } = props
+  const { t } = useTranslation('post_detail')
 
   const hasChildren = (domNode):boolean => domNode?.children?.length
 
@@ -151,7 +153,7 @@ const PostPage = (props: PostPageProps): JSX.Element => {
                   </AuthorContainer>
                   <PostSubheadline>
                     <PublishedAt>{post?.published_at}</PublishedAt>
-                    <ReadingTime>&nbsp;•&nbsp;{post?.reading_time} min read</ReadingTime>
+                  <ReadingTime>&nbsp;•&nbsp;{post?.reading_time} {t('read-time')}</ReadingTime>
                   </PostSubheadline>
                   <Tag>{ post?.primary_tag?.name}</Tag>
                 </PostHeader>
@@ -171,14 +173,7 @@ const PostPage = (props: PostPageProps): JSX.Element => {
   )
 }
 
-export const getStaticPaths:GetStaticPaths = async () => {
-  return {
-    paths: [],
-    fallback: true
-  }
-}
-
-export const getStaticProps = async ({ params }: GetStaticPropsContext): Promise<{
+export const getServerSideProps = async ({ params, locale }: GetStaticPropsContext): Promise<{
   props: {
     layoutOptions: LayoutOptions,
     post: PostOrPage
@@ -191,7 +186,7 @@ export const getStaticProps = async ({ params }: GetStaticPropsContext): Promise
 
   const getSlugParam = Array.isArray(params) ? params[0].slug : params.slug
 
-  const post: PostOrPage = await GhostService.getPostBySlug(getSlugParam)
+  const post: PostOrPage = await GhostService.getPostBySlug(getSlugParam, locale)
 
   return { props: { layoutOptions, post } }
 }

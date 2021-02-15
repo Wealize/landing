@@ -41,7 +41,7 @@ class GhostService {
 
     post.published_at = new Intl
       .DateTimeFormat(formatDateLang, options)
-      .format(new Date(post?.published_at))
+      .format(new Date(post?.published_at)).replace('.', '')
 
     return post
   }

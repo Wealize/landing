@@ -347,12 +347,16 @@ export const Figure = styled.figure`
     min-height: 10rem;
     padding-top: initial;
 
-    ${media.greaterThan('xxl')`
-      width: 100%;
+    ${media.greaterThan('md')`
+      min-height: 20rem;
     `};
 
-    ${media.greaterThan('md')`
-      min-height: 15rem;
+    ${media.greaterThan('lg')`
+      width: 75%;
+    `};
+
+    ${media.greaterThan('xl')`
+      width: 60%;
     `};
   }
 

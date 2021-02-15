@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { WHITE_COLOR, GRAY_300_COLOR } from '../../../theme/color'
+import { WHITE_COLOR, GRAY_300_COLOR, ACCENT_COLOR } from '../../../theme/color'
 import { media } from '../../../theme/media'
 import { singlePx, singleAndHalfPx } from '../../../theme/space'
 import { CONTAINER_SPACING } from '../../../theme/spacingGuide'
@@ -41,6 +41,11 @@ export const Container = styled.div`
     `};
   }
 
+  a {
+    color: ${ACCENT_COLOR};
+    text-decoration: none;
+  }
+
   & .infinite-scroll-component__outerdiv {
     width: 100%;
   }
@@ -74,7 +79,6 @@ export const PageTitle = styled.h1`
 
   &.page-section-title {
     padding-bottom: 0;
-    text-transform: capitalize;
   }
 `
 

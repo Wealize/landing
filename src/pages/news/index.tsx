@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import useTranslation from 'next-translate/useTranslation'
+import Trans from 'next-translate/Trans'
 
 import GhostPostResponse from '../../interfaces/Ghost/GhostPostResponse'
 import { LayoutOptions } from '../../interfaces/Page'
@@ -9,9 +10,10 @@ import GhostPostsGrid from '../../components/Ghost/PostsGrid'
 import { useSWR } from '../../hooks/useSWR'
 import { ARTICLE_TAG_SLUG, CLIENT_STORY_TAG_SLUG, NEWS_TAG_SLUG } from '../../constants/Ghost/sectionsTags'
 import { WHITE_COLOR } from '../../theme/color'
+import { GET_IN_TOUCH_HREF } from '../../constants/contacts'
 
 const NewsRoom = (): JSX.Element => {
-  const { lang } = useTranslation('news')
+  const { t, lang } = useTranslation('news')
   const { data: articlesNewsData } = useSWR<GhostPostResponse>(`news-room-articles-news-${lang}`, () =>
     GhostService.getPostsByTagsAndPaginationPage(
       '1',
@@ -32,18 +34,31 @@ const NewsRoom = (): JSX.Element => {
   return (
     <Container>
       <PageHeader>
-        <PageTitle>Newsroom</PageTitle>
-        <PageDescription>If you would like to know more about these topics and solutions, please get in touch</PageDescription>
+        <PageTitle>{ t('page_title') }</PageTitle>
+        <PageDescription>
+          {<Trans
+            i18nKey="news:page_description"
+            components={[(
+              <a
+                key={0}
+                rel="noopener noreferrer"
+                target="_blank"
+                href={GET_IN_TOUCH_HREF}
+                title="get in touch link"
+                aria-label="get in touch link"></a>
+            )]}
+          />}
+        </PageDescription>
       </PageHeader>
       <GhostPostsGrid
         posts={articlesNewsData?.posts}
-        sectionTitle="News & Articles"
+        sectionTitle={t('news_articles_section')}
         maxPaginationPages={articlesNewsData?.meta?.pagination?.pages}
         coverSectionPageName="news/section/news-articles"
       />
       <GhostPostsGrid
         posts={clientStoriesData?.posts}
-        sectionTitle="Client Stories"
+        sectionTitle={t('client_stories_section')}
         maxPaginationPages={clientStoriesData?.meta?.pagination?.pages}
         coverSectionPageName="news/section/client-stories"
       />
