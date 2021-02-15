@@ -1,10 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
-import ReactPlaceholder from 'react-placeholder'
 
 import OpenUrlIcon from '../../icons/OpenUrlIcon'
 import { CardRounded } from '../../../interfaces/Cards/CardRounded'
+import ImageWithPlaceholder from '../../ImageWithPlaceholder'
 
 import {
   Container,
@@ -27,22 +26,13 @@ const RoundedCard = (props: CardRounded) => {
   return (
     <Container className="rounded-card" hasPrimary={hasPrimary}>
       <BackgroundContainer>
-        <ReactPlaceholder
-          type='rect'
-          showLoadingAnimation={true}
-          firstLaunchOnly={true}
-          ready={false}
-          style={{ marginRight: '0', position: 'absolute' }}
-          // eslint-disable-next-line react/no-children-prop
-          children={null}
+        <ImageWithPlaceholder
+          imageUrl={imageUrl}
+          imageAriaLabel={`${title} image`}
+          imageTitle={`${title} image`}
+          imageQuality={40}
+          placeholderType='rect'
         />
-        <Image
-          src={imageUrl}
-          layout="fill"
-          objectFit="cover"
-          quality={40}
-          aria-label={`${title} image`}
-          title={title} />
       </BackgroundContainer>
       <ContentContainer hasPrimary={hasPrimary}>
         <Content>

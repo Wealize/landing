@@ -51,12 +51,8 @@ export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   margin-bottom: ${singlePx()};
-
-  & img {
-    object-fit: cover;
-  }
+  position: relative;
 
   ${media.greaterThan('md')`
     min-width: 300px;

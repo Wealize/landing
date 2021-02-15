@@ -187,96 +187,131 @@ exports[`<GhostPostsGrid /> wrapper: should render 1`] = `
                             <div
                               className="styles__CardImage-pmxezz-3 loizaj"
                             >
-                              <ReactPlaceholder
-                                firstLaunchOnly={false}
-                                ready={false}
-                                showLoadingAnimation={true}
+                              <Memo(ImageWithPlaceholder)
+                                imageAriaLabel="post Writing posts with Ghost ✍️"
+                                imageTitle="post Writing posts with Ghost ✍️"
+                                imageUrl="https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png"
+                                placeholderType="rect"
                                 style={
                                   Object {
-                                    "marginRight": "0",
                                     "position": "absolute",
+                                    "top": "0",
                                   }
                                 }
-                                type="rect"
                               >
-                                <RectShape
-                                  className="show-loading-animation"
-                                  color="#CDCDCD"
-                                  rows={3}
+                                <styles__Container
                                   style={
                                     Object {
-                                      "marginRight": "0",
                                       "position": "absolute",
+                                      "top": "0",
                                     }
                                   }
                                 >
                                   <div
-                                    className="rect-shape show-loading-animation"
+                                    className="styles__Container-sc-1li6v9v-0 HMjkw"
                                     style={
                                       Object {
-                                        "backgroundColor": "#CDCDCD",
-                                        "height": "100%",
-                                        "marginRight": "0",
                                         "position": "absolute",
-                                        "width": "100%",
+                                        "top": "0",
                                       }
                                     }
-                                  />
-                                </RectShape>
-                              </ReactPlaceholder>
-                              <Image
-                                aria-label="post Writing posts with Ghost ✍️"
-                                layout="fill"
-                                objectFit="cover"
-                                src="https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png"
-                                title="post Writing posts with Ghost ✍️"
-                              >
-                                <div
-                                  style={
-                                    Object {
-                                      "bottom": 0,
-                                      "boxSizing": "border-box",
-                                      "display": "block",
-                                      "left": 0,
-                                      "margin": 0,
-                                      "overflow": "hidden",
-                                      "position": "absolute",
-                                      "right": 0,
-                                      "top": 0,
-                                    }
-                                  }
-                                >
-                                  <img
-                                    aria-label="post Writing posts with Ghost ✍️"
-                                    decoding="async"
-                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                    style={
-                                      Object {
-                                        "border": "none",
-                                        "bottom": 0,
-                                        "boxSizing": "border-box",
-                                        "display": "block",
-                                        "height": 0,
-                                        "left": 0,
-                                        "margin": "auto",
-                                        "maxHeight": "100%",
-                                        "maxWidth": "100%",
-                                        "minHeight": "100%",
-                                        "minWidth": "100%",
-                                        "objectFit": "cover",
-                                        "objectPosition": undefined,
-                                        "padding": 0,
-                                        "position": "absolute",
-                                        "right": 0,
-                                        "top": 0,
-                                        "visibility": "hidden",
-                                        "width": 0,
+                                  >
+                                    <ReactPlaceholder
+                                      firstLaunchOnly={true}
+                                      ready={false}
+                                      showLoadingAnimation={true}
+                                      style={
+                                        Object {
+                                          "marginRight": "0",
+                                          "position": "absolute",
+                                        }
                                       }
-                                    }
-                                    title="post Writing posts with Ghost ✍️"
-                                  />
-                                </div>
-                              </Image>
+                                      type="rect"
+                                    >
+                                      <RectShape
+                                        className="show-loading-animation"
+                                        color="#CDCDCD"
+                                        rows={3}
+                                        style={
+                                          Object {
+                                            "marginRight": "0",
+                                            "position": "absolute",
+                                          }
+                                        }
+                                      >
+                                        <div
+                                          className="rect-shape show-loading-animation"
+                                          style={
+                                            Object {
+                                              "backgroundColor": "#CDCDCD",
+                                              "height": "100%",
+                                              "marginRight": "0",
+                                              "position": "absolute",
+                                              "width": "100%",
+                                            }
+                                          }
+                                        />
+                                      </RectShape>
+                                    </ReactPlaceholder>
+                                    <Image
+                                      aria-label="post Writing posts with Ghost ✍️"
+                                      layout="fill"
+                                      objectFit="cover"
+                                      onLoad={[Function]}
+                                      quality={75}
+                                      src="https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png"
+                                      title="post Writing posts with Ghost ✍️"
+                                    >
+                                      <div
+                                        style={
+                                          Object {
+                                            "bottom": 0,
+                                            "boxSizing": "border-box",
+                                            "display": "block",
+                                            "left": 0,
+                                            "margin": 0,
+                                            "overflow": "hidden",
+                                            "position": "absolute",
+                                            "right": 0,
+                                            "top": 0,
+                                          }
+                                        }
+                                      >
+                                        <img
+                                          aria-label="post Writing posts with Ghost ✍️"
+                                          decoding="async"
+                                          onLoad={[Function]}
+                                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                          style={
+                                            Object {
+                                              "border": "none",
+                                              "bottom": 0,
+                                              "boxSizing": "border-box",
+                                              "display": "block",
+                                              "height": 0,
+                                              "left": 0,
+                                              "margin": "auto",
+                                              "maxHeight": "100%",
+                                              "maxWidth": "100%",
+                                              "minHeight": "100%",
+                                              "minWidth": "100%",
+                                              "objectFit": "cover",
+                                              "objectPosition": undefined,
+                                              "padding": 0,
+                                              "position": "absolute",
+                                              "right": 0,
+                                              "top": 0,
+                                              "visibility": "hidden",
+                                              "width": 0,
+                                            }
+                                          }
+                                          title="post Writing posts with Ghost ✍️"
+                                        />
+                                      </div>
+                                    </Image>
+                                  </div>
+                                </styles__Container>
+                              </Memo(ImageWithPlaceholder)>
                             </div>
                           </styles__CardImage>
                           <styles__CardHeadline>
@@ -399,96 +434,131 @@ exports[`<GhostPostsGrid /> wrapper: should render 1`] = `
                             <div
                               className="styles__CardImage-pmxezz-3 loizaj"
                             >
-                              <ReactPlaceholder
-                                firstLaunchOnly={false}
-                                ready={false}
-                                showLoadingAnimation={true}
+                              <Memo(ImageWithPlaceholder)
+                                imageAriaLabel="post Writing posts with Ghost ✍️ 2"
+                                imageTitle="post Writing posts with Ghost ✍️ 2"
+                                imageUrl="https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png"
+                                placeholderType="rect"
                                 style={
                                   Object {
-                                    "marginRight": "0",
                                     "position": "absolute",
+                                    "top": "0",
                                   }
                                 }
-                                type="rect"
                               >
-                                <RectShape
-                                  className="show-loading-animation"
-                                  color="#CDCDCD"
-                                  rows={3}
+                                <styles__Container
                                   style={
                                     Object {
-                                      "marginRight": "0",
                                       "position": "absolute",
+                                      "top": "0",
                                     }
                                   }
                                 >
                                   <div
-                                    className="rect-shape show-loading-animation"
+                                    className="styles__Container-sc-1li6v9v-0 HMjkw"
                                     style={
                                       Object {
-                                        "backgroundColor": "#CDCDCD",
-                                        "height": "100%",
-                                        "marginRight": "0",
                                         "position": "absolute",
-                                        "width": "100%",
+                                        "top": "0",
                                       }
                                     }
-                                  />
-                                </RectShape>
-                              </ReactPlaceholder>
-                              <Image
-                                aria-label="post Writing posts with Ghost ✍️ 2"
-                                layout="fill"
-                                objectFit="cover"
-                                src="https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png"
-                                title="post Writing posts with Ghost ✍️ 2"
-                              >
-                                <div
-                                  style={
-                                    Object {
-                                      "bottom": 0,
-                                      "boxSizing": "border-box",
-                                      "display": "block",
-                                      "left": 0,
-                                      "margin": 0,
-                                      "overflow": "hidden",
-                                      "position": "absolute",
-                                      "right": 0,
-                                      "top": 0,
-                                    }
-                                  }
-                                >
-                                  <img
-                                    aria-label="post Writing posts with Ghost ✍️ 2"
-                                    decoding="async"
-                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                    style={
-                                      Object {
-                                        "border": "none",
-                                        "bottom": 0,
-                                        "boxSizing": "border-box",
-                                        "display": "block",
-                                        "height": 0,
-                                        "left": 0,
-                                        "margin": "auto",
-                                        "maxHeight": "100%",
-                                        "maxWidth": "100%",
-                                        "minHeight": "100%",
-                                        "minWidth": "100%",
-                                        "objectFit": "cover",
-                                        "objectPosition": undefined,
-                                        "padding": 0,
-                                        "position": "absolute",
-                                        "right": 0,
-                                        "top": 0,
-                                        "visibility": "hidden",
-                                        "width": 0,
+                                  >
+                                    <ReactPlaceholder
+                                      firstLaunchOnly={true}
+                                      ready={false}
+                                      showLoadingAnimation={true}
+                                      style={
+                                        Object {
+                                          "marginRight": "0",
+                                          "position": "absolute",
+                                        }
                                       }
-                                    }
-                                    title="post Writing posts with Ghost ✍️ 2"
-                                  />
-                                </div>
-                              </Image>
+                                      type="rect"
+                                    >
+                                      <RectShape
+                                        className="show-loading-animation"
+                                        color="#CDCDCD"
+                                        rows={3}
+                                        style={
+                                          Object {
+                                            "marginRight": "0",
+                                            "position": "absolute",
+                                          }
+                                        }
+                                      >
+                                        <div
+                                          className="rect-shape show-loading-animation"
+                                          style={
+                                            Object {
+                                              "backgroundColor": "#CDCDCD",
+                                              "height": "100%",
+                                              "marginRight": "0",
+                                              "position": "absolute",
+                                              "width": "100%",
+                                            }
+                                          }
+                                        />
+                                      </RectShape>
+                                    </ReactPlaceholder>
+                                    <Image
+                                      aria-label="post Writing posts with Ghost ✍️ 2"
+                                      layout="fill"
+                                      objectFit="cover"
+                                      onLoad={[Function]}
+                                      quality={75}
+                                      src="https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png"
+                                      title="post Writing posts with Ghost ✍️ 2"
+                                    >
+                                      <div
+                                        style={
+                                          Object {
+                                            "bottom": 0,
+                                            "boxSizing": "border-box",
+                                            "display": "block",
+                                            "left": 0,
+                                            "margin": 0,
+                                            "overflow": "hidden",
+                                            "position": "absolute",
+                                            "right": 0,
+                                            "top": 0,
+                                          }
+                                        }
+                                      >
+                                        <img
+                                          aria-label="post Writing posts with Ghost ✍️ 2"
+                                          decoding="async"
+                                          onLoad={[Function]}
+                                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                          style={
+                                            Object {
+                                              "border": "none",
+                                              "bottom": 0,
+                                              "boxSizing": "border-box",
+                                              "display": "block",
+                                              "height": 0,
+                                              "left": 0,
+                                              "margin": "auto",
+                                              "maxHeight": "100%",
+                                              "maxWidth": "100%",
+                                              "minHeight": "100%",
+                                              "minWidth": "100%",
+                                              "objectFit": "cover",
+                                              "objectPosition": undefined,
+                                              "padding": 0,
+                                              "position": "absolute",
+                                              "right": 0,
+                                              "top": 0,
+                                              "visibility": "hidden",
+                                              "width": 0,
+                                            }
+                                          }
+                                          title="post Writing posts with Ghost ✍️ 2"
+                                        />
+                                      </div>
+                                    </Image>
+                                  </div>
+                                </styles__Container>
+                              </Memo(ImageWithPlaceholder)>
                             </div>
                           </styles__CardImage>
                           <styles__CardHeadline>

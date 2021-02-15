@@ -17,6 +17,7 @@ describe('<GhostPostCard />', () => {
     expect(wrapper.find('a').length).toEqual(1)
     expect(wrapper.find('a').prop('href')).toContain(`/news/${WITHOUT_TAGS.slug}`)
     expect(wrapper.find('img').length).toEqual(1)
+    expect(wrapper.find('p').text()).toEqual(WITHOUT_TAGS.custom_excerpt)
     expect(wrapper.find('h3').text()).toEqual(WITHOUT_TAGS.title)
     expect(wrapper.find('span').text()).toEqual('2021-02-01T11:00:20.000+00:00')
 
