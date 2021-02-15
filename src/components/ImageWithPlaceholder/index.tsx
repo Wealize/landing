@@ -9,6 +9,7 @@ type ImageWithPlaceholderProps = {
   imageAriaLabel?: string,
   imageTitle?: string,
   imageQuality?: number,
+  objectFit?: 'cover' | 'contain' | 'fill' | 'none' | 'scale-down'
   showLoadingAnimation?: boolean,
   placeholderType?: 'text' | 'media' | 'textRow' | 'rect' | 'round',
   style?: CSSProperties
@@ -20,12 +21,13 @@ const ImageWithPlaceholder = (props: ImageWithPlaceholderProps) => {
     imageAriaLabel,
     imageTitle,
     imageQuality = 75,
+    objectFit = 'cover',
     showLoadingAnimation = true,
     placeholderType = 'rect',
     style
   } = props
   const [showPlaceholder, setIsShowPlaceholder] = useState(false)
-
+  const DELAY_FOR_HIDE_PLACEHOLDER = 3000
   return (
     <Container style={style}>
       <ReactPlaceholder
@@ -40,14 +42,14 @@ const ImageWithPlaceholder = (props: ImageWithPlaceholderProps) => {
       <Image
         src={imageUrl}
         layout="fill"
-        objectFit="cover"
+        objectFit={objectFit}
         aria-label={imageAriaLabel}
         quality={imageQuality}
         title={imageTitle}
         onLoad={() => {
           setTimeout(() => {
             setIsShowPlaceholder(true)
-          }, 3000)
+          }, DELAY_FOR_HIDE_PLACEHOLDER)
         }}
       />
     </Container>

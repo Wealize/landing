@@ -334,12 +334,18 @@ export const PostBody = styled.section`
 
 export const Figure = styled.figure`
   position: relative;
-  min-height: 10rem;
   margin-bottom: ${doublePx()};
   width: 100%;
+  padding-top: 56.25%;
+
+  & img {
+    background: #fff;
+  }
 
   &.feature-image {
     width: 100vw;
+    min-height: 10rem;
+    padding-top: initial;
 
     ${media.greaterThan('xxl')`
       width: 100%;

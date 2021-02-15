@@ -34,7 +34,8 @@ module.exports = nextTranslate(
       domains: [
         'localhost',
         'wlz-landing-assets.s3.eu-central-1.amazonaws.com',
-        'static.ghost.org'
+        'static.ghost.org',
+        's3-eu-central-1.amazonaws.com'
       ]
     },
     pwa: {

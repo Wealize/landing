@@ -25,7 +25,7 @@ const NewsRoom = (): JSX.Element => {
     lang
   ))
 
-  useEffect(() => {
+  useEffect((): void => {
     document.getElementById('navbar').style.backgroundColor = WHITE_COLOR
   }, [])
 

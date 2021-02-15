@@ -20,7 +20,5 @@ export const getFirstHref = (post: PostOrPage): string | null => {
   if (!isExternalContent(post)) return null
 
   const foundUrls = extractUrls(post?.html)
-  if (!foundUrls?.length) return null
-
-  return foundUrls[0]
+  return foundUrls[0] || null
 }

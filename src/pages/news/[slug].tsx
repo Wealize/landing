@@ -1,6 +1,6 @@
 /* eslint-disable no-case-declarations */
-import { GetStaticPaths } from 'next'
-import parse from 'html-react-parser'
+import { GetStaticPaths, GetStaticPropsContext } from 'next'
+import parse, { HTMLReactParserOptions } from 'html-react-parser'
 import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { PostOrPage } from '@tryghost/content-api'
@@ -23,48 +23,39 @@ import {
   AuthorImage,
   AuthorName
 } from '../../styles/pages/news/postDetail'
-import { useSWR } from '../../hooks/useSWR'
 import { WHITE_COLOR, ACCENT_COLOR } from '../../theme/color'
 import ImageWithPlaceholder from '../../components/ImageWithPlaceholder'
 
+type PostPageProps = {
+  post: PostOrPage
+}
 
-const PostPage = (): JSX.Element => {
+const PostPage = (props: PostPageProps): JSX.Element => {
   const router = useRouter()
-  const {
-    query: { slug }
-  } = router
+  const { post } = props
 
-  const { data: post } = useSWR<PostOrPage>(`post-detail-${slug}`, () => slug && GhostService.getPostBySlug(Array.isArray(slug) ? slug[0] : slug))
+  const hasChildren = (domNode):boolean => domNode?.children?.length
 
-  const getShortDateFormatted = (dateTime: string) => {
-    const options: Intl.DateTimeFormatOptions = {
-      weekday: 'short',
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric'
-    }
-
-    return new Intl.DateTimeFormat('en-US', options)
-      .format(new Date(dateTime))
-  }
-
-  useEffect(() => {
+  useEffect((): void => {
     document.getElementById('navbar').style.backgroundColor = WHITE_COLOR
   }, [])
 
-  const replaceDomNodesConfig = {
+  const replaceDomNodesConfig: HTMLReactParserOptions = {
     replace: (domNode) => {
-      if (domNode?.name === 'figure' && domNode?.children?.length) {
+      if (domNode?.name === 'figure' && hasChildren(domNode)) {
         const imgSrc = domNode.children[0]?.attribs?.src
         if (!imgSrc) return
 
-        return (<Figure>
+        return (
+          <Figure>
             <ImageWithPlaceholder
               imageUrl={imgSrc}
               placeholderType='rect'
+              objectFit='contain'
               style={{ position: 'absolute', top: '0' }}
             />
-          </Figure>)
+          </Figure>
+        )
       }
     }
   }
@@ -160,7 +151,7 @@ const PostPage = (): JSX.Element => {
                     <AuthorName>{ post?.primary_author?.name}</AuthorName>
                   </AuthorContainer>
                   <PostSubheadline>
-                    <PublishedAt>{getShortDateFormatted(post?.published_at)}</PublishedAt>
+                    <PublishedAt>{post?.published_at}</PublishedAt>
                     <ReadingTime>&nbsp;•&nbsp;{post?.reading_time} min read</ReadingTime>
                   </PostSubheadline>
                   <Tag>{ post?.primary_tag?.name}</Tag>
@@ -188,15 +179,22 @@ export const getStaticPaths:GetStaticPaths = async () => {
   }
 }
 
-export const getStaticProps = async (): Promise<{
-  props: { layoutOptions: LayoutOptions }
+export const getStaticProps = async ({ params }: GetStaticPropsContext): Promise<{
+  props: {
+    layoutOptions: LayoutOptions,
+    post: PostOrPage
+  }
 }> => {
   const layoutOptions: LayoutOptions = {
     showFooter: true,
     showNavigationBarClosablePage: false
   }
 
-  return { props: { layoutOptions } }
+  const getSlugParam = Array.isArray(params) ? params[0].slug : params.slug
+
+  const post: PostOrPage = await GhostService.getPostBySlug(getSlugParam)
+
+  return { props: { layoutOptions, post } }
 }
 
 export default PostPage
