@@ -19,6 +19,7 @@ module.exports = {
     '!src/interfaces/**/*.ts',
     '!src/styles/**/*.ts',
     '!src/pages/**/*.{ts,tsx}',
+    '!src/constants/Ghost/*.ts',
     '!__tests__/**'
   ],
   testPathIgnorePatterns: [

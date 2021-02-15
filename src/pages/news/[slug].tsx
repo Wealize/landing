@@ -1,27 +1,173 @@
 import { GetStaticPaths, GetStaticPropsContext } from 'next'
-import parse from 'html-react-parser'
-import React from 'react'
+import parse, { HTMLReactParserOptions } from 'html-react-parser'
+import React, { useEffect } from 'react'
+import { useRouter } from 'next/router'
 import { PostOrPage } from '@tryghost/content-api'
+import ReactPlaceholder from 'react-placeholder'
+import Head from 'next/head'
 
 import { LayoutOptions } from '../../interfaces/Page'
 import GhostService from '../../services/GhostService'
-import { Container, PostHeadline, PostBody } from '../../styles/pages/news-room/postDetail'
-
+import {
+  Container,
+  PostHeader,
+  PostHeadline,
+  PostSubheadline,
+  Figure,
+  PostBody,
+  Tag,
+  PublishedAt,
+  ReadingTime,
+  AuthorContainer,
+  AuthorImage,
+  AuthorName
+} from '../../styles/pages/news/postDetail'
+import { WHITE_COLOR, ACCENT_COLOR } from '../../theme/color'
+import ImageWithPlaceholder from '../../components/ImageWithPlaceholder'
 
 type PostPageProps = {
   post: PostOrPage
 }
 
 const PostPage = (props: PostPageProps): JSX.Element => {
+  const router = useRouter()
   const { post } = props
 
+  const hasChildren = (domNode):boolean => domNode?.children?.length
+
+  useEffect((): void => {
+    document.getElementById('navbar').style.backgroundColor = WHITE_COLOR
+  }, [])
+
+  const replaceDomNodesConfig: HTMLReactParserOptions = {
+    replace: (domNode) => {
+      if (domNode?.name === 'figure' && hasChildren(domNode)) {
+        const imgSrc = domNode.children[0]?.attribs?.src
+        if (!imgSrc) return
+
+        return (
+          <Figure>
+            <ImageWithPlaceholder
+              imageUrl={imgSrc}
+              placeholderType='rect'
+              objectFit='contain'
+              style={{ position: 'absolute', top: '0' }}
+            />
+          </Figure>
+        )
+      }
+    }
+  }
+
   return (
-    <Container>
-      <PostHeadline>{post?.title}</PostHeadline>
-      <PostBody>
-          {parse(`${post?.html}`)}
-      </PostBody>
-    </Container>
+    <>
+      <Head>
+        { post?.meta_title ? <title>{post?.meta_title}</title> : null}
+        { post?.meta_description
+          ? <meta name="description" content={post?.meta_description} />
+          : null }
+
+        { post?.og_image
+          ? (
+            <>
+              <meta property="og:type" content="website" />
+              <meta property="og:url" content={`https://wealize.digital/${router.asPath}`} />
+              <meta property="og:image" content={post?.og_image} />
+              <meta property="og:image:width" content="400" />
+              <meta property="og:image:height" content="400" />
+            </>
+            )
+          : null }
+
+        { post?.og_title
+          ? <meta property="og:title" content={post?.og_title} />
+          : null }
+
+        { post?.og_description
+          ? <meta property="og:description" content={post?.og_description} />
+          : null }
+
+        { post?.twitter_title
+          ? <>
+              <meta name="twitter:card" content="summary" />
+              <meta
+              name="twitter:title"
+              content={post?.twitter_title} />
+            </>
+          : null }
+
+        { post?.twitter_description
+          ? <meta name="twitter:description" content={post?.twitter_description} />
+          : null }
+
+        { post?.twitter_image
+          ? <meta name="twitter:image" content={post?.twitter_image} />
+          : null }
+      </Head>
+      <div className="inner">
+        <Container>
+        { post?.title
+          ? (<>
+              {post?.feature_image
+                ? (
+                    <Figure className="feature-image">
+                      <ImageWithPlaceholder
+                        imageUrl={post.feature_image}
+                        imageAriaLabel={`post ${post.title}`}
+                        imageTitle={`post ${post.title}`}
+                        placeholderType='rect'
+                        style={{ position: 'absolute', top: '0' }}
+                      />
+                    </Figure>
+                  )
+                : null}
+                <PostHeader>
+                  <PostHeadline>{post?.title}</PostHeadline>
+                  <AuthorContainer>
+                    <AuthorImage>
+                    {post?.primary_author?.profile_image
+                      ? (
+                        <ImageWithPlaceholder
+                          imageUrl={post?.primary_author?.profile_image}
+                          imageAriaLabel={`author ${post?.primary_author?.name}`}
+                          imageTitle={`author ${post?.primary_author?.name}`}
+                          placeholderType='round'
+                          style={{ position: 'absolute', top: '0' }}
+                        />
+                        )
+                      : (
+                        <ReactPlaceholder
+                          type='round'
+                          firstLaunchOnly={false}
+                          ready={false}
+                          color={ACCENT_COLOR}
+                          style={{ marginRight: '0', position: 'absolute' }}
+                          // eslint-disable-next-line react/no-children-prop
+                          children={null}
+                        />
+                        )}
+                      </AuthorImage>
+                    <AuthorName>{ post?.primary_author?.name}</AuthorName>
+                  </AuthorContainer>
+                  <PostSubheadline>
+                    <PublishedAt>{post?.published_at}</PublishedAt>
+                    <ReadingTime>&nbsp;•&nbsp;{post?.reading_time} min read</ReadingTime>
+                  </PostSubheadline>
+                  <Tag>{ post?.primary_tag?.name}</Tag>
+                </PostHeader>
+              </>)
+          : null}
+
+        { post?.html
+          ? (
+            <PostBody>
+              {parse(`${post?.html}`, replaceDomNodesConfig)}
+            </PostBody>
+            )
+          : null}
+      </Container>
+      </div>
+    </>
   )
 }
 
@@ -32,20 +178,20 @@ export const getStaticPaths:GetStaticPaths = async () => {
   }
 }
 
-
 export const getStaticProps = async ({ params }: GetStaticPropsContext): Promise<{
-  props: { layoutOptions: LayoutOptions, post: PostOrPage }
+  props: {
+    layoutOptions: LayoutOptions,
+    post: PostOrPage
+  }
 }> => {
   const layoutOptions: LayoutOptions = {
     showFooter: true,
     showNavigationBarClosablePage: false
   }
 
-  const getFirstParam = Array.isArray(params) ? params[0] : params
+  const getSlugParam = Array.isArray(params) ? params[0].slug : params.slug
 
-  const { posts } = await GhostService.getPostBySlug(getFirstParam.slug)
-
-  const post = posts.length ? posts[0] : null
+  const post: PostOrPage = await GhostService.getPostBySlug(getSlugParam)
 
   return { props: { layoutOptions, post } }
 }

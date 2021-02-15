@@ -1,10 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
-import ReactPlaceholder from 'react-placeholder'
 
 import { CardTalent } from '../../../interfaces/Cards/CardTalent'
 import { SocialNetwork } from '../../../interfaces/SocialNetwork'
+import ImageWithPlaceholder from '../../ImageWithPlaceholder'
 
 import {
   Container,
@@ -24,22 +23,13 @@ const TalentCard = ({
   return (
     <Container className="talent-card">
       <ImageContainer>
-        <ReactPlaceholder
-          type='rect'
-          showLoadingAnimation={true}
-          firstLaunchOnly={true}
-          ready={false}
-          style={{ marginRight: '0', position: 'absolute' }}
-          // eslint-disable-next-line react/no-children-prop
-          children={null}
-        />
-        <Image
-          src={imageUrl}
-          layout="fill"
-          objectFit="cover"
-          aria-label={`${name} image`}
-          title={name}
-          quality={90}
+        <ImageWithPlaceholder
+          imageUrl={imageUrl}
+          imageAriaLabel={`${name} image`}
+          imageTitle={`${name} image`}
+          imageQuality={90}
+          placeholderType='rect'
+          style={{ position: 'absolute', top: '0' }}
         />
       </ImageContainer>
       <ContentContainer>

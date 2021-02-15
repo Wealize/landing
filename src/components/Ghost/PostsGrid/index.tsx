@@ -42,7 +42,7 @@ const GhostPostsGrid = (props: GhostPostsGridProps) => {
                         <ShowMoreLink
                           className="show-more-link"
                         >
-                          Show more content
+                          Show more
                         </ShowMoreLink>
                       </Link>
                     )
