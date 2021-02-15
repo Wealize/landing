@@ -32,8 +32,11 @@ type PostPageProps = {
 
 const PostPage = (props: PostPageProps): JSX.Element => {
   const router = useRouter()
+  const {
+    query: { slug }
+  } = router
   const { post } = props
-  const { t } = useTranslation('post_detail')
+  const { t, lang } = useTranslation('post_detail')
 
   const hasChildren = (domNode):boolean => domNode?.children?.length
 
@@ -73,7 +76,7 @@ const PostPage = (props: PostPageProps): JSX.Element => {
           ? (
             <>
               <meta property="og:type" content="website" />
-              <meta property="og:url" content={`https://wealize.digital/${router.asPath}`} />
+              <meta property="og:url" content={`https://wealize.digital/news/${slug}`} />
               <meta property="og:image" content={post?.og_image} />
               <meta property="og:image:width" content="400" />
               <meta property="og:image:height" content="400" />
@@ -104,7 +107,28 @@ const PostPage = (props: PostPageProps): JSX.Element => {
 
         { post?.twitter_image
           ? <meta name="twitter:image" content={post?.twitter_image} />
-          : null }
+          : null}
+        <link rel="alternate" hrefLang="es" href={`https://wealize.digital/es/news/${slug}`} />
+        <link rel="alternate" hrefLang="en" href={`https://wealize.digital/news/${slug}`} />
+
+        {lang.toLowerCase() === 'en'
+          ? (
+          <>
+            <link rel="canonical" href={`https://wealize.digital/news/${slug}`} />
+            <meta property="og:locale" content="en_En" />
+            <meta property="og:site_name" content="Wealize, digital products" />
+          </>
+            )
+          : null}
+        {lang.toLowerCase() === 'es'
+          ? (
+            <>
+              <link rel="canonical" href={`https://wealize.digital/es/news/${slug}`} />
+              <meta property="og:locale" content="es_Es" />
+              <meta property="og:site_name" content="Wealize, productos digitales" />
+            </>
+            )
+          : null}
       </Head>
       <div className="inner">
         <Container>

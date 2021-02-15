@@ -41,7 +41,7 @@ export const Container = styled.div`
     `};
   }
 
-  a {
+  a:not(.post-card) {
     color: ${ACCENT_COLOR};
     text-decoration: none;
   }

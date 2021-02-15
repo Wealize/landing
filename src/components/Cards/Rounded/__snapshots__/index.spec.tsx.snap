@@ -38,10 +38,26 @@ exports[`<RoundedCard /> wrapper: should render 1`] = `
             imageTitle="Maldita image"
             imageUrl="/img/projects/maldita.jpg"
             placeholderType="rect"
+            style={
+              Object {
+                "height": "initial",
+              }
+            }
           >
-            <styles__Container>
+            <styles__Container
+              style={
+                Object {
+                  "height": "initial",
+                }
+              }
+            >
               <div
                 className="styles__Container-sc-1li6v9v-0 HMjkw"
+                style={
+                  Object {
+                    "height": "initial",
+                  }
+                }
               >
                 <ReactPlaceholder
                   firstLaunchOnly={true}

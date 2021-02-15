@@ -1,7 +1,11 @@
 {
+  "meta_title": "",
+  "meta_description": "",
   "page_title": "Newsroom",
   "page_description": "If you would like to know more about these topics and solutions, <0>get in touch</0>",
   "news_articles_section": "News & Articles",
   "client_stories_section": "Client stories",
-  "back_to_newsroom_button": "Back to newsroom"
+  "back_to_newsroom_button": "Back to newsroom",
+  "section_meta_title" : "",
+  "section_meta_description": ""
 }
