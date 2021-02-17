@@ -1,10 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
 import { PostOrPage } from '@tryghost/content-api'
+import useTranslation from 'next-translate/useTranslation'
 
 import { ACCENT_COLOR, WHITE_COLOR } from '../../../theme/color'
-import { isClientStory, isExternalContent, getFirstHref } from '../../../helpers/Ghost/post'
+import { isClientStory, isExternalContent, getFirstHref, dateFormatLongNumeric } from '../../../helpers/Ghost/post'
 import ImageWithPlaceholder from '../../ImageWithPlaceholder'
+
 
 import {
   Anchor,
@@ -28,6 +30,8 @@ const GhostPostCard = (props: GhostPostCardProps) => {
     color = WHITE_COLOR,
     textColor = ACCENT_COLOR
   } = props
+
+  const { lang } = useTranslation('commons')
 
   const isValidExternalContent = () => isExternalContent(post) && getFirstHref(post)
 
@@ -67,7 +71,8 @@ const GhostPostCard = (props: GhostPostCardProps) => {
           </Header>
           <EntryContent>
             <p>{post.custom_excerpt}</p>
-            <CardPublishedAt isShowDate={!isClientStory(post)}>{post.published_at}</CardPublishedAt>
+            <CardPublishedAt isShowDate={!isClientStory(post)}>
+              {post?.published_at ? dateFormatLongNumeric(post.published_at, lang) : null}</CardPublishedAt>
           </EntryContent>
         </Article>
       </Anchor>

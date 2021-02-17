@@ -335,9 +335,7 @@ exports[`<GhostPostsGrid /> wrapper: should render 1`] = `
                           >
                             <span
                               className="styles__CardPublishedAt-pmxezz-6 gYjyQQ"
-                            >
-                              2021-02-01T11:00:20.000+00:00
-                            </span>
+                            />
                           </styles__CardPublishedAt>
                         </div>
                       </styles__EntryContent>
@@ -582,9 +580,7 @@ exports[`<GhostPostsGrid /> wrapper: should render 1`] = `
                           >
                             <span
                               className="styles__CardPublishedAt-pmxezz-6 gYjyQQ"
-                            >
-                              2021-02-01T11:00:20.000+00:00
-                            </span>
+                            />
                           </styles__CardPublishedAt>
                         </div>
                       </styles__EntryContent>

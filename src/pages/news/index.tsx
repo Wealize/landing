@@ -15,17 +15,15 @@ import { GET_IN_TOUCH_HREF } from '../../constants/contacts'
 
 const NewsRoom = (): JSX.Element => {
   const { t, lang } = useTranslation('news')
-  const { data: articlesNewsData } = useSWR<GhostPostResponse>(`news-room-articles-news-${lang}`, () =>
+  const { data: articlesNewsData } = useSWR<GhostPostResponse>('news-room-articles-news', () =>
     GhostService.getPostsByTagsAndPaginationPage(
       '1',
-      [NEWS_TAG_SLUG, ARTICLE_TAG_SLUG],
-      lang
+      [NEWS_TAG_SLUG, ARTICLE_TAG_SLUG]
     ))
 
-  const { data: clientStoriesData } = useSWR<GhostPostResponse>(`news-room-client-stories-${lang}`, () => GhostService.getPostsByTagsAndPaginationPage(
+  const { data: clientStoriesData } = useSWR<GhostPostResponse>('news-room-client-stories', () => GhostService.getPostsByTagsAndPaginationPage(
     '1',
-    [CLIENT_STORY_TAG_SLUG],
-    lang
+    [CLIENT_STORY_TAG_SLUG]
   ))
 
   useEffect((): void => {

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { PostOrPage } from '@tryghost/content-api'
 import InfiniteScroll from 'react-infinite-scroll-component'
-import { union } from 'lodash'
+import { unionBy } from 'lodash'
 import useTranslation from 'next-translate/useTranslation'
 import Head from 'next/head'
 
@@ -44,17 +44,15 @@ const NewsRoomSectionCover = (): JSX.Element => {
   }
 
   const PAGE_SIZE = 8
-  const { data } = useSWR<GhostPostResponse>(`news-room-section-cover-${page}-${section}-${lang}`, () => section && GhostService.getPostsByTagsAndPaginationPage(
+  const { data } = useSWR<GhostPostResponse>(`news-room-section-cover-${page}-${section}`, () => section && GhostService.getPostsByTagsAndPaginationPage(
     page,
     getTagsForFilter(),
-    lang,
     PAGE_SIZE
   ))
 
   useEffect(() => {
-    if (data?.posts) {
-      setPostsToShow(postsToShow => union(postsToShow, data.posts))
-    }
+    if (!data?.posts) return
+    setPostsToShow(postsToShow => unionBy(postsToShow, data.posts, 'uuid'))
   }, [data])
 
   const fetchNextPage = () => {
@@ -130,7 +128,7 @@ const NewsRoomSectionCover = (): JSX.Element => {
         loader={null}
         scrollThreshold={0.3}
         style={{
-          width: '100%',
+          width: '10 0%',
           overflow: 'hidden'
         }}
       >

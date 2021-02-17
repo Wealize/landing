@@ -147,7 +147,7 @@ const PostPage = (props: PostPageProps): JSX.Element => {
                     </Figure>
                   )
                 : null}
-                <PostHeader>
+                <PostHeader isShowFeaturedImage={!!post?.feature_image}>
                   <PostHeadline>{post?.title}</PostHeadline>
                   <AuthorContainer>
                     <AuthorImage>
