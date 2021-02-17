@@ -59,10 +59,10 @@ class ExtendedDocument extends Document {
               `window.chatbotSettings = {
                 chatbotEndpoint: '${process.env.WEBCHAT_ENDPOINT}',
                 welcomeMessage: '¡Bienvenido al webchat de Tec!',
-                startButton: '¡Empezar!',
+                startButton: '¡Hola!',
                 agentProfile: {
-                  teamName: 'Wealize Digital',
-                  imageUrl: 'https://a.slack-edge.com/66f9/img/avatars-teams/ava_0001-34.png'
+                  teamName: 'TEC',
+                  imageUrl: 'https://tnpnlu-assets.s3.eu-central-1.amazonaws.com/Logo_TEC.png'
                 },
                 theme: {
                   brandColor: 'blue'
