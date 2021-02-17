@@ -6,6 +6,7 @@ import { PostOrPage } from '@tryghost/content-api'
 import ReactPlaceholder from 'react-placeholder'
 import Head from 'next/head'
 import useTranslation from 'next-translate/useTranslation'
+import DefaultErrorPage from 'next/error'
 
 import { LayoutOptions } from '../../interfaces/Page'
 import GhostService from '../../services/GhostService'
@@ -62,6 +63,17 @@ const PostPage = (props: PostPageProps): JSX.Element => {
         )
       }
     }
+  }
+
+  if (!post) {
+    return (
+    <>
+      <Head>
+        <meta name="robots" content="noindex"/>
+      </Head>
+      <DefaultErrorPage statusCode={404} />
+    </>
+    )
   }
 
   return (

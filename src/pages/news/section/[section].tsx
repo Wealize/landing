@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { PostOrPage } from '@tryghost/content-api'
 import InfiniteScroll from 'react-infinite-scroll-component'
-import { unionBy } from 'lodash'
+import { unionBy, head } from 'lodash'
 import useTranslation from 'next-translate/useTranslation'
 import Head from 'next/head'
+import DefaultErrorPage from 'next/error'
 
 import GhostPostResponse from '../../../interfaces/Ghost/GhostPostResponse'
 import { LayoutOptions } from '../../../interfaces/Page'
@@ -30,6 +31,7 @@ const NewsRoomSectionCover = (): JSX.Element => {
   const [page, setPage] = useState('1')
   const [hasMore, setHasMore] = useState(true)
   const [pageTitle, setPageTitle] = useState('')
+  const VALID_SECTIONS:string[] = ['news-articles', 'client-stories']
   const getTagsForFilter = (): string[] => {
     switch (section) {
       case CLIENT_STORY_SECTION:
@@ -61,6 +63,18 @@ const NewsRoomSectionCover = (): JSX.Element => {
     } else {
       setHasMore(false)
     }
+  }
+
+  const sectionParam:string = Array.isArray(section) ? head(section) : section
+  if (!VALID_SECTIONS.includes(sectionParam)) {
+    return (
+    <>
+      <Head>
+        <meta name="robots" content="noindex"/>
+      </Head>
+      <DefaultErrorPage statusCode={404} />
+    </>
+    )
   }
 
   return (
