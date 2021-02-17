@@ -60,6 +60,7 @@ class ExtendedDocument extends Document {
                 chatbotEndpoint: '${process.env.WEBCHAT_ENDPOINT}',
                 welcomeMessage: '¡Bienvenido al webchat de Maldita',
                 startButton: '¡Hola!',
+                hideUserInputWithQuickReplies: true,
                 agentProfile: {
                   teamName: 'Maldita.es',
                   imageUrl: 'https://tnpnlu-assets.s3.eu-central-1.amazonaws.com/Logo_MALDITA.jpg'
