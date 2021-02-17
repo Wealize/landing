@@ -58,11 +58,11 @@ class ExtendedDocument extends Document {
               __html:
               `window.chatbotSettings = {
                 chatbotEndpoint: '${process.env.WEBCHAT_ENDPOINT}',
-                welcomeMessage: '¡Bienvenido al webchat de Tec!',
+                welcomeMessage: '¡Bienvenido al webchat de Maldita',
                 startButton: '¡Hola!',
                 agentProfile: {
-                  teamName: 'TEC',
-                  imageUrl: 'https://tnpnlu-assets.s3.eu-central-1.amazonaws.com/Logo_TEC.png'
+                  teamName: 'Maldita.es',
+                  imageUrl: 'https://tnpnlu-assets.s3.eu-central-1.amazonaws.com/Logo_MALDITA.jpg'
                 },
                 theme: {
                   brandColor: 'blue'
@@ -70,7 +70,7 @@ class ExtendedDocument extends Document {
                 userTimeout: 3600
               };
 
-              (function(){var w=window;var d=document;var l=function(){var x=d.getElementById('__next');var c=d.createElement('div');c.id='chatbotContainer';x.parentNode.insertBefore(c,x);var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://d1hbk1yt8xmke0.cloudfront.net/141/branded-chatbot-window.min.js';x.parentNode.insertBefore(s,x);};if(d.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}})();`
+              (function(){var w=window;var d=document;var l=function(){var x=d.getElementById('__next');var c=d.createElement('div');c.id='chatbotContainer';x.parentNode.insertBefore(c,x);var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://d1hbk1yt8xmke0.cloudfront.net/142/branded-chatbot-window.min.js';x.parentNode.insertBefore(s,x);};if(d.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}})();`
             }}
           />
         </Head>
