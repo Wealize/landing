@@ -1,4 +1,5 @@
 import { PostOrPage } from '@tryghost/content-api'
+import useTranslation from 'next-translate/useTranslation'
 import Link from 'next/link'
 import React from 'react'
 
@@ -21,6 +22,7 @@ const GhostPostsGrid = (props: GhostPostsGridProps) => {
     maxPaginationPages,
     coverSectionPageName
   } = props
+  const { t } = useTranslation('common')
 
   return (
     <Container>
@@ -42,7 +44,7 @@ const GhostPostsGrid = (props: GhostPostsGridProps) => {
                         <ShowMoreLink
                           className="show-more-link"
                         >
-                          Show more
+                          { t('posts_grid.show_more_link_text') }
                         </ShowMoreLink>
                       </Link>
                     )

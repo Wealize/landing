@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import { GetStaticPaths } from 'next'
 import { PostOrPage } from '@tryghost/content-api'
 import InfiniteScroll from 'react-infinite-scroll-component'
-import { union } from 'lodash'
+import { unionBy, head } from 'lodash'
 import useTranslation from 'next-translate/useTranslation'
+import Head from 'next/head'
+import DefaultErrorPage from 'next/error'
 
 import GhostPostResponse from '../../../interfaces/Ghost/GhostPostResponse'
 import { LayoutOptions } from '../../../interfaces/Page'
@@ -21,7 +22,7 @@ import { CLIENT_STORY_SECTION, NEWS_ARTICLES_SECTION } from '../../../constants/
 
 
 const NewsRoomSectionCover = (): JSX.Element => {
-  const { lang } = useTranslation('news')
+  const { t, lang } = useTranslation('news')
   const router = useRouter()
   const {
     query: { section }
@@ -30,13 +31,14 @@ const NewsRoomSectionCover = (): JSX.Element => {
   const [page, setPage] = useState('1')
   const [hasMore, setHasMore] = useState(true)
   const [pageTitle, setPageTitle] = useState('')
+  const VALID_SECTIONS:string[] = ['news-articles', 'client-stories']
   const getTagsForFilter = (): string[] => {
     switch (section) {
       case CLIENT_STORY_SECTION:
-        setPageTitle('Client stories')
+        setPageTitle(t('client_stories_section'))
         return [CLIENT_STORY_TAG_SLUG]
       case NEWS_ARTICLES_SECTION:
-        setPageTitle('Articles & News')
+        setPageTitle(t('news_articles_section'))
         return [ARTICLE_TAG_SLUG, NEWS_TAG_SLUG]
       default:
         return []
@@ -44,17 +46,15 @@ const NewsRoomSectionCover = (): JSX.Element => {
   }
 
   const PAGE_SIZE = 8
-  const { data } = useSWR<GhostPostResponse>(`news-room-section-cover-${page}-${section}-${lang}`, () => section && GhostService.getPostsByTagsAndPaginationPage(
+  const { data } = useSWR<GhostPostResponse>(`news-room-section-cover-${page}-${section}`, () => section && GhostService.getPostsByTagsAndPaginationPage(
     page,
     getTagsForFilter(),
-    lang,
     PAGE_SIZE
   ))
 
   useEffect(() => {
-    if (data?.posts) {
-      setPostsToShow(postsToShow => union(postsToShow, data.posts))
-    }
+    if (!data?.posts) return
+    setPostsToShow(postsToShow => unionBy(postsToShow, data.posts, 'uuid'))
   }, [data])
 
   const fetchNextPage = () => {
@@ -65,24 +65,77 @@ const NewsRoomSectionCover = (): JSX.Element => {
     }
   }
 
+  const sectionParam:string = Array.isArray(section) ? head(section) : section
+  if (!VALID_SECTIONS.includes(sectionParam)) {
+    return (
+    <>
+      <Head>
+        <meta name="robots" content="noindex"/>
+      </Head>
+      <DefaultErrorPage statusCode={404} />
+    </>
+    )
+  }
+
   return (
-    <Container>
-      <ButtonRounded
-        backgroundColor={ACCENT_COLOR}
-        textColor={WHITE_COLOR}
-        animatedBackgroundColor={ACCENT_COLOR}
-        animatedTextColor={WHITE_COLOR}
-        size={SMALL}
-        aria-label="Go to back"
-        handleClick={() => router.push(NEWS_ROOM_HREF)}
-        id="section-back-button"
-      >
-        <span>Back to newsroom</span>
-      </ButtonRounded>
-      <PageHeader>
-        <PageTitle className="page-section-title">{ pageTitle }</PageTitle>
-      </PageHeader>
-      <InfiniteScroll
+    <>
+      <Head>
+        <title>{t('section_meta_title')}</title>
+        <meta
+          name="description"
+          content={t('section_meta_description')}
+        />
+        <link rel="alternate" hrefLang="es" href={`https://wealize.digital/es/news/section/${section}`} />
+        <link rel="alternate" hrefLang="en" href={`https://wealize.digital/news/section/${section}`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`https://wealize.digital/news/section/${section}`} />
+        <meta property="og:image" content="https://wlz-branding.s3.eu-central-1.amazonaws.com/banner_400x400.png" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="400" />
+        <meta property="og:image:alt" content={t('section_meta_title')} />
+        <meta property="og:title" content={t('section_meta_title')} />
+        <meta property="og:description" content={t('section_meta_description')} />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={t('section_meta_title')} />
+        <meta name="twitter:description" content={t('section_meta_description')} />
+        <meta name="twitter:image" content="https://wlz-branding.s3.eu-central-1.amazonaws.com/banner_400x400.png" />
+
+        {lang.toLowerCase() === 'en'
+          ? (
+            <>
+              <link rel="canonical" href={`https://wealize.digital/news/section/${section}`} />
+              <meta property="og:locale" content="en_En" />
+              <meta property="og:site_name" content="Wealize, digital products" />
+            </>
+            )
+          : null}
+        {lang.toLowerCase() === 'es'
+          ? (
+            <>
+              <link rel="canonical" href={`https://wealize.digital/es/news/section/${section}`} />
+              <meta property="og:locale" content="es_Es" />
+              <meta property="og:site_name" content="Wealize, productos digitales" />
+            </>
+            )
+          : null}
+      </Head>
+      <Container>
+        <ButtonRounded
+          backgroundColor={ACCENT_COLOR}
+          textColor={WHITE_COLOR}
+          animatedBackgroundColor={ACCENT_COLOR}
+          animatedTextColor={WHITE_COLOR}
+          size={SMALL}
+          aria-label={t('back_to_newsroom_button')}
+          handleClick={() => router.push(NEWS_ROOM_HREF)}
+          id="section-back-button"
+        >
+          <span>{t('back_to_newsroom_button')}</span>
+        </ButtonRounded>
+        <PageHeader>
+          <PageTitle className="page-section-title">{ pageTitle }</PageTitle>
+        </PageHeader>
+        <InfiniteScroll
         dataLength={postsToShow.length}
         next={fetchNextPage}
         hasMore={hasMore}
@@ -95,18 +148,12 @@ const NewsRoomSectionCover = (): JSX.Element => {
       >
         {<GhostPostsGrid posts={postsToShow} />}
       </InfiniteScroll>
-    </Container>
+      </Container>
+    </>
   )
 }
 
-export const getStaticPaths:GetStaticPaths = async () => {
-  return {
-    paths: [],
-    fallback: true
-  }
-}
-
-export const getStaticProps = async (): Promise<{
+export const getServerSideProps = async (): Promise<{
   props: { layoutOptions: LayoutOptions }
 }> => {
   const layoutOptions: LayoutOptions = {

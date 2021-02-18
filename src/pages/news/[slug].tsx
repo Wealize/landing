@@ -1,10 +1,12 @@
-import { GetStaticPaths, GetStaticPropsContext } from 'next'
+import { GetStaticPropsContext } from 'next'
 import parse, { HTMLReactParserOptions } from 'html-react-parser'
 import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { PostOrPage } from '@tryghost/content-api'
 import ReactPlaceholder from 'react-placeholder'
 import Head from 'next/head'
+import useTranslation from 'next-translate/useTranslation'
+import DefaultErrorPage from 'next/error'
 
 import { LayoutOptions } from '../../interfaces/Page'
 import GhostService from '../../services/GhostService'
@@ -31,7 +33,11 @@ type PostPageProps = {
 
 const PostPage = (props: PostPageProps): JSX.Element => {
   const router = useRouter()
+  const {
+    query: { slug }
+  } = router
   const { post } = props
+  const { t, lang } = useTranslation('post_detail')
 
   const hasChildren = (domNode):boolean => domNode?.children?.length
 
@@ -59,6 +65,17 @@ const PostPage = (props: PostPageProps): JSX.Element => {
     }
   }
 
+  if (!post) {
+    return (
+    <>
+      <Head>
+        <meta name="robots" content="noindex"/>
+      </Head>
+      <DefaultErrorPage statusCode={404} />
+    </>
+    )
+  }
+
   return (
     <>
       <Head>
@@ -71,7 +88,7 @@ const PostPage = (props: PostPageProps): JSX.Element => {
           ? (
             <>
               <meta property="og:type" content="website" />
-              <meta property="og:url" content={`https://wealize.digital/${router.asPath}`} />
+              <meta property="og:url" content={`https://wealize.digital/news/${slug}`} />
               <meta property="og:image" content={post?.og_image} />
               <meta property="og:image:width" content="400" />
               <meta property="og:image:height" content="400" />
@@ -102,7 +119,28 @@ const PostPage = (props: PostPageProps): JSX.Element => {
 
         { post?.twitter_image
           ? <meta name="twitter:image" content={post?.twitter_image} />
-          : null }
+          : null}
+        <link rel="alternate" hrefLang="es" href={`https://wealize.digital/es/news/${slug}`} />
+        <link rel="alternate" hrefLang="en" href={`https://wealize.digital/news/${slug}`} />
+
+        {lang.toLowerCase() === 'en'
+          ? (
+          <>
+            <link rel="canonical" href={`https://wealize.digital/news/${slug}`} />
+            <meta property="og:locale" content="en_En" />
+            <meta property="og:site_name" content="Wealize, digital products" />
+          </>
+            )
+          : null}
+        {lang.toLowerCase() === 'es'
+          ? (
+            <>
+              <link rel="canonical" href={`https://wealize.digital/es/news/${slug}`} />
+              <meta property="og:locale" content="es_Es" />
+              <meta property="og:site_name" content="Wealize, productos digitales" />
+            </>
+            )
+          : null}
       </Head>
       <div className="inner">
         <Container>
@@ -121,7 +159,7 @@ const PostPage = (props: PostPageProps): JSX.Element => {
                     </Figure>
                   )
                 : null}
-                <PostHeader>
+                <PostHeader isShowFeaturedImage={!!post?.feature_image}>
                   <PostHeadline>{post?.title}</PostHeadline>
                   <AuthorContainer>
                     <AuthorImage>
@@ -151,7 +189,7 @@ const PostPage = (props: PostPageProps): JSX.Element => {
                   </AuthorContainer>
                   <PostSubheadline>
                     <PublishedAt>{post?.published_at}</PublishedAt>
-                    <ReadingTime>&nbsp;•&nbsp;{post?.reading_time} min read</ReadingTime>
+                  <ReadingTime>&nbsp;•&nbsp;{post?.reading_time} {t('read-time')}</ReadingTime>
                   </PostSubheadline>
                   <Tag>{ post?.primary_tag?.name}</Tag>
                 </PostHeader>
@@ -171,14 +209,7 @@ const PostPage = (props: PostPageProps): JSX.Element => {
   )
 }
 
-export const getStaticPaths:GetStaticPaths = async () => {
-  return {
-    paths: [],
-    fallback: true
-  }
-}
-
-export const getStaticProps = async ({ params }: GetStaticPropsContext): Promise<{
+export const getServerSideProps = async ({ params, locale }: GetStaticPropsContext): Promise<{
   props: {
     layoutOptions: LayoutOptions,
     post: PostOrPage
@@ -191,7 +222,7 @@ export const getStaticProps = async ({ params }: GetStaticPropsContext): Promise
 
   const getSlugParam = Array.isArray(params) ? params[0].slug : params.slug
 
-  const post: PostOrPage = await GhostService.getPostBySlug(getSlugParam)
+  const post: PostOrPage = await GhostService.getPostBySlug(getSlugParam, locale)
 
   return { props: { layoutOptions, post } }
 }

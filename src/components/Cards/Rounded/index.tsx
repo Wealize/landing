@@ -32,6 +32,7 @@ const RoundedCard = (props: CardRounded) => {
           imageTitle={`${title} image`}
           imageQuality={40}
           placeholderType='rect'
+          style={{ height: 'initial' }}
         />
       </BackgroundContainer>
       <ContentContainer hasPrimary={hasPrimary}>
