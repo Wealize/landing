@@ -7,22 +7,6 @@ import ApiClient from './ApiClient'
 const CONTENT_API_BASE_URL = `${process.env.GHOST_API_BASE_URL}/ghost/api/v3/content/`
 const PAGE_SIZE = 4
 
-const formatPostsDate = (posts: PostOrPage[], lang = 'en'): PostOrPage[] => {
-  const options: Intl.DateTimeFormatOptions = {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  }
-
-  return posts?.map((post: PostOrPage) => {
-    post.published_at = new Intl.DateTimeFormat(lang, options)
-      .format(new Date(post.published_at))
-
-    return post
-  })
-}
-
 class GhostService {
   public static async getPostBySlug (slug: string, formatDateLang = 'en'): Promise<PostOrPage | null> {
     const includeQuery = '?include=tags,read_time,authors'
@@ -41,7 +25,7 @@ class GhostService {
 
     post.published_at = new Intl
       .DateTimeFormat(formatDateLang, options)
-      .format(new Date(post?.published_at))
+      .format(new Date(post?.published_at)).replace('.', '')
 
     return post
   }
@@ -49,13 +33,12 @@ class GhostService {
   public static async getPostsByTagsAndPaginationPage (
     page: string,
     tags: string[],
-    formatDateLang = 'en',
     pageSize: number = PAGE_SIZE
   ): Promise<GhostPostResponse> {
     const pageQuery = `?page=${page}`
     const limitQuery = `&limit=${pageSize}`
     const includeQuery = '&include=tags'
-    const fieldsQuery = '&fields=title,feature_image,published_at,html,featured,custom_excerpt,slug'
+    const fieldsQuery = '&fields=uuid,title,feature_image,published_at,html,featured,custom_excerpt,slug'
     const filterQuery = tags?.length ? `&filter=tags:[${tags.join()}]` : ''
     const url = `${CONTENT_API_BASE_URL}posts/${pageQuery}${fieldsQuery}${limitQuery}${includeQuery}${filterQuery}&key=${process.env.GHOST_CONTENT_API_KEY}`
 
@@ -65,9 +48,7 @@ class GhostService {
 
     if (!posts.length || tagsIsEmptyArray) return { posts: null, meta: null }
 
-    const postsDateFormatted: PostOrPage[] = formatPostsDate(posts, formatDateLang)
-
-    return { posts: postsDateFormatted, meta }
+    return { posts, meta }
   }
 }
 

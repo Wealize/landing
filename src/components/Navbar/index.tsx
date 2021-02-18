@@ -30,6 +30,9 @@ interface NavbarProps {
 const { locales } = i18nConfig
 const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
   const router = useRouter()
+  const {
+    query
+  } = router
   const { t, lang } = useTranslation('common')
   const [visible, setVisible] = useGlobalState('isVisible')
 
@@ -61,7 +64,7 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
         </Link>
       </LogoMobileContainer>
 
-      <LogoContainer >
+      <LogoContainer>
         <Link href={HOME_HREF}>
           <a title="Home page link" aria-label="Home" data-cy="navbar-logo-container">
             <WealizeNormalMediumIcon />
@@ -111,7 +114,10 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
                   if (lng === lang) return null
 
                   return (
-                    <Link href={router.pathname} locale={lng} key={lng}>
+                    <Link href={{
+                      pathname: router.pathname,
+                      query: query
+                    }} locale={lng} key={lng}>
                       <NavLink
                         title="Change language button"
                         id="change-language-toggle"

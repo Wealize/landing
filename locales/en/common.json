@@ -86,5 +86,8 @@
       "tag-2": "${text}",
       "tag-3": "${text}"
     }
+  },
+  "posts_grid": {
+    "show_more_link_text" : "Show more"
   }
 }

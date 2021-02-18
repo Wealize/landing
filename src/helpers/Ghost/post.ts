@@ -22,3 +22,19 @@ export const getFirstHref = (post: PostOrPage): string | null => {
   const foundUrls = extractUrls(post?.html)
   return foundUrls[0] || null
 }
+
+export const dateFormatLongNumeric = (date: string, lang = 'en'): string => {
+  try {
+    const options: Intl.DateTimeFormatOptions = {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }
+
+    return new Intl.DateTimeFormat(lang, options)
+      .format(new Date(date))
+  } catch (error) {
+    console.error(error)
+  }
+}

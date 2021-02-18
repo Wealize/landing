@@ -15,7 +15,6 @@ module.exports = {
     '!src/components/icons/**/*.tsx',
     '!src/components/layout/**/*.{ts,tsx}',
     '!src/data/**/*.ts',
-    '!src/utils/testHook.tsx',
     '!src/interfaces/**/*.ts',
     '!src/styles/**/*.ts',
     '!src/pages/**/*.{ts,tsx}',

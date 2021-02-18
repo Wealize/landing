@@ -24,7 +24,7 @@ export const Container = styled.article`
   color: ${DARK_GRAY_COLOR};
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
   ${media.greaterThan('md')`
@@ -252,18 +252,25 @@ export const Container = styled.article`
   }
 `
 
-export const PostHeader = styled.header`
+export const PostHeader = styled.header<{isShowFeaturedImage: boolean}>`
   width: 100%;
+  padding-top: ${({ isShowFeaturedImage }) => (isShowFeaturedImage ? 0 : doublePx())};
 
   ${media.greaterThan('sm')`
     width: 80%;
   `};
 
-  ${media.greaterThan('md')`
+  ${({ isShowFeaturedImage }) => media.greaterThan('md')`
     width: 75%;
+    padding-top: ${(isShowFeaturedImage ? 0 : doublePx())};
   `};
 
-  ${media.greaterThan('xl')`
+  ${({ isShowFeaturedImage }) => media.greaterThan('lg')`
+    padding-top: ${(isShowFeaturedImage ? 0 : doublePx())};
+  `};
+
+  ${({ isShowFeaturedImage }) => media.greaterThan('xl')`
+    padding-top: ${(isShowFeaturedImage ? 0 : doublePx())};
     width: 60%;
   `};
 `
@@ -347,12 +354,16 @@ export const Figure = styled.figure`
     min-height: 10rem;
     padding-top: initial;
 
-    ${media.greaterThan('xxl')`
-      width: 100%;
+    ${media.greaterThan('md')`
+      min-height: 20rem;
     `};
 
-    ${media.greaterThan('md')`
-      min-height: 15rem;
+    ${media.greaterThan('lg')`
+      width: 75%;
+    `};
+
+    ${media.greaterThan('xl')`
+      width: 60%;
     `};
   }
 
