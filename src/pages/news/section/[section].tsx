@@ -120,35 +120,35 @@ const NewsRoomSectionCover = (): JSX.Element => {
           : null}
       </Head>
       <Container>
-      <ButtonRounded
-        backgroundColor={ACCENT_COLOR}
-        textColor={WHITE_COLOR}
-        animatedBackgroundColor={ACCENT_COLOR}
-        animatedTextColor={WHITE_COLOR}
-        size={SMALL}
-        aria-label={t('back_to_newsroom_button')}
-        handleClick={() => router.push(NEWS_ROOM_HREF)}
-        id="section-back-button"
-      >
-        <span>{t('back_to_newsroom_button')}</span>
-      </ButtonRounded>
-      <PageHeader>
-        <PageTitle className="page-section-title">{ pageTitle }</PageTitle>
-      </PageHeader>
-      <InfiniteScroll
+        <ButtonRounded
+          backgroundColor={ACCENT_COLOR}
+          textColor={WHITE_COLOR}
+          animatedBackgroundColor={ACCENT_COLOR}
+          animatedTextColor={WHITE_COLOR}
+          size={SMALL}
+          aria-label={t('back_to_newsroom_button')}
+          handleClick={() => router.push(NEWS_ROOM_HREF)}
+          id="section-back-button"
+        >
+          <span>{t('back_to_newsroom_button')}</span>
+        </ButtonRounded>
+        <PageHeader>
+          <PageTitle className="page-section-title">{ pageTitle }</PageTitle>
+        </PageHeader>
+        <InfiniteScroll
         dataLength={postsToShow.length}
         next={fetchNextPage}
         hasMore={hasMore}
         loader={null}
         scrollThreshold={0.3}
         style={{
-          width: '10 0%',
+          width: '100%',
           overflow: 'hidden'
         }}
       >
         {<GhostPostsGrid posts={postsToShow} />}
       </InfiniteScroll>
-    </Container>
+      </Container>
     </>
   )
 }
