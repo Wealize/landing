@@ -92,114 +92,117 @@ exports[`<GhostPostsGrid /> wrapper: should render 1`] = `
   }
   showMoreContentButton={false}
 >
-  <styles__Container>
-    <section
-      className="styles__Container-sc-19zaoik-0 dtOHAm"
-    >
-      <styles__ContainerPosts>
-        <div
-          className="styles__ContainerPosts-sc-19zaoik-2 ritP"
-        >
-          <Memo(GhostPostCard)
-            key="0"
-            post={
-              Object {
-                "canonical_url": null,
-                "codeinjection_foot": null,
-                "codeinjection_head": null,
-                "comment_id": "6017df3f6b0d7a001c15cc7c",
-                "created_at": "2021-02-01T11:00:15.000+00:00",
-                "custom_excerpt": "Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.",
-                "custom_template": null,
-                "excerpt": "Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.",
-                "feature_image": "https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png",
-                "featured": false,
-                "html": "<p>test html</p>",
-                "id": "6017df3f6b0d7a001c15cc7c",
-                "meta_description": null,
-                "meta_title": null,
-                "og_description": null,
-                "og_image": null,
-                "og_title": null,
-                "published_at": "2021-02-01T11:00:20.000+00:00",
-                "reading_time": 3,
-                "slug": "the-editor",
-                "tags": Array [
-                  Object {
-                    "description": null,
-                    "feature_image": null,
-                    "id": "602112e0638f28001c9994e3",
-                    "meta_description": null,
-                    "meta_title": null,
-                    "name": "Client Story",
-                    "slug": "client-story",
-                    "url": "https://wlz-blog.herokuapp.com/tag/client-story/",
-                    "visibility": "public",
-                  },
-                ],
-                "title": "Writing posts with Ghost ✍️",
-                "twitter_description": null,
-                "twitter_image": null,
-                "twitter_title": null,
-                "updated_at": "2021-02-01T11:00:15.000+00:00",
-                "url": "https://wlz-blog.herokuapp.com/the-editor/",
-                "uuid": "b4283683-b51e-4c67-ba42-66de093b1e05",
-              }
-            }
+  <ReactPlaceholder
+    ready={true}
+    style={
+      Object {
+        "height": "100%",
+        "marginTop": "7rem",
+        "width": "100%",
+      }
+    }
+    type="media"
+  >
+    <styles__Container>
+      <section
+        className="styles__Container-sc-19zaoik-0 dtOHAm"
+      >
+        <styles__ContainerPosts>
+          <div
+            className="styles__ContainerPosts-sc-19zaoik-2 ritP"
           >
-            <Link
-              href="/news/the-editor"
-              passHref={true}
+            <Memo(GhostPostCard)
+              key="0"
+              post={
+                Object {
+                  "canonical_url": null,
+                  "codeinjection_foot": null,
+                  "codeinjection_head": null,
+                  "comment_id": "6017df3f6b0d7a001c15cc7c",
+                  "created_at": "2021-02-01T11:00:15.000+00:00",
+                  "custom_excerpt": "Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.",
+                  "custom_template": null,
+                  "excerpt": "Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.",
+                  "feature_image": "https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png",
+                  "featured": false,
+                  "html": "<p>test html</p>",
+                  "id": "6017df3f6b0d7a001c15cc7c",
+                  "meta_description": null,
+                  "meta_title": null,
+                  "og_description": null,
+                  "og_image": null,
+                  "og_title": null,
+                  "published_at": "2021-02-01T11:00:20.000+00:00",
+                  "reading_time": 3,
+                  "slug": "the-editor",
+                  "tags": Array [
+                    Object {
+                      "description": null,
+                      "feature_image": null,
+                      "id": "602112e0638f28001c9994e3",
+                      "meta_description": null,
+                      "meta_title": null,
+                      "name": "Client Story",
+                      "slug": "client-story",
+                      "url": "https://wlz-blog.herokuapp.com/tag/client-story/",
+                      "visibility": "public",
+                    },
+                  ],
+                  "title": "Writing posts with Ghost ✍️",
+                  "twitter_description": null,
+                  "twitter_image": null,
+                  "twitter_title": null,
+                  "updated_at": "2021-02-01T11:00:15.000+00:00",
+                  "url": "https://wlz-blog.herokuapp.com/the-editor/",
+                  "uuid": "b4283683-b51e-4c67-ba42-66de093b1e05",
+                }
+              }
             >
-              <styles__Anchor
-                aria-label="postcard Writing posts with Ghost ✍️"
-                className="post-card featured"
-                color="#ffffff"
+              <Link
                 href="/news/the-editor"
-                isFeatured={false}
-                onClick={[Function]}
-                onMouseEnter={[Function]}
-                target="_self"
-                textColor="#6666ff"
-                title="postcard Writing posts with Ghost ✍️"
+                passHref={true}
               >
-                <a
+                <styles__Anchor
                   aria-label="postcard Writing posts with Ghost ✍️"
-                  className="styles__Anchor-pmxezz-0 goXYDO post-card featured"
+                  className="post-card featured"
                   color="#ffffff"
                   href="/news/the-editor"
+                  isFeatured={false}
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   target="_self"
+                  textColor="#6666ff"
                   title="postcard Writing posts with Ghost ✍️"
                 >
-                  <styles__Article>
-                    <article
-                      className="styles__Article-pmxezz-1 kulkFr"
-                    >
-                      <styles__Header>
-                        <header
-                          className="styles__Header-pmxezz-2"
-                        >
-                          <styles__CardImage
-                            isVisible={true}
+                  <a
+                    aria-label="postcard Writing posts with Ghost ✍️"
+                    className="styles__Anchor-pmxezz-0 goXYDO post-card featured"
+                    color="#ffffff"
+                    href="/news/the-editor"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                    target="_self"
+                    title="postcard Writing posts with Ghost ✍️"
+                  >
+                    <styles__Article>
+                      <article
+                        className="styles__Article-pmxezz-1 kulkFr"
+                      >
+                        <styles__Header>
+                          <header
+                            className="styles__Header-pmxezz-2"
                           >
-                            <div
-                              className="styles__CardImage-pmxezz-3 loizaj"
+                            <styles__CardImage
+                              isVisible={true}
                             >
-                              <Memo(ImageWithPlaceholder)
-                                imageAriaLabel="post Writing posts with Ghost ✍️"
-                                imageTitle="post Writing posts with Ghost ✍️"
-                                imageUrl="https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png"
-                                placeholderType="rect"
-                                style={
-                                  Object {
-                                    "position": "absolute",
-                                    "top": "0",
-                                  }
-                                }
+                              <div
+                                className="styles__CardImage-pmxezz-3 loizaj"
                               >
-                                <styles__Container
+                                <Memo(ImageWithPlaceholder)
+                                  imageAriaLabel="post Writing posts with Ghost ✍️"
+                                  imageTitle="post Writing posts with Ghost ✍️"
+                                  imageUrl="https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png"
+                                  placeholderType="rect"
                                   style={
                                     Object {
                                       "position": "absolute",
@@ -207,8 +210,7 @@ exports[`<GhostPostsGrid /> wrapper: should render 1`] = `
                                     }
                                   }
                                 >
-                                  <div
-                                    className="styles__Container-sc-1li6v9v-0 HMjkw"
+                                  <styles__Container
                                     style={
                                       Object {
                                         "position": "absolute",
@@ -216,235 +218,236 @@ exports[`<GhostPostsGrid /> wrapper: should render 1`] = `
                                       }
                                     }
                                   >
-                                    <ReactPlaceholder
-                                      firstLaunchOnly={true}
-                                      ready={false}
-                                      showLoadingAnimation={true}
+                                    <div
+                                      className="styles__Container-sc-1li6v9v-0 HMjkw"
                                       style={
                                         Object {
-                                          "marginRight": "0",
                                           "position": "absolute",
+                                          "top": "0",
                                         }
                                       }
-                                      type="rect"
                                     >
-                                      <RectShape
-                                        className="show-loading-animation"
-                                        color="#CDCDCD"
-                                        rows={3}
+                                      <ReactPlaceholder
+                                        firstLaunchOnly={true}
+                                        ready={false}
+                                        showLoadingAnimation={true}
                                         style={
                                           Object {
                                             "marginRight": "0",
                                             "position": "absolute",
                                           }
                                         }
+                                        type="rect"
                                       >
-                                        <div
-                                          className="rect-shape show-loading-animation"
+                                        <RectShape
+                                          className="show-loading-animation"
+                                          color="#CDCDCD"
+                                          rows={3}
                                           style={
                                             Object {
-                                              "backgroundColor": "#CDCDCD",
-                                              "height": "100%",
                                               "marginRight": "0",
                                               "position": "absolute",
-                                              "width": "100%",
                                             }
                                           }
-                                        />
-                                      </RectShape>
-                                    </ReactPlaceholder>
-                                    <Image
-                                      aria-label="post Writing posts with Ghost ✍️"
-                                      layout="fill"
-                                      objectFit="cover"
-                                      onLoad={[Function]}
-                                      quality={75}
-                                      src="https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png"
-                                      title="post Writing posts with Ghost ✍️"
-                                    >
-                                      <div
-                                        style={
-                                          Object {
-                                            "bottom": 0,
-                                            "boxSizing": "border-box",
-                                            "display": "block",
-                                            "left": 0,
-                                            "margin": 0,
-                                            "overflow": "hidden",
-                                            "position": "absolute",
-                                            "right": 0,
-                                            "top": 0,
-                                          }
-                                        }
+                                        >
+                                          <div
+                                            className="rect-shape show-loading-animation"
+                                            style={
+                                              Object {
+                                                "backgroundColor": "#CDCDCD",
+                                                "height": "100%",
+                                                "marginRight": "0",
+                                                "position": "absolute",
+                                                "width": "100%",
+                                              }
+                                            }
+                                          />
+                                        </RectShape>
+                                      </ReactPlaceholder>
+                                      <Image
+                                        aria-label="post Writing posts with Ghost ✍️"
+                                        layout="fill"
+                                        objectFit="cover"
+                                        onLoad={[Function]}
+                                        quality={75}
+                                        src="https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png"
+                                        title="post Writing posts with Ghost ✍️"
                                       >
-                                        <img
-                                          aria-label="post Writing posts with Ghost ✍️"
-                                          decoding="async"
-                                          onLoad={[Function]}
-                                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                        <div
                                           style={
                                             Object {
-                                              "border": "none",
                                               "bottom": 0,
                                               "boxSizing": "border-box",
                                               "display": "block",
-                                              "height": 0,
                                               "left": 0,
-                                              "margin": "auto",
-                                              "maxHeight": "100%",
-                                              "maxWidth": "100%",
-                                              "minHeight": "100%",
-                                              "minWidth": "100%",
-                                              "objectFit": "cover",
-                                              "objectPosition": undefined,
-                                              "padding": 0,
+                                              "margin": 0,
+                                              "overflow": "hidden",
                                               "position": "absolute",
                                               "right": 0,
                                               "top": 0,
-                                              "visibility": "hidden",
-                                              "width": 0,
                                             }
                                           }
-                                          title="post Writing posts with Ghost ✍️"
-                                        />
-                                      </div>
-                                    </Image>
-                                  </div>
-                                </styles__Container>
-                              </Memo(ImageWithPlaceholder)>
-                            </div>
-                          </styles__CardImage>
-                          <styles__CardHeadline>
-                            <h3
-                              className="styles__CardHeadline-pmxezz-4 fpUjLl"
-                            >
-                              Writing posts with Ghost ✍️
-                            </h3>
-                          </styles__CardHeadline>
-                        </header>
-                      </styles__Header>
-                      <styles__EntryContent>
-                        <div
-                          className="styles__EntryContent-pmxezz-5 fbeNuV"
-                        >
-                          <p>
-                            Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.
-                          </p>
-                          <styles__CardPublishedAt
-                            isShowDate={false}
+                                        >
+                                          <img
+                                            aria-label="post Writing posts with Ghost ✍️"
+                                            decoding="async"
+                                            onLoad={[Function]}
+                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                            style={
+                                              Object {
+                                                "border": "none",
+                                                "bottom": 0,
+                                                "boxSizing": "border-box",
+                                                "display": "block",
+                                                "height": 0,
+                                                "left": 0,
+                                                "margin": "auto",
+                                                "maxHeight": "100%",
+                                                "maxWidth": "100%",
+                                                "minHeight": "100%",
+                                                "minWidth": "100%",
+                                                "objectFit": "cover",
+                                                "objectPosition": undefined,
+                                                "padding": 0,
+                                                "position": "absolute",
+                                                "right": 0,
+                                                "top": 0,
+                                                "visibility": "hidden",
+                                                "width": 0,
+                                              }
+                                            }
+                                            title="post Writing posts with Ghost ✍️"
+                                          />
+                                        </div>
+                                      </Image>
+                                    </div>
+                                  </styles__Container>
+                                </Memo(ImageWithPlaceholder)>
+                              </div>
+                            </styles__CardImage>
+                            <styles__CardHeadline>
+                              <h3
+                                className="styles__CardHeadline-pmxezz-4 fpUjLl"
+                              >
+                                Writing posts with Ghost ✍️
+                              </h3>
+                            </styles__CardHeadline>
+                          </header>
+                        </styles__Header>
+                        <styles__EntryContent>
+                          <div
+                            className="styles__EntryContent-pmxezz-5 fbeNuV"
                           >
-                            <span
-                              className="styles__CardPublishedAt-pmxezz-6 gYjyQQ"
-                            />
-                          </styles__CardPublishedAt>
-                        </div>
-                      </styles__EntryContent>
-                    </article>
-                  </styles__Article>
-                </a>
-              </styles__Anchor>
-            </Link>
-          </Memo(GhostPostCard)>
-          <Memo(GhostPostCard)
-            key="1"
-            post={
-              Object {
-                "canonical_url": null,
-                "codeinjection_foot": null,
-                "codeinjection_head": null,
-                "comment_id": "6017df3f6b0d7a001c15cc7c",
-                "created_at": "2021-02-01T11:00:15.000+00:00",
-                "custom_excerpt": "Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.",
-                "custom_template": null,
-                "excerpt": "Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.",
-                "feature_image": "https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png",
-                "featured": false,
-                "html": "<p>test html</p>",
-                "id": "6017df3f6b0d7a001c15cc8c",
-                "meta_description": null,
-                "meta_title": null,
-                "og_description": null,
-                "og_image": null,
-                "og_title": null,
-                "published_at": "2021-02-01T11:00:20.000+00:00",
-                "reading_time": 3,
-                "slug": "the-editor",
-                "tags": Array [
-                  Object {
-                    "description": null,
-                    "feature_image": null,
-                    "id": "602112e0638f28001c9994e3",
-                    "meta_description": null,
-                    "meta_title": null,
-                    "name": "Client Story",
-                    "slug": "client-story",
-                    "url": "https://wlz-blog.herokuapp.com/tag/client-story/",
-                    "visibility": "public",
-                  },
-                ],
-                "title": "Writing posts with Ghost ✍️ 2",
-                "twitter_description": null,
-                "twitter_image": null,
-                "twitter_title": null,
-                "updated_at": "2021-02-01T11:00:15.000+00:00",
-                "url": "https://wlz-blog.herokuapp.com/the-editor/",
-                "uuid": "b4283683-b51e-4c67-ba42-66de093b1e05",
+                            <p>
+                              Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.
+                            </p>
+                            <styles__CardPublishedAt
+                              isShowDate={false}
+                            >
+                              <span
+                                className="styles__CardPublishedAt-pmxezz-6 gYjyQQ"
+                              />
+                            </styles__CardPublishedAt>
+                          </div>
+                        </styles__EntryContent>
+                      </article>
+                    </styles__Article>
+                  </a>
+                </styles__Anchor>
+              </Link>
+            </Memo(GhostPostCard)>
+            <Memo(GhostPostCard)
+              key="1"
+              post={
+                Object {
+                  "canonical_url": null,
+                  "codeinjection_foot": null,
+                  "codeinjection_head": null,
+                  "comment_id": "6017df3f6b0d7a001c15cc7c",
+                  "created_at": "2021-02-01T11:00:15.000+00:00",
+                  "custom_excerpt": "Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.",
+                  "custom_template": null,
+                  "excerpt": "Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.",
+                  "feature_image": "https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png",
+                  "featured": false,
+                  "html": "<p>test html</p>",
+                  "id": "6017df3f6b0d7a001c15cc8c",
+                  "meta_description": null,
+                  "meta_title": null,
+                  "og_description": null,
+                  "og_image": null,
+                  "og_title": null,
+                  "published_at": "2021-02-01T11:00:20.000+00:00",
+                  "reading_time": 3,
+                  "slug": "the-editor",
+                  "tags": Array [
+                    Object {
+                      "description": null,
+                      "feature_image": null,
+                      "id": "602112e0638f28001c9994e3",
+                      "meta_description": null,
+                      "meta_title": null,
+                      "name": "Client Story",
+                      "slug": "client-story",
+                      "url": "https://wlz-blog.herokuapp.com/tag/client-story/",
+                      "visibility": "public",
+                    },
+                  ],
+                  "title": "Writing posts with Ghost ✍️ 2",
+                  "twitter_description": null,
+                  "twitter_image": null,
+                  "twitter_title": null,
+                  "updated_at": "2021-02-01T11:00:15.000+00:00",
+                  "url": "https://wlz-blog.herokuapp.com/the-editor/",
+                  "uuid": "b4283683-b51e-4c67-ba42-66de093b1e05",
+                }
               }
-            }
-          >
-            <Link
-              href="/news/the-editor"
-              passHref={true}
             >
-              <styles__Anchor
-                aria-label="postcard Writing posts with Ghost ✍️ 2"
-                className="post-card featured"
-                color="#ffffff"
+              <Link
                 href="/news/the-editor"
-                isFeatured={false}
-                onClick={[Function]}
-                onMouseEnter={[Function]}
-                target="_self"
-                textColor="#6666ff"
-                title="postcard Writing posts with Ghost ✍️ 2"
+                passHref={true}
               >
-                <a
+                <styles__Anchor
                   aria-label="postcard Writing posts with Ghost ✍️ 2"
-                  className="styles__Anchor-pmxezz-0 goXYDO post-card featured"
+                  className="post-card featured"
                   color="#ffffff"
                   href="/news/the-editor"
+                  isFeatured={false}
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   target="_self"
+                  textColor="#6666ff"
                   title="postcard Writing posts with Ghost ✍️ 2"
                 >
-                  <styles__Article>
-                    <article
-                      className="styles__Article-pmxezz-1 kulkFr"
-                    >
-                      <styles__Header>
-                        <header
-                          className="styles__Header-pmxezz-2"
-                        >
-                          <styles__CardImage
-                            isVisible={true}
+                  <a
+                    aria-label="postcard Writing posts with Ghost ✍️ 2"
+                    className="styles__Anchor-pmxezz-0 goXYDO post-card featured"
+                    color="#ffffff"
+                    href="/news/the-editor"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                    target="_self"
+                    title="postcard Writing posts with Ghost ✍️ 2"
+                  >
+                    <styles__Article>
+                      <article
+                        className="styles__Article-pmxezz-1 kulkFr"
+                      >
+                        <styles__Header>
+                          <header
+                            className="styles__Header-pmxezz-2"
                           >
-                            <div
-                              className="styles__CardImage-pmxezz-3 loizaj"
+                            <styles__CardImage
+                              isVisible={true}
                             >
-                              <Memo(ImageWithPlaceholder)
-                                imageAriaLabel="post Writing posts with Ghost ✍️ 2"
-                                imageTitle="post Writing posts with Ghost ✍️ 2"
-                                imageUrl="https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png"
-                                placeholderType="rect"
-                                style={
-                                  Object {
-                                    "position": "absolute",
-                                    "top": "0",
-                                  }
-                                }
+                              <div
+                                className="styles__CardImage-pmxezz-3 loizaj"
                               >
-                                <styles__Container
+                                <Memo(ImageWithPlaceholder)
+                                  imageAriaLabel="post Writing posts with Ghost ✍️ 2"
+                                  imageTitle="post Writing posts with Ghost ✍️ 2"
+                                  imageUrl="https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png"
+                                  placeholderType="rect"
                                   style={
                                     Object {
                                       "position": "absolute",
@@ -452,8 +455,7 @@ exports[`<GhostPostsGrid /> wrapper: should render 1`] = `
                                     }
                                   }
                                 >
-                                  <div
-                                    className="styles__Container-sc-1li6v9v-0 HMjkw"
+                                  <styles__Container
                                     style={
                                       Object {
                                         "position": "absolute",
@@ -461,138 +463,148 @@ exports[`<GhostPostsGrid /> wrapper: should render 1`] = `
                                       }
                                     }
                                   >
-                                    <ReactPlaceholder
-                                      firstLaunchOnly={true}
-                                      ready={false}
-                                      showLoadingAnimation={true}
+                                    <div
+                                      className="styles__Container-sc-1li6v9v-0 HMjkw"
                                       style={
                                         Object {
-                                          "marginRight": "0",
                                           "position": "absolute",
+                                          "top": "0",
                                         }
                                       }
-                                      type="rect"
                                     >
-                                      <RectShape
-                                        className="show-loading-animation"
-                                        color="#CDCDCD"
-                                        rows={3}
+                                      <ReactPlaceholder
+                                        firstLaunchOnly={true}
+                                        ready={false}
+                                        showLoadingAnimation={true}
                                         style={
                                           Object {
                                             "marginRight": "0",
                                             "position": "absolute",
                                           }
                                         }
+                                        type="rect"
                                       >
-                                        <div
-                                          className="rect-shape show-loading-animation"
+                                        <RectShape
+                                          className="show-loading-animation"
+                                          color="#CDCDCD"
+                                          rows={3}
                                           style={
                                             Object {
-                                              "backgroundColor": "#CDCDCD",
-                                              "height": "100%",
                                               "marginRight": "0",
                                               "position": "absolute",
-                                              "width": "100%",
                                             }
                                           }
-                                        />
-                                      </RectShape>
-                                    </ReactPlaceholder>
-                                    <Image
-                                      aria-label="post Writing posts with Ghost ✍️ 2"
-                                      layout="fill"
-                                      objectFit="cover"
-                                      onLoad={[Function]}
-                                      quality={75}
-                                      src="https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png"
-                                      title="post Writing posts with Ghost ✍️ 2"
-                                    >
-                                      <div
-                                        style={
-                                          Object {
-                                            "bottom": 0,
-                                            "boxSizing": "border-box",
-                                            "display": "block",
-                                            "left": 0,
-                                            "margin": 0,
-                                            "overflow": "hidden",
-                                            "position": "absolute",
-                                            "right": 0,
-                                            "top": 0,
-                                          }
-                                        }
+                                        >
+                                          <div
+                                            className="rect-shape show-loading-animation"
+                                            style={
+                                              Object {
+                                                "backgroundColor": "#CDCDCD",
+                                                "height": "100%",
+                                                "marginRight": "0",
+                                                "position": "absolute",
+                                                "width": "100%",
+                                              }
+                                            }
+                                          />
+                                        </RectShape>
+                                      </ReactPlaceholder>
+                                      <Image
+                                        aria-label="post Writing posts with Ghost ✍️ 2"
+                                        layout="fill"
+                                        objectFit="cover"
+                                        onLoad={[Function]}
+                                        quality={75}
+                                        src="https://static.ghost.org/v3.0.0/images/writing-posts-with-ghost.png"
+                                        title="post Writing posts with Ghost ✍️ 2"
                                       >
-                                        <img
-                                          aria-label="post Writing posts with Ghost ✍️ 2"
-                                          decoding="async"
-                                          onLoad={[Function]}
-                                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                        <div
                                           style={
                                             Object {
-                                              "border": "none",
                                               "bottom": 0,
                                               "boxSizing": "border-box",
                                               "display": "block",
-                                              "height": 0,
                                               "left": 0,
-                                              "margin": "auto",
-                                              "maxHeight": "100%",
-                                              "maxWidth": "100%",
-                                              "minHeight": "100%",
-                                              "minWidth": "100%",
-                                              "objectFit": "cover",
-                                              "objectPosition": undefined,
-                                              "padding": 0,
+                                              "margin": 0,
+                                              "overflow": "hidden",
                                               "position": "absolute",
                                               "right": 0,
                                               "top": 0,
-                                              "visibility": "hidden",
-                                              "width": 0,
                                             }
                                           }
-                                          title="post Writing posts with Ghost ✍️ 2"
-                                        />
-                                      </div>
-                                    </Image>
-                                  </div>
-                                </styles__Container>
-                              </Memo(ImageWithPlaceholder)>
-                            </div>
-                          </styles__CardImage>
-                          <styles__CardHeadline>
-                            <h3
-                              className="styles__CardHeadline-pmxezz-4 fpUjLl"
-                            >
-                              Writing posts with Ghost ✍️ 2
-                            </h3>
-                          </styles__CardHeadline>
-                        </header>
-                      </styles__Header>
-                      <styles__EntryContent>
-                        <div
-                          className="styles__EntryContent-pmxezz-5 fbeNuV"
-                        >
-                          <p>
-                            Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.
-                          </p>
-                          <styles__CardPublishedAt
-                            isShowDate={false}
+                                        >
+                                          <img
+                                            aria-label="post Writing posts with Ghost ✍️ 2"
+                                            decoding="async"
+                                            onLoad={[Function]}
+                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                            style={
+                                              Object {
+                                                "border": "none",
+                                                "bottom": 0,
+                                                "boxSizing": "border-box",
+                                                "display": "block",
+                                                "height": 0,
+                                                "left": 0,
+                                                "margin": "auto",
+                                                "maxHeight": "100%",
+                                                "maxWidth": "100%",
+                                                "minHeight": "100%",
+                                                "minWidth": "100%",
+                                                "objectFit": "cover",
+                                                "objectPosition": undefined,
+                                                "padding": 0,
+                                                "position": "absolute",
+                                                "right": 0,
+                                                "top": 0,
+                                                "visibility": "hidden",
+                                                "width": 0,
+                                              }
+                                            }
+                                            title="post Writing posts with Ghost ✍️ 2"
+                                          />
+                                        </div>
+                                      </Image>
+                                    </div>
+                                  </styles__Container>
+                                </Memo(ImageWithPlaceholder)>
+                              </div>
+                            </styles__CardImage>
+                            <styles__CardHeadline>
+                              <h3
+                                className="styles__CardHeadline-pmxezz-4 fpUjLl"
+                              >
+                                Writing posts with Ghost ✍️ 2
+                              </h3>
+                            </styles__CardHeadline>
+                          </header>
+                        </styles__Header>
+                        <styles__EntryContent>
+                          <div
+                            className="styles__EntryContent-pmxezz-5 fbeNuV"
                           >
-                            <span
-                              className="styles__CardPublishedAt-pmxezz-6 gYjyQQ"
-                            />
-                          </styles__CardPublishedAt>
-                        </div>
-                      </styles__EntryContent>
-                    </article>
-                  </styles__Article>
-                </a>
-              </styles__Anchor>
-            </Link>
-          </Memo(GhostPostCard)>
-        </div>
-      </styles__ContainerPosts>
-    </section>
-  </styles__Container>
+                            <p>
+                              Discover familiar formatting options in a functional toolbar and the ability to add dynamic content seamlessly.
+                            </p>
+                            <styles__CardPublishedAt
+                              isShowDate={false}
+                            >
+                              <span
+                                className="styles__CardPublishedAt-pmxezz-6 gYjyQQ"
+                              />
+                            </styles__CardPublishedAt>
+                          </div>
+                        </styles__EntryContent>
+                      </article>
+                    </styles__Article>
+                  </a>
+                </styles__Anchor>
+              </Link>
+            </Memo(GhostPostCard)>
+          </div>
+        </styles__ContainerPosts>
+      </section>
+    </styles__Container>
+  </ReactPlaceholder>
 </Memo(GhostPostsGrid)>
 `;

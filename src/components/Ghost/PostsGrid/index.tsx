@@ -2,6 +2,7 @@ import { PostOrPage } from '@tryghost/content-api'
 import useTranslation from 'next-translate/useTranslation'
 import Link from 'next/link'
 import React from 'react'
+import ReactPlaceholder from 'react-placeholder'
 
 import GhostPostCard from '../../../components/Ghost/PostCard'
 
@@ -25,35 +26,44 @@ const GhostPostsGrid = (props: GhostPostsGridProps) => {
   const { t } = useTranslation('common')
 
   return (
-    <Container>
-      {
-        posts?.length
-          ? (
-            <>
-              { sectionTitle ? <SectionTitle>{sectionTitle}</SectionTitle> : null}
-              <ContainerPosts>
-                {posts.map((post: PostOrPage, index: number) => {
-                  return <GhostPostCard key={index} post={post} />
-                })}
-              </ContainerPosts>
-              {
-                coverSectionPageName &&
-                maxPaginationPages > 1
-                  ? (
-                      <Link href={`${coverSectionPageName}`} passHref>
-                        <ShowMoreLink
-                          className="show-more-link"
-                        >
-                          { t('posts_grid.show_more_link_text') }
-                        </ShowMoreLink>
-                      </Link>
-                    )
-                  : null}
-            </>
-            )
-          : null
-      }
-    </Container>
+    <ReactPlaceholder
+        type='media'
+        ready={posts?.length > 0}
+        style={{
+          marginTop: '7rem',
+          width: '100%',
+          height: '100%'
+        }}>
+      <Container>
+        {
+          posts?.length
+            ? (
+              <>
+                { sectionTitle ? <SectionTitle>{sectionTitle}</SectionTitle> : null}
+                <ContainerPosts>
+                  {posts.map((post: PostOrPage, index: number) => {
+                    return <GhostPostCard key={index} post={post} />
+                  })}
+                </ContainerPosts>
+                {
+                  coverSectionPageName &&
+                  maxPaginationPages > 1
+                    ? (
+                        <Link href={`${coverSectionPageName}`} passHref>
+                          <ShowMoreLink
+                            className="show-more-link"
+                          >
+                            { t('posts_grid.show_more_link_text') }
+                          </ShowMoreLink>
+                        </Link>
+                      )
+                    : null}
+              </>
+              )
+            : null
+        }
+      </Container>
+    </ReactPlaceholder>
   )
 }
 
