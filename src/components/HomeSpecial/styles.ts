@@ -47,11 +47,11 @@ export const Background = styled.div`
   `};
 
   ${media.greaterThan('md')`
-    width: 100%;
+    width: 90%;
   `};
 
   ${media.greaterThan('lg')`
-    width: 75%;
+    width: 65%;
   `};
 
   ${media.greaterThan('xl')`
@@ -206,11 +206,12 @@ export const SubHeadline = styled.h2`
 
   ${media.greaterThan('lg')`
     font-size: 3rem;
-    width: 75%;
+    width: 100%;
   `};
 
   ${media.greaterThan('xl')`
     font-size: 3.5rem;
+    width: 75%;
   `};
 
   ${media.greaterThan('xl')`

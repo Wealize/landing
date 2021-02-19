@@ -8,7 +8,7 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
     >
       <styles__Background>
         <div
-          className="styles__Background-gjaj1n-1 knYsMV"
+          className="styles__Background-gjaj1n-1 emsDIM"
         >
           <Memo(WAnimation)
             isMixMultiplyBlendMode={false}
@@ -306,7 +306,7 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
             id="slogan-subheadline"
           >
             <h2
-              className="styles__SubHeadline-gjaj1n-5 eAfoAJ"
+              className="styles__SubHeadline-gjaj1n-5 bQlFWc"
               id="slogan-subheadline"
             >
               <Trans
