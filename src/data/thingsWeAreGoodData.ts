@@ -15,4 +15,4 @@ export const THINGS_WE_ARE_GOOD_AT_THIRD_CARD_HEADLINE = 'Conversational agents'
 export const THINGS_WE_ARE_GOOD_AT_THIRD_CARD_SUBHEADLINE =
   'Enhace customer experience'
 export const THINGS_WE_ARE_GOOD_AT_THIRD_CARD_DESCRIPTION =
-  'We build text- and voice-based conversational interfaces for industries like health, tourism, legal, banking and insurance'
+  'We build text- and voice-based conversational agents for industries like health, tourism, legal, banking and insurance'

@@ -2,25 +2,25 @@
   "meta_title": "Cosas en las que somos buenos - Servicios | Wealize",
   "meta_description": "Impulsamos el cambio que necesitas para triunfar en la era digital: Desarrollo con blockchain, Servicios cognitivos, Agentes conversacionales. ¡Conócenos!",
   "started-description" : {
-    "paragraph-0": "Impulsamos el cambio que necesita para prosperar en la era digital",
-    "paragraph-1": "Trabajamos internacionalmente para organizaciones medias y startups prometedoras",
+    "paragraph-0": "Impulsamos el cambio que necesitas para triunfar en la era digital",
+    "paragraph-1": "Trabajamos a nivel global para grandes organizaciones y startups prometedoras",
     "paragraph-2": "Más de 50 organizaciones en todo el mundo ya utilizan nuestras soluciones: España, Estados Unidos, Bélgica, México, Honduras, Guatemala, Guinea, Malawi y Zimbabue..."
   },
   "services-ventures" : {
-    "title" : "Desarrollamos productos digitales a medida con impacto en el mundo real y construimos ventures sostenibles que contribuyen positivamente a la comunidad",
+    "title" : "Desarrollamos productos digitales a medida con impacto en el mundo real y construimos proyectos sostenibles que contribuyen positivamente a la comunidad",
     "services-section": {
       "title": "Servicios",
       "section-title-0": "Desarrollo de productos",
-      "section-description-0": "Impulsamos ideas desde su conceptualización hasta el prototipo, lanzamiento y más allá. Nos comprometemos a entregar trabajos de alta calidad a la velocidad del pensamiento",
+      "section-description-0": "Impulsamos ideas desde su conceptualización hasta el prototipo, lanzamiento y más allá. Nos comprometemos a entregar trabajos de alta calidad a la velocidad de la luz",
       "section-title-1": "Feature team",
-      "section-description-1": "Nos integramos de manera orgánica como su Feature Team, garantizando la transparencia de objetivos y el cumplimiento de los requerimientos a lo largo de todo el proyecto",
+      "section-description-1": "Nos integramos de manera orgánica como un equipo orientado a funcionalidad, garantizando la transparencia de objetivos y requerimientos a lo largo de todo el proyecto",
       "section-title-2": "Rescate de proyectos",
-      "section-description-2": "Descubrimos lo que salió mal y trabajamos contigo para desarrollar un plan de rescate que podamos implementar conjuntamente o pueda ejecutarlo usted mismo"
+      "section-description-2": "Descubrimos lo que salió mal y trabajamos juntos para desarrollar un plan de rescate que podamos implementar"
     },
     "ventures-section" : {
       "title": "Ventures",
       "section-title-0": "Startup studio",
-      "section-description-0": "Somos independientes de la industria tecnológica y desarrollamos nuestros propios productos abriendo ventanas de oportunidad",
+      "section-description-0": "Trabajamos en diversos sectores y desarrollamos nuestros propios productos abriendo ventanas de oportunidad",
       "section-title-1": "Socio de investigación",
       "section-description-1": "Cerramos brechas sociales asociándonos con miembros activos de la comunidad",
       "section-title-2": "Estrategia de financiación de I+D+i",
@@ -28,28 +28,28 @@
     }
   },
   "things-we-are-good-at" : {
-    "title": "Cosas que se nos da bien",
+    "title": "Cosas que se nos daN bien",
     "first-card": {
       "headline": "Desarrollo con blockchain",
       "subheadline": "Cuando la transparencia y la confianza son requerimientos claves",
-      "description": "Construimos ledgers distribuidos y redes de consenso que garantizan la trazabilidad, la identidad y la rendición de cuentas"
+      "description": "Construimos registros distribuidos y redes de consenso que garantizan la trazabilidad, la auditoría y la identidad"
     },
     "second-card": {
       "headline": "Servicios cognitivos",
       "subheadline": "Piensa, predice y actúa",
-      "description": "Utilizamos el Machine Learning y la Inteligencia Artificial para impulsar a las empresas tomando mejores decisiones"
+      "description": "Utilizamos Machine Learning e Inteligencia Artificial para ayudar a las empresas a tomar mejores decisiones"
     },
     "third-card": {
       "headline": "Agentes conversacionales",
       "subheadline": "Mejora la experiencia de cliente",
-      "description": "Creamos interfaces de conversación basadas en texto y voz para industrias como salud, turismo, legal, banca y seguros"
+      "description": "Creamos agentes conversacionales avanzados basadas en texto y voz para industrias como salud, turismo, legal, banca y seguros"
     }
   },
   "we-deliver": {
     "title": "Entregamos",
     "card-0": {
       "title": "${text}",
-      "description": "Comprendemos en su totalidad las necesidades y el entorno de nuestro cliente, para poder ofrecer así un servicio a medida"
+      "description": "Comprendemos en su totalidad las necesidades y el entorno de nuestro cliente, para poder ofrecer un servicio a medida"
     },
     "card-1": {
       "title": "${text}",
@@ -70,7 +70,7 @@
     "paragraph-1": "Trabajamos de manera ágil, entregando soluciones probadas y validadas a la velocidad de la luz",
     "paragraph-2": "Observamos las tendencias y movimientos en el mercado, así que conocemos las soluciones más adecuadas",
     "paragraph-3": "Somos miembros activos de la comunidad, creando proyectos de código abierto en beneficio del ecosistema",
-    "paragraph-4": "Como su socio tecnológicamente agnóstico, podemos ayudarle a encontrar las soluciones correctas en las primeras etapas del proyectos",
+    "paragraph-4": "Como su socio tecnológicamente agnóstico, podemos ayudarle a encontrar las soluciones correctas en las primeras etapas del proyecto",
     "paragraph-5": "Trabajamos de forma colaborativa en un entorno razonablemente descentralizado",
     "paragraph-6": "Cada uno de nosotros es un representante genuino del espíritu de Wealize: curioso, audaz, guiado por datos, creativo, orientado a valores, cero tonterías"
   },
