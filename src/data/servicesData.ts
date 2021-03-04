@@ -11,7 +11,7 @@ const servicesData: ServiceContent[] = [
   },
   {
     headline: 'Project rescue',
-    description: 'We uncover what went wrong and work with you to develop a recovery plan which we can either implement or you can set forth and execute yourself'
+    description: 'We uncover what went wrong and work with you to develop a recovery plan which we can implement '
   }
 ]
 
