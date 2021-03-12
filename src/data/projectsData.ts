@@ -59,7 +59,7 @@ const projectsData: CardRounded[] = [
     description:
       'Created our own flexible infrastructure for developers that allows the conversational ecosystems of large organizations and startups to scale orchestrating all conversational channels, NLP engines and data sources to their business processes',
     link: {
-      url: 'https://talk.coloq.io/',
+      url: 'https://www.coloq.io/',
       text: 'Coloq.io',
       color: 'rgba(255,255,255,.7)'
     },
