@@ -31,7 +31,25 @@ export const Container = styled.div`
   `};
 `
 
-export const Title = styled.h3`
+export const Title = styled.h1`
+  font-size: 1.8rem;
+  line-height: 1.40;
+  padding: 0;
+  z-index: 1;
+
+  ${media.greaterThan('xs')`
+    width: 64%
+  `};
+
+  ${media.greaterThan('md')`
+    width: 51%
+  `};
+
+  ${media.greaterThan('lg')`
+    width: 100%
+  `};
+`
+export const Subtitle = styled.h3`
   font-size: 1.8rem;
   line-height: 1.40;
   padding: 0;
