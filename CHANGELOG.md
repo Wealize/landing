@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [Add H1 heading tags to Profile pages](https://wealize.atlassian.net/browse/WLZAA-142)
+
 ## [v2021.02.18]
 
 - [Add initial SEO improvements](https://wealize.atlassian.net/browse/WLZAA-125)

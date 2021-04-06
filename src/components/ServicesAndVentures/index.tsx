@@ -14,7 +14,8 @@ import {
   SectionTitle,
   CardContainer,
   CardHeadline,
-  CardDescription
+  CardDescription,
+  Subtitle
 } from './styles'
 const ServicesAndVentures = () => {
   const { t } = useTranslation('profile')
@@ -22,6 +23,7 @@ const ServicesAndVentures = () => {
   return (
     <Container>
       <Title>{t('services-ventures.title')}</Title>
+      <Subtitle>{t('services-ventures.subtitle')}</Subtitle>
       <ContentContainer>
         <SectionContainer>
           <SectionTitle>{t('services-ventures.services-section.title')}</SectionTitle>
