@@ -36,7 +36,7 @@ const CDTI = (): JSX.Element => {
       </Description>
       <LogosContainer>
         <Image
-          src="https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/img/grants/CDTI.png"
+          src="https://assets.wealize.digital/img/grants/CDTI.png"
           width="100%"
           height="55%"
           layout="responsive"

@@ -117,7 +117,7 @@ exports[`<WAnimation /> wrapperWithBlendMode: should render without blend mode 1
         url={
           Array [
             Object {
-              "src": "https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/video/w_1300_blend_mode_multiply.mp4",
+              "src": "https://assets.wealize.digital/video/w_1300_blend_mode_multiply.mp4",
               "type": "video/mp4",
             },
           ]
@@ -265,7 +265,7 @@ exports[`<WAnimation /> wrapperWithBlendMode: should render without blend mode 1
               url={
                 Array [
                   Object {
-                    "src": "https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/video/w_1300_blend_mode_multiply.mp4",
+                    "src": "https://assets.wealize.digital/video/w_1300_blend_mode_multiply.mp4",
                     "type": "video/mp4",
                   },
                 ]
@@ -399,7 +399,7 @@ exports[`<WAnimation /> wrapperWithoutBlendMode: should render without blend mod
         url={
           Array [
             Object {
-              "src": "https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/video/w_2048.mp4",
+              "src": "https://assets.wealize.digital/video/w_2048.mp4",
               "type": "video/mp4",
             },
           ]
@@ -547,7 +547,7 @@ exports[`<WAnimation /> wrapperWithoutBlendMode: should render without blend mod
               url={
                 Array [
                   Object {
-                    "src": "https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/video/w_2048.mp4",
+                    "src": "https://assets.wealize.digital/video/w_2048.mp4",
                     "type": "video/mp4",
                   },
                 ]

@@ -13,12 +13,12 @@ interface WAnimationProps {
 }
 
 const WAnimation = (props:WAnimationProps) => {
-  const W_768_MP4_VIDEO_URL = 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/video/w_768.mp4'
-  const W_1400_MP4_VIDEO_URL = 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/video/w_1400.mp4'
-  const W_2048_MP4_VIDEO_URL = 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/video/w_2048.mp4'
+  const W_768_MP4_VIDEO_URL = 'https://assets.wealize.digital/video/w_768.mp4'
+  const W_1400_MP4_VIDEO_URL = 'https://assets.wealize.digital/video/w_1400.mp4'
+  const W_2048_MP4_VIDEO_URL = 'https://assets.wealize.digital/video/w_2048.mp4'
 
-  const W_700_BLEND_MODE_MULTIPLY_MP4_VIDEO_URL = 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/video/w_700_blend_mode_multiply.mp4'
-  const W_1300_BLEND_MODE_MULTIPLY_MP4_VIDEO_URL = 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/video/w_1300_blend_mode_multiply.mp4'
+  const W_700_BLEND_MODE_MULTIPLY_MP4_VIDEO_URL = 'https://assets.wealize.digital/video/w_700_blend_mode_multiply.mp4'
+  const W_1300_BLEND_MODE_MULTIPLY_MP4_VIDEO_URL = 'https://assets.wealize.digital/video/w_1300_blend_mode_multiply.mp4'
 
   const { isMixMultiplyBlendMode = false } = props
   const { width } = useWindowSize()

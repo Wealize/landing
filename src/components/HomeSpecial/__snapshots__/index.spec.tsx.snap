@@ -126,7 +126,7 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
                   url={
                     Array [
                       Object {
-                        "src": "https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/video/w_2048.mp4",
+                        "src": "https://assets.wealize.digital/video/w_2048.mp4",
                         "type": "video/mp4",
                       },
                     ]
@@ -274,7 +274,7 @@ exports[`<HomeSpecial /> wrapper: should render 1`] = `
                         url={
                           Array [
                             Object {
-                              "src": "https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/video/w_2048.mp4",
+                              "src": "https://assets.wealize.digital/video/w_2048.mp4",
                               "type": "video/mp4",
                             },
                           ]

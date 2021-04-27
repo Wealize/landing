@@ -33,8 +33,8 @@ module.exports = nextTranslate(
       ],
       domains: [
         'localhost',
-        'wlz-landing-assets.s3.eu-central-1.amazonaws.com',
         'static.ghost.org',
+        'assets.wealize.digital',
         's3-eu-central-1.amazonaws.com'
       ]
     },

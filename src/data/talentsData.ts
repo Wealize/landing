@@ -3,7 +3,7 @@ import { CardTalent } from '../interfaces/Cards/CardTalent'
 const talentsData: CardTalent[] = [
   {
     trans_key: 'miguel_calero',
-    imageUrl: 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/img/talents/wealize_miguel.png',
+    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_miguel.png',
     name: 'Miguel Calero',
     role: 'Co-Founder & CEO',
     socialNetworks: [
@@ -19,7 +19,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'javier_aguirre',
-    imageUrl: 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/img/talents/wealize_javier.png',
+    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_javier.png',
     name: 'Javier Aguirre',
     role: 'Co-Founder & CTO',
     socialNetworks: [
@@ -35,7 +35,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'dani_luque',
-    imageUrl: 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/img/talents/wealize_daniel.png',
+    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_daniel.png',
     name: 'Dani Luque',
     role: 'Software Engineer',
     socialNetworks: [
@@ -55,7 +55,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'dani_ranchal',
-    imageUrl: 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/img/talents/wealize_danielr.png',
+    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_danielr.png',
     name: 'Dani Ranchal',
     role: 'Software Engineer',
     socialNetworks: [
@@ -71,7 +71,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'jesus_mejias',
-    imageUrl: 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/img/talents/wealize_jesus.png',
+    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_jesus.png',
     name: 'Jesús Mejías',
     role: 'Software Engineer',
     socialNetworks: [
@@ -91,7 +91,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'miguel_gavilan',
-    imageUrl: 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/img/talents/wealize_miguelg.png',
+    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_miguelg.png',
     name: 'Miguel A. Gavilán',
     role: 'Software Engineer',
     socialNetworks: [
@@ -111,7 +111,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'maca_torralba',
-    imageUrl: 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/img/talents/wealize_maca.png',
+    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_maca.png',
     name: 'Maca Torralba',
     role: 'UX/UI Designer',
     socialNetworks: [
@@ -127,7 +127,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'angel_heredia',
-    imageUrl: 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/img/talents/wealize_angel.png',
+    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_angel.png',
     name: 'Ángel Heredia',
     role: 'Software Engineer',
     socialNetworks: [
@@ -143,7 +143,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'antonio_romero',
-    imageUrl: 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/img/talents/wealize_antonio.png',
+    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_antonio.png',
     name: 'Antonio Romero',
     role: 'Software Engineer',
     socialNetworks: [
@@ -155,7 +155,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'nieves_borrero',
-    imageUrl: 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/img/talents/wealize_nieves.png',
+    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_nieves.png',
     name: 'Nieves Borrero',
     role: 'Software Engineer',
     socialNetworks: [
@@ -171,7 +171,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'victoria_perez',
-    imageUrl: 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/img/talents/wealize_victoria.png',
+    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_victoria.png',
     name: 'Victoria Pérez',
     role: 'Software Engineer',
     socialNetworks: [
@@ -183,7 +183,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'marisa_ruiz',
-    imageUrl: 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/img/talents/wealize_marisa.png',
+    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_marisa.png',
     name: 'Marisa Ruiz',
     role: 'Research Funding Manager',
     socialNetworks: [
@@ -195,7 +195,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'joaquin_lopez',
-    imageUrl: 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/img/talents/wealize_joaquin.png',
+    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_joaquin.png',
     name: 'Joaquín López',
     role: 'Blockchain Specialist',
     socialNetworks: [
@@ -207,7 +207,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'toni_parn',
-    imageUrl: 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/img/talents/wealize_toni.png',
+    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_toni.png',
     name: 'Toni Pärn',
     role: 'Business Developer',
     socialNetworks: [
@@ -219,7 +219,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'mariano_morera',
-    imageUrl: 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/img/talents/wealize_mariano.png',
+    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_mariano.png',
     name: 'Mariano Morera',
     role: 'Business Specialist',
     socialNetworks: [
@@ -231,7 +231,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'javier_martin',
-    imageUrl: 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/img/talents/wealize_javierm.png',
+    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_javierm.png',
     name: 'Javier Martín',
     role: 'Trainee Software Engineer',
     socialNetworks: [
@@ -247,7 +247,7 @@ const talentsData: CardTalent[] = [
   },
   {
     trans_key: 'rafa_rodriguez',
-    imageUrl: 'https://wlz-landing-assets.s3.eu-central-1.amazonaws.com/img/talents/wealize_rafa.png',
+    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_rafa.png',
     name: 'Rafael Rodríguez Julián',
     role: 'Financial Director',
     socialNetworks: [
