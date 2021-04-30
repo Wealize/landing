@@ -229,7 +229,13 @@ exports[`<Footer /> wrapper: should render 1`] = `
               data-cy="footer-cdti-link"
               title="CDTI page link"
             >
-              <Memo(CDTIIcon) />
+              <Memo(CDTIIcon)
+                style={
+                  Object {
+                    "fill": "white",
+                  }
+                }
+              />
             </a>
           </Link>
         </styles__Grant>

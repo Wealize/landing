@@ -37,6 +37,7 @@
   ],
   "plugins": ["@typescript-eslint", "jest", "cypress"],
   "rules": {
+    "@typescript-eslint/ban-ts-comment": "off",
     "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": [

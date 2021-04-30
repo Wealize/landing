@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import Scroll from 'react-scroll'
 import useTranslation from 'next-translate/useTranslation'
 import Trans from 'next-translate/Trans'
@@ -19,7 +19,12 @@ import {
 const HomeSpecial = () => {
   const containerRef = useRef(null)
   const buttonScrollRef = useRef(null)
+  const [isMobile, setIsMobile] = useState(false)
   const { t } = useTranslation('home')
+
+  useEffect(() => {
+    window.innerWidth < BREAKPOINT_LG ? setIsMobile(true) : setIsMobile(false)
+  }, [])
 
   const scrollToNextElement = () => {
     const navbarHeight = document.getElementById('navbar').clientHeight
@@ -43,15 +48,17 @@ const HomeSpecial = () => {
   return (
     <Container ref={containerRef}>
       <Background>
-        <WAnimation isMixMultiplyBlendMode={false} />
+        {!isMobile && <WAnimation isMixMultiplyBlendMode={false} />}
       </Background>
       <Slogan>
         <Headline>{t('slogan.headline')}</Headline>
         <SubHeadline id="slogan-subheadline">
-          {<Trans
-            i18nKey="home:slogan.subheadline"
-            components={[<br key={0} />]}
-           />}
+          {
+            <Trans
+              i18nKey="home:slogan.subheadline"
+              components={[<br key={0} />]}
+            />
+          }
         </SubHeadline>
         <Button
           onClick={scrollToNextElement}
