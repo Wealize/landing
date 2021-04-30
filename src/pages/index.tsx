@@ -1,18 +1,19 @@
 import React from 'react'
 import useTranslation from 'next-translate/useTranslation'
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
 
 import projectsData from '../data/projectsData'
 import SimpleCard from '../components/Cards/Simple'
-import RoundedCard from '../components/Cards/Rounded'
 import { CardRounded } from '../interfaces/Cards/CardRounded'
 import HomeSpecial from '../components/HomeSpecial'
-import Partners from '../components/Partners'
 import { LayoutOptions } from '../interfaces/Page'
 import { ContainerProjects } from '../styles/pages/Home'
 
 const Index = (): JSX.Element => {
   const { t, lang } = useTranslation('home')
+  const RoundedCard = dynamic(() => import('../components/Cards/Rounded'))
+  const Partners = dynamic(() => import('../components/Partners'))
 
   return (
   <>

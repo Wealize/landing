@@ -1,6 +1,6 @@
 import React, { ReactChild } from 'react'
+import dynamic from 'next/dynamic'
 
-import Footer from '../Footer'
 import Navbar from '../Navbar'
 import { LayoutOptions } from '../../interfaces/Page'
 
@@ -16,6 +16,8 @@ const Layout = (props: LayoutProps) => {
     children,
     layoutOptions: { showFooter = true, showNavigationBarClosablePage = false }
   } = props
+  const Footer = dynamic(() => import('../Footer'))
+
 
   return (
     <>

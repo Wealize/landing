@@ -18,10 +18,7 @@ import {
   PRIVACY_HREF,
   LEGAL_HREF
 } from '../../constants/hrefs'
-import {
-  GET_IN_TOUCH_HREF,
-  WORK_WITH_US
-} from '../../constants/contacts'
+import { GET_IN_TOUCH_HREF, WORK_WITH_US } from '../../constants/contacts'
 
 import {
   Container,
@@ -51,90 +48,100 @@ const Footer = () => {
       </ContainerLogo>
       <ContainerContent>
         <ContainerContactSection>
-          <BigText>
-            {t('footer.get_in_touch.text')}
-          </BigText>
+          <BigText>{t('footer.get_in_touch.text')}</BigText>
           <ButtonRounded
             backgroundColor={DARK_GRAY_COLOR}
             textColor={WHITE_COLOR}
             animatedBackgroundColor={ACCENT_COLOR}
             animatedTextColor={WHITE_COLOR}
             size={MEDIUM}
-            handleClick={() => window.open(
-              GET_IN_TOUCH_HREF, '_blank')}
+            handleClick={() => window.open(GET_IN_TOUCH_HREF, '_blank')}
             id="footer-get-in-touch-button"
           >
             <span>{t('footer.get_in_touch.button_text')}</span>
           </ButtonRounded>
         </ContainerContactSection>
         <ContainerContactSection>
-          <BigText>
-            {t('footer.work_with_us.text')}
-          </BigText>
+          <BigText>{t('footer.work_with_us.text')}</BigText>
           <ButtonRounded
             backgroundColor={DARK_GRAY_COLOR}
             textColor={WHITE_COLOR}
             animatedBackgroundColor={ACCENT_COLOR}
             animatedTextColor={WHITE_COLOR}
             size={MEDIUM}
-            handleClick={() => window.open(
-              WORK_WITH_US, '_blank')}
+            handleClick={() => window.open(WORK_WITH_US, '_blank')}
             id="footer-work-whit-us-button"
           >
-           <span>{t('footer.work_with_us.button_text')}</span>
+            <span>{t('footer.work_with_us.button_text')}</span>
           </ButtonRounded>
         </ContainerContactSection>
       </ContainerContent>
       <ContainerBottom>
         <DividerMobile></DividerMobile>
         <ContainerSocialMobile>
-            <ButtonRounded
-              backgroundColor={DARK_GRAY_COLOR}
-              textColor={WHITE_COLOR}
-              animatedBackgroundColor={ACCENT_COLOR}
-              animatedTextColor={WHITE_COLOR}
-              size={SMALL}
-              handleClick={() => window.open(
-                'https://www.linkedin.com/company/wealizedigital/', '_blank')}
-            >
-              <LinkedinIcon />
-            </ButtonRounded>
-            <ButtonRounded
-              backgroundColor={DARK_GRAY_COLOR}
-              textColor={WHITE_COLOR}
-              animatedBackgroundColor={ACCENT_COLOR}
-              animatedTextColor={WHITE_COLOR}
-              size={SMALL}
-              handleClick={() => window.open(
-                'https://twitter.com/wealizedigital', '_blank')}
-            >
-              <TwitterIcon />
-            </ButtonRounded>
-            <ButtonRounded
-              backgroundColor={DARK_GRAY_COLOR}
-              textColor={WHITE_COLOR}
-              animatedBackgroundColor={ACCENT_COLOR}
-              animatedTextColor={WHITE_COLOR}
-              size={SMALL}
-              handleClick={() => window.open(
-                'https://dev.to/wealize', '_blank')}
-            >
-              <DevtoIcon />
-            </ButtonRounded>
+          <ButtonRounded
+            backgroundColor={DARK_GRAY_COLOR}
+            textColor={WHITE_COLOR}
+            animatedBackgroundColor={ACCENT_COLOR}
+            animatedTextColor={WHITE_COLOR}
+            size={SMALL}
+            handleClick={() =>
+              window.open(
+                'https://www.linkedin.com/company/wealizedigital/',
+                '_blank'
+              )
+            }
+          >
+            <LinkedinIcon />
+          </ButtonRounded>
+          <ButtonRounded
+            backgroundColor={DARK_GRAY_COLOR}
+            textColor={WHITE_COLOR}
+            animatedBackgroundColor={ACCENT_COLOR}
+            animatedTextColor={WHITE_COLOR}
+            size={SMALL}
+            handleClick={() =>
+              window.open('https://twitter.com/wealizedigital', '_blank')
+            }
+          >
+            <TwitterIcon />
+          </ButtonRounded>
+          <ButtonRounded
+            backgroundColor={DARK_GRAY_COLOR}
+            textColor={WHITE_COLOR}
+            animatedBackgroundColor={ACCENT_COLOR}
+            animatedTextColor={WHITE_COLOR}
+            size={SMALL}
+            handleClick={() => window.open('https://dev.to/wealize', '_blank')}
+          >
+            <DevtoIcon />
+          </ButtonRounded>
         </ContainerSocialMobile>
         <ContainerPrivacyCopyright>
           <Link href={PRIVACY_HREF} passHref>
-            <InlineLink title="Privacy page link" aria-label="Privacy & Legal" data-cy="footer-privacy-link">
+            <InlineLink
+              title="Privacy page link"
+              aria-label="Privacy & Legal"
+              data-cy="footer-privacy-link"
+            >
               {t('footer.privacy')}
             </InlineLink>
           </Link>
           <Link href={LEGAL_HREF} passHref>
-            <InlineLink title="Legal page link" aria-label="Legal" data-cy="footer-legal-link">
+            <InlineLink
+              title="Legal page link"
+              aria-label="Legal"
+              data-cy="footer-legal-link"
+            >
               {t('footer.legal')}
             </InlineLink>
           </Link>
           <Link href={COOKIES_POLICY_HREF} passHref>
-            <InlineLink title="Cookies page link" aria-label="Cookies page" data-cy="cookies-page-link">
+            <InlineLink
+              title="Cookies page link"
+              aria-label="Cookies page"
+              data-cy="cookies-page-link"
+            >
               {t('footer.cookies_policy')}
             </InlineLink>
           </Link>
@@ -145,14 +152,22 @@ const Footer = () => {
           <ContainerGrants>
             <Grant>
               <Link href={CDTI_HREF} passHref>
-                <a title="CDTI page link" aria-label="CDTI" data-cy="footer-cdti-link">
-                  <CDTIIcon />
+                <a
+                  title="CDTI page link"
+                  aria-label="CDTI"
+                  data-cy="footer-cdti-link"
+                >
+                  <CDTIIcon style={{ fill: 'white' }} />
                 </a>
               </Link>
             </Grant>
             <Grant>
               <Link href={INNOVATION_SME_HREF} passHref>
-                <a title="Innovation Pyme page link" aria-label="Innovation Pyme" data-cy="footer-innovation-pyme-link">
+                <a
+                  title="Innovation Pyme page link"
+                  aria-label="Innovation Pyme"
+                  data-cy="footer-innovation-pyme-link"
+                >
                   <InnovationPymeIcon />
                 </a>
               </Link>
@@ -165,8 +180,12 @@ const Footer = () => {
               animatedBackgroundColor={ACCENT_COLOR}
               animatedTextColor={WHITE_COLOR}
               size={SMALL}
-              handleClick={() => window.open(
-                'https://www.linkedin.com/company/wealizedigital/', '_blank')}
+              handleClick={() =>
+                window.open(
+                  'https://www.linkedin.com/company/wealizedigital/',
+                  '_blank'
+                )
+              }
             >
               <LinkedinIcon />
             </ButtonRounded>
@@ -176,8 +195,9 @@ const Footer = () => {
               animatedBackgroundColor={ACCENT_COLOR}
               animatedTextColor={WHITE_COLOR}
               size={SMALL}
-              handleClick={() => window.open(
-                'https://twitter.com/wealizedigital', '_blank')}
+              handleClick={() =>
+                window.open('https://twitter.com/wealizedigital', '_blank')
+              }
             >
               <TwitterIcon />
             </ButtonRounded>
@@ -187,8 +207,9 @@ const Footer = () => {
               animatedBackgroundColor={ACCENT_COLOR}
               animatedTextColor={WHITE_COLOR}
               size={SMALL}
-              handleClick={() => window.open(
-                'https://dev.to/wealize', '_blank')}
+              handleClick={() =>
+                window.open('https://dev.to/wealize', '_blank')
+              }
             >
               <DevtoIcon />
             </ButtonRounded>
