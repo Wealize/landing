@@ -12,6 +12,7 @@ import dynamic from 'next/dynamic'
 
 import 'react-placeholder/lib/reactPlaceholder.css'
 import Global from '../components/Global'
+import Menu from "../components/BurgerMenu/Menu";
 import HeadComponent from '../components/layout/Head/'
 import Layout from '../components/layout/'
 import { LayoutOptions } from '../interfaces/Page'
@@ -32,6 +33,7 @@ const ExtendedApp = (props: AppProps) => {
   const CookieConsent = dynamic(() => import('react-cookie-consent'))
 
   const [progress, setProgress] = useState(0)
+  const [open, setOpen] = useState<boolean>(false)
   const router = useRouter()
   const windowSize = useWindowSize()
   const { t } = useTranslation('common')
@@ -99,6 +101,11 @@ const ExtendedApp = (props: AppProps) => {
       />
       <Reset />
       <Global />
+      <Menu
+        open={open}
+        setOpen={setOpen}
+      ></Menu>
+
       <Layout layoutOptions={layoutOptions}>
         <Component {...pageProps} />
       </Layout>

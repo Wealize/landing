@@ -1,8 +1,15 @@
 {
   "navbar": {
+    "home": "Inicio",
     "profile": "Perfil",
+    "client_stories": "Casos de Exito",
+    "blog": "Blog",
     "contact": "Contacto",
-    "return_button_text": "Atrás"
+    "return_button_text": "Atrás",
+    "external_href": {
+      "blog": "https://knowledge.wealize.digital/es/blog",
+      "client_stories": "https://knowledge.wealize.digital/es/blog/tag/client-stories"
+    }
   },
   "footer" : {
     "get_in_touch": {
