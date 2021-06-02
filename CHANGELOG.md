@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [Add Buttons to access Blog & Client Stories](https://wealize.atlassian.net/browse/WLZAA-146)
 - [Fix translate error in Error page](https://wealize.atlassian.net/browse/WLZAA-145)
 
 ## [v2021.04.27]
