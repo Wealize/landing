@@ -19,7 +19,8 @@ import {
   LogoMobileContainer,
   LogoContainer,
   NavLink,
-  LinksContainer
+  LinksContainer,
+  LangNavLink
 } from './styles'
 
 
@@ -35,7 +36,6 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
   } = router
   const { t, lang } = useTranslation('common')
   const [visible, setVisible] = useGlobalState('isVisible')
-
 
   useScrollPosition(({ prevPos, currPos }) => {
     setVisible(prevPos.y < currPos.y || (currPos.y >= 0 && currPos.y <= 5))
@@ -100,6 +100,32 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
                 </NavLink>
               </Link>
 
+              <Link href={t('navbar.external_href.client_stories')} passHref>
+                <NavLink
+                  title="Client stories link"
+                  aria-label="Client stories"
+                  data-cy="nav-profile-link"
+                  isCurrentPage={false}
+                  target="_blank"
+                  rel="nofollow"
+                >
+                    {t('navbar.client_stories')}
+                </NavLink>
+              </Link>
+
+              <Link href={t('navbar.external_href.blog')} passHref>
+                <NavLink
+                  title="Client stories link"
+                  aria-label="Client stories"
+                  data-cy="nav-profile-link"
+                  isCurrentPage={false}
+                  target="_blank"
+                  rel="nofollow"
+                >
+                    {t('navbar.blog')}
+                </NavLink>
+              </Link>
+
               <NavLink
                 title="Contact"
                 aria-label="Contact"
@@ -118,13 +144,13 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
                       pathname: router.pathname,
                       query: query
                     }} locale={lng} key={lng}>
-                      <NavLink
+                      <LangNavLink
                         title="Change language button"
                         id="change-language-toggle"
                         isCurrentPage={null}
                         aria-label="Change language">
                         {`${lng}`}
-                      </NavLink>
+                      </LangNavLink>
                     </Link>
                   )
                 })

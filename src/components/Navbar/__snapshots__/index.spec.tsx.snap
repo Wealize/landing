@@ -10,7 +10,7 @@ exports[`<NavBar /> should render 1`] = `
     showNavigationBarClosablePage={true}
   >
     <nav
-      className="styles__Navbar-dfawgb-0 hMDqhe"
+      className="styles__Navbar-dfawgb-0 jhmMLm"
       id="navbar"
     >
       <styles__LogoMobileContainer>

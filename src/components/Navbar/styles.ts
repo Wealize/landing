@@ -6,7 +6,13 @@ import {
   LIGHT_GRAY_COLOR,
   ACCENT_COLOR
 } from '../../theme/color'
-import { halfPx, singlePx, singleAndHalfPx, triplePx, quadruplePx } from '../../theme/space'
+import {
+  halfPx,
+  singlePx,
+  singleAndHalfPx,
+  triplePx,
+  quadruplePx
+} from '../../theme/space'
 import { media } from '../../theme/media'
 import { CONTAINER_SPACING } from '../../theme/spacingGuide'
 
@@ -30,27 +36,26 @@ export const Navbar = styled.nav<{
   ${CONTAINER_SPACING.MOBILE}
   padding-top: ${singlePx()};
   padding-bottom: ${singlePx()};
-
-  transform: ${({ isVisible }) =>
-    isVisible ? 'inherit' : 'translateY(-100%)'};
-
-  ${({ showNavigationBarClosablePage }) =>
-    showNavigationBarClosablePage
-      ? `border: 1.5px solid ${LIGHT_GRAY_COLOR}`
-      : 'border: none'};
+  border: solid 1.5px ${LIGHT_GRAY_COLOR};
 
   ${({ showNavigationBarClosablePage }) => media.greaterThan('md')`
-    background-color: ${
-      showNavigationBarClosablePage ? WHITE_COLOR : LIGHT_GRAY_COLOR
-    };
     min-height: ${showNavigationBarClosablePage ? quadruplePx() : triplePx()};
-    border: none;
     ${CONTAINER_SPACING.TABLET}
     padding-top: ${singlePx()};
     padding-bottom: ${singlePx()};
   `};
 
-  ${media.greaterThan('lg')`
+  ${({ isVisible, showNavigationBarClosablePage }) => media.greaterThan('lg')`
+    ${
+      showNavigationBarClosablePage
+        ? `border: 1.5px solid ${LIGHT_GRAY_COLOR}`
+        : 'border: none'
+    };
+
+    background-color: ${
+      showNavigationBarClosablePage ? WHITE_COLOR : LIGHT_GRAY_COLOR
+    };
+    transform: ${isVisible ? 'inherit' : 'translateY(-100%)'};
     ${CONTAINER_SPACING.SMALL_DESKTOP};
     padding-top: ${singlePx()};
     padding-bottom: ${singlePx()};
@@ -65,7 +70,9 @@ export const Navbar = styled.nav<{
   ${({ showNavigationBarClosablePage }) => media.greaterThan('xxl')`
 
     ${
-      showNavigationBarClosablePage ? CONTAINER_SPACING.WIDE : CONTAINER_SPACING.DESKTOP
+      showNavigationBarClosablePage
+        ? CONTAINER_SPACING.WIDE
+        : CONTAINER_SPACING.DESKTOP
     }
     padding-top: ${singleAndHalfPx()};
     padding-bottom: ${singleAndHalfPx()};
@@ -92,9 +99,16 @@ export const LinksContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-right: 15%;
+
+  ${media.greaterThan('lg')`
+    margin-right: 0;
+    display: flex;
+  `}
 `
 
-export const NavLink = styled.a<{ isCurrentPage: boolean, hreflang?: string }>`
+export const NavLink = styled.a<{ isCurrentPage: boolean; hreflang?: string }>`
+  display: none;
   text-decoration: none;
   color: ${DARK_GRAY_COLOR};
   margin: 0 ${halfPx()};
@@ -109,16 +123,19 @@ export const NavLink = styled.a<{ isCurrentPage: boolean, hreflang?: string }>`
     text-transform: uppercase;
   }
 
+  &:hover {
+    border-bottom: 3px solid ${ACCENT_COLOR};
+  }
+
   ${media.greaterThan('lg')`
+    display: flex;
+
     &:hover {
       border-bottom: 3px solid ${ACCENT_COLOR};
     }
-  `};
+  `}
+`
 
-  ${media.greaterThan('lg')`
-
-    &:hover {
-      border-bottom: 3px solid ${ACCENT_COLOR};
-    }
-  `};
+export const LangNavLink = styled(NavLink)`
+  display: flex;
 `
