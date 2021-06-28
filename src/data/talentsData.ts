@@ -34,26 +34,6 @@ const talentsData: CardTalent[] = [
     ]
   },
   {
-    trans_key: 'dani_luque',
-    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_daniel.png',
-    name: 'Dani Luque',
-    role: 'Software Engineer',
-    socialNetworks: [
-      {
-        name: 'Linkedin',
-        url: 'https://www.linkedin.com/in/danielluquequintana/'
-      },
-      {
-        name: 'Twitter',
-        url: 'https://twitter.com/DaniLuque20'
-      },
-      {
-        name: 'Dev.to',
-        url: 'https://dev.to/drankolq'
-      }
-    ]
-  },
-  {
     trans_key: 'dani_ranchal',
     imageUrl: 'https://assets.wealize.digital/img/talents/wealize_danielr.png',
     name: 'Dani Ranchal',
@@ -66,46 +46,6 @@ const talentsData: CardTalent[] = [
       {
         name: 'Twitter',
         url: 'https://www.twitter.com/daniranchal'
-      }
-    ]
-  },
-  {
-    trans_key: 'jesus_mejias',
-    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_jesus.png',
-    name: 'Jesús Mejías',
-    role: 'Software Engineer',
-    socialNetworks: [
-      {
-        name: 'Linkedin',
-        url: 'https://www.linkedin.com/in/jesus-mejias-leiva'
-      },
-      {
-        name: 'Twitter',
-        url: 'https://twitter.com/susomejias'
-      },
-      {
-        name: 'Dev.to',
-        url: 'https://dev.to/susomejias'
-      }
-    ]
-  },
-  {
-    trans_key: 'miguel_gavilan',
-    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_miguelg.png',
-    name: 'Miguel A. Gavilán',
-    role: 'Software Engineer',
-    socialNetworks: [
-      {
-        name: 'Linkedin',
-        url: 'https://www.linkedin.com/in/miguel-ángel-gavilán-merino-111438138/'
-      },
-      {
-        name: 'Twitter',
-        url: 'https://twitter.com/miguel5gavilan'
-      },
-      {
-        name: 'Dev.to',
-        url: 'https://dev.to/miangame'
       }
     ]
   },
@@ -150,22 +90,6 @@ const talentsData: CardTalent[] = [
       {
         name: 'Linkedin',
         url: 'www.linkedin.com/in/antonio-romero-cañete-a8488531'
-      }
-    ]
-  },
-  {
-    trans_key: 'nieves_borrero',
-    imageUrl: 'https://assets.wealize.digital/img/talents/wealize_nieves.png',
-    name: 'Nieves Borrero',
-    role: 'Software Engineer',
-    socialNetworks: [
-      {
-        name: 'Linkedin',
-        url: 'https://www.linkedin.com/in/nievesborrero/'
-      },
-      {
-        name: 'Twitter',
-        url: 'https://twitter.com/nievesborrero'
       }
     ]
   },
