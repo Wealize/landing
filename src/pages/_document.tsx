@@ -58,7 +58,6 @@ class ExtendedDocument extends Document {
               __html:
               `window.chatbotSettings = {
                 chatbotEndpoint: '${process.env.WEBCHAT_ENDPOINT}',
-                welcomeMessage: '¡Bienvenido al webchat de Cuerpomente! Si lo prefieres, puedes continuar hablando con nosotros a través de nuestro <a href="https://wa.me/34910059561">WhatsApp</a> o puedes continuar desde aquí.',
                 startButton: '¡Hola!',
                 agentProfile: {
                   teamName: 'Cuerpomente',
