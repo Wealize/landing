@@ -58,10 +58,10 @@ class ExtendedDocument extends Document {
               __html:
               `window.chatbotSettings = {
                 chatbotEndpoint: '${process.env.WEBCHAT_ENDPOINT}',
-                startButton: '¡Hola!',
+                startButton: '¡Bienvenido! Para comenzar a interactuar con nuestro bot pulsa el botón "hola".',
                 agentProfile: {
-                  teamName: 'Cuerpomente',
-                  imageUrl: 'https://www.bravodescuento.es/cdn2/merchant/logo/192x192/cuerpomente-20190329154845-logo.png'
+                  teamName: 'Wealize',
+                  imageUrl: 'https://avatars.githubusercontent.com/u/40460568?s=50'
                 },
                 theme: {
                   brandColor: 'blue'
