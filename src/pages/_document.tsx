@@ -58,10 +58,12 @@ class ExtendedDocument extends Document {
               __html:
               `window.chatbotSettings = {
                 chatbotEndpoint: '${process.env.WEBCHAT_ENDPOINT}',
-                startButton: '¡Bienvenido! Para comenzar a interactuar con nuestro bot pulsa el botón "hola".',
+                welcomeMessage: '¡Bienvenido! Para comenzar a interactuar con nuestro bot pulsa el botón "hola".',
+                startButton: '¡Hola!',
                 agentProfile: {
                   teamName: 'Wealize',
-                  imageUrl: 'https://avatars.githubusercontent.com/u/40460568?s=50'
+                  teamExplanation: '¡Desbloquea el mundo de hoy!',
+                  imageUrl: 'https://tnpnlu-assets.s3.eu-central-1.amazonaws.com/wealize_logo.png'
                 },
                 theme: {
                   brandColor: 'blue'
