@@ -57,12 +57,12 @@ class ExtendedDocument extends Document {
             dangerouslySetInnerHTML={{
               __html:
               `window.chatbotSettings = {
-                chatbotEndpoint: '${process.env.WEBCHAT_ENDPOINT}',
+                chatbotEndpoint: 'wss://api.coloq.io/webchat/0d734fa0-fad4-4329-be0b-4c268df5db59/',
                 welcomeMessage: '¡Bienvenido! Para comenzar a interactuar con nuestro bot pulsa el botón "hola".',
                 startButton: '¡Hola!',
                 agentProfile: {
-                  teamName: 'Wealize',
-                  teamExplanation: '¡Desbloquea el mundo de hoy!',
+                  teamName: 'BID',
+                  teamExplanation: '¡Hablemos!',
                   imageUrl: 'https://tnpnlu-assets.s3.eu-central-1.amazonaws.com/wealize_logo.png'
                 },
                 theme: {
@@ -71,7 +71,7 @@ class ExtendedDocument extends Document {
                 userTimeout: 3600
               };
 
-              (function(){var w=window;var d=document;var l=function(){var x=d.getElementById('__next');var c=d.createElement('div');c.id='chatbotContainer';x.parentNode.insertBefore(c,x);var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://d1hbk1yt8xmke0.cloudfront.net/156/branded-chatbot-window.min.js';x.parentNode.insertBefore(s,x);};if(d.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}})();`
+              (function(){var w=window;var d=document;var l=function(){var x=d.getElementById('__next');var c=d.createElement('div');c.id='chatbotContainer';x.parentNode.insertBefore(c,x);var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://d1hbk1yt8xmke0.cloudfront.net/157/branded-chatbot-window.min.js';x.parentNode.insertBefore(s,x);};if(d.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}})();`
             }}
           />
         </Head>
