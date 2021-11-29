@@ -100,6 +100,22 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
                 </NavLink>
               </Link>
 
+              <Link
+                href={lang === 'es' ? 'es/r+d/index.html' : 'en/r+d/home-en.html'}
+                passHref
+              >
+                <NavLink
+                  title="Client stories link"
+                  aria-label="Client stories"
+                  data-cy="nav-profile-link"
+                  isCurrentPage={false}
+                  target="_blank"
+                  rel="nofollow"
+                >
+                    {t('navbar.r&d')}
+                </NavLink>
+              </Link>
+
               <Link href={t('navbar.external_href.client_stories')} passHref>
                 <NavLink
                   title="Client stories link"

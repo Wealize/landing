@@ -10,7 +10,7 @@
     "build": "next build",
     "dev": "next",
     "start": "next start -p $PORT",
-    "lint": "eslint './**/*.{js,ts,tsx}'",
+    "lint": "eslint './**/*.{ts,tsx}'",
     "jest": "jest --config='./jest.config.js' --coverage",
     "jest-with-coverage": "jest --coverage",
     "jest-collect-coverage": "jest --collectCoverage --coverageReporters=json-summary",
