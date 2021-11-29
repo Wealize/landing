@@ -16,7 +16,7 @@ export type Props = {
 
 const Menu = (props: Props): JSX.Element => {
   const node = useRef<HTMLDivElement>(null)
-  const { t } = useTranslation('common')
+  const { lang, t } = useTranslation('common')
   const router = useRouter()
   const isCurrentPage = (url: string) => url === router.pathname
 
@@ -51,6 +51,20 @@ const Menu = (props: Props): JSX.Element => {
             onClick={() => props.setOpen(false)}
           >
             {t('navbar.profile')}
+          </StyledLink>
+        </Link>
+
+        <Link
+          href={lang === 'es' ? '/r+d/index.html' : '/r+d/home-en.html'}
+          passHref
+        >
+          <StyledLink
+            title="RTD link"
+            aria-label="RTD"
+            data-cy="nav-rtd-link"
+            isCurrentPage={false}
+          >
+            {t('navbar.r&d')}
           </StyledLink>
         </Link>
 
