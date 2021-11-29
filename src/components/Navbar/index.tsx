@@ -101,7 +101,7 @@ const NavBar = ({ showNavigationBarClosablePage }: NavbarProps) => {
               </Link>
 
               <Link
-                href={lang === 'es' ? 'es/rd/index.html' : 'en/rd/home-en.html'}
+                href={lang === 'es' ? 'es/r+d/index.html' : 'en/r+d/home-en.html'}
                 passHref
               >
                 <NavLink
