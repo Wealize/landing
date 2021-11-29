@@ -33,7 +33,8 @@
     "src/pages/_document.tsx",
     "src/pages/_app.tsx",
     "global.d.ts",
-    "public/*.js"
+    "public/*.js",
+    "public/rd/js/*.js"
   ],
   "plugins": ["@typescript-eslint", "jest", "cypress"],
   "rules": {
