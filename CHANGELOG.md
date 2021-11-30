@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [añadir logos UE a la landing de i+d](https://wealize.atlassian.net/browse/ACES-751)
 - [Añadir landing I+D a Wealize landing](https://wealize.atlassian.net/browse/RDFUND-113)
 - [Add Buttons to access Blog & Client Stories](https://wealize.atlassian.net/browse/WLZAA-146)
 - [Fix translate error in Error page](https://wealize.atlassian.net/browse/WLZAA-145)
