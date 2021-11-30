@@ -116,7 +116,7 @@
 .grid {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  grid-template-areas: "Area Area-2";
+  grid-template-areas: 'Area Area-2';
 }
 
 .libra {
@@ -238,6 +238,14 @@
 
 .div-block-2.hidden {
   display: none;
+}
+
+.div-flex-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 5px;
 }
 
 .image-2 {
