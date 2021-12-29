@@ -55,7 +55,7 @@ class ExtendedDocument extends Document {
           <script
             dangerouslySetInnerHTML={{
               __html:
-              `(window.chatbotSettings = {
+              `window.chatbotSettings = {
                 chatbotEndpoint: 'wss://coloqio-bid.herokuapp.com/webchat/37be89ae-3790-4ee5-9660-9b61a4d268b4/',
                 welcomeMessage: 'Bienvenido a KiPi bot',
                 startButton: '¡Hola!',
