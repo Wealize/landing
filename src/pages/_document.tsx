@@ -57,7 +57,7 @@ class ExtendedDocument extends Document {
               __html:
               `window.chatbotSettings = {
                 chatbotEndpoint: 'wss://coloqio-bid.herokuapp.com/webchat/37be89ae-3790-4ee5-9660-9b61a4d268b4/',
-                welcomeMessage: 'Lograr un impacto social y ambiental positivo es clave para BID Lab. Pero medir el impacto de las operaciones no es fácil. Por eso, estamos diseñando herramientas digitales que ayuden a nuestros especialistas y clientes a escoger los indicadores más apropiados para medir los resultados que esperan de sus proyectos. Bienvenido a KiPI.Bot.',
+                welcomeMessage: 'Lograr un impacto social y ambiental positivo es clave para BID Lab. Pero medir el resultado de las operaciones no es fácil. Por eso, estamos diseñando herramientas digitales que ayuden a nuestros especialistas y clientes a escoger los indicadores más apropiados para medir los resultados que esperan de sus proyectos. Bienvenido a KiPI.Bot.',
                 startButton: '¡Hola!',
                 agentProfile: {
                   teamName: 'KiPi bot'
