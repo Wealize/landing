@@ -52,6 +52,37 @@ class ExtendedDocument extends Document {
               })(window,document,'script','dataLayer', '${process.env.GTM_ID}');`,
             }}
           />
+          <script
+            dangerouslySetInnerHTML={{
+              __html:
+              `window.chatbotSettings = {
+                chatbotEndpoint: 'wss://coloqio-bid.herokuapp.com/webchat/37be89ae-3790-4ee5-9660-9b61a4d268b4/',
+                welcomeMessage: 'Lograr un impacto social y ambiental positivo es clave para BID Lab. Pero medir el resultado de las operaciones no es fácil. Por eso, estamos diseñando herramientas digitales que ayuden a nuestros especialistas y clientes a escoger los indicadores más apropiados para medir los resultados que esperan de sus proyectos. Bienvenido a KiPI.Bot.',
+                startButton: '¡Hola!',
+                agentProfile: {
+                  teamName: 'KiPi bot'
+                },
+                isOpen: true,
+                isWebView: false
+              };
+              (function(){
+                var w=window;var d=document;
+                var l=function(){
+                  var x=d.getElementsByTagName('script')[0];
+                  var c=d.createElement('div');
+                  c.id='chatbotContainer';
+                  d.body.appendChild(c);
+                  var s=d.createElement('script');
+                  s.type='text/javascript';
+                  s.async=true;s.src='https://d1hbk1yt8xmke0.cloudfront.net/157/branded-chatbot-window.min.js';
+                  x.parentNode.insertBefore(s,x)
+                ;};
+                if(d.readyState==='complete'){l();}
+                else if(w.attachEvent){w.attachEvent('onload',l);}
+                else{w.addEventListener('load',l,false);}}
+              )();`,
+            }}
+          />
         </Head>
         <body>
           <noscript
